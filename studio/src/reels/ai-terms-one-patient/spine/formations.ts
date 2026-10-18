@@ -91,18 +91,27 @@ export const hidden = (center: V3): Buf => {
 };
 
 /** Opening: the four tiers joined into one structure (rods + tier outlines). */
-export const TIER_Y = [3.45, 1.15, -1.15, -3.45] as const;
 export const TIER = { w: 5.4, h: 1.5 } as const;
+/**
+ * Where the four term planes lock: AI contains ML contains DL; generative AI straddles DL's edge
+ * (overlapping it, not inside it). Nested, never a tower of four equal stages.
+ */
+export const NEST = [
+  { c: [0, 0], w: 6.0, h: 7.8, z: -0.6 },
+  { c: [0, -0.75], w: 4.8, h: 6.0, z: -0.3 },
+  { c: [0, -1.5], w: 3.2, h: 4.2, z: 0 },
+  { c: [1.3, -2.75], w: 3.0, h: 1.6, z: 0.3 },
+] as const;
 export const openStructure = (): Buf => {
   const b = makeBuf(), w = writer(b), o = ST.open;
-  for (const x of [-TIER.w / 2 - 0.15, TIER.w / 2 + 0.15]) for (const z of [-0.6, 0.6]) {
-    polyline(w, [at(o, x, 4.6, z), at(o, x, -4.6, z)], 0.07, 0.035, COL.cyan, 0.55);
-  }
-  polyline(w, [at(o, 0, 4.9, -0.4), at(o, 0, -4.9, -0.4)], 0.06, 0.04, COL.amber, 0.35);
-  for (const y of TIER_Y) {
-    polyline(w, rectOutline(0, y, TIER.w + 0.3, TIER.h + 0.2, -0.6, o), 0.07, 0.03, COL.ink, 0.35);
-    for (const x of [-TIER.w / 2 - 0.15, TIER.w / 2 + 0.15]) polyline(w, [at(o, x, y, -0.6), at(o, x, y, 0.6)], 0.07, 0.03, COL.cyan, 0.5);
-  }
+  NEST.forEach((n, k) => {
+    polyline(w, rectOutline(n.c[0], n.c[1], n.w + 0.18, n.h + 0.18, n.z - 0.05, o), 0.06, 0.03, k === 3 ? COL.cyan : COL.ink, 0.45);
+    // depth struts at the corners so the nesting reads in 3D as the camera arcs
+    for (const [sx, sy] of [[-1, 1], [1, 1], [-1, -1], [1, -1]]) {
+      const x = n.c[0] + sx * (n.w / 2 + 0.09), y = n.c[1] + sy * (n.h / 2 + 0.09);
+      polyline(w, [at(o, x, y, n.z - 0.05), at(o, x, y, n.z - 0.55)], 0.06, 0.03, COL.cyan, 0.5);
+    }
+  });
   w.rest(o);
   return b;
 };

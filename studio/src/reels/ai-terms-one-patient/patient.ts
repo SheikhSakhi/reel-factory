@@ -29,19 +29,25 @@ const build = (): Key[] => {
     { f: at("B14", "inference"), v: S(m, 0, MODEL.y, 0.6), ease: "in" },
     { f: at("B14", "inference") + 26, v: S(m, 0, MODEL.y - 1.9, 0.6), ease: "out" },
     { f: be("B15") + 10, v: S(m, 0, MODEL.y - 1.9, 0.6) },
-    { f: at("B16", "chest"), v: S(ST.dl, 4.05, -3.4, 0.6) },
-    { f: bs("B19"), v: S(ST.dl, 4.05, -3.4, 0.6) },
-    { f: at("B19", "simpler"), v: S(ST.dl, 1.9, -1.9, -6.5) },
-    { f: at("B19", "complex"), v: S(ST.dl, 1.4, -1.5, -16.5) },
-    { f: be("B20"), v: S(ST.dl, 2.8, -2.6, -20.5) },
-    { f: be("B21"), v: S(ST.dl, 2.8, -2.6, -20.5) },
+    { f: at("B16", "chest"), v: S(ST.dl, 2.9, -4.0, 1.0) },
+    { f: at("B18", "neural"), v: S(ST.dl, 2.9, -4.0, 1.0) },
+    { f: at("B18", "layers"), v: S(ST.dl, 3.2, -2.6, 1.5) },
+    { f: be("B21"), v: S(ST.dl, 3.2, -2.6, 1.5) },
     { f: bs("B23"), v: S(ST.gen, -2.7, -4.6, 0.8) },
     { f: be("B26"), v: S(ST.gen, -2.7, -4.6, 0.8) },
     { f: at("B27", "foundation"), v: S(ST.found, 0, -0.4, 2.2) },
     { f: be("B28"), v: S(ST.found, 0, -0.4, 2.2) },
-    { f: at("B29", "connect"), v: S(ST.map, 0, -3.75, 0.6) },
-    { f: be("B38"), v: S(ST.map, 0, -3.75, 0.6) },
+    { f: at("B29", "connect"), v: S(ST.map, -1.6, -3.75, 0.6) },
+    { f: at("B36", "computing"), v: S(ST.map, -1.6, -3.75, 0.6) },
+    // descends with the camera and hovers above the compute grid
+    { f: at("B37", "gpus") + 34, v: S(ST.gpu, -1.2, 8.0, 2.5) },
+    { f: be("B38") - 10, v: S(ST.gpu, -1.2, 8.0, 2.5) },
     { f: at("B39", "medical"), v: S(ST.finale, 0, 0, 0) },
+    { f: at("B41", "and"), v: S(ST.finale, 0, 0, 0) },
+    // steps beside the output panel during the comparison, then returns to the centre
+    { f: at("B41", "and") + 24, v: S(ST.finale, -3.0, -3.3, 0.8) },
+    { f: be("B41") + 10, v: S(ST.finale, -3.0, -3.3, 0.8) },
+    { f: at("B42", "knowing"), v: S(ST.finale, 0, 0, 0) },
   ];
 };
 
@@ -57,5 +63,5 @@ export const patientGlow = (frame: number): number => {
   const end = frame > atEnd("B44", "specific") ? 1.15 : 1;
   // Steps back while the caution compares output with its record, then returns for the ending.
   const caution = smooth((frame - at("B41", "learning") + 6) / 16) * (1 - smooth((frame - be("B41") - 10) / 24));
-  return found * breathe * end * (1 - 0.7 * caution);
+  return found * breathe * end * (1 - 0.35 * caution);
 };

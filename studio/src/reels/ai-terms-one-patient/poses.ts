@@ -2,7 +2,7 @@
 import { at, atEnd, be, bs } from "./timing";
 import { clamp01, easeInOut, lerp, lerp3, smooth, type V3 } from "./lib";
 import { LAYERS, ST } from "./world";
-import { TIER, TIER_Y } from "./spine/formations";
+import { NEST, TIER } from "./spine/formations";
 
 export type Pose = { readonly c: V3; readonly rot: V3; readonly w: number; readonly h: number; readonly o: number };
 
@@ -24,15 +24,14 @@ export const termPose = (i: number, f: number): Pose => {
   const massive = smooth((f - at("B02", "massive") + 6) / 24) * (1 - smooth((f - at("B02", "hold")) / 18));
   const scatterC: V3 = [sc.c[0] * (1 + 0.5 * massive), sc.c[1] * (1 + 0.04 * massive), sc.c[2] + 2.5 * massive];
   const join = easeInOut(clamp01((f - at("B03", "connected") + 10) / 34 - i * 0.06));
-  const tier: V3 = [ST.open[0], ST.open[1] + TIER_Y[i], ST.open[2]];
-  let c = lerp3(scatterC, tier, join);
+  const n = NEST[i];
+  const nest: V3 = [ST.open[0] + n.c[0], ST.open[1] + n.c[1], ST.open[2] + n.z];
+  const c = lerp3(scatterC, nest, join);
   const rot = lerp3(sc.rot, [0, 0, 0], join);
-  // the tiers part to let the camera follow the patient inside
-  const part = easeInOut(clamp01((f - at("B03", "follow")) / 40));
-  c = [c[0], c[1] + Math.sign(TIER_Y[i]) * part * (3.2 + Math.abs(TIER_Y[i]) * 0.6), c[2]];
   const appear = smooth((f - termAppear(i)) / 12);
-  const fade = 1 - smooth((f - be("B03") + 4) / 26);
-  return { c, rot, w: TIER.w, h: TIER.h, o: appear * fade };
+  // the names leave as the camera starts its move inside, so no giant fragments cross the lens
+  const fade = 1 - smooth((f - at("B03", "follow") + 2) / 14);
+  return { c, rot, w: lerp(TIER.w, n.w, join), h: lerp(TIER.h, n.h, join), o: appear * fade };
 };
 
 // ------------------------------------------------------------- deep learning planes

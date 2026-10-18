@@ -120,7 +120,7 @@ export const TermSlabs: React.FC = () => {
           <group key={i} position={p.c as [number, number, number]} rotation={p.rot as [number, number, number]}>
             <mesh>
               <boxGeometry args={[p.w, p.h, 0.08]} />
-              <meshStandardMaterial color={C.midnight} metalness={0.2} roughness={0.15} transparent opacity={0.55 * p.o} depthWrite={false} />
+              <meshStandardMaterial color={C.midnight} metalness={0.2} roughness={0.15} transparent opacity={0.3 * p.o} depthWrite={false} />
             </mesh>
             <lineSegments>
               <edgesGeometry args={[new THREE.BoxGeometry(p.w, p.h, 0.08)]} />

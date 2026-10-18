@@ -159,15 +159,18 @@ def main() -> None:
     tex = norm(diag) ** 0.7 * (0.4 + 0.6 * norm(downsample(edges, 128)))
     save(tex, "feat2.png")
 
-    # parts: pooled blobs where structure concentrates
-    parts = norm(downsample(norm(sobel(downsample(img, 128))), 32))
-    parts = np.asarray(blur(Image.fromarray((parts * 255).astype(np.uint8)).resize((256, 256), Image.BILINEAR), 6),
-                       dtype=np.float32) / 255
-    save(norm(parts) ** 1.4, "feat3.png")
+    # parts: combinations of earlier responses, spread evenly. Deliberately not tied to one region,
+    # so a later layer can never be read as a saliency or diagnostic heatmap.
+    yy, xx = np.mgrid[0:256, 0:256] / 256
+    base = norm(downsample(np.asarray(Image.fromarray((edges * 255).astype(np.uint8)).resize((256, 256)), dtype=np.float32), 64))
+    base = np.asarray(Image.fromarray((base * 255).astype(np.uint8)).resize((256, 256), Image.BILINEAR), dtype=np.float32) / 255
+    motif = 0.5 + 0.5 * np.sin(xx * 38 + np.sin(yy * 11) * 2) * np.cos(yy * 31 + np.cos(xx * 9) * 2)
+    parts = 0.25 + 0.45 * motif * (0.6 + 0.4 * base)
+    save(np.clip(parts, 0, 1), "feat3.png")
 
-    # abstract: 8x8 pooled activations
-    abstract = norm(downsample(norm(parts), 8)) ** 1.6
-    save(abstract, "feat4.png")
+    # abstract patterns: an 8x8 grid of activations with an even, non-anatomical spread
+    cells = np.array([[0.35 + 0.4 * ((r * 5 + c * 3) % 7) / 6 for c in range(8)] for r in range(8)])
+    save(cells, "feat4.png")
     print("assets ->", OUT)
 
 

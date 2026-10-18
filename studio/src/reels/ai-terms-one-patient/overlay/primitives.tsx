@@ -81,7 +81,7 @@ export const Beat: React.FC<BeatProps> = ({ from, to, y, text, kind = "serif", s
     <div style={{
       position: "absolute", top: y, left: align === "center" ? 540 - maxWidth / 2 : x ?? 90, width: maxWidth,
       textAlign: align, opacity: 1 - out, transform: `translateY(${-out * 18}px)`,
-      textShadow: "0 0 18px rgba(4,6,11,0.95), 0 0 42px rgba(4,6,11,0.8)",
+      textShadow: "0 0 18px rgba(4,6,11,0.95), 0 0 42px rgba(4,6,11,0.8)", textWrap: "balance",
     }}>
       <div style={base}>
         {words.map((w, i) => {

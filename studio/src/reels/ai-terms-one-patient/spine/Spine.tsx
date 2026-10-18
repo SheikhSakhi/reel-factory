@@ -152,14 +152,15 @@ const dynMap = (f: number, b: Buf) => {
   const overlap = smooth((f - bs("B34")) / 15);
   for (const [from, to, id] of MAP_RINGS) {
     const on = smooth((f - bs(id) + 4) / 14);
-    const k = 0.25 + 0.75 * Math.max(on, overlap);
+    // generative AI is introduced at B33: its circle stays dark until then
+    const k = id === "B33" ? on : 0.25 + 0.75 * Math.max(on, overlap);
     for (let i = from; i < to; i++) { b.col[i * 3] *= k; b.col[i * 3 + 1] *= k; b.col[i * 3 + 2] *= k; }
   }
 };
 
 /** Serial cursor first, then coordinated parallel waves across all cores. */
 const dynGpu = (f: number, b: Buf) => {
-  const serialFrom = at("B37", "calculations") - 6, parallelFrom = at("B37", "parallel");
+  const serialFrom = at("B37", "calculations") - 6, parallelFrom = at("B37", "parallel") - 6;
   const glowOn = smooth((f - at("B37", "gpus")) / 30);
   const n = GPU.n;
   for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) {
@@ -188,7 +189,7 @@ const dynGpu = (f: number, b: Buf) => {
 const dynOrbit = (f: number, b: Buf) => {
   for (let i = 0; i < N; i++) {
     if (b.scl[i * 3] === 0) continue;
-    const k = 0.7 + 0.3 * Math.sin(f / 14 + i * 0.2);
+    const k = (0.7 + 0.3 * Math.sin(f / 14 + i * 0.2)) * (1 - 0.85 * smooth((f - at("B42", "knowing") + 10) / 20));
     b.col[i * 3] *= k; b.col[i * 3 + 1] *= k; b.col[i * 3 + 2] *= k;
   }
 };

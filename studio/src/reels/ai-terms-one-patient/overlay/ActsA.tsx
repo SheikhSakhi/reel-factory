@@ -5,7 +5,7 @@ import { at, atEnd, be, bs } from "../timing";
 import { smooth, window01, type V3 } from "../lib";
 import { C, monoLabel } from "../style";
 import { ARCHIVE, FEATURED, MODEL, RULES, ST, recordPos } from "../world";
-import { AI_GLYPH_Y } from "../spine/formations";
+import { AI_GLYPH_Y, TIER } from "../spine/formations";
 import { TERMS, termPose } from "../poses";
 import { patientAt } from "../patient";
 import { TRAIN } from "../training";
@@ -23,9 +23,10 @@ export const OpenType: React.FC = () => {
       {TERMS.map((term, i) => {
         const p = termPose(i, frame);
         return (
-          <OnPlane key={term} c={[p.c[0], p.c[1], p.c[2] + 0.05]} w={p.w} h={p.h} rot={p.rot} pxW={1400} opacity={p.o}>
-            <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-              <Serif size={128} style={{ letterSpacing: "-0.03em" }}>{term}</Serif>
+          <OnPlane key={term} c={[p.c[0], p.c[1], p.c[2] + 0.05]} w={p.w} h={p.h} rot={p.rot} pxW={(1400 * p.w) / TIER.w} opacity={p.o}>
+            {/* the term sits in a band at the top of its plane, so nested planes never cover each other's names */}
+            <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: (1400 * TIER.h) / TIER.w, display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <Serif size={i === 0 ? 116 : 104} style={{ letterSpacing: "-0.03em", whiteSpace: "nowrap" }}>{term}</Serif>
             </div>
             <Mono size={34} color={C.cyan} style={{ position: "absolute", left: 44, top: 30 }}>{`0${i + 1}`}</Mono>
           </OnPlane>
@@ -98,13 +99,13 @@ export const ExpertType: React.FC = () => {
         return <NodeLabel key={n.label} x={n.x} y={n.y} w={2.1} text={n.label} color={lit ? C.ink : C.muted} o={net} />;
       })}
       <OnPlane c={S(ST.expert, -1.7, 5.25, 0.02)} w={3.4} h={0.5} pxW={700} opacity={net}>
-        <Mono size={34} color={C.muted} style={{ textAlign: "center", lineHeight: "100px" }}>symptoms</Mono>
+        <Mono size={44} color={C.muted} style={{ textAlign: "center", lineHeight: "100px" }}>symptoms</Mono>
       </OnPlane>
       <OnPlane c={S(ST.expert, 1.7, 5.25, 0.02)} w={3.4} h={0.5} pxW={700} opacity={net}>
-        <Mono size={34} color={C.muted} style={{ textAlign: "center", lineHeight: "100px" }}>findings</Mono>
+        <Mono size={44} color={C.muted} style={{ textAlign: "center", lineHeight: "100px" }}>findings</Mono>
       </OnPlane>
       <OnPlane c={S(ST.expert, 0, -4.95, 0.02)} w={5} h={0.5} pxW={1000} opacity={net * smooth((frame - steps[2]) / 16)}>
-        <Mono size={34} color={C.ink} style={{ textAlign: "center", lineHeight: "100px" }}>suggested possibilities</Mono>
+        <Mono size={44} color={C.ink} style={{ textAlign: "center", lineHeight: "100px" }}>suggested possibilities</Mono>
       </OnPlane>
     </>
   );
@@ -131,13 +132,13 @@ const RecordCard: React.FC<{ k: number }> = ({ k }) => {
   if (pull < 0.01 || !p.visible) return null;
   const row = (i: number, key: string, value: string, color: string = C.ink) => (
     <div style={{ display: "flex", gap: 14, opacity: smooth((frame - reveal[i] - k * 3) / 10), alignItems: "baseline" }}>
-      <span style={{ ...monoLabel(19, C.muted), width: 92 }}>{key}</span>
+      <span style={{ ...monoLabel(22, C.muted), width: 104 }}>{key}</span>
       <span style={{ ...monoLabel(22, color), letterSpacing: "0.04em", textTransform: "none" }}>{value}</span>
     </div>
   );
   return (
     <div style={{
-      position: "absolute", left: Math.min(1000 - 370, Math.max(80, f.side < 0 ? p.x - 380 : p.x + 10)), top: p.y - 64, width: 370, opacity: pull,
+      position: "absolute", left: Math.min(1000 - 430, Math.max(80, f.side < 0 ? p.x - 440 : p.x + 10)), top: p.y - 64, width: 430, opacity: pull,
       padding: "14px 18px", background: "rgba(11,19,34,0.82)", borderLeft: f.side < 0 ? "none" : `2px solid ${C.cyan}`,
       borderRight: f.side < 0 ? `2px solid ${C.cyan}` : "none", display: "flex", flexDirection: "column", gap: 6,
     }}>
@@ -175,7 +176,7 @@ const Comparison: React.FC = () => {
       <div style={{ position: "absolute", left: x - 20, top: top - 40, transform: "translateX(-100%)", ...monoLabel(22, C.muted) }}>returned</div>
       <div style={{ position: "absolute", left: x - 20, top: top + h + 6, transform: "translateX(-100%)", ...monoLabel(22, C.muted) }}>did not return</div>
       <div style={{ position: "absolute", left: x + 64, top: kY - 14, ...monoLabel(24, C.ink) }}>known</div>
-      <div style={{ position: "absolute", left: x + 64, top: pY + (Math.abs(pY - kY) < 34 ? 22 : -14), ...monoLabel(24, C.cyan), opacity: showPred }}>predicted</div>
+      <div style={{ position: "absolute", left: Math.min(x + 64, 1000 - 150), top: pY + (Math.abs(pY - kY) < 34 ? 22 : -14), ...monoLabel(24, C.cyan), opacity: showPred }}>predicted</div>
     </div>
   );
 };

@@ -26,19 +26,23 @@ export const DlType: React.FC = () => {
       <Beat from={at("B17", "no")} to={at("B17", "it’s") + 4} y={250} text="No longer neatly in columns" size={70} />
       <Beat from={at("B17", "millions") - 2} to={be("B17") + 16} y={250} text="Millions of pixels" size={84} sub="subtle patterns that may matter" />
       <Beat from={bs("B18")} to={be("B18") + 14} y={250} text="Deep learning" size={92} sub="neural networks with many layers" />
-      {LAYERS.map((l, k) => {
-        const word = ["simpler", "features", "complex", "finding"][k];
-        const on = window01(frame, Math.min(at("B19", word) - 4, at("B19", "simpler") + k * 16), be("B21") + 6, 12, 20);
-        const above = k % 2 === 0; // alternate above / below so receding labels never stack
-        return (
-          <AtPoint key={l.name} p={S(ST.dl, 0, above ? l.size / 2 + 0.3 : -l.size / 2 - 0.3, l.z)} opacity={on * stackOn} scaleRef={16}>
-            <Mono size={28} color={k === 3 ? C.ink : C.cyan}>{`layer ${k + 1} · ${l.name}`}</Mono>
-          </AtPoint>
-        );
-      })}
-      <Mono size={22} color={C.muted} style={{ position: "absolute", top: 1470, width: 1080, textAlign: "center", opacity: stackOn }}>
-        conceptual illustration · not a real model’s features
-      </Mono>
+      {/* Screen legend for the stack: readable at phone size, highlights the layer being described. */}
+      <div style={{ position: "absolute", left: 90, top: 1238, opacity: stackOn, background: "rgba(4,6,11,0.85)", padding: "12px 18px 2px" }}>
+        {LAYERS.map((l, k) => {
+          const word = ["simpler", "features", "complex", "finding"][k];
+          const lit = frame >= at("B19", word) - 4;
+          return (
+            <Mono key={l.name} size={28} color={lit ? (k === 3 ? C.ink : C.cyan) : C.muted} style={{ marginBottom: 10, opacity: lit ? 1 : 0.55 }}>
+              {`layer ${k + 1} · ${l.name}`}
+            </Mono>
+          );
+        })}
+      </div>
+      <div style={{ position: "absolute", top: 1450, width: 1080, display: "flex", justifyContent: "center", opacity: stackOn }}>
+        <Mono size={26} color={C.ink} style={{ background: "rgba(4,6,11,0.85)", padding: "8px 18px" }}>
+          conceptual illustration · not real model output
+        </Mono>
+      </div>
       <Beat from={at("B19", "simpler") - 4} to={be("B19") + 10} y={250} text="Simpler features → more complex patterns" size={60} />
       <Beat from={bs("B20")} to={be("B20") + 14} y={250} text="Features learned from training examples" size={66} />
       <Beat from={bs("B21")} to={be("B21") + 30} y={250} text="Images, sound, language, other data" size={64} />
@@ -67,7 +71,7 @@ export const DraftDocument: React.FC<{ mode: "gen" | "caution" }> = ({ mode }) =
   const ph = mode === "gen" ? p.h : PAGE.h;
   // Sources sit above the page in two columns (the instruction takes the sixth slot in gen).
   const srcBase: V3 = mode === "gen" ? [ST.gen[0], ST.gen[1] + 5.45, ST.gen[2] + 0.3] : [ST.finale[0], ST.finale[1] + 4.95, ST.finale[2] + 0.4];
-  const slot = (i: number): V3 => S(srcBase, (i % 2 === 0 ? -1.27 : 1.27), -Math.floor(i / 2) * 0.72, 0);
+  const slot = (i: number): V3 => S(srcBase, (i % 2 === 0 ? -1.27 : 1.27), -Math.floor(i / 2) * 0.9, 0);
   const srcPts = SOURCES.map((_, i) => slot(i));
   const media = mode === "gen" ? 1 - smooth((frame - bs("B26") + 4) / 14) * (1 - smooth((frame - be("B26") - 4) / 20)) : 1;
   const sentenceY = (i: number) => 1.75 - i * 0.98;
@@ -109,28 +113,26 @@ export const DraftDocument: React.FC<{ mode: "gen" | "caution" }> = ({ mode }) =
                     background: unsupported ? "transparent" : C.cyan, border: unsupported ? `2px dashed ${C.muted}` : "none", opacity: check,
                   }} />
                 ) : null}
-                {mode === "caution" && unsupported ? (
-                  <div style={{ ...monoLabel(30, C.ink), marginTop: 10, opacity: smooth((frame - at("B41", "sentence") + 4) / 12) }}>not found in record · check</div>
-                ) : null}
+
               </div>
             );
           })}
-          <Mono size={28} color={C.muted} style={{ position: "absolute", bottom: 40, left: 64 }}>{mode === "gen" ? "generated text" : "output"}</Mono>
+          {mode === "gen" ? <Mono size={28} color={C.muted} style={{ position: "absolute", bottom: 40, left: 64 }}>generated text</Mono> : null}
         </div>
       </OnPlane>
       {SOURCES.map((s, i) => (
-        <OnPlane key={s.key} c={srcPts[i]} w={2.4} h={0.62} pxW={460} opacity={content * srcOn(i) * media}>
-          <div style={{ position: "absolute", inset: 0, border: `2px solid ${C.cyan}`, padding: "10px 16px", background: "rgba(4,6,11,0.8)" }}>
-            <div style={monoLabel(22, C.cyan)}>{s.key}</div>
-            <div style={{ ...monoLabel(28, C.ink), textTransform: "none", letterSpacing: "0", marginTop: 4 }}>{s.text}</div>
+        <OnPlane key={s.key} c={srcPts[i]} w={2.4} h={0.82} pxW={400} opacity={content * srcOn(i) * media}>
+          <div style={{ position: "absolute", inset: 0, border: `2px solid ${C.cyan}`, padding: "8px 14px", background: "rgba(4,6,11,0.85)" }}>
+            <div style={monoLabel(26, C.cyan)}>{s.key}</div>
+            <div style={{ ...monoLabel(31, C.ink), textTransform: "none", letterSpacing: "0", marginTop: 2, lineHeight: 1.12 }}>{s.text}</div>
           </div>
         </OnPlane>
       ))}
       {mode === "gen" ? (
-        <OnPlane c={slot(5)} w={2.4} h={0.62} pxW={460} opacity={content * instrOn * media}>
-          <div style={{ position: "absolute", inset: 0, border: `2px dashed ${C.ink}`, padding: "10px 16px", background: "rgba(4,6,11,0.8)" }}>
-            <div style={monoLabel(22, C.ink)}>instruction</div>
-            <div style={{ ...monoLabel(22, C.ink), textTransform: "none", letterSpacing: "0", marginTop: 4 }}>{INSTRUCTION}</div>
+        <OnPlane c={slot(5)} w={2.4} h={0.82} pxW={400} opacity={content * instrOn * media}>
+          <div style={{ position: "absolute", inset: 0, border: `2px dashed ${C.ink}`, padding: "8px 14px", background: "rgba(4,6,11,0.85)" }}>
+            <div style={monoLabel(26, C.ink)}>instruction</div>
+            <div style={{ ...monoLabel(26, C.ink), textTransform: "none", letterSpacing: "0", marginTop: 2, lineHeight: 1.12 }}>{INSTRUCTION}</div>
           </div>
         </OnPlane>
       ) : null}
@@ -143,13 +145,10 @@ export const DraftDocument: React.FC<{ mode: "gen" | "caution" }> = ({ mode }) =
           return <path key={`${si}-${srcIdx}`} d={`M ${a.x} ${a.y + 20} C ${a.x} ${midY}, ${b.x - 60} ${midY}, ${b.x} ${b.y}`} stroke={C.cyan} strokeWidth={2} fill="none" opacity={o} />;
         }))}
       </svg>
-      {mode === "gen" ? (
-        <>
-          <Mono size={26} color={C.cyan} style={{ position: "absolute", left: 0, width: 1080, textAlign: "center", top: project(S(srcBase, 0, 0.62, 0)).y - 16, opacity: content * srcOn(0) * media }}>
-            source · documented information
-          </Mono>
-        </>
-      ) : null}
+      <Mono size={28} color={C.cyan} style={{ position: "absolute", left: 0, width: 1080, textAlign: "center", top: project(S(srcBase, 0, 0.72, 0)).y - 18, opacity: content * srcOn(0) * media, textShadow: "0 0 12px #04060B" }}>
+        {mode === "gen" ? "source · documented information" : "source record"}
+      </Mono>
+      {mode === "caution" ? <CautionCallouts base={base} ph={ph} pw={pw} /> : null}
     </>
   );
 };
@@ -182,8 +181,8 @@ export const GenType: React.FC = () => {
 
 // ------------------------------------------------------------- foundation model
 
-const TASKS = ["summaries", "images", "speech", "risk"] as const;
-const FOUND_KIND = ["draft", "image", "audio", "risk"] as const;
+const TASKS = ["summaries", "images", "speech", "video"] as const;
+const FOUND_KIND = ["draft", "image", "audio", "video"] as const;
 export const FoundType: React.FC = () => {
   const frame = useCurrentFrame();
   const slab = window01(frame, at("B27", "foundation"), at("B29", "connect"), 14, 18);
@@ -207,7 +206,7 @@ export const FoundType: React.FC = () => {
         </React.Fragment>
       ))}
       <AtPoint p={S(ST.found, 0, FOUND_SLAB.y - 1.0, 1.2)} opacity={ghost}>
-        <Mono size={24} color={C.muted}>a separate model for every use?</Mono>
+        <Mono size={30} color={C.ink}>a separate model for every use?</Mono>
       </AtPoint>
       <Beat from={at("B27", "foundation") - 2} to={be("B27") + 10} y={250} text="Foundation model" size={92} sub="trained on vast data · adapted to tasks" />
       <Beat from={at("B28", "we") - 4} to={be("B28") + 24} y={250} text="Start with one foundation" size={80} />
@@ -219,9 +218,9 @@ export const FoundType: React.FC = () => {
 
 const RingLabel: React.FC<{ c: readonly [number, number]; r: number; title: string; sub: string; on: number; dy?: number }> = ({ c, r, title, sub, on, dy = 0.47 }) => (
   <OnPlane c={S(ST.map, c[0], c[1] + r - dy, 0.02)} w={3.8} h={0.66} pxW={1000} opacity={on}>
-    <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", whiteSpace: "nowrap" }}>
+    <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", whiteSpace: "nowrap", textShadow: "0 0 10px #04060B, 0 0 20px #04060B" }}>
       <Mono size={58} color={C.ink} style={{ letterSpacing: "0.04em" }}>{title}</Mono>
-      <Mono size={44} color={C.muted} style={{ textTransform: "none", letterSpacing: "0" }}>{sub}</Mono>
+      <Mono size={50} color={C.muted} style={{ textTransform: "none", letterSpacing: "0" }}>{sub}</Mono>
     </div>
   </OnPlane>
 );
@@ -249,7 +248,7 @@ export const RelateType: React.FC = () => {
   const end = at("B35", "and") + 6;
   const lbl = (id: string) => window01(frame, bs(id) - 2, end + (id === "B33" ? 0 : 0), 14, 20);
   const gen = MAP.gen;
-  const genLabel = project(S(ST.map, 2.0, -3.3, 0));
+  const genLabel = project(S(ST.map, 1.75, -2.95, 0));
   const genEdge = project(S(ST.map, gen.c[0] + 0.25, gen.c[1] - gen.r, 0));
   const lens = smooth((frame - at("B33", "many") + 4) / 16) * (1 - smooth((frame - end) / 20));
   return (
@@ -257,12 +256,12 @@ export const RelateType: React.FC = () => {
       <Beat from={bs("B29")} to={bs("B30") + 4} y={250} text="How the four terms connect" size={74} />
       <RingLabel c={MAP.ai.c} r={MAP.ai.r} title="artificial intelligence" sub="the broad field" on={lbl("B30")} />
       <RingLabel c={MAP.ml.c} r={MAP.ml.r} title="machine learning" sub="learns patterns from data" on={lbl("B31")} />
-      <RingLabel c={MAP.dl.c} r={MAP.dl.r} title="deep learning" sub="many-layered networks" on={lbl("B32")} />
+      <RingLabel c={MAP.dl.c} r={MAP.dl.r} title="deep learning" sub="many-layered networks" on={lbl("B32")} dy={0.55} />
       <Lens on={lens} />
       <svg width={1080} height={1920} style={{ position: "absolute", left: 0, top: 0, opacity: lbl("B33") }}>
         <line x1={genEdge.x} y1={genEdge.y} x2={genLabel.x} y2={genLabel.y - 6} stroke={C.cyan} strokeWidth={2} opacity={0.6} />
       </svg>
-      <div style={{ position: "absolute", left: genLabel.x - 260, top: genLabel.y + 4, width: 520, textAlign: "center", opacity: lbl("B33") }}>
+      <div style={{ position: "absolute", left: Math.min(1000 - 460, genLabel.x - 230), top: genLabel.y + 4, width: 460, textAlign: "center", opacity: lbl("B33"), textShadow: "0 0 12px #04060B" }}>
         <Mono size={32} color={C.cyan}>generative ai</Mono>
         <Mono size={27} color={C.muted} style={{ textTransform: "none", letterSpacing: "0", marginTop: 4 }}>systems that generate content</Mono>
       </div>
@@ -299,10 +298,35 @@ export const ComputeType: React.FC = () => {
 
 // ------------------------------------------------------------- return, caution, end
 
+/** Caution labels in screen space so they stay legible on a phone. */
+const CautionCallouts: React.FC<{ base: V3; ph: number; pw: number }> = ({ base, ph, pw }) => {
+  const frame = useCurrentFrame();
+  const project = useProject();
+  const out = project([base[0] - pw / 2, base[1] - ph / 2 - 0.05, base[2]]);
+  const flag = project([base[0] - pw / 2, base[1] + 1.75 - 3 * 0.98 - 0.35, base[2]]);
+  const on = smooth((frame - at("B41", "sentence") + 4) / 12);
+  return (
+    <>
+      <Mono size={30} color={C.ink} style={{ position: "absolute", left: out.x, top: out.y + 14 }}>output · generated draft</Mono>
+      <div style={{ position: "absolute", left: flag.x, top: flag.y + 8, opacity: on, background: "rgba(4,6,11,0.9)", border: `2px dashed ${C.muted}`, padding: "8px 16px" }}>
+        <Mono size={30} color={C.ink}>not found in record · check</Mono>
+      </div>
+    </>
+  );
+};
+
 const CardContent: React.FC<{ k: number }> = ({ k }) => <TaskIcon kind={FINALE_CARDS[k].key} />;
 
 /** The same task objects reappear in the foundation and the finale. */
-const TaskIcon: React.FC<{ kind: "rules" | "risk" | "image" | "draft" | "audio" }> = ({ kind: key }) => {
+const TaskIcon: React.FC<{ kind: "rules" | "risk" | "image" | "draft" | "audio" | "video" }> = ({ kind: key }) => {
+  if (key === "video") {
+    return (
+      <svg viewBox="0 0 300 300" width="100%" height="100%">
+        {[0, 1, 2].map((i) => <rect key={i} x={50 + i * 22} y={70 + i * 22} width={160} height={110} fill="none" stroke={C.ink} strokeWidth={5} opacity={0.9 - i * 0.25} />)}
+        <path d="M120 105 L165 132 L120 159 Z" fill={C.ink} opacity={0.8} />
+      </svg>
+    );
+  }
   if (key === "audio") {
     return (
       <svg viewBox="0 0 300 300" width="100%" height="100%">
@@ -372,8 +396,9 @@ export const ReturnType: React.FC = () => {
 
 export const CautionType: React.FC = () => {
   const frame = useCurrentFrame();
-  const firstHalf = window01(frame, at("B41", "learning") - 2, at("B41", "and") + 6, 12, 14);
-  const doc = window01(frame, at("B41", "and") - 4, be("B41") + 34, 18, 20);
+  // Sequential, never overlapping: the records panel is gone before the document arrives.
+  const firstHalf = window01(frame, at("B41", "learning") - 2, at("B41", "and") - 2, 12, 12);
+  const doc = window01(frame, at("B41", "and") + 2, be("B41") + 34, 16, 20);
   const qs = ["What did it learn?", "What are we asking it to do?", "Is there evidence it can?"];
   const qWords = ["learned", "asking", "evidence"];
   return (
@@ -393,7 +418,6 @@ export const CautionType: React.FC = () => {
       {doc > 0.01 ? (
         <div style={{ position: "absolute", inset: 0, opacity: doc }}>
           <DraftDocument mode="caution" />
-          <Mono size={24} color={C.cyan} style={{ position: "absolute", top: 262, width: 1080, textAlign: "center" }}>source record</Mono>
         </div>
       ) : null}
       {qs.map((q, i) => (
