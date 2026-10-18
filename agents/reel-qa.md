@@ -16,5 +16,11 @@ In `~/Projects/reel-studio`:
    - **Hook**: frame ~20 already shows a readable hook.
    - **No dead frames**: no blank or near-empty frames, except intentional ones.
 3. Run `npx tsc --noEmit` and grep `Reel.tsx` for `Math.random`, `transition:` and `animation:` in CSS. Any of these is a FAIL.
+4. **Voice-over** (if `public/vo/<slug>/take.json` exists):
+   - Run `npm run audio-check -- <slug>`. Its FAIL (peak above -1 dBFS or clipping) is a FAIL.
+   - Check stills at caption page changes. Captions must match the spoken text, never collide with cards, never leave a lone word on a line, and never split a number phrase.
+   - Check that beats land on their words: visuals appear on the word they illustrate.
+   - Check the frames right after each cut for blank or near-empty frames.
+   - Judge the voice-over text: flag anything telegraphic or robotic.
 
 Write `briefs/<slug>/06-qa.md` and end with exactly one line: `VERDICT: PASS` or `VERDICT: FAIL`. Each FAIL item names the scene, frame, problem, and the specific fix.

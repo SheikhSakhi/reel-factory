@@ -6,8 +6,10 @@
   "scripts": {
     "studio": "remotion studio",
     "sfx": "python3 scripts/sfx.py",
+    "vo": "python3 scripts/vo.py",
     "render": "sh scripts/render.sh",
     "qa": "sh scripts/qa-frames.sh",
+    "audio-check": "node scripts/audio-check.mjs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

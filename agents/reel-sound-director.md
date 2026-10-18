@@ -14,5 +14,12 @@ Rules:
 - Transitions: `whoosh` at 0.4-0.5 volume. Big reveals: `rise` into `thud`. UI appearances: `pop` or `click`. Lists: `tick` per item. Ending: `ding`.
 - Volumes 0.3-0.9. Stacked cues within 3 frames of each other must sum below 1.2.
 - Music: only if the user supplied a track in `public/music/`. Otherwise write "no music". Never download music.
+- **Voice-over** (if `public/vo/<slug>/take.json` exists):
+  - The voice leads. Use the scene ranges and word frames from `take.json`; each word has an absolute `frame` and `endFrame`.
+  - SFX that overlap speech are at most 0.30 volume, and none starts on a stressed word.
+  - Put scene-cut whooshes in the gaps between spoken lines.
+  - Aim for about one cue per 1.5-2s overall.
+  - Avoid `rise`: its sweep sits on the voice band.
+  - Give cues as absolute frames, each with the word it relates to.
 
 Output a table: scene | local frame | sound | volume | reason. Final message: cue count and any music decision.

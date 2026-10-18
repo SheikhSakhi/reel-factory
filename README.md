@@ -44,13 +44,30 @@ Restart Claude Code after installing.
 
 You get `~/Projects/reel-studio/out/<slug>.mp4`. Run `npm run studio` inside `~/Projects/reel-studio` to tweak a reel by hand in the live editor.
 
-Optional voice-over, free and with no key: `pip3 install edge-tts`, then ask for a voice-over in your request.
+## Voice-over (optional, free, no API key)
+
+Ask for it in your request:
+
+```
+/reel-factory 5 ways doctors can use AI agents - 60s, English, with voice-over, CTA "comment AGENT"
+```
+
+What happens:
+1. The scriptwriter writes the voice-over as one conversational script, `briefs/<slug>/vo-take.txt`, with `[S1]`, `[S2]` … scene markers.
+2. `npm run vo -- <slug>` synthesizes it in one take with Microsoft's neural voices through [edge-tts](https://github.com/rany2/edge-tts). One take sounds natural instead of choppy.
+3. The script writes `take.json`, which holds every scene's frame range and every word's timing.
+4. The reel cuts scenes on those ranges, lands animations on spoken words, and shows word-by-word captions (kit `VoiceOver` + `Captions`).
+5. `npm run audio-check -- <slug>` confirms the mix doesn't clip.
+
+To change the wording later, edit `vo-take.txt` and run `npm run vo -- <slug>` again; the reel retimes itself. To try other voices, run `npm run vo -- --samples` and listen to the files in `out/voice-samples/`. If you get a 403 error, update the package with `pip3 install -U edge-tts`.
+
+Note: the script text is sent to Microsoft's TTS service, and edge-tts is an unofficial client.
 
 ## What gets installed
 
 - `~/.claude/skills/reel-factory/`: the orchestrator skill
 - `~/.claude/agents/reel-*.md`: the 6 agents
-- `~/Projects/reel-studio/`: the Remotion project (animation kit, demo reel, sound-effects generator, render and QA scripts). Set `REEL_STUDIO_DIR` to put it somewhere else.
+- `~/Projects/reel-studio/`: the Remotion project (animation kit with voice-over and captions, demo reel, sound-effects generator, voice-over, render, QA and audio-check scripts). Set `REEL_STUDIO_DIR` to put it somewhere else.
 
 ## License
 

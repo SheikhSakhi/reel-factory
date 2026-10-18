@@ -34,6 +34,11 @@ fi
 cd "$STUDIO_DIR"
 npm install --no-audit --no-fund
 python3 scripts/sfx.py
+if python3 -m pip install --user --quiet --upgrade edge-tts >/dev/null 2>&1; then
+  echo "installed edge-tts (free voice-overs)"
+else
+  echo "optional: run 'pip3 install -U edge-tts' to enable voice-overs"
+fi
 npx tsc --noEmit
 
 echo

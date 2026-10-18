@@ -7,7 +7,7 @@ shift
 DIR="out/qa/$ID"
 mkdir -p "$DIR"
 if [ "$#" -eq 0 ]; then
-  TOTAL=$(npx remotion compositions src/index.ts --quiet 2>/dev/null | awk -v id="$ID" '$1==id {print $4}')
+  TOTAL=$(npx remotion compositions src/index.ts 2>/dev/null | awk -v id="$ID" '$1==id {print $4}')
   TOTAL="${TOTAL:-300}"
   set -- $(awk -v n="$TOTAL" 'BEGIN { for (i = 0; i < 6; i++) printf "%d ", int((n - 1) * (i + 0.5) / 6) }')
 fi

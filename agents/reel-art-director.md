@@ -17,5 +17,11 @@ Write `03-style.md` containing:
 - **Motion language**: easing feel (snappy spring / slow ease / mechanical steps), transition types per cut (fade, slide, wipe, flip, clockWipe from @remotion/transitions).
 - **Per-scene visual**: for each scene, the concrete composition. Prefer things built from code: UI cards, counters, chat bubbles, diagrams, kinetic type, grids, charts.
 - **Safe zones**: keep key text inside y 250-1500 px and x 80-940 px on the 1080x1920 frame, clear of Instagram/TikTok UI.
+- **Voice-over** (only if `public/vo/<slug>/take.json` exists):
+  - Use its scene frame ranges, not the script's estimates.
+  - Plan word-timed captions (kit `Captions`) in a band that never collides with cards. The kit default is y 1340-1500.
+  - Say which scenes get captions. Skip a scene whose big headline is already the spoken line.
+  - List phrases to keep on one line (numbers, names).
+  - Long scenes need 2-3 visual beats tied to spoken words (e.g. agent works → human reviews → stat + source), not one static layout.
 
 Final message: the concept name, palette hex codes, and fonts.

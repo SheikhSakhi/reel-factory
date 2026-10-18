@@ -18,6 +18,20 @@ Build:
 3. Append the reel to `src/reels/registry.ts`.
 4. All animation is driven by `useCurrentFrame()`. No CSS transitions or animations, no `Math.random()` (use `random(seed)` from remotion), and no network images unless the user supplied them.
 5. Run `npx tsc --noEmit`, then fix errors until clean.
+**Voice-over** (if `public/vo/<slug>/take.json` exists):
+- Load it with the kit:
+  ```ts
+  import takeJson from "../../../public/vo/<slug>/take.json";
+  const TAKE = loadTake(takeJson);
+  export const <SLUG>_DURATION = TAKE.totalFrames;
+  ```
+- Use plain `<Sequence>` hard cuts at `TAKE.scenes[i].from/to`. TransitionSeries overlap would shift the voice.
+- Derive EVERY beat from `wordFrame(TAKE, "S3", "sixteen")` or `wordEnd(...)`, never from hard-coded numbers. A re-synthesized voice-over then retimes the reel.
+- Those frames are absolute. Inside a scene's `<Sequence from={s.from}>`, `useCurrentFrame()` is local, so compare against `wordFrame(...) - s.from`.
+- Mount `<VoiceOver>`, `<Captions>` and `<SfxTrack>` at the reel root, outside the scene Sequences.
+- Add `<VoiceOver take={TAKE} />` and `<Captions take={TAKE} scenes={[...]} keepTogether={[...]} .../>` per the style brief.
+- No scene may open on an empty frame: titles and cards must be on screen within ~3 frames of each cut.
+- `VO_GAIN` (1.5) makes the voice loud enough for Reels. Check it with `npm run audio-check -- <slug>`. If the peak is above -1 dBFS, lower the voice volume or the loudest SFX.
 6. Run `sh scripts/qa-frames.sh <slug>` and look at every still with Read. Fix overflow, clipping, illegible text and empty frames before handing off.
 
 Final message: the files changed, the duration in seconds, and the paths of the QA stills.

@@ -8,3 +8,7 @@ export { Counter } from "./Counter";
 export { Steps } from "./Steps";
 export { SfxTrack } from "./Sfx";
 export type { SfxCue, SfxName } from "./Sfx";
+export { VoiceOver, VO_GAIN, loadTake, scene, wordFrame, wordEnd, normToken } from "./voiceover";
+export type { VoTake, VoScene, VoWord } from "./voiceover";
+export { Captions } from "./Captions";
+export type { CaptionsProps } from "./Captions";

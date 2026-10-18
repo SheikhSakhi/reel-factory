@@ -19,23 +19,40 @@ cd ~/Projects/reel-studio && [ -d node_modules ] || npm install
 [ -f public/sfx/pop.wav ] || npm run sfx
 ```
 
-Optional voice-over (free, no API key): `pip3 install edge-tts`, then `python3 scripts/vo.py <slug>` reads `briefs/<slug>/vo-lines.json`.
+Voice-over is optional, free and needs no API key: `pip3 install -U edge-tts`. See step 2b.
 
 ## 1. Intake
 
 From the user's message, take: the **idea**, **language** (default: same as the user's message), **length** (default 20-30s), **CTA**, **voice-over** (default none), and any **assets** (logos, screenshots, music placed in `public/`). Make a kebab-case `slug` and create `briefs/<slug>/`. Ask only if the idea itself is missing.
+
+If the user wants a voice-over and hasn't named a voice, run `npm run vo -- --samples` in the studio. Send the 4 MP3s from `out/voice-samples/` and ask which one to use. The default is `en-US-AndrewMultilingualNeural`.
 
 ## 2. Run the team (Agent tool, subagent types below)
 
 | Step | Agent | Output |
 |---|---|---|
 | 1 | `reel-researcher` | `01-research.md` |
-| 2 | `reel-scriptwriter` | `02-script.md` |
+| 2 | `reel-scriptwriter` | `02-script.md` (+ `vo-take.txt` when there is a voice-over) |
+| 2b | voice-over, only if requested: you run `npm run vo -- <slug> [--voice <name>]` | `public/vo/<slug>/take.mp3` + `take.json` |
 | 3 | `reel-art-director` **and** `reel-sound-director` in parallel (one message, two Agent calls) | `03-style.md`, `04-sound.md` |
 | 4 | `reel-animator` | `src/reels/<slug>/Reel.tsx`, QA stills |
 | 5 | `reel-qa` | `06-qa.md` with VERDICT |
 
 Give every agent the slug, the absolute brief folder path, the language, and the user's constraints. Run each step in the foreground and wait for its result before starting the next.
+
+### 2b. Voice-over
+
+`scripts/vo.py` reads `briefs/<slug>/vo-take.txt`. That file is the whole voice-over as one text with `[S1]`, `[S2]` … scene markers. The script synthesizes it in **one pass**, so the intonation flows like a person talking. Never synthesize line by line: that sounds choppy and robotic.
+
+The script writes:
+- `take.mp3`, played from frame 0.
+- `take.json`, with every scene's final frame range and word timings.
+
+The scene ranges in `take.json` override the script's estimates. Pass `take.json` to every later agent.
+
+Before step 3, send `take.mp3` to the user so they can hear it. If the speech runs past the target length, tighten `vo-take.txt` and re-run. Do not speed up the voice beyond about +10%.
+
+Later wording changes: edit `vo-take.txt`, re-run `npm run vo -- <slug>`, then typecheck and QA. A reel that derives its beats from `take.json` retimes itself. If edge-tts fails with a 403, run `pip3 install -U edge-tts`.
 
 If the user wants to approve the script first ("let me see the script"), stop after step 2 and show it.
 
@@ -49,6 +66,8 @@ If the verdict is FAIL, send the fix list back to `reel-animator`, then re-run `
 cd ~/Projects/reel-studio && sh scripts/render.sh <slug>
 ```
 
+With a voice-over, run `npm run audio-check -- <slug>` first. It must PASS: peak at or below -1 dBFS and no clipping.
+
 Send `out/<slug>.mp4` to the user with SendUserFile, along with a 2-line summary: the style concept and the duration. Tell them `npm run studio` opens the live editor for manual tweaks.
 
 ## 5. Publish (only with explicit confirmation)
@@ -58,5 +77,10 @@ Never publish automatically. Show the caption (hook + 1-2 lines + 3-5 hashtags i
 ## Quality bar
 
 - Every reel has a distinct style concept; the art director checks earlier `03-style.md` files.
-- The hook is readable by frame 20. On-screen text is at most 8 words per beat.
+- The hook is readable by frame 20.
+- Without a voice-over, on-screen text is at most 8 words per beat.
+- With a voice-over:
+  - The voice carries the story.
+  - Word-timed captions show what is said.
+  - On-screen text adds what the voice doesn't say: exact figures and sources.
 - Everything is animated from code, so the result is reproducible and editable. No stock AI presenters.
