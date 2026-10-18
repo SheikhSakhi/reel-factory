@@ -22,7 +22,7 @@ export const RULES = {
   inputs: [
     { label: "fever", x: -2.6, y: 4.4 },
     { label: "cough", x: -0.87, y: 4.4 },
-    { label: "low SpO₂", x: 0.87, y: 4.4 },
+    { label: "low SpO2", x: 0.87, y: 4.4 },
     { label: "crackles", x: 2.6, y: 4.4 },
   ],
   gates: [

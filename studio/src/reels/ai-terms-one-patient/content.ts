@@ -9,8 +9,8 @@ export const RECORD_CARDS = [
 /** Documented information the draft is generated from. */
 export const SOURCES = [
   { key: "ADMISSION", text: "shortness of breath" },
-  { key: "TREATMENT", text: "IV antibiotics → oral, day 3" },
-  { key: "OBSERVATIONS", text: "SpO₂ 96% on room air" },
+  { key: "TREATMENT", text: "IV antibiotics, oral from day 3" },
+  { key: "OBSERVATIONS", text: "SpO2 96% on room air" },
   { key: "MEDICATION", text: "oral antibiotics, 5 days" },
   { key: "FOLLOW-UP", text: "GP review in 1 week" },
 ] as const;
