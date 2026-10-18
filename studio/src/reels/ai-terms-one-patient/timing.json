@@ -1,0 +1,3860 @@
+{
+ "slug": "ai-terms-one-patient",
+ "voice": "en-US-AndrewNeural",
+ "rate": "-4%",
+ "placeholder": false,
+ "fps": 30,
+ "durationSeconds": 310.832,
+ "blocks": [
+  {
+   "id": "B01",
+   "act": "open",
+   "text": "Artificial intelligence, machine learning, deep learning, and generative AI—the things people often mix up.",
+   "file": "vo/ai-terms-one-patient/B01.mp3",
+   "start": 0.45,
+   "duration": 7.128,
+   "words": [
+    {
+     "word": "Artificial",
+     "start": 0.567,
+     "end": 1.088
+    },
+    {
+     "word": "intelligence",
+     "start": 1.101,
+     "end": 1.817
+    },
+    {
+     "word": "machine",
+     "start": 1.947,
+     "end": 2.338
+    },
+    {
+     "word": "learning",
+     "start": 2.351,
+     "end": 2.768
+    },
+    {
+     "word": "deep",
+     "start": 3.015,
+     "end": 3.276
+    },
+    {
+     "word": "learning",
+     "start": 3.289,
+     "end": 3.731
+    },
+    {
+     "word": "and",
+     "start": 4.005,
+     "end": 4.07
+    },
+    {
+     "word": "generative",
+     "start": 4.083,
+     "end": 4.552
+    },
+    {
+     "word": "AI",
+     "start": 4.565,
+     "end": 5.02
+    },
+    {
+     "word": "the",
+     "start": 5.359,
+     "end": 5.463
+    },
+    {
+     "word": "things",
+     "start": 5.476,
+     "end": 5.776
+    },
+    {
+     "word": "people",
+     "start": 5.789,
+     "end": 6.192
+    },
+    {
+     "word": "often",
+     "start": 6.309,
+     "end": 6.661
+    },
+    {
+     "word": "mix",
+     "start": 6.674,
+     "end": 6.934
+    },
+    {
+     "word": "up",
+     "start": 6.947,
+     "end": 7.182
+    }
+   ]
+  },
+  {
+   "id": "B02",
+   "act": "open",
+   "text": "Already sounds massive, right? But hold on. It’s easier than you think.",
+   "file": "vo/ai-terms-one-patient/B02.mp3",
+   "start": 7.928,
+   "duration": 4.56,
+   "words": [
+    {
+     "word": "Already",
+     "start": 8.032,
+     "end": 8.306
+    },
+    {
+     "word": "sounds",
+     "start": 8.319,
+     "end": 8.631
+    },
+    {
+     "word": "massive",
+     "start": 8.644,
+     "end": 9.113
+    },
+    {
+     "word": "right",
+     "start": 9.139,
+     "end": 9.399
+    },
+    {
+     "word": "But",
+     "start": 9.842,
+     "end": 9.907
+    },
+    {
+     "word": "hold",
+     "start": 9.92,
+     "end": 10.142
+    },
+    {
+     "word": "on",
+     "start": 10.155,
+     "end": 10.415
+    },
+    {
+     "word": "It’s",
+     "start": 10.845,
+     "end": 10.988
+    },
+    {
+     "word": "easier",
+     "start": 11.04,
+     "end": 11.366
+    },
+    {
+     "word": "than",
+     "start": 11.379,
+     "end": 11.509
+    },
+    {
+     "word": "you",
+     "start": 11.522,
+     "end": 11.613
+    },
+    {
+     "word": "think",
+     "start": 11.626,
+     "end": 12.108
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "act": "open",
+   "text": "They’re all connected. But to understand the difference, let’s follow one patient through a hospital.",
+   "file": "vo/ai-terms-one-patient/B03.mp3",
+   "start": 13.388,
+   "duration": 5.616,
+   "words": [
+    {
+     "word": "They’re",
+     "start": 13.505,
+     "end": 13.622
+    },
+    {
+     "word": "all",
+     "start": 13.635,
+     "end": 13.766
+    },
+    {
+     "word": "connected",
+     "start": 13.779,
+     "end": 14.286
+    },
+    {
+     "word": "But",
+     "start": 14.729,
+     "end": 14.82
+    },
+    {
+     "word": "to",
+     "start": 14.833,
+     "end": 14.937
+    },
+    {
+     "word": "understand",
+     "start": 14.95,
+     "end": 15.51
+    },
+    {
+     "word": "the",
+     "start": 15.523,
+     "end": 15.589
+    },
+    {
+     "word": "difference",
+     "start": 15.602,
+     "end": 16.122
+    },
+    {
+     "word": "let’s",
+     "start": 16.487,
+     "end": 16.669
+    },
+    {
+     "word": "follow",
+     "start": 16.682,
+     "end": 17.021
+    },
+    {
+     "word": "one",
+     "start": 17.034,
+     "end": 17.281
+    },
+    {
+     "word": "patient",
+     "start": 17.294,
+     "end": 17.763
+    },
+    {
+     "word": "through",
+     "start": 17.776,
+     "end": 17.958
+    },
+    {
+     "word": "a",
+     "start": 17.971,
+     "end": 18.01
+    },
+    {
+     "word": "hospital",
+     "start": 18.023,
+     "end": 18.609
+    }
+   ]
+  },
+  {
+   "id": "B04",
+   "act": "ai",
+   "text": "First, artificial intelligence is the broad field. It includes systems that recognize patterns, interpret language, or apply knowledge to solve problems.",
+   "file": "vo/ai-terms-one-patient/B04.mp3",
+   "start": 20.304,
+   "duration": 10.08,
+   "words": [
+    {
+     "word": "First",
+     "start": 20.473,
+     "end": 20.877
+    },
+    {
+     "word": "artificial",
+     "start": 21.085,
+     "end": 21.606
+    },
+    {
+     "word": "intelligence",
+     "start": 21.619,
+     "end": 22.283
+    },
+    {
+     "word": "is",
+     "start": 22.452,
+     "end": 22.544
+    },
+    {
+     "word": "the",
+     "start": 22.557,
+     "end": 22.661
+    },
+    {
+     "word": "broad",
+     "start": 22.674,
+     "end": 23.012
+    },
+    {
+     "word": "field",
+     "start": 23.025,
+     "end": 23.468
+    },
+    {
+     "word": "It",
+     "start": 23.898,
+     "end": 23.989
+    },
+    {
+     "word": "includes",
+     "start": 24.002,
+     "end": 24.445
+    },
+    {
+     "word": "systems",
+     "start": 24.458,
+     "end": 24.926
+    },
+    {
+     "word": "that",
+     "start": 24.939,
+     "end": 25.135
+    },
+    {
+     "word": "recognize",
+     "start": 25.148,
+     "end": 25.682
+    },
+    {
+     "word": "patterns",
+     "start": 25.695,
+     "end": 26.385
+    },
+    {
+     "word": "interpret",
+     "start": 26.58,
+     "end": 27.075
+    },
+    {
+     "word": "language",
+     "start": 27.088,
+     "end": 27.635
+    },
+    {
+     "word": "or",
+     "start": 27.869,
+     "end": 27.999
+    },
+    {
+     "word": "apply",
+     "start": 28.012,
+     "end": 28.377
+    },
+    {
+     "word": "knowledge",
+     "start": 28.39,
+     "end": 28.937
+    },
+    {
+     "word": "to",
+     "start": 28.95,
+     "end": 29.041
+    },
+    {
+     "word": "solve",
+     "start": 29.054,
+     "end": 29.314
+    },
+    {
+     "word": "problems",
+     "start": 29.327,
+     "end": 29.992
+    }
+   ]
+  },
+  {
+   "id": "B05",
+   "act": "expert",
+   "text": "Some AI systems work with knowledge people put into them.",
+   "file": "vo/ai-terms-one-patient/B05.mp3",
+   "start": 31.284,
+   "duration": 3.384,
+   "words": [
+    {
+     "word": "Some",
+     "start": 31.401,
+     "end": 31.623
+    },
+    {
+     "word": "AI",
+     "start": 31.636,
+     "end": 31.961
+    },
+    {
+     "word": "systems",
+     "start": 31.974,
+     "end": 32.482
+    },
+    {
+     "word": "work",
+     "start": 32.495,
+     "end": 32.768
+    },
+    {
+     "word": "with",
+     "start": 32.781,
+     "end": 32.912
+    },
+    {
+     "word": "knowledge",
+     "start": 32.925,
+     "end": 33.354
+    },
+    {
+     "word": "people",
+     "start": 33.367,
+     "end": 33.654
+    },
+    {
+     "word": "put",
+     "start": 33.667,
+     "end": 33.836
+    },
+    {
+     "word": "into",
+     "start": 33.849,
+     "end": 34.044
+    },
+    {
+     "word": "them",
+     "start": 34.057,
+     "end": 34.292
+    }
+   ]
+  },
+  {
+   "id": "B06",
+   "act": "expert",
+   "text": "Imagine a clinical expert system. Medical experts supply rules, and the system applies those rules to our patient’s symptoms and findings to suggest possibilities.",
+   "file": "vo/ai-terms-one-patient/B06.mp3",
+   "start": 35.268,
+   "duration": 10.512,
+   "words": [
+    {
+     "word": "Imagine",
+     "start": 35.372,
+     "end": 35.841
+    },
+    {
+     "word": "a",
+     "start": 35.919,
+     "end": 35.971
+    },
+    {
+     "word": "clinical",
+     "start": 35.984,
+     "end": 36.505
+    },
+    {
+     "word": "expert",
+     "start": 36.518,
+     "end": 36.857
+    },
+    {
+     "word": "system",
+     "start": 36.87,
+     "end": 37.286
+    },
+    {
+     "word": "Medical",
+     "start": 37.716,
+     "end": 38.107
+    },
+    {
+     "word": "experts",
+     "start": 38.12,
+     "end": 38.562
+    },
+    {
+     "word": "supply",
+     "start": 38.575,
+     "end": 39.031
+    },
+    {
+     "word": "rules",
+     "start": 39.044,
+     "end": 39.565
+    },
+    {
+     "word": "and",
+     "start": 39.825,
+     "end": 39.929
+    },
+    {
+     "word": "the",
+     "start": 39.943,
+     "end": 40.021
+    },
+    {
+     "word": "system",
+     "start": 40.034,
+     "end": 40.437
+    },
+    {
+     "word": "applies",
+     "start": 40.45,
+     "end": 40.945
+    },
+    {
+     "word": "those",
+     "start": 40.958,
+     "end": 41.206
+    },
+    {
+     "word": "rules",
+     "start": 41.219,
+     "end": 41.557
+    },
+    {
+     "word": "to",
+     "start": 41.57,
+     "end": 41.713
+    },
+    {
+     "word": "our",
+     "start": 41.726,
+     "end": 41.844
+    },
+    {
+     "word": "patient’s",
+     "start": 41.857,
+     "end": 42.39
+    },
+    {
+     "word": "symptoms",
+     "start": 42.403,
+     "end": 42.989
+    },
+    {
+     "word": "and",
+     "start": 43.002,
+     "end": 43.185
+    },
+    {
+     "word": "findings",
+     "start": 43.198,
+     "end": 43.81
+    },
+    {
+     "word": "to",
+     "start": 43.823,
+     "end": 43.927
+    },
+    {
+     "word": "suggest",
+     "start": 43.94,
+     "end": 44.474
+    },
+    {
+     "word": "possibilities",
+     "start": 44.487,
+     "end": 45.398
+    }
+   ]
+  },
+  {
+   "id": "B07",
+   "act": "expert",
+   "text": "The system can use medical knowledge without learning it from patient records.",
+   "file": "vo/ai-terms-one-patient/B07.mp3",
+   "start": 46.68,
+   "duration": 4.368,
+   "words": [
+    {
+     "word": "The",
+     "start": 46.797,
+     "end": 46.849
+    },
+    {
+     "word": "system",
+     "start": 46.862,
+     "end": 47.305
+    },
+    {
+     "word": "can",
+     "start": 47.318,
+     "end": 47.513
+    },
+    {
+     "word": "use",
+     "start": 47.526,
+     "end": 47.735
+    },
+    {
+     "word": "medical",
+     "start": 47.748,
+     "end": 48.164
+    },
+    {
+     "word": "knowledge",
+     "start": 48.177,
+     "end": 48.594
+    },
+    {
+     "word": "without",
+     "start": 48.607,
+     "end": 49.076
+    },
+    {
+     "word": "learning",
+     "start": 49.089,
+     "end": 49.414
+    },
+    {
+     "word": "it",
+     "start": 49.427,
+     "end": 49.519
+    },
+    {
+     "word": "from",
+     "start": 49.532,
+     "end": 49.688
+    },
+    {
+     "word": "patient",
+     "start": 49.701,
+     "end": 50.117
+    },
+    {
+     "word": "records",
+     "start": 50.131,
+     "end": 50.664
+    }
+   ]
+  },
+  {
+   "id": "B08",
+   "act": "toml",
+   "text": "But what if the patterns we need are too complicated to write down as rules?",
+   "file": "vo/ai-terms-one-patient/B08.mp3",
+   "start": 52.248,
+   "duration": 4.512,
+   "words": [
+    {
+     "word": "But",
+     "start": 52.352,
+     "end": 52.417
+    },
+    {
+     "word": "what",
+     "start": 52.43,
+     "end": 52.56
+    },
+    {
+     "word": "if",
+     "start": 52.574,
+     "end": 52.652
+    },
+    {
+     "word": "the",
+     "start": 52.665,
+     "end": 52.756
+    },
+    {
+     "word": "patterns",
+     "start": 52.769,
+     "end": 53.264
+    },
+    {
+     "word": "we",
+     "start": 53.277,
+     "end": 53.394
+    },
+    {
+     "word": "need",
+     "start": 53.407,
+     "end": 53.771
+    },
+    {
+     "word": "are",
+     "start": 53.85,
+     "end": 53.967
+    },
+    {
+     "word": "too",
+     "start": 53.98,
+     "end": 54.305
+    },
+    {
+     "word": "complicated",
+     "start": 54.318,
+     "end": 55.074
+    },
+    {
+     "word": "to",
+     "start": 55.087,
+     "end": 55.204
+    },
+    {
+     "word": "write",
+     "start": 55.217,
+     "end": 55.464
+    },
+    {
+     "word": "down",
+     "start": 55.477,
+     "end": 55.725
+    },
+    {
+     "word": "as",
+     "start": 55.738,
+     "end": 55.855
+    },
+    {
+     "word": "rules",
+     "start": 55.868,
+     "end": 56.376
+    }
+   ]
+  },
+  {
+   "id": "B09",
+   "act": "ml",
+   "text": "Suppose we want to estimate whether our patient will return to hospital after discharge.",
+   "file": "vo/ai-terms-one-patient/B09.mp3",
+   "start": 58.36,
+   "duration": 5.04,
+   "words": [
+    {
+     "word": "Suppose",
+     "start": 58.477,
+     "end": 58.881
+    },
+    {
+     "word": "we",
+     "start": 58.894,
+     "end": 59.011
+    },
+    {
+     "word": "want",
+     "start": 59.024,
+     "end": 59.18
+    },
+    {
+     "word": "to",
+     "start": 59.193,
+     "end": 59.245
+    },
+    {
+     "word": "estimate",
+     "start": 59.258,
+     "end": 59.844
+    },
+    {
+     "word": "whether",
+     "start": 59.857,
+     "end": 60.17
+    },
+    {
+     "word": "our",
+     "start": 60.183,
+     "end": 60.287
+    },
+    {
+     "word": "patient",
+     "start": 60.3,
+     "end": 60.769
+    },
+    {
+     "word": "will",
+     "start": 60.782,
+     "end": 60.912
+    },
+    {
+     "word": "return",
+     "start": 60.925,
+     "end": 61.355
+    },
+    {
+     "word": "to",
+     "start": 61.368,
+     "end": 61.446
+    },
+    {
+     "word": "hospital",
+     "start": 61.459,
+     "end": 62.084
+    },
+    {
+     "word": "after",
+     "start": 62.097,
+     "end": 62.344
+    },
+    {
+     "word": "discharge",
+     "start": 62.357,
+     "end": 63.008
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "act": "ml",
+   "text": "We have thousands of previous admissions: diagnoses, lab results, patient histories—and we know which patients came back.",
+   "file": "vo/ai-terms-one-patient/B10.mp3",
+   "start": 64.0,
+   "duration": 8.256,
+   "words": [
+    {
+     "word": "We",
+     "start": 64.117,
+     "end": 64.234
+    },
+    {
+     "word": "have",
+     "start": 64.247,
+     "end": 64.456
+    },
+    {
+     "word": "thousands",
+     "start": 64.469,
+     "end": 65.068
+    },
+    {
+     "word": "of",
+     "start": 65.081,
+     "end": 65.172
+    },
+    {
+     "word": "previous",
+     "start": 65.185,
+     "end": 65.706
+    },
+    {
+     "word": "admissions",
+     "start": 65.719,
+     "end": 66.396
+    },
+    {
+     "word": "diagnoses",
+     "start": 66.643,
+     "end": 67.477
+    },
+    {
+     "word": "lab",
+     "start": 67.698,
+     "end": 67.945
+    },
+    {
+     "word": "results",
+     "start": 67.958,
+     "end": 68.583
+    },
+    {
+     "word": "patient",
+     "start": 68.805,
+     "end": 69.182
+    },
+    {
+     "word": "histories",
+     "start": 69.195,
+     "end": 69.82
+    },
+    {
+     "word": "and",
+     "start": 70.068,
+     "end": 70.198
+    },
+    {
+     "word": "we",
+     "start": 70.211,
+     "end": 70.328
+    },
+    {
+     "word": "know",
+     "start": 70.341,
+     "end": 70.576
+    },
+    {
+     "word": "which",
+     "start": 70.589,
+     "end": 70.745
+    },
+    {
+     "word": "patients",
+     "start": 70.758,
+     "end": 71.188
+    },
+    {
+     "word": "came",
+     "start": 71.201,
+     "end": 71.409
+    },
+    {
+     "word": "back",
+     "start": 71.422,
+     "end": 71.865
+    }
+   ]
+  },
+  {
+   "id": "B11",
+   "act": "ml",
+   "text": "Instead of telling the computer exactly how those details should affect the prediction, we use them to train a model.",
+   "file": "vo/ai-terms-one-patient/B11.mp3",
+   "start": 73.056,
+   "duration": 6.984,
+   "words": [
+    {
+     "word": "Instead",
+     "start": 73.16,
+     "end": 73.486
+    },
+    {
+     "word": "of",
+     "start": 73.499,
+     "end": 73.603
+    },
+    {
+     "word": "telling",
+     "start": 73.616,
+     "end": 73.941
+    },
+    {
+     "word": "the",
+     "start": 73.954,
+     "end": 74.046
+    },
+    {
+     "word": "computer",
+     "start": 74.059,
+     "end": 74.632
+    },
+    {
+     "word": "exactly",
+     "start": 74.645,
+     "end": 75.283
+    },
+    {
+     "word": "how",
+     "start": 75.296,
+     "end": 75.478
+    },
+    {
+     "word": "those",
+     "start": 75.491,
+     "end": 75.764
+    },
+    {
+     "word": "details",
+     "start": 75.777,
+     "end": 76.441
+    },
+    {
+     "word": "should",
+     "start": 76.546,
+     "end": 76.728
+    },
+    {
+     "word": "affect",
+     "start": 76.741,
+     "end": 77.079
+    },
+    {
+     "word": "the",
+     "start": 77.092,
+     "end": 77.171
+    },
+    {
+     "word": "prediction",
+     "start": 77.184,
+     "end": 77.704
+    },
+    {
+     "word": "we",
+     "start": 78.147,
+     "end": 78.29
+    },
+    {
+     "word": "use",
+     "start": 78.303,
+     "end": 78.577
+    },
+    {
+     "word": "them",
+     "start": 78.59,
+     "end": 78.811
+    },
+    {
+     "word": "to",
+     "start": 78.824,
+     "end": 78.889
+    },
+    {
+     "word": "train",
+     "start": 78.902,
+     "end": 79.176
+    },
+    {
+     "word": "a",
+     "start": 79.189,
+     "end": 79.215
+    },
+    {
+     "word": "model",
+     "start": 79.228,
+     "end": 79.645
+    }
+   ]
+  },
+  {
+   "id": "B12",
+   "act": "ml",
+   "text": "It makes predictions, compares them with the known outcomes, and adjusts its internal settings to reduce the errors.",
+   "file": "vo/ai-terms-one-patient/B12.mp3",
+   "start": 80.64,
+   "duration": 6.744,
+   "words": [
+    {
+     "word": "It",
+     "start": 80.744,
+     "end": 80.848
+    },
+    {
+     "word": "makes",
+     "start": 80.861,
+     "end": 81.083
+    },
+    {
+     "word": "predictions",
+     "start": 81.096,
+     "end": 81.825
+    },
+    {
+     "word": "compares",
+     "start": 82.033,
+     "end": 82.502
+    },
+    {
+     "word": "them",
+     "start": 82.515,
+     "end": 82.658
+    },
+    {
+     "word": "with",
+     "start": 82.671,
+     "end": 82.801
+    },
+    {
+     "word": "the",
+     "start": 82.815,
+     "end": 82.893
+    },
+    {
+     "word": "known",
+     "start": 82.906,
+     "end": 83.166
+    },
+    {
+     "word": "outcomes",
+     "start": 83.179,
+     "end": 83.83
+    },
+    {
+     "word": "and",
+     "start": 84.038,
+     "end": 84.156
+    },
+    {
+     "word": "adjusts",
+     "start": 84.169,
+     "end": 84.637
+    },
+    {
+     "word": "its",
+     "start": 84.65,
+     "end": 84.794
+    },
+    {
+     "word": "internal",
+     "start": 84.807,
+     "end": 85.314
+    },
+    {
+     "word": "settings",
+     "start": 85.328,
+     "end": 85.731
+    },
+    {
+     "word": "to",
+     "start": 85.744,
+     "end": 85.887
+    },
+    {
+     "word": "reduce",
+     "start": 85.9,
+     "end": 86.343
+    },
+    {
+     "word": "the",
+     "start": 86.356,
+     "end": 86.447
+    },
+    {
+     "word": "errors",
+     "start": 86.46,
+     "end": 86.994
+    }
+   ]
+  },
+  {
+   "id": "B13",
+   "act": "ml",
+   "text": "That is machine learning: learning patterns from examples.",
+   "file": "vo/ai-terms-one-patient/B13.mp3",
+   "start": 88.484,
+   "duration": 3.576,
+   "words": [
+    {
+     "word": "That",
+     "start": 88.601,
+     "end": 88.679
+    },
+    {
+     "word": "is",
+     "start": 88.692,
+     "end": 88.783
+    },
+    {
+     "word": "machine",
+     "start": 88.796,
+     "end": 89.239
+    },
+    {
+     "word": "learning",
+     "start": 89.252,
+     "end": 89.656
+    },
+    {
+     "word": "learning",
+     "start": 90.046,
+     "end": 90.307
+    },
+    {
+     "word": "patterns",
+     "start": 90.32,
+     "end": 90.789
+    },
+    {
+     "word": "from",
+     "start": 90.802,
+     "end": 90.958
+    },
+    {
+     "word": "examples",
+     "start": 90.971,
+     "end": 91.674
+    }
+   ]
+  },
+  {
+   "id": "B14",
+   "act": "infer",
+   "text": "Once trained, the model can apply those patterns to a new patient. Using a trained model is called inference.",
+   "file": "vo/ai-terms-one-patient/B14.mp3",
+   "start": 93.36,
+   "duration": 6.72,
+   "words": [
+    {
+     "word": "Once",
+     "start": 93.464,
+     "end": 93.672
+    },
+    {
+     "word": "trained",
+     "start": 93.686,
+     "end": 94.128
+    },
+    {
+     "word": "the",
+     "start": 94.454,
+     "end": 94.519
+    },
+    {
+     "word": "model",
+     "start": 94.532,
+     "end": 94.844
+    },
+    {
+     "word": "can",
+     "start": 94.857,
+     "end": 95.014
+    },
+    {
+     "word": "apply",
+     "start": 95.027,
+     "end": 95.404
+    },
+    {
+     "word": "those",
+     "start": 95.417,
+     "end": 95.652
+    },
+    {
+     "word": "patterns",
+     "start": 95.665,
+     "end": 96.146
+    },
+    {
+     "word": "to",
+     "start": 96.16,
+     "end": 96.29
+    },
+    {
+     "word": "a",
+     "start": 96.303,
+     "end": 96.342
+    },
+    {
+     "word": "new",
+     "start": 96.355,
+     "end": 96.55
+    },
+    {
+     "word": "patient",
+     "start": 96.563,
+     "end": 97.097
+    },
+    {
+     "word": "Using",
+     "start": 97.527,
+     "end": 97.8
+    },
+    {
+     "word": "a",
+     "start": 97.813,
+     "end": 97.852
+    },
+    {
+     "word": "trained",
+     "start": 97.865,
+     "end": 98.23
+    },
+    {
+     "word": "model",
+     "start": 98.243,
+     "end": 98.607
+    },
+    {
+     "word": "is",
+     "start": 98.725,
+     "end": 98.803
+    },
+    {
+     "word": "called",
+     "start": 98.816,
+     "end": 99.089
+    },
+    {
+     "word": "inference",
+     "start": 99.102,
+     "end": 99.688
+    }
+   ]
+  },
+  {
+   "id": "B15",
+   "act": "infer",
+   "text": "Training is where it learns from the examples. Inference is where we use what it learned.",
+   "file": "vo/ai-terms-one-patient/B15.mp3",
+   "start": 100.88,
+   "duration": 5.376,
+   "words": [
+    {
+     "word": "Training",
+     "start": 100.984,
+     "end": 101.44
+    },
+    {
+     "word": "is",
+     "start": 101.557,
+     "end": 101.661
+    },
+    {
+     "word": "where",
+     "start": 101.674,
+     "end": 101.844
+    },
+    {
+     "word": "it",
+     "start": 101.857,
+     "end": 101.974
+    },
+    {
+     "word": "learns",
+     "start": 101.987,
+     "end": 102.351
+    },
+    {
+     "word": "from",
+     "start": 102.364,
+     "end": 102.521
+    },
+    {
+     "word": "the",
+     "start": 102.534,
+     "end": 102.599
+    },
+    {
+     "word": "examples",
+     "start": 102.612,
+     "end": 103.354
+    },
+    {
+     "word": "Inference",
+     "start": 103.784,
+     "end": 104.265
+    },
+    {
+     "word": "is",
+     "start": 104.383,
+     "end": 104.513
+    },
+    {
+     "word": "where",
+     "start": 104.526,
+     "end": 104.695
+    },
+    {
+     "word": "we",
+     "start": 104.708,
+     "end": 104.864
+    },
+    {
+     "word": "use",
+     "start": 104.877,
+     "end": 105.216
+    },
+    {
+     "word": "what",
+     "start": 105.229,
+     "end": 105.359
+    },
+    {
+     "word": "it",
+     "start": 105.372,
+     "end": 105.476
+    },
+    {
+     "word": "learned",
+     "start": 105.489,
+     "end": 105.88
+    }
+   ]
+  },
+  {
+   "id": "B16",
+   "act": "dl",
+   "text": "Now our patient has a chest X-ray.",
+   "file": "vo/ai-terms-one-patient/B16.mp3",
+   "start": 107.856,
+   "duration": 2.28,
+   "words": [
+    {
+     "word": "Now",
+     "start": 107.96,
+     "end": 108.129
+    },
+    {
+     "word": "our",
+     "start": 108.142,
+     "end": 108.247
+    },
+    {
+     "word": "patient",
+     "start": 108.26,
+     "end": 108.676
+    },
+    {
+     "word": "has",
+     "start": 108.689,
+     "end": 108.833
+    },
+    {
+     "word": "a",
+     "start": 108.846,
+     "end": 108.885
+    },
+    {
+     "word": "chest",
+     "start": 108.898,
+     "end": 109.262
+    },
+    {
+     "word": "X-ray",
+     "start": 109.275,
+     "end": 109.744
+    }
+   ]
+  },
+  {
+   "id": "B17",
+   "act": "dl",
+   "text": "The information is no longer neatly arranged in columns. It’s inside an image: millions of pixels, with subtle patterns that may matter.",
+   "file": "vo/ai-terms-one-patient/B17.mp3",
+   "start": 110.936,
+   "duration": 9.576,
+   "words": [
+    {
+     "word": "The",
+     "start": 111.04,
+     "end": 111.105
+    },
+    {
+     "word": "information",
+     "start": 111.118,
+     "end": 111.821
+    },
+    {
+     "word": "is",
+     "start": 111.9,
+     "end": 112.056
+    },
+    {
+     "word": "no",
+     "start": 112.069,
+     "end": 112.29
+    },
+    {
+     "word": "longer",
+     "start": 112.303,
+     "end": 112.785
+    },
+    {
+     "word": "neatly",
+     "start": 112.798,
+     "end": 113.28
+    },
+    {
+     "word": "arranged",
+     "start": 113.293,
+     "end": 113.762
+    },
+    {
+     "word": "in",
+     "start": 113.775,
+     "end": 113.866
+    },
+    {
+     "word": "columns",
+     "start": 113.879,
+     "end": 114.543
+    },
+    {
+     "word": "It’s",
+     "start": 114.972,
+     "end": 115.116
+    },
+    {
+     "word": "inside",
+     "start": 115.129,
+     "end": 115.689
+    },
+    {
+     "word": "an",
+     "start": 115.702,
+     "end": 115.793
+    },
+    {
+     "word": "image",
+     "start": 115.806,
+     "end": 116.288
+    },
+    {
+     "word": "millions",
+     "start": 116.665,
+     "end": 117.173
+    },
+    {
+     "word": "of",
+     "start": 117.186,
+     "end": 117.29
+    },
+    {
+     "word": "pixels",
+     "start": 117.303,
+     "end": 117.941
+    },
+    {
+     "word": "with",
+     "start": 118.15,
+     "end": 118.332
+    },
+    {
+     "word": "subtle",
+     "start": 118.345,
+     "end": 118.709
+    },
+    {
+     "word": "patterns",
+     "start": 118.722,
+     "end": 119.191
+    },
+    {
+     "word": "that",
+     "start": 119.204,
+     "end": 119.387
+    },
+    {
+     "word": "may",
+     "start": 119.4,
+     "end": 119.595
+    },
+    {
+     "word": "matter",
+     "start": 119.608,
+     "end": 120.129
+    }
+   ]
+  },
+  {
+   "id": "B18",
+   "act": "dl",
+   "text": "Deep learning is a type of machine learning that uses neural networks with many layers.",
+   "file": "vo/ai-terms-one-patient/B18.mp3",
+   "start": 121.512,
+   "duration": 5.256,
+   "words": [
+    {
+     "word": "Deep",
+     "start": 121.616,
+     "end": 121.864
+    },
+    {
+     "word": "learning",
+     "start": 121.877,
+     "end": 122.371
+    },
+    {
+     "word": "is",
+     "start": 122.384,
+     "end": 122.489
+    },
+    {
+     "word": "a",
+     "start": 122.502,
+     "end": 122.554
+    },
+    {
+     "word": "type",
+     "start": 122.567,
+     "end": 122.879
+    },
+    {
+     "word": "of",
+     "start": 122.892,
+     "end": 122.97
+    },
+    {
+     "word": "machine",
+     "start": 122.983,
+     "end": 123.413
+    },
+    {
+     "word": "learning",
+     "start": 123.426,
+     "end": 123.778
+    },
+    {
+     "word": "that",
+     "start": 123.791,
+     "end": 123.934
+    },
+    {
+     "word": "uses",
+     "start": 123.947,
+     "end": 124.338
+    },
+    {
+     "word": "neural",
+     "start": 124.351,
+     "end": 124.689
+    },
+    {
+     "word": "networks",
+     "start": 124.702,
+     "end": 125.249
+    },
+    {
+     "word": "with",
+     "start": 125.379,
+     "end": 125.561
+    },
+    {
+     "word": "many",
+     "start": 125.574,
+     "end": 125.835
+    },
+    {
+     "word": "layers",
+     "start": 125.848,
+     "end": 126.382
+    }
+   ]
+  },
+  {
+   "id": "B19",
+   "act": "dl",
+   "text": "During training, those layers learn useful representations of the image—from simpler visual features to more complex patterns that help identify a finding.",
+   "file": "vo/ai-terms-one-patient/B19.mp3",
+   "start": 127.368,
+   "duration": 10.104,
+   "words": [
+    {
+     "word": "During",
+     "start": 127.485,
+     "end": 127.72
+    },
+    {
+     "word": "training",
+     "start": 127.733,
+     "end": 128.214
+    },
+    {
+     "word": "those",
+     "start": 128.618,
+     "end": 128.839
+    },
+    {
+     "word": "layers",
+     "start": 128.852,
+     "end": 129.256
+    },
+    {
+     "word": "learn",
+     "start": 129.269,
+     "end": 129.569
+    },
+    {
+     "word": "useful",
+     "start": 129.582,
+     "end": 130.154
+    },
+    {
+     "word": "representations",
+     "start": 130.168,
+     "end": 131.092
+    },
+    {
+     "word": "of",
+     "start": 131.105,
+     "end": 131.183
+    },
+    {
+     "word": "the",
+     "start": 131.196,
+     "end": 131.261
+    },
+    {
+     "word": "image",
+     "start": 131.274,
+     "end": 131.782
+    },
+    {
+     "word": "from",
+     "start": 132.069,
+     "end": 132.238
+    },
+    {
+     "word": "simpler",
+     "start": 132.251,
+     "end": 132.707
+    },
+    {
+     "word": "visual",
+     "start": 132.72,
+     "end": 133.136
+    },
+    {
+     "word": "features",
+     "start": 133.149,
+     "end": 133.735
+    },
+    {
+     "word": "to",
+     "start": 133.918,
+     "end": 134.009
+    },
+    {
+     "word": "more",
+     "start": 134.022,
+     "end": 134.295
+    },
+    {
+     "word": "complex",
+     "start": 134.308,
+     "end": 134.907
+    },
+    {
+     "word": "patterns",
+     "start": 134.92,
+     "end": 135.428
+    },
+    {
+     "word": "that",
+     "start": 135.441,
+     "end": 135.584
+    },
+    {
+     "word": "help",
+     "start": 135.597,
+     "end": 135.845
+    },
+    {
+     "word": "identify",
+     "start": 135.858,
+     "end": 136.496
+    },
+    {
+     "word": "a",
+     "start": 136.509,
+     "end": 136.574
+    },
+    {
+     "word": "finding",
+     "start": 136.587,
+     "end": 137.095
+    }
+   ]
+  },
+  {
+   "id": "B20",
+   "act": "dl",
+   "text": "We don’t have to describe every relevant shape by hand. The network learns features from the training examples.",
+   "file": "vo/ai-terms-one-patient/B20.mp3",
+   "start": 138.372,
+   "duration": 6.648,
+   "words": [
+    {
+     "word": "We",
+     "start": 138.476,
+     "end": 138.554
+    },
+    {
+     "word": "don’t",
+     "start": 138.567,
+     "end": 138.75
+    },
+    {
+     "word": "have",
+     "start": 138.763,
+     "end": 138.958
+    },
+    {
+     "word": "to",
+     "start": 138.971,
+     "end": 139.049
+    },
+    {
+     "word": "describe",
+     "start": 139.062,
+     "end": 139.622
+    },
+    {
+     "word": "every",
+     "start": 139.791,
+     "end": 140.091
+    },
+    {
+     "word": "relevant",
+     "start": 140.104,
+     "end": 140.494
+    },
+    {
+     "word": "shape",
+     "start": 140.507,
+     "end": 140.846
+    },
+    {
+     "word": "by",
+     "start": 140.859,
+     "end": 141.015
+    },
+    {
+     "word": "hand",
+     "start": 141.028,
+     "end": 141.445
+    },
+    {
+     "word": "The",
+     "start": 141.888,
+     "end": 141.94
+    },
+    {
+     "word": "network",
+     "start": 141.953,
+     "end": 142.382
+    },
+    {
+     "word": "learns",
+     "start": 142.422,
+     "end": 142.734
+    },
+    {
+     "word": "features",
+     "start": 142.747,
+     "end": 143.255
+    },
+    {
+     "word": "from",
+     "start": 143.268,
+     "end": 143.411
+    },
+    {
+     "word": "the",
+     "start": 143.424,
+     "end": 143.489
+    },
+    {
+     "word": "training",
+     "start": 143.502,
+     "end": 143.906
+    },
+    {
+     "word": "examples",
+     "start": 143.919,
+     "end": 144.622
+    }
+   ]
+  },
+  {
+   "id": "B21",
+   "act": "dl",
+   "text": "That’s why deep learning became so useful for images. It also works with sound, language, and other kinds of data.",
+   "file": "vo/ai-terms-one-patient/B21.mp3",
+   "start": 145.82,
+   "duration": 7.296,
+   "words": [
+    {
+     "word": "That’s",
+     "start": 145.937,
+     "end": 146.08
+    },
+    {
+     "word": "why",
+     "start": 146.093,
+     "end": 146.25
+    },
+    {
+     "word": "deep",
+     "start": 146.263,
+     "end": 146.588
+    },
+    {
+     "word": "learning",
+     "start": 146.601,
+     "end": 146.888
+    },
+    {
+     "word": "became",
+     "start": 146.901,
+     "end": 147.343
+    },
+    {
+     "word": "so",
+     "start": 147.356,
+     "end": 147.552
+    },
+    {
+     "word": "useful",
+     "start": 147.565,
+     "end": 148.007
+    },
+    {
+     "word": "for",
+     "start": 148.021,
+     "end": 148.19
+    },
+    {
+     "word": "images",
+     "start": 148.203,
+     "end": 148.763
+    },
+    {
+     "word": "It",
+     "start": 149.192,
+     "end": 149.271
+    },
+    {
+     "word": "also",
+     "start": 149.284,
+     "end": 149.583
+    },
+    {
+     "word": "works",
+     "start": 149.596,
+     "end": 149.843
+    },
+    {
+     "word": "with",
+     "start": 149.856,
+     "end": 150.013
+    },
+    {
+     "word": "sound",
+     "start": 150.026,
+     "end": 150.521
+    },
+    {
+     "word": "language",
+     "start": 150.846,
+     "end": 151.419
+    },
+    {
+     "word": "and",
+     "start": 151.588,
+     "end": 151.718
+    },
+    {
+     "word": "other",
+     "start": 151.731,
+     "end": 151.953
+    },
+    {
+     "word": "kinds",
+     "start": 151.966,
+     "end": 152.239
+    },
+    {
+     "word": "of",
+     "start": 152.252,
+     "end": 152.343
+    },
+    {
+     "word": "data",
+     "start": 152.356,
+     "end": 152.721
+    }
+   ]
+  },
+  {
+   "id": "B22",
+   "act": "gen",
+   "text": "Now our patient is going home, and we want a draft discharge summary.",
+   "file": "vo/ai-terms-one-patient/B22.mp3",
+   "start": 154.616,
+   "duration": 4.224,
+   "words": [
+    {
+     "word": "Now",
+     "start": 154.72,
+     "end": 154.902
+    },
+    {
+     "word": "our",
+     "start": 154.915,
+     "end": 155.02
+    },
+    {
+     "word": "patient",
+     "start": 155.033,
+     "end": 155.462
+    },
+    {
+     "word": "is",
+     "start": 155.475,
+     "end": 155.58
+    },
+    {
+     "word": "going",
+     "start": 155.593,
+     "end": 155.853
+    },
+    {
+     "word": "home",
+     "start": 155.866,
+     "end": 156.244
+    },
+    {
+     "word": "and",
+     "start": 156.569,
+     "end": 156.634
+    },
+    {
+     "word": "we",
+     "start": 156.647,
+     "end": 156.738
+    },
+    {
+     "word": "want",
+     "start": 156.751,
+     "end": 156.908
+    },
+    {
+     "word": "a",
+     "start": 156.921,
+     "end": 156.96
+    },
+    {
+     "word": "draft",
+     "start": 156.973,
+     "end": 157.455
+    },
+    {
+     "word": "discharge",
+     "start": 157.468,
+     "end": 157.962
+    },
+    {
+     "word": "summary",
+     "start": 157.975,
+     "end": 158.444
+    }
+   ]
+  },
+  {
+   "id": "B23",
+   "act": "gen",
+   "text": "This time, we’re asking the system to create something.",
+   "file": "vo/ai-terms-one-patient/B23.mp3",
+   "start": 159.44,
+   "duration": 3.24,
+   "words": [
+    {
+     "word": "This",
+     "start": 159.557,
+     "end": 159.713
+    },
+    {
+     "word": "time",
+     "start": 159.726,
+     "end": 160.065
+    },
+    {
+     "word": "we’re",
+     "start": 160.391,
+     "end": 160.534
+    },
+    {
+     "word": "asking",
+     "start": 160.547,
+     "end": 160.924
+    },
+    {
+     "word": "the",
+     "start": 160.937,
+     "end": 161.029
+    },
+    {
+     "word": "system",
+     "start": 161.042,
+     "end": 161.432
+    },
+    {
+     "word": "to",
+     "start": 161.445,
+     "end": 161.536
+    },
+    {
+     "word": "create",
+     "start": 161.549,
+     "end": 161.862
+    },
+    {
+     "word": "something",
+     "start": 161.875,
+     "end": 162.292
+    }
+   ]
+  },
+  {
+   "id": "B24",
+   "act": "gen",
+   "text": "That brings us to generative AI.",
+   "file": "vo/ai-terms-one-patient/B24.mp3",
+   "start": 163.18,
+   "duration": 2.04,
+   "words": [
+    {
+     "word": "That",
+     "start": 163.284,
+     "end": 163.414
+    },
+    {
+     "word": "brings",
+     "start": 163.427,
+     "end": 163.675
+    },
+    {
+     "word": "us",
+     "start": 163.688,
+     "end": 163.818
+    },
+    {
+     "word": "to",
+     "start": 163.831,
+     "end": 163.935
+    },
+    {
+     "word": "generative",
+     "start": 163.948,
+     "end": 164.43
+    },
+    {
+     "word": "AI",
+     "start": 164.443,
+     "end": 164.834
+    }
+   ]
+  },
+  {
+   "id": "B25",
+   "act": "gen",
+   "text": "A model trained on large amounts of text learns patterns in language. Given the patient’s documented information and an instruction, it can generate a draft summary.",
+   "file": "vo/ai-terms-one-patient/B25.mp3",
+   "start": 166.12,
+   "duration": 10.368,
+   "words": [
+    {
+     "word": "A",
+     "start": 166.198,
+     "end": 166.25
+    },
+    {
+     "word": "model",
+     "start": 166.263,
+     "end": 166.615
+    },
+    {
+     "word": "trained",
+     "start": 166.628,
+     "end": 167.084
+    },
+    {
+     "word": "on",
+     "start": 167.097,
+     "end": 167.279
+    },
+    {
+     "word": "large",
+     "start": 167.292,
+     "end": 167.682
+    },
+    {
+     "word": "amounts",
+     "start": 167.696,
+     "end": 168.047
+    },
+    {
+     "word": "of",
+     "start": 168.06,
+     "end": 168.164
+    },
+    {
+     "word": "text",
+     "start": 168.177,
+     "end": 168.607
+    },
+    {
+     "word": "learns",
+     "start": 168.62,
+     "end": 168.92
+    },
+    {
+     "word": "patterns",
+     "start": 168.932,
+     "end": 169.44
+    },
+    {
+     "word": "in",
+     "start": 169.453,
+     "end": 169.557
+    },
+    {
+     "word": "language",
+     "start": 169.571,
+     "end": 170.169
+    },
+    {
+     "word": "Given",
+     "start": 170.599,
+     "end": 170.807
+    },
+    {
+     "word": "the",
+     "start": 170.821,
+     "end": 170.912
+    },
+    {
+     "word": "patient’s",
+     "start": 170.925,
+     "end": 171.459
+    },
+    {
+     "word": "documented",
+     "start": 171.472,
+     "end": 172.123
+    },
+    {
+     "word": "information",
+     "start": 172.136,
+     "end": 172.917
+    },
+    {
+     "word": "and",
+     "start": 173.073,
+     "end": 173.229
+    },
+    {
+     "word": "an",
+     "start": 173.242,
+     "end": 173.334
+    },
+    {
+     "word": "instruction",
+     "start": 173.347,
+     "end": 174.011
+    },
+    {
+     "word": "it",
+     "start": 174.401,
+     "end": 174.466
+    },
+    {
+     "word": "can",
+     "start": 174.479,
+     "end": 174.61
+    },
+    {
+     "word": "generate",
+     "start": 174.623,
+     "end": 175.078
+    },
+    {
+     "word": "a",
+     "start": 175.13,
+     "end": 175.182
+    },
+    {
+     "word": "draft",
+     "start": 175.196,
+     "end": 175.599
+    },
+    {
+     "word": "summary",
+     "start": 175.612,
+     "end": 176.107
+    }
+   ]
+  },
+  {
+   "id": "B26",
+   "act": "gen",
+   "text": "Large language models are one example. Other generative models create images, audio, or video.",
+   "file": "vo/ai-terms-one-patient/B26.mp3",
+   "start": 177.388,
+   "duration": 6.744,
+   "words": [
+    {
+     "word": "Large",
+     "start": 177.492,
+     "end": 177.779
+    },
+    {
+     "word": "language",
+     "start": 177.792,
+     "end": 178.169
+    },
+    {
+     "word": "models",
+     "start": 178.182,
+     "end": 178.56
+    },
+    {
+     "word": "are",
+     "start": 178.573,
+     "end": 178.742
+    },
+    {
+     "word": "one",
+     "start": 178.755,
+     "end": 178.911
+    },
+    {
+     "word": "example",
+     "start": 178.924,
+     "end": 179.471
+    },
+    {
+     "word": "Other",
+     "start": 179.901,
+     "end": 180.122
+    },
+    {
+     "word": "generative",
+     "start": 180.135,
+     "end": 180.604
+    },
+    {
+     "word": "models",
+     "start": 180.617,
+     "end": 181.008
+    },
+    {
+     "word": "create",
+     "start": 181.021,
+     "end": 181.398
+    },
+    {
+     "word": "images",
+     "start": 181.516,
+     "end": 182.076
+    },
+    {
+     "word": "audio",
+     "start": 182.362,
+     "end": 182.87
+    },
+    {
+     "word": "or",
+     "start": 183.13,
+     "end": 183.234
+    },
+    {
+     "word": "video",
+     "start": 183.247,
+     "end": 183.742
+    }
+   ]
+  },
+  {
+   "id": "B27",
+   "act": "found",
+   "text": "Many of these systems start with a foundation model: a model trained on a vast amount of data that can be adapted to different tasks.",
+   "file": "vo/ai-terms-one-patient/B27.mp3",
+   "start": 185.432,
+   "duration": 7.944,
+   "words": [
+    {
+     "word": "Many",
+     "start": 185.536,
+     "end": 185.797
+    },
+    {
+     "word": "of",
+     "start": 185.81,
+     "end": 185.901
+    },
+    {
+     "word": "these",
+     "start": 185.914,
+     "end": 186.109
+    },
+    {
+     "word": "systems",
+     "start": 186.122,
+     "end": 186.604
+    },
+    {
+     "word": "start",
+     "start": 186.617,
+     "end": 186.981
+    },
+    {
+     "word": "with",
+     "start": 186.994,
+     "end": 187.138
+    },
+    {
+     "word": "a",
+     "start": 187.151,
+     "end": 187.203
+    },
+    {
+     "word": "foundation",
+     "start": 187.216,
+     "end": 187.893
+    },
+    {
+     "word": "model",
+     "start": 187.906,
+     "end": 188.271
+    },
+    {
+     "word": "a",
+     "start": 188.661,
+     "end": 188.687
+    },
+    {
+     "word": "model",
+     "start": 188.7,
+     "end": 189.0
+    },
+    {
+     "word": "trained",
+     "start": 189.013,
+     "end": 189.429
+    },
+    {
+     "word": "on",
+     "start": 189.442,
+     "end": 189.56
+    },
+    {
+     "word": "a",
+     "start": 189.573,
+     "end": 189.612
+    },
+    {
+     "word": "vast",
+     "start": 189.625,
+     "end": 190.093
+    },
+    {
+     "word": "amount",
+     "start": 190.107,
+     "end": 190.341
+    },
+    {
+     "word": "of",
+     "start": 190.354,
+     "end": 190.458
+    },
+    {
+     "word": "data",
+     "start": 190.471,
+     "end": 190.81
+    },
+    {
+     "word": "that",
+     "start": 190.823,
+     "end": 190.966
+    },
+    {
+     "word": "can",
+     "start": 190.979,
+     "end": 191.096
+    },
+    {
+     "word": "be",
+     "start": 191.109,
+     "end": 191.252
+    },
+    {
+     "word": "adapted",
+     "start": 191.265,
+     "end": 191.851
+    },
+    {
+     "word": "to",
+     "start": 191.864,
+     "end": 191.968
+    },
+    {
+     "word": "different",
+     "start": 191.982,
+     "end": 192.32
+    },
+    {
+     "word": "tasks",
+     "start": 192.333,
+     "end": 192.997
+    }
+   ]
+  },
+  {
+   "id": "B28",
+   "act": "found",
+   "text": "Instead of building a completely separate model for every use, we can start with that foundation.",
+   "file": "vo/ai-terms-one-patient/B28.mp3",
+   "start": 193.976,
+   "duration": 5.784,
+   "words": [
+    {
+     "word": "Instead",
+     "start": 194.067,
+     "end": 194.38
+    },
+    {
+     "word": "of",
+     "start": 194.393,
+     "end": 194.497
+    },
+    {
+     "word": "building",
+     "start": 194.51,
+     "end": 194.914
+    },
+    {
+     "word": "a",
+     "start": 194.927,
+     "end": 194.992
+    },
+    {
+     "word": "completely",
+     "start": 195.005,
+     "end": 195.669
+    },
+    {
+     "word": "separate",
+     "start": 195.682,
+     "end": 196.085
+    },
+    {
+     "word": "model",
+     "start": 196.098,
+     "end": 196.437
+    },
+    {
+     "word": "for",
+     "start": 196.45,
+     "end": 196.671
+    },
+    {
+     "word": "every",
+     "start": 196.828,
+     "end": 197.101
+    },
+    {
+     "word": "use",
+     "start": 197.114,
+     "end": 197.544
+    },
+    {
+     "word": "we",
+     "start": 197.817,
+     "end": 197.947
+    },
+    {
+     "word": "can",
+     "start": 197.96,
+     "end": 198.078
+    },
+    {
+     "word": "start",
+     "start": 198.091,
+     "end": 198.39
+    },
+    {
+     "word": "with",
+     "start": 198.403,
+     "end": 198.533
+    },
+    {
+     "word": "that",
+     "start": 198.546,
+     "end": 198.729
+    },
+    {
+     "word": "foundation",
+     "start": 198.742,
+     "end": 199.38
+    }
+   ]
+  },
+  {
+   "id": "B29",
+   "act": "relate",
+   "text": "So here’s how the four terms connect.",
+   "file": "vo/ai-terms-one-patient/B29.mp3",
+   "start": 201.26,
+   "duration": 2.28,
+   "words": [
+    {
+     "word": "So",
+     "start": 201.377,
+     "end": 201.507
+    },
+    {
+     "word": "here’s",
+     "start": 201.52,
+     "end": 201.781
+    },
+    {
+     "word": "how",
+     "start": 201.794,
+     "end": 201.898
+    },
+    {
+     "word": "the",
+     "start": 201.911,
+     "end": 202.002
+    },
+    {
+     "word": "four",
+     "start": 202.015,
+     "end": 202.341
+    },
+    {
+     "word": "terms",
+     "start": 202.354,
+     "end": 202.666
+    },
+    {
+     "word": "connect",
+     "start": 202.679,
+     "end": 203.148
+    }
+   ]
+  },
+  {
+   "id": "B30",
+   "act": "relate",
+   "text": "Artificial intelligence is the broad field.",
+   "file": "vo/ai-terms-one-patient/B30.mp3",
+   "start": 204.44,
+   "duration": 2.928,
+   "words": [
+    {
+     "word": "Artificial",
+     "start": 204.544,
+     "end": 205.078
+    },
+    {
+     "word": "intelligence",
+     "start": 205.091,
+     "end": 205.768
+    },
+    {
+     "word": "is",
+     "start": 205.937,
+     "end": 206.029
+    },
+    {
+     "word": "the",
+     "start": 206.042,
+     "end": 206.146
+    },
+    {
+     "word": "broad",
+     "start": 206.159,
+     "end": 206.51
+    },
+    {
+     "word": "field",
+     "start": 206.523,
+     "end": 206.979
+    }
+   ]
+  },
+  {
+   "id": "B31",
+   "act": "relate",
+   "text": "Machine learning is an approach within AI that learns patterns from data.",
+   "file": "vo/ai-terms-one-patient/B31.mp3",
+   "start": 208.068,
+   "duration": 4.464,
+   "words": [
+    {
+     "word": "Machine",
+     "start": 208.172,
+     "end": 208.524
+    },
+    {
+     "word": "learning",
+     "start": 208.537,
+     "end": 209.006
+    },
+    {
+     "word": "is",
+     "start": 209.019,
+     "end": 209.136
+    },
+    {
+     "word": "an",
+     "start": 209.149,
+     "end": 209.227
+    },
+    {
+     "word": "approach",
+     "start": 209.24,
+     "end": 209.683
+    },
+    {
+     "word": "within",
+     "start": 209.696,
+     "end": 210.073
+    },
+    {
+     "word": "AI",
+     "start": 210.086,
+     "end": 210.516
+    },
+    {
+     "word": "that",
+     "start": 210.529,
+     "end": 210.75
+    },
+    {
+     "word": "learns",
+     "start": 210.763,
+     "end": 211.037
+    },
+    {
+     "word": "patterns",
+     "start": 211.05,
+     "end": 211.532
+    },
+    {
+     "word": "from",
+     "start": 211.545,
+     "end": 211.727
+    },
+    {
+     "word": "data",
+     "start": 211.74,
+     "end": 212.144
+    }
+   ]
+  },
+  {
+   "id": "B32",
+   "act": "relate",
+   "text": "Deep learning is a type of machine learning built with many-layered neural networks.",
+   "file": "vo/ai-terms-one-patient/B32.mp3",
+   "start": 213.232,
+   "duration": 4.848,
+   "words": [
+    {
+     "word": "Deep",
+     "start": 213.336,
+     "end": 213.597
+    },
+    {
+     "word": "learning",
+     "start": 213.61,
+     "end": 214.078
+    },
+    {
+     "word": "is",
+     "start": 214.091,
+     "end": 214.196
+    },
+    {
+     "word": "a",
+     "start": 214.209,
+     "end": 214.261
+    },
+    {
+     "word": "type",
+     "start": 214.274,
+     "end": 214.599
+    },
+    {
+     "word": "of",
+     "start": 214.612,
+     "end": 214.69
+    },
+    {
+     "word": "machine",
+     "start": 214.703,
+     "end": 215.107
+    },
+    {
+     "word": "learning",
+     "start": 215.12,
+     "end": 215.459
+    },
+    {
+     "word": "built",
+     "start": 215.472,
+     "end": 215.81
+    },
+    {
+     "word": "with",
+     "start": 215.823,
+     "end": 215.992
+    },
+    {
+     "word": "many-layered",
+     "start": 216.005,
+     "end": 216.722
+    },
+    {
+     "word": "neural",
+     "start": 216.735,
+     "end": 217.021
+    },
+    {
+     "word": "networks",
+     "start": 217.034,
+     "end": 217.698
+    }
+   ]
+  },
+  {
+   "id": "B33",
+   "act": "relate",
+   "text": "Generative AI describes systems that generate content. Many modern generative systems are built using deep learning.",
+   "file": "vo/ai-terms-one-patient/B33.mp3",
+   "start": 218.78,
+   "duration": 7.272,
+   "words": [
+    {
+     "word": "Generative",
+     "start": 218.884,
+     "end": 219.353
+    },
+    {
+     "word": "AI",
+     "start": 219.366,
+     "end": 219.704
+    },
+    {
+     "word": "describes",
+     "start": 219.718,
+     "end": 220.264
+    },
+    {
+     "word": "systems",
+     "start": 220.277,
+     "end": 220.785
+    },
+    {
+     "word": "that",
+     "start": 220.798,
+     "end": 220.955
+    },
+    {
+     "word": "generate",
+     "start": 220.968,
+     "end": 221.384
+    },
+    {
+     "word": "content",
+     "start": 221.397,
+     "end": 221.97
+    },
+    {
+     "word": "Many",
+     "start": 222.4,
+     "end": 222.621
+    },
+    {
+     "word": "modern",
+     "start": 222.634,
+     "end": 222.986
+    },
+    {
+     "word": "generative",
+     "start": 222.999,
+     "end": 223.428
+    },
+    {
+     "word": "systems",
+     "start": 223.441,
+     "end": 223.923
+    },
+    {
+     "word": "are",
+     "start": 223.936,
+     "end": 224.119
+    },
+    {
+     "word": "built",
+     "start": 224.132,
+     "end": 224.47
+    },
+    {
+     "word": "using",
+     "start": 224.483,
+     "end": 224.913
+    },
+    {
+     "word": "deep",
+     "start": 225.004,
+     "end": 225.264
+    },
+    {
+     "word": "learning",
+     "start": 225.277,
+     "end": 225.668
+    }
+   ]
+  },
+  {
+   "id": "B34",
+   "act": "relate",
+   "text": "These terms overlap. They tell us different things about the same technology.",
+   "file": "vo/ai-terms-one-patient/B34.mp3",
+   "start": 226.952,
+   "duration": 4.728,
+   "words": [
+    {
+     "word": "These",
+     "start": 227.069,
+     "end": 227.291
+    },
+    {
+     "word": "terms",
+     "start": 227.304,
+     "end": 227.655
+    },
+    {
+     "word": "overlap",
+     "start": 227.668,
+     "end": 228.293
+    },
+    {
+     "word": "They",
+     "start": 228.736,
+     "end": 228.801
+    },
+    {
+     "word": "tell",
+     "start": 228.814,
+     "end": 229.022
+    },
+    {
+     "word": "us",
+     "start": 229.035,
+     "end": 229.179
+    },
+    {
+     "word": "different",
+     "start": 229.192,
+     "end": 229.556
+    },
+    {
+     "word": "things",
+     "start": 229.569,
+     "end": 229.96
+    },
+    {
+     "word": "about",
+     "start": 229.973,
+     "end": 230.194
+    },
+    {
+     "word": "the",
+     "start": 230.207,
+     "end": 230.285
+    },
+    {
+     "word": "same",
+     "start": 230.298,
+     "end": 230.572
+    },
+    {
+     "word": "technology",
+     "start": 230.585,
+     "end": 231.301
+    }
+   ]
+  },
+  {
+   "id": "B35",
+   "act": "compute",
+   "text": "And why did its capabilities grow so dramatically?",
+   "file": "vo/ai-terms-one-patient/B35.mp3",
+   "start": 233.28,
+   "duration": 3.072,
+   "words": [
+    {
+     "word": "And",
+     "start": 233.384,
+     "end": 233.462
+    },
+    {
+     "word": "why",
+     "start": 233.475,
+     "end": 233.606
+    },
+    {
+     "word": "did",
+     "start": 233.619,
+     "end": 233.749
+    },
+    {
+     "word": "its",
+     "start": 233.762,
+     "end": 233.866
+    },
+    {
+     "word": "capabilities",
+     "start": 233.879,
+     "end": 234.647
+    },
+    {
+     "word": "grow",
+     "start": 234.66,
+     "end": 234.999
+    },
+    {
+     "word": "so",
+     "start": 235.012,
+     "end": 235.259
+    },
+    {
+     "word": "dramatically",
+     "start": 235.272,
+     "end": 235.975
+    }
+   ]
+  },
+  {
+   "id": "B36",
+   "act": "compute",
+   "text": "Three things came together: much more data, better training algorithms, and the computing power to use them.",
+   "file": "vo/ai-terms-one-patient/B36.mp3",
+   "start": 237.152,
+   "duration": 6.456,
+   "words": [
+    {
+     "word": "Three",
+     "start": 237.308,
+     "end": 237.464
+    },
+    {
+     "word": "things",
+     "start": 237.478,
+     "end": 237.738
+    },
+    {
+     "word": "came",
+     "start": 237.751,
+     "end": 237.972
+    },
+    {
+     "word": "together",
+     "start": 237.985,
+     "end": 238.402
+    },
+    {
+     "word": "much",
+     "start": 238.845,
+     "end": 239.04
+    },
+    {
+     "word": "more",
+     "start": 239.053,
+     "end": 239.235
+    },
+    {
+     "word": "data",
+     "start": 239.248,
+     "end": 239.652
+    },
+    {
+     "word": "better",
+     "start": 239.964,
+     "end": 240.212
+    },
+    {
+     "word": "training",
+     "start": 240.225,
+     "end": 240.589
+    },
+    {
+     "word": "algorithms",
+     "start": 240.603,
+     "end": 241.345
+    },
+    {
+     "word": "and",
+     "start": 241.605,
+     "end": 241.683
+    },
+    {
+     "word": "the",
+     "start": 241.696,
+     "end": 241.774
+    },
+    {
+     "word": "computing",
+     "start": 241.787,
+     "end": 242.269
+    },
+    {
+     "word": "power",
+     "start": 242.282,
+     "end": 242.621
+    },
+    {
+     "word": "to",
+     "start": 242.634,
+     "end": 242.725
+    },
+    {
+     "word": "use",
+     "start": 242.738,
+     "end": 243.011
+    },
+    {
+     "word": "them",
+     "start": 243.024,
+     "end": 243.233
+    }
+   ]
+  },
+  {
+   "id": "B37",
+   "act": "compute",
+   "text": "GPUs are a major part of that story. They can perform many calculations in parallel—the kind of work neural networks need during training and use.",
+   "file": "vo/ai-terms-one-patient/B37.mp3",
+   "start": 244.608,
+   "duration": 9.768,
+   "words": [
+    {
+     "word": "GPUs",
+     "start": 244.725,
+     "end": 245.389
+    },
+    {
+     "word": "are",
+     "start": 245.402,
+     "end": 245.572
+    },
+    {
+     "word": "a",
+     "start": 245.585,
+     "end": 245.624
+    },
+    {
+     "word": "major",
+     "start": 245.637,
+     "end": 246.092
+    },
+    {
+     "word": "part",
+     "start": 246.105,
+     "end": 246.314
+    },
+    {
+     "word": "of",
+     "start": 246.327,
+     "end": 246.392
+    },
+    {
+     "word": "that",
+     "start": 246.405,
+     "end": 246.587
+    },
+    {
+     "word": "story",
+     "start": 246.6,
+     "end": 247.03
+    },
+    {
+     "word": "They",
+     "start": 247.473,
+     "end": 247.551
+    },
+    {
+     "word": "can",
+     "start": 247.564,
+     "end": 247.707
+    },
+    {
+     "word": "perform",
+     "start": 247.72,
+     "end": 248.228
+    },
+    {
+     "word": "many",
+     "start": 248.241,
+     "end": 248.54
+    },
+    {
+     "word": "calculations",
+     "start": 248.553,
+     "end": 249.374
+    },
+    {
+     "word": "in",
+     "start": 249.387,
+     "end": 249.465
+    },
+    {
+     "word": "parallel",
+     "start": 249.478,
+     "end": 250.025
+    },
+    {
+     "word": "the",
+     "start": 250.415,
+     "end": 250.506
+    },
+    {
+     "word": "kind",
+     "start": 250.519,
+     "end": 250.793
+    },
+    {
+     "word": "of",
+     "start": 250.806,
+     "end": 250.897
+    },
+    {
+     "word": "work",
+     "start": 250.91,
+     "end": 251.157
+    },
+    {
+     "word": "neural",
+     "start": 251.17,
+     "end": 251.496
+    },
+    {
+     "word": "networks",
+     "start": 251.509,
+     "end": 252.017
+    },
+    {
+     "word": "need",
+     "start": 252.03,
+     "end": 252.29
+    },
+    {
+     "word": "during",
+     "start": 252.303,
+     "end": 252.551
+    },
+    {
+     "word": "training",
+     "start": 252.564,
+     "end": 253.15
+    },
+    {
+     "word": "and",
+     "start": 253.293,
+     "end": 253.41
+    },
+    {
+     "word": "use",
+     "start": 253.423,
+     "end": 253.983
+    }
+   ]
+  },
+  {
+   "id": "B38",
+   "act": "compute",
+   "text": "That’s the connection between a chip company like NVIDIA and the AI tools arriving in medicine.",
+   "file": "vo/ai-terms-one-patient/B38.mp3",
+   "start": 255.376,
+   "duration": 5.904,
+   "words": [
+    {
+     "word": "That’s",
+     "start": 255.493,
+     "end": 255.662
+    },
+    {
+     "word": "the",
+     "start": 255.675,
+     "end": 255.767
+    },
+    {
+     "word": "connection",
+     "start": 255.78,
+     "end": 256.248
+    },
+    {
+     "word": "between",
+     "start": 256.261,
+     "end": 256.6
+    },
+    {
+     "word": "a",
+     "start": 256.613,
+     "end": 256.665
+    },
+    {
+     "word": "chip",
+     "start": 256.678,
+     "end": 256.965
+    },
+    {
+     "word": "company",
+     "start": 256.978,
+     "end": 257.42
+    },
+    {
+     "word": "like",
+     "start": 257.433,
+     "end": 257.694
+    },
+    {
+     "word": "NVIDIA",
+     "start": 257.707,
+     "end": 258.306
+    },
+    {
+     "word": "and",
+     "start": 258.553,
+     "end": 258.644
+    },
+    {
+     "word": "the",
+     "start": 258.657,
+     "end": 258.787
+    },
+    {
+     "word": "AI",
+     "start": 258.866,
+     "end": 259.269
+    },
+    {
+     "word": "tools",
+     "start": 259.282,
+     "end": 259.699
+    },
+    {
+     "word": "arriving",
+     "start": 259.712,
+     "end": 260.311
+    },
+    {
+     "word": "in",
+     "start": 260.324,
+     "end": 260.402
+    },
+    {
+     "word": "medicine",
+     "start": 260.415,
+     "end": 260.897
+    }
+   ]
+  },
+  {
+   "id": "B39",
+   "act": "return",
+   "text": "For our patient, we’ve gone from applying medical knowledge, to predicting a risk, to analyzing an image, to drafting a document.",
+   "file": "vo/ai-terms-one-patient/B39.mp3",
+   "start": 262.98,
+   "duration": 8.04,
+   "words": [
+    {
+     "word": "For",
+     "start": 263.123,
+     "end": 263.214
+    },
+    {
+     "word": "our",
+     "start": 263.227,
+     "end": 263.332
+    },
+    {
+     "word": "patient",
+     "start": 263.345,
+     "end": 263.852
+    },
+    {
+     "word": "we’ve",
+     "start": 264.191,
+     "end": 264.386
+    },
+    {
+     "word": "gone",
+     "start": 264.399,
+     "end": 264.634
+    },
+    {
+     "word": "from",
+     "start": 264.647,
+     "end": 264.803
+    },
+    {
+     "word": "applying",
+     "start": 264.816,
+     "end": 265.337
+    },
+    {
+     "word": "medical",
+     "start": 265.35,
+     "end": 265.714
+    },
+    {
+     "word": "knowledge",
+     "start": 265.727,
+     "end": 266.3
+    },
+    {
+     "word": "to",
+     "start": 266.496,
+     "end": 266.587
+    },
+    {
+     "word": "predicting",
+     "start": 266.6,
+     "end": 267.095
+    },
+    {
+     "word": "a",
+     "start": 267.108,
+     "end": 267.173
+    },
+    {
+     "word": "risk",
+     "start": 267.186,
+     "end": 267.668
+    },
+    {
+     "word": "to",
+     "start": 267.902,
+     "end": 268.019
+    },
+    {
+     "word": "analyzing",
+     "start": 268.032,
+     "end": 268.644
+    },
+    {
+     "word": "an",
+     "start": 268.657,
+     "end": 268.735
+    },
+    {
+     "word": "image",
+     "start": 268.748,
+     "end": 269.23
+    },
+    {
+     "word": "to",
+     "start": 269.464,
+     "end": 269.556
+    },
+    {
+     "word": "drafting",
+     "start": 269.569,
+     "end": 270.011
+    },
+    {
+     "word": "a",
+     "start": 270.024,
+     "end": 270.063
+    },
+    {
+     "word": "document",
+     "start": 270.076,
+     "end": 270.636
+    }
+   ]
+  },
+  {
+   "id": "B40",
+   "act": "caution",
+   "text": "But every step still needs to be tested for the task it performs.",
+   "file": "vo/ai-terms-one-patient/B40.mp3",
+   "start": 272.22,
+   "duration": 3.888,
+   "words": [
+    {
+     "word": "But",
+     "start": 272.337,
+     "end": 272.441
+    },
+    {
+     "word": "every",
+     "start": 272.454,
+     "end": 272.689
+    },
+    {
+     "word": "step",
+     "start": 272.702,
+     "end": 273.027
+    },
+    {
+     "word": "still",
+     "start": 273.04,
+     "end": 273.392
+    },
+    {
+     "word": "needs",
+     "start": 273.405,
+     "end": 273.626
+    },
+    {
+     "word": "to",
+     "start": 273.639,
+     "end": 273.73
+    },
+    {
+     "word": "be",
+     "start": 273.743,
+     "end": 273.861
+    },
+    {
+     "word": "tested",
+     "start": 273.874,
+     "end": 274.342
+    },
+    {
+     "word": "for",
+     "start": 274.355,
+     "end": 274.473
+    },
+    {
+     "word": "the",
+     "start": 274.486,
+     "end": 274.564
+    },
+    {
+     "word": "task",
+     "start": 274.577,
+     "end": 274.941
+    },
+    {
+     "word": "it",
+     "start": 274.954,
+     "end": 275.032
+    },
+    {
+     "word": "performs",
+     "start": 275.046,
+     "end": 275.723
+    }
+   ]
+  },
+  {
+   "id": "B41",
+   "act": "caution",
+   "text": "Learning from patient records doesn’t automatically mean working well on new patients. And generating a discharge summary doesn’t guarantee that every sentence matches the record.",
+   "file": "vo/ai-terms-one-patient/B41.mp3",
+   "start": 276.808,
+   "duration": 11.256,
+   "words": [
+    {
+     "word": "Learning",
+     "start": 276.912,
+     "end": 277.199
+    },
+    {
+     "word": "from",
+     "start": 277.212,
+     "end": 277.381
+    },
+    {
+     "word": "patient",
+     "start": 277.394,
+     "end": 277.863
+    },
+    {
+     "word": "records",
+     "start": 277.876,
+     "end": 278.384
+    },
+    {
+     "word": "doesn’t",
+     "start": 278.501,
+     "end": 278.826
+    },
+    {
+     "word": "automatically",
+     "start": 278.839,
+     "end": 279.542
+    },
+    {
+     "word": "mean",
+     "start": 279.66,
+     "end": 279.998
+    },
+    {
+     "word": "working",
+     "start": 280.076,
+     "end": 280.48
+    },
+    {
+     "word": "well",
+     "start": 280.493,
+     "end": 280.844
+    },
+    {
+     "word": "on",
+     "start": 280.923,
+     "end": 281.04
+    },
+    {
+     "word": "new",
+     "start": 281.053,
+     "end": 281.209
+    },
+    {
+     "word": "patients",
+     "start": 281.222,
+     "end": 281.925
+    },
+    {
+     "word": "And",
+     "start": 282.355,
+     "end": 282.459
+    },
+    {
+     "word": "generating",
+     "start": 282.472,
+     "end": 282.993
+    },
+    {
+     "word": "a",
+     "start": 283.006,
+     "end": 283.084
+    },
+    {
+     "word": "discharge",
+     "start": 283.097,
+     "end": 283.618
+    },
+    {
+     "word": "summary",
+     "start": 283.631,
+     "end": 284.126
+    },
+    {
+     "word": "doesn’t",
+     "start": 284.217,
+     "end": 284.516
+    },
+    {
+     "word": "guarantee",
+     "start": 284.529,
+     "end": 285.233
+    },
+    {
+     "word": "that",
+     "start": 285.363,
+     "end": 285.558
+    },
+    {
+     "word": "every",
+     "start": 285.701,
+     "end": 286.001
+    },
+    {
+     "word": "sentence",
+     "start": 286.014,
+     "end": 286.6
+    },
+    {
+     "word": "matches",
+     "start": 286.665,
+     "end": 287.134
+    },
+    {
+     "word": "the",
+     "start": 287.147,
+     "end": 287.238
+    },
+    {
+     "word": "record",
+     "start": 287.251,
+     "end": 287.667
+    }
+   ]
+  },
+  {
+   "id": "B42",
+   "act": "caution",
+   "text": "Understanding AI starts here: knowing what the system learned, what we’re asking it to do, and whether there’s evidence it can do that job.",
+   "file": "vo/ai-terms-one-patient/B42.mp3",
+   "start": 289.064,
+   "duration": 8.424,
+   "words": [
+    {
+     "word": "Understanding",
+     "start": 289.168,
+     "end": 289.962
+    },
+    {
+     "word": "AI",
+     "start": 289.975,
+     "end": 290.379
+    },
+    {
+     "word": "starts",
+     "start": 290.392,
+     "end": 290.783
+    },
+    {
+     "word": "here",
+     "start": 290.796,
+     "end": 291.069
+    },
+    {
+     "word": "knowing",
+     "start": 291.59,
+     "end": 291.863
+    },
+    {
+     "word": "what",
+     "start": 291.876,
+     "end": 292.007
+    },
+    {
+     "word": "the",
+     "start": 292.02,
+     "end": 292.111
+    },
+    {
+     "word": "system",
+     "start": 292.124,
+     "end": 292.567
+    },
+    {
+     "word": "learned",
+     "start": 292.58,
+     "end": 292.957
+    },
+    {
+     "word": "what",
+     "start": 293.335,
+     "end": 293.465
+    },
+    {
+     "word": "we’re",
+     "start": 293.478,
+     "end": 293.634
+    },
+    {
+     "word": "asking",
+     "start": 293.647,
+     "end": 294.051
+    },
+    {
+     "word": "it",
+     "start": 294.064,
+     "end": 294.155
+    },
+    {
+     "word": "to",
+     "start": 294.168,
+     "end": 294.259
+    },
+    {
+     "word": "do",
+     "start": 294.272,
+     "end": 294.598
+    },
+    {
+     "word": "and",
+     "start": 294.936,
+     "end": 295.041
+    },
+    {
+     "word": "whether",
+     "start": 295.054,
+     "end": 295.288
+    },
+    {
+     "word": "there’s",
+     "start": 295.301,
+     "end": 295.587
+    },
+    {
+     "word": "evidence",
+     "start": 295.6,
+     "end": 296.004
+    },
+    {
+     "word": "it",
+     "start": 296.017,
+     "end": 296.095
+    },
+    {
+     "word": "can",
+     "start": 296.108,
+     "end": 296.238
+    },
+    {
+     "word": "do",
+     "start": 296.252,
+     "end": 296.473
+    },
+    {
+     "word": "that",
+     "start": 296.486,
+     "end": 296.694
+    },
+    {
+     "word": "job",
+     "start": 296.707,
+     "end": 297.098
+    }
+   ]
+  },
+  {
+   "id": "B43",
+   "act": "end",
+   "text": "Because “AI” is a very broad name.",
+   "file": "vo/ai-terms-one-patient/B43.mp3",
+   "start": 298.988,
+   "duration": 2.976,
+   "words": [
+    {
+     "word": "Because",
+     "start": 299.105,
+     "end": 299.509
+    },
+    {
+     "word": "AI",
+     "start": 299.678,
+     "end": 300.173
+    },
+    {
+     "word": "is",
+     "start": 300.355,
+     "end": 300.498
+    },
+    {
+     "word": "a",
+     "start": 300.511,
+     "end": 300.564
+    },
+    {
+     "word": "very",
+     "start": 300.577,
+     "end": 300.954
+    },
+    {
+     "word": "broad",
+     "start": 300.967,
+     "end": 301.306
+    },
+    {
+     "word": "name",
+     "start": 301.319,
+     "end": 301.579
+    }
+   ]
+  },
+  {
+   "id": "B44",
+   "act": "end",
+   "text": "Our patients need us to be more specific.",
+   "file": "vo/ai-terms-one-patient/B44.mp3",
+   "start": 303.264,
+   "duration": 2.568,
+   "words": [
+    {
+     "word": "Our",
+     "start": 303.368,
+     "end": 303.498
+    },
+    {
+     "word": "patients",
+     "start": 303.511,
+     "end": 303.941
+    },
+    {
+     "word": "need",
+     "start": 303.954,
+     "end": 304.202
+    },
+    {
+     "word": "us",
+     "start": 304.215,
+     "end": 304.371
+    },
+    {
+     "word": "to",
+     "start": 304.384,
+     "end": 304.475
+    },
+    {
+     "word": "be",
+     "start": 304.488,
+     "end": 304.605
+    },
+    {
+     "word": "more",
+     "start": 304.618,
+     "end": 304.787
+    },
+    {
+     "word": "specific",
+     "start": 304.8,
+     "end": 305.451
+    }
+   ]
+  }
+ ]
+}

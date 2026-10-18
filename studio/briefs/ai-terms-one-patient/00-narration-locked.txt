@@ -1,0 +1,43 @@
+Artificial intelligence, machine learning, deep learning, and generative AI—the things people often mix up. Already sounds massive, right? But hold on. It’s easier than you think.
+They’re all connected. But to understand the difference, let’s follow one patient through a hospital.
+First, artificial intelligence is the broad field. It includes systems that recognize patterns, interpret language, or apply knowledge to solve problems.
+Some AI systems work with knowledge people put into them.
+Imagine a clinical expert system. Medical experts supply rules, and the system applies those rules to our patient’s symptoms and findings to suggest possibilities.
+The system can use medical knowledge without learning it from patient records.
+But what if the patterns we need are too complicated to write down as rules?
+Suppose we want to estimate whether our patient will return to hospital after discharge.
+We have thousands of previous admissions: diagnoses, lab results, patient histories—and we know which patients came back.
+Instead of telling the computer exactly how those details should affect the prediction, we use them to train a model.
+It makes predictions, compares them with the known outcomes, and adjusts its internal settings to reduce the errors.
+That is machine learning: learning patterns from examples.
+Once trained, the model can apply those patterns to a new patient. Using a trained model is called inference.
+Training is where it learns from the examples. Inference is where we use what it learned.
+Now our patient has a chest X-ray.
+The information is no longer neatly arranged in columns. It’s inside an image: millions of pixels, with subtle patterns that may matter.
+Deep learning is a type of machine learning that uses neural networks with many layers.
+During training, those layers learn useful representations of the image—from simpler visual features to more complex patterns that help identify a finding.
+We don’t have to describe every relevant shape by hand. The network learns features from the training examples.
+That’s why deep learning became so useful for images. It also works with sound, language, and other kinds of data.
+Now our patient is going home, and we want a draft discharge summary.
+This time, we’re asking the system to create something.
+That brings us to generative AI.
+A model trained on large amounts of text learns patterns in language. Given the patient’s documented information and an instruction, it can generate a draft summary.
+Large language models are one example. Other generative models create images, audio, or video.
+Many of these systems start with a foundation model: a model trained on a vast amount of data that can be adapted to different tasks.
+Instead of building a completely separate model for every use, we can start with that foundation.
+So here’s how the four terms connect.
+Artificial intelligence is the broad field.
+Machine learning is an approach within AI that learns patterns from data.
+Deep learning is a type of machine learning built with many-layered neural networks.
+Generative AI describes systems that generate content. Many modern generative systems are built using deep learning.
+These terms overlap. They tell us different things about the same technology.
+And why did its capabilities grow so dramatically?
+Three things came together: much more data, better training algorithms, and the computing power to use them.
+GPUs are a major part of that story. They can perform many calculations in parallel—the kind of work neural networks need during training and use.
+That’s the connection between a chip company like NVIDIA and the AI tools arriving in medicine.
+For our patient, we’ve gone from applying medical knowledge, to predicting a risk, to analyzing an image, to drafting a document.
+But every step still needs to be tested for the task it performs.
+Learning from patient records doesn’t automatically mean working well on new patients. And generating a discharge summary doesn’t guarantee that every sentence matches the record.
+Understanding AI starts here: knowing what the system learned, what we’re asking it to do, and whether there’s evidence it can do that job.
+Because “AI” is a very broad name.
+Our patients need us to be more specific.
