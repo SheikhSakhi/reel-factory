@@ -406,8 +406,7 @@ export const S12: React.FC<SceneProps> = ({ s }) => {
           <Mono size={26} color={C.cyan} style={{ opacity: ramp(f, brand - 6, 10) }}>команда</Mono>
           <div style={{
             fontFamily: F.display, fontWeight: 900, fontSize: 230, letterSpacing: "0.04em", transform: `scale(${0.6 + 0.4 * logo})`, opacity: Math.min(1, logo * 1.5),
-            background: `linear-gradient(100deg, #ffffff 0%, ${C.cyan} 40%, #ffffff ${55 + 30 * Math.sin(f / 20)}%, ${C.cyan} 100%)`,
-            WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent", filter: `drop-shadow(0 0 40px ${C.cyan}88)`,
+            color: "#F2FEFF", textShadow: `0 0 18px ${C.cyan}, 0 0 ${50 + 20 * Math.sin(f / 10)}px ${C.cyan}aa, 0 0 120px ${C.cyan}66`,
           }}>TREINT</div>
           <div style={{ display: "flex", alignItems: "center", gap: 40, opacity: ramp(f, at("пациента") - 6, 12) }}>
             <Mono size={30} color={C.fg}>научила ИИ помнить</Mono>
