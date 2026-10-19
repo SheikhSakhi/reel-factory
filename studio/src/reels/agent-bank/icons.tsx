@@ -7,32 +7,40 @@ type P = { size?: number; color?: string; style?: React.CSSProperties };
 const glow = (color: string, px = 10): React.CSSProperties => ({ filter: `drop-shadow(0 0 ${px}px ${color}66)` });
 const SW = 1.6; // house stroke width (in a 100-unit viewBox)
 
-/** The agent mark: a luminous core with two tilted orbits and travelling satellites. */
+/**
+ * The agent mark: a dark squircle app-icon with two capsule eyes that blink and glance around.
+ * Original design in the current "AI assistant" visual language (monochrome, soft glow).
+ */
 export const Agent: React.FC<P & { blinkSeed?: number }> = ({ size = 160, color = C.cyan, style, blinkSeed = 0 }) => {
   const f = useCurrentFrame();
-  const a = (f * 2.2 + blinkSeed * 47) * (Math.PI / 180);
-  const pulse = 0.85 + 0.15 * Math.sin(f / 9 + blinkSeed);
-  const sat = (rx: number, ry: number, rot: number, ang: number) => {
-    const x = Math.cos(ang) * rx;
-    const y = Math.sin(ang) * ry;
-    const r = (rot * Math.PI) / 180;
-    return [50 + x * Math.cos(r) - y * Math.sin(r), 50 + x * Math.sin(r) + y * Math.cos(r)] as const;
-  };
-  const [x1, y1] = sat(40, 15, -28, a);
-  const [x2, y2] = sat(40, 15, 28, -a * 1.3 + 2);
-  const id = `core-${blinkSeed}`;
+  const t = f + blinkSeed * 41;
+  const cycle = t % 96;
+  const blink = cycle < 3 ? 1 - cycle / 3 : cycle < 6 ? (cycle - 3) / 3 : 1;
+  const look = Math.sin(t / 34) * 5 + (Math.floor(t / 70) % 3 === 1 ? 3 : 0);
+  const lift = Math.sin(t / 47) * 1.5;
+  const eyeH = 26 * Math.max(0.08, blink);
+  const id = `agent-${blinkSeed}`;
   return (
-    <svg width={size} height={size} viewBox="0 0 100 100" style={{ ...glow(color, 14), ...style }}>
+    <svg width={size} height={size} viewBox="0 0 100 100" style={{ filter: `drop-shadow(0 10px 24px rgba(0,0,0,0.55)) drop-shadow(0 0 18px ${color}33)`, ...style }}>
       <defs>
-        <radialGradient id={id}><stop offset="0" stopColor="#ffffff" /><stop offset="0.45" stopColor={color} /><stop offset="1" stopColor={color} stopOpacity="0" /></radialGradient>
+        <linearGradient id={`${id}-bg`} x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#2a3140" /><stop offset="0.55" stopColor="#11151d" /><stop offset="1" stopColor="#07090d" />
+        </linearGradient>
+        <linearGradient id={`${id}-rim`} x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#ffffff" stopOpacity="0.55" /><stop offset="0.5" stopColor={color} stopOpacity="0.25" /><stop offset="1" stopColor="#ffffff" stopOpacity="0.08" />
+        </linearGradient>
+        <radialGradient id={`${id}-glow`} cx="0.5" cy="0.45" r="0.5">
+          <stop offset="0" stopColor={color} stopOpacity="0.35" /><stop offset="1" stopColor={color} stopOpacity="0" />
+        </radialGradient>
       </defs>
-      <circle cx="50" cy="50" r={24 * pulse} fill={`url(#${id})`} opacity="0.55" />
-      <circle cx="50" cy="50" r="9" fill="#ffffff" />
-      <circle cx="50" cy="50" r="15" fill="none" stroke={color} strokeWidth={SW} opacity="0.8" />
-      <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke={color} strokeWidth={SW * 0.8} opacity="0.55" transform="rotate(-28 50 50)" />
-      <ellipse cx="50" cy="50" rx="40" ry="15" fill="none" stroke={color} strokeWidth={SW * 0.8} opacity="0.55" transform="rotate(28 50 50)" />
-      <circle cx={x1} cy={y1} r="3" fill={color} />
-      <circle cx={x2} cy={y2} r="2.4" fill="#ffffff" />
+      <rect x="6" y="6" width="88" height="88" rx="27" fill={`url(#${id}-bg)`} />
+      <rect x="6" y="6" width="88" height="88" rx="27" fill={`url(#${id}-glow)`} />
+      <rect x="6.5" y="6.5" width="87" height="87" rx="26.5" fill="none" stroke={`url(#${id}-rim)`} strokeWidth="1.2" />
+      <path d="M20 14 H80" stroke="#ffffff" strokeOpacity="0.18" strokeWidth="1" strokeLinecap="round" />
+      {[38, 62].map((cx) => (
+        <rect key={cx} x={cx - 5.5 + look} y={50 - eyeH / 2 + lift} width="11" height={eyeH} rx="5.5" fill="#ffffff"
+          style={{ filter: `drop-shadow(0 0 6px ${color})` }} />
+      ))}
     </svg>
   );
 };

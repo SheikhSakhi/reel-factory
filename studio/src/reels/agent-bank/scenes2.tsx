@@ -109,8 +109,8 @@ const BigNode: React.FC<{ at: number; x: number; label: string; color?: string; 
   <At x={x} y={540}>
     <Pop at={at} from="scale">
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 14 }}>
-        <div style={{ width: 230, height: 230, borderRadius: 115, border: `1px solid ${color}88`, background: `${color}12`, display: "flex", alignItems: "center", justifyContent: "center", boxShadow: `0 0 60px ${color}33` }}>
-          <Agent size={160} color={color} blinkSeed={seed} />
+        <div style={{ width: 230, height: 230, display: "flex", alignItems: "center", justifyContent: "center", background: `radial-gradient(circle, ${color}22, transparent 65%)` }}>
+          <Agent size={190} color={color} blinkSeed={seed} />
         </div>
         <Mono size={26} color={C.fg}>{label}</Mono>
       </div>
