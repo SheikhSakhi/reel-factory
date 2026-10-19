@@ -18,11 +18,11 @@ const Bar: React.FC<{ at: number; height: number; color: string; year: string; v
   return (
     <>
       <div style={{
-        position: "absolute", left: x - 95, width: 190, top: base - height * t, height: height * t, borderRadius: "18px 18px 4px 4px",
-        background: `linear-gradient(180deg, ${color} 0%, ${color}55 70%, ${color}10 100%)`, boxShadow: `0 0 60px ${color}55`,
+        position: "absolute", left: x - 60, width: 120, top: base - height * t, height: height * t, borderRadius: "10px 10px 2px 2px",
+        background: `linear-gradient(180deg, ${color}cc 0%, ${color}33 55%, ${color}05 100%)`, borderTop: `2px solid ${color}`, boxShadow: `0 -10px 50px ${color}33`,
       }} />
       <At x={x} y={base - height * t - 80}>
-        <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 84, color: C.fg, opacity: Math.min(1, t * 2), whiteSpace: "nowrap", textShadow: `0 0 40px ${color}` }}>{value}</div>
+        <div style={{ fontFamily: F.display, fontWeight: 600, fontSize: 76, letterSpacing: "-0.04em", color: C.fg, opacity: Math.min(1, t * 2), whiteSpace: "nowrap", textShadow: `0 0 40px ${color}44` }}>{value}</div>
       </At>
       <At x={x} y={base + 50}><Mono size={34} color={C.fg} style={{ opacity: ramp(f, at - 8, 10) }}>{year}</Mono></At>
     </>
@@ -65,7 +65,8 @@ export const S2: React.FC<SceneProps> = ({ s }) => {
       <At x={W / 2} y={590}>
         <div style={{
           width: r * 2, height: r * 2, borderRadius: "50%", opacity: r > 0.5 ? 1 : 0, transform: f < hit ? `scale(${1 + 0.08 * Math.sin(f / 3)})` : undefined,
-          background: `radial-gradient(circle at 35% 30%, ${C.gold}ee, ${C.gold}55 45%, ${C.gold}10 75%)`, boxShadow: `0 0 120px ${C.gold}88`,
+          background: `radial-gradient(circle at 50% 42%, ${C.gold}44, ${C.gold}10 55%, transparent 72%)`, border: `1px solid ${C.gold}88`,
+          boxShadow: `0 0 90px ${C.gold}33, inset 0 0 80px ${C.gold}22`,
         }} />
       </At>
       <At x={W / 2 - 600} y={590} style={{ opacity: 1 - ramp(f, hit, 10) }}>
@@ -78,11 +79,11 @@ export const S2: React.FC<SceneProps> = ({ s }) => {
       </At>
       <At x={W / 2} y={590}>
         <div style={{
-          fontFamily: F.display, fontWeight: 900, fontSize: 210, color: "#ffffff", letterSpacing: "-0.04em", whiteSpace: "nowrap",
-          transform: `scale(${f < hit ? 0 : 2.2 - 1.2 * springAt(f, hit, 11, 160)})`, opacity: f < hit ? 0 : 1,
-          textShadow: `0 8px 40px rgba(0,0,0,0.65), 0 0 60px ${C.gold}`,
+          fontFamily: F.display, fontWeight: 600, fontSize: 210, color: "#ffffff", whiteSpace: "nowrap",
+          transform: `scale(${1.3 - 0.3 * ramp(f, hit, 20)})`, opacity: ramp(f, hit - 1, 8), filter: f < hit + 14 ? `blur(${(1 - ramp(f, hit, 14)) * 16}px)` : undefined,
+          letterSpacing: "-0.05em", textShadow: `0 8px 40px rgba(0,0,0,0.6), 0 0 50px ${C.gold}66`,
         }}>
-          <span style={{ fontSize: 90, verticalAlign: "middle", marginRight: 20 }}>до</span>$5 трлн
+          <span style={{ fontSize: 80, fontWeight: 300, verticalAlign: "middle", marginRight: 24, color: C.gold }}>до</span>$5 трлн
         </div>
       </At>
       <At x={W / 2} y={360} style={{ opacity: ramp(f, at("через") - 2, 10) * (1 - ramp(f, hit - 4, 6)) }}>
@@ -112,9 +113,9 @@ export const S3: React.FC<SceneProps> = ({ s }) => {
       <Chapter n="02" label="волна уже идёт" />
       <At x={W / 2} y={interpolate(stampUp, [0, 1], [H / 2, 150])}>
         <div style={{
-          transform: `rotate(-5deg) scale(${(f < stamp ? 0 : 2.4 - 1.4 * springAt(f, stamp, 12, 220)) * (1 - 0.45 * stampUp)})`,
-          opacity: f < stamp - 1 ? 0 : 1, border: `8px solid ${C.cyan}`, borderRadius: 24, padding: "18px 50px",
-          fontFamily: F.display, fontWeight: 900, fontSize: 110, color: C.cyan, whiteSpace: "nowrap", boxShadow: `0 0 60px ${C.cyan}55, inset 0 0 40px ${C.cyan}33`,
+          transform: `scale(${(f < stamp ? 1.15 : 1.15 - 0.15 * ramp(f, stamp, 14)) * (1 - 0.45 * stampUp)})`, filter: f < stamp + 10 ? `blur(${(1 - ramp(f, stamp, 10)) * 12}px)` : undefined,
+          opacity: ramp(f, stamp - 1, 8), borderTop: `1px solid ${C.cyan}88`, borderBottom: `1px solid ${C.cyan}88`, padding: "22px 40px",
+          fontFamily: F.display, fontWeight: 500, fontSize: 96, letterSpacing: "0.12em", color: C.fg, whiteSpace: "nowrap", textShadow: `0 0 40px ${C.cyan}66`,
         }}>ЭТО НЕ ПРОГНОЗ</div>
       </At>
       <div style={{ opacity: ramp(f, flow, 12) }}>
@@ -139,10 +140,10 @@ export const S3: React.FC<SceneProps> = ({ s }) => {
           <Pop at={at("сделал")} from="right">
             <Glass style={{ width: 380, padding: "36px 30px", display: "flex", flexDirection: "column", alignItems: "center", gap: 18 }}>
               <Mono size={22}>платёжная сеть</Mono>
-              <div style={{ fontFamily: F.body, fontWeight: 800, fontSize: 40, color: C.fg }}>Mastercard</div>
+              <div style={{ fontFamily: F.body, fontWeight: 600, fontSize: 40, color: C.fg }}>Mastercard</div>
               <div style={{
                 width: 120, height: 120, borderRadius: 60, display: "flex", alignItems: "center", justifyContent: "center",
-                border: `4px solid ${f >= paid ? C.green : C.dim}`, color: C.green, fontSize: 70, fontWeight: 900, fontFamily: F.body,
+                border: `1px solid ${f >= paid ? C.green : C.dim}`, color: C.green, fontSize: 70, fontWeight: 600, fontFamily: F.body,
                 transform: `scale(${f >= paid ? 0.8 + 0.2 * springAt(f, paid, 9, 200) : 0.8})`, boxShadow: f >= paid ? `0 0 50px ${C.green}88` : undefined,
               }}>{f >= paid ? "✓" : ""}</div>
               <Mono size={24} color={f >= paid ? C.green : C.muted}>{f >= paid ? "оплачено агентом" : "ожидание…"}</Mono>
@@ -163,8 +164,8 @@ const WaveCol: React.FC<{ at: number; subAt: number; x: number; icon: React.Reac
     <Pop at={at} dist={80}>
       <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 24, width: 440 }}>
         <div style={{ height: 210, display: "flex", alignItems: "center" }}>{icon}</div>
-        <div style={{ fontFamily: F.display, fontWeight: 800, fontSize: 52, color }}>{title}</div>
-        <Pop at={subAt}><div style={{ fontFamily: F.body, fontWeight: 700, fontSize: 32, color: C.fg, textAlign: "center", lineHeight: 1.2 }}>{sub}</div></Pop>
+        <div style={{ fontFamily: F.display, fontWeight: 600, fontSize: 52, color }}>{title}</div>
+        <Pop at={subAt}><div style={{ fontFamily: F.body, fontWeight: 500, fontSize: 32, color: C.fg, textAlign: "center", lineHeight: 1.2 }}>{sub}</div></Pop>
       </div>
     </Pop>
   </At>
@@ -201,7 +202,7 @@ export const S4: React.FC<SceneProps> = ({ s }) => {
           {[0, 1, 2, 3, 4].map((i) => {
             const t = springAt(f, giants - 6 + i * 3, 14, 120);
             const h = [210, 330, 260, 400, 240][i] * t;
-            return <rect key={i} x={1290 + i * 95} y={780 - h} width={70} height={h} rx={6} fill={`${C.gold}33`} stroke={C.gold} strokeWidth={2.5} style={{ filter: `drop-shadow(0 0 14px ${C.gold})` }} />;
+            return <rect key={i} x={1290 + i * 95} y={780 - h} width={70} height={h} rx={6} fill={`${C.gold}33`} stroke={C.gold} strokeWidth={1.2} style={{ filter: `drop-shadow(0 0 14px ${C.gold})` }} />;
           })}
         </svg>
         <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
@@ -233,9 +234,9 @@ const CoinOrbit: React.FC<{ at: number }> = ({ at }) => {
         return (
           <At key={i} x={W / 2 + Math.cos(a) * rx} y={H / 2 + z * ry}>
             <div style={{
-              width: 70, height: 70, borderRadius: 35, background: `radial-gradient(circle at 35% 30%, #fff3c4, ${C.gold} 45%, #9a6b10)`,
-              boxShadow: `0 0 30px ${C.gold}88`, opacity: t * (0.5 + 0.5 * (z + 1) / 2), transform: `scale(${0.6 + 0.4 * (z + 1) / 2}) rotateY(${f * 6 + i * 30}deg)`,
-              display: "flex", alignItems: "center", justifyContent: "center", fontFamily: F.display, fontWeight: 900, color: "#6b4a00", fontSize: 34,
+              width: 64, height: 64, borderRadius: 32, border: `1px solid ${C.gold}`, background: `radial-gradient(circle, ${C.gold}22, transparent 70%)`,
+              boxShadow: `0 0 24px ${C.gold}44`, opacity: t * (0.5 + 0.5 * (z + 1) / 2), transform: `scale(${0.6 + 0.4 * (z + 1) / 2}) rotateY(${f * 6 + i * 30}deg)`,
+              display: "flex", alignItems: "center", justifyContent: "center", fontFamily: F.mono, fontWeight: 500, color: C.gold, fontSize: 26,
             }}>$</div>
           </At>
         );
@@ -271,7 +272,7 @@ export const S5: React.FC<SceneProps> = ({ s }) => {
           <Glass style={{ padding: "26px 40px", display: "flex", alignItems: "center", gap: 30 }}>
             <Mono size={24}>заказ агента</Mono>
             <Ticket size={110} color={count > 4 ? C.red : C.gold} />
-            <div style={{ fontFamily: F.display, fontWeight: 900, fontSize: 100, color: count > 4 ? C.red : C.fg, textShadow: count > 4 ? `0 0 40px ${C.red}` : undefined }}>×{count}</div>
+            <div style={{ fontFamily: F.display, fontWeight: 600, fontSize: 100, color: count > 4 ? C.red : C.fg, textShadow: count > 4 ? `0 0 40px ${C.red}` : undefined }}>×{count}</div>
           </Glass>
         </At>
         {Array.from({ length: 26 }, (_, i) => {
@@ -286,19 +287,19 @@ export const S5: React.FC<SceneProps> = ({ s }) => {
       {/* phishing page */}
       <At x={1270} y={600} style={{ opacity: ramp(f, scam, 10) }}>
         <div style={{ transform: `translate(${glitch * Math.sin(f * 9) * 22}px, 0) skewX(${glitch * Math.sin(f * 5) * 6}deg)`, filter: glitch ? `drop-shadow(8px 0 0 ${C.red}) drop-shadow(-8px 0 0 ${C.cyan})` : undefined }}>
-          <Glass glow={C.red} style={{ width: 720, overflow: "hidden", border: `2px solid ${C.red}66` }}>
+          <Glass glow={C.red} style={{ width: 720, overflow: "hidden", border: `1px solid ${C.red}66` }}>
             <div style={{ display: "flex", gap: 10, padding: "16px 20px", background: "rgba(255,255,255,0.05)", alignItems: "center" }}>
               {[C.red, C.gold, C.green].map((c) => <div key={c} style={{ width: 14, height: 14, borderRadius: 7, background: c }} />)}
               <div style={{ marginLeft: 16, flex: 1, borderRadius: 10, background: "rgba(0,0,0,0.4)", padding: "8px 16px", fontFamily: F.mono, fontSize: 22, color: C.red }}>secure-pay-0nline.biz/checkout</div>
             </div>
             <div style={{ padding: "34px 36px", display: "flex", flexDirection: "column", gap: 18 }}>
-              <div style={{ fontFamily: F.body, fontWeight: 800, fontSize: 36, color: C.fg }}>Подтвердите оплату картой</div>
+              <div style={{ fontFamily: F.body, fontWeight: 600, fontSize: 36, color: C.fg }}>Подтвердите оплату картой</div>
               <div style={{ height: 50, borderRadius: 12, background: "rgba(255,255,255,0.06)" }} />
               <div style={{ height: 50, borderRadius: 12, background: "rgba(255,255,255,0.06)" }} />
               <div style={{
-                alignSelf: "flex-start", fontFamily: F.display, fontWeight: 900, fontSize: 40, color: "#fff", background: C.red, padding: "10px 26px", borderRadius: 12,
+                alignSelf: "flex-start", fontFamily: F.display, fontWeight: 600, fontSize: 40, color: "#fff", background: C.red, padding: "10px 26px", borderRadius: 12,
                 opacity: f >= fraud ? 1 : 0, transform: `scale(${f >= fraud ? springAt(f, fraud, 9, 220) : 0})`, boxShadow: `0 0 50px ${C.red}`,
-              }}>⚠ МОШЕННИКИ</div>
+              }}>МОШЕННИКИ</div>
             </div>
           </Glass>
         </div>

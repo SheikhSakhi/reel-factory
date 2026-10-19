@@ -5,7 +5,7 @@ import { S1, S2, S3, S4, S5, S6 } from "./scenes1";
 import { S7, S8, S9, S10, S11, S12 } from "./scenes2";
 import { C, F, H, W, useReelFonts } from "./style";
 import { captionTake, TAKE } from "./take";
-import { Cues, World, type Cue, type Mood } from "./ui";
+import { Cues, Sweep, World, type Cue, type Mood } from "./ui";
 
 export const AGENT_BANK_DURATION = TAKE.totalFrames;
 export const AGENT_BANK_SIZE = { width: W, height: H } as const;
@@ -151,7 +151,7 @@ const CAPTIONS = captionTake(TAKE);
 const Progress: React.FC = () => {
   const f = useCurrentFrame();
   return (
-    <div style={{ position: "absolute", left: 0, bottom: 0, height: 4, width: `${(f / TAKE.totalFrames) * 100}%`, background: `linear-gradient(90deg, ${C.cyan}, ${C.gold})`, opacity: 0.7 }} />
+    <div style={{ position: "absolute", left: 0, bottom: 0, height: 2, width: `${(f / TAKE.totalFrames) * 100}%`, background: `linear-gradient(90deg, ${C.cyan}, ${C.gold})`, opacity: 0.7 }} />
   );
 };
 
@@ -169,7 +169,8 @@ export const AgentBankReel: React.FC = () => {
           </Sequence>
         );
       })}
-      <Captions take={CAPTIONS} fontFamily={F.body} color={C.fg} accent={C.cyan} fontSize={36} top={950} bottom={1050}
+      {TAKE.scenes.slice(1).map((s) => <Sweep key={`sweep-${s.id}`} at={s.from - 8} />)}
+      <Captions take={CAPTIONS} fontFamily={F.body} color={C.fg} accent={C.cyan} fontSize={32} top={960} bottom={1050}
         centerX={W / 2} maxWidth={1500} maxChars={70} keepTogether={["пяти миллиардов долларов", "пяти триллионов долларов"]} />
       <Progress />
       <VoiceOver take={TAKE} />
