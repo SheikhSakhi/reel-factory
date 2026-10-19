@@ -3,7 +3,7 @@ import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import type { VoScene } from "../../kit";
 import { Agent, Bank, Card, Ecg, Folder, Notebook, Paper, Person, Phone, Plane, Server, Shield, Stethoscope, Strike, Wallet } from "./icons";
 import { C, F, H, W } from "./style";
-import { localAt } from "./take";
+import { useAt, useT } from "./lang";
 import { At, Center, Chapter, Flash, Glass, Mono, Pill, Pop, ramp, Ring, Shell, springAt, window01, Words } from "./ui";
 
 type SceneProps = { s: VoScene };
@@ -14,6 +14,7 @@ const smooth = (x: number): number => x * x * (3 - 2 * x);
 // ── S7 · insured + an insurance product with every purchase ─────────
 const Receipt: React.FC<{ at: number; offerAt: number; icon: React.ReactNode; title: string; line: string; price: string; offer: string }> = ({ at, offerAt, icon, title, line, price, offer }) => {
   const f = useCurrentFrame();
+  const tr = useT();
   const o = springAt(f, offerAt, 13, 170);
   return (
     <Pop at={at} dist={90}>
@@ -21,7 +22,7 @@ const Receipt: React.FC<{ at: number; offerAt: number; icon: React.ReactNode; ti
         <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
           <div style={{ width: 84, height: 84, borderRadius: 20, border: `1px solid ${C.line}`, display: "flex", alignItems: "center", justifyContent: "center", background: "rgba(255,255,255,0.03)" }}>{icon}</div>
           <div>
-            <Mono size={20}>агент оформил</Mono>
+            <Mono size={20}>{tr("агент оформил")}</Mono>
             <div style={{ fontFamily: F.body, fontWeight: 600, fontSize: 40, color: C.fg }}>{title}</div>
           </div>
         </div>
@@ -35,7 +36,7 @@ const Receipt: React.FC<{ at: number; offerAt: number; icon: React.ReactNode; ti
         }}>
           <div style={{ fontFamily: F.body, fontWeight: 600, fontSize: 34, color: C.green }}>＋</div>
           <div style={{ fontFamily: F.body, fontWeight: 600, fontSize: 30, color: C.green, whiteSpace: "nowrap" }}>{offer}</div>
-          <div style={{ marginLeft: "auto" }}><Mono size={18} color={C.green}>предложено</Mono></div>
+          <div style={{ marginLeft: "auto" }}><Mono size={18} color={C.green}>{tr("предложено")}</Mono></div>
         </div>
       </Glass>
     </Pop>
@@ -43,7 +44,8 @@ const Receipt: React.FC<{ at: number; offerAt: number; icon: React.ReactNode; ti
 };
 
 export const S7: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const ins = at("застрахован");
   const phaseB = at("А") - 6;
@@ -51,7 +53,7 @@ export const S7: React.FC<SceneProps> = ({ s }) => {
   const outA = ramp(f, phaseB, 14);
   return (
     <Shell dur={dur(s)} push={0.02}>
-      <Chapter n="04" label="доверие" />
+      <Chapter n="04" label={tr("доверие")} />
       <div style={{ opacity: 1 - outA, transform: `scale(${1 - 0.1 * outA})` }}>
         <At x={760} y={560}>
           <div style={{ position: "relative", width: 560, height: 560, display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -60,20 +62,20 @@ export const S7: React.FC<SceneProps> = ({ s }) => {
           </div>
         </At>
         <div style={{ position: "absolute", left: 1150, top: 330, display: "flex", flexDirection: "column", gap: 30 }}>
-          <Words text="Каждый счёт *застрахован*" at={at("Каждый") - 2} size={64} align="left" accent={C.green} maxWidth={700} />
-          <Pop at={at("мошенников") - 2} from="right"><Pill color={C.green} size={40}>от мошенников</Pill></Pop>
-          <Pop at={at("ошибок") - 2} from="right"><Pill color={C.green} size={40}>от ошибок агента</Pill></Pop>
+          <Words text={tr("Каждый счёт *застрахован*")} at={at("Каждый") - 2} size={64} align="left" accent={C.green} maxWidth={700} />
+          <Pop at={at("мошенников") - 2} from="right"><Pill color={C.green} size={40}>{tr("от мошенников")}</Pill></Pop>
+          <Pop at={at("ошибок") - 2} from="right"><Pill color={C.green} size={40}>{tr("от ошибок агента")}</Pill></Pop>
         </div>
       </div>
       <div style={{ opacity: ramp(f, phaseB + 4, 12) }}>
         <At x={W / 2} y={170}>
-          <Words text="При каждой покупке: *настоящий страховой продукт*" at={phaseB + 6} stagger={3} size={60} accent={C.green} maxWidth={1700} />
+          <Words text={tr("При каждой покупке: *настоящий страховой продукт*")} at={phaseB + 6} stagger={3} size={60} accent={C.green} maxWidth={1700} />
         </At>
         <At x={560} y={620}>
-          <Receipt at={Math.min(at("Записал") - 4, phaseB + 24)} offerAt={at("медицинскую")} icon={<Stethoscope size={64} color={C.cyan} />} title="Запись к врачу" line="Приём терапевта" price="$40" offer="Медицинская страховка" />
+          <Receipt at={Math.min(at("Записал") - 4, phaseB + 24)} offerAt={at("медицинскую")} icon={<Stethoscope size={64} color={C.cyan} />} title={tr("Запись к врачу")} line={tr("Приём терапевта")} price="$40" offer={tr("Медицинская страховка")} />
         </At>
         <At x={1360} y={620}>
-          <Receipt at={at("Купил") - 4} offerAt={at("туристическую")} icon={<Plane size={64} color={C.cyan} />} title="Авиабилеты" line="Сеул → Дели, 2 места" price="$860" offer="Туристическая страховка" />
+          <Receipt at={at("Купил") - 4} offerAt={at("туристическую")} icon={<Plane size={64} color={C.cyan} />} title={tr("Авиабилеты")} line={tr("Сеул → Дели, 2 места")} price="$860" offer={tr("Туристическая страховка")} />
         </At>
       </div>
       <Ring at={ins + 10} x={760} y={560} color={C.green} size={900} />
@@ -119,7 +121,8 @@ const BigNode: React.FC<{ at: number; x: number; label: string; color?: string; 
 );
 
 export const S8: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const chain = at("Ваш") - 6;
   const noCalls = at("Ни");
@@ -132,16 +135,16 @@ export const S8: React.FC<SceneProps> = ({ s }) => {
   const waveUp = ramp(f, ocean - 4, 30);
   return (
     <Shell dur={dur(s)} push={0.015} shakeAt={[ocean]}>
-      <Chapter n="05" label="экономика агентов" />
+      <Chapter n="05" label={tr("экономика агентов")} />
       {/* A: agents trading */}
       <div style={{ opacity: ramp(f, 0, 10) * (1 - aOut) }}>
         {[[480, 380], [960, 260], [1440, 380], [700, 720], [1220, 720]].map(([x, y], i) => (
           <At key={i} x={x} y={y}><Pop at={i * 4} from="scale"><Agent size={140} blinkSeed={i} /></Pop></At>
         ))}
-        <Packet from={[480, 380]} to={[960, 260]} at={at("платить") - 6} label="$ платёж" color={C.gold} />
-        <Packet from={[1440, 380]} to={[700, 720]} at={at("покупать") - 6} label="покупка" />
-        <Packet from={[1220, 720]} to={[1440, 380]} at={at("продавать") - 6} label="продажа" color={C.green} />
-        <At x={W / 2} y={540}><Words text="Агенты платят *друг другу*" at={at("Агенты")} size={62} /></At>
+        <Packet from={[480, 380]} to={[960, 260]} at={at("платить") - 6} label={tr("$ платёж")} color={C.gold} />
+        <Packet from={[1440, 380]} to={[700, 720]} at={at("покупать") - 6} label={tr("покупка")} />
+        <Packet from={[1220, 720]} to={[1440, 380]} at={at("продавать") - 6} label={tr("продажа")} color={C.green} />
+        <At x={W / 2} y={540}><Words text={tr("Агенты платят *друг другу*")} at={at("Агенты")} size={62} /></At>
       </div>
       {/* B: patient agent → clinic agent → insurer agent */}
       <div style={{ opacity: ramp(f, chain, 12) * (1 - cOut) }}>
@@ -149,14 +152,14 @@ export const S8: React.FC<SceneProps> = ({ s }) => {
           <line x1={xs[0] + 130} y1={520} x2={xs[0] + 130 + (xs[1] - xs[0] - 260) * ramp(f, at("агент", 1) - 6, 14)} y2={520} stroke={C.line} strokeWidth="4" strokeDasharray="12 10" />
           <line x1={xs[1] + 130} y1={520} x2={xs[1] + 130 + (xs[2] - xs[1] - 260) * ramp(f, at("агент", 2) - 6, 14)} y2={520} stroke={C.line} strokeWidth="4" strokeDasharray="12 10" />
         </svg>
-        <BigNode at={at("Ваш") - 2} x={xs[0]} label="ваш агент" seed={1} />
-        <BigNode at={at("агент", 1) - 2} x={xs[1]} label="агент клиники" color={C.violet} seed={2} />
-        <BigNode at={Math.min(at("агент", 2) - 2, at("выставляет") + 2)} x={xs[2]} label="агент страховой" color={C.green} seed={3} />
-        <Packet from={[xs[0], 370]} to={[xs[1], 370]} at={at("записывает") - 2} len={26} label="запись" />
-        <Packet from={[xs[1], 370]} to={[xs[2], 370]} at={at("выставляет") - 2} len={22} label="счёт" color={C.violet} />
-        <Packet from={[xs[2], 760]} to={[xs[1], 760]} at={at("оплачивает") - 4} len={22} label="✓ оплачено" color={C.green} />
+        <BigNode at={at("Ваш") - 2} x={xs[0]} label={tr("ваш агент")} seed={1} />
+        <BigNode at={at("агент", 1) - 2} x={xs[1]} label={tr("агент клиники")} color={C.violet} seed={2} />
+        <BigNode at={Math.min(at("агент", 2) - 2, at("выставляет") + 2)} x={xs[2]} label={tr("агент страховой")} color={C.green} seed={3} />
+        <Packet from={[xs[0], 370]} to={[xs[1], 370]} at={at("записывает") - 2} len={26} label={tr("запись")} />
+        <Packet from={[xs[1], 370]} to={[xs[2], 370]} at={at("выставляет") - 2} len={22} label={tr("счёт")} color={C.violet} />
+        <Packet from={[xs[2], 760]} to={[xs[1], 760]} at={at("оплачивает") - 4} len={22} label={tr("✓ оплачено")} color={C.green} />
         <div style={{ position: "absolute", left: 0, right: 0, top: 820, display: "flex", justifyContent: "center", gap: 120, opacity: ramp(f, noCalls - 4, 10) }}>
-          {[{ icon: <Phone size={110} color={C.muted} />, at: noCalls, label: "звонки" }, { icon: <Paper size={110} color={C.muted} />, at: at("бумаги"), label: "бумаги" }].map((it) => (
+          {[{ icon: <Phone size={110} color={C.muted} />, at: noCalls, label: tr("звонки") }, { icon: <Paper size={110} color={C.muted} />, at: at("бумаги"), label: tr("бумаги") }].map((it) => (
             <div key={it.label} style={{ display: "flex", alignItems: "center", gap: 20 }}>
               <div style={{ position: "relative", width: 110, height: 110 }}>{it.icon}<Strike t={ramp(f, it.at, 10)} size={110} /></div>
               <Mono size={26} color={C.red}>{it.label}: 0</Mono>
@@ -178,7 +181,7 @@ export const S8: React.FC<SceneProps> = ({ s }) => {
         </svg>
       </AbsoluteFill>
       <At x={W / 2} y={300} style={{ opacity: ramp(f, billions, 10) * (1 - ramp(f, ocean - 10, 10)) }}>
-        <Words text="*Миллиарды* таких сделок" at={at("миллиарды") - 10} size={86} accent={C.gold} />
+        <Words text={tr("*Миллиарды* таких сделок")} at={at("миллиарды") - 10} size={86} accent={C.gold} />
       </At>
       <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
         <defs>
@@ -192,7 +195,7 @@ export const S8: React.FC<SceneProps> = ({ s }) => {
       </svg>
       <Center style={{ opacity: ramp(f, ocean - 4, 8) }}>
         <div style={{ transform: `scale(${f < ocean - 4 ? 0 : 1.5 - 0.5 * springAt(f, ocean - 4, 12, 150)})` }}>
-          <Words text="Новый *океан* денег" at={ocean - 10} size={140} accent={C.gold} stagger={3} />
+          <Words text={tr("Новый *океан* денег")} at={ocean - 10} size={140} accent={C.gold} stagger={3} />
         </div>
       </Center>
       <Flash at={ocean} color={C.gold} strength={0.45} />
@@ -203,7 +206,8 @@ export const S8: React.FC<SceneProps> = ({ s }) => {
 
 // ── S9 · the bank for agents … but one condition ─────────────────────
 export const S9: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const eq = at("агентов");
   const lightsOff = at("Но");
@@ -212,7 +216,7 @@ export const S9: React.FC<SceneProps> = ({ s }) => {
     <Shell dur={dur(s)} push={0.05}>
       <div style={{ opacity: 1 - dark }}>
         <Chapter n="05" label="2030" />
-        <At x={W / 2} y={190}><Words text="К *2030* году лучший банк" at={at("тридцатому") - 4} size={72} /></At>
+        <At x={W / 2} y={190}><Words text={tr("К *2030* году лучший банк")} at={at("тридцатому") - 4} size={72} /></At>
         <At x={680} y={560}><Pop at={at("банк") - 4} from="scale"><Bank size={300} /></Pop></At>
         <At x={W / 2} y={560}><Pop at={eq - 4} from="scale"><div style={{ fontFamily: F.display, fontSize: 120, fontWeight: 300, color: C.cyan }}>=</div></Pop></At>
         <At x={1240} y={560}>
@@ -223,10 +227,10 @@ export const S9: React.FC<SceneProps> = ({ s }) => {
             </div>
           </Pop>
         </At>
-        <At x={W / 2} y={860}><Pop at={eq + 4}><Pill size={52}>банк для агентов</Pill></Pop></At>
+        <At x={W / 2} y={860}><Pop at={eq + 4}><Pill size={52}>{tr("банк для агентов")}</Pill></Pop></At>
       </div>
       <Center style={{ opacity: dark }}>
-        <TypeLine text="Но есть одно условие." at={lightsOff} />
+        <TypeLine text={tr("Но есть одно условие.")} at={lightsOff} />
       </Center>
     </Shell>
   );
@@ -248,7 +252,8 @@ const FACTS = ["Имя: Анна", "Город: Сеул", "Любит кофе"
 const HISTORY = ["2019 · аллергия на пенициллин", "2021 · переезд, новая клиника", "2022 · давление 150/95", "2023 · начата терапия", "2024 · отказ от перелёта: врач", "2025 · норма, доза снижена", "2026 · плановый контроль"];
 
 export const S10: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const quoteAt = at("Деньги") - 4;
   const forgetAt = at("А") - 4;
@@ -260,10 +265,10 @@ export const S10: React.FC<SceneProps> = ({ s }) => {
   const crossT = ramp(f, at("историю"), 12);
   return (
     <Shell dur={dur(s)} push={0.02}>
-      <Chapter n="06" label="условие: память" />
+      <Chapter n="06" label={tr("условие: память")} />
       {/* A: agent remembers its owner */}
       <div style={{ opacity: A }}>
-        <At x={W / 2} y={170}><Words text="Чтобы этим сделкам *можно было доверять*" at={at("Чтобы") - 2} size={60} maxWidth={1500} /></At>
+        <At x={W / 2} y={170}><Words text={tr("Чтобы этим сделкам *можно было доверять*")} at={at("Чтобы") - 2} size={60} maxWidth={1500} /></At>
         <At x={640} y={600}><Pop at={at("агент") - 4} from="left"><Agent size={260} /></Pop></At>
         <At x={1280} y={600}><Pop at={at("владельца") - 4} from="right"><Person size={240} /></Pop></At>
         <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
@@ -272,21 +277,21 @@ export const S10: React.FC<SceneProps> = ({ s }) => {
               pathLength={1} strokeDasharray="0.06 0.04" strokeDashoffset={-f * 0.01 - k * 0.2} style={{ opacity: ramp(f, at("помнить"), 14) * 0.7 }} />
           ))}
         </svg>
-        <At x={W / 2} y={860}><Pop at={at("помнить")}><Pill size={42}>агент помнит своего владельца</Pill></Pop></At>
+        <At x={W / 2} y={860}><Pop at={at("помнить")}><Pill size={42}>{tr("агент помнит своего владельца")}</Pill></Pop></At>
       </div>
       {/* B: the quote */}
       <Center style={{ opacity: B }}>
-        <Words text="Деньги доверяют агенту, который *помнит*" at={quoteAt + 4} size={104} accent={C.gold} maxWidth={1500} />
+        <Words text={tr("Деньги доверяют агенту, который *помнит*")} at={quoteAt + 4} size={104} accent={C.gold} maxWidth={1500} />
       </Center>
       {/* C: today's AI forgets: memories dissolve */}
       <AbsoluteFill style={{ opacity: Cc }}>
-        <At x={W / 2} y={190}><Words text="Сегодняшний ИИ *не помнит* всего" at={forgetAt + 6} size={70} accent={C.red} /></At>
+        <At x={W / 2} y={190}><Words text={tr("Сегодняшний ИИ *не помнит* всего")} at={forgetAt + 6} size={70} accent={C.red} /></At>
         {HISTORY.slice(0, 6).map((h, i) => {
           const dissolve = ramp(f, at("помнит", 1) + i * 5, 26);
           return (
             <At key={h} x={420 + (i % 3) * 540} y={480 + Math.floor(i / 3) * 190}>
               <div style={{ opacity: 1 - dissolve, filter: `blur(${dissolve * 16}px)`, transform: `translateY(${-dissolve * 80}px) scale(${1 + dissolve * 0.2})` }}>
-                <Glass style={{ padding: "22px 30px" }}><Mono size={24} color={C.fg}>{h}</Mono></Glass>
+                <Glass style={{ padding: "22px 30px" }}><Mono size={24} color={C.fg}>{tr(h)}</Mono></Glass>
               </div>
             </At>
           );
@@ -294,17 +299,17 @@ export const S10: React.FC<SceneProps> = ({ s }) => {
       </AbsoluteFill>
       {/* D: notebook vs history */}
       <AbsoluteFill style={{ opacity: D }}>
-        <At x={W / 2} y={150}><Words text="Гиганты дали лишь *блокнот*" at={splitAt + 4} size={64} accent={C.muted} /></At>
+        <At x={W / 2} y={150}><Words text={tr("Гиганты дали лишь *блокнот*")} at={splitAt + 4} size={64} accent={C.muted} /></At>
         <At x={560} y={590}>
           <Pop at={at("блокнот") - 4} from="left">
             <Glass style={{ width: 560, padding: "34px 40px", display: "flex", flexDirection: "column", gap: 20 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 18 }}><Notebook size={80} /><Mono size={24}>профиль пользователя</Mono></div>
+              <div style={{ display: "flex", alignItems: "center", gap: 18 }}><Notebook size={80} /><Mono size={24}>{tr("профиль пользователя")}</Mono></div>
               {FACTS.map((x, i) => (
                 <Pop key={x} at={at("фактов") - 8 + i * 5}>
-                  <div style={{ fontFamily: F.body, fontWeight: 500, fontSize: 36, color: C.fg, padding: "12px 20px", borderRadius: 14, background: "rgba(255,255,255,0.05)" }}>{x}</div>
+                  <div style={{ fontFamily: F.body, fontWeight: 500, fontSize: 36, color: C.fg, padding: "12px 20px", borderRadius: 14, background: "rgba(255,255,255,0.05)" }}>{tr(x)}</div>
                 </Pop>
               ))}
-              <Mono size={22} color={C.muted}>несколько фактов</Mono>
+              <Mono size={22} color={C.muted}>{tr("несколько фактов")}</Mono>
             </Glass>
           </Pop>
         </At>
@@ -312,8 +317,8 @@ export const S10: React.FC<SceneProps> = ({ s }) => {
           <Pop at={at("историю") - 10} from="right">
             <div style={{ position: "relative" }}>
               <Glass style={{ width: 620, padding: "30px 36px", display: "flex", flexDirection: "column", gap: 10, opacity: 0.5 }}>
-                <Mono size={24} color={C.cyan}>история</Mono>
-                {HISTORY.map((h) => <div key={h} style={{ fontFamily: F.mono, fontSize: 22, color: C.muted, borderLeft: `3px solid ${C.cyan}55`, paddingLeft: 16 }}>{h}</div>)}
+                <Mono size={24} color={C.cyan}>{tr("история")}</Mono>
+                {HISTORY.map((h) => <div key={h} style={{ fontFamily: F.mono, fontSize: 22, color: C.muted, borderLeft: `3px solid ${C.cyan}55`, paddingLeft: 16 }}>{tr(h)}</div>)}
               </Glass>
               <svg width={620} height={480} style={{ position: "absolute", left: 0, top: 0 }}>
                 <line x1="30" y1="450" x2={30 + 560 * crossT} y2={450 - 420 * crossT} stroke={C.red} strokeWidth="10" strokeLinecap="round" style={{ filter: `drop-shadow(0 0 12px ${C.red})` }} />
@@ -321,7 +326,7 @@ export const S10: React.FC<SceneProps> = ({ s }) => {
             </div>
           </Pop>
         </At>
-        <At x={1340} y={920}><Pop at={at("историю")}><Mono size={30} color={C.red}>истории нет</Mono></Pop></At>
+        <At x={1340} y={920}><Pop at={at("историю")}><Mono size={30} color={C.red}>{tr("истории нет")}</Mono></Pop></At>
       </AbsoluteFill>
     </Shell>
   );
@@ -329,7 +334,8 @@ export const S10: React.FC<SceneProps> = ({ s }) => {
 
 // ── S11 · the race: data centers vs a real breakthrough ──────────────
 export const S11: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const racks = at("Большие") - 4;
   const tech = at("А") - 4;
@@ -340,7 +346,7 @@ export const S11: React.FC<SceneProps> = ({ s }) => {
   const D = ramp(f, med, 12);
   return (
     <Shell dur={dur(s)} push={0.03}>
-      <Chapter n="06" label="гонка за память" />
+      <Chapter n="06" label={tr("гонка за память")} />
       {/* A: race streaks */}
       <AbsoluteFill style={{ opacity: A }}>
         {Array.from({ length: 26 }, (_, i) => {
@@ -348,7 +354,7 @@ export const S11: React.FC<SceneProps> = ({ s }) => {
           const x = ((f * (26 + (i % 5) * 9) + i * 211) % (W + 600)) - 400;
           return <div key={i} style={{ position: "absolute", left: x, top: y, width: 300 + (i % 4) * 80, height: 3, background: `linear-gradient(90deg, transparent, ${i % 3 ? C.cyan : C.violet})`, opacity: 0.6 }} />;
         })}
-        <Center><Words text="Гонка за *настоящую память*" at={at("гонка") - 8} size={104} maxWidth={1500} /></Center>
+        <Center><Words text={tr("Гонка за *настоящую память*")} at={at("гонка") - 8} size={104} maxWidth={1500} /></Center>
       </AbsoluteFill>
       {/* B: data centers multiply */}
       <AbsoluteFill style={{ opacity: B }}>
@@ -357,20 +363,20 @@ export const S11: React.FC<SceneProps> = ({ s }) => {
             <div key={i} style={{ transform: `scale(${springAt(f, racks + i * 1.2, 15, 200)})` }}><Server w={70} seed={i} /></div>
           ))}
         </div>
-        <At x={W / 2} y={170}><Words text="Большие игроки строят *дата-центры*" at={racks + 2} size={64} accent={C.red} maxWidth={1600} /></At>
+        <At x={W / 2} y={170}><Words text={tr("Большие игроки строят *дата-центры*")} at={racks + 2} size={64} accent={C.red} maxWidth={1600} /></At>
       </AbsoluteFill>
       {/* C: one breakthrough */}
       <AbsoluteFill style={{ opacity: Cc }}>
         <Center>
           <div style={{ width: 260, height: 260, borderRadius: 130, background: `radial-gradient(circle, #fff, ${C.cyan} 35%, ${C.cyan}00 70%)`, transform: `scale(${0.6 + 0.4 * springAt(f, tech + 6, 10, 120) + 0.04 * Math.sin(f / 4)})`, boxShadow: `0 0 160px ${C.cyan}` }} />
         </Center>
-        <At x={W / 2} y={200}><Words text="Прорыв будет *технологическим*" at={tech + 4} size={80} maxWidth={1600} /></At>
+        <At x={W / 2} y={200}><Words text={tr("Прорыв будет *технологическим*")} at={tech + 4} size={80} maxWidth={1600} /></At>
       </AbsoluteFill>
       {/* D: medical history */}
       <AbsoluteFill style={{ opacity: D }}>
         <At x={W / 2} y={470}><Pop at={med + 2} from="scale"><Folder size={340} /></Pop></At>
         <At x={W / 2} y={740}><Ecg w={900} t={ramp(f, med + 6, 30)} /></At>
-        <At x={W / 2} y={170}><Words text="И начнётся он с *истории болезни*" at={med + 4} size={74} accent={C.green} /></At>
+        <At x={W / 2} y={170}><Words text={tr("И начнётся он с *истории болезни*")} at={med + 4} size={74} accent={C.green} /></At>
       </AbsoluteFill>
       <Flash at={tech + 6} color={C.cyan} strength={0.35} />
     </Shell>
@@ -379,7 +385,8 @@ export const S11: React.FC<SceneProps> = ({ s }) => {
 
 // ── S12 · trust → Treint → live demo ─────────────────────────────────
 export const S12: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const brand = at("Треинт") - 2;
   const demo = at("Сейчас") - 2;
@@ -390,7 +397,7 @@ export const S12: React.FC<SceneProps> = ({ s }) => {
     <Shell dur={dur(s)} push={0.04} shakeAt={[brand]}>
       {/* A: medical history = wallet */}
       <AbsoluteFill style={{ opacity: A }}>
-        <At x={W / 2} y={190}><Words text="Если ИИ можно доверить *историю болезни*" at={at("Если") - 2} size={64} accent={C.green} maxWidth={1600} /></At>
+        <At x={W / 2} y={190}><Words text={tr("Если ИИ можно доверить *историю болезни*")} at={at("Если") - 2} size={64} accent={C.green} maxWidth={1600} /></At>
         <At x={560} y={590}><Pop at={at("историю") - 6} from="left"><Folder size={320} color={C.green} /></Pop></At>
         <At x={W / 2} y={590}>
           <Pop at={at("ему") - 4} from="scale">
@@ -398,26 +405,26 @@ export const S12: React.FC<SceneProps> = ({ s }) => {
           </Pop>
         </At>
         <At x={1360} y={590}><Pop at={at("кошелёк") - 6} from="right"><Wallet size={320} /></Pop></At>
-        <At x={W / 2} y={880}><Pop at={at("кошелёк")}><Words text="ему можно доверить и *кошелёк*" at={at("кошелёк") - 4} size={56} accent={C.gold} /></Pop></At>
+        <At x={W / 2} y={880}><Pop at={at("кошелёк")}><Words text={tr("ему можно доверить и *кошелёк*")} at={at("кошелёк") - 4} size={56} accent={C.gold} /></Pop></At>
       </AbsoluteFill>
       {/* B: Treint */}
       <AbsoluteFill style={{ opacity: f >= brand - 2 ? 1 : 0 }}>
         <Center style={{ flexDirection: "column", gap: 30, transform: `translateY(${-goDemo * 120}px) scale(${1 - goDemo * 0.25})` }}>
-          <Mono size={26} color={C.cyan} style={{ opacity: ramp(f, brand - 6, 10) }}>команда</Mono>
+          <Mono size={26} color={C.cyan} style={{ opacity: ramp(f, brand - 6, 10) }}>{tr("команда")}</Mono>
           <div style={{
             fontFamily: F.display, fontWeight: 600, fontSize: 210, letterSpacing: "0.2em", marginRight: "-0.2em", transform: `scale(${0.6 + 0.4 * logo})`, opacity: Math.min(1, logo * 1.5),
             color: "#F6FDFF", textShadow: `0 0 30px ${C.cyan}66, 0 0 ${80 + 20 * Math.sin(f / 12)}px ${C.cyan}33`,
           }}>TREINT</div>
           <div style={{ display: "flex", alignItems: "center", gap: 40, opacity: ramp(f, at("пациента") - 6, 12) }}>
-            <Mono size={30} color={C.fg}>научила ИИ помнить</Mono>
-            <Pop at={at("пациента") - 4}><Pill size={40} color={C.green}>пациента</Pill></Pop>
-            <Pop at={at("врача") - 4}><Pill size={40} color={C.violet}>и врача</Pill></Pop>
+            <Mono size={30} color={C.fg}>{tr("научила ИИ помнить")}</Mono>
+            <Pop at={at("пациента") - 4}><Pill size={40} color={C.green}>{tr("пациента")}</Pill></Pop>
+            <Pop at={at("врача") - 4}><Pill size={40} color={C.violet}>{tr("и врача")}</Pill></Pop>
           </div>
         </Center>
         <At x={W / 2} y={790} style={{ opacity: goDemo }}>
           <div style={{ display: "flex", alignItems: "center", gap: 26 }}>
             <div style={{ width: 26, height: 26, borderRadius: 13, background: C.red, boxShadow: `0 0 ${20 + 14 * Math.sin(f / 5)}px ${C.red}`, opacity: 0.6 + 0.4 * Math.sin(f / 5) }} />
-            <div style={{ fontFamily: F.display, fontWeight: 600, fontSize: 64, color: C.fg, whiteSpace: "nowrap" }}>Сейчас покажем</div>
+            <div style={{ fontFamily: F.display, fontWeight: 600, fontSize: 64, color: C.fg, whiteSpace: "nowrap" }}>{tr("Сейчас покажем")}</div>
             <Pill size={34} color={C.red}>LIVE DEMO</Pill>
           </div>
         </At>

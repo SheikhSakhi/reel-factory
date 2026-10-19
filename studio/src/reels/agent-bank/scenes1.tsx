@@ -3,7 +3,7 @@ import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
 import type { VoScene } from "../../kit";
 import { Agent, Card, Chip, Neural, Person, Ticket, Wallet } from "./icons";
 import { C, F, H, W } from "./style";
-import { localAt } from "./take";
+import { useAt, useT } from "./lang";
 import { At, Center, Chapter, Flash, Glass, Mono, Pill, Pop, ramp, Ring, Roll, Shell, Source, springAt, window01, Words } from "./ui";
 
 type SceneProps = { s: VoScene };
@@ -30,20 +30,21 @@ const Bar: React.FC<{ at: number; height: number; color: string; year: string; v
 };
 
 export const S1: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const growth = at("Рост");
   return (
     <Shell dur={dur(s)}>
-      <Chapter n="01" label="экономика ии-агентов" />
-      <At x={W / 2} y={150}><Words text="Экономика *ИИ-агентов*" at={at("экономика")} size={78} maxWidth={1700} /></At>
+      <Chapter n="01" label={tr("экономика ии-агентов")} />
+      <At x={W / 2} y={150}><Words text={tr("Экономика *ИИ-агентов*")} at={at("экономика")} size={78} maxWidth={1700} /></At>
       <div style={{ position: "absolute", left: 420, right: 420, top: 860, height: 2, background: C.line }} />
       <Bar x={720} at={at("миллиардов") - 14} height={210} color={C.cyan} year="2024"
-        value={<>≈$<Roll to={5} at={at("пяти") - 4} dur={22} /> млрд</>} />
+        value={<>≈$<Roll to={5} at={at("пяти") - 4} dur={22} />{tr(" млрд")}</>} />
       <Bar x={1200} at={at("восемь") - 18} height={340} color={C.gold} year="2025"
-        value={<>≈$<Roll from={5} to={8} at={at("восемь") - 6} dur={20} /> млрд</>} />
+        value={<>≈$<Roll from={5} to={8} at={at("восемь") - 6} dur={20} />{tr(" млрд")}</>} />
       <At x={960} y={330}>
-        <Pop at={growth} from="scale"><Pill color={C.green} size={46}>↗ рост ≈45% в год</Pill></Pop>
+        <Pop at={growth} from="scale"><Pill color={C.green} size={46}>{tr("↗ рост ≈45% в год")}</Pill></Pop>
       </At>
       <Source at={at("миллиардов")}>MarketsandMarkets · AI Agents Market</Source>
     </Shell>
@@ -52,15 +53,16 @@ export const S1: React.FC<SceneProps> = ({ s }) => {
 
 // ── S2 · five trillion ───────────────────────────────────────────────
 export const S2: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const hit = at("триллионов");
   const pre = interpolate(f, [at("через") - 4, hit - 2], [0, 34], CLAMP);
   const r = f < hit - 2 ? pre : interpolate(f, [hit - 2, hit + 18], [34, 330], { ...CLAMP, easing: (x) => 1 - Math.pow(1 - x, 4) });
   return (
     <Shell dur={dur(s)} shakeAt={[hit]}>
-      <Chapter n="01" label="прогноз на 2030" />
-      <At x={W / 2} y={170}><Words text="К *2030* году" at={at("тридцатому") - 4} size={70} /></At>
+      <Chapter n="01" label={tr("прогноз на 2030")} />
+      <At x={W / 2} y={170}><Words text={tr("К *2030* году")} at={at("тридцатому") - 4} size={70} /></At>
       {/* the 8 billion dot vs the 5 trillion sphere */}
       <At x={W / 2} y={590}>
         <div style={{
@@ -73,7 +75,7 @@ export const S2: React.FC<SceneProps> = ({ s }) => {
         <Pop at={at("тридцатому")}>
           <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
             <div style={{ width: 14, height: 14, borderRadius: 7, background: C.cyan, boxShadow: `0 0 20px ${C.cyan}` }} />
-            <Mono size={26} color={C.cyan}>рынок агентов ≈ $8 млрд</Mono>
+            <Mono size={26} color={C.cyan}>{tr("рынок агентов ≈ $8 млрд")}</Mono>
           </div>
         </Pop>
       </At>
@@ -83,14 +85,14 @@ export const S2: React.FC<SceneProps> = ({ s }) => {
           transform: `scale(${1.3 - 0.3 * ramp(f, hit, 20)})`, opacity: ramp(f, hit - 1, 8), filter: f < hit + 14 ? `blur(${(1 - ramp(f, hit, 14)) * 16}px)` : undefined,
           letterSpacing: "-0.05em", textShadow: `0 8px 40px rgba(0,0,0,0.6), 0 0 50px ${C.gold}66`,
         }}>
-          <span style={{ fontSize: 80, fontWeight: 300, verticalAlign: "middle", marginRight: 24, color: C.gold }}>до</span>$5 трлн
+          <span style={{ fontSize: 80, fontWeight: 300, verticalAlign: "middle", marginRight: 24, color: C.gold }}>{tr("до")}</span>{tr("$5 трлн")}
         </div>
       </At>
       <At x={W / 2} y={360} style={{ opacity: ramp(f, at("через") - 2, 10) * (1 - ramp(f, hit - 4, 6)) }}>
-        <Mono size={34} color={C.gold}>через агентов пройдёт…</Mono>
+        <Mono size={34} color={C.gold}>{tr("через агентов пройдёт…")}</Mono>
       </At>
       <At x={W / 2} y={870}>
-        <Pop at={hit + 12}><Mono size={32} color={C.fg}>покупок пройдёт через агентов</Mono></Pop>
+        <Pop at={hit + 12}><Mono size={32} color={C.fg}>{tr("покупок пройдёт через агентов")}</Mono></Pop>
       </At>
       <Ring at={hit} x={W / 2} y={590} color={C.gold} size={1700} dur={30} />
       <Flash at={hit} color={C.gold} strength={0.5} />
@@ -101,7 +103,8 @@ export const S2: React.FC<SceneProps> = ({ s }) => {
 
 // ── S3 · it is already happening ─────────────────────────────────────
 export const S3: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const stamp = at("прогноз");
   const flow = at("Первые");
@@ -110,20 +113,20 @@ export const S3: React.FC<SceneProps> = ({ s }) => {
   const cardX = interpolate(f, [at("агент") + 6, paid], [610, 1310], { ...CLAMP, easing: (x) => x * x * (3 - 2 * x) });
   return (
     <Shell dur={dur(s)} shakeAt={[stamp]}>
-      <Chapter n="02" label="волна уже идёт" />
+      <Chapter n="02" label={tr("волна уже идёт")} />
       <At x={W / 2} y={interpolate(stampUp, [0, 1], [H / 2, 150])}>
         <div style={{
           transform: `scale(${(f < stamp ? 1.15 : 1.15 - 0.15 * ramp(f, stamp, 14)) * (1 - 0.45 * stampUp)})`, filter: f < stamp + 10 ? `blur(${(1 - ramp(f, stamp, 10)) * 12}px)` : undefined,
           opacity: ramp(f, stamp - 1, 8), borderTop: `1px solid ${C.cyan}88`, borderBottom: `1px solid ${C.cyan}88`, padding: "22px 40px",
           fontFamily: F.display, fontWeight: 500, fontSize: 96, letterSpacing: "0.12em", color: C.fg, whiteSpace: "nowrap", textShadow: `0 0 40px ${C.cyan}66`,
-        }}>ЭТО НЕ ПРОГНОЗ</div>
+        }}>{tr("ЭТО НЕ ПРОГНОЗ")}</div>
       </At>
       <div style={{ opacity: ramp(f, flow, 12) }}>
         <At x={480} y={600}>
           <Pop at={at("агент") - 4} from="left">
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
               <Agent size={210} />
-              <Mono size={28} color={C.cyan}>агент</Mono>
+              <Mono size={28} color={C.cyan}>{tr("агент")}</Mono>
             </div>
           </Pop>
         </At>
@@ -139,20 +142,20 @@ export const S3: React.FC<SceneProps> = ({ s }) => {
         <At x={1440} y={600}>
           <Pop at={at("сделал")} from="right">
             <Glass style={{ width: 380, padding: "36px 30px", display: "flex", flexDirection: "column", alignItems: "center", gap: 18 }}>
-              <Mono size={22}>платёжная сеть</Mono>
+              <Mono size={22}>{tr("платёжная сеть")}</Mono>
               <div style={{ fontFamily: F.body, fontWeight: 600, fontSize: 40, color: C.fg }}>Mastercard</div>
               <div style={{
                 width: 120, height: 120, borderRadius: 60, display: "flex", alignItems: "center", justifyContent: "center",
                 border: `1px solid ${f >= paid ? C.green : C.dim}`, color: C.green, fontSize: 70, fontWeight: 600, fontFamily: F.body,
                 transform: `scale(${f >= paid ? 0.8 + 0.2 * springAt(f, paid, 9, 200) : 0.8})`, boxShadow: f >= paid ? `0 0 50px ${C.green}88` : undefined,
               }}>{f >= paid ? "✓" : ""}</div>
-              <Mono size={24} color={f >= paid ? C.green : C.muted}>{f >= paid ? "оплачено агентом" : "ожидание…"}</Mono>
+              <Mono size={24} color={f >= paid ? C.green : C.muted}>{f >= paid ? tr("оплачено агентом") : tr("ожидание…")}</Mono>
             </Glass>
           </Pop>
         </At>
       </div>
       <Ring at={paid} x={1440} y={600} color={C.green} size={700} />
-      <At x={W / 2} y={900}><Pop at={paid + 8}><Mono size={26} color={C.fg}>первые покупки агентов · Гонконг · Таиланд</Mono></Pop></At>
+      <At x={W / 2} y={900}><Pop at={paid + 8}><Mono size={26} color={C.fg}>{tr("первые покупки агентов · Гонконг · Таиланд")}</Mono></Pop></At>
       <Source at={paid + 10}>Mastercard Agent Pay</Source>
     </Shell>
   );
@@ -172,7 +175,8 @@ const WaveCol: React.FC<{ at: number; subAt: number; x: number; icon: React.Reac
 );
 
 export const S4: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const wave = at("Волна");
   const giants = at("гигантов");
@@ -181,7 +185,7 @@ export const S4: React.FC<SceneProps> = ({ s }) => {
   const crest = ramp(f, wave, 40);
   return (
     <Shell dur={dur(s)} push={0.02}>
-      <Chapter n="02" label="три волны" />
+      <Chapter n="02" label={tr("три волны")} />
       <div style={{ opacity: 1 - out, transform: `translateY(${-out * 120}px)` }}>
         {/* wave crest behind the third column */}
         <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
@@ -209,13 +213,13 @@ export const S4: React.FC<SceneProps> = ({ s }) => {
           <line x1="560" y1="420" x2={560 + 300 * ramp(f, at("Фундаментальные") - 10, 14)} y2="420" stroke={C.line} strokeWidth="3" strokeDasharray="10 10" />
           <line x1="1080" y1="420" x2={1080 + 300 * ramp(f, wave - 10, 14)} y2="420" stroke={C.line} strokeWidth="3" strokeDasharray="10 10" />
         </svg>
-        <WaveCol x={360} at={at("Графические") - 2} subAt={at("вычислительные")} icon={<Chip size={200} />} title="GPU" sub="вычислительные мощности" color={C.violet} />
-        <WaveCol x={860} at={at("Фундаментальные") - 2} subAt={at("строить")} icon={<Neural size={210} />} title="Модели" sub="возможность строить сервисы" color={C.cyan} />
-        <WaveCol x={1520} at={wave - 2} subAt={giants} icon={<Agent size={190} />} title="Агенты" sub="новые гиганты" color={C.gold} />
+        <WaveCol x={360} at={at("Графические") - 2} subAt={at("вычислительные")} icon={<Chip size={200} />} title="GPU" sub={tr("вычислительные мощности")} color={C.violet} />
+        <WaveCol x={860} at={at("Фундаментальные") - 2} subAt={at("строить")} icon={<Neural size={210} />} title={tr("Модели")} sub={tr("возможность строить сервисы")} color={C.cyan} />
+        <WaveCol x={1520} at={wave - 2} subAt={giants} icon={<Agent size={190} />} title={tr("Агенты")} sub={tr("новые гиганты")} color={C.gold} />
       </div>
       <Center style={{ opacity: ramp(f, q, 10) }}>
         <CoinOrbit at={at("деньгами")} />
-        <Words text="Чьими *деньгами* будут платить агенты?" at={at("чьими") - 2} size={92} accent={C.gold} maxWidth={1400} />
+        <Words text={tr("Чьими *деньгами* будут платить агенты?")} at={at("чьими") - 2} size={92} accent={C.gold} maxWidth={1400} />
       </Center>
     </Shell>
   );
@@ -247,7 +251,8 @@ const CoinOrbit: React.FC<{ at: number }> = ({ at }) => {
 
 // ── S5 · problem: your money ─────────────────────────────────────────
 export const S5: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const yours = at("вашими");
   const tickets = at("Попросили");
@@ -259,18 +264,18 @@ export const S5: React.FC<SceneProps> = ({ s }) => {
   const count = f < forty - 4 ? 4 : Math.round(interpolate(f, [forty - 4, forty + 6], [4, 40], CLAMP));
   return (
     <Shell dur={dur(s)} shakeAt={[forty, fraud]}>
-      <Chapter n="03" label="проблема" />
+      <Chapter n="03" label={tr("проблема")} />
       <At x={interpolate(toLeft, [0, 1], [W / 2, 400])} y={interpolate(toLeft, [0, 1], [500, 560])}>
         <div style={{ transform: `scale(${1 - 0.45 * toLeft})`, display: "flex", flexDirection: "column", alignItems: "center", gap: 40 }}>
-          <Words text="Сегодня *вашими.*" at={at("Сегодня") - 2} size={110} accent={C.gold} />
-          <Pop at={yours + 4}><Card tone="personal" w={460} label="ВАША КАРТА" sub="•••• 7788" /></Pop>
+          <Words text={tr("Сегодня *вашими.*")} at={at("Сегодня") - 2} size={110} accent={C.gold} />
+          <Pop at={yours + 4}><Card tone="personal" w={460} label={tr("ВАША КАРТА")} sub="•••• 7788" /></Pop>
         </div>
       </At>
       {/* tickets: 4 → 40 */}
       <div style={{ opacity: window01(f, tickets, scam + 6, 8) }}>
         <At x={1270} y={330}>
           <Glass style={{ padding: "26px 40px", display: "flex", alignItems: "center", gap: 30 }}>
-            <Mono size={24}>заказ агента</Mono>
+            <Mono size={24}>{tr("заказ агента")}</Mono>
             <Ticket size={110} color={count > 4 ? C.red : C.gold} />
             <div style={{ fontFamily: F.display, fontWeight: 600, fontSize: 100, color: count > 4 ? C.red : C.fg, textShadow: count > 4 ? `0 0 40px ${C.red}` : undefined }}>×{count}</div>
           </Glass>
@@ -293,13 +298,13 @@ export const S5: React.FC<SceneProps> = ({ s }) => {
               <div style={{ marginLeft: 16, flex: 1, borderRadius: 10, background: "rgba(0,0,0,0.4)", padding: "8px 16px", fontFamily: F.mono, fontSize: 22, color: C.red }}>secure-pay-0nline.biz/checkout</div>
             </div>
             <div style={{ padding: "34px 36px", display: "flex", flexDirection: "column", gap: 18 }}>
-              <div style={{ fontFamily: F.body, fontWeight: 600, fontSize: 36, color: C.fg }}>Подтвердите оплату картой</div>
+              <div style={{ fontFamily: F.body, fontWeight: 600, fontSize: 36, color: C.fg }}>{tr("Подтвердите оплату картой")}</div>
               <div style={{ height: 50, borderRadius: 12, background: "rgba(255,255,255,0.06)" }} />
               <div style={{ height: 50, borderRadius: 12, background: "rgba(255,255,255,0.06)" }} />
               <div style={{
                 alignSelf: "flex-start", fontFamily: F.display, fontWeight: 600, fontSize: 40, color: "#fff", background: C.red, padding: "10px 26px", borderRadius: 12,
                 opacity: f >= fraud ? 1 : 0, transform: `scale(${f >= fraud ? springAt(f, fraud, 9, 220) : 0})`, boxShadow: `0 0 50px ${C.red}`,
-              }}>МОШЕННИКИ</div>
+              }}>{tr("МОШЕННИКИ")}</div>
             </div>
           </Glass>
         </div>
@@ -312,7 +317,8 @@ export const S5: React.FC<SceneProps> = ({ s }) => {
 
 // ── S6 · new financial instruments ───────────────────────────────────
 export const S6: React.FC<SceneProps> = ({ s }) => {
-  const at = localAt(s);
+  const at = useAt(s);
+  const tr = useT();
   const f = useCurrentFrame();
   const up = ramp(f, at("У") - 8, 18);
   const cardIn = at("каждого");
@@ -320,10 +326,10 @@ export const S6: React.FC<SceneProps> = ({ s }) => {
   const spend = interpolate(f, [limitAt, limitAt + 30], [0, 0.72], { ...CLAMP, easing: (x) => 1 - Math.pow(1 - x, 3) });
   return (
     <Shell dur={dur(s)}>
-      <Chapter n="04" label="решение" />
+      <Chapter n="04" label={tr("решение")} />
       <At x={W / 2} y={interpolate(up, [0, 1], [H / 2 - 20, 140])}>
         <div style={{ transform: `scale(${1 - 0.48 * up})` }}>
-          <Words text="Новой экономике нужны *новые финансовые инструменты*" at={at("Новой") - 2} size={92} maxWidth={1800} />
+          <Words text={tr("Новой экономике нужны *новые финансовые инструменты*")} at={at("Новой") - 2} size={92} maxWidth={1800} />
         </div>
       </At>
       <div style={{ opacity: ramp(f, cardIn - 6, 10) }}>
@@ -336,9 +342,9 @@ export const S6: React.FC<SceneProps> = ({ s }) => {
           </div>
         </At>
         <div style={{ position: "absolute", left: 1060, top: 430, display: "flex", flexDirection: "column", gap: 30 }}>
-          <Pop at={at("счёт") - 2} from="right"><Pill size={46}>свой счёт</Pill></Pop>
-          <Pop at={at("карта") - 2} from="right"><Pill size={46}>своя карта</Pill></Pop>
-          <Pop at={limitAt - 2} from="right"><Pill size={46} color={C.gold}>ваш лимит</Pill></Pop>
+          <Pop at={at("счёт") - 2} from="right"><Pill size={46}>{tr("свой счёт")}</Pill></Pop>
+          <Pop at={at("карта") - 2} from="right"><Pill size={46}>{tr("своя карта")}</Pill></Pop>
+          <Pop at={limitAt - 2} from="right"><Pill size={46} color={C.gold}>{tr("ваш лимит")}</Pill></Pop>
         </div>
         <div style={{ position: "absolute", left: 1060, top: 800, width: 680, opacity: ramp(f, limitAt, 10) }}>
           <div style={{ height: 22, borderRadius: 11, background: "rgba(255,255,255,0.08)", position: "relative", overflow: "visible" }}>
@@ -346,8 +352,8 @@ export const S6: React.FC<SceneProps> = ({ s }) => {
             <div style={{ position: "absolute", left: "86%", top: -18, width: 4, height: 58, background: C.gold, boxShadow: `0 0 14px ${C.gold}` }} />
           </div>
           <div style={{ display: "flex", justifyContent: "space-between", marginTop: 16 }}>
-            <Mono size={22}>потрачено ${Math.round(spend * 500)}</Mono>
-            <Mono size={22} color={C.gold}>лимит $430</Mono>
+            <Mono size={22}>{`${tr("потрачено")} $${Math.round(spend * 500)}`}</Mono>
+            <Mono size={22} color={C.gold}>{tr("лимит $430")}</Mono>
           </div>
         </div>
       </div>

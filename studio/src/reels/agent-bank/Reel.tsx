@@ -1,13 +1,15 @@
 import React from "react";
 import { AbsoluteFill, Audio, interpolate, Sequence, staticFile, useCurrentFrame } from "remotion";
-import { Captions, scene, VoiceOver, wordFrame, type VoScene } from "../../kit";
+import { Captions, scene, VoiceOver, type VoScene } from "../../kit";
+import { frameOf, LangProvider, type Lang } from "./lang";
 import { S1, S2, S3, S4, S5, S6 } from "./scenes1";
 import { S7, S8, S9, S10, S11, S12 } from "./scenes2";
 import { C, F, H, W, useReelFonts } from "./style";
-import { captionTake, TAKE } from "./take";
+import { LANG_EN, LANG_RU } from "./take";
 import { Cues, Sweep, World, type Cue, type Mood } from "./ui";
 
-export const AGENT_BANK_DURATION = TAKE.totalFrames;
+export const AGENT_BANK_DURATION = LANG_RU.take.totalFrames;
+export const AGENT_BANK_EN_DURATION = LANG_EN.take.totalFrames;
 export const AGENT_BANK_SIZE = { width: W, height: H } as const;
 
 const SCENES: Record<string, React.FC<{ s: VoScene }>> = { S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12 };
@@ -30,8 +32,9 @@ const MOODS: Record<string, Mood> = {
 
 const mix = (a: string, b: string, t: number): string => `color-mix(in srgb, ${a} ${Math.round((1 - t) * 100)}%, ${b})`;
 
-const useMood = (): Mood => {
+const useMood = (lang: Lang): Mood => {
   const f = useCurrentFrame();
+  const TAKE = lang.take;
   const i = TAKE.scenes.findIndex((s) => f >= s.from && f < s.to);
   const cur = TAKE.scenes[Math.max(0, i)];
   const next = TAKE.scenes[Math.min(TAKE.scenes.length - 1, Math.max(0, i) + 1)];
@@ -39,7 +42,7 @@ const useMood = (): Mood => {
   const b = MOODS[next.id];
   const t = interpolate(f, [cur.to - 15, cur.to], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   // "Но есть одно условие": the lights go out.
-  const lightsOut = interpolate(f, [wordFrame(TAKE, "S9", "Но") - 4, wordFrame(TAKE, "S9", "Но") + 6, scene(TAKE, "S10").from + 20], [0, 0.85, 0], {
+  const lightsOut = interpolate(f, [frameOf(lang, "S9", "Но") - 4, frameOf(lang, "S9", "Но") + 6, scene(TAKE, "S10").from + 20], [0, 0.85, 0], {
     extrapolateLeft: "clamp", extrapolateRight: "clamp",
   });
   return {
@@ -48,11 +51,11 @@ const useMood = (): Mood => {
   };
 };
 
-const w = (id: string, token: string, occurrence = 0): number => wordFrame(TAKE, id, token, occurrence);
-const sceneIn = (id: string): number => scene(TAKE, id).from;
-
 // Sound design: every cue lands on a spoken word.
-const CUES: readonly Cue[] = [
+const buildCues = (lang: Lang): readonly Cue[] => {
+  const w = (id: string, token: string, occurrence = 0): number => frameOf(lang, id, token, occurrence);
+  const sceneIn = (id: string): number => scene(lang.take, id).from;
+  return [
   // S1 numbers
   { at: w("S1", "экономика") - 2, sound: "swoosh", volume: 0.35 },
   ...[0, 3, 6, 9, 12, 15].map((k) => ({ at: w("S1", "пяти") - 4 + k, sound: "tick", volume: 0.35 })),
@@ -143,39 +146,47 @@ const CUES: readonly Cue[] = [
   { at: w("S12", "пациента") - 4, sound: "node", volume: 0.35 },
   { at: w("S12", "врача") - 4, sound: "node", volume: 0.35 },
   { at: w("S12", "Сейчас") - 2, sound: "swoosh", volume: 0.35 },
-];
-
-const CAPTIONS = captionTake(TAKE);
+  ];
+};
 
 /** Progress bar along the bottom: the presenter's sense of where we are. */
-const Progress: React.FC = () => {
+const Progress: React.FC<{ total: number }> = ({ total }) => {
   const f = useCurrentFrame();
   return (
-    <div style={{ position: "absolute", left: 0, bottom: 0, height: 2, width: `${(f / TAKE.totalFrames) * 100}%`, background: `linear-gradient(90deg, ${C.cyan}, ${C.gold})`, opacity: 0.7 }} />
+    <div style={{ position: "absolute", left: 0, bottom: 0, height: 2, width: `${(f / total) * 100}%`, background: `linear-gradient(90deg, ${C.cyan}, ${C.gold})`, opacity: 0.7 }} />
   );
 };
 
-export const AgentBankReel: React.FC = () => {
-  useReelFonts();
-  const mood = useMood();
-  return (
-    <AbsoluteFill style={{ background: C.bg, fontFamily: F.body, color: C.fg }}>
-      <World mood={mood} />
-      {TAKE.scenes.map((s) => {
-        const Scene = SCENES[s.id];
-        return (
-          <Sequence key={s.id} from={s.from} durationInFrames={s.to - s.from} name={s.id}>
-            <Scene s={s} />
-          </Sequence>
-        );
-      })}
-      {TAKE.scenes.slice(1).map((s) => <Sweep key={`sweep-${s.id}`} at={s.from - 8} />)}
-      <Captions take={CAPTIONS} fontFamily={F.body} color={C.fg} accent={C.cyan} fontSize={32} top={960} bottom={1050}
-        centerX={W / 2} maxWidth={1500} maxChars={70} keepTogether={["пяти миллиардов долларов", "пяти триллионов долларов"]} />
-      <Progress />
-      <VoiceOver take={TAKE} />
-      <Audio src={staticFile("audio/agent-bank/music.wav")} volume={0.42} />
-      <Cues cues={CUES} />
-    </AbsoluteFill>
-  );
+const makeReel = (lang: Lang): React.FC => {
+  const cues = buildCues(lang);
+  const Reel: React.FC = () => {
+    useReelFonts();
+    const mood = useMood(lang);
+    return (
+      <LangProvider value={lang}>
+        <AbsoluteFill style={{ background: C.bg, fontFamily: F.body, color: C.fg }}>
+          <World mood={mood} />
+          {lang.take.scenes.map((s) => {
+            const Scene = SCENES[s.id];
+            return (
+              <Sequence key={s.id} from={s.from} durationInFrames={s.to - s.from} name={s.id}>
+                <Scene s={s} />
+              </Sequence>
+            );
+          })}
+          {lang.take.scenes.slice(1).map((s) => <Sweep key={`sweep-${s.id}`} at={s.from - 8} />)}
+          <Captions take={lang.captions} fontFamily={F.body} color={C.fg} accent={C.cyan} fontSize={32} top={960} bottom={1050}
+            centerX={W / 2} maxWidth={1500} maxChars={70} keepTogether={lang.keepTogether} />
+          <Progress total={lang.take.totalFrames} />
+          <VoiceOver take={lang.take} />
+          <Audio src={staticFile(lang.music)} volume={0.42} />
+          <Cues cues={cues} />
+        </AbsoluteFill>
+      </LangProvider>
+    );
+  };
+  return Reel;
 };
+
+export const AgentBankReel = makeReel(LANG_RU);
+export const AgentBankReelEn = makeReel(LANG_EN);

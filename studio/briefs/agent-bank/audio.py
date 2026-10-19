@@ -1,13 +1,15 @@
 """Score + SFX for the agent-bank reel, synthesized from take.json (no samples, no downloads).
 
-    python3 briefs/agent-bank/audio.py
+    python3 briefs/agent-bank/audio.py              # Russian take
+    python3 briefs/agent-bank/audio.py agent-bank-en  # English take
 
-Writes public/audio/agent-bank/music.wav (ducked under the voice) and sfx/*.wav.
+Writes public/audio/<slug>/music.wav (ducked under the voice) and sfx/*.wav.
 Every section boundary is read from the spoken words, so re-synthesizing the
 voice-over and re-running this script keeps the score in sync.
 """
 import json
 import subprocess
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -15,7 +17,11 @@ from scipy.signal import butter, fftconvolve, sosfilt, sosfilt_zi
 
 SR = 44100
 ROOT = Path(__file__).resolve().parents[2]
-SLUG = "agent-bank"
+SLUG = sys.argv[1] if len(sys.argv) > 1 else "agent-bank"
+# Section anchors are written as Russian tokens; other languages map them to their own words.
+ANCHORS = (
+    json.loads((ROOT / "src" / "reels" / "agent-bank" / "anchors-en.json").read_text()) if SLUG.endswith("-en") else {}
+)
 OUT = ROOT / "public" / "audio" / SLUG
 TAKE = json.loads((ROOT / "public" / "vo" / SLUG / "take.json").read_text())
 FPS = TAKE["fps"]
@@ -25,6 +31,8 @@ rng = np.random.default_rng(7)
 
 
 def word(scene_id: str, token: str, occurrence: int = 0) -> float:
+    if ANCHORS:
+        token, occurrence = ANCHORS[f"{scene_id}:{token}:{occurrence}"]
     scene = next(s for s in TAKE["scenes"] if s["id"] == scene_id)
     hits = [w for w in scene["words"] if w["token"].strip(".,:;?!").lower() == token.lower()]
     return hits[occurrence]["start"]

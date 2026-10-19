@@ -1,5 +1,6 @@
 import React from "react";
 import { AbsoluteFill, Audio, Easing, interpolate, Sequence, spring, staticFile, useCurrentFrame } from "remotion";
+import { useT } from "./lang";
 import { C, F, H, W } from "./style";
 
 const FPS = 30;
@@ -96,9 +97,10 @@ export const Mono: React.FC<{ children: React.ReactNode; size?: number; color?: 
 /** Small source tag in the top-right corner of a data scene. */
 export const Source: React.FC<{ at: number; children: React.ReactNode }> = ({ at, children }) => {
   const f = useCurrentFrame();
+  const tr = useT();
   return (
     <div style={{ position: "absolute", right: 72, top: 58, opacity: ramp(f, at, 20) * 0.7 }}>
-      <Mono size={18}>источник · {children}</Mono>
+      <Mono size={18}>{tr("источник")} · {children}</Mono>
     </div>
   );
 };

@@ -24,3 +24,19 @@ npm run render -- agent-bank
 - Up to $3–5T of purchases orchestrated by agents by 2030, goods only (McKinsey, Oct 2025).
 - First live agent-initiated payments: Mastercard Agent Pay (Hong Kong, Thailand).
 - Patient history, receipts and limits on screen are illustrative.
+
+## English version (`agent-bank-en`)
+
+Same scenes, English voice-over and on-screen text.
+
+- Voice: `en-US-AndrewMultilingualNeural`, rate +0%, take in `briefs/agent-bank-en/vo-take.txt`.
+  "Treint" is spelled "Tre-int" so the voice says two syllables; captions show "Treint".
+- Scene code keys word anchors and strings by the Russian original:
+  `src/reels/agent-bank/anchors-en.json` maps each anchor to the English word, `EN_TEXT` in `lang.tsx` holds the strings.
+  A missing anchor or string throws at render time instead of shipping Russian text.
+
+```bash
+python3 scripts/vo.py agent-bank-en --voice en-US-AndrewMultilingualNeural --rate +0% --hold 2.5
+python3 briefs/agent-bank/audio.py agent-bank-en
+npm run render -- agent-bank-en
+```

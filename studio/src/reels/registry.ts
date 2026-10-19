@@ -1,6 +1,6 @@
 import type React from "react";
 import { DemoReel, DEMO_DURATION } from "./demo/Reel";
-import { AgentBankReel, AGENT_BANK_DURATION, AGENT_BANK_SIZE } from "./agent-bank/Reel";
+import { AgentBankReel, AgentBankReelEn, AGENT_BANK_DURATION, AGENT_BANK_EN_DURATION, AGENT_BANK_SIZE } from "./agent-bank/Reel";
 
 export type ReelEntry = {
   readonly id: string;
@@ -15,4 +15,5 @@ export type ReelEntry = {
 export const REELS: readonly ReelEntry[] = [
   { id: "demo", component: DemoReel, durationInFrames: DEMO_DURATION },
   { id: "agent-bank", component: AgentBankReel, durationInFrames: AGENT_BANK_DURATION, ...AGENT_BANK_SIZE },
+  { id: "agent-bank-en", component: AgentBankReelEn, durationInFrames: AGENT_BANK_EN_DURATION, ...AGENT_BANK_SIZE },
 ];

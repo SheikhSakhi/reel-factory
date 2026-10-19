@@ -1,0 +1,12 @@
+[S1] In 2024, the AI agent economy was worth about $5 billion. In 2025, almost $8 billion. That's growth of around 45% a year.
+[S2] And by 2030, according to McKinsey, up to $5 trillion in purchases will flow through agents.
+[S3] And this isn't a forecast. The first purchases made by an agent, not a human, have already gone through Mastercard.
+[S4] GPUs gave us compute. Foundation models gave us the power to build services. The agent wave will create its own giants. But whose money will agents pay with?
+[S5] Today, yours. You ask for four tickets, and the agent buys forty. Or it lands on a scam page.
+[S6] A new economy needs new financial instruments. Every agent gets its own account, its own card, and your limit.
+[S7] Every account is insured: against fraud, and against the agent's own mistakes. And with every purchase, the agent offers a real insurance product. Booked you a doctor? It offers health insurance. Bought tickets? Travel insurance.
+[S8] Agents will start paying each other, buying and selling. Your agent books you into a clinic. The clinic's agent sends the bill. The insurer's agent pays it. No calls, not a single form filled in by a human. There will be billions of deals like this. It's a new ocean of money.
+[S9] By 2030, the best bank will be a bank for agents. But there's one condition.
+[S10] For these deals to be trusted, an agent has to remember its owner. Money trusts the agent that remembers. But today's AI doesn't remember everything you've done. The giants gave it just a notebook in your profile: a few facts about you, but not your history.
+[S11] That's why there's a race for real memory. The big players are plugging the gap with data centers. But the breakthrough will be technological. And it will start with the patient's medical history.
+[S12] If AI can be trusted with your medical history, it can be trusted with your wallet. The Tre-int team taught AI to remember the patient and the doctor. Let us show you how it works.
