@@ -9,6 +9,8 @@ import { normToken, type VoTake, type VoWord } from "./voiceover";
  *   <Captions take={TAKE} scenes={["S3", "S4"]} fontFamily={FONT} color={THEME.fg} accent={THEME.accent}
  *             keepTogether={["sixteen thousand hours"]} />
  *
+ * With a brand, spread its caption settings: {...captionProps(BRAND)}.
+ *
  * Pages break at sentence ends or when a line budget fills up; phrases in
  * `keepTogether` never split across lines or pages. Keep the band clear of cards.
  */
@@ -29,6 +31,13 @@ export type CaptionsProps = {
   readonly maxChars?: number;
   /** Phrases (as spoken tokens) that must stay on one line, e.g. numbers and names. */
   readonly keepTogether?: readonly string[];
+  /**
+   * "pill" puts each page on a rounded surface so it reads on any background (brand default);
+   * "plain" is text with a soft shadow.
+   */
+  readonly variant?: "pill" | "plain";
+  /** Pill surface colour (default: color at 92% over black). */
+  readonly pillColor?: string;
 };
 
 const WORD_IN = 4;
@@ -80,13 +89,18 @@ const buildPages = (props: CaptionsProps): Page[] => {
   });
 };
 
-const CaptionWord: React.FC<{ f: number; word: VoWord; nextFrame: number; accent: string }> = ({ f, word, nextFrame, accent }) => {
+/** Pill captions show the whole page with upcoming words dimmed, so the pill never sits half empty. */
+const UPCOMING_OPACITY = 0.38;
+
+const CaptionWord: React.FC<{ f: number; word: VoWord; nextFrame: number; accent: string; pill: boolean }> = ({ f, word, nextFrame, accent, pill }) => {
   const t = ramp(f, word.frame, WORD_IN);
   const active = f >= word.frame && f < nextFrame;
+  const seen = active ? 1 : PAST_OPACITY;
+  const opacity = pill ? UPCOMING_OPACITY + (seen - UPCOMING_OPACITY) * t : t * seen;
   return (
     <span style={{
-      display: "inline-block", position: "relative", opacity: t * (active ? 1 : PAST_OPACITY),
-      transform: `translateY(${(1 - t) * 10}px)`, filter: t < 1 ? `blur(${(1 - t) * 4}px)` : "none",
+      display: "inline-block", position: "relative", opacity,
+      transform: pill ? undefined : `translateY(${(1 - t) * 10}px)`, filter: !pill && t < 1 ? `blur(${(1 - t) * 4}px)` : "none",
     }}>
       {active ? (
         <span style={{
@@ -118,7 +132,12 @@ const CaptionPage: React.FC<{ f: number; page: Page; props: CaptionsProps }> = (
       <div style={{
         fontFamily: props.fontFamily, fontSize: props.fontSize ?? 50, fontWeight: 600, lineHeight: 1.18,
         color: props.color, textAlign: "center", textWrap: "balance", isolation: "isolate",
-        textShadow: "0 2px 14px rgba(0,0,0,0.55)",
+        ...(props.variant === "pill"
+          ? {
+            padding: "18px 34px", borderRadius: 34, boxShadow: "0 14px 40px rgba(0,0,0,0.22)",
+            background: props.pillColor ?? `color-mix(in srgb, ${props.color} 8%, #111 92%)`,
+          }
+          : { textShadow: "0 2px 14px rgba(0,0,0,0.55)" }),
       }}>
         {page.segments.map((seg, s) => (
           <React.Fragment key={seg.words[0].frame}>
@@ -127,7 +146,7 @@ const CaptionPage: React.FC<{ f: number; page: Page; props: CaptionsProps }> = (
               {seg.words.map((w, k) => (
                 <React.Fragment key={w.frame}>
                   {k > 0 ? " " : ""}
-                  <CaptionWord f={f} word={w} nextFrame={nextFrameOf(w)} accent={props.accent} />
+                  <CaptionWord f={f} word={w} nextFrame={nextFrameOf(w)} accent={props.accent} pill={props.variant === "pill"} />
                 </React.Fragment>
               ))}
             </span>

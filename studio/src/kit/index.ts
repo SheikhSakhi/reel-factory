@@ -1,11 +1,18 @@
 export * from "./theme";
 export * from "./motion";
+export * from "./brand";
+export { loadLocalFonts, stack } from "./fonts";
 export { Backdrop } from "./Backdrop";
 export { KineticText } from "./KineticText";
+export { Headline } from "./Headline";
 export { ChatBubble } from "./ChatBubble";
 export { Orbit } from "./Orbit";
 export { Counter } from "./Counter";
 export { Steps } from "./Steps";
+export { SeriesChrome, CHROME_CLEARANCE, CONTENT_BOTTOM } from "./SeriesChrome";
+export type { ChromeStep } from "./SeriesChrome";
+export { ProofShot, CommentCard, StatCard } from "./Proof";
+export { CtaCard } from "./CtaCard";
 export { SfxTrack } from "./Sfx";
 export type { SfxCue, SfxName } from "./Sfx";
 export { VoiceOver, VO_GAIN, loadTake, scene, wordFrame, wordEnd, normToken } from "./voiceover";

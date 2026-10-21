@@ -10,10 +10,13 @@
     "render": "sh scripts/render.sh",
     "qa": "sh scripts/qa-frames.sh",
     "audio-check": "node scripts/audio-check.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "frames": "sh scripts/frames.sh",
+    "fonts": "python3 scripts/fonts.py"
   },
   "dependencies": {
     "@remotion/cli": "4.0.534",
+    "@remotion/fonts": "4.0.534",
     "@remotion/google-fonts": "4.0.534",
     "@remotion/transitions": "4.0.534",
     "react": "19.1.0",
