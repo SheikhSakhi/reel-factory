@@ -24,6 +24,8 @@ Downloaded media is for analysis only. Keep it in `out/` (ignored by git), never
 
 Make the slug for the NEW reel and `briefs/<slug>/`. Run the `reel-trend-scout` agent in **Mode B (teardown)** with: the video path or stills folder, any transcript and caption text, the slug, and the user's idea. It writes `briefs/<slug>/00-teardown.md`.
 
+`npm run frames` also transcribes the reel locally (whisper.cpp), so no transcript needs to be pasted.
+
 Show the user the beat map summary (format, the 3 key mechanics) and the adapted outline. Ask: "Make it with this structure?"
 
 ## 3. Produce

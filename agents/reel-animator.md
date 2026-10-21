@@ -22,6 +22,7 @@ Build:
    - Headlines that open a scene start within ~3 frames of the cut. No scene opens on an empty frame.
    - At the reel root, outside the scene Sequences: `<SeriesChrome>` (from the style brief's steps), `<VoiceOver take={TAKE} />`, `<Captions take={TAKE} scenes={[...]} keepTogether={[...]} {...captionProps(BRAND)} />`, `<SfxTrack>`.
    - `VO_GAIN` (1.5) makes the voice loud enough for Reels. If `npm run audio-check -- <slug>` fails, lower the voice volume or the loudest SFX.
+   **Own footage** (`public/edit/<slug>/edit.json` exists, from `/reel-edit`): import `takeJson` from `public/edit/<slug>/take.json` instead, put `<TalkingHead edit={loadEdit(editJson)} />` first at the root, and do NOT mount `<VoiceOver>` (the audio is in the video). Overlays are layers on top of the footage, not scenes that replace it; cut-aways (full-frame proof) last at most ~3s. Keep SFX at 0.2-0.3.
 4. **No voice-over** (only if the user asked): `TransitionSeries` with the demo's `at()` helper for cue frames.
 5. **Proof:** assets load with `staticFile` through `ProofShot` / `CommentCard` (`src="assets/<slug>/file.png"`). Never fetch network images or invent comments.
 6. Append to `src/reels/registry.ts`: `{ id: "<slug>", component: <Pascal>Reel, durationInFrames: <SLUG>_DURATION, coverFrame: <SLUG>_COVER }`.

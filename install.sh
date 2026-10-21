@@ -24,10 +24,10 @@ cp "$HERE"/agents/reel-*.md "$CLAUDE_DIR/agents/"
 echo "installed skills + agents into $CLAUDE_DIR"
 
 # Repo-owned studio paths: refreshed on upgrade. Everything else in the studio belongs to the user.
-OWNED="src/kit src/index.ts src/Root.tsx src/reels/demo src/reels/series-demo scripts
+OWNED="src/kit src/index.ts src/Root.tsx src/reels/demo src/reels/series-demo scripts tests
 public/vo/series-demo public/assets/series-demo briefs/series-demo remotion.config.ts tsconfig.json README.md"
 # Created only when missing (the user customises these).
-SEEDED="src/brand brand public/fonts src/reels/registry.ts ideas plans replies .gitignore"
+SEEDED="src/brand brand public/fonts src/reels/registry.ts ideas plans replies insights .gitignore"
 
 if [ ! -d "$STUDIO_DIR" ]; then
   mkdir -p "$(dirname "$STUDIO_DIR")"
@@ -94,10 +94,21 @@ if python3 -m pip install --user --quiet --upgrade edge-tts >/dev/null 2>&1 || p
 else
   echo "run 'pip3 install -U edge-tts' to enable voice-overs (on by default)"
 fi
+if python3 -m pip install --user --quiet --upgrade opencv-python-headless >/dev/null 2>&1 || python3 -c "import cv2" 2>/dev/null; then
+  echo "opencv ready (face tracking for /reel-edit)"
+else
+  echo "optional: pip3 install opencv-python-headless (face tracking for /reel-edit)"
+fi
+command -v ffmpeg >/dev/null 2>&1 || echo "optional: install ffmpeg (brew install ffmpeg / apt install ffmpeg) to edit your own recordings"
+# .gitignore additions for studios created before these files existed
+for P in data .env.local .models .whisper __pycache__; do grep -qx "$P" .gitignore 2>/dev/null || echo "$P" >> .gitignore; done
 npx tsc --noEmit
+python3 -m unittest discover -s tests >/dev/null 2>&1 && echo "tests passed" || echo "warning: studio tests failed (run: npm test)"
 
 echo
 echo "Done. Restart Claude Code, then:"
 echo "  /reel-brand      set your look, voice and CTA once"
+echo "  docs/SETUP.md    connect Instagram + YouTube (one hour, free)"
+echo "  /reel-edit       turn your own recording into a reel"
 echo "  /reel-ideas      find what's working in your niche"
 echo "  /reel-factory    5 mistakes new founders make with AI - 40s"

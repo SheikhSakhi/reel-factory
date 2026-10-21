@@ -12,12 +12,18 @@
     "audio-check": "node scripts/audio-check.mjs",
     "typecheck": "tsc --noEmit",
     "frames": "sh scripts/frames.sh",
-    "fonts": "python3 scripts/fonts.py"
+    "fonts": "python3 scripts/fonts.py",
+    "edit": "python3 scripts/edit.py",
+    "ig": "python3 scripts/ig.py",
+    "trends": "python3 scripts/trends.py",
+    "weekly": "python3 scripts/ig.py sync && python3 scripts/ig.py discover && python3 scripts/trends.py outliers && python3 scripts/trends.py report",
+    "test": "python3 -m unittest discover -s tests"
   },
   "dependencies": {
     "@remotion/cli": "4.0.534",
     "@remotion/fonts": "4.0.534",
     "@remotion/google-fonts": "4.0.534",
+    "@remotion/install-whisper-cpp": "4.0.534",
     "@remotion/transitions": "4.0.534",
     "react": "19.1.0",
     "react-dom": "19.1.0",

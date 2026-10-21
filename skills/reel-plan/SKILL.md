@@ -11,6 +11,7 @@ metadata:
 
 - `~/Projects/reel-studio/brand/brand.md` (niche, CTAs, lead magnets)
 - `ideas/backlog.md`. If it has fewer than 10 unused ideas, run `/reel-ideas` first.
+- `insights/report.md` and `insights/formats.md` if they exist: favour the formats that measured best, and keep one slot a week for a test.
 - From the user (ask once, with defaults): posts per week (default 5, Mon-Fri), the week's start date (default next Monday), any fixed items (a launch, an event), and which days they can record or supply assets.
 
 ## 2. Plan rules
@@ -19,7 +20,7 @@ metadata:
 - **Mix CTAs**: at most 2 keyword DM CTAs per week (more trains the audience to ignore them), the rest save or follow. Keyword CTAs only for lead magnets that exist.
 - **Series**: if an idea is big, split it into "part 1 / part 2" on consecutive posting days, and only promise part 2 in part 1 if it is planned.
 - **Effort**: put reels that need user assets (screen recordings, results) later in the week, and note the asset and the day it is needed.
-- **Timing**: suggest posting times from the brand's audience time zone. Say these are starting points to test, not data, unless the user shares their own insights.
+- **Timing**: suggest posting times from the brand's audience time zone. Say these are starting points to test, not data. (The API has no posting-time breakdown in this setup; compare results by publish time in `insights/report.md` after a few weeks.)
 
 ## 3. Output
 

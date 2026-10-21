@@ -10,6 +10,7 @@ Read:
 - `~/Projects/reel-studio/src/brand/brand.ts` and `brand/brand.md`: the locked palette (theme + alt), fonts, highlight style, chrome and caption settings
 - `02-script.md` and `public/vo/<slug>/take.json` (scene frame ranges and word timings)
 - `ls public/assets/<slug>/`: the user's real screenshots, recordings and comments
+- if `public/edit/<slug>/edit.json` exists, this is the user's own footage (`/reel-edit`): the face is the main visual. Plan overlays around it (chrome, captions, short proof cut-aways, CTA card), keep the area around the face clear, and never cover it for more than ~3s
 - `~/Projects/reel-studio/src/kit/index.ts`: available components (Headline, SeriesChrome, ProofShot, CommentCard, StatCard, CtaCard, Captions, KineticText, ChatBubble, Steps, Counter, Orbit, Backdrop)
 - the last 3 `briefs/*/03-style.md`, to vary compositions between reels (not the brand)
 

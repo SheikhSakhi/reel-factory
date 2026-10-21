@@ -10,7 +10,9 @@ metadata:
 Pipeline: **idea → research → script (format) → voice-over → brand style + sound + caption → animation → QA → render → publish**.
 Studio: `~/Projects/reel-studio` (Remotion 4, 1080x1920, 30 fps). Briefs are in `briefs/<slug>/`, code in `src/reels/<slug>/`, the brand in `brand/brand.md` + `src/brand/brand.ts`.
 
-Related skills: `/reel-brand` (set the look once), `/reel-ideas` (what to make), `/reel-adapt <url>` (borrow a viral reel's structure), `/reel-plan` (a week of reels), `/reel-replies` (comment and DM replies).
+Related skills: `/reel-brand` (set the look once), `/reel-edit` (the user's own recording instead of a generated voice), `/reel-insights` (weekly measurement), `/reel-ideas` (what to make), `/reel-adapt <url>` (borrow a viral reel's structure), `/reel-plan` (a week of reels), `/reel-replies` (comment and DM replies).
+
+If the user gives a video of themselves talking, use `/reel-edit` instead: it replaces steps 1-2b with their own footage.
 
 What makes accounts grow is consistency, not novelty: **one brand look, a voice, proven formats, real proof and a CTA that captures leads.** Every step below serves one of those.
 
@@ -90,7 +92,13 @@ If the CTA is a keyword DM, remind the user in one line what must happen when pe
 
 ## 5. Publish (only with explicit confirmation)
 
-Never publish automatically. Show the caption and the target platforms, then ask "Publish now?". Only on a clear yes, use the `social-publisher` skill (SocialClaw, requires `SC_API_KEY`). If no key is configured, say so and leave the MP4, cover and caption ready for manual upload.
+Never publish automatically. Show the caption, the cover and the target platforms, then ask "Publish now?". Only on a clear yes:
+
+- **Instagram** (when `.env.local` exists, see `docs/SETUP.md`): first `python3 scripts/ig.py publish <slug> --cover-ms <coverFrame / 30 * 1000>` (dry run: shows exactly what will be sent), then the same command with `--yes`. It records the reel in `data/factory.db`, so insights and keyword replies find it later.
+- **Other platforms**: the `social-publisher` skill, if installed.
+- Nothing configured: say so and leave the MP4, cover and caption ready for manual upload.
+
+If the CTA is a keyword DM, tell the user that `/reel-replies` (or `python3 scripts/ig.py keyword <slug>`) handles the replies, and whether DMs to the public need App Review first (`docs/SETUP.md` step 7).
 
 ## Quality bar
 

@@ -21,6 +21,8 @@ Accounts grow from **consistency and trust**, not one good-looking video. So the
 | Command | What it does |
 |---|---|
 | `/reel-brand` | Sets your brand once: look, fonts (stored locally), voice, proof points, CTA keyword and lead magnets. Shows a preview to approve. |
+| `/reel-edit <video>` | Edits your own recording: cleans the audio, transcribes it locally, cuts retakes and dead air, lets you edit the video by editing the transcript, reframes to 9:16 around your face, and adds captions, chapters, proof and the CTA. |
+| `/reel-insights` | The weekly loop: pulls your reels' insights and your watchlist's posts from Instagram, finds outliers, tags them, and reports what works for your audience and your niche. |
 | `/reel-ideas` | Researches what's working in your niche now. Adds scored ideas (format, hook, proof, CTA, effort) to `ideas/backlog.md`. |
 | `/reel-adapt <url or file>` | Breaks a viral reel down into a beat map and makes your version with the same structure, using your topic and brand. Never their words or visuals. |
 | `/reel-factory <idea>` | Makes one reel end to end: MP4, cover and caption. |
@@ -42,7 +44,19 @@ Accounts grow from **consistency and trust**, not one good-looking video. So the
 | `reel-qa` | checks the hook rule, format, brand, proof, layout and audio, then returns PASS or a list of fixes |
 | `reel-trend-scout` | ideas for `/reel-ideas`, teardowns for `/reel-adapt` |
 
-It never publishes or sends anything on its own. It always asks first. Publishing uses the `social-publisher` skill if you have it.
+It never publishes or sends anything on its own. It always asks first. Publishing, comment replies and keyword DMs go through the official Instagram API (`scripts/ig.py`) once you connect it.
+
+## How it learns
+
+```
+research (Instagram outliers, YouTube Shorts, web) → make (script or your recording) → publish → measure (insights) → research
+```
+
+Everything it learns goes into one local database (`data/factory.db`); the research and script agents read the summaries (`insights/report.md`, `insights/formats.md`, `ideas/outliers.md`) before writing. Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+## Connect Instagram and YouTube
+
+Free, about an hour, once: [docs/SETUP.md](docs/SETUP.md). It unlocks publishing, insights, comment replies, keyword DMs and competitor research. Everything else works without it.
 
 ## Install
 
@@ -57,7 +71,7 @@ git clone https://github.com/SheikhSakhi/reel-factory.git
 cd reel-factory && sh install.sh
 ```
 
-Requirements: Node.js 18+, python3, git. The first render downloads Remotion's headless Chrome automatically. No API keys are needed.
+Requirements: Node.js 18+, python3, git. For editing your own recordings: ffmpeg (`brew install ffmpeg` / `apt install ffmpeg`); the installer adds OpenCV, and whisper.cpp builds itself on first use. The first render downloads Remotion's headless Chrome automatically. No paid API keys are needed.
 
 **Upgrading:** `git pull && sh install.sh`. The installer refreshes the kit, scripts and examples. It keeps your brand, reels, briefs and registry, and backs up any kit file you changed to `.backup/<time>/`.
 
@@ -93,9 +107,9 @@ Note: the script text is sent to Microsoft's TTS service, and edge-tts is an uno
 
 ## What gets installed
 
-- `~/.claude/skills/reel-*`: the 6 skills (`reel-factory` with `formats.md`, `reel-brand`, `reel-ideas`, `reel-adapt`, `reel-plan`, `reel-replies`)
+- `~/.claude/skills/reel-*`: the 8 skills (`reel-factory` with `formats.md`, `reel-brand`, `reel-edit`, `reel-insights`, `reel-ideas`, `reel-adapt`, `reel-plan`, `reel-replies`)
 - `~/.claude/agents/reel-*.md`: the 8 agents
-- `~/Projects/reel-studio/`: the Remotion project (brand kit, animation kit, two example reels, and scripts for sound effects, voice-over, fonts, teardown frames, render with cover, QA stills and audio check). Set `REEL_STUDIO_DIR` to put it somewhere else.
+- `~/Projects/reel-studio/`: the Remotion project (brand kit, animation kit, two example reels) and its scripts: `edit.py` + `align.py` + `transcribe.mjs` (own-footage editor), `ig.py` (Instagram), `trends.py` (research), `db.py` (memory), `vo.py`, `fonts.py`, `frames.sh`, render, QA and audio check, plus unit tests (`npm test`). Set `REEL_STUDIO_DIR` to put it somewhere else.
 
 ## License
 

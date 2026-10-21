@@ -12,8 +12,9 @@ Drafts only. **Never send, like, delete or hide anything on the user's behalf** 
 ## 1. Get the comments
 
 In order of preference:
-1. The user pastes comments or DMs, or drops a screenshot or CSV export in `replies/`.
-2. A connected tool (e.g. the `social-publisher` skill, if it can read comments) or a browser tool on the user's own account, read-only.
+1. **The connector** (when `.env.local` exists): `python3 scripts/ig.py comments <slug>` writes `replies/<slug>-comments.json` with every comment and whether it was handled.
+2. The user pastes comments or DMs, or drops a screenshot or CSV export in `replies/`.
+3. A browser tool on the user's own account, read-only.
 
 Also read `brand/brand.md` (voice, lead magnets, rules) and the reel's `briefs/<slug>/07-caption.md` (keyword, DM text).
 
@@ -33,6 +34,9 @@ Write `replies/<slug>-<YYYY-MM-DD>.md` with one row per comment:
 
 Put flagged items (leads, sensitive, negative) first. Then: the keyword count (how many people asked for the lead magnet), the most common questions (these are next reel ideas: offer to append them to `ideas/backlog.md`), and the batch of drafts.
 
-## 3. Automating keyword DMs
+## 3. Sending (only after approval)
 
-If keyword volume is high, suggest automating the DM with the platform's approved tools (Meta's own automation or a Meta-approved partner such as ManyChat), using the trigger set and DM text from `07-caption.md`. Mass manual DMs from a personal session can trip spam limits.
+- **Keyword comments**: `python3 scripts/ig.py keyword <slug>` shows who asked and what each gets (dry run). After the user approves that batch, run it with `--yes`: one private DM per commenter (Meta allows one per comment, within 7 days) plus a varied public reply. Already-handled comments are never messaged twice.
+- **Other approved drafts**: `python3 scripts/ig.py reply <comment_id> "<text>" --yes`.
+- Until the app has passed App Review (`docs/SETUP.md` step 7), private replies only reach people with a role on the app. For DMs to the public meanwhile, use a Meta-approved partner (e.g. ManyChat) with the trigger set and DM text from `07-caption.md`; `ig.py keyword` can still post the public replies.
+- Never DM someone who didn't ask (no keyword, no question). Mass DMs trip spam limits.

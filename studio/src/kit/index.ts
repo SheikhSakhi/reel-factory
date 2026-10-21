@@ -13,6 +13,8 @@ export { SeriesChrome, CHROME_CLEARANCE, CONTENT_BOTTOM } from "./SeriesChrome";
 export type { ChromeStep } from "./SeriesChrome";
 export { ProofShot, CommentCard, StatCard } from "./Proof";
 export { CtaCard } from "./CtaCard";
+export { TalkingHead, loadEdit } from "./TalkingHead";
+export type { Edit, EditSegment, FacePoint } from "./TalkingHead";
 export { SfxTrack } from "./Sfx";
 export type { SfxCue, SfxName } from "./Sfx";
 export { VoiceOver, VO_GAIN, loadTake, scene, wordFrame, wordEnd, normToken } from "./voiceover";
