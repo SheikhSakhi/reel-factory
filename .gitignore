@@ -3,3 +3,8 @@ out/
 .DS_Store
 studio/public/sfx/*.wav
 studio/package-lock.json
+studio/data/
+studio/.env.local
+studio/.whisper/
+studio/.models/
+__pycache__/

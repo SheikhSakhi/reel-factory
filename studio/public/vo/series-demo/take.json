@@ -1,0 +1,779 @@
+{
+  "file": "vo/series-demo/take.mp3",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 1002,
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "One idea in, a week of reels out. Eight AI agents do the work, and it costs nothing.",
+      "from": 0,
+      "words": [
+        {
+          "token": "One",
+          "start": 0.094,
+          "end": 0.271,
+          "frame": 3,
+          "endFrame": 8
+        },
+        {
+          "token": "idea",
+          "start": 0.271,
+          "end": 0.861,
+          "frame": 8,
+          "endFrame": 26
+        },
+        {
+          "token": "in,",
+          "start": 1.002,
+          "end": 1.132,
+          "frame": 30,
+          "endFrame": 34
+        },
+        {
+          "token": "a",
+          "start": 1.156,
+          "end": 1.226,
+          "frame": 35,
+          "endFrame": 37
+        },
+        {
+          "token": "week",
+          "start": 1.226,
+          "end": 1.486,
+          "frame": 37,
+          "endFrame": 45
+        },
+        {
+          "token": "of",
+          "start": 1.486,
+          "end": 1.604,
+          "frame": 45,
+          "endFrame": 48
+        },
+        {
+          "token": "reels",
+          "start": 1.604,
+          "end": 1.91,
+          "frame": 48,
+          "endFrame": 57
+        },
+        {
+          "token": "out.",
+          "start": 1.922,
+          "end": 2.252,
+          "frame": 58,
+          "endFrame": 68
+        },
+        {
+          "token": "Eight",
+          "start": 2.618,
+          "end": 2.795,
+          "frame": 79,
+          "endFrame": 84
+        },
+        {
+          "token": "AI",
+          "start": 2.889,
+          "end": 3.29,
+          "frame": 87,
+          "endFrame": 99
+        },
+        {
+          "token": "agents",
+          "start": 3.302,
+          "end": 3.691,
+          "frame": 99,
+          "endFrame": 111
+        },
+        {
+          "token": "do",
+          "start": 3.691,
+          "end": 3.833,
+          "frame": 111,
+          "endFrame": 115
+        },
+        {
+          "token": "the",
+          "start": 3.833,
+          "end": 3.915,
+          "frame": 115,
+          "endFrame": 117
+        },
+        {
+          "token": "work,",
+          "start": 3.915,
+          "end": 4.328,
+          "frame": 117,
+          "endFrame": 130
+        },
+        {
+          "token": "and",
+          "start": 4.587,
+          "end": 4.646,
+          "frame": 138,
+          "endFrame": 139
+        },
+        {
+          "token": "it",
+          "start": 4.658,
+          "end": 4.729,
+          "frame": 140,
+          "endFrame": 142
+        },
+        {
+          "token": "costs",
+          "start": 4.729,
+          "end": 5.118,
+          "frame": 142,
+          "endFrame": 154
+        },
+        {
+          "token": "nothing.",
+          "start": 5.13,
+          "end": 5.578,
+          "frame": 154,
+          "endFrame": 167
+        }
+      ],
+      "to": 177,
+      "speechEnd": 167
+    },
+    {
+      "id": "S2",
+      "text": "First, it finds the ideas that are already working in your niche.",
+      "from": 177,
+      "words": [
+        {
+          "token": "First,",
+          "start": 5.991,
+          "end": 6.427,
+          "frame": 180,
+          "endFrame": 193
+        },
+        {
+          "token": "it",
+          "start": 6.804,
+          "end": 6.863,
+          "frame": 204,
+          "endFrame": 206
+        },
+        {
+          "token": "finds",
+          "start": 6.863,
+          "end": 7.158,
+          "frame": 206,
+          "endFrame": 215
+        },
+        {
+          "token": "the",
+          "start": 7.158,
+          "end": 7.252,
+          "frame": 215,
+          "endFrame": 218
+        },
+        {
+          "token": "ideas",
+          "start": 7.252,
+          "end": 7.83,
+          "frame": 218,
+          "endFrame": 235
+        },
+        {
+          "token": "that",
+          "start": 7.83,
+          "end": 7.936,
+          "frame": 235,
+          "endFrame": 238
+        },
+        {
+          "token": "are",
+          "start": 7.936,
+          "end": 8.031,
+          "frame": 238,
+          "endFrame": 241
+        },
+        {
+          "token": "already",
+          "start": 8.031,
+          "end": 8.349,
+          "frame": 241,
+          "endFrame": 250
+        },
+        {
+          "token": "working",
+          "start": 8.349,
+          "end": 8.715,
+          "frame": 250,
+          "endFrame": 261
+        },
+        {
+          "token": "in",
+          "start": 8.726,
+          "end": 8.797,
+          "frame": 262,
+          "endFrame": 264
+        },
+        {
+          "token": "your",
+          "start": 8.809,
+          "end": 8.915,
+          "frame": 264,
+          "endFrame": 267
+        },
+        {
+          "token": "niche.",
+          "start": 8.915,
+          "end": 9.351,
+          "frame": 267,
+          "endFrame": 281
+        }
+      ],
+      "to": 289,
+      "speechEnd": 281
+    },
+    {
+      "id": "S3",
+      "text": "Then it writes the script in a proven format, with a hook that lands in three seconds.",
+      "from": 289,
+      "words": [
+        {
+          "token": "Then",
+          "start": 9.741,
+          "end": 9.823,
+          "frame": 292,
+          "endFrame": 295
+        },
+        {
+          "token": "it",
+          "start": 9.823,
+          "end": 9.929,
+          "frame": 295,
+          "endFrame": 298
+        },
+        {
+          "token": "writes",
+          "start": 9.929,
+          "end": 10.259,
+          "frame": 298,
+          "endFrame": 308
+        },
+        {
+          "token": "the",
+          "start": 10.259,
+          "end": 10.342,
+          "frame": 308,
+          "endFrame": 310
+        },
+        {
+          "token": "script",
+          "start": 10.354,
+          "end": 10.755,
+          "frame": 311,
+          "endFrame": 323
+        },
+        {
+          "token": "in",
+          "start": 10.755,
+          "end": 10.825,
+          "frame": 323,
+          "endFrame": 325
+        },
+        {
+          "token": "a",
+          "start": 10.825,
+          "end": 10.884,
+          "frame": 325,
+          "endFrame": 327
+        },
+        {
+          "token": "proven",
+          "start": 10.884,
+          "end": 11.297,
+          "frame": 327,
+          "endFrame": 339
+        },
+        {
+          "token": "format,",
+          "start": 11.309,
+          "end": 11.828,
+          "frame": 339,
+          "endFrame": 355
+        },
+        {
+          "token": "with",
+          "start": 12.04,
+          "end": 12.158,
+          "frame": 361,
+          "endFrame": 365
+        },
+        {
+          "token": "a",
+          "start": 12.17,
+          "end": 12.205,
+          "frame": 365,
+          "endFrame": 366
+        },
+        {
+          "token": "hook",
+          "start": 12.205,
+          "end": 12.476,
+          "frame": 366,
+          "endFrame": 374
+        },
+        {
+          "token": "that",
+          "start": 12.488,
+          "end": 12.653,
+          "frame": 375,
+          "endFrame": 380
+        },
+        {
+          "token": "lands",
+          "start": 12.653,
+          "end": 13.042,
+          "frame": 380,
+          "endFrame": 391
+        },
+        {
+          "token": "in",
+          "start": 13.042,
+          "end": 13.137,
+          "frame": 391,
+          "endFrame": 394
+        },
+        {
+          "token": "three",
+          "start": 13.137,
+          "end": 13.42,
+          "frame": 394,
+          "endFrame": 403
+        },
+        {
+          "token": "seconds.",
+          "start": 13.42,
+          "end": 14.009,
+          "frame": 403,
+          "endFrame": 420
+        }
+      ],
+      "to": 429,
+      "speechEnd": 420
+    },
+    {
+      "id": "S4",
+      "text": "Every reel comes out in your brand, so people know it's you before they read a word.",
+      "from": 429,
+      "words": [
+        {
+          "token": "Every",
+          "start": 14.387,
+          "end": 14.693,
+          "frame": 432,
+          "endFrame": 441
+        },
+        {
+          "token": "reel",
+          "start": 14.705,
+          "end": 15.212,
+          "frame": 441,
+          "endFrame": 456
+        },
+        {
+          "token": "comes",
+          "start": 15.224,
+          "end": 15.472,
+          "frame": 457,
+          "endFrame": 464
+        },
+        {
+          "token": "out",
+          "start": 15.472,
+          "end": 15.613,
+          "frame": 464,
+          "endFrame": 468
+        },
+        {
+          "token": "in",
+          "start": 15.613,
+          "end": 15.66,
+          "frame": 468,
+          "endFrame": 470
+        },
+        {
+          "token": "your",
+          "start": 15.66,
+          "end": 15.743,
+          "frame": 470,
+          "endFrame": 472
+        },
+        {
+          "token": "brand,",
+          "start": 15.743,
+          "end": 16.132,
+          "frame": 472,
+          "endFrame": 484
+        },
+        {
+          "token": "so",
+          "start": 16.521,
+          "end": 16.663,
+          "frame": 496,
+          "endFrame": 500
+        },
+        {
+          "token": "people",
+          "start": 16.663,
+          "end": 17.005,
+          "frame": 500,
+          "endFrame": 510
+        },
+        {
+          "token": "know",
+          "start": 17.005,
+          "end": 17.382,
+          "frame": 510,
+          "endFrame": 521
+        },
+        {
+          "token": "it's",
+          "start": 17.606,
+          "end": 17.759,
+          "frame": 528,
+          "endFrame": 533
+        },
+        {
+          "token": "you",
+          "start": 17.771,
+          "end": 17.889,
+          "frame": 533,
+          "endFrame": 537
+        },
+        {
+          "token": "before",
+          "start": 17.889,
+          "end": 18.243,
+          "frame": 537,
+          "endFrame": 547
+        },
+        {
+          "token": "they",
+          "start": 18.243,
+          "end": 18.337,
+          "frame": 547,
+          "endFrame": 550
+        },
+        {
+          "token": "read",
+          "start": 18.349,
+          "end": 18.502,
+          "frame": 550,
+          "endFrame": 555
+        },
+        {
+          "token": "a",
+          "start": 18.502,
+          "end": 18.55,
+          "frame": 555,
+          "endFrame": 556
+        },
+        {
+          "token": "word.",
+          "start": 18.55,
+          "end": 18.915,
+          "frame": 556,
+          "endFrame": 567
+        }
+      ],
+      "to": 576,
+      "speechEnd": 567
+    },
+    {
+      "id": "S5",
+      "text": "It adds a natural voice, and every animation lands on the word it's about.",
+      "from": 576,
+      "words": [
+        {
+          "token": "It",
+          "start": 19.292,
+          "end": 19.375,
+          "frame": 579,
+          "endFrame": 581
+        },
+        {
+          "token": "adds",
+          "start": 19.387,
+          "end": 19.623,
+          "frame": 582,
+          "endFrame": 589
+        },
+        {
+          "token": "a",
+          "start": 19.634,
+          "end": 19.67,
+          "frame": 589,
+          "endFrame": 590
+        },
+        {
+          "token": "natural",
+          "start": 19.67,
+          "end": 20.224,
+          "frame": 590,
+          "endFrame": 607
+        },
+        {
+          "token": "voice,",
+          "start": 20.236,
+          "end": 20.814,
+          "frame": 607,
+          "endFrame": 624
+        },
+        {
+          "token": "and",
+          "start": 21.038,
+          "end": 21.309,
+          "frame": 631,
+          "endFrame": 639
+        },
+        {
+          "token": "every",
+          "start": 21.439,
+          "end": 21.722,
+          "frame": 643,
+          "endFrame": 652
+        },
+        {
+          "token": "animation",
+          "start": 21.722,
+          "end": 22.217,
+          "frame": 652,
+          "endFrame": 667
+        },
+        {
+          "token": "lands",
+          "start": 22.229,
+          "end": 22.512,
+          "frame": 667,
+          "endFrame": 675
+        },
+        {
+          "token": "on",
+          "start": 22.512,
+          "end": 22.583,
+          "frame": 675,
+          "endFrame": 677
+        },
+        {
+          "token": "the",
+          "start": 22.583,
+          "end": 22.641,
+          "frame": 677,
+          "endFrame": 679
+        },
+        {
+          "token": "word",
+          "start": 22.642,
+          "end": 22.83,
+          "frame": 679,
+          "endFrame": 685
+        },
+        {
+          "token": "it's",
+          "start": 22.842,
+          "end": 22.948,
+          "frame": 685,
+          "endFrame": 688
+        },
+        {
+          "token": "about.",
+          "start": 22.948,
+          "end": 23.361,
+          "frame": 688,
+          "endFrame": 701
+        }
+      ],
+      "to": 709,
+      "speechEnd": 701
+    },
+    {
+      "id": "S6",
+      "text": "And when the comments come in, it drafts your replies. You approve every single one.",
+      "from": 709,
+      "words": [
+        {
+          "token": "And",
+          "start": 23.75,
+          "end": 23.844,
+          "frame": 712,
+          "endFrame": 715
+        },
+        {
+          "token": "when",
+          "start": 23.856,
+          "end": 23.939,
+          "frame": 716,
+          "endFrame": 718
+        },
+        {
+          "token": "the",
+          "start": 23.95,
+          "end": 24.021,
+          "frame": 719,
+          "endFrame": 721
+        },
+        {
+          "token": "comments",
+          "start": 24.033,
+          "end": 24.363,
+          "frame": 721,
+          "endFrame": 731
+        },
+        {
+          "token": "come",
+          "start": 24.375,
+          "end": 24.564,
+          "frame": 731,
+          "endFrame": 737
+        },
+        {
+          "token": "in,",
+          "start": 24.575,
+          "end": 24.835,
+          "frame": 737,
+          "endFrame": 745
+        },
+        {
+          "token": "it",
+          "start": 25.236,
+          "end": 25.318,
+          "frame": 757,
+          "endFrame": 760
+        },
+        {
+          "token": "drafts",
+          "start": 25.33,
+          "end": 25.731,
+          "frame": 760,
+          "endFrame": 772
+        },
+        {
+          "token": "your",
+          "start": 25.731,
+          "end": 25.837,
+          "frame": 772,
+          "endFrame": 775
+        },
+        {
+          "token": "replies.",
+          "start": 25.837,
+          "end": 26.568,
+          "frame": 775,
+          "endFrame": 797
+        },
+        {
+          "token": "You",
+          "start": 26.946,
+          "end": 27.052,
+          "frame": 808,
+          "endFrame": 812
+        },
+        {
+          "token": "approve",
+          "start": 27.052,
+          "end": 27.594,
+          "frame": 812,
+          "endFrame": 828
+        },
+        {
+          "token": "every",
+          "start": 27.818,
+          "end": 28.054,
+          "frame": 835,
+          "endFrame": 842
+        },
+        {
+          "token": "single",
+          "start": 28.066,
+          "end": 28.361,
+          "frame": 842,
+          "endFrame": 851
+        },
+        {
+          "token": "one.",
+          "start": 28.373,
+          "end": 28.62,
+          "frame": 851,
+          "endFrame": 859
+        }
+      ],
+      "to": 867,
+      "speechEnd": 859
+    },
+    {
+      "id": "S7",
+      "text": "Comment Factory, and I'll send you the link.",
+      "from": 867,
+      "words": [
+        {
+          "token": "Comment",
+          "start": 28.998,
+          "end": 29.304,
+          "frame": 870,
+          "endFrame": 879
+        },
+        {
+          "token": "Factory,",
+          "start": 29.316,
+          "end": 29.929,
+          "frame": 879,
+          "endFrame": 898
+        },
+        {
+          "token": "and",
+          "start": 30.271,
+          "end": 30.424,
+          "frame": 908,
+          "endFrame": 913
+        },
+        {
+          "token": "I'll",
+          "start": 30.436,
+          "end": 30.566,
+          "frame": 913,
+          "endFrame": 917
+        },
+        {
+          "token": "send",
+          "start": 30.566,
+          "end": 30.849,
+          "frame": 917,
+          "endFrame": 925
+        },
+        {
+          "token": "you",
+          "start": 30.849,
+          "end": 30.908,
+          "frame": 925,
+          "endFrame": 927
+        },
+        {
+          "token": "the",
+          "start": 30.908,
+          "end": 30.991,
+          "frame": 927,
+          "endFrame": 930
+        },
+        {
+          "token": "link.",
+          "start": 31.002,
+          "end": 31.368,
+          "frame": 930,
+          "endFrame": 941
+        }
+      ],
+      "to": 1002,
+      "speechEnd": 941
+    }
+  ]
+}

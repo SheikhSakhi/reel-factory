@@ -3,17 +3,16 @@ import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { TransitionSeries, linearTiming } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
 import { slide } from "@remotion/transitions/slide";
-import { loadFont as loadDisplay } from "@remotion/google-fonts/SpaceGrotesk";
-import { loadFont as loadBody } from "@remotion/google-fonts/Inter";
-import { loadFont as loadMono } from "@remotion/google-fonts/JetBrainsMono";
 import {
   Backdrop, ChatBubble, Counter, KineticText, Orbit, SfxTrack, Steps, pop, sec,
   type SfxCue, type Theme,
 } from "../../kit";
+import { BRAND } from "../../brand/brand";
 
-const display = loadDisplay("normal", { weights: ["700"], subsets: ["latin"] }).fontFamily;
-const body = loadBody("normal", { weights: ["600", "800"], subsets: ["latin"] }).fontFamily;
-const mono = loadMono("normal", { weights: ["500"], subsets: ["latin"] }).fontFamily;
+// Fonts come from the brand kit (vendored locally), so the demo renders offline.
+const display = BRAND.theme.fontBody;
+const body = BRAND.theme.fontBody;
+const mono = BRAND.theme.fontMono;
 
 // Art director's call for this reel: warm paper + ink, one hot orange accent.
 const THEME: Theme = {
@@ -69,7 +68,7 @@ const Proof: React.FC = () => {
       <AbsoluteFill style={{ ...center, flexDirection: "column", gap: 20 }}>
         <Counter to={0} from={147} duration={45} delay={4} style={{ fontSize: 330, fontFamily: display, transform: `scale(${pop(frame, 2)})` }} />
         <KineticText text="references to hunt for" size={78} font={body} delay={20} />
-        <KineticText text="every reel gets its own style" size={52} font={mono} weight={500} delay={42} stagger={2} />
+        <KineticText text="every reel in your brand" size={52} font={mono} weight={500} delay={42} stagger={2} />
       </AbsoluteFill>
     </Backdrop>
   );
