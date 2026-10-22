@@ -8,3 +8,4 @@ studio/.env.local
 studio/.whisper/
 studio/.models/
 __pycache__/
+studio/inbox/

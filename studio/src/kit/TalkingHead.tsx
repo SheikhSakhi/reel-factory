@@ -58,8 +58,20 @@ const faceAt = (face: readonly FacePoint[], t: number): FacePoint => {
 
 const clamp = (v: number, lo: number, hi: number): number => Math.min(hi, Math.max(lo, v));
 
+/** A punch-in on an emphasis word: absolute frame, extra zoom, frames held. */
+export type Punch = { readonly frame: number; readonly scale: number; readonly hold: number };
+
+const punchAt = (punches: readonly Punch[], frame: number): number =>
+  punches.reduce((z, p) => {
+    const k = interpolate(frame, [p.frame, p.frame + 5, p.frame + p.hold, p.frame + p.hold + 8], [0, 1, 1, 0], {
+      extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    return z * (1 + (p.scale - 1) * k);
+  }, 1);
+
 type Props = {
   readonly edit: Edit;
+  /** Extra punch-ins on emphasis words (absolute frames on the edited timeline). */
+  readonly punches?: readonly Punch[];
   /** Zoom on even / odd cuts. [1, 1.12] alternates wide and punched-in. */
   readonly zooms?: readonly [number, number];
   /** Where the face sits vertically, in px. Default 760 keeps it above the caption band. */
@@ -69,12 +81,12 @@ type Props = {
   readonly volume?: number;
 };
 
-const Shot: React.FC<{ edit: Edit; seg: EditSegment; zoom: number; faceY: number; audioFade: number; volume: number }> = ({
-  edit, seg, zoom, faceY, audioFade, volume,
+const Shot: React.FC<{ edit: Edit; seg: EditSegment; zoom: number; faceY: number; audioFade: number; volume: number; punches: readonly Punch[] }> = ({
+  edit, seg, zoom, faceY, audioFade, volume, punches,
 }) => {
   const f = useCurrentFrame();
   const face = faceAt(edit.face, (seg.startFrom + f) / REEL.fps);
-  const scale = Math.max(REEL.width / edit.width, REEL.height / edit.height) * zoom;
+  const scale = Math.max(REEL.width / edit.width, REEL.height / edit.height) * zoom * punchAt(punches, seg.from + f);
   const w = edit.width * scale;
   const h = edit.height * scale;
   const left = clamp(REEL.width / 2 - face.x * w, REEL.width - w, 0);
@@ -91,11 +103,11 @@ const Shot: React.FC<{ edit: Edit; seg: EditSegment; zoom: number; faceY: number
   );
 };
 
-export const TalkingHead: React.FC<Props> = ({ edit, zooms = [1, 1.12], faceY = 760, audioFade = 2, volume = 1 }) => (
+export const TalkingHead: React.FC<Props> = ({ edit, punches = [], zooms = [1, 1.12], faceY = 760, audioFade = 2, volume = 1 }) => (
   <AbsoluteFill style={{ backgroundColor: "#000", overflow: "hidden" }}>
     {edit.segments.map((seg, i) => (
       <Sequence key={seg.from} from={seg.from} durationInFrames={seg.durationInFrames} name={`cut ${i + 1}`}>
-        <Shot edit={edit} seg={seg} zoom={zooms[i % 2]} faceY={faceY} audioFade={audioFade} volume={volume} />
+        <Shot edit={edit} seg={seg} zoom={zooms[i % 2]} faceY={faceY} audioFade={audioFade} volume={volume} punches={punches} />
       </Sequence>
     ))}
   </AbsoluteFill>

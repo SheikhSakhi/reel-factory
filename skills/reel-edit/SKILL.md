@@ -1,56 +1,79 @@
 ---
 name: reel-edit
-description: Edit the user's own talking-to-camera recording into a finished on-brand reel — cleans the audio, transcribes it locally, cuts retakes, fillers and dead air, lets the user edit the video by editing the transcript, reframes to 9:16 around their face, then adds captions, chapters, proof overlays and the CTA with the brand kit. Use when the user sends or names a video file of themselves, says /reel-edit, "edit my video", or "make a reel from my recording".
+description: Edit the user's own talking-to-camera video into a finished reel — from a Google Drive / Dropbox / direct link or a local file. Cleans the audio, transcribes locally, cuts retakes, fillers and dead air, reframes to 9:16 around the face, then adds creator-style captions, widgets (callouts, lower third, stat counters, arrows, big-word slams, picture-in-picture), punch-in zooms, flashes, sound effects and the CTA, all described in one plan.json that is easy to revise. Use when the user sends a video or a link to one, says /reel-edit, "edit my video", "смонтируй", or asks for changes to an edit ("remove the box at 12s", "bigger subtitles").
 metadata:
-  tags: video, editing, transcript, talking-head, reels
+  tags: video, editing, captions, effects, talking-head, reels
 ---
 
 # Reel Edit
 
-Studio: `~/Projects/reel-studio`. Needs a system `ffmpeg` (`brew install ffmpeg` / `apt install ffmpeg`), Node, and `pip3 install opencv-python-headless` for face tracking. The first run builds whisper.cpp (~2 minutes) and downloads the model.
+Studio: `~/Projects/reel-studio` (or this cloud session's studio). Needs `ffmpeg`, Node, and `opencv-python-headless` for face tracking. whisper.cpp builds itself on first use.
 
-## 1. Prep
+The whole edit is data: `public/edit/<slug>/edit.json` + `take.json` (cuts and word timings, from `edit.py`) and `plan.json` (everything on top, from you). No per-video code. Revisions are edits to `plan.json` or `transcript.md` and a re-render.
 
-Make a kebab-case slug. Then:
+## 1. Get the video
 
-```bash
-cd ~/Projects/reel-studio
-python3 scripts/edit.py prep <path/to/video> <slug> [--language en|ko|hi|auto] [--model base]
-```
+- **Link** (Google Drive shared as "Anyone with the link", Dropbox, or a direct URL):
+  `python3 scripts/fetch.py "<link>" <slug>` → `inbox/<slug>/source.<ext>`
+  If it says the link returned a web page, ask the user to set sharing to "Anyone with the link".
+- **Local file**: use its path directly.
 
-Use `--model small` (or `large-v3-turbo` on a fast machine) for Korean, Hindi or accented English; `base` is fine for clear English.
-
-## 2. The edit (text = video)
-
-Read `briefs/<slug>/edit/transcript.md`. Retakes are already commented out with `#` and fillers removed. Then make the editorial pass yourself, and show the user the result as a short diff before applying:
-
-- **Hook first:** if the strongest line (promise + proof, see `~/.claude/skills/reel-factory/formats.md`) is not first, move that line to the top. Lines can be reordered.
-- Cut throat-clearing openers ("So, today I want to talk about…"), repeated points, and tangents.
-- Keep cuts at line (sentence) level where possible. Removing single words inside a fluent phrase is approximate.
-- Add `[S2]`, `[S3]` … lines where chapters change (list items, before/after), so chapters, tabs and overlays can follow.
-- Target length from the user, else 30-60s.
-
-Ask the user: "Apply this edit?" Then:
+## 2. Cut (text = video)
 
 ```bash
-python3 scripts/edit.py apply <slug>
-python3 scripts/edit.py verify <slug>
+python3 scripts/edit.py prep <video> <slug> [--language en|ru|ko|hi|auto] [--model base|small]
 ```
 
-`verify` must say PASS. If it reports a missing or extra word next to a word-level cut, restore that word or cut the whole sentence, then apply and verify again.
-
-## 3. Design and build
-
-Run the team from `/reel-factory` step 3 onward, telling every agent this is **own footage**: the timing file is `public/edit/<slug>/take.json` (scene ranges and word frames on the edited timeline), and there is no `vo-take.txt`:
-
-- `reel-art-director` + `reel-sound-director` + `reel-caption-writer` in parallel. The art director plans overlays that never cover the face for long: chrome, captions in the brand band, proof cut-aways (full-frame `ProofShot` while the voice continues) of at most ~3s, and the CTA card at the end.
-- `reel-animator`: the reel root is `<TalkingHead edit={loadEdit(editJson)} />` (from `public/edit/<slug>/edit.json`), then overlays timed with `wordFrame(TAKE, ...)`, `<SeriesChrome>`, `<Captions {...captionProps(BRAND)}>` and `<SfxTrack>` (quiet: the voice is real). **No `<VoiceOver>`**: the audio is in the video.
-- `reel-qa` as usual, plus: the face is never covered by a card for more than ~3s, and the cuts don't clip words (listen via `verify`).
-
-## 4. Render and deliver
+Use `--model small` for Russian, Korean, Hindi or accented English. Then edit `briefs/<slug>/edit/transcript.md`:
+- Hook first: move the strongest line (promise + proof) to the top.
+- Cut throat-clearing, repeats and tangents. Cut at sentence level where possible.
+- Add `[S2]`, `[S3]` … where the topic or list item changes: overlays and chapters key off scenes.
+- Show the user the cut as a short before/after summary and ask "Apply?". Then:
 
 ```bash
-npm run audio-check -- <slug> && sh scripts/render.sh <slug>
+python3 scripts/edit.py apply <slug> && python3 scripts/edit.py verify <slug>
 ```
 
-Deliver like `/reel-factory`: MP4, cover, caption. Offer to publish (`/reel-factory` step 5).
+`verify` must PASS. If a mid-phrase word cut fails, cut the whole sentence instead.
+
+## 3. Plan the effects (plan.json)
+
+Read `take.json` (every spoken word with its frame), `brand/brand.md`, and [effects.md](effects.md). Write `public/edit/<slug>/plan.json`. Rules:
+- **Every overlay lands on a spoken word** (`"at": "S2:three"`). Visuals that arrive with the word feel edited; random timing feels like a template.
+- **Density**: one visual event every 2-4 seconds. Never two widgets at once except a stat + zoom.
+- **Hook (first 3s)**: lower third with name + credential (the proof) and/or a callout with the promise; a zoom on the key word.
+- **Numbers** → `stat` (source required: from the user or verified research, never invented). **The single most important word** → `slam` + `flash` (at most twice per video). **Screens, results, documents** the user supplied in `public/assets/<slug>/` → `image`.
+- **Ending**: `cta` with the brand's keyword and lead magnet (only one that exists in `brand.md`), else omit.
+- Keep the face visible: callouts sit in the upper third (default), captions at y≈1250.
+- Captions: `"pop"` (default, big creator style) or `"pill"` (calmer). Put numbers and the CTA keyword in `emphasis`.
+- Set `cover` to a moment where the hook is on screen.
+
+## 4. Check and render
+
+```bash
+python3 scripts/edit_render.py <slug> --qa      # stills at every overlay + out/qa/<slug>/sheet.jpg
+```
+
+Read the contact sheet. Fix collisions (a widget over the face or over captions), unreadable text, and widgets that arrive late or early, by editing `plan.json`. Then:
+
+```bash
+node scripts/audio-check.mjs edit <slug>         # must PASS
+python3 scripts/edit_render.py <slug>            # out/<slug>.mp4 + out/<slug>-cover.jpg
+```
+
+Write the caption with the `reel-caption-writer` agent (pass `take.json` as the script). Send the MP4 and the cover with SendUserFile, plus the caption.
+
+## 5. Revisions
+
+Map the user's words to the data, change only that, re-render:
+- "remove/move the box at 12 s" → find the overlay whose `at` resolves near 12 s (`"12s"` = frame 360), delete or change its `at`
+- "subtitles bigger / calmer / no subtitles" → `captions.style` (`pop`, `pill`, `none`)
+- "cut the part about X" → delete that line in `transcript.md`, then `apply` and `verify` (all `at` moments follow automatically)
+- "more energy" → add `zooms` on stressed words and one `slam`; "calmer" → remove slams and flashes
+
+Then QA and render again, and send the new version.
+
+## Rules
+- Nothing is invented: stats, screenshots and comments come from the user or verified research.
+- Medical content stays educational; no individual advice in on-screen text.
+- Publishing only after the user's explicit yes (`/reel-factory` step 5).
