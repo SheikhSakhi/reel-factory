@@ -1,6 +1,7 @@
 import React from "react";
 import { Composition, Freeze } from "remotion";
-import { REEL } from "./kit";
+import { EditedReel, REEL, calculateEditMetadata, type EditedReelProps } from "./kit";
+import { BRAND } from "./brand/brand";
 import { REELS, type ReelEntry } from "./reels/registry";
 
 /**
@@ -17,8 +18,21 @@ const COVERS = REELS.flatMap((reel) =>
   reel.coverFrame === undefined ? [] : [{ id: `${reel.id}-cover`, durationInFrames: reel.durationInFrames, component: coverOf({ ...reel, coverFrame: reel.coverFrame }) }],
 );
 
+/** Any edit of your own footage: render with --props='{"slug":"<slug>"}' (scripts/edit-render.sh). */
+const Edited: React.FC<EditedReelProps> = (props) => <EditedReel {...props} brand={BRAND} />;
+
 export const RemotionRoot: React.FC = () => (
   <>
+    <Composition
+      id="edit"
+      component={Edited}
+      defaultProps={{ slug: "example" } as EditedReelProps}
+      calculateMetadata={calculateEditMetadata}
+      durationInFrames={REEL.fps}
+      fps={REEL.fps}
+      width={REEL.width}
+      height={REEL.height}
+    />
     {REELS.map((reel) => (
       <Composition
         key={reel.id}

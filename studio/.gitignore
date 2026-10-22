@@ -4,5 +4,6 @@
 .whisper
 __pycache__
 data
+inbox
 node_modules
 out

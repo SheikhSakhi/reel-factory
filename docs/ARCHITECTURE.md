@@ -29,8 +29,8 @@ Reel Factory is a content system with one loop: **research → make → publish 
 
 ## The four engines
 
-**1. Own-footage editor** (`/reel-edit`, `scripts/edit.py`)
-Normalise (H.264, constant 30 fps, denoise, -14 LUFS) → transcribe locally (whisper.cpp) → re-time words against the audio (`align.py`: speech regions, ordered assignment, snap cuts to the quietest 10 ms) → editable transcript with retakes and fillers pre-cut → `apply` writes the cut list and a `take.json` on the edited timeline → `verify` re-transcribes the result and diffs it with the edit → `TalkingHead` renders it reframed to 9:16 around the face (OpenCV YuNet), with punch-in zooms on cuts, and the brand kit on top.
+**1. Own-footage editor** (`/reel-edit`, `scripts/fetch.py`, `scripts/edit.py`, `scripts/edit_render.py`)
+Download from a link (Google Drive, Dropbox, direct) → normalise (H.264, constant 30 fps, denoise, -14 LUFS) → transcribe locally (whisper.cpp) → re-time words against the audio (`align.py`: speech regions, ordered assignment, snap cuts to the quietest 10 ms) → editable transcript with retakes and fillers pre-cut → `apply` writes the cut list and a `take.json` on the edited timeline → `verify` re-transcribes the result and diffs it with the edit → the `edit` composition renders it reframed to 9:16 around the face (OpenCV YuNet) with everything described in `plan.json`: pop or pill captions, callouts, lower third, counting stats, arrows, slams, flashes, picture-in-picture, punch-in zooms, sound effects and the CTA, each landing on a spoken word. Revisions are edits to `plan.json`; no code per video.
 Precision: cuts at pauses (retakes, dead air, whole sentences) are exact; removing one word inside a fluent phrase is approximate, and `verify` flags it.
 
 **2. Instagram connector** (`scripts/ig.py`, official Graph API, Facebook Login path)

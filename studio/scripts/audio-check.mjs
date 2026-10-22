@@ -1,4 +1,4 @@
-// Usage: npm run audio-check -- <CompositionId>
+// Usage: npm run audio-check -- <CompositionId>      (an edit of your own footage: npm run audio-check -- edit <slug>)
 // Renders the reel's audio mix to out/<id>.wav and reports peak, loudness and clipping.
 // Exits 1 if the mix clips or peaks above -1 dBFS, so voice-over gain can be tuned safely.
 import { execFileSync } from "node:child_process";
@@ -10,7 +10,8 @@ const WINDOW_SECONDS = 0.05;
 const ACTIVE_FLOOR_DB = -45;
 
 const id = process.argv[2];
-if (!id || !/^[\w-]+$/.test(id)) {
+const slug = process.argv[3];
+if (!id || !/^[\w-]+$/.test(id) || (slug && !/^[\w-]+$/.test(slug))) {
   console.error("usage: npm run audio-check -- <CompositionId>");
   process.exit(2);
 }
@@ -92,11 +93,12 @@ const measure = ({ sampleRate, channels }) => {
 };
 
 mkdirSync("out", { recursive: true });
-const wavPath = `out/${id}.wav`;
-execFileSync("npx", ["remotion", "render", "src/index.ts", id, wavPath, "--codec=wav"], { stdio: ["ignore", "ignore", "inherit"] });
+const wavPath = `out/${slug ?? id}.wav`;
+const props = slug ? [`--props=${JSON.stringify({ slug })}`] : [];
+execFileSync("npx", ["remotion", "render", "src/index.ts", id, wavPath, "--codec=wav", ...props], { stdio: ["ignore", "ignore", "inherit"] });
 
 const result = measure(readWav(wavPath));
-console.log(`audio-check ${id}: ${result.seconds.toFixed(2)}s`);
+console.log(`audio-check ${slug ?? id}: ${result.seconds.toFixed(2)}s`);
 console.log(`  peak        ${result.peakDb.toFixed(2)} dBFS (limit ${PEAK_LIMIT_DB})`);
 console.log(`  active RMS  ${result.activeRmsDb.toFixed(2)} dBFS (speech is usually -16 to -20)`);
 console.log(`  clipped     ${result.clipped} samples`);

@@ -11,7 +11,9 @@ Code-animated 9:16 reels built by the `/reel-factory` agent team in Claude Code.
 - `npm run fonts -- "Family:400,700i" ...`: store the brand's Google Fonts locally in `public/fonts/`
 - `npm run frames -- <video> <name> [fps]`: sample a reference reel into `out/teardown/<name>/` for `/reel-adapt`
 - `npm run sfx`: regenerate the local SFX library
+- `python3 scripts/fetch.py "<link>" <id>`: download your video from Google Drive, Dropbox or a direct link
 - `npm run edit -- prep <video> <id>` / `apply <id>` / `verify <id>`: edit your own recording by editing its transcript
+- `python3 scripts/edit_render.py <id> [--qa]`: render the edit (footage + `public/edit/<id>/plan.json`: captions, widgets, zooms, CTA)
 - `npm run ig -- <command>`: Instagram connector (setup, check, sync, watch, discover, hashtag, comments, keyword, reply, dm, publish). See ../docs/SETUP.md
 - `npm run trends -- <command>`: outliers, tag, formats, youtube, report
 - `npm run weekly`: sync insights + watchlist, find outliers, write insights/report.md
