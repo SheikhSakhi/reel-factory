@@ -24,7 +24,9 @@
     "@remotion/fonts": "4.0.534",
     "@remotion/google-fonts": "4.0.534",
     "@remotion/install-whisper-cpp": "4.0.534",
+    "@remotion/paths": "4.0.534",
     "@remotion/transitions": "4.0.534",
+    "lucide": "1.61.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "remotion": "4.0.534"

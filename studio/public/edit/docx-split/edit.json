@@ -1,0 +1,50 @@
+{
+  "source": "edit/docx-split/clean.mp4",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "totalFrames": 854,
+  "segments": [
+    {
+      "from": 0,
+      "durationInFrames": 81,
+      "startFrom": 2
+    },
+    {
+      "from": 81,
+      "durationInFrames": 59,
+      "startFrom": 103
+    },
+    {
+      "from": 140,
+      "durationInFrames": 38,
+      "startFrom": 177
+    },
+    {
+      "from": 178,
+      "durationInFrames": 156,
+      "startFrom": 230
+    },
+    {
+      "from": 334,
+      "durationInFrames": 155,
+      "startFrom": 401
+    },
+    {
+      "from": 489,
+      "durationInFrames": 150,
+      "startFrom": 571
+    },
+    {
+      "from": 639,
+      "durationInFrames": 95,
+      "startFrom": 736
+    },
+    {
+      "from": 734,
+      "durationInFrames": 120,
+      "startFrom": 846
+    }
+  ],
+  "face": []
+}

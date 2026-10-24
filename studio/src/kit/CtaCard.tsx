@@ -10,13 +10,16 @@ type Props = {
   /** What arrives in the DM: "the 5 skills, free". Only promise what you will actually send. */
   readonly promise: string;
   readonly handle?: string;
+  /** Button verb and the line before the promise, for other languages: "Напишите" / "и я пришлю". */
+  readonly verb?: string;
+  readonly lead?: string;
   readonly delay?: number;
   /** Local frame of the button "tap" (press + ripple). Default: 24 frames after delay. */
   readonly tapAt?: number;
 };
 
 /** Pinned, button-style keyword CTA: "Comment SKILLS" + what the viewer gets in the DM. */
-export const CtaCard: React.FC<Props> = ({ theme, keyword, promise, handle, delay = 0, tapAt }) => {
+export const CtaCard: React.FC<Props> = ({ theme, keyword, promise, handle, verb = "Comment", lead = "and I'll DM you", delay = 0, tapAt }) => {
   const f = useCurrentFrame();
   const tap = tapAt ?? delay + 24;
   const t = pop(f, delay);
@@ -42,7 +45,7 @@ export const CtaCard: React.FC<Props> = ({ theme, keyword, promise, handle, dela
           <svg width={58} height={58} viewBox="0 0 24 24" fill="none" stroke={theme.bg} strokeWidth={2.2} strokeLinejoin="round">
             <path d="M21 12a8.5 8.5 0 0 1-12.4 7.6L3 21l1.4-5.4A8.5 8.5 0 1 1 21 12z" />
           </svg>
-          <span>Comment</span>
+          <span>{verb}</span>
           <span style={{ fontFamily: theme.fontMono, letterSpacing: "0.06em", padding: "6px 22px", borderRadius: 18, background: theme.bg, color: theme.accent }}>
             {keyword.toUpperCase()}
           </span>
@@ -51,7 +54,7 @@ export const CtaCard: React.FC<Props> = ({ theme, keyword, promise, handle, dela
       <div style={{
         fontFamily: theme.fontBody, fontSize: 46, fontWeight: 600, color: theme.fg, textAlign: "center", maxWidth: 820,
         lineHeight: 1.2, opacity: sub, transform: `translateY(${(1 - sub) * 20}px)`,
-      }}>{`and I'll DM you ${promise}`}</div>
+      }}>{`${lead} ${promise}`}</div>
       <svg width={60} height={60} viewBox="0 0 24 24" style={{ opacity: sub, transform: `translateY(${arrow}px)` }}>
         <path d="M12 4v15m0 0-6-6m6 6 6-6" stroke={theme.accent} strokeWidth={2.4} fill="none" strokeLinecap="round" strokeLinejoin="round" />
       </svg>

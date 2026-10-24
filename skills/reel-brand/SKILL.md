@@ -31,6 +31,7 @@ Read the current `brand/brand.md` first and only ask what is missing. Ask in ONE
    cd ~/Projects/reel-studio && npm run fonts -- "Instrument Serif:400,400i" "Inter:500,600,700" "JetBrains Mono:500"
    ```
    The display font needs an italic if the highlight is `italic`. Keep a mono font for the chrome.
+   For Russian (or any non-Latin script) every font must have that subset: check https://fonts.google.com/?subset=cyrillic. If the display font lacks it, add a fallback that has it, e.g. `fontDisplay: "\"Instrument Serif\", \"Lora\", serif"`.
 2. **Palette check**: compute contrast ratios: fg on bg ≥ 7:1, muted on bg ≥ 4.5:1, accent on bg ≥ 3:1, bg on accent ≥ 4.5:1 (the CTA button text), and for `alt`: fg ≥ 7:1, muted ≥ 4.5:1, accent ≥ 3:1. Adjust until they pass.
 3. **Write `src/brand/brand.ts`**, keeping the file's structure: `loadLocalFonts(manifest)`, the theme (font stacks via `stack()`), `alt`, `highlight`, `chrome` (counter, chapter label word such as "STEP" / "TIP" / "MYTH" / "SKILL", tabs, progressBar), `captions`, `cta`.
 4. **Write `brand/brand.md`**: replace the starter text, fill every section, and delete the line "This is the starter brand".

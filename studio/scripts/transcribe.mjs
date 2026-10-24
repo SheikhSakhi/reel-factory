@@ -34,7 +34,10 @@ const result = await transcribe({
   modelFolder: WHISPER_DIR,
   tokenLevelTimestamps: true,
   printOutput: false,
+  // whisper.cpp assumes English when no language is given, and then translates other speech into
+  // English. "auto" must be passed explicitly to detect the spoken language.
   language: language === "auto" ? null : language,
+  additionalArgs: language === "auto" ? [["-l", "auto"]] : [],
 });
 
 // whisper.cpp tokens are sub-word pieces; a piece starting with a space begins a new word.

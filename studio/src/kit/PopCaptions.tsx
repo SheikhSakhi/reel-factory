@@ -28,6 +28,13 @@ export type PopCaptionsProps = {
   readonly emphasis?: readonly string[];
   /** Absolute frame after which no captions show (e.g. when the CTA card takes over). */
   readonly until?: number;
+  /** Vertical centre per absolute frame, overriding `y` (EditedReel moves captions to the seam of a split screen). */
+  readonly yAt?: (frame: number) => number;
+  /**
+   * "pop": 1-3 big uppercase words, the spoken word on an accent box (default).
+   * "band": 2-4 smaller words in sentence case, the spoken word in the accent colour: calm, explainer style.
+   */
+  readonly variant?: "pop" | "band";
 };
 
 type Chunk = { readonly words: readonly VoWord[]; readonly start: number; readonly end: number };
@@ -52,10 +59,13 @@ const chunksOf = (words: readonly VoWord[], maxWords: number, maxChars: number, 
 };
 
 export const PopCaptions: React.FC<PopCaptionsProps> = ({
-  take, font, accent, color = "#FFFFFF", scenes, maxWords = 3, maxChars = 18, fontSize = 84, y = 1250,
-  uppercase = true, emphasis = [], until,
+  take, font, accent, color = "#FFFFFF", scenes, variant = "pop", maxWords = variant === "band" ? 4 : 3,
+  maxChars = variant === "band" ? 28 : 18, fontSize = variant === "band" ? 50 : 84, y = 1250,
+  uppercase = variant === "pop", emphasis = [], until, yAt,
 }) => {
   const f = useCurrentFrame();
+  const band = variant === "band";
+  const centre = yAt ? yAt(f) : y;
   if (until !== undefined && f >= until) return null;
   const strong = new Set(emphasis.map(normToken));
   const chunks = take.scenes
@@ -67,16 +77,24 @@ export const PopCaptions: React.FC<PopCaptionsProps> = ({
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
       <div style={{
-        position: "absolute", left: 70, right: 70, top: y - fontSize, height: fontSize * 2,
+        position: "absolute", left: 70, right: 70, top: centre - fontSize, height: fontSize * 2,
         display: "flex", alignItems: "center", justifyContent: "center", flexWrap: "wrap", gap: "0.08em 0.36em",
         fontFamily: font, fontSize, fontWeight: 800, lineHeight: 1.05, textAlign: "center",
         textTransform: uppercase ? "uppercase" : "none", letterSpacing: "-0.01em",
-        transform: `scale(${0.85 + 0.15 * enter})`, opacity: Math.min(1, enter * 1.5),
+        transform: `scale(${band ? 1 : 0.85 + 0.15 * enter})`, opacity: Math.min(1, enter * 1.5),
       }}>
         {chunk.words.map((w) => {
           const active = f >= w.frame && f < w.endFrame + 2;
           const hit = pop(f, w.frame, 10);
           const marked = strong.has(normToken(w.token));
+          if (band) {
+            return (
+              <span key={w.frame} style={{
+                display: "inline-block", color: active ? accent : color, textShadow: "0 3px 14px rgba(0,0,0,0.75), 0 0 2px rgba(0,0,0,0.9)",
+                textDecoration: marked ? `underline ${accent}` : "none", textDecorationThickness: "0.1em", textUnderlineOffset: "0.16em",
+              }}>{w.token.replace(/[.,;:]$/, "")}</span>
+            );
+          }
           // The spoken word sits on an accent box: readable on any footage, whatever the brand colour.
           return (
             <span key={w.frame} style={{
