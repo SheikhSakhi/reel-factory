@@ -86,17 +86,24 @@ Restart Claude Code after installing.
 
 You get `~/Projects/reel-studio/out/<slug>.mp4`, `out/<slug>-cover.jpg` and `briefs/<slug>/07-caption.md`. Run `npm run studio` inside `~/Projects/reel-studio` to tweak a reel by hand in the live editor.
 
-## Voice-over (on by default, free, no API key)
+## Voice-over (on by default)
 
-1. The scriptwriter writes the voice-over as one conversational script, `briefs/<slug>/vo-take.txt`, with `[S1]`, `[S2]` … scene markers.
-2. `npm run vo -- <slug>` synthesizes it in one take with Microsoft's neural voices through [edge-tts](https://github.com/rany2/edge-tts). One take sounds natural instead of choppy.
-3. It writes `take.json`, which holds every scene's frame range and every word's timing.
-4. The reel cuts scenes on those ranges, lands animations on spoken words, and shows word-by-word captions.
-5. `npm run audio-check -- <slug>` confirms the mix doesn't clip.
+The scriptwriter writes the voice-over as one conversational script, `briefs/<slug>/vo-take.txt`, with `[S1]`, `[S2]` … scene markers. Then pick the voice, best first:
+
+| Voice | Command | Notes |
+|---|---|---|
+| **Your own voice** | `npm run vo -- <slug> --audio my-read.m4a --language ru` | Read the script into your phone (Voice Memos, Lossless) in one go and send the file. The audio is cleaned and loudness-normalised, silences at both ends are trimmed, every word is found and timed locally (whisper.cpp), and the `[S1]` markers place the scene cuts. Ad-libs are fine: captions show what you actually said. |
+| **A clone of your voice** | `npm run vo -- <slug> --engine elevenlabs --language ru` | Paid. Make an Instant Voice Clone on elevenlabs.io from 1-2 minutes of your speech, then put `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` in `studio/.env.local`. The script text is sent to ElevenLabs. Label AI voice-overs as AI on Instagram. |
+| **Free stock voice** | `npm run vo -- <slug>` | Microsoft neural voices via [edge-tts](https://github.com/rany2/edge-tts), synthesized in one take. Good for drafts. |
+
+Every path writes the same files:
+1. `take.mp3` and `take.json`, which holds every scene's frame range and every word's timing.
+2. The reel cuts scenes on those ranges, lands animations on spoken words, and shows word-by-word captions.
+3. `npm run audio-check -- <slug>` confirms the mix doesn't clip.
 
 To change the wording later, edit `vo-take.txt` and run `npm run vo -- <slug>` again; the reel retimes itself. Say "no voice" in your request for a text-only reel. If you get a 403 error, update the package with `pip3 install -U edge-tts`.
 
-Note: the script text is sent to Microsoft's TTS service, and edge-tts is an unofficial client.
+Note: with edge-tts the script text is sent to Microsoft's TTS service, and edge-tts is an unofficial client. Your own recording never leaves the machine.
 
 ## The brand kit
 
