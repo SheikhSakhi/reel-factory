@@ -24,8 +24,8 @@ cp "$HERE"/agents/reel-*.md "$CLAUDE_DIR/agents/"
 echo "installed skills + agents into $CLAUDE_DIR"
 
 # Repo-owned studio paths: refreshed on upgrade. Everything else in the studio belongs to the user.
-OWNED="src/kit src/index.ts src/Root.tsx src/reels/demo src/reels/series-demo src/edits/docx-split scripts tests
-public/vo/series-demo public/assets/series-demo public/edit/docx-split briefs/series-demo remotion.config.ts tsconfig.json README.md"
+OWNED="src/kit src/index.ts src/Root.tsx src/reels/demo src/reels/series-demo src/reels/ep01-forgotten-plan src/edits/docx-split scripts tests
+public/vo/series-demo public/vo/ep01-forgotten-plan public/assets/series-demo public/edit/docx-split briefs/series-demo briefs/ep01-forgotten-plan remotion.config.ts tsconfig.json README.md"
 # Created only when missing (the user customises these).
 SEEDED="src/brand brand public/fonts src/reels/registry.ts src/edits/registry.ts ideas plans replies insights/learnings.md insights/history.md insights/daily.md insights/references.md insights/formats-lab.md .gitignore"
 
@@ -62,7 +62,7 @@ else
     for (const dep of Object.keys(repo.dependencies)) if (dep.startsWith("@remotion/") || dep === "remotion") user.dependencies[dep] = repo.dependencies[dep];
     fs.writeFileSync(userPath, JSON.stringify(user, null, 2) + "\n");
   ' "$HERE/studio/package.json" "$STUDIO_DIR/package.json"
-  # registry.ts: add the coverFrame field and the series-demo example if missing.
+  # registry.ts: add the coverFrame field and the example reels if missing.
   node -e '
     const fs = require("fs");
     const path = process.argv[1];
@@ -74,6 +74,10 @@ else
     if (!s.includes("series-demo")) {
       s = s.replace(/(import[^\n]*\.\/demo\/Reel";\n)/, "$1import { SeriesDemoReel, SERIES_DEMO_COVER, SERIES_DEMO_DURATION } from \"./series-demo/Reel\";\n");
       s = s.replace(/(\{ id: "demo"[^\n]*\n)/, "$1  { id: \"series-demo\", component: SeriesDemoReel, durationInFrames: SERIES_DEMO_DURATION, coverFrame: SERIES_DEMO_COVER },\n");
+    }
+    if (!s.includes("ep01-forgotten-plan")) {
+      s = s.replace(/(import[^\n]*\.\/demo\/Reel";\n)/, "$1import { Ep01ForgottenPlan, EP01_COVER, EP01_DURATION } from \"./ep01-forgotten-plan/Reel\";\n");
+      s = s.replace(/(\{ id: "demo"[^\n]*\n)/, "$1  { id: \"ep01-forgotten-plan\", component: Ep01ForgottenPlan, durationInFrames: EP01_DURATION, coverFrame: EP01_COVER },\n");
     }
     fs.writeFileSync(path, s);
   ' "$STUDIO_DIR/src/reels/registry.ts"

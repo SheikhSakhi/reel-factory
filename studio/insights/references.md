@@ -68,3 +68,23 @@ What they do:
 | B-roll montage | Yes for screens, charts, UI, typography, icons; real-world footage needs a stock library (Pexels, free key) |
 | Word-chip captions, series chrome, prop cards, screens on a laptop | Yes, fully |
 | Dialogue voices | Synthetic: two edge-tts voices (free) or ElevenLabs stock voices (better, paid). The weakest link without the user's voice |
+
+## How the scripts work (from the transcripts)
+
+**The first line drops you into the middle of a scene.** None of them opens with a topic or a greeting:
+- Parable: "STOP! Quiet, look under your feet." / "I accepted Islam a month ago, and it's so hard."
+- Klod: "Did you write his reference list? Of twenty books, ONE exists. Wikipedia!" (the consequence first, then the flashback)
+- Klod: "A studio quoted me 100k for an ad like this, and you did it for free?"
+- B-roll: "Every goddamn day I open Instagram and every day I grow more confused." / "It has been nine weeks since I launched my idea."
+
+**Dialogue shape (parable and sitcom), 60-75 s, 25-40 short lines:**
+1. Conflict or consequence in line 1 (0-3 s).
+2. Flashback or setup: who wanted what (3-15 s).
+3. The mistake played out, with one comic or shocking beat (15-35 s).
+4. The reframe: one quotable line (a hadith or Quran verse; "looking right doesn't mean it exists") (35-50 s).
+5. The practical rule as a prop card or a direct instruction ("ask only for sources with a link, and open each one") (50-60 s).
+6. Callback punchline to line 1 ("You said the whole cake was mine." "You turned it down.") (last 3 s).
+
+Lines are short (2-8 words), spoken by alternating voices, with almost no narration. The lesson is never announced; a character discovers it.
+
+**B-roll monologue shape:** a confession or tension line → personal stakes and numbers (9 weeks, 15M views) → the honest twist ("I thought this idea was dumb") → the question for the audience → an update or CTA. It's spoken quickly and informally, like talking to a friend.

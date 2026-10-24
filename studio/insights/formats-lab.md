@@ -14,7 +14,7 @@ The daily run tests a different format and style each time, faceless and without
 
 | ID | Format | From reference | Picture (all code) | Sound | Status |
 |---|---|---|---|---|---|
-| F1 | **Mascot sitcom**: a recurring mascot and a human-ish sidekick in a short scene; the lesson comes out of a mistake | Klod series | 3D mascot (three.js) in a simple lit set, prop card, laptop screen | 2 voices dialogue | untested |
+| F1 | **Mascot sitcom**: a recurring mascot and a human-ish sidekick in a short scene; the lesson comes out of a mistake | Klod series | 3D mascot (three.js) in a simple lit set, prop card, laptop screen | 2 voices dialogue | testing (pilot ep01) |
 | F2 | **Faceless parable**: a situation, a dialogue, one reframing line, a resolution; one metaphor object | Garib | flat illustrated scenes (SVG people with blank faces), film camera grammar via parallax and cuts | narrator + 1-2 voices | untested |
 | F3 | **B-roll story**: one continuous first-person narration, a new picture every 1-2 s, screens as proof, a pattern break every 5-8 s | farza, Adema | kinetic typography, UI screens built in code, charts, icons, stock clips if a Pexels key exists | 1 narrator | untested |
 | F4 | **Chat drama**: a patient-doctor (or doctor-AI) conversation played out on a phone screen; the twist is in the last message | dialogue refs | phone UI in code, typing dots, reactions, a final reveal card | message sounds + optional narrator | untested |
@@ -32,7 +32,7 @@ Names and looks can change after feedback; keep them stable once something wins.
 
 | Format | Runs | Ratings | Mean | Notes |
 |---|---|---|---|---|
-| F1 | 0 | | | |
+| F1 | 1 | | | ep01-forgotten-plan: 3D toy diorama, `kit/Cast3D.tsx` |
 | F2 | 0 | | | |
 | F3 | 0 | | | |
 | F4 | 0 | | | |

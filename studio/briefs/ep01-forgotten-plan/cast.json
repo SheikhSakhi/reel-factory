@@ -1,0 +1,5 @@
+{
+  "DOCTOR": {"voice": "en-US-AndrewMultilingualNeural", "rate": "+4%", "pitch": "-2Hz"},
+  "PATIENT": {"voice": "en-US-BrianMultilingualNeural", "rate": "+0%", "pitch": "+0Hz"},
+  "DOC": {"voice": "en-US-AvaMultilingualNeural", "rate": "+8%", "pitch": "+12Hz"}
+}

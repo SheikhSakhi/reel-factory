@@ -32,3 +32,13 @@ Build:
 9. Run `sh scripts/qa-frames.sh <slug>` plus stills at every scene's midpoint and at the cover frame, and look at every still with Read. Fix overflow, clipping, collisions with the caption band, illegible text and empty frames before handing off.
 
 Final message: the files changed, the duration in seconds, the cover frame, and the paths of the QA stills.
+
+## Character formats (3D)
+
+For the mascot sitcom and other character reels, use `src/kit/Cast3D.tsx` inside `<ThreeCanvas>` from `@remotion/three`: `Doc` (the DocX mascot), `Person` (faceless people: `look` sets skin, hair, clothes, coat, glasses, beard, hat), `ConsultRoom` (a sunlit set; the desk is at the origin), `CameraRig` with one `Shot` per line (wide, over-the-shoulder, medium close, insert, top-down), and `talkLevel` to animate whoever is speaking. `src/reels/ep01-forgotten-plan/Reel.tsx` is the reference episode. Rules learned there:
+- Faceless heads must never fill the frame: medium shots (head and torso) at least 1.3 m away; Doc at least 2 m away in portrait.
+- When a character turns their head toward someone, put the close-up camera on that side, or the shot shows the back of the head.
+- Keep the speaking character unblocked: check every shot with stills (`npx remotion still <id> --frame=N`) before the full render.
+- Lessons go on 2D overlays (fact card with the source, phone screens), never as small text in the 3D world.
+- Renders use software WebGL (`swangle`, set in remotion.config.ts); expect about 1-2 s per frame.
+

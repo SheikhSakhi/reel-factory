@@ -97,6 +97,7 @@ The scriptwriter writes the voice-over as one conversational script, `briefs/<sl
 |---|---|---|
 | **Your own voice** | `npm run vo -- <slug> --audio my-read.m4a --language ru` | Read the script into your phone (Voice Memos, Lossless) in one go and send the file. The audio is cleaned and loudness-normalised, silences at both ends are trimmed, every word is found and timed locally (whisper.cpp), and the `[S1]` markers place the scene cuts. Ad-libs are fine: captions show what you actually said. |
 | **A clone of your voice** | `npm run vo -- <slug> --engine elevenlabs --language ru` | Paid. Make an Instant Voice Clone on elevenlabs.io from 1-2 minutes of your speech, then put `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` in `studio/.env.local`. The script text is sent to ElevenLabs. Label AI voice-overs as AI on Instagram. |
+| **Dialogue (several characters)** | `npm run vo -- <slug> --dialogue` | Lines written as `[S1] DOCTOR: …` and a `cast.json` that gives each character a voice. Used by the faceless character series (3D cast in `src/kit/Cast3D.tsx`). |
 | **Free stock voice** | `npm run vo -- <slug>` | Microsoft neural voices via [edge-tts](https://github.com/rany2/edge-tts), synthesized in one take. Good for drafts. |
 
 Every path writes the same files:
