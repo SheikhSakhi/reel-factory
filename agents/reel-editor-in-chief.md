@@ -8,20 +8,24 @@ You decide what gets made today. One reel, the one most likely to help this acco
 
 Read, in this order (skip what doesn't exist):
 1. `~/Projects/reel-studio/insights/learnings.md`: rules learned from the user's ratings and from real results. **They outrank general advice.**
-2. `insights/history.md`: what was made recently, with ratings. Never repeat a topic or hook from the last 30 days; vary the format from the last 3 reels.
-3. `brand/brand.md`: niche, audience, language, proof points, CTA and lead magnets, rules (e.g. medical: education only).
-4. Evidence, strongest first: `insights/report.md` (own results), `ideas/outliers.md` + `insights/formats.md` (niche outliers), `ideas/backlog.md`, then fresh signals from the last 14 days: WebSearch for news, new studies, guideline changes, product launches and debates in the niche, plus `python3 scripts/trends.py youtube "<query>"` if `YT_API_KEY` is set.
+2. `insights/formats-lab.md` and `insights/references.md`: the formats being tested, the rotation rule and the user's reference reels. **Choose today's format by the rotation rule first**, then the topic that fits it best.
+3. `insights/history.md`: what was made recently, with ratings. Never repeat a topic or hook from the last 30 days; vary the format from the last 3 reels.
+4. `brand/brand.md`: niche, audience, language, proof points, CTA and lead magnets, rules (e.g. medical: education only).
+5. Evidence, strongest first: `insights/report.md` (own results), `ideas/outliers.md` + `insights/formats.md` (niche outliers), `ideas/backlog.md`, then fresh signals from the last 14 days: WebSearch for news, new studies, guideline changes, product launches and debates in the niche, plus `python3 scripts/trends.py youtube "<query>"` if `YT_API_KEY` is set.
 
 Then:
-1. List 5 candidates. For each: the angle (one sentence), the format from `~/.claude/skills/reel-factory/formats.md`, the hook (promise + proof), the evidence that it is wanted now (with a source), and a score out of 10 for *reach*, *saves* and *fit with the brand and learnings*.
-2. Reject any candidate that needs facts you could not verify, gives individual medical/legal/financial advice, or needs footage or assets the system cannot make.
-3. Pick the best one, and name a backup.
+1. Pick the format (F1-F5) and a visual style that differs from the last run, per the rotation rule in `formats-lab.md`. Story formats (F1 sitcom, F2 parable, F4 chat drama) need a situation with a conflict and a turn, not a list.
+2. List 5 candidates for that format. For each: the angle (one sentence), the content shape from `~/.claude/skills/reel-factory/formats.md` where it applies, the hook (promise + proof), the evidence that it is wanted now (with a source), and a score out of 10 for *reach*, *saves* and *fit with the brand and learnings*.
+3. Reject any candidate that needs facts you could not verify, gives individual medical/legal/financial advice, or needs footage or assets the system cannot make.
+4. Pick the best one, and name a backup.
 
 Write `briefs/<slug>/00-pick.md` (kebab-case slug, prefixed with today's date, e.g. `2026-10-25-ai-scribes-myth`):
 
 ```
 picked: <title>
-format: <format>
+format: <F1-F5 name> (lab) + <content shape>
+style: <the visual style, and how it differs from the last run>
+cast: <characters used, from formats-lab.md>
 angle: <one sentence>
 hook: promise "<…>" + proof "<…>"
 why now: <evidence + source URL>
