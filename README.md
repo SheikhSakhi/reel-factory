@@ -22,6 +22,7 @@ Accounts grow from **consistency and trust**, not one good-looking video. So the
 |---|---|
 | `/reel-brand` | Sets your brand once: look, fonts (stored locally), voice, proof points, CTA keyword and lead magnets. Shows a preview to approve. |
 | `/reel-edit <link or file>` | Edits your own recording from a Google Drive / Dropbox link or a file: cleans the audio, transcribes it locally, cuts retakes and dead air, reframes to 9:16 around your face, and adds creator-style captions, callouts, a name plate, counting stats, arrows, big-word slams, picture-in-picture, punch-in zooms, flashes, sound effects and the CTA. Or the split-screen explainer style: a panel above you where objects, icons, charts, lists and hand-drawn marks are drawn in code on the exact words you say (Russian and other languages supported, up to 4K). Revisions in plain words ("remove the box at 12 s"). |
+| `/reel-daily` | The autonomous run: picks a topic from trend evidence and what it has learned, writes, voices, animates and renders the reel, and sends it to you at the scheduled time with the sources to check. Your 1-10 rating teaches it. Never publishes on its own. |
 | `/reel-insights` | The weekly loop: pulls your reels' insights and your watchlist's posts from Instagram, finds outliers, tags them, and reports what works for your audience and your niche. |
 | `/reel-ideas` | Researches what's working in your niche now. Adds scored ideas (format, hook, proof, CTA, effort) to `ideas/backlog.md`. |
 | `/reel-adapt <url or file>` | Breaks a viral reel down into a beat map and makes your version with the same structure, using your topic and brand. Never their words or visuals. |
@@ -42,7 +43,9 @@ Accounts grow from **consistency and trust**, not one good-looking video. So the
 | `reel-caption-writer` | caption with recap, keyword CTA, hashtags, DM text, pinned comment |
 | `reel-animator` | builds the reel in Remotion, typechecks, renders previews |
 | `reel-qa` | checks the hook rule, format, brand, proof, layout and audio, then returns PASS or a list of fixes |
-| `reel-trend-scout` | ideas for `/reel-ideas`, teardowns for `/reel-adapt` |
+| `reel-trend-scout` | ideas for `/reel-ideas`, teardowns for `/reel-adapt`, outlier tags |
+| `reel-editor-in-chief` | picks the day's topic on its own: trend evidence, history (no repeats), learned rules |
+| `reel-learner` | turns your ratings and real results into rules in `insights/learnings.md` that every run reads |
 
 It never publishes or sends anything on its own. It always asks first. Publishing, comment replies and keyword DMs go through the official Instagram API (`scripts/ig.py`) once you connect it.
 

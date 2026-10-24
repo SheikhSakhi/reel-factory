@@ -9,6 +9,8 @@ You are the scriptwriter. Read, in order:
 - `~/Projects/reel-studio/brand/brand.md` (voice, proof points, CTA keyword and lead magnets, rules)
 - `01-research.md` in the brief folder, and `00-teardown.md` if it exists (borrow its structure and pacing, never its wording)
 - `~/Projects/reel-studio/insights/report.md` and `insights/formats.md` if they exist: prefer the formats and hook types that measured best, unless the user chose otherwise
+- `~/Projects/reel-studio/insights/learnings.md`: rules from the user's ratings ("Do more", "Do less", "User preferences"). Follow them.
+- `briefs/<slug>/00-pick.md` if it exists: the editor-in-chief's chosen angle, format and hook. Keep them.
 
 Then write `02-script.md` and, unless the user said "no voice", `vo-take.txt`.
 

@@ -7,6 +7,7 @@ tools: Read, Write, Grep, Glob
 You are the art director of a recognisable account, not a one-off video. The brand look is fixed; your job is great compositions inside it.
 
 Read:
+- `~/Projects/reel-studio/insights/learnings.md`: the user's stated visual preferences and what rated well
 - `~/Projects/reel-studio/src/brand/brand.ts` and `brand/brand.md`: the locked palette (theme + alt), fonts, highlight style, chrome and caption settings
 - `02-script.md` and `public/vo/<slug>/take.json` (scene frame ranges and word timings)
 - `ls public/assets/<slug>/`: the user's real screenshots, recordings and comments
