@@ -389,7 +389,11 @@ def verify(args: argparse.Namespace) -> None:
     wav.unlink()
     heard = [norm(w["text"]) for w in json.loads(heard_path.read_text())["words"]]
     matcher = difflib.SequenceMatcher(None, expected, [h for h in heard if h], autojunk=False)
-    problems = [(op, expected[i1:i2], heard[j1:j2]) for op, i1, i2, j1, j2 in matcher.get_opcodes() if op != "equal"]
+    # A number spoken as words may be transcribed as digits ("три" / "3"): not an editing error.
+    def numeric(op: str, want: list[str], got: list[str]) -> bool:
+        return op == "replace" and len(want) == len(got) and any(w.isdigit() or g.isdigit() for w, g in zip(want, got))
+    problems = [(op, expected[i1:i2], heard[j1:j2]) for op, i1, i2, j1, j2 in matcher.get_opcodes()
+                if op != "equal" and not numeric(op, expected[i1:i2], heard[j1:j2])]
     if not problems:
         print(f"VERIFY PASS: the edit says exactly the {len(expected)} kept words")
         return

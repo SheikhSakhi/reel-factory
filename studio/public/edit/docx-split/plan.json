@@ -1,0 +1,10 @@
+{
+  "layout": { "default": "split", "scenes": { "S2": "panel", "S6": "full" } },
+  "captions": { "style": "band", "emphasis": ["план"] },
+  "zooms": [ { "at": "S1:безумие", "scale": 1.15, "hold": 20 } ],
+  "overlays": [
+    { "type": "lowerThird", "at": "S1:один", "hold": 80, "name": "Др. Шейхислам Сахи", "title": "Нейрохирург · основатель Treint" },
+    { "type": "cta", "at": "S6:напишите", "keyword": "ПЛАН", "promise": "как это работает", "verb": "Напишите", "lead": "и я пришлю" }
+  ],
+  "cover": "S1:пациентов"
+}

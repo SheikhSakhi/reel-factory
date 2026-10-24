@@ -2,6 +2,7 @@ import React from "react";
 import { Composition, Freeze } from "remotion";
 import { EditedReel, REEL, calculateEditMetadata, type EditedReelProps } from "./kit";
 import { BRAND } from "./brand/brand";
+import { PANELS } from "./edits/registry";
 import { REELS, type ReelEntry } from "./reels/registry";
 
 /**
@@ -19,14 +20,14 @@ const COVERS = REELS.flatMap((reel) =>
 );
 
 /** Any edit of your own footage: render with --props='{"slug":"<slug>"}' (scripts/edit-render.sh). */
-const Edited: React.FC<EditedReelProps> = (props) => <EditedReel {...props} brand={BRAND} />;
+const Edited: React.FC<EditedReelProps> = (props) => <EditedReel {...props} brand={BRAND} panels={PANELS[props.slug]} />;
 
 export const RemotionRoot: React.FC = () => (
   <>
     <Composition
       id="edit"
       component={Edited}
-      defaultProps={{ slug: "example" } as EditedReelProps}
+      defaultProps={{ slug: "docx-split" } as EditedReelProps}
       calculateMetadata={calculateEditMetadata}
       durationInFrames={REEL.fps}
       fps={REEL.fps}

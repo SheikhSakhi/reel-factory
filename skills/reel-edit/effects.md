@@ -47,10 +47,19 @@
 
 Every overlay takes `hold` to change how long it stays.
 
+## Layout (split-screen explainer)
+
+```json
+"layout": { "default": "split", "scenes": { "S2": "panel", "S6": "full" }, "split": 960 }
+```
+
+`full` = speaker full frame, `split` = drawn panel on top + speaker below, `panel` = drawn panel full screen (voice continues). Panels are code: see [panels.md](panels.md).
+
 ## Other keys
 
 - `zooms`: punch-in on a word: `scale` (1.15 subtle, 1.3 strong), `hold` frames. Cuts already alternate between wide and a 12% zoom.
-- `captions.style`: `pop` (1-3 big words, spoken word on an accent box), `pill` (sentence captions on a pill), `none`.
+- `captions.style`: `pop` (1-3 big words, spoken word on an accent box), `band` (2-4 calm words, spoken word in the accent colour: explainer style, sits on the split seam), `pill` (sentence captions on a pill), `none`.
+- `cta` in other languages: add `"verb": "Напишите", "lead": "и я пришлю"`.
 - `captions.emphasis`: words always underlined in the accent colour.
 - `progress`: thin progress bar at the top.
 - `sfx`: automatic quiet sounds per overlay (whoosh, thud, click, pop, ding); `false` turns them off.

@@ -24,7 +24,7 @@ The whole edit is data: `public/edit/<slug>/edit.json` + `take.json` (cuts and w
 python3 scripts/edit.py prep <video> <slug> [--language en|ru|ko|hi|auto] [--model base|small]
 ```
 
-Use `--model small` for Russian, Korean, Hindi or accented English. Then edit `briefs/<slug>/edit/transcript.md`:
+Use `--language ru` (or ko, hi …) and `--model small` for Russian, Korean, Hindi or accented English: `auto` detects the language, but an explicit one is safer. Then edit `briefs/<slug>/edit/transcript.md`:
 - Hook first: move the strongest line (promise + proof) to the top.
 - Cut throat-clearing, repeats and tangents. Cut at sentence level where possible.
 - Add `[S2]`, `[S3]` … where the topic or list item changes: overlays and chapters key off scenes.
@@ -36,7 +36,12 @@ python3 scripts/edit.py apply <slug> && python3 scripts/edit.py verify <slug>
 
 `verify` must PASS. If a mid-phrase word cut fails, cut the whole sentence instead.
 
-## 3. Plan the effects (plan.json)
+## 3. Choose the style
+
+- **Widgets on the speaker** (`layout` full, effects from [effects.md](effects.md)): talking-head reels, opinions, stories.
+- **Explainer** (split screen, a panel drawn in code above the speaker, some scenes full-panel): mechanisms, numbers, comparisons. Follow [panels.md](panels.md): plan the layout per scene, write `src/edits/<slug>/Panels.tsx`, register it. If the user shared a reference reel, tear it down first (`/reel-adapt`) and match its rhythm: what appears on which kind of word, how long the panel stays, where captions sit.
+
+## 3b. Plan the effects (plan.json)
 
 Read `take.json` (every spoken word with its frame), `brand/brand.md`, and [effects.md](effects.md). Write `public/edit/<slug>/plan.json`. Rules:
 - **Every overlay lands on a spoken word** (`"at": "S2:three"`). Visuals that arrive with the word feel edited; random timing feels like a template.
@@ -59,6 +64,7 @@ Read the contact sheet. Fix collisions (a widget over the face or over captions)
 ```bash
 node scripts/audio-check.mjs edit <slug>         # must PASS
 python3 scripts/edit_render.py <slug>            # out/<slug>.mp4 + out/<slug>-cover.jpg
+python3 scripts/edit_render.py <slug> --4k       # optional 2160x3840 master (YouTube, archive)
 ```
 
 Write the caption with the `reel-caption-writer` agent (pass `take.json` as the script). Send the MP4 and the cover with SendUserFile, plus the caption.
@@ -70,6 +76,8 @@ Map the user's words to the data, change only that, re-render:
 - "subtitles bigger / calmer / no subtitles" → `captions.style` (`pop`, `pill`, `none`)
 - "cut the part about X" → delete that line in `transcript.md`, then `apply` and `verify` (all `at` moments follow automatically)
 - "more energy" → add `zooms` on stressed words and one `slam`; "calmer" → remove slams and flashes
+- "draw X when I say Y" / "make that panel clearer" → edit that scene's component in `src/edits/<slug>/Panels.tsx`
+- "more of me / less of me" → switch scenes between `split`, `panel` and `full` in `layout`
 
 Then QA and render again, and send the new version.
 

@@ -1,6 +1,7 @@
 """Render an edit of your own footage (composition "edit", data in public/edit/<slug>/).
 
-    python3 scripts/edit_render.py <slug>              # out/<slug>.mp4 + out/<slug>-cover.jpg
+    python3 scripts/edit_render.py <slug>              # out/<slug>.mp4 + out/<slug>-cover.jpg (1080x1920)
+    python3 scripts/edit_render.py <slug> --4k         # 2160x3840: vector graphics and text stay razor-sharp
     python3 scripts/edit_render.py <slug> --qa         # QA stills at every overlay + a contact sheet
     python3 scripts/edit_render.py <slug> --qa 30 240  # QA stills at chosen frames
 """
@@ -71,10 +72,12 @@ def main() -> None:
             pass
         print("\n".join(str(p.relative_to(ROOT)) for p in paths))
         return
-    remotion("render", "src/index.ts", "edit", f"out/{slug}.mp4", f"--props={props}", "--codec=h264", "--crf=18")
+    scale = ["--scale=2"] if "--4k" in sys.argv else []
+    name = f"{slug}-4k" if scale else slug
+    remotion("render", "src/index.ts", "edit", f"out/{name}.mp4", f"--props={props}", "--codec=h264", "--crf=16", *scale)
     cover = resolve(take, plan.get("cover", 20))
-    remotion("still", "src/index.ts", "edit", f"out/{slug}-cover.jpg", f"--frame={cover}", f"--props={props}", "--image-format=jpeg")
-    print(f"rendered out/{slug}.mp4 and out/{slug}-cover.jpg ({take['totalFrames'] / FPS:.1f}s)")
+    remotion("still", "src/index.ts", "edit", f"out/{name}-cover.jpg", f"--frame={cover}", f"--props={props}", "--image-format=jpeg", *scale)
+    print(f"rendered out/{name}.mp4 and out/{name}-cover.jpg ({take['totalFrames'] / FPS:.1f}s{', 2160x3840' if scale else ''})")
 
 
 if __name__ == "__main__":

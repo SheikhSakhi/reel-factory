@@ -1,0 +1,346 @@
+{
+  "file": "edit/docx-split/clean.mp4",
+  "fps": 30,
+  "totalFrames": 854,
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "\u041e\u0434\u0438\u043d \u0432\u0440\u0430\u0447 \u0438 \u0442\u0440\u0438 \u0442\u044b\u0441\u044f\u0447\u0438 \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u043e\u0432. \u0417\u0432\u0443\u0447\u0438\u0442 \u043a\u0430\u043a \u0431\u0435\u0437\u0443\u043c\u0438\u0435. \u0421\u043c\u043e\u0442\u0440\u0438\u0442\u0435.",
+      "from": 0,
+      "to": 181,
+      "speechEnd": 174,
+      "words": [
+        {
+          "token": "\u041e\u0434\u0438\u043d",
+          "frame": 3,
+          "endFrame": 11
+        },
+        {
+          "token": "\u0432\u0440\u0430\u0447",
+          "frame": 11,
+          "endFrame": 25
+        },
+        {
+          "token": "\u0438",
+          "frame": 25,
+          "endFrame": 30
+        },
+        {
+          "token": "\u0442\u0440\u0438",
+          "frame": 30,
+          "endFrame": 36
+        },
+        {
+          "token": "\u0442\u044b\u0441\u044f\u0447\u0438",
+          "frame": 36,
+          "endFrame": 56
+        },
+        {
+          "token": "\u043f\u0430\u0446\u0438\u0435\u043d\u0442\u043e\u0432.",
+          "frame": 56,
+          "endFrame": 77
+        },
+        {
+          "token": "\u0417\u0432\u0443\u0447\u0438\u0442",
+          "frame": 84,
+          "endFrame": 105
+        },
+        {
+          "token": "\u043a\u0430\u043a",
+          "frame": 105,
+          "endFrame": 117
+        },
+        {
+          "token": "\u0431\u0435\u0437\u0443\u043c\u0438\u0435.",
+          "frame": 117,
+          "endFrame": 136
+        },
+        {
+          "token": "\u0421\u043c\u043e\u0442\u0440\u0438\u0442\u0435.",
+          "frame": 143,
+          "endFrame": 174
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "text": "\u041e\u0431\u044b\u0447\u043d\u043e \u0432\u0440\u0430\u0447 \u0432\u0438\u0434\u0438\u0442 \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430 \u0440\u0430\u0437 \u0432 \u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u043c\u0435\u0441\u044f\u0446\u0435\u0432, \u0430 \u043c\u0435\u0436\u0434\u0443 \u0432\u0438\u0437\u0438\u0442\u0430\u043c\u0438 \u0442\u0438\u0448\u0438\u043d\u0430.",
+      "from": 181,
+      "to": 337,
+      "speechEnd": 330,
+      "words": [
+        {
+          "token": "\u041e\u0431\u044b\u0447\u043d\u043e",
+          "frame": 181,
+          "endFrame": 195
+        },
+        {
+          "token": "\u0432\u0440\u0430\u0447",
+          "frame": 195,
+          "endFrame": 204
+        },
+        {
+          "token": "\u0432\u0438\u0434\u0438\u0442",
+          "frame": 204,
+          "endFrame": 218
+        },
+        {
+          "token": "\u043f\u0430\u0446\u0438\u0435\u043d\u0442\u0430",
+          "frame": 218,
+          "endFrame": 232
+        },
+        {
+          "token": "\u0440\u0430\u0437",
+          "frame": 232,
+          "endFrame": 239
+        },
+        {
+          "token": "\u0432",
+          "frame": 239,
+          "endFrame": 250
+        },
+        {
+          "token": "\u043d\u0435\u0441\u043a\u043e\u043b\u044c\u043a\u043e",
+          "frame": 250,
+          "endFrame": 269
+        },
+        {
+          "token": "\u043c\u0435\u0441\u044f\u0446\u0435\u0432,",
+          "frame": 269,
+          "endFrame": 279
+        },
+        {
+          "token": "\u0430",
+          "frame": 279,
+          "endFrame": 290
+        },
+        {
+          "token": "\u043c\u0435\u0436\u0434\u0443",
+          "frame": 290,
+          "endFrame": 301
+        },
+        {
+          "token": "\u0432\u0438\u0437\u0438\u0442\u0430\u043c\u0438",
+          "frame": 301,
+          "endFrame": 314
+        },
+        {
+          "token": "\u0442\u0438\u0448\u0438\u043d\u0430.",
+          "frame": 314,
+          "endFrame": 330
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "text": "\u0414\u043e\u043a-\u044d\u043a\u0441 \u043f\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u0435\u0442 \u043b\u0435\u0447\u0435\u043d\u0438\u0435 \u0432 \u043f\u043b\u0430\u043d, \u0446\u0435\u043b\u0438, \u0437\u0430\u0434\u0430\u0447\u0438, \u043f\u043e\u043a\u0430\u0437\u0430\u0442\u0435\u043b\u0438.",
+      "from": 337,
+      "to": 491,
+      "speechEnd": 484,
+      "words": [
+        {
+          "token": "\u0414\u043e\u043a-\u044d\u043a\u0441",
+          "frame": 337,
+          "endFrame": 358
+        },
+        {
+          "token": "\u043f\u0440\u0435\u0432\u0440\u0430\u0449\u0430\u0435\u0442",
+          "frame": 358,
+          "endFrame": 383
+        },
+        {
+          "token": "\u043b\u0435\u0447\u0435\u043d\u0438\u0435",
+          "frame": 383,
+          "endFrame": 407
+        },
+        {
+          "token": "\u0432",
+          "frame": 407,
+          "endFrame": 411
+        },
+        {
+          "token": "\u043f\u043b\u0430\u043d,",
+          "frame": 411,
+          "endFrame": 427
+        },
+        {
+          "token": "\u0446\u0435\u043b\u0438,",
+          "frame": 427,
+          "endFrame": 440
+        },
+        {
+          "token": "\u0437\u0430\u0434\u0430\u0447\u0438,",
+          "frame": 440,
+          "endFrame": 452
+        },
+        {
+          "token": "\u043f\u043e\u043a\u0430\u0437\u0430\u0442\u0435\u043b\u0438.",
+          "frame": 452,
+          "endFrame": 484
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "text": "\u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442 \u0441\u043b\u0435\u0434\u0438\u0442 \u0437\u0430 \u043a\u0430\u0436\u0434\u044b\u043c \u0438 \u043f\u043e\u0434\u043d\u0438\u043c\u0430\u0435\u0442 \u0442\u043e\u043b\u044c\u043a\u043e \u0442\u0435\u0445, \u043a\u043e\u043c\u0443 \u043d\u0443\u0436\u043d\u0430 \u043f\u043e\u043c\u043e\u0449\u044c.",
+      "from": 491,
+      "to": 642,
+      "speechEnd": 634,
+      "words": [
+        {
+          "token": "\u0418\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439",
+          "frame": 491,
+          "endFrame": 517
+        },
+        {
+          "token": "\u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442",
+          "frame": 517,
+          "endFrame": 530
+        },
+        {
+          "token": "\u0441\u043b\u0435\u0434\u0438\u0442",
+          "frame": 530,
+          "endFrame": 544
+        },
+        {
+          "token": "\u0437\u0430",
+          "frame": 544,
+          "endFrame": 551
+        },
+        {
+          "token": "\u043a\u0430\u0436\u0434\u044b\u043c",
+          "frame": 551,
+          "endFrame": 563
+        },
+        {
+          "token": "\u0438",
+          "frame": 563,
+          "endFrame": 564
+        },
+        {
+          "token": "\u043f\u043e\u0434\u043d\u0438\u043c\u0430\u0435\u0442",
+          "frame": 563,
+          "endFrame": 582
+        },
+        {
+          "token": "\u0442\u043e\u043b\u044c\u043a\u043e",
+          "frame": 582,
+          "endFrame": 599
+        },
+        {
+          "token": "\u0442\u0435\u0445,",
+          "frame": 599,
+          "endFrame": 600
+        },
+        {
+          "token": "\u043a\u043e\u043c\u0443",
+          "frame": 600,
+          "endFrame": 613
+        },
+        {
+          "token": "\u043d\u0443\u0436\u043d\u0430",
+          "frame": 613,
+          "endFrame": 625
+        },
+        {
+          "token": "\u043f\u043e\u043c\u043e\u0449\u044c.",
+          "frame": 625,
+          "endFrame": 634
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "text": "\u0412\u0440\u0430\u0447 \u043e\u0442\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u043e\u0447\u0435\u0440\u0435\u0434\u044c, \u0430 \u043d\u0435 300 \u043a\u0430\u0440\u0442.",
+      "from": 642,
+      "to": 736,
+      "speechEnd": 729,
+      "words": [
+        {
+          "token": "\u0412\u0440\u0430\u0447",
+          "frame": 642,
+          "endFrame": 655
+        },
+        {
+          "token": "\u043e\u0442\u043a\u0440\u044b\u0432\u0430\u0435\u0442",
+          "frame": 655,
+          "endFrame": 674
+        },
+        {
+          "token": "\u043e\u0447\u0435\u0440\u0435\u0434\u044c,",
+          "frame": 674,
+          "endFrame": 693
+        },
+        {
+          "token": "\u0430",
+          "frame": 693,
+          "endFrame": 703
+        },
+        {
+          "token": "\u043d\u0435",
+          "frame": 703,
+          "endFrame": 711
+        },
+        {
+          "token": "300",
+          "frame": 711,
+          "endFrame": 721
+        },
+        {
+          "token": "\u043a\u0430\u0440\u0442.",
+          "frame": 721,
+          "endFrame": 729
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "text": "\u041d\u0430\u043f\u0438\u0448\u0438\u0442\u0435 \u043f\u043b\u0430\u043d, \u0438 \u044f \u043f\u0440\u0438\u0448\u043b\u044e, \u043a\u0430\u043a \u044d\u0442\u043e \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442.",
+      "from": 736,
+      "to": 854,
+      "speechEnd": 838,
+      "words": [
+        {
+          "token": "\u041d\u0430\u043f\u0438\u0448\u0438\u0442\u0435",
+          "frame": 736,
+          "endFrame": 757
+        },
+        {
+          "token": "\u043f\u043b\u0430\u043d,",
+          "frame": 757,
+          "endFrame": 773
+        },
+        {
+          "token": "\u0438",
+          "frame": 773,
+          "endFrame": 774
+        },
+        {
+          "token": "\u044f",
+          "frame": 773,
+          "endFrame": 783
+        },
+        {
+          "token": "\u043f\u0440\u0438\u0448\u043b\u044e,",
+          "frame": 783,
+          "endFrame": 800
+        },
+        {
+          "token": "\u043a\u0430\u043a",
+          "frame": 800,
+          "endFrame": 808
+        },
+        {
+          "token": "\u044d\u0442\u043e",
+          "frame": 808,
+          "endFrame": 814
+        },
+        {
+          "token": "\u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442.",
+          "frame": 814,
+          "endFrame": 838
+        }
+      ]
+    }
+  ]
+}
