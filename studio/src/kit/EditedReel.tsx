@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, Sequence, interpolate, staticFile, type CalculateMetadataFunction } from "remotion";
+import { AbsoluteFill, Sequence, interpolate, staticFile, useCurrentFrame, type CalculateMetadataFunction } from "remotion";
 import type { Brand } from "./brand";
 import { captionProps } from "./brand";
 import { Captions } from "./Captions";
@@ -44,12 +44,20 @@ export type Layout = "full" | "split" | "panel";
 
 export type Plan = {
   /** Layout per scene id; scenes not listed use `default` (default "full"). */
-  readonly layout?: { readonly default?: Layout; readonly scenes?: Readonly<Record<string, Layout>>; readonly split?: number };
+  readonly layout?: {
+    readonly default?: Layout; readonly scenes?: Readonly<Record<string, Layout>>; readonly split?: number;
+    /** "cut" (default): layouts switch on the cut and a new panel fades up from black. "slide": the footage slides. */
+    readonly transition?: "cut" | "slide";
+  };
+  /** Colours for panels, overriding the brand's dark theme, e.g. a navy blueprint look. */
+  readonly panelTheme?: { readonly bg?: string; readonly fg?: string; readonly muted?: string; readonly accent?: string; readonly surface?: string };
   readonly captions?: {
     readonly style?: "pop" | "band" | "pill" | "none";
     readonly scenes?: readonly string[];
     readonly emphasis?: readonly string[];
     readonly keepTogether?: readonly string[];
+    /** false: no accent on the spoken word (plain white phrases, like most explainers). */
+    readonly highlight?: boolean;
   };
   readonly zooms?: readonly { at: At; scale?: number; hold?: number }[];
   readonly overlays?: readonly Overlay[];
@@ -166,8 +174,15 @@ const layoutAt = (take: VoTake, plan: Plan, frame: number): { cur: Layout; prev:
   const i = Math.max(0, take.scenes.findIndex((s) => frame >= s.from && frame < s.to));
   const s = take.scenes[i];
   const prev = i > 0 ? of(take.scenes[i - 1].id) : of(s.id);
-  const t = interpolate(frame, [s.from, s.from + LAYOUT_EASE], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: EASE_IN_OUT });
+  const ease = plan.layout?.transition === "slide" ? LAYOUT_EASE : 0;
+  const t = ease === 0 ? 1 : interpolate(frame, [s.from, s.from + ease], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: EASE_IN_OUT });
   return { cur: of(s.id), prev, t };
+};
+
+/** A panel fades up from black over its first frames, like a cut to a new screen. */
+const PanelFade: React.FC<{ height: number; children: React.ReactNode }> = ({ height, children }) => {
+  const f = useCurrentFrame();
+  return <AbsoluteFill style={{ height, overflow: "hidden", opacity: interpolate(f, [0, 8], [0, 1], { extrapolateRight: "clamp" }) }}>{children}</AbsoluteFill>;
 };
 
 const mix = (a: FootageBox, b: FootageBox, t: number): FootageBox => ({ top: a.top + (b.top - a.top) * t, height: a.height + (b.height - a.height) * t });
@@ -200,7 +215,8 @@ export const EditedReel: React.FC<EditedReelProps & { brand: Brand }> = ({ slug,
     if (b.height > 0 && b.top > 0) return b.top - 70;
     return b.height === 0 ? 1420 : 1250;
   };
-  const panelTheme = brand.alt;
+  const panelTheme = { ...brand.alt, ...plan.panelTheme };
+  const slide = plan.layout?.transition === "slide";
   return (
     <AbsoluteFill style={{ backgroundColor: "#000" }}>
       {take.scenes.map((s) => {
@@ -210,11 +226,11 @@ export const EditedReel: React.FC<EditedReelProps & { brand: Brand }> = ({ slug,
         const height = layout === "split" ? split : REEL.height;
         return (
           // Stays a few frames into the next scene so the footage can slide over it instead of revealing black.
-          <Sequence key={`panel-${s.id}`} from={s.from} durationInFrames={Math.min(s.to + LAYOUT_EASE, lastFrame) - s.from} name={`panel ${s.id}`}>
+          <Sequence key={`panel-${s.id}`} from={s.from} durationInFrames={Math.min(s.to + (slide ? LAYOUT_EASE : 0), lastFrame) - s.from} name={`panel ${s.id}`}>
             <PanelContext.Provider value={{ take, from: s.from, width: REEL.width, height, theme: panelTheme }}>
-              <AbsoluteFill style={{ height, overflow: "hidden" }}>
+              <PanelFade height={height}>
                 <Panel />
-              </AbsoluteFill>
+              </PanelFade>
             </PanelContext.Provider>
           </Sequence>
         );
@@ -230,8 +246,9 @@ export const EditedReel: React.FC<EditedReelProps & { brand: Brand }> = ({ slug,
         );
       })}
       {style === "pop" || style === "band" ? (
-        <PopCaptions take={take} font={brand.theme.fontBody} accent={brand.theme.accent} scenes={plan.captions?.scenes}
-          emphasis={plan.captions?.emphasis} until={ctaAt} variant={style} yAt={captionY} />
+        <PopCaptions take={take} font={brand.theme.fontBody} scenes={plan.captions?.scenes}
+          emphasis={plan.captions?.emphasis} until={ctaAt} variant={style} yAt={captionY}
+          accent={plan.captions?.highlight === false ? "#FFFFFF" : brand.theme.accent} />
       ) : null}
       {style === "pill" ? (
         <Captions take={take} scenes={plan.captions?.scenes} keepTogether={plan.captions?.keepTogether} {...captionProps(brand)} />

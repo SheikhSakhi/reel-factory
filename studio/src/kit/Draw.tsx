@@ -159,9 +159,11 @@ export const Highlight: React.FC<Box & { color: string; at?: number; duration?: 
 
 /** Moves children along a path (e.g. a car over a ramp), rotating with the path. Children are centred on the point.
  *  Pair with <PathTrail> (same d, at, duration) for a dotted trajectory behind it. */
-export const PathMotion: React.FC<{ d: string; at?: number; duration?: number; rotate?: boolean; children: React.ReactNode }> = ({
-  d, at = 0, duration = 40, rotate = true, children,
-}) => {
+export const PathMotion: React.FC<{
+  d: string; at?: number; duration?: number; rotate?: boolean;
+  /** Extra full turns done mid-flight (a barrel roll at the top of a jump). */
+  spin?: number; children: React.ReactNode;
+}> = ({ d, at = 0, duration = 40, rotate = true, spin = 0, children }) => {
   const f = useCurrentFrame();
   const t = interpolate(f, [at, at + duration], [0, 1], { ...CLAMP, easing: EASE_IN_OUT });
   const total = getLength(d);
@@ -170,7 +172,8 @@ export const PathMotion: React.FC<{ d: string; at?: number; duration?: number; r
   return (
     <AbsoluteFill style={{ pointerEvents: "none" }}>
       <div style={{
-        position: "absolute", left: p.x, top: p.y, transform: `translate(-50%, -50%) rotate(${rotate ? Math.atan2(tan.y, tan.x) : 0}rad)`,
+        position: "absolute", left: p.x, top: p.y,
+        transform: `translate(-50%, -50%) rotate(${(rotate ? Math.atan2(tan.y, tan.x) : 0) + spin * Math.PI * 2 * interpolate(t, [0.35, 0.65], [0, 1], CLAMP)}rad)`,
       }}>{children}</div>
     </AbsoluteFill>
   );
@@ -228,8 +231,10 @@ export const Tick: React.FC<{ color: string; at?: number; size?: number; width?:
 
 /** Copies of one element filling a grid, spreading from the centre ("the whole internet saw it"). */
 export const Multiply: React.FC<{
-  cols: number; rows: number; cell: number; gap?: number; at?: number; spread?: number; children: React.ReactNode;
-}> = ({ cols, rows, cell, gap = 10, at = 0, spread = 30, children }) => {
+  cols: number; rows: number; cell: number; gap?: number; at?: number; spread?: number;
+  /** "center": spreads outwards; "random": copies pop up all over, like an explosion of reposts. */
+  order?: "center" | "random"; children: React.ReactNode;
+}> = ({ cols, rows, cell, gap = 10, at = 0, spread = 30, order = "center", children }) => {
   const f = useCurrentFrame();
   const cx = (cols - 1) / 2;
   const cy = (rows - 1) / 2;
@@ -238,7 +243,7 @@ export const Multiply: React.FC<{
     <div style={{ display: "grid", gridTemplateColumns: `repeat(${cols}, ${cell}px)`, gap }}>
       {Array.from({ length: cols * rows }, (_, i) => {
         const d = Math.hypot((i % cols) - cx, Math.floor(i / cols) - cy) / maxD;
-        const start = at + d * spread + random(`m${i}`) * 4;
+        const start = order === "random" ? at + random(`m${i}`) * spread : at + d * spread + random(`m${i}`) * 4;
         const t = pop(f, start, 13);
         return (
           <div key={i} style={{ width: cell, height: cell * 1.6, opacity: f < start ? 0 : t, transform: `scale(${0.4 + 0.6 * t})` }}>
@@ -259,4 +264,57 @@ export const Appear: React.FC<{ at?: number; from?: "bottom" | "left" | "right" 
   const dx = from === "left" ? -distance : from === "right" ? distance : 0;
   const dy = from === "bottom" ? distance : from === "top" ? -distance : 0;
   return <div style={{ opacity: t, transform: `translate(${dx * (1 - t)}px, ${dy * (1 - t)}px)`, ...style }}>{children}</div>;
+};
+
+// ---------- traced or hand-made line art ----------
+
+/** Line art from scripts/lineart.py (or written by hand in the same shape). */
+export type Art = {
+  readonly width: number;
+  readonly height: number;
+  readonly strokes: readonly { readonly d: string; readonly x0: number; readonly x1: number; readonly kind: string }[];
+};
+
+/**
+ * Draws line art the way an explainer does it: a faint ghost of the whole drawing, then a pen
+ * sweeping left to right (`sweep` frames), then the outline fills with a soft gradient and glows.
+ */
+export const DrawArt: React.FC<{
+  art: Art; width: number; color: string; outlineColor?: string; fillColor?: string; at?: number; sweep?: number;
+  strokeDuration?: number; strokeWidth?: number; ghost?: boolean; glow?: boolean; fillAt?: number; style?: React.CSSProperties;
+}> = ({ art, width, color, outlineColor, fillColor, at = 0, sweep = 22, strokeDuration = 14, strokeWidth = 2.5, ghost = true, glow = true, fillAt, style }) => {
+  const f = useCurrentFrame();
+  const height = (width / art.width) * art.height;
+  const k = art.width / width;
+  const fillStart = fillAt ?? at + sweep + strokeDuration;
+  const fill = fillColor ? progress(f, fillStart, 14) : 0;
+  return (
+    <svg width={width} height={height} viewBox={`0 0 ${art.width} ${art.height}`} style={{ overflow: "visible", ...style }}>
+      <defs>
+        <linearGradient id="art-fill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor={fillColor} stopOpacity={0.55} />
+          <stop offset="100%" stopColor={fillColor} stopOpacity={0.12} />
+        </linearGradient>
+      </defs>
+      {ghost ? art.strokes.map((s, i) => (
+        <path key={`g${i}`} d={s.d} fill="none" stroke={color} strokeWidth={strokeWidth * k} opacity={0.14}
+          strokeLinecap="round" strokeLinejoin="round" />
+      )) : null}
+      {art.strokes.map((s, i) => {
+        const start = at + (s.x0 / art.width) * sweep;
+        const t = drawn(f, start, strokeDuration);
+        const outline = s.kind === "outline";
+        const stroke = outline ? outlineColor ?? color : color;
+        return (
+          <g key={i}>
+            {outline && fillColor ? <path d={s.d} fill="url(#art-fill)" opacity={fill} /> : null}
+            {glow ? <path d={s.d} fill="none" stroke={stroke} strokeWidth={strokeWidth * 5 * k} opacity={0.12 * t}
+              strokeLinecap="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t} /> : null}
+            <path d={s.d} fill="none" stroke={stroke} strokeWidth={(outline ? strokeWidth * 1.3 : strokeWidth) * k}
+              strokeLinecap="round" strokeLinejoin="round" pathLength={1} strokeDasharray={1} strokeDashoffset={1 - t} />
+          </g>
+        );
+      })}
+    </svg>
+  );
 };

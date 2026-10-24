@@ -52,14 +52,18 @@ export const usePanelAt = (at: string): number => {
 };
 
 /** Panel background: the brand's dark theme with a faint grid and a soft glow, like an explainer screen. */
-export const PanelBackdrop: React.FC<{ children?: React.ReactNode; glow?: string; grid?: boolean }> = ({ children, glow, grid = true }) => {
+export const PanelBackdrop: React.FC<{ children?: React.ReactNode; glow?: string; grid?: boolean; light?: "top-left" | "center" }> = ({
+  children, glow, grid = true, light: corner = "top-left",
+}) => {
   const { theme } = usePanel();
   const f = useCurrentFrame();
   const light = glow ?? theme.accent;
   return (
     <AbsoluteFill style={{ backgroundColor: theme.bg, overflow: "hidden" }}>
       <AbsoluteFill style={{
-        background: `radial-gradient(ellipse at ${50 + Math.sin(f / 60) * 8}% 35%, ${light}2E, transparent 60%)`,
+        background: corner === "top-left"
+          ? `radial-gradient(ellipse 70% 55% at ${8 + Math.sin(f / 70) * 4}% 0%, ${light}40, transparent 70%)`
+          : `radial-gradient(ellipse at ${50 + Math.sin(f / 60) * 8}% 35%, ${light}2E, transparent 60%)`,
       }} />
       {grid ? (
         <AbsoluteFill style={{
@@ -88,7 +92,11 @@ export const Label: React.FC<{ text: string; at: number; size?: number; color?: 
   );
 };
 
-export type Bar = { readonly label: string; readonly value: number; readonly color?: string; readonly at: number; readonly display?: string };
+export type Bar = {
+  readonly label: string; readonly value: number; readonly color?: string; readonly at: number; readonly display?: string;
+  /** Price not published: the bar shoots past the top and fades out, with a "?". */
+  readonly unknown?: boolean;
+};
 
 /** Bars that grow at their own moments, with value labels; `max` fixes the scale. */
 export const BarChart: React.FC<{ bars: readonly Bar[]; width: number; height: number; max?: number; barWidth?: number }> = ({
@@ -103,15 +111,23 @@ export const BarChart: React.FC<{ bars: readonly Bar[]; width: number; height: n
       <div style={{ position: "absolute", left: 0, right: 0, top: height, height: 3, background: `${theme.fg}55` }} />
       {bars.map((b, i) => {
         const t = interpolate(f, [b.at, b.at + 22], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: EASE_OUT });
-        const h = (b.value / top) * height * t;
+        const h = b.unknown ? (height + 80) * t : (b.value / top) * height * t;
         const left = slot * i + (slot - barWidth) / 2;
+        const fill = b.color ?? theme.fg;
         return (
           <React.Fragment key={b.label}>
-            <div style={{ position: "absolute", left, width: barWidth, top: height - h, height: h, background: b.color ?? theme.fg, borderRadius: "8px 8px 0 0" }} />
+            <div style={{
+              position: "absolute", left, width: barWidth, top: height - h, height: h, borderRadius: "8px 8px 0 0",
+              background: b.unknown ? `linear-gradient(to top, ${fill}, ${fill}00)` : fill,
+            }} />
+            {b.unknown ? (
+              <div style={{ position: "absolute", left, width: barWidth, top: -40, textAlign: "center", fontFamily: theme.fontDisplay,
+                fontSize: 90, color: fill, opacity: progress(f, b.at + 18, 10) }}>?</div>
+            ) : null}
             <div style={{
               position: "absolute", left: left - 40, width: barWidth + 80, top: height - h - 52, textAlign: "center",
               fontFamily: theme.fontBody, fontWeight: 700, fontSize: 34, color: theme.fg, opacity: progress(f, b.at + 14, 8),
-            }}>{b.display ?? b.value.toLocaleString("ru-RU")}</div>
+            }}>{b.unknown ? "" : b.display ?? b.value.toLocaleString("ru-RU")}</div>
             <div style={{
               position: "absolute", left: left - 40, width: barWidth + 80, top: height + 14, textAlign: "center",
               fontFamily: theme.fontDisplay, fontSize: 28, color: b.color ?? theme.muted, opacity: progress(f, b.at, 8),

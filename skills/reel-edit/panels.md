@@ -18,6 +18,25 @@ Ideas with a mechanism, numbers, a comparison or a story with objects (pricing, 
 3. Register it in `src/edits/registry.ts` (one import, one line).
 4. QA: `python3 scripts/edit_render.py <slug> --qa <frames>` → read the contact sheet → fix → render.
 
+## Motion grammar (from a frame-by-frame teardown of a top explainer)
+
+Watch references at 10 fps, not 1 fps: the craft is in the motion. What makes this style read as "made by a designer":
+
+1. **Hard cuts** between speaker and panel; a new panel fades up from black in ~0.3 s (`"transition": "cut"`, the default).
+2. **Ghosts first**: the whole drawing (or all list items, all cars, all people) sits at ~15% opacity; the spoken word brings one element alive.
+3. **Pen, then fill, then glow**: line art draws left to right in ~0.7 s, then fills with a soft gradient and glows (`DrawArt`).
+4. **Labels before or with the drawing**: a coloured serif name on the left, a muted italic note on the right, on the same baseline.
+5. **Staged reveals**: bars grow one after another and their values appear after the growth; list rows appear, then get marked.
+6. **Zoom-out multiplication** for scale ("everyone saw it", "thousands of patients"): a few big copies, then they shrink away as many small ones pop up in random order (`Multiply order="random"`).
+7. **Physical motion**: objects travel along a path with a dotted trail drawn just ahead, and can roll mid-air (`PathMotion spin`).
+8. **Reveals with props**: a card slides out of an envelope, a seal or stamp thumps on with overshoot.
+9. **Calm captions**: 2-4 plain white words on the seam (`"captions": { "style": "band", "highlight": false }`).
+10. **Palette**: deep navy, a blue light leak from the top-left corner, one blue accent, gold for hand-drawn marks, cream paper for cards: `"panelTheme": { "bg": "#0B1120", "fg": "#E6EAF4", "muted": "#7D88A3", "accent": "#5B8CFF", "surface": "#1A2338" }` (or the brand's own dark theme).
+
+## Pictures into line art
+
+`python3 scripts/lineart.py <image> public/assets/<slug>/<name>.json --mode outline --preview out/<name>.png` turns a picture into strokes for `<DrawArt art={...}>` (import the JSON). Best from a transparent PNG cut-out or a product shot on a plain background; busy photos trace poorly (cut the object out first). Check the preview before using it. Only trace pictures the user owns or that are public domain / openly licensed.
+
 ## Writing a panel
 
 ```tsx
@@ -38,14 +57,15 @@ Toolkit (`src/kit/Draw.tsx`, `src/kit/PanelKit.tsx`):
 
 | Primitive | Use |
 |---|---|
+| `DrawArt` | traced or hand-made line art: ghost, left-to-right pen sweep, gradient fill, glow |
 | `DrawIcon` | any of 2,000+ lucide line icons (`import { HeartPulse } from "lucide"`), drawn stroke by stroke |
 | `DrawPath` | custom line art from an SVG path (car profile, organ outline, chart line, ECG); `glow`, `fill` |
 | `SketchCircle`, `SketchUnderline`, `SketchArrow`, `Highlight` | hand-drawn marker annotations |
-| `PathMotion` + `PathTrail` | move an element along a path (a jump, a flow) with a dotted trail |
-| `BarChart` | bars that grow on their own words, with values |
+| `PathMotion` + `PathTrail` | move an element along a path (a jump, a flow) with a dotted trail; `spin` for a roll |
+| `BarChart` | bars that grow on their own words, with values; `unknown` for a "?" bar that shoots off the top |
 | `PaperCard` | menu / list / plan / prescription with rows appearing and marked on cue |
 | `ImageCard` | a photo or screenshot from `public/assets/<slug>/` |
-| `Multiply` | one element copied into a grid, spreading from the centre ("everyone saw it") |
+| `Multiply` | one element copied into a grid, from the centre or in random order (`order="random"`) |
 | `Stamp`, `Tick`, `Label`, `Appear` | emphasis, checks, text and generic entrances |
 
 ## Rules

@@ -22,8 +22,8 @@ export { EditedReel, calculateEditMetadata, loadPlan, resolveAt } from "./Edited
 export type { EditedReelProps, Overlay, Plan, At, Layout } from "./EditedReel";
 export { PanelContext, usePanel, usePanelAt, PanelBackdrop, Label, BarChart, PaperCard, ImageCard } from "./PanelKit";
 export type { PanelInfo, Panels, Bar, Row } from "./PanelKit";
-export { DrawIcon, DrawPath, SketchCircle, SketchUnderline, SketchArrow, Highlight, PathMotion, PathTrail, Stamp, Tick, Multiply, Appear } from "./Draw";
-export type { IconNode } from "./Draw";
+export { DrawArt, DrawIcon, DrawPath, SketchCircle, SketchUnderline, SketchArrow, Highlight, PathMotion, PathTrail, Stamp, Tick, Multiply, Appear } from "./Draw";
+export type { Art, IconNode } from "./Draw";
 export { SfxTrack } from "./Sfx";
 export type { SfxCue, SfxName } from "./Sfx";
 export { VoiceOver, VO_GAIN, loadTake, scene, wordFrame, wordEnd, normToken } from "./voiceover";
