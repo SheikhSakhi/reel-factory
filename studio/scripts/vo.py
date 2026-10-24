@@ -1,8 +1,15 @@
-"""Voice-over for a reel: one natural take, timed to the word.
+"""Voice-over for a reel: one natural take, timed to the word. Three sources, best first:
 
-    python3 scripts/vo.py <slug>                 # synthesize briefs/<slug>/vo-take.txt
+    python3 scripts/vo.py <slug> --audio my-read.m4a [--language ru]   # YOUR voice reading vo-take.txt
+    python3 scripts/vo.py <slug> --engine elevenlabs [--language ru]   # a cloned voice (paid, ELEVENLABS_*)
+    python3 scripts/vo.py <slug>                                       # free edge-tts stock voice
     python3 scripts/vo.py <slug> --voice en-US-AvaMultilingualNeural --rate +0%
-    python3 scripts/vo.py --samples              # audition voices into out/voice-samples/
+    python3 scripts/vo.py --samples              # audition edge-tts voices into out/voice-samples/
+
+--audio and --engine elevenlabs go through scripts/voice_take.py: the audio is cleaned and
+loudness-normalised, transcribed locally and re-timed to the waveform, and the [S1] markers
+place the scene cuts. ElevenLabs needs ELEVENLABS_API_KEY and ELEVENLABS_VOICE_ID (your cloned
+voice) in studio/.env.local; the script text is sent to ElevenLabs.
 
 Input: briefs/<slug>/vo-take.txt, the whole voice-over as ONE text with scene
 markers, e.g. "[S1] Hook line. [S2] Next line...". The text is synthesized in a
@@ -16,21 +23,19 @@ Output:
 Edit the text and re-run: scene ranges and word frames are recomputed, so a reel
 that derives its beats from take.json retimes itself.
 
-Requires: pip3 install edge-tts (free, no API key; sends the text to Microsoft's
+The free path requires: pip3 install edge-tts (no API key; sends the text to Microsoft's
 neural TTS service).
 """
 import argparse
 import asyncio
 import json
 import math
+import os
 import re
 import sys
+import urllib.error
+import urllib.request
 from pathlib import Path
-
-try:
-    import edge_tts
-except ImportError:
-    sys.exit("edge-tts is not installed. Run: pip3 install edge-tts")
 
 DEFAULT_VOICE = "en-US-AndrewMultilingualNeural"
 DEFAULT_RATE = "+6%"
@@ -59,6 +64,10 @@ ROOT = Path(__file__).resolve().parent.parent
 
 async def synth(text: str, voice: str, rate: str, out_path: Path) -> list[dict]:
     """Writes the MP3 and returns word boundaries in seconds."""
+    try:
+        import edge_tts
+    except ImportError:
+        sys.exit("edge-tts is not installed. Run: pip3 install edge-tts (or use --audio with your own recording)")
     communicate = edge_tts.Communicate(text, voice, rate=rate, boundary="WordBoundary")
     words = []
     with out_path.open("wb") as audio:
@@ -204,6 +213,56 @@ async def make_take(slug: str, voice: str, rate: str, hold_seconds: float) -> No
     print(f"wrote public/vo/{slug}/take.mp3 and take.json")
 
 
+def read_env() -> dict:
+    env = {}
+    path = ROOT / ".env.local"
+    if path.exists():
+        for line in path.read_text().splitlines():
+            if "=" in line and not line.lstrip().startswith("#"):
+                key, _, value = line.partition("=")
+                env[key.strip()] = value.strip().strip('"')
+    env.update({k: v for k, v in os.environ.items() if k.startswith("ELEVENLABS_")})
+    return env
+
+
+ELEVENLABS_MODEL = "eleven_multilingual_v2"
+
+
+def elevenlabs_synth(text: str, out_path: Path, env: dict) -> None:
+    """One take from an ElevenLabs voice (e.g. your instant clone). Word timings come from voice_take.py."""
+    key, voice = env.get("ELEVENLABS_API_KEY"), env.get("ELEVENLABS_VOICE_ID")
+    if not key or not voice:
+        raise RuntimeError("set ELEVENLABS_API_KEY and ELEVENLABS_VOICE_ID in studio/.env.local (see README, Voice-over)")
+    request = urllib.request.Request(
+        f"https://api.elevenlabs.io/v1/text-to-speech/{voice}?output_format=mp3_44100_128",
+        data=json.dumps({"text": text, "model_id": env.get("ELEVENLABS_MODEL", ELEVENLABS_MODEL)}).encode(),
+        headers={"xi-api-key": key, "Content-Type": "application/json", "Accept": "audio/mpeg"}, method="POST")
+    try:
+        with urllib.request.urlopen(request, timeout=300) as response:
+            out_path.write_bytes(response.read())
+    except urllib.error.HTTPError as error:
+        detail = error.read().decode(errors="replace")[:300]
+        raise RuntimeError(f"ElevenLabs returned {error.code}: {detail}") from error
+
+
+def make_take_from_audio(args: argparse.Namespace) -> None:
+    from voice_take import build  # local import: needs ffmpeg + whisper, not edge-tts
+    take_path = ROOT / "briefs" / args.slug / "vo-take.txt"
+    if not take_path.exists():
+        sys.exit(f"missing {take_path} (write the voice-over there with [S1] markers)")
+    scenes = split_scenes(take_path.read_text())
+    if args.engine == "elevenlabs":
+        audio = ROOT / "briefs" / args.slug / "elevenlabs.mp3"
+        elevenlabs_synth(" ".join(text for _, text in scenes), audio, read_env())
+        label = "elevenlabs"
+    else:
+        audio = Path(args.audio).expanduser().resolve()
+        if not audio.exists():
+            sys.exit(f"vo.py: {audio} not found")
+        label = f"recording {audio.name}"
+    build(args.slug, audio, scenes, args.language, args.model, args.hold, label)
+
+
 async def make_samples(text: str, rate: str) -> None:
     out_dir = ROOT / "out" / "voice-samples"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -214,12 +273,16 @@ async def make_samples(text: str, rate: str) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Synthesize a reel voice-over with edge-tts.")
+    parser = argparse.ArgumentParser(description="Make a reel voice-over: your recording, an ElevenLabs clone, or edge-tts.")
     parser.add_argument("slug", nargs="?", help="reel slug (reads briefs/<slug>/vo-take.txt)")
     parser.add_argument("--voice", default=DEFAULT_VOICE, help=f"edge-tts voice (default {DEFAULT_VOICE})")
     parser.add_argument("--rate", default=DEFAULT_RATE, help=f"speaking rate, e.g. +0%% or +8%% (default {DEFAULT_RATE.replace('%', '%%')})")
     parser.add_argument("--hold", type=float, default=DEFAULT_HOLD_SECONDS,
                         help=f"seconds of silent hold after the last word (default {DEFAULT_HOLD_SECONDS})")
+    parser.add_argument("--audio", help="your own recording of vo-take.txt (m4a, mp3, wav, or a video file)")
+    parser.add_argument("--engine", choices=["edge", "elevenlabs"], default="edge", help="voice engine when no --audio (default edge)")
+    parser.add_argument("--language", default="auto", help="spoken language for --audio / elevenlabs, e.g. ru, en (default auto)")
+    parser.add_argument("--model", default="small", help="whisper model for --audio / elevenlabs (default small)")
     parser.add_argument("--samples", action="store_true", help="write voice auditions to out/voice-samples/")
     parser.add_argument("--text", default=SAMPLE_TEXT, help="text for --samples")
     args = parser.parse_args()
@@ -233,6 +296,8 @@ def main() -> None:
     try:
         if args.samples:
             asyncio.run(make_samples(args.text, args.rate))
+        elif args.audio or args.engine == "elevenlabs":
+            make_take_from_audio(args)
         else:
             asyncio.run(make_take(args.slug, args.voice, args.rate, args.hold))
     except (ValueError, RuntimeError) as error:

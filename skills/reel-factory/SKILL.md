@@ -38,7 +38,7 @@ From the user's message, take:
 | **format** | picked by the scriptwriter from `formats.md` |
 | **language** | `brand/brand.md`, else the language of the message |
 | **length** | 30-45s |
-| **voice-over** | **on**, with the brand voice. Off only if the user says "no voice" or "text only". |
+| **voice-over** | **on**: the user's own recording if they'll read it (ask once), else their ElevenLabs clone if configured, else the brand's edge-tts voice. Off only if the user says "no voice" or "text only". |
 | **CTA** | the brand's default keyword CTA. Use a keyword DM only if a lead magnet for it exists in `brand/brand.md`; otherwise "save this". |
 | **proof** | the brand's proof points. Ask once if the hook needs a result or credential the brand file does not have. |
 | **assets** | screenshots, screen recordings, real comments in `public/assets/<slug>/` |
@@ -64,7 +64,11 @@ Give every agent: the slug, the absolute brief folder path, the language, the fo
 
 ### 2b. Voice-over
 
-`scripts/vo.py` reads `briefs/<slug>/vo-take.txt`: the whole voice-over as one text with `[S1]`, `[S2]` … scene markers. It synthesizes it in **one pass**, so the intonation flows like a person talking. Never synthesize line by line: that sounds choppy and robotic.
+`scripts/vo.py` reads `briefs/<slug>/vo-take.txt`: the whole voice-over as one text with `[S1]`, `[S2]` … scene markers. Choose the voice in this order:
+
+1. **The user's own voice** (best for trust, especially for a doctor or founder): send the user `vo-take.txt` as plain text to read aloud in one go (Voice Memos, Lossless, quiet room), get the file (or a Google Drive link via `scripts/fetch.py`), then `npm run vo -- <slug> --audio <file> --language <lang>`. Captions follow what they actually said; the `[S1]` markers only place the cuts. If the output notes that the recording differs a lot from the script, check the scene starts in `take.json`.
+2. **Their ElevenLabs clone**, if `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` are set: `npm run vo -- <slug> --engine elevenlabs --language <lang>`. Remind them to label AI audio on Instagram.
+3. **edge-tts** (free, default): `npm run vo -- <slug> [--voice ...]`. It synthesizes in **one pass**, so the intonation flows like a person talking. Never synthesize line by line: that sounds choppy and robotic.
 
 It writes `take.mp3` (played from frame 0) and `take.json` (every scene's frame range and word timings). The scene ranges in `take.json` override the script's estimates.
 
