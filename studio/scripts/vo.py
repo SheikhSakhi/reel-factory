@@ -301,7 +301,7 @@ async def make_dialogue(slug: str, rate: str, hold_seconds: float, gap: float) -
 
     listing = work / "parts.txt"
     listing.write_text("".join(f"file '{p.name}'\n" for p in parts))
-    run_ffmpeg("-f", "concat", "-safe", "0", "-i", str(listing), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
+    run_ffmpeg("-f", "concat", "-safe", "0", "-i", str(listing), "-af", "loudnorm=I=-15:TP=-3:LRA=11",
                "-ar", "44100", "-c:a", "libmp3lame", "-b:a", "192k", str(out_dir / "take.mp3"))
     rows, total_frames = build_timeline([(scene, text) for scene, _, text in lines], words, hold_seconds)
     for row, (_, speaker, _) in zip(rows, lines):

@@ -305,7 +305,7 @@ export const Ep01ForgottenPlan: React.FC = () => {
       <DialogueCaptions lines={LINES} colors={COLORS} font={FONT} y={1330} skip={["S1"]}
         until={L("S14").words[L("S14").words.length - 1].endFrame + 8} />
       <EndCard />
-      <VoiceOver take={TAKE} />
+      <VoiceOver take={TAKE} volume={1} />
       <SfxTrack cues={sfx()} />
     </AbsoluteFill>
   );
