@@ -68,7 +68,8 @@ Give every agent: the slug, the absolute brief folder path, the language, the fo
 
 1. **The user's own voice** (best for trust, especially for a doctor or founder): send the user `vo-take.txt` as plain text to read aloud in one go (Voice Memos, Lossless, quiet room), get the file (or a Google Drive link via `scripts/fetch.py`), then `npm run vo -- <slug> --audio <file> --language <lang>`. Captions follow what they actually said; the `[S1]` markers only place the cuts. If the output notes that the recording differs a lot from the script, check the scene starts in `take.json`.
 2. **Their ElevenLabs clone**, if `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` are set: `npm run vo -- <slug> --engine elevenlabs --language <lang>`. Remind them to label AI audio on Instagram.
-3. **edge-tts** (free, default): `npm run vo -- <slug> [--voice ...]`. It synthesizes in **one pass**, so the intonation flows like a person talking. Never synthesize line by line: that sounds choppy and robotic.
+3. **Dialogue** (character formats, several voices): write `vo-take.txt` as `[S1] DOCTOR: line [S2] DOC: line …` and `briefs/<slug>/cast.json` mapping each speaker to an edge-tts voice (`{"DOC": {"voice": "en-US-AvaMultilingualNeural", "rate": "+8%", "pitch": "+12Hz"}}`), then `npm run vo -- <slug> --dialogue`. Each scene in `take.json` gets a `speaker`; `kit/DialogueCaptions.tsx` colours word chips by speaker.
+4. **edge-tts** (free, default): `npm run vo -- <slug> [--voice ...]`. It synthesizes in **one pass**, so the intonation flows like a person talking. Never synthesize line by line: that sounds choppy and robotic.
 
 It writes `take.mp3` (played from frame 0) and `take.json` (every scene's frame range and word timings). The scene ranges in `take.json` override the script's estimates.
 

@@ -1,0 +1,887 @@
+{
+  "file": "vo/ep01-forgotten-plan/take.mp3",
+  "voice": "dialogue",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 1235,
+  "cast": {
+    "DOCTOR": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+4%",
+      "pitch": "-2Hz"
+    },
+    "PATIENT": {
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": "+0%",
+      "pitch": "+0Hz"
+    },
+    "DOC": {
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": "+8%",
+      "pitch": "+12Hz"
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "Six weeks. And you never started the new pill?",
+      "from": 0,
+      "words": [
+        {
+          "token": "Six",
+          "start": 0.096,
+          "end": 0.324,
+          "frame": 3,
+          "endFrame": 10
+        },
+        {
+          "token": "weeks.",
+          "start": 0.325,
+          "end": 0.829,
+          "frame": 10,
+          "endFrame": 25
+        },
+        {
+          "token": "And",
+          "start": 1.226,
+          "end": 1.334,
+          "frame": 37,
+          "endFrame": 40
+        },
+        {
+          "token": "you",
+          "start": 1.346,
+          "end": 1.442,
+          "frame": 40,
+          "endFrame": 43
+        },
+        {
+          "token": "never",
+          "start": 1.442,
+          "end": 1.659,
+          "frame": 43,
+          "endFrame": 50
+        },
+        {
+          "token": "started",
+          "start": 1.671,
+          "end": 1.935,
+          "frame": 50,
+          "endFrame": 58
+        },
+        {
+          "token": "the",
+          "start": 1.947,
+          "end": 1.995,
+          "frame": 58,
+          "endFrame": 60
+        },
+        {
+          "token": "new",
+          "start": 2.007,
+          "end": 2.163,
+          "frame": 60,
+          "endFrame": 65
+        },
+        {
+          "token": "pill?",
+          "start": 2.163,
+          "end": 2.524,
+          "frame": 65,
+          "endFrame": 76
+        }
+      ],
+      "to": 85,
+      "speechEnd": 76,
+      "speaker": "DOCTOR"
+    },
+    {
+      "id": "S2",
+      "text": "You said a lot of things, doctor.",
+      "from": 85,
+      "words": [
+        {
+          "token": "You",
+          "start": 2.927,
+          "end": 3.002,
+          "frame": 88,
+          "endFrame": 90
+        },
+        {
+          "token": "said",
+          "start": 3.014,
+          "end": 3.214,
+          "frame": 90,
+          "endFrame": 96
+        },
+        {
+          "token": "a",
+          "start": 3.227,
+          "end": 3.289,
+          "frame": 97,
+          "endFrame": 99
+        },
+        {
+          "token": "lot",
+          "start": 3.302,
+          "end": 3.527,
+          "frame": 99,
+          "endFrame": 106
+        },
+        {
+          "token": "of",
+          "start": 3.539,
+          "end": 3.639,
+          "frame": 106,
+          "endFrame": 109
+        },
+        {
+          "token": "things,",
+          "start": 3.652,
+          "end": 3.989,
+          "frame": 110,
+          "endFrame": 120
+        },
+        {
+          "token": "doctor.",
+          "start": 4.014,
+          "end": 4.577,
+          "frame": 120,
+          "endFrame": 137
+        }
+      ],
+      "to": 146,
+      "speechEnd": 137,
+      "speaker": "PATIENT"
+    },
+    {
+      "id": "S3",
+      "text": "I remember... good luck.",
+      "from": 146,
+      "words": [
+        {
+          "token": "I",
+          "start": 4.979,
+          "end": 5.042,
+          "frame": 149,
+          "endFrame": 151
+        },
+        {
+          "token": "remember...",
+          "start": 5.054,
+          "end": 5.592,
+          "frame": 152,
+          "endFrame": 168
+        },
+        {
+          "token": "good",
+          "start": 6.167,
+          "end": 6.417,
+          "frame": 185,
+          "endFrame": 193
+        },
+        {
+          "token": "luck.",
+          "start": 6.429,
+          "end": 6.867,
+          "frame": 193,
+          "endFrame": 206
+        }
+      ],
+      "to": 216,
+      "speechEnd": 206,
+      "speaker": "PATIENT"
+    },
+    {
+      "id": "S4",
+      "text": "Doc, I explained everything. Twice.",
+      "from": 216,
+      "words": [
+        {
+          "token": "Doc,",
+          "start": 7.315,
+          "end": 7.616,
+          "frame": 219,
+          "endFrame": 228
+        },
+        {
+          "token": "I",
+          "start": 7.82,
+          "end": 7.868,
+          "frame": 235,
+          "endFrame": 236
+        },
+        {
+          "token": "explained",
+          "start": 7.868,
+          "end": 8.265,
+          "frame": 236,
+          "endFrame": 248
+        },
+        {
+          "token": "everything.",
+          "start": 8.265,
+          "end": 8.709,
+          "frame": 248,
+          "endFrame": 261
+        },
+        {
+          "token": "Twice.",
+          "start": 9.106,
+          "end": 9.683,
+          "frame": 273,
+          "endFrame": 290
+        }
+      ],
+      "to": 300,
+      "speechEnd": 290,
+      "speaker": "DOCTOR"
+    },
+    {
+      "id": "S5",
+      "text": "Patients forget forty to eighty percent of what doctors say. Right away.",
+      "from": 300,
+      "words": [
+        {
+          "token": "Patients",
+          "start": 10.104,
+          "end": 10.532,
+          "frame": 303,
+          "endFrame": 316
+        },
+        {
+          "token": "forget",
+          "start": 10.544,
+          "end": 10.81,
+          "frame": 316,
+          "endFrame": 324
+        },
+        {
+          "token": "forty",
+          "start": 10.81,
+          "end": 11.215,
+          "frame": 324,
+          "endFrame": 336
+        },
+        {
+          "token": "to",
+          "start": 11.227,
+          "end": 11.366,
+          "frame": 337,
+          "endFrame": 341
+        },
+        {
+          "token": "eighty",
+          "start": 11.377,
+          "end": 11.597,
+          "frame": 341,
+          "endFrame": 348
+        },
+        {
+          "token": "percent",
+          "start": 11.609,
+          "end": 12.072,
+          "frame": 348,
+          "endFrame": 362
+        },
+        {
+          "token": "of",
+          "start": 12.083,
+          "end": 12.176,
+          "frame": 362,
+          "endFrame": 365
+        },
+        {
+          "token": "what",
+          "start": 12.187,
+          "end": 12.338,
+          "frame": 366,
+          "endFrame": 370
+        },
+        {
+          "token": "doctors",
+          "start": 12.349,
+          "end": 12.72,
+          "frame": 370,
+          "endFrame": 382
+        },
+        {
+          "token": "say.",
+          "start": 12.72,
+          "end": 13.044,
+          "frame": 382,
+          "endFrame": 391
+        },
+        {
+          "token": "Right",
+          "start": 13.38,
+          "end": 13.589,
+          "frame": 401,
+          "endFrame": 408
+        },
+        {
+          "token": "away.",
+          "start": 13.6,
+          "end": 14.052,
+          "frame": 408,
+          "endFrame": 422
+        }
+      ],
+      "to": 431,
+      "speechEnd": 422,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S6",
+      "text": "And about half of what they remember is wrong.",
+      "from": 431,
+      "words": [
+        {
+          "token": "And",
+          "start": 14.461,
+          "end": 14.716,
+          "frame": 434,
+          "endFrame": 441
+        },
+        {
+          "token": "about",
+          "start": 14.786,
+          "end": 15.017,
+          "frame": 444,
+          "endFrame": 451
+        },
+        {
+          "token": "half",
+          "start": 15.029,
+          "end": 15.341,
+          "frame": 451,
+          "endFrame": 460
+        },
+        {
+          "token": "of",
+          "start": 15.353,
+          "end": 15.445,
+          "frame": 461,
+          "endFrame": 463
+        },
+        {
+          "token": "what",
+          "start": 15.457,
+          "end": 15.596,
+          "frame": 464,
+          "endFrame": 468
+        },
+        {
+          "token": "they",
+          "start": 15.607,
+          "end": 15.711,
+          "frame": 468,
+          "endFrame": 471
+        },
+        {
+          "token": "remember",
+          "start": 15.723,
+          "end": 16.093,
+          "frame": 472,
+          "endFrame": 483
+        },
+        {
+          "token": "is",
+          "start": 16.105,
+          "end": 16.255,
+          "frame": 483,
+          "endFrame": 488
+        },
+        {
+          "token": "wrong.",
+          "start": 16.267,
+          "end": 16.661,
+          "frame": 488,
+          "endFrame": 500
+        }
+      ],
+      "to": 510,
+      "speechEnd": 500,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S7",
+      "text": "So I talk slower?",
+      "from": 510,
+      "words": [
+        {
+          "token": "So",
+          "start": 17.097,
+          "end": 17.229,
+          "frame": 513,
+          "endFrame": 517
+        },
+        {
+          "token": "I",
+          "start": 17.362,
+          "end": 17.398,
+          "frame": 521,
+          "endFrame": 522
+        },
+        {
+          "token": "talk",
+          "start": 17.398,
+          "end": 17.614,
+          "frame": 522,
+          "endFrame": 528
+        },
+        {
+          "token": "slower?",
+          "start": 17.626,
+          "end": 18.083,
+          "frame": 529,
+          "endFrame": 542
+        }
+      ],
+      "to": 552,
+      "speechEnd": 542,
+      "speaker": "DOCTOR"
+    },
+    {
+      "id": "S8",
+      "text": "No. You send the plan home with them.",
+      "from": 552,
+      "words": [
+        {
+          "token": "No.",
+          "start": 18.504,
+          "end": 19.002,
+          "frame": 555,
+          "endFrame": 570
+        },
+        {
+          "token": "You",
+          "start": 19.337,
+          "end": 19.418,
+          "frame": 580,
+          "endFrame": 583
+        },
+        {
+          "token": "send",
+          "start": 19.43,
+          "end": 19.708,
+          "frame": 583,
+          "endFrame": 591
+        },
+        {
+          "token": "the",
+          "start": 19.719,
+          "end": 19.789,
+          "frame": 592,
+          "endFrame": 594
+        },
+        {
+          "token": "plan",
+          "start": 19.789,
+          "end": 20.02,
+          "frame": 594,
+          "endFrame": 601
+        },
+        {
+          "token": "home",
+          "start": 20.032,
+          "end": 20.263,
+          "frame": 601,
+          "endFrame": 608
+        },
+        {
+          "token": "with",
+          "start": 20.263,
+          "end": 20.391,
+          "frame": 608,
+          "endFrame": 612
+        },
+        {
+          "token": "them.",
+          "start": 20.391,
+          "end": 20.657,
+          "frame": 612,
+          "endFrame": 620
+        }
+      ],
+      "to": 628,
+      "speechEnd": 620,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S9",
+      "text": "What to take. When. What to watch. When to call.",
+      "from": 628,
+      "words": [
+        {
+          "token": "What",
+          "start": 21.044,
+          "end": 21.195,
+          "frame": 631,
+          "endFrame": 636
+        },
+        {
+          "token": "to",
+          "start": 21.206,
+          "end": 21.276,
+          "frame": 636,
+          "endFrame": 638
+        },
+        {
+          "token": "take.",
+          "start": 21.276,
+          "end": 21.658,
+          "frame": 638,
+          "endFrame": 650
+        },
+        {
+          "token": "When.",
+          "start": 21.97,
+          "end": 22.329,
+          "frame": 659,
+          "endFrame": 670
+        },
+        {
+          "token": "What",
+          "start": 22.653,
+          "end": 22.792,
+          "frame": 680,
+          "endFrame": 684
+        },
+        {
+          "token": "to",
+          "start": 22.803,
+          "end": 22.884,
+          "frame": 684,
+          "endFrame": 687
+        },
+        {
+          "token": "watch.",
+          "start": 22.896,
+          "end": 23.428,
+          "frame": 687,
+          "endFrame": 703
+        },
+        {
+          "token": "When",
+          "start": 23.775,
+          "end": 23.972,
+          "frame": 713,
+          "endFrame": 719
+        },
+        {
+          "token": "to",
+          "start": 23.972,
+          "end": 24.064,
+          "frame": 719,
+          "endFrame": 722
+        },
+        {
+          "token": "call.",
+          "start": 24.076,
+          "end": 24.573,
+          "frame": 722,
+          "endFrame": 737
+        }
+      ],
+      "to": 746,
+      "speechEnd": 737,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S10",
+      "text": "Day one, I remind. Day three, I ask. Anything off, you know in days. Not six weeks.",
+      "from": 746,
+      "words": [
+        {
+          "token": "Day",
+          "start": 24.971,
+          "end": 25.145,
+          "frame": 749,
+          "endFrame": 754
+        },
+        {
+          "token": "one,",
+          "start": 25.156,
+          "end": 25.492,
+          "frame": 755,
+          "endFrame": 765
+        },
+        {
+          "token": "I",
+          "start": 25.538,
+          "end": 25.677,
+          "frame": 766,
+          "endFrame": 770
+        },
+        {
+          "token": "remind.",
+          "start": 25.688,
+          "end": 26.302,
+          "frame": 771,
+          "endFrame": 789
+        },
+        {
+          "token": "Day",
+          "start": 26.661,
+          "end": 26.904,
+          "frame": 800,
+          "endFrame": 807
+        },
+        {
+          "token": "three,",
+          "start": 26.915,
+          "end": 27.401,
+          "frame": 807,
+          "endFrame": 822
+        },
+        {
+          "token": "I",
+          "start": 27.413,
+          "end": 27.621,
+          "frame": 822,
+          "endFrame": 829
+        },
+        {
+          "token": "ask.",
+          "start": 27.621,
+          "end": 28.084,
+          "frame": 829,
+          "endFrame": 843
+        },
+        {
+          "token": "Anything",
+          "start": 28.42,
+          "end": 28.744,
+          "frame": 853,
+          "endFrame": 862
+        },
+        {
+          "token": "off,",
+          "start": 28.756,
+          "end": 29.033,
+          "frame": 863,
+          "endFrame": 871
+        },
+        {
+          "token": "you",
+          "start": 29.045,
+          "end": 29.126,
+          "frame": 871,
+          "endFrame": 874
+        },
+        {
+          "token": "know",
+          "start": 29.138,
+          "end": 29.311,
+          "frame": 874,
+          "endFrame": 879
+        },
+        {
+          "token": "in",
+          "start": 29.311,
+          "end": 29.392,
+          "frame": 879,
+          "endFrame": 882
+        },
+        {
+          "token": "days.",
+          "start": 29.404,
+          "end": 29.925,
+          "frame": 882,
+          "endFrame": 898
+        },
+        {
+          "token": "Not",
+          "start": 30.283,
+          "end": 30.596,
+          "frame": 909,
+          "endFrame": 918
+        },
+        {
+          "token": "six",
+          "start": 30.607,
+          "end": 30.943,
+          "frame": 918,
+          "endFrame": 928
+        },
+        {
+          "token": "weeks.",
+          "start": 30.955,
+          "end": 31.394,
+          "frame": 929,
+          "endFrame": 942
+        }
+      ],
+      "to": 951,
+      "speechEnd": 942,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S11",
+      "text": "So... morning or evening?",
+      "from": 951,
+      "words": [
+        {
+          "token": "So...",
+          "start": 31.784,
+          "end": 32.084,
+          "frame": 954,
+          "endFrame": 963
+        },
+        {
+          "token": "morning",
+          "start": 32.659,
+          "end": 33.184,
+          "frame": 980,
+          "endFrame": 996
+        },
+        {
+          "token": "or",
+          "start": 33.197,
+          "end": 33.359,
+          "frame": 996,
+          "endFrame": 1001
+        },
+        {
+          "token": "evening?",
+          "start": 33.371,
+          "end": 33.896,
+          "frame": 1001,
+          "endFrame": 1017
+        }
+      ],
+      "to": 1026,
+      "speechEnd": 1017,
+      "speaker": "PATIENT"
+    },
+    {
+      "id": "S12",
+      "text": "Morning. It's on your phone.",
+      "from": 1026,
+      "words": [
+        {
+          "token": "Morning.",
+          "start": 34.306,
+          "end": 34.862,
+          "frame": 1029,
+          "endFrame": 1046
+        },
+        {
+          "token": "It's",
+          "start": 35.232,
+          "end": 35.348,
+          "frame": 1057,
+          "endFrame": 1060
+        },
+        {
+          "token": "on",
+          "start": 35.36,
+          "end": 35.452,
+          "frame": 1061,
+          "endFrame": 1064
+        },
+        {
+          "token": "your",
+          "start": 35.464,
+          "end": 35.568,
+          "frame": 1064,
+          "endFrame": 1067
+        },
+        {
+          "token": "phone.",
+          "start": 35.58,
+          "end": 36.043,
+          "frame": 1067,
+          "endFrame": 1081
+        }
+      ],
+      "to": 1091,
+      "speechEnd": 1081,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S13",
+      "text": "And the good luck part?",
+      "from": 1091,
+      "words": [
+        {
+          "token": "And",
+          "start": 36.47,
+          "end": 36.57,
+          "frame": 1094,
+          "endFrame": 1097
+        },
+        {
+          "token": "the",
+          "start": 36.583,
+          "end": 36.683,
+          "frame": 1097,
+          "endFrame": 1100
+        },
+        {
+          "token": "good",
+          "start": 36.695,
+          "end": 36.908,
+          "frame": 1101,
+          "endFrame": 1107
+        },
+        {
+          "token": "luck",
+          "start": 36.92,
+          "end": 37.183,
+          "frame": 1108,
+          "endFrame": 1115
+        },
+        {
+          "token": "part?",
+          "start": 37.195,
+          "end": 37.658,
+          "frame": 1116,
+          "endFrame": 1130
+        }
+      ],
+      "to": 1139,
+      "speechEnd": 1130,
+      "speaker": "PATIENT"
+    },
+    {
+      "id": "S14",
+      "text": "That part, he meant.",
+      "from": 1139,
+      "words": [
+        {
+          "token": "That",
+          "start": 38.056,
+          "end": 38.206,
+          "frame": 1142,
+          "endFrame": 1146
+        },
+        {
+          "token": "part,",
+          "start": 38.206,
+          "end": 38.588,
+          "frame": 1146,
+          "endFrame": 1158
+        },
+        {
+          "token": "he",
+          "start": 38.6,
+          "end": 38.692,
+          "frame": 1158,
+          "endFrame": 1161
+        },
+        {
+          "token": "meant.",
+          "start": 38.704,
+          "end": 39.155,
+          "frame": 1161,
+          "endFrame": 1175
+        }
+      ],
+      "to": 1235,
+      "speechEnd": 1175,
+      "speaker": "DOC"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[S1] DOCTOR: Six weeks. And you never started the new pill?
+[S2] PATIENT: You said a lot of things, doctor.
+[S3] PATIENT: I remember... good luck.
+[S4] DOCTOR: Doc, I explained everything. Twice.
+[S5] DOC: Patients forget forty to eighty percent of what doctors say. Right away.
+[S6] DOC: And about half of what they remember is wrong.
+[S7] DOCTOR: So I talk slower?
+[S8] DOC: No. You send the plan home with them.
+[S9] DOC: What to take. When. What to watch. When to call.
+[S10] DOC: Day one, I remind. Day three, I ask. Anything off, you know in days. Not six weeks.
+[S11] PATIENT: So... morning or evening?
+[S12] DOC: Morning. It's on your phone.
+[S13] PATIENT: And the good luck part?
+[S14] DOC: That part, he meant.

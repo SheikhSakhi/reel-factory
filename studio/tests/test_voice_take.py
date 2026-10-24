@@ -64,3 +64,22 @@ class ElevenLabsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class DialogueTest(unittest.TestCase):
+    def test_speakers_split_from_lines(self):
+        scenes = vo.split_scenes("[S1] DOCTOR: Six weeks? [S2] DOC: Patients forget. Right away.")
+        self.assertEqual(vo.split_speakers(scenes),
+                         [("S1", "DOCTOR", "Six weeks?"), ("S2", "DOC", "Patients forget. Right away.")])
+
+    def test_line_without_speaker_is_an_error(self):
+        with self.assertRaisesRegex(ValueError, "S2 has no speaker"):
+            vo.split_speakers([("S1", "DOC: Hi."), ("S2", "no name here")])
+
+    def test_timeline_keeps_dialogue_offsets(self):
+        lines = [("S1", "Six weeks?"), ("S2", "Right away.")]
+        words = [{"word": "Six", "start": 0.0, "end": 0.3}, {"word": "weeks", "start": 0.3, "end": 0.7},
+                 {"word": "Right", "start": 1.2, "end": 1.5}, {"word": "away", "start": 1.5, "end": 1.9}]
+        rows, total = vo.build_timeline(lines, words, 1.0)
+        self.assertEqual(rows[1]["words"][0]["frame"], 36)
+        self.assertEqual(total, 87)

@@ -1,5 +1,6 @@
 import type React from "react";
 import { DemoReel, DEMO_DURATION } from "./demo/Reel";
+import { Ep01ForgottenPlan, EP01_COVER, EP01_DURATION } from "./ep01-forgotten-plan/Reel";
 import { SeriesDemoReel, SERIES_DEMO_COVER, SERIES_DEMO_DURATION } from "./series-demo/Reel";
 
 export type ReelEntry = {
@@ -14,4 +15,5 @@ export type ReelEntry = {
 export const REELS: readonly ReelEntry[] = [
   { id: "demo", component: DemoReel, durationInFrames: DEMO_DURATION, coverFrame: 75 },
   { id: "series-demo", component: SeriesDemoReel, durationInFrames: SERIES_DEMO_DURATION, coverFrame: SERIES_DEMO_COVER },
+  { id: "ep01-forgotten-plan", component: Ep01ForgottenPlan, durationInFrames: EP01_DURATION, coverFrame: EP01_COVER },
 ];

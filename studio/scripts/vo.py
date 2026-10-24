@@ -5,6 +5,7 @@
     python3 scripts/vo.py <slug>                                       # free edge-tts stock voice
     python3 scripts/vo.py <slug> --voice en-US-AvaMultilingualNeural --rate +0%
     python3 scripts/vo.py --samples              # audition edge-tts voices into out/voice-samples/
+    python3 scripts/vo.py <slug> --dialogue      # several characters: "[S1] DOCTOR: line" + cast.json
 
 --audio and --engine elevenlabs go through scripts/voice_take.py: the audio is cleaned and
 loudness-normalised, transcribed locally and re-timed to the waveform, and the [S1] markers
@@ -213,6 +214,108 @@ async def make_take(slug: str, voice: str, rate: str, hold_seconds: float) -> No
     print(f"wrote public/vo/{slug}/take.mp3 and take.json")
 
 
+SPEAKER = re.compile(r"^([A-Z][A-Z0-9_-]{1,20}):\s*(.+)$", re.S)
+DEFAULT_GAP_SECONDS = 0.22
+
+
+def split_speakers(scenes: list[tuple[str, str]]) -> list[tuple[str, str, str]]:
+    """[(scene, speaker, text)] from scenes written as "DOCTOR: line". Every scene needs a speaker."""
+    lines = []
+    for scene, text in scenes:
+        match = SPEAKER.match(text.strip())
+        if not match:
+            raise ValueError(f"{scene} has no speaker: write it as '[{scene}] NAME: line'")
+        lines.append((scene, match.group(1), match.group(2).strip()))
+    return lines
+
+
+def run_ffmpeg(*args: str) -> None:
+    import subprocess
+    result = subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", *args], capture_output=True, text=True)
+    if result.returncode != 0:
+        raise RuntimeError(f"ffmpeg failed: {result.stderr.strip()[-400:]}")
+
+
+def wav_seconds(path: Path) -> float:
+    import wave
+    with wave.open(str(path)) as w:
+        return w.getnframes() / w.getframerate()
+
+
+async def make_dialogue(slug: str, rate: str, hold_seconds: float, gap: float) -> None:
+    """A dialogue take: each line synthesized in its character's voice, joined with short gaps.
+
+    briefs/<slug>/vo-take.txt: "[S1] DOCTOR: Six weeks?! [S2] PATIENT: You said a lot."
+    briefs/<slug>/cast.json:   {"DOCTOR": {"voice": "en-US-AndrewMultilingualNeural", "rate": "+4%", "pitch": "-2Hz"}, ...}
+    Each scene in take.json gets a "speaker" field, so captions and characters know who talks."""
+    brief = ROOT / "briefs" / slug
+    scenes = split_scenes((brief / "vo-take.txt").read_text())
+    lines = split_speakers(scenes)
+    cast_path = brief / "cast.json"
+    if not cast_path.exists():
+        sys.exit(f"missing {cast_path}: map every speaker to a voice")
+    cast = json.loads(cast_path.read_text())
+    missing = sorted({speaker for _, speaker, _ in lines} - set(cast))
+    if missing:
+        raise ValueError(f"cast.json has no voice for: {', '.join(missing)}")
+    try:
+        import edge_tts
+    except ImportError:
+        sys.exit("edge-tts is not installed. Run: pip3 install edge-tts")
+
+    out_dir = ROOT / "public" / "vo" / slug
+    out_dir.mkdir(parents=True, exist_ok=True)
+    work = brief / "dialogue"
+    work.mkdir(exist_ok=True)
+    words: list[dict] = []
+    parts: list[Path] = []
+    offset = 0.0
+    for i, (scene, speaker, text) in enumerate(lines):
+        role = cast[speaker]
+        mp3 = work / f"{i:02d}-{scene}.mp3"
+        communicate = edge_tts.Communicate(text, role["voice"], rate=role.get("rate", rate),
+                                           pitch=role.get("pitch", "+0Hz"), boundary="WordBoundary")
+        line_words = []
+        with mp3.open("wb") as audio:
+            async for chunk in communicate.stream():
+                if chunk["type"] == "audio":
+                    audio.write(chunk["data"])
+                elif chunk["type"] == "WordBoundary":
+                    line_words.append({"word": chunk["text"], "start": chunk["offset"] / TICKS_PER_SECOND,
+                                       "end": (chunk["offset"] + chunk["duration"]) / TICKS_PER_SECOND})
+        if not line_words:
+            raise RuntimeError(f"edge-tts returned no word timings for {scene} ({role['voice']})")
+        wav = work / f"{i:02d}-{scene}.wav"
+        # Trim the engine's trailing silence so the gap between lines is ours.
+        end = line_words[-1]["end"] + 0.12
+        run_ffmpeg("-i", str(mp3), "-t", f"{end:.3f}", "-ar", "48000", "-ac", "1", str(wav))
+        line_gap = float(role.get("gap", gap)) if i else 0.0
+        offset += line_gap
+        if line_gap:
+            silence = work / f"{i:02d}-gap.wav"
+            run_ffmpeg("-f", "lavfi", "-i", "anullsrc=r=48000:cl=mono", "-t", f"{line_gap:.3f}", str(silence))
+            parts.append(silence)
+        parts.append(wav)
+        words += [{**w, "start": w["start"] + offset, "end": w["end"] + offset} for w in line_words]
+        offset += wav_seconds(wav)
+
+    listing = work / "parts.txt"
+    listing.write_text("".join(f"file '{p.name}'\n" for p in parts))
+    run_ffmpeg("-f", "concat", "-safe", "0", "-i", str(listing), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
+               "-ar", "44100", "-c:a", "libmp3lame", "-b:a", "192k", str(out_dir / "take.mp3"))
+    rows, total_frames = build_timeline([(scene, text) for scene, _, text in lines], words, hold_seconds)
+    for row, (_, speaker, _) in zip(rows, lines):
+        row["speaker"] = speaker
+    take = {"file": f"vo/{slug}/take.mp3", "voice": "dialogue", "rate": rate, "fps": FPS,
+            "totalFrames": total_frames, "cast": cast, "scenes": rows}
+    (out_dir / "take.json").write_text(json.dumps(take, indent=2))
+    for row in rows:
+        seconds = (row["to"] - row["from"]) / FPS
+        print(f"{row['id']:>4}  {row['speaker']:<8} {seconds:5.1f}s  {row['text'][:56]}")
+    print(f"total {total_frames} frames = {total_frames / FPS:.1f}s, {len(set(s for _, s, _ in lines))} voices")
+    print(f"wrote public/vo/{slug}/take.mp3 and take.json")
+
+
 def read_env() -> dict:
     env = {}
     path = ROOT / ".env.local"
@@ -283,6 +386,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--engine", choices=["edge", "elevenlabs"], default="edge", help="voice engine when no --audio (default edge)")
     parser.add_argument("--language", default="auto", help="spoken language for --audio / elevenlabs, e.g. ru, en (default auto)")
     parser.add_argument("--model", default="small", help="whisper model for --audio / elevenlabs (default small)")
+    parser.add_argument("--dialogue", action="store_true", help="several characters: '[S1] NAME: line' + briefs/<slug>/cast.json")
+    parser.add_argument("--gap", type=float, default=DEFAULT_GAP_SECONDS, help="seconds between dialogue lines (default 0.22)")
     parser.add_argument("--samples", action="store_true", help="write voice auditions to out/voice-samples/")
     parser.add_argument("--text", default=SAMPLE_TEXT, help="text for --samples")
     args = parser.parse_args()
@@ -296,6 +401,8 @@ def main() -> None:
     try:
         if args.samples:
             asyncio.run(make_samples(args.text, args.rate))
+        elif args.dialogue:
+            asyncio.run(make_dialogue(args.slug, args.rate, args.hold, args.gap))
         elif args.audio or args.engine == "elevenlabs":
             make_take_from_audio(args)
         else:
