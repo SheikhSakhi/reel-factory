@@ -27,7 +27,7 @@ echo "installed skills + agents into $CLAUDE_DIR"
 OWNED="src/kit src/index.ts src/Root.tsx src/reels/demo src/reels/series-demo src/edits/docx-split scripts tests
 public/vo/series-demo public/assets/series-demo public/edit/docx-split briefs/series-demo remotion.config.ts tsconfig.json README.md"
 # Created only when missing (the user customises these).
-SEEDED="src/brand brand public/fonts src/reels/registry.ts src/edits/registry.ts ideas plans replies insights .gitignore"
+SEEDED="src/brand brand public/fonts src/reels/registry.ts src/edits/registry.ts ideas plans replies insights/learnings.md insights/history.md insights/daily.md insights/references.md insights/formats-lab.md .gitignore"
 
 if [ ! -d "$STUDIO_DIR" ]; then
   mkdir -p "$(dirname "$STUDIO_DIR")"

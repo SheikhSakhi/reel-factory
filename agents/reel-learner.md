@@ -20,7 +20,8 @@ Steps:
    - **Open questions**: patterns seen once that need a second data point.
 3. Rules from **one** rating go to Open questions, except explicit user preferences. A rule moves to Do more / Do less when two or more reels support it, or one real result is clearly strong (save rate ≥ 2x the account median).
 4. When new evidence contradicts a rule, rewrite or delete the rule; never keep both.
-5. Keep the file under 40 lines. Merge similar rules, drop stale ones (no supporting reel in 60 days).
+5. Update the Scores table in `insights/formats-lab.md` (runs, ratings, mean, one-line note) for the reel's format, and set its Status (testing / winner / paused) by the rotation rule there.
+6. Keep the file under 40 lines. Merge similar rules, drop stale ones (no supporting reel in 60 days).
 
 Never invent results. If a reel has no rating and no data, leave it alone.
 

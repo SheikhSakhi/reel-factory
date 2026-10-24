@@ -29,8 +29,9 @@ If `.env.local` has Instagram credentials, first refresh evidence: `npm run week
 
 **Mode `auto`** (default): run the `/reel-factory` pipeline steps 1-5 with the pick:
 - researcher → scriptwriter (given `00-pick.md` and `insights/learnings.md`) → voice-over → art director + sound director + caption writer → animator → QA (max 2 fix rounds) → `npm run audio-check -- <slug>` → `sh scripts/render.sh <slug>`.
-- Voice: the user's ElevenLabs clone if `ELEVENLABS_VOICE_ID` is set (`--engine elevenlabs`), else edge-tts with the brand voice.
-- Style: the brand kit; the animated explainer layout (panels drawn in code) suits voice-only reels best.
+- Format and style: from `00-pick.md`, chosen by the rotation rule in `insights/formats-lab.md` (studied from `insights/references.md`). Faceless: a mascot, faceless characters, screens and drawings, all animated in code. Each run must look different from the last one.
+- Voice: ElevenLabs if `ELEVENLABS_API_KEY` is set, else edge-tts. Dialogue formats use two clearly different voices (e.g. `en-US-AndrewMultilingualNeural` and `en-US-AvaMultilingualNeural`). Label synthetic voices as AI when publishing.
+- If the user later asks "make it with my voice": send `vo-take.txt` as plain text, and when the recording arrives re-make it with `vo.py --audio` (the half-auto path).
 
 **Mode `half-auto`**: stop after the script. Deliver `vo-take.txt` as plain text with "Read this into Voice Memos and send me the file." When the recording arrives, continue with `vo.py --audio` and the rest of the pipeline.
 
@@ -39,7 +40,7 @@ Time budget: aim to finish within 60 minutes. If a step fails twice, stop and de
 ## 3. Deliver
 
 Send with SendUserFile: `out/<slug>.mp4` and `out/<slug>-cover.jpg`. In the message:
-1. The title and a one-line why (from `00-pick.md`), and the format.
+1. The title and a one-line why (from `00-pick.md`), and which format and style this run tested (F1-F5), so the rating teaches the lab.
 2. The caption from `07-caption.md`, ready to paste.
 3. The facts used, each with its source (from `01-research.md`), so the user can check them before posting. Medical content: say plainly that it needs their review.
 4. "Rate it 1-10 and tell me one thing to change." That reply teaches the system.
@@ -55,7 +56,7 @@ When the user replies with a rating or comments (in the same session, later), ru
 The container can be reset between runs, so learning must live in git:
 
 ```bash
-git add insights/learnings.md insights/history.md briefs/<slug> src/reels src/edits public/vo/<slug> 2>/dev/null
+git add insights/learnings.md insights/history.md insights/formats-lab.md briefs/<slug> src/reels src/edits public/vo/<slug> 2>/dev/null
 git commit -m "daily: <slug>" && git push origin HEAD
 ```
 
