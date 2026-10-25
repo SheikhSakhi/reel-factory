@@ -5,11 +5,12 @@ import { frameOf, LangProvider, type Lang } from "./lang";
 import { S1, S2, S3, S4, S5, S6 } from "./scenes1";
 import { S7, S8, S9, S10, S11, S12 } from "./scenes2";
 import { C, F, H, W, useReelFonts } from "./style";
-import { LANG_EN, LANG_RU } from "./take";
+import { LANG_EN, LANG_EN_FAST, LANG_RU } from "./take";
 import { Cues, Sweep, World, type Cue, type Mood } from "./ui";
 
 export const AGENT_BANK_DURATION = LANG_RU.take.totalFrames;
 export const AGENT_BANK_EN_DURATION = LANG_EN.take.totalFrames;
+export const AGENT_BANK_EN_FAST_DURATION = LANG_EN_FAST.take.totalFrames;
 export const AGENT_BANK_SIZE = { width: W, height: H } as const;
 
 const SCENES: Record<string, React.FC<{ s: VoScene }>> = { S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12 };
@@ -190,3 +191,4 @@ const makeReel = (lang: Lang): React.FC => {
 
 export const AgentBankReel = makeReel(LANG_RU);
 export const AgentBankReelEn = makeReel(LANG_EN);
+export const AgentBankReelEnFast = makeReel(LANG_EN_FAST);

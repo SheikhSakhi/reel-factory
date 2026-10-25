@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SLUG = sys.argv[1] if len(sys.argv) > 1 else "agent-bank"
 # Section anchors are written as Russian tokens; other languages map them to their own words.
 ANCHORS = (
-    json.loads((ROOT / "src" / "reels" / "agent-bank" / "anchors-en.json").read_text()) if SLUG.endswith("-en") else {}
+    json.loads((ROOT / "src" / "reels" / "agent-bank" / "anchors-en.json").read_text()) if "-en" in SLUG else {}
 )
 OUT = ROOT / "public" / "audio" / SLUG
 TAKE = json.loads((ROOT / "public" / "vo" / SLUG / "take.json").read_text())

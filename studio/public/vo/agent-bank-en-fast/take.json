@@ -1,0 +1,2504 @@
+{
+  "file": "vo/agent-bank-en-fast/take.mp3",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "+0% x1.2",
+  "fps": 30,
+  "totalFrames": 3253,
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "In 2024, the AI agent economy was worth about $5 billion. In 2025, almost $8 billion. That's growth of around 45% a year.",
+      "from": 0,
+      "words": [
+        {
+          "token": "In",
+          "start": 0.062,
+          "end": 0.49,
+          "frame": 2,
+          "endFrame": 15
+        },
+        {
+          "token": "2024,",
+          "start": 0.49,
+          "end": 0.917,
+          "frame": 15,
+          "endFrame": 28
+        },
+        {
+          "token": "the",
+          "start": 1.083,
+          "end": 1.198,
+          "frame": 32,
+          "endFrame": 36
+        },
+        {
+          "token": "AI",
+          "start": 1.292,
+          "end": 1.729,
+          "frame": 38,
+          "endFrame": 52
+        },
+        {
+          "token": "agent",
+          "start": 1.812,
+          "end": 2.104,
+          "frame": 54,
+          "endFrame": 63
+        },
+        {
+          "token": "economy",
+          "start": 2.104,
+          "end": 2.583,
+          "frame": 63,
+          "endFrame": 78
+        },
+        {
+          "token": "was",
+          "start": 2.812,
+          "end": 2.948,
+          "frame": 84,
+          "endFrame": 88
+        },
+        {
+          "token": "worth",
+          "start": 2.958,
+          "end": 3.229,
+          "frame": 88,
+          "endFrame": 97
+        },
+        {
+          "token": "about",
+          "start": 3.229,
+          "end": 3.479,
+          "frame": 97,
+          "endFrame": 104
+        },
+        {
+          "token": "$5",
+          "start": 3.49,
+          "end": 4.073,
+          "frame": 105,
+          "endFrame": 122
+        },
+        {
+          "token": "billion.",
+          "start": 4.073,
+          "end": 4.657,
+          "frame": 122,
+          "endFrame": 140
+        },
+        {
+          "token": "In",
+          "start": 4.989,
+          "end": 5.433,
+          "frame": 150,
+          "endFrame": 163
+        },
+        {
+          "token": "2025,",
+          "start": 5.433,
+          "end": 5.875,
+          "frame": 163,
+          "endFrame": 177
+        },
+        {
+          "token": "almost",
+          "start": 6.093,
+          "end": 6.417,
+          "frame": 182,
+          "endFrame": 192
+        },
+        {
+          "token": "$8",
+          "start": 6.542,
+          "end": 7.026,
+          "frame": 197,
+          "endFrame": 211
+        },
+        {
+          "token": "billion.",
+          "start": 7.026,
+          "end": 7.51,
+          "frame": 211,
+          "endFrame": 225
+        },
+        {
+          "token": "That's",
+          "start": 7.854,
+          "end": 8.011,
+          "frame": 236,
+          "endFrame": 240
+        },
+        {
+          "token": "growth",
+          "start": 8.011,
+          "end": 8.364,
+          "frame": 240,
+          "endFrame": 251
+        },
+        {
+          "token": "of",
+          "start": 8.364,
+          "end": 8.417,
+          "frame": 251,
+          "endFrame": 252
+        },
+        {
+          "token": "around",
+          "start": 8.428,
+          "end": 8.688,
+          "frame": 252,
+          "endFrame": 261
+        },
+        {
+          "token": "45%",
+          "start": 8.688,
+          "end": 9.583,
+          "frame": 261,
+          "endFrame": 288
+        },
+        {
+          "token": "a",
+          "start": 9.583,
+          "end": 9.593,
+          "frame": 288,
+          "endFrame": 288
+        },
+        {
+          "token": "year.",
+          "start": 9.593,
+          "end": 9.948,
+          "frame": 288,
+          "endFrame": 298
+        }
+      ],
+      "to": 306,
+      "speechEnd": 298
+    },
+    {
+      "id": "S2",
+      "text": "And by 2030, according to McKinsey, up to $5 trillion in purchases will flow through agents.",
+      "from": 306,
+      "words": [
+        {
+          "token": "And",
+          "start": 10.282,
+          "end": 10.343,
+          "frame": 308,
+          "endFrame": 310
+        },
+        {
+          "token": "by",
+          "start": 10.343,
+          "end": 10.713,
+          "frame": 310,
+          "endFrame": 322
+        },
+        {
+          "token": "2030,",
+          "start": 10.713,
+          "end": 11.083,
+          "frame": 322,
+          "endFrame": 332
+        },
+        {
+          "token": "according",
+          "start": 11.448,
+          "end": 11.771,
+          "frame": 343,
+          "endFrame": 353
+        },
+        {
+          "token": "to",
+          "start": 11.781,
+          "end": 11.823,
+          "frame": 353,
+          "endFrame": 355
+        },
+        {
+          "token": "McKinsey,",
+          "start": 11.833,
+          "end": 12.396,
+          "frame": 355,
+          "endFrame": 372
+        },
+        {
+          "token": "up",
+          "start": 12.625,
+          "end": 12.739,
+          "frame": 378,
+          "endFrame": 382
+        },
+        {
+          "token": "to",
+          "start": 12.75,
+          "end": 12.833,
+          "frame": 382,
+          "endFrame": 385
+        },
+        {
+          "token": "$5",
+          "start": 12.833,
+          "end": 13.422,
+          "frame": 385,
+          "endFrame": 402
+        },
+        {
+          "token": "trillion",
+          "start": 13.422,
+          "end": 14.01,
+          "frame": 402,
+          "endFrame": 420
+        },
+        {
+          "token": "in",
+          "start": 14.01,
+          "end": 14.104,
+          "frame": 420,
+          "endFrame": 423
+        },
+        {
+          "token": "purchases",
+          "start": 14.115,
+          "end": 14.635,
+          "frame": 423,
+          "endFrame": 439
+        },
+        {
+          "token": "will",
+          "start": 14.635,
+          "end": 14.75,
+          "frame": 439,
+          "endFrame": 442
+        },
+        {
+          "token": "flow",
+          "start": 14.75,
+          "end": 15.114,
+          "frame": 442,
+          "endFrame": 453
+        },
+        {
+          "token": "through",
+          "start": 15.125,
+          "end": 15.333,
+          "frame": 453,
+          "endFrame": 460
+        },
+        {
+          "token": "agents.",
+          "start": 15.333,
+          "end": 15.833,
+          "frame": 460,
+          "endFrame": 475
+        }
+      ],
+      "to": 482,
+      "speechEnd": 475
+    },
+    {
+      "id": "S3",
+      "text": "And this isn't a forecast. The first purchases made by an agent, not a human, have already gone through Mastercard.",
+      "from": 482,
+      "words": [
+        {
+          "token": "And",
+          "start": 16.167,
+          "end": 16.229,
+          "frame": 485,
+          "endFrame": 487
+        },
+        {
+          "token": "this",
+          "start": 16.229,
+          "end": 16.364,
+          "frame": 487,
+          "endFrame": 491
+        },
+        {
+          "token": "isn't",
+          "start": 16.364,
+          "end": 16.521,
+          "frame": 491,
+          "endFrame": 496
+        },
+        {
+          "token": "a",
+          "start": 16.521,
+          "end": 16.542,
+          "frame": 496,
+          "endFrame": 497
+        },
+        {
+          "token": "forecast.",
+          "start": 16.553,
+          "end": 17.198,
+          "frame": 497,
+          "endFrame": 516
+        },
+        {
+          "token": "The",
+          "start": 17.532,
+          "end": 17.604,
+          "frame": 526,
+          "endFrame": 528
+        },
+        {
+          "token": "first",
+          "start": 17.604,
+          "end": 17.833,
+          "frame": 528,
+          "endFrame": 535
+        },
+        {
+          "token": "purchases",
+          "start": 17.833,
+          "end": 18.302,
+          "frame": 535,
+          "endFrame": 549
+        },
+        {
+          "token": "made",
+          "start": 18.313,
+          "end": 18.562,
+          "frame": 549,
+          "endFrame": 557
+        },
+        {
+          "token": "by",
+          "start": 18.562,
+          "end": 18.678,
+          "frame": 557,
+          "endFrame": 560
+        },
+        {
+          "token": "an",
+          "start": 18.678,
+          "end": 18.74,
+          "frame": 560,
+          "endFrame": 562
+        },
+        {
+          "token": "agent,",
+          "start": 18.75,
+          "end": 19.094,
+          "frame": 562,
+          "endFrame": 572
+        },
+        {
+          "token": "not",
+          "start": 19.427,
+          "end": 19.583,
+          "frame": 582,
+          "endFrame": 588
+        },
+        {
+          "token": "a",
+          "start": 19.583,
+          "end": 19.604,
+          "frame": 588,
+          "endFrame": 588
+        },
+        {
+          "token": "human,",
+          "start": 19.604,
+          "end": 20.01,
+          "frame": 588,
+          "endFrame": 600
+        },
+        {
+          "token": "have",
+          "start": 20.333,
+          "end": 20.417,
+          "frame": 610,
+          "endFrame": 612
+        },
+        {
+          "token": "already",
+          "start": 20.417,
+          "end": 20.708,
+          "frame": 612,
+          "endFrame": 622
+        },
+        {
+          "token": "gone",
+          "start": 20.708,
+          "end": 21.021,
+          "frame": 622,
+          "endFrame": 631
+        },
+        {
+          "token": "through",
+          "start": 21.032,
+          "end": 21.146,
+          "frame": 631,
+          "endFrame": 634
+        },
+        {
+          "token": "Mastercard.",
+          "start": 21.146,
+          "end": 21.739,
+          "frame": 634,
+          "endFrame": 652
+        }
+      ],
+      "to": 660,
+      "speechEnd": 652
+    },
+    {
+      "id": "S4",
+      "text": "GPUs gave us compute. Foundation models gave us the power to build services. The agent wave will create its own giants. But whose money will agents pay with?",
+      "from": 660,
+      "words": [
+        {
+          "token": "GPUs",
+          "start": 22.083,
+          "end": 22.718,
+          "frame": 662,
+          "endFrame": 682
+        },
+        {
+          "token": "gave",
+          "start": 22.729,
+          "end": 22.907,
+          "frame": 682,
+          "endFrame": 688
+        },
+        {
+          "token": "us",
+          "start": 22.907,
+          "end": 23.011,
+          "frame": 688,
+          "endFrame": 690
+        },
+        {
+          "token": "compute.",
+          "start": 23.021,
+          "end": 23.417,
+          "frame": 691,
+          "endFrame": 702
+        },
+        {
+          "token": "Foundation",
+          "start": 23.812,
+          "end": 24.261,
+          "frame": 714,
+          "endFrame": 728
+        },
+        {
+          "token": "models",
+          "start": 24.261,
+          "end": 24.635,
+          "frame": 728,
+          "endFrame": 739
+        },
+        {
+          "token": "gave",
+          "start": 24.74,
+          "end": 24.928,
+          "frame": 742,
+          "endFrame": 748
+        },
+        {
+          "token": "us",
+          "start": 24.938,
+          "end": 25.052,
+          "frame": 748,
+          "endFrame": 752
+        },
+        {
+          "token": "the",
+          "start": 25.052,
+          "end": 25.146,
+          "frame": 752,
+          "endFrame": 754
+        },
+        {
+          "token": "power",
+          "start": 25.157,
+          "end": 25.615,
+          "frame": 755,
+          "endFrame": 768
+        },
+        {
+          "token": "to",
+          "start": 25.75,
+          "end": 25.854,
+          "frame": 772,
+          "endFrame": 776
+        },
+        {
+          "token": "build",
+          "start": 25.854,
+          "end": 26.093,
+          "frame": 776,
+          "endFrame": 782
+        },
+        {
+          "token": "services.",
+          "start": 26.093,
+          "end": 26.708,
+          "frame": 782,
+          "endFrame": 801
+        },
+        {
+          "token": "The",
+          "start": 27.052,
+          "end": 27.115,
+          "frame": 812,
+          "endFrame": 813
+        },
+        {
+          "token": "agent",
+          "start": 27.115,
+          "end": 27.407,
+          "frame": 813,
+          "endFrame": 822
+        },
+        {
+          "token": "wave",
+          "start": 27.407,
+          "end": 27.667,
+          "frame": 822,
+          "endFrame": 830
+        },
+        {
+          "token": "will",
+          "start": 27.667,
+          "end": 27.781,
+          "frame": 830,
+          "endFrame": 833
+        },
+        {
+          "token": "create",
+          "start": 27.792,
+          "end": 28.208,
+          "frame": 833,
+          "endFrame": 847
+        },
+        {
+          "token": "its",
+          "start": 28.25,
+          "end": 28.365,
+          "frame": 848,
+          "endFrame": 851
+        },
+        {
+          "token": "own",
+          "start": 28.365,
+          "end": 28.542,
+          "frame": 851,
+          "endFrame": 857
+        },
+        {
+          "token": "giants.",
+          "start": 28.542,
+          "end": 29.083,
+          "frame": 857,
+          "endFrame": 872
+        },
+        {
+          "token": "But",
+          "start": 29.427,
+          "end": 29.49,
+          "frame": 882,
+          "endFrame": 885
+        },
+        {
+          "token": "whose",
+          "start": 29.5,
+          "end": 29.719,
+          "frame": 885,
+          "endFrame": 892
+        },
+        {
+          "token": "money",
+          "start": 29.719,
+          "end": 30.052,
+          "frame": 892,
+          "endFrame": 902
+        },
+        {
+          "token": "will",
+          "start": 30.052,
+          "end": 30.198,
+          "frame": 902,
+          "endFrame": 906
+        },
+        {
+          "token": "agents",
+          "start": 30.208,
+          "end": 30.489,
+          "frame": 907,
+          "endFrame": 915
+        },
+        {
+          "token": "pay",
+          "start": 30.489,
+          "end": 30.677,
+          "frame": 915,
+          "endFrame": 920
+        },
+        {
+          "token": "with?",
+          "start": 30.688,
+          "end": 30.979,
+          "frame": 921,
+          "endFrame": 929
+        }
+      ],
+      "to": 937,
+      "speechEnd": 929
+    },
+    {
+      "id": "S5",
+      "text": "Today, yours. You ask for four tickets, and the agent buys forty. Or it lands on a scam page.",
+      "from": 937,
+      "words": [
+        {
+          "token": "Today,",
+          "start": 31.313,
+          "end": 31.521,
+          "frame": 939,
+          "endFrame": 946
+        },
+        {
+          "token": "yours.",
+          "start": 31.531,
+          "end": 31.907,
+          "frame": 946,
+          "endFrame": 958
+        },
+        {
+          "token": "You",
+          "start": 32.24,
+          "end": 32.354,
+          "frame": 968,
+          "endFrame": 971
+        },
+        {
+          "token": "ask",
+          "start": 32.354,
+          "end": 32.563,
+          "frame": 971,
+          "endFrame": 977
+        },
+        {
+          "token": "for",
+          "start": 32.563,
+          "end": 32.657,
+          "frame": 977,
+          "endFrame": 980
+        },
+        {
+          "token": "four",
+          "start": 32.657,
+          "end": 32.917,
+          "frame": 980,
+          "endFrame": 988
+        },
+        {
+          "token": "tickets,",
+          "start": 32.917,
+          "end": 33.385,
+          "frame": 988,
+          "endFrame": 1002
+        },
+        {
+          "token": "and",
+          "start": 33.573,
+          "end": 33.657,
+          "frame": 1008,
+          "endFrame": 1010
+        },
+        {
+          "token": "the",
+          "start": 33.657,
+          "end": 33.718,
+          "frame": 1010,
+          "endFrame": 1012
+        },
+        {
+          "token": "agent",
+          "start": 33.729,
+          "end": 34.052,
+          "frame": 1012,
+          "endFrame": 1022
+        },
+        {
+          "token": "buys",
+          "start": 34.052,
+          "end": 34.333,
+          "frame": 1022,
+          "endFrame": 1030
+        },
+        {
+          "token": "forty.",
+          "start": 34.343,
+          "end": 34.771,
+          "frame": 1030,
+          "endFrame": 1043
+        },
+        {
+          "token": "Or",
+          "start": 35.115,
+          "end": 35.188,
+          "frame": 1053,
+          "endFrame": 1056
+        },
+        {
+          "token": "it",
+          "start": 35.188,
+          "end": 35.271,
+          "frame": 1056,
+          "endFrame": 1058
+        },
+        {
+          "token": "lands",
+          "start": 35.271,
+          "end": 35.51,
+          "frame": 1058,
+          "endFrame": 1065
+        },
+        {
+          "token": "on",
+          "start": 35.51,
+          "end": 35.562,
+          "frame": 1065,
+          "endFrame": 1067
+        },
+        {
+          "token": "a",
+          "start": 35.562,
+          "end": 35.593,
+          "frame": 1067,
+          "endFrame": 1068
+        },
+        {
+          "token": "scam",
+          "start": 35.593,
+          "end": 35.906,
+          "frame": 1068,
+          "endFrame": 1078
+        },
+        {
+          "token": "page.",
+          "start": 35.906,
+          "end": 36.323,
+          "frame": 1078,
+          "endFrame": 1090
+        }
+      ],
+      "to": 1098,
+      "speechEnd": 1090
+    },
+    {
+      "id": "S6",
+      "text": "A new economy needs new financial instruments. Every agent gets its own account, its own card, and your limit.",
+      "from": 1098,
+      "words": [
+        {
+          "token": "A",
+          "start": 36.656,
+          "end": 36.688,
+          "frame": 1100,
+          "endFrame": 1101
+        },
+        {
+          "token": "new",
+          "start": 36.698,
+          "end": 36.886,
+          "frame": 1101,
+          "endFrame": 1107
+        },
+        {
+          "token": "economy",
+          "start": 36.886,
+          "end": 37.428,
+          "frame": 1107,
+          "endFrame": 1122
+        },
+        {
+          "token": "needs",
+          "start": 37.667,
+          "end": 37.928,
+          "frame": 1130,
+          "endFrame": 1138
+        },
+        {
+          "token": "new",
+          "start": 37.968,
+          "end": 38.218,
+          "frame": 1139,
+          "endFrame": 1147
+        },
+        {
+          "token": "financial",
+          "start": 38.218,
+          "end": 38.667,
+          "frame": 1147,
+          "endFrame": 1160
+        },
+        {
+          "token": "instruments.",
+          "start": 38.678,
+          "end": 39.239,
+          "frame": 1160,
+          "endFrame": 1178
+        },
+        {
+          "token": "Every",
+          "start": 39.583,
+          "end": 39.823,
+          "frame": 1188,
+          "endFrame": 1195
+        },
+        {
+          "token": "agent",
+          "start": 39.823,
+          "end": 40.146,
+          "frame": 1195,
+          "endFrame": 1204
+        },
+        {
+          "token": "gets",
+          "start": 40.146,
+          "end": 40.292,
+          "frame": 1204,
+          "endFrame": 1208
+        },
+        {
+          "token": "its",
+          "start": 40.292,
+          "end": 40.385,
+          "frame": 1208,
+          "endFrame": 1212
+        },
+        {
+          "token": "own",
+          "start": 40.385,
+          "end": 40.51,
+          "frame": 1212,
+          "endFrame": 1215
+        },
+        {
+          "token": "account,",
+          "start": 40.51,
+          "end": 40.885,
+          "frame": 1215,
+          "endFrame": 1227
+        },
+        {
+          "token": "its",
+          "start": 41.093,
+          "end": 41.208,
+          "frame": 1232,
+          "endFrame": 1237
+        },
+        {
+          "token": "own",
+          "start": 41.313,
+          "end": 41.49,
+          "frame": 1239,
+          "endFrame": 1245
+        },
+        {
+          "token": "card,",
+          "start": 41.49,
+          "end": 41.875,
+          "frame": 1245,
+          "endFrame": 1257
+        },
+        {
+          "token": "and",
+          "start": 42.094,
+          "end": 42.167,
+          "frame": 1262,
+          "endFrame": 1265
+        },
+        {
+          "token": "your",
+          "start": 42.167,
+          "end": 42.281,
+          "frame": 1265,
+          "endFrame": 1268
+        },
+        {
+          "token": "limit.",
+          "start": 42.281,
+          "end": 42.593,
+          "frame": 1268,
+          "endFrame": 1278
+        }
+      ],
+      "to": 1285,
+      "speechEnd": 1278
+    },
+    {
+      "id": "S7",
+      "text": "Every account is insured: against fraud, and against the agent's own mistakes. And with every purchase, the agent offers a real insurance product. Booked you a doctor? It offers health insurance. Bought tickets? Travel insurance.",
+      "from": 1285,
+      "words": [
+        {
+          "token": "Every",
+          "start": 42.906,
+          "end": 43.136,
+          "frame": 1288,
+          "endFrame": 1294
+        },
+        {
+          "token": "account",
+          "start": 43.146,
+          "end": 43.562,
+          "frame": 1294,
+          "endFrame": 1307
+        },
+        {
+          "token": "is",
+          "start": 43.604,
+          "end": 43.718,
+          "frame": 1308,
+          "endFrame": 1312
+        },
+        {
+          "token": "insured:",
+          "start": 43.718,
+          "end": 44.156,
+          "frame": 1312,
+          "endFrame": 1325
+        },
+        {
+          "token": "against",
+          "start": 44.583,
+          "end": 44.864,
+          "frame": 1338,
+          "endFrame": 1346
+        },
+        {
+          "token": "fraud,",
+          "start": 44.875,
+          "end": 45.385,
+          "frame": 1347,
+          "endFrame": 1362
+        },
+        {
+          "token": "and",
+          "start": 45.698,
+          "end": 45.782,
+          "frame": 1371,
+          "endFrame": 1373
+        },
+        {
+          "token": "against",
+          "start": 45.782,
+          "end": 46.031,
+          "frame": 1373,
+          "endFrame": 1381
+        },
+        {
+          "token": "the",
+          "start": 46.031,
+          "end": 46.114,
+          "frame": 1381,
+          "endFrame": 1383
+        },
+        {
+          "token": "agent's",
+          "start": 46.114,
+          "end": 46.448,
+          "frame": 1383,
+          "endFrame": 1393
+        },
+        {
+          "token": "own",
+          "start": 46.448,
+          "end": 46.573,
+          "frame": 1393,
+          "endFrame": 1398
+        },
+        {
+          "token": "mistakes.",
+          "start": 46.583,
+          "end": 47.146,
+          "frame": 1398,
+          "endFrame": 1414
+        },
+        {
+          "token": "And",
+          "start": 47.489,
+          "end": 47.593,
+          "frame": 1425,
+          "endFrame": 1428
+        },
+        {
+          "token": "with",
+          "start": 47.75,
+          "end": 47.865,
+          "frame": 1432,
+          "endFrame": 1436
+        },
+        {
+          "token": "every",
+          "start": 47.968,
+          "end": 48.25,
+          "frame": 1439,
+          "endFrame": 1448
+        },
+        {
+          "token": "purchase,",
+          "start": 48.261,
+          "end": 48.782,
+          "frame": 1448,
+          "endFrame": 1463
+        },
+        {
+          "token": "the",
+          "start": 49.073,
+          "end": 49.178,
+          "frame": 1472,
+          "endFrame": 1475
+        },
+        {
+          "token": "agent",
+          "start": 49.282,
+          "end": 49.552,
+          "frame": 1478,
+          "endFrame": 1487
+        },
+        {
+          "token": "offers",
+          "start": 49.562,
+          "end": 49.843,
+          "frame": 1487,
+          "endFrame": 1495
+        },
+        {
+          "token": "a",
+          "start": 49.843,
+          "end": 49.885,
+          "frame": 1495,
+          "endFrame": 1497
+        },
+        {
+          "token": "real",
+          "start": 49.885,
+          "end": 50.177,
+          "frame": 1497,
+          "endFrame": 1505
+        },
+        {
+          "token": "insurance",
+          "start": 50.177,
+          "end": 50.468,
+          "frame": 1505,
+          "endFrame": 1514
+        },
+        {
+          "token": "product.",
+          "start": 50.468,
+          "end": 50.854,
+          "frame": 1514,
+          "endFrame": 1526
+        },
+        {
+          "token": "Booked",
+          "start": 51.178,
+          "end": 51.282,
+          "frame": 1535,
+          "endFrame": 1538
+        },
+        {
+          "token": "you",
+          "start": 51.282,
+          "end": 51.365,
+          "frame": 1538,
+          "endFrame": 1541
+        },
+        {
+          "token": "a",
+          "start": 51.365,
+          "end": 51.396,
+          "frame": 1541,
+          "endFrame": 1542
+        },
+        {
+          "token": "doctor?",
+          "start": 51.396,
+          "end": 51.76,
+          "frame": 1542,
+          "endFrame": 1552
+        },
+        {
+          "token": "It",
+          "start": 52.094,
+          "end": 52.146,
+          "frame": 1562,
+          "endFrame": 1564
+        },
+        {
+          "token": "offers",
+          "start": 52.156,
+          "end": 52.458,
+          "frame": 1565,
+          "endFrame": 1573
+        },
+        {
+          "token": "health",
+          "start": 52.458,
+          "end": 52.625,
+          "frame": 1573,
+          "endFrame": 1578
+        },
+        {
+          "token": "insurance.",
+          "start": 52.636,
+          "end": 53.198,
+          "frame": 1579,
+          "endFrame": 1596
+        },
+        {
+          "token": "Bought",
+          "start": 53.542,
+          "end": 53.677,
+          "frame": 1607,
+          "endFrame": 1610
+        },
+        {
+          "token": "tickets?",
+          "start": 53.688,
+          "end": 54.178,
+          "frame": 1611,
+          "endFrame": 1625
+        },
+        {
+          "token": "Travel",
+          "start": 54.521,
+          "end": 54.781,
+          "frame": 1636,
+          "endFrame": 1643
+        },
+        {
+          "token": "insurance.",
+          "start": 54.792,
+          "end": 55.354,
+          "frame": 1643,
+          "endFrame": 1661
+        }
+      ],
+      "to": 1668,
+      "speechEnd": 1661
+    },
+    {
+      "id": "S8",
+      "text": "Agents will start paying each other, buying and selling. Your agent books you into a clinic. The clinic's agent sends the bill. The insurer's agent pays it. No calls, not a single form filled in by a human. There will be billions of deals like this. It's a new ocean of money.",
+      "from": 1668,
+      "words": [
+        {
+          "token": "Agents",
+          "start": 55.688,
+          "end": 55.948,
+          "frame": 1671,
+          "endFrame": 1678
+        },
+        {
+          "token": "will",
+          "start": 55.948,
+          "end": 56.031,
+          "frame": 1678,
+          "endFrame": 1681
+        },
+        {
+          "token": "start",
+          "start": 56.031,
+          "end": 56.25,
+          "frame": 1681,
+          "endFrame": 1688
+        },
+        {
+          "token": "paying",
+          "start": 56.261,
+          "end": 56.521,
+          "frame": 1688,
+          "endFrame": 1696
+        },
+        {
+          "token": "each",
+          "start": 56.532,
+          "end": 56.667,
+          "frame": 1696,
+          "endFrame": 1700
+        },
+        {
+          "token": "other,",
+          "start": 56.667,
+          "end": 56.906,
+          "frame": 1700,
+          "endFrame": 1708
+        },
+        {
+          "token": "buying",
+          "start": 57.135,
+          "end": 57.615,
+          "frame": 1714,
+          "endFrame": 1728
+        },
+        {
+          "token": "and",
+          "start": 57.739,
+          "end": 57.812,
+          "frame": 1732,
+          "endFrame": 1734
+        },
+        {
+          "token": "selling.",
+          "start": 57.823,
+          "end": 58.26,
+          "frame": 1735,
+          "endFrame": 1748
+        },
+        {
+          "token": "Your",
+          "start": 58.583,
+          "end": 58.719,
+          "frame": 1758,
+          "endFrame": 1762
+        },
+        {
+          "token": "agent",
+          "start": 58.771,
+          "end": 59.083,
+          "frame": 1763,
+          "endFrame": 1772
+        },
+        {
+          "token": "books",
+          "start": 59.083,
+          "end": 59.333,
+          "frame": 1772,
+          "endFrame": 1780
+        },
+        {
+          "token": "you",
+          "start": 59.344,
+          "end": 59.521,
+          "frame": 1780,
+          "endFrame": 1786
+        },
+        {
+          "token": "into",
+          "start": 59.635,
+          "end": 59.843,
+          "frame": 1789,
+          "endFrame": 1795
+        },
+        {
+          "token": "a",
+          "start": 59.854,
+          "end": 59.896,
+          "frame": 1796,
+          "endFrame": 1797
+        },
+        {
+          "token": "clinic.",
+          "start": 59.896,
+          "end": 60.302,
+          "frame": 1797,
+          "endFrame": 1809
+        },
+        {
+          "token": "The",
+          "start": 60.646,
+          "end": 60.688,
+          "frame": 1819,
+          "endFrame": 1821
+        },
+        {
+          "token": "clinic's",
+          "start": 60.698,
+          "end": 60.979,
+          "frame": 1821,
+          "endFrame": 1829
+        },
+        {
+          "token": "agent",
+          "start": 60.99,
+          "end": 61.281,
+          "frame": 1830,
+          "endFrame": 1838
+        },
+        {
+          "token": "sends",
+          "start": 61.292,
+          "end": 61.542,
+          "frame": 1838,
+          "endFrame": 1847
+        },
+        {
+          "token": "the",
+          "start": 61.542,
+          "end": 61.604,
+          "frame": 1847,
+          "endFrame": 1848
+        },
+        {
+          "token": "bill.",
+          "start": 61.615,
+          "end": 61.938,
+          "frame": 1848,
+          "endFrame": 1858
+        },
+        {
+          "token": "The",
+          "start": 62.271,
+          "end": 62.313,
+          "frame": 1868,
+          "endFrame": 1869
+        },
+        {
+          "token": "insurer's",
+          "start": 62.323,
+          "end": 62.906,
+          "frame": 1870,
+          "endFrame": 1888
+        },
+        {
+          "token": "agent",
+          "start": 63.021,
+          "end": 63.312,
+          "frame": 1891,
+          "endFrame": 1899
+        },
+        {
+          "token": "pays",
+          "start": 63.312,
+          "end": 63.593,
+          "frame": 1899,
+          "endFrame": 1908
+        },
+        {
+          "token": "it.",
+          "start": 63.593,
+          "end": 63.729,
+          "frame": 1908,
+          "endFrame": 1912
+        },
+        {
+          "token": "No",
+          "start": 64.062,
+          "end": 64.188,
+          "frame": 1922,
+          "endFrame": 1926
+        },
+        {
+          "token": "calls,",
+          "start": 64.188,
+          "end": 64.635,
+          "frame": 1926,
+          "endFrame": 1939
+        },
+        {
+          "token": "not",
+          "start": 64.854,
+          "end": 64.989,
+          "frame": 1946,
+          "endFrame": 1950
+        },
+        {
+          "token": "a",
+          "start": 64.989,
+          "end": 65.021,
+          "frame": 1950,
+          "endFrame": 1951
+        },
+        {
+          "token": "single",
+          "start": 65.021,
+          "end": 65.323,
+          "frame": 1951,
+          "endFrame": 1960
+        },
+        {
+          "token": "form",
+          "start": 65.323,
+          "end": 65.636,
+          "frame": 1960,
+          "endFrame": 1969
+        },
+        {
+          "token": "filled",
+          "start": 65.636,
+          "end": 65.948,
+          "frame": 1969,
+          "endFrame": 1978
+        },
+        {
+          "token": "in",
+          "start": 65.948,
+          "end": 66.083,
+          "frame": 1978,
+          "endFrame": 1982
+        },
+        {
+          "token": "by",
+          "start": 66.083,
+          "end": 66.229,
+          "frame": 1982,
+          "endFrame": 1987
+        },
+        {
+          "token": "a",
+          "start": 66.229,
+          "end": 66.25,
+          "frame": 1987,
+          "endFrame": 1988
+        },
+        {
+          "token": "human.",
+          "start": 66.261,
+          "end": 66.615,
+          "frame": 1988,
+          "endFrame": 1998
+        },
+        {
+          "token": "There",
+          "start": 66.958,
+          "end": 67.0,
+          "frame": 2008,
+          "endFrame": 2010
+        },
+        {
+          "token": "will",
+          "start": 67.0,
+          "end": 67.062,
+          "frame": 2010,
+          "endFrame": 2012
+        },
+        {
+          "token": "be",
+          "start": 67.073,
+          "end": 67.198,
+          "frame": 2012,
+          "endFrame": 2016
+        },
+        {
+          "token": "billions",
+          "start": 67.271,
+          "end": 67.698,
+          "frame": 2018,
+          "endFrame": 2031
+        },
+        {
+          "token": "of",
+          "start": 67.708,
+          "end": 67.792,
+          "frame": 2032,
+          "endFrame": 2033
+        },
+        {
+          "token": "deals",
+          "start": 67.802,
+          "end": 68.125,
+          "frame": 2034,
+          "endFrame": 2043
+        },
+        {
+          "token": "like",
+          "start": 68.125,
+          "end": 68.312,
+          "frame": 2043,
+          "endFrame": 2049
+        },
+        {
+          "token": "this.",
+          "start": 68.323,
+          "end": 68.719,
+          "frame": 2050,
+          "endFrame": 2062
+        },
+        {
+          "token": "It's",
+          "start": 69.052,
+          "end": 69.125,
+          "frame": 2072,
+          "endFrame": 2073
+        },
+        {
+          "token": "a",
+          "start": 69.125,
+          "end": 69.156,
+          "frame": 2073,
+          "endFrame": 2075
+        },
+        {
+          "token": "new",
+          "start": 69.156,
+          "end": 69.406,
+          "frame": 2075,
+          "endFrame": 2082
+        },
+        {
+          "token": "ocean",
+          "start": 69.417,
+          "end": 69.698,
+          "frame": 2082,
+          "endFrame": 2091
+        },
+        {
+          "token": "of",
+          "start": 69.698,
+          "end": 69.761,
+          "frame": 2091,
+          "endFrame": 2092
+        },
+        {
+          "token": "money.",
+          "start": 69.761,
+          "end": 70.073,
+          "frame": 2092,
+          "endFrame": 2102
+        }
+      ],
+      "to": 2109,
+      "speechEnd": 2102
+    },
+    {
+      "id": "S9",
+      "text": "By 2030, the best bank will be a bank for agents. But there's one condition.",
+      "from": 2109,
+      "words": [
+        {
+          "token": "By",
+          "start": 70.396,
+          "end": 70.75,
+          "frame": 2112,
+          "endFrame": 2122
+        },
+        {
+          "token": "2030,",
+          "start": 70.75,
+          "end": 71.104,
+          "frame": 2122,
+          "endFrame": 2133
+        },
+        {
+          "token": "the",
+          "start": 71.333,
+          "end": 71.407,
+          "frame": 2140,
+          "endFrame": 2142
+        },
+        {
+          "token": "best",
+          "start": 71.407,
+          "end": 71.636,
+          "frame": 2142,
+          "endFrame": 2149
+        },
+        {
+          "token": "bank",
+          "start": 71.636,
+          "end": 71.854,
+          "frame": 2149,
+          "endFrame": 2156
+        },
+        {
+          "token": "will",
+          "start": 71.854,
+          "end": 71.927,
+          "frame": 2156,
+          "endFrame": 2158
+        },
+        {
+          "token": "be",
+          "start": 71.927,
+          "end": 72.052,
+          "frame": 2158,
+          "endFrame": 2162
+        },
+        {
+          "token": "a",
+          "start": 72.052,
+          "end": 72.094,
+          "frame": 2162,
+          "endFrame": 2162
+        },
+        {
+          "token": "bank",
+          "start": 72.104,
+          "end": 72.375,
+          "frame": 2163,
+          "endFrame": 2172
+        },
+        {
+          "token": "for",
+          "start": 72.385,
+          "end": 72.531,
+          "frame": 2172,
+          "endFrame": 2176
+        },
+        {
+          "token": "agents.",
+          "start": 72.542,
+          "end": 73.021,
+          "frame": 2177,
+          "endFrame": 2191
+        },
+        {
+          "token": "But",
+          "start": 73.344,
+          "end": 73.427,
+          "frame": 2200,
+          "endFrame": 2202
+        },
+        {
+          "token": "there's",
+          "start": 73.427,
+          "end": 73.593,
+          "frame": 2202,
+          "endFrame": 2208
+        },
+        {
+          "token": "one",
+          "start": 73.593,
+          "end": 73.823,
+          "frame": 2208,
+          "endFrame": 2215
+        },
+        {
+          "token": "condition.",
+          "start": 73.823,
+          "end": 74.282,
+          "frame": 2215,
+          "endFrame": 2228
+        }
+      ],
+      "to": 2236,
+      "speechEnd": 2228
+    },
+    {
+      "id": "S10",
+      "text": "For these deals to be trusted, an agent has to remember its owner. Money trusts the agent that remembers. But today's AI doesn't remember everything you've done. The giants gave it just a notebook in your profile: a few facts about you, but not your history.",
+      "from": 2236,
+      "words": [
+        {
+          "token": "For",
+          "start": 74.614,
+          "end": 74.698,
+          "frame": 2238,
+          "endFrame": 2241
+        },
+        {
+          "token": "these",
+          "start": 74.698,
+          "end": 74.927,
+          "frame": 2241,
+          "endFrame": 2248
+        },
+        {
+          "token": "deals",
+          "start": 74.927,
+          "end": 75.292,
+          "frame": 2248,
+          "endFrame": 2258
+        },
+        {
+          "token": "to",
+          "start": 75.302,
+          "end": 75.375,
+          "frame": 2259,
+          "endFrame": 2262
+        },
+        {
+          "token": "be",
+          "start": 75.375,
+          "end": 75.468,
+          "frame": 2262,
+          "endFrame": 2264
+        },
+        {
+          "token": "trusted,",
+          "start": 75.479,
+          "end": 75.927,
+          "frame": 2264,
+          "endFrame": 2278
+        },
+        {
+          "token": "an",
+          "start": 76.239,
+          "end": 76.375,
+          "frame": 2288,
+          "endFrame": 2292
+        },
+        {
+          "token": "agent",
+          "start": 76.385,
+          "end": 76.698,
+          "frame": 2292,
+          "endFrame": 2301
+        },
+        {
+          "token": "has",
+          "start": 76.698,
+          "end": 76.886,
+          "frame": 2301,
+          "endFrame": 2307
+        },
+        {
+          "token": "to",
+          "start": 76.886,
+          "end": 76.968,
+          "frame": 2307,
+          "endFrame": 2309
+        },
+        {
+          "token": "remember",
+          "start": 76.979,
+          "end": 77.375,
+          "frame": 2309,
+          "endFrame": 2322
+        },
+        {
+          "token": "its",
+          "start": 77.375,
+          "end": 77.479,
+          "frame": 2322,
+          "endFrame": 2324
+        },
+        {
+          "token": "owner.",
+          "start": 77.489,
+          "end": 77.843,
+          "frame": 2325,
+          "endFrame": 2335
+        },
+        {
+          "token": "Money",
+          "start": 78.177,
+          "end": 78.344,
+          "frame": 2345,
+          "endFrame": 2350
+        },
+        {
+          "token": "trusts",
+          "start": 78.344,
+          "end": 78.729,
+          "frame": 2350,
+          "endFrame": 2362
+        },
+        {
+          "token": "the",
+          "start": 78.729,
+          "end": 78.833,
+          "frame": 2362,
+          "endFrame": 2365
+        },
+        {
+          "token": "agent",
+          "start": 78.896,
+          "end": 79.292,
+          "frame": 2367,
+          "endFrame": 2378
+        },
+        {
+          "token": "that",
+          "start": 79.417,
+          "end": 79.521,
+          "frame": 2382,
+          "endFrame": 2386
+        },
+        {
+          "token": "remembers.",
+          "start": 79.521,
+          "end": 80.104,
+          "frame": 2386,
+          "endFrame": 2403
+        },
+        {
+          "token": "But",
+          "start": 80.448,
+          "end": 80.51,
+          "frame": 2413,
+          "endFrame": 2415
+        },
+        {
+          "token": "today's",
+          "start": 80.51,
+          "end": 80.823,
+          "frame": 2415,
+          "endFrame": 2425
+        },
+        {
+          "token": "AI",
+          "start": 80.823,
+          "end": 81.198,
+          "frame": 2425,
+          "endFrame": 2436
+        },
+        {
+          "token": "doesn't",
+          "start": 81.261,
+          "end": 81.573,
+          "frame": 2438,
+          "endFrame": 2448
+        },
+        {
+          "token": "remember",
+          "start": 81.573,
+          "end": 81.968,
+          "frame": 2448,
+          "endFrame": 2459
+        },
+        {
+          "token": "everything",
+          "start": 82.146,
+          "end": 82.562,
+          "frame": 2464,
+          "endFrame": 2477
+        },
+        {
+          "token": "you've",
+          "start": 82.562,
+          "end": 82.719,
+          "frame": 2477,
+          "endFrame": 2482
+        },
+        {
+          "token": "done.",
+          "start": 82.729,
+          "end": 83.042,
+          "frame": 2482,
+          "endFrame": 2492
+        },
+        {
+          "token": "The",
+          "start": 83.375,
+          "end": 83.427,
+          "frame": 2502,
+          "endFrame": 2502
+        },
+        {
+          "token": "giants",
+          "start": 83.427,
+          "end": 83.761,
+          "frame": 2502,
+          "endFrame": 2512
+        },
+        {
+          "token": "gave",
+          "start": 83.771,
+          "end": 83.927,
+          "frame": 2513,
+          "endFrame": 2518
+        },
+        {
+          "token": "it",
+          "start": 83.927,
+          "end": 83.979,
+          "frame": 2518,
+          "endFrame": 2519
+        },
+        {
+          "token": "just",
+          "start": 83.979,
+          "end": 84.125,
+          "frame": 2519,
+          "endFrame": 2523
+        },
+        {
+          "token": "a",
+          "start": 84.125,
+          "end": 84.146,
+          "frame": 2523,
+          "endFrame": 2524
+        },
+        {
+          "token": "notebook",
+          "start": 84.156,
+          "end": 84.625,
+          "frame": 2525,
+          "endFrame": 2538
+        },
+        {
+          "token": "in",
+          "start": 84.625,
+          "end": 84.698,
+          "frame": 2538,
+          "endFrame": 2541
+        },
+        {
+          "token": "your",
+          "start": 84.708,
+          "end": 84.781,
+          "frame": 2542,
+          "endFrame": 2543
+        },
+        {
+          "token": "profile:",
+          "start": 84.781,
+          "end": 85.365,
+          "frame": 2543,
+          "endFrame": 2561
+        },
+        {
+          "token": "a",
+          "start": 85.74,
+          "end": 85.771,
+          "frame": 2572,
+          "endFrame": 2573
+        },
+        {
+          "token": "few",
+          "start": 85.782,
+          "end": 85.938,
+          "frame": 2573,
+          "endFrame": 2578
+        },
+        {
+          "token": "facts",
+          "start": 85.938,
+          "end": 86.208,
+          "frame": 2578,
+          "endFrame": 2587
+        },
+        {
+          "token": "about",
+          "start": 86.208,
+          "end": 86.448,
+          "frame": 2587,
+          "endFrame": 2593
+        },
+        {
+          "token": "you,",
+          "start": 86.448,
+          "end": 86.615,
+          "frame": 2593,
+          "endFrame": 2598
+        },
+        {
+          "token": "but",
+          "start": 86.75,
+          "end": 86.854,
+          "frame": 2602,
+          "endFrame": 2606
+        },
+        {
+          "token": "not",
+          "start": 86.854,
+          "end": 87.052,
+          "frame": 2606,
+          "endFrame": 2612
+        },
+        {
+          "token": "your",
+          "start": 87.062,
+          "end": 87.146,
+          "frame": 2612,
+          "endFrame": 2614
+        },
+        {
+          "token": "history.",
+          "start": 87.146,
+          "end": 87.615,
+          "frame": 2614,
+          "endFrame": 2628
+        }
+      ],
+      "to": 2636,
+      "speechEnd": 2628
+    },
+    {
+      "id": "S11",
+      "text": "That's why there's a race for real memory. The big players are plugging the gap with data centers. But the breakthrough will be technological. And it will start with the patient's medical history.",
+      "from": 2636,
+      "words": [
+        {
+          "token": "That's",
+          "start": 87.958,
+          "end": 88.062,
+          "frame": 2638,
+          "endFrame": 2642
+        },
+        {
+          "token": "why",
+          "start": 88.062,
+          "end": 88.167,
+          "frame": 2642,
+          "endFrame": 2645
+        },
+        {
+          "token": "there's",
+          "start": 88.167,
+          "end": 88.292,
+          "frame": 2645,
+          "endFrame": 2648
+        },
+        {
+          "token": "a",
+          "start": 88.292,
+          "end": 88.333,
+          "frame": 2648,
+          "endFrame": 2650
+        },
+        {
+          "token": "race",
+          "start": 88.333,
+          "end": 88.761,
+          "frame": 2650,
+          "endFrame": 2662
+        },
+        {
+          "token": "for",
+          "start": 88.875,
+          "end": 89.062,
+          "frame": 2667,
+          "endFrame": 2672
+        },
+        {
+          "token": "real",
+          "start": 89.062,
+          "end": 89.312,
+          "frame": 2672,
+          "endFrame": 2679
+        },
+        {
+          "token": "memory.",
+          "start": 89.312,
+          "end": 89.718,
+          "frame": 2679,
+          "endFrame": 2692
+        },
+        {
+          "token": "The",
+          "start": 90.062,
+          "end": 90.125,
+          "frame": 2702,
+          "endFrame": 2703
+        },
+        {
+          "token": "big",
+          "start": 90.135,
+          "end": 90.312,
+          "frame": 2704,
+          "endFrame": 2709
+        },
+        {
+          "token": "players",
+          "start": 90.312,
+          "end": 90.614,
+          "frame": 2709,
+          "endFrame": 2718
+        },
+        {
+          "token": "are",
+          "start": 90.614,
+          "end": 90.698,
+          "frame": 2718,
+          "endFrame": 2721
+        },
+        {
+          "token": "plugging",
+          "start": 90.698,
+          "end": 91.083,
+          "frame": 2721,
+          "endFrame": 2732
+        },
+        {
+          "token": "the",
+          "start": 91.093,
+          "end": 91.146,
+          "frame": 2732,
+          "endFrame": 2734
+        },
+        {
+          "token": "gap",
+          "start": 91.146,
+          "end": 91.458,
+          "frame": 2734,
+          "endFrame": 2743
+        },
+        {
+          "token": "with",
+          "start": 91.469,
+          "end": 91.583,
+          "frame": 2744,
+          "endFrame": 2748
+        },
+        {
+          "token": "data",
+          "start": 91.593,
+          "end": 91.792,
+          "frame": 2748,
+          "endFrame": 2753
+        },
+        {
+          "token": "centers.",
+          "start": 91.792,
+          "end": 92.261,
+          "frame": 2753,
+          "endFrame": 2768
+        },
+        {
+          "token": "But",
+          "start": 92.604,
+          "end": 92.657,
+          "frame": 2778,
+          "endFrame": 2780
+        },
+        {
+          "token": "the",
+          "start": 92.657,
+          "end": 92.729,
+          "frame": 2780,
+          "endFrame": 2782
+        },
+        {
+          "token": "breakthrough",
+          "start": 92.739,
+          "end": 93.312,
+          "frame": 2782,
+          "endFrame": 2799
+        },
+        {
+          "token": "will",
+          "start": 93.344,
+          "end": 93.458,
+          "frame": 2800,
+          "endFrame": 2803
+        },
+        {
+          "token": "be",
+          "start": 93.458,
+          "end": 93.688,
+          "frame": 2803,
+          "endFrame": 2811
+        },
+        {
+          "token": "technological.",
+          "start": 93.688,
+          "end": 94.448,
+          "frame": 2811,
+          "endFrame": 2833
+        },
+        {
+          "token": "And",
+          "start": 94.792,
+          "end": 94.843,
+          "frame": 2843,
+          "endFrame": 2845
+        },
+        {
+          "token": "it",
+          "start": 94.843,
+          "end": 94.896,
+          "frame": 2845,
+          "endFrame": 2847
+        },
+        {
+          "token": "will",
+          "start": 94.896,
+          "end": 94.979,
+          "frame": 2847,
+          "endFrame": 2849
+        },
+        {
+          "token": "start",
+          "start": 94.989,
+          "end": 95.302,
+          "frame": 2850,
+          "endFrame": 2859
+        },
+        {
+          "token": "with",
+          "start": 95.302,
+          "end": 95.417,
+          "frame": 2859,
+          "endFrame": 2862
+        },
+        {
+          "token": "the",
+          "start": 95.417,
+          "end": 95.5,
+          "frame": 2862,
+          "endFrame": 2865
+        },
+        {
+          "token": "patient's",
+          "start": 95.5,
+          "end": 96.0,
+          "frame": 2865,
+          "endFrame": 2880
+        },
+        {
+          "token": "medical",
+          "start": 96.011,
+          "end": 96.312,
+          "frame": 2880,
+          "endFrame": 2889
+        },
+        {
+          "token": "history.",
+          "start": 96.312,
+          "end": 96.76,
+          "frame": 2889,
+          "endFrame": 2902
+        }
+      ],
+      "to": 2911,
+      "speechEnd": 2902
+    },
+    {
+      "id": "S12",
+      "text": "If AI can be trusted with your medical history, it can be trusted with your wallet. The Tre-int team taught AI to remember the patient and the doctor. Let us show you how it works.",
+      "from": 2911,
+      "words": [
+        {
+          "token": "If",
+          "start": 97.104,
+          "end": 97.229,
+          "frame": 2913,
+          "endFrame": 2917
+        },
+        {
+          "token": "AI",
+          "start": 97.303,
+          "end": 97.739,
+          "frame": 2919,
+          "endFrame": 2932
+        },
+        {
+          "token": "can",
+          "start": 97.75,
+          "end": 97.854,
+          "frame": 2932,
+          "endFrame": 2936
+        },
+        {
+          "token": "be",
+          "start": 97.854,
+          "end": 97.938,
+          "frame": 2936,
+          "endFrame": 2938
+        },
+        {
+          "token": "trusted",
+          "start": 97.938,
+          "end": 98.344,
+          "frame": 2938,
+          "endFrame": 2950
+        },
+        {
+          "token": "with",
+          "start": 98.354,
+          "end": 98.458,
+          "frame": 2951,
+          "endFrame": 2953
+        },
+        {
+          "token": "your",
+          "start": 98.458,
+          "end": 98.521,
+          "frame": 2953,
+          "endFrame": 2956
+        },
+        {
+          "token": "medical",
+          "start": 98.521,
+          "end": 98.792,
+          "frame": 2956,
+          "endFrame": 2963
+        },
+        {
+          "token": "history,",
+          "start": 98.802,
+          "end": 99.271,
+          "frame": 2964,
+          "endFrame": 2978
+        },
+        {
+          "token": "it",
+          "start": 99.625,
+          "end": 99.667,
+          "frame": 2988,
+          "endFrame": 2990
+        },
+        {
+          "token": "can",
+          "start": 99.667,
+          "end": 99.729,
+          "frame": 2990,
+          "endFrame": 2992
+        },
+        {
+          "token": "be",
+          "start": 99.729,
+          "end": 99.813,
+          "frame": 2992,
+          "endFrame": 2994
+        },
+        {
+          "token": "trusted",
+          "start": 99.813,
+          "end": 100.219,
+          "frame": 2994,
+          "endFrame": 3007
+        },
+        {
+          "token": "with",
+          "start": 100.219,
+          "end": 100.312,
+          "frame": 3007,
+          "endFrame": 3009
+        },
+        {
+          "token": "your",
+          "start": 100.312,
+          "end": 100.417,
+          "frame": 3009,
+          "endFrame": 3012
+        },
+        {
+          "token": "wallet.",
+          "start": 100.417,
+          "end": 100.782,
+          "frame": 3012,
+          "endFrame": 3023
+        },
+        {
+          "token": "The",
+          "start": 101.125,
+          "end": 101.177,
+          "frame": 3033,
+          "endFrame": 3035
+        },
+        {
+          "token": "Tre-int",
+          "start": 101.177,
+          "end": 101.583,
+          "frame": 3035,
+          "endFrame": 3048
+        },
+        {
+          "token": "team",
+          "start": 101.593,
+          "end": 101.896,
+          "frame": 3048,
+          "endFrame": 3057
+        },
+        {
+          "token": "taught",
+          "start": 101.906,
+          "end": 102.177,
+          "frame": 3058,
+          "endFrame": 3065
+        },
+        {
+          "token": "AI",
+          "start": 102.261,
+          "end": 102.719,
+          "frame": 3068,
+          "endFrame": 3082
+        },
+        {
+          "token": "to",
+          "start": 102.928,
+          "end": 103.032,
+          "frame": 3088,
+          "endFrame": 3091
+        },
+        {
+          "token": "remember",
+          "start": 103.032,
+          "end": 103.302,
+          "frame": 3091,
+          "endFrame": 3099
+        },
+        {
+          "token": "the",
+          "start": 103.302,
+          "end": 103.364,
+          "frame": 3099,
+          "endFrame": 3101
+        },
+        {
+          "token": "patient",
+          "start": 103.375,
+          "end": 103.938,
+          "frame": 3102,
+          "endFrame": 3118
+        },
+        {
+          "token": "and",
+          "start": 104.042,
+          "end": 104.093,
+          "frame": 3122,
+          "endFrame": 3122
+        },
+        {
+          "token": "the",
+          "start": 104.093,
+          "end": 104.146,
+          "frame": 3122,
+          "endFrame": 3124
+        },
+        {
+          "token": "doctor.",
+          "start": 104.146,
+          "end": 104.573,
+          "frame": 3124,
+          "endFrame": 3138
+        },
+        {
+          "token": "Let",
+          "start": 104.917,
+          "end": 104.989,
+          "frame": 3148,
+          "endFrame": 3150
+        },
+        {
+          "token": "us",
+          "start": 104.989,
+          "end": 105.042,
+          "frame": 3150,
+          "endFrame": 3152
+        },
+        {
+          "token": "show",
+          "start": 105.042,
+          "end": 105.177,
+          "frame": 3152,
+          "endFrame": 3155
+        },
+        {
+          "token": "you",
+          "start": 105.177,
+          "end": 105.282,
+          "frame": 3155,
+          "endFrame": 3158
+        },
+        {
+          "token": "how",
+          "start": 105.282,
+          "end": 105.438,
+          "frame": 3158,
+          "endFrame": 3163
+        },
+        {
+          "token": "it",
+          "start": 105.448,
+          "end": 105.49,
+          "frame": 3163,
+          "endFrame": 3165
+        },
+        {
+          "token": "works.",
+          "start": 105.49,
+          "end": 105.927,
+          "frame": 3165,
+          "endFrame": 3178
+        }
+      ],
+      "to": 3253,
+      "speechEnd": 3178
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import ruJson from "../../../public/vo/agent-bank/take.json";
 import enJson from "../../../public/vo/agent-bank-en/take.json";
+import enFastJson from "../../../public/vo/agent-bank-en-fast/take.json";
 import { loadTake, type VoTake, type VoWord } from "../../kit";
 import enAnchors from "./anchors-en.json";
 import { EN_TEXT, type Lang } from "./lang";
@@ -41,3 +42,6 @@ export const LANG_EN: Lang = {
   anchors: enAnchors as unknown as Record<string, readonly [string, number]>, text: EN_TEXT,
   keepTogether: ["$5 billion", "$8 billion", "$5 trillion"],
 };
+
+/** English at 1.2x speech (pitch kept); animation, captions, SFX and score retime to it. */
+export const LANG_EN_FAST: Lang = { ...LANG_EN, take: loadTake(enFastJson), captions: captionTake(loadTake(enFastJson)), music: "audio/agent-bank-en-fast/music.wav" };
