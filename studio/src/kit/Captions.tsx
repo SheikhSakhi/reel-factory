@@ -140,11 +140,11 @@ const CaptionPage: React.FC<{ f: number; page: Page; props: CaptionsProps }> = (
           : { textShadow: "0 2px 14px rgba(0,0,0,0.55)" }),
       }}>
         {page.segments.map((seg, s) => (
-          <React.Fragment key={seg.words[0].frame}>
+          <React.Fragment key={`${seg.words[0].frame}-${s}`}>
             {s > 0 ? " " : ""}
             <span style={{ whiteSpace: seg.nowrap ? "nowrap" : undefined }}>
               {seg.words.map((w, k) => (
-                <React.Fragment key={w.frame}>
+                <React.Fragment key={`${w.frame}-${k}`}>
                   {k > 0 ? " " : ""}
                   <CaptionWord f={f} word={w} nextFrame={nextFrameOf(w)} accent={props.accent} pill={props.variant === "pill"} />
                 </React.Fragment>

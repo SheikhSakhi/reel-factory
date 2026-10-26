@@ -1,0 +1,1459 @@
+{
+ "file": "edit/nvidia-journey-s1e2/clean.mp4",
+ "fps": 30,
+ "totalFrames": 2820,
+ "scenes": [
+  {
+   "id": "S1",
+   "text": "In the first video, I told you that I understand my tech team before they finish the sentence.",
+   "from": 0,
+   "to": 126,
+   "speechEnd": 125,
+   "words": [
+    {
+     "token": "In",
+     "frame": 1,
+     "endFrame": 7
+    },
+    {
+     "token": "the",
+     "frame": 7,
+     "endFrame": 8
+    },
+    {
+     "token": "first",
+     "frame": 7,
+     "endFrame": 16
+    },
+    {
+     "token": "video,",
+     "frame": 16,
+     "endFrame": 28
+    },
+    {
+     "token": "I",
+     "frame": 28,
+     "endFrame": 29
+    },
+    {
+     "token": "told",
+     "frame": 29,
+     "endFrame": 36
+    },
+    {
+     "token": "you",
+     "frame": 36,
+     "endFrame": 42
+    },
+    {
+     "token": "that",
+     "frame": 42,
+     "endFrame": 50
+    },
+    {
+     "token": "I",
+     "frame": 50,
+     "endFrame": 51
+    },
+    {
+     "token": "understand",
+     "frame": 50,
+     "endFrame": 62
+    },
+    {
+     "token": "my",
+     "frame": 62,
+     "endFrame": 71
+    },
+    {
+     "token": "tech",
+     "frame": 71,
+     "endFrame": 78
+    },
+    {
+     "token": "team",
+     "frame": 78,
+     "endFrame": 79
+    },
+    {
+     "token": "before",
+     "frame": 79,
+     "endFrame": 88
+    },
+    {
+     "token": "they",
+     "frame": 88,
+     "endFrame": 97
+    },
+    {
+     "token": "finish",
+     "frame": 97,
+     "endFrame": 105
+    },
+    {
+     "token": "the",
+     "frame": 105,
+     "endFrame": 114
+    },
+    {
+     "token": "sentence.",
+     "frame": 114,
+     "endFrame": 125
+    }
+   ]
+  },
+  {
+   "id": "S2",
+   "text": "Even though I come from a completely different discipline, I'm a doctor. But I have also been building AI tools for healthcare for about 6 years.",
+   "from": 126,
+   "to": 366,
+   "speechEnd": 369,
+   "words": [
+    {
+     "token": "Even",
+     "frame": 129,
+     "endFrame": 137
+    },
+    {
+     "token": "though",
+     "frame": 137,
+     "endFrame": 145
+    },
+    {
+     "token": "I",
+     "frame": 145,
+     "endFrame": 150
+    },
+    {
+     "token": "come",
+     "frame": 150,
+     "endFrame": 156
+    },
+    {
+     "token": "from",
+     "frame": 156,
+     "endFrame": 160
+    },
+    {
+     "token": "a",
+     "frame": 160,
+     "endFrame": 166
+    },
+    {
+     "token": "completely",
+     "frame": 166,
+     "endFrame": 179
+    },
+    {
+     "token": "different",
+     "frame": 179,
+     "endFrame": 191
+    },
+    {
+     "token": "discipline,",
+     "frame": 191,
+     "endFrame": 202
+    },
+    {
+     "token": "I'm",
+     "frame": 202,
+     "endFrame": 210
+    },
+    {
+     "token": "a",
+     "frame": 210,
+     "endFrame": 214
+    },
+    {
+     "token": "doctor.",
+     "frame": 214,
+     "endFrame": 221
+    },
+    {
+     "token": "But",
+     "frame": 227,
+     "endFrame": 238
+    },
+    {
+     "token": "I",
+     "frame": 238,
+     "endFrame": 239
+    },
+    {
+     "token": "have",
+     "frame": 238,
+     "endFrame": 245
+    },
+    {
+     "token": "also",
+     "frame": 245,
+     "endFrame": 260
+    },
+    {
+     "token": "been",
+     "frame": 260,
+     "endFrame": 268
+    },
+    {
+     "token": "building",
+     "frame": 268,
+     "endFrame": 286
+    },
+    {
+     "token": "AI",
+     "frame": 286,
+     "endFrame": 294
+    },
+    {
+     "token": "tools",
+     "frame": 294,
+     "endFrame": 306
+    },
+    {
+     "token": "for",
+     "frame": 306,
+     "endFrame": 309
+    },
+    {
+     "token": "healthcare",
+     "frame": 309,
+     "endFrame": 330
+    },
+    {
+     "token": "for",
+     "frame": 330,
+     "endFrame": 343
+    },
+    {
+     "token": "about",
+     "frame": 343,
+     "endFrame": 351
+    },
+    {
+     "token": "6",
+     "frame": 351,
+     "endFrame": 357
+    },
+    {
+     "token": "years.",
+     "frame": 357,
+     "endFrame": 369
+    }
+   ]
+  },
+  {
+   "id": "S3",
+   "text": "So I have experience, what I don't have is certificate. So I decided to make it official and become NVIDIA certified.",
+   "from": 366,
+   "to": 536,
+   "speechEnd": 539,
+   "words": [
+    {
+     "token": "So",
+     "frame": 369,
+     "endFrame": 374
+    },
+    {
+     "token": "I",
+     "frame": 374,
+     "endFrame": 375
+    },
+    {
+     "token": "have",
+     "frame": 374,
+     "endFrame": 387
+    },
+    {
+     "token": "experience,",
+     "frame": 394,
+     "endFrame": 412
+    },
+    {
+     "token": "what",
+     "frame": 412,
+     "endFrame": 416
+    },
+    {
+     "token": "I",
+     "frame": 416,
+     "endFrame": 417
+    },
+    {
+     "token": "don't",
+     "frame": 416,
+     "endFrame": 424
+    },
+    {
+     "token": "have",
+     "frame": 424,
+     "endFrame": 431
+    },
+    {
+     "token": "is",
+     "frame": 431,
+     "endFrame": 437
+    },
+    {
+     "token": "certificate.",
+     "frame": 437,
+     "endFrame": 450
+    },
+    {
+     "token": "So",
+     "frame": 450,
+     "endFrame": 458
+    },
+    {
+     "token": "I",
+     "frame": 458,
+     "endFrame": 459
+    },
+    {
+     "token": "decided",
+     "frame": 459,
+     "endFrame": 471
+    },
+    {
+     "token": "to",
+     "frame": 471,
+     "endFrame": 472
+    },
+    {
+     "token": "make",
+     "frame": 472,
+     "endFrame": 478
+    },
+    {
+     "token": "it",
+     "frame": 478,
+     "endFrame": 487
+    },
+    {
+     "token": "official",
+     "frame": 487,
+     "endFrame": 497
+    },
+    {
+     "token": "and",
+     "frame": 497,
+     "endFrame": 506
+    },
+    {
+     "token": "become",
+     "frame": 506,
+     "endFrame": 513
+    },
+    {
+     "token": "NVIDIA",
+     "frame": 513,
+     "endFrame": 527
+    },
+    {
+     "token": "certified.",
+     "frame": 527,
+     "endFrame": 539
+    }
+   ]
+  },
+  {
+   "id": "S4",
+   "text": "Stay with me until the end, I'll show you where you can start learning too, whether you're a doctor like me or coming from another field.",
+   "from": 536,
+   "to": 728,
+   "speechEnd": 731,
+   "words": [
+    {
+     "token": "Stay",
+     "frame": 539,
+     "endFrame": 544
+    },
+    {
+     "token": "with",
+     "frame": 544,
+     "endFrame": 553
+    },
+    {
+     "token": "me",
+     "frame": 553,
+     "endFrame": 561
+    },
+    {
+     "token": "until",
+     "frame": 561,
+     "endFrame": 566
+    },
+    {
+     "token": "the",
+     "frame": 566,
+     "endFrame": 574
+    },
+    {
+     "token": "end,",
+     "frame": 574,
+     "endFrame": 576
+    },
+    {
+     "token": "I'll",
+     "frame": 576,
+     "endFrame": 582
+    },
+    {
+     "token": "show",
+     "frame": 582,
+     "endFrame": 586
+    },
+    {
+     "token": "you",
+     "frame": 586,
+     "endFrame": 595
+    },
+    {
+     "token": "where",
+     "frame": 595,
+     "endFrame": 602
+    },
+    {
+     "token": "you",
+     "frame": 602,
+     "endFrame": 609
+    },
+    {
+     "token": "can",
+     "frame": 609,
+     "endFrame": 610
+    },
+    {
+     "token": "start",
+     "frame": 610,
+     "endFrame": 624
+    },
+    {
+     "token": "learning",
+     "frame": 624,
+     "endFrame": 633
+    },
+    {
+     "token": "too,",
+     "frame": 633,
+     "endFrame": 640
+    },
+    {
+     "token": "whether",
+     "frame": 640,
+     "endFrame": 654
+    },
+    {
+     "token": "you're",
+     "frame": 654,
+     "endFrame": 660
+    },
+    {
+     "token": "a",
+     "frame": 660,
+     "endFrame": 661
+    },
+    {
+     "token": "doctor",
+     "frame": 660,
+     "endFrame": 672
+    },
+    {
+     "token": "like",
+     "frame": 672,
+     "endFrame": 681
+    },
+    {
+     "token": "me",
+     "frame": 681,
+     "endFrame": 685
+    },
+    {
+     "token": "or",
+     "frame": 685,
+     "endFrame": 686
+    },
+    {
+     "token": "coming",
+     "frame": 693,
+     "endFrame": 706
+    },
+    {
+     "token": "from",
+     "frame": 706,
+     "endFrame": 715
+    },
+    {
+     "token": "another",
+     "frame": 715,
+     "endFrame": 725
+    },
+    {
+     "token": "field.",
+     "frame": 725,
+     "endFrame": 731
+    }
+   ]
+  },
+  {
+   "id": "S5",
+   "text": "But first, let me share you one useful thing from my first lessons. It's something that makes those conversations with tech team much easier to follow.",
+   "from": 728,
+   "to": 980,
+   "speechEnd": 970,
+   "words": [
+    {
+     "token": "But",
+     "frame": 731,
+     "endFrame": 738
+    },
+    {
+     "token": "first,",
+     "frame": 738,
+     "endFrame": 752
+    },
+    {
+     "token": "let",
+     "frame": 752,
+     "endFrame": 753
+    },
+    {
+     "token": "me",
+     "frame": 753,
+     "endFrame": 757
+    },
+    {
+     "token": "share",
+     "frame": 757,
+     "endFrame": 772
+    },
+    {
+     "token": "you",
+     "frame": 772,
+     "endFrame": 773
+    },
+    {
+     "token": "one",
+     "frame": 773,
+     "endFrame": 785
+    },
+    {
+     "token": "useful",
+     "frame": 785,
+     "endFrame": 791
+    },
+    {
+     "token": "thing",
+     "frame": 791,
+     "endFrame": 800
+    },
+    {
+     "token": "from",
+     "frame": 800,
+     "endFrame": 811
+    },
+    {
+     "token": "my",
+     "frame": 811,
+     "endFrame": 818
+    },
+    {
+     "token": "first",
+     "frame": 818,
+     "endFrame": 826
+    },
+    {
+     "token": "lessons.",
+     "frame": 826,
+     "endFrame": 836
+    },
+    {
+     "token": "It's",
+     "frame": 836,
+     "endFrame": 845
+    },
+    {
+     "token": "something",
+     "frame": 845,
+     "endFrame": 861
+    },
+    {
+     "token": "that",
+     "frame": 861,
+     "endFrame": 870
+    },
+    {
+     "token": "makes",
+     "frame": 870,
+     "endFrame": 878
+    },
+    {
+     "token": "those",
+     "frame": 878,
+     "endFrame": 886
+    },
+    {
+     "token": "conversations",
+     "frame": 886,
+     "endFrame": 907
+    },
+    {
+     "token": "with",
+     "frame": 919,
+     "endFrame": 920
+    },
+    {
+     "token": "tech",
+     "frame": 919,
+     "endFrame": 926
+    },
+    {
+     "token": "team",
+     "frame": 938,
+     "endFrame": 945
+    },
+    {
+     "token": "much",
+     "frame": 945,
+     "endFrame": 947
+    },
+    {
+     "token": "easier",
+     "frame": 947,
+     "endFrame": 957
+    },
+    {
+     "token": "to",
+     "frame": 957,
+     "endFrame": 960
+    },
+    {
+     "token": "follow.",
+     "frame": 960,
+     "endFrame": 970
+    }
+   ]
+  },
+  {
+   "id": "S6",
+   "text": "You hear AI, machine learning, deep learning, generative AI, and sometimes all in the same conversation. And you might be thinking, \"Are these just different names for the same thing?\" They're definitely related, but they mean different things. Once you understand the difference, you can start understanding what the tool you're using actually does. So what's the difference between rule-based clinical system? And how machine learning actually learns from the patterns of the patient's history and how it can predict the hospitalization risk and how deep learning can actually save our patients? All of that I'll be explained in my video on my page. So next time, somebody says to you, \"We use AI, it doesn't tell you much.\" You ask, \"Okay, show me what it does in my working day.\"",
+   "from": 980,
+   "to": 2510,
+   "speechEnd": 2504,
+   "words": [
+    {
+     "token": "You",
+     "frame": 983,
+     "endFrame": 989
+    },
+    {
+     "token": "hear",
+     "frame": 989,
+     "endFrame": 997
+    },
+    {
+     "token": "AI,",
+     "frame": 997,
+     "endFrame": 1009
+    },
+    {
+     "token": "machine",
+     "frame": 1009,
+     "endFrame": 1020
+    },
+    {
+     "token": "learning,",
+     "frame": 1020,
+     "endFrame": 1036
+    },
+    {
+     "token": "deep",
+     "frame": 1036,
+     "endFrame": 1050
+    },
+    {
+     "token": "learning,",
+     "frame": 1050,
+     "endFrame": 1068
+    },
+    {
+     "token": "generative",
+     "frame": 1068,
+     "endFrame": 1086
+    },
+    {
+     "token": "AI,",
+     "frame": 1098,
+     "endFrame": 1102
+    },
+    {
+     "token": "and",
+     "frame": 1102,
+     "endFrame": 1111
+    },
+    {
+     "token": "sometimes",
+     "frame": 1111,
+     "endFrame": 1122
+    },
+    {
+     "token": "all",
+     "frame": 1129,
+     "endFrame": 1137
+    },
+    {
+     "token": "in",
+     "frame": 1137,
+     "endFrame": 1143
+    },
+    {
+     "token": "the",
+     "frame": 1143,
+     "endFrame": 1144
+    },
+    {
+     "token": "same",
+     "frame": 1143,
+     "endFrame": 1149
+    },
+    {
+     "token": "conversation.",
+     "frame": 1149,
+     "endFrame": 1171
+    },
+    {
+     "token": "And",
+     "frame": 1179,
+     "endFrame": 1187
+    },
+    {
+     "token": "you",
+     "frame": 1187,
+     "endFrame": 1195
+    },
+    {
+     "token": "might",
+     "frame": 1195,
+     "endFrame": 1201
+    },
+    {
+     "token": "be",
+     "frame": 1201,
+     "endFrame": 1207
+    },
+    {
+     "token": "thinking,",
+     "frame": 1207,
+     "endFrame": 1220
+    },
+    {
+     "token": "\"Are",
+     "frame": 1224,
+     "endFrame": 1230
+    },
+    {
+     "token": "these",
+     "frame": 1230,
+     "endFrame": 1236
+    },
+    {
+     "token": "just",
+     "frame": 1236,
+     "endFrame": 1246
+    },
+    {
+     "token": "different",
+     "frame": 1254,
+     "endFrame": 1273
+    },
+    {
+     "token": "names",
+     "frame": 1273,
+     "endFrame": 1279
+    },
+    {
+     "token": "for",
+     "frame": 1287,
+     "endFrame": 1295
+    },
+    {
+     "token": "the",
+     "frame": 1295,
+     "endFrame": 1298
+    },
+    {
+     "token": "same",
+     "frame": 1298,
+     "endFrame": 1306
+    },
+    {
+     "token": "thing?\"",
+     "frame": 1306,
+     "endFrame": 1313
+    },
+    {
+     "token": "They're",
+     "frame": 1323,
+     "endFrame": 1336
+    },
+    {
+     "token": "definitely",
+     "frame": 1336,
+     "endFrame": 1356
+    },
+    {
+     "token": "related,",
+     "frame": 1356,
+     "endFrame": 1371
+    },
+    {
+     "token": "but",
+     "frame": 1376,
+     "endFrame": 1378
+    },
+    {
+     "token": "they",
+     "frame": 1378,
+     "endFrame": 1390
+    },
+    {
+     "token": "mean",
+     "frame": 1390,
+     "endFrame": 1398
+    },
+    {
+     "token": "different",
+     "frame": 1398,
+     "endFrame": 1410
+    },
+    {
+     "token": "things.",
+     "frame": 1410,
+     "endFrame": 1418
+    },
+    {
+     "token": "Once",
+     "frame": 1424,
+     "endFrame": 1432
+    },
+    {
+     "token": "you",
+     "frame": 1432,
+     "endFrame": 1442
+    },
+    {
+     "token": "understand",
+     "frame": 1442,
+     "endFrame": 1457
+    },
+    {
+     "token": "the",
+     "frame": 1457,
+     "endFrame": 1467
+    },
+    {
+     "token": "difference,",
+     "frame": 1472,
+     "endFrame": 1483
+    },
+    {
+     "token": "you",
+     "frame": 1483,
+     "endFrame": 1491
+    },
+    {
+     "token": "can",
+     "frame": 1491,
+     "endFrame": 1492
+    },
+    {
+     "token": "start",
+     "frame": 1492,
+     "endFrame": 1501
+    },
+    {
+     "token": "understanding",
+     "frame": 1501,
+     "endFrame": 1519
+    },
+    {
+     "token": "what",
+     "frame": 1519,
+     "endFrame": 1524
+    },
+    {
+     "token": "the",
+     "frame": 1524,
+     "endFrame": 1525
+    },
+    {
+     "token": "tool",
+     "frame": 1524,
+     "endFrame": 1530
+    },
+    {
+     "token": "you're",
+     "frame": 1530,
+     "endFrame": 1542
+    },
+    {
+     "token": "using",
+     "frame": 1542,
+     "endFrame": 1547
+    },
+    {
+     "token": "actually",
+     "frame": 1552,
+     "endFrame": 1572
+    },
+    {
+     "token": "does.",
+     "frame": 1572,
+     "endFrame": 1578
+    },
+    {
+     "token": "So",
+     "frame": 1710,
+     "endFrame": 1717
+    },
+    {
+     "token": "what's",
+     "frame": 1717,
+     "endFrame": 1731
+    },
+    {
+     "token": "the",
+     "frame": 1731,
+     "endFrame": 1738
+    },
+    {
+     "token": "difference",
+     "frame": 1738,
+     "endFrame": 1756
+    },
+    {
+     "token": "between",
+     "frame": 1756,
+     "endFrame": 1775
+    },
+    {
+     "token": "rule-based",
+     "frame": 1778,
+     "endFrame": 1787
+    },
+    {
+     "token": "clinical",
+     "frame": 1787,
+     "endFrame": 1799
+    },
+    {
+     "token": "system?",
+     "frame": 1799,
+     "endFrame": 1807
+    },
+    {
+     "token": "And",
+     "frame": 1819,
+     "endFrame": 1825
+    },
+    {
+     "token": "how",
+     "frame": 1825,
+     "endFrame": 1836
+    },
+    {
+     "token": "machine",
+     "frame": 1836,
+     "endFrame": 1843
+    },
+    {
+     "token": "learning",
+     "frame": 1843,
+     "endFrame": 1860
+    },
+    {
+     "token": "actually",
+     "frame": 1860,
+     "endFrame": 1874
+    },
+    {
+     "token": "learns",
+     "frame": 1874,
+     "endFrame": 1890
+    },
+    {
+     "token": "from",
+     "frame": 1890,
+     "endFrame": 1892
+    },
+    {
+     "token": "the",
+     "frame": 1892,
+     "endFrame": 1901
+    },
+    {
+     "token": "patterns",
+     "frame": 1901,
+     "endFrame": 1918
+    },
+    {
+     "token": "of",
+     "frame": 1918,
+     "endFrame": 1921
+    },
+    {
+     "token": "the",
+     "frame": 1921,
+     "endFrame": 1926
+    },
+    {
+     "token": "patient's",
+     "frame": 1926,
+     "endFrame": 1942
+    },
+    {
+     "token": "history",
+     "frame": 1942,
+     "endFrame": 1956
+    },
+    {
+     "token": "and",
+     "frame": 1960,
+     "endFrame": 1969
+    },
+    {
+     "token": "how",
+     "frame": 1969,
+     "endFrame": 1970
+    },
+    {
+     "token": "it",
+     "frame": 1969,
+     "endFrame": 1978
+    },
+    {
+     "token": "can",
+     "frame": 1978,
+     "endFrame": 1979
+    },
+    {
+     "token": "predict",
+     "frame": 1978,
+     "endFrame": 1992
+    },
+    {
+     "token": "the",
+     "frame": 1996,
+     "endFrame": 2005
+    },
+    {
+     "token": "hospitalization",
+     "frame": 2005,
+     "endFrame": 2022
+    },
+    {
+     "token": "risk",
+     "frame": 2022,
+     "endFrame": 2031
+    },
+    {
+     "token": "and",
+     "frame": 2039,
+     "endFrame": 2049
+    },
+    {
+     "token": "how",
+     "frame": 2049,
+     "endFrame": 2051
+    },
+    {
+     "token": "deep",
+     "frame": 2051,
+     "endFrame": 2064
+    },
+    {
+     "token": "learning",
+     "frame": 2064,
+     "endFrame": 2080
+    },
+    {
+     "token": "can",
+     "frame": 2080,
+     "endFrame": 2086
+    },
+    {
+     "token": "actually",
+     "frame": 2086,
+     "endFrame": 2105
+    },
+    {
+     "token": "save",
+     "frame": 2105,
+     "endFrame": 2113
+    },
+    {
+     "token": "our",
+     "frame": 2113,
+     "endFrame": 2120
+    },
+    {
+     "token": "patients?",
+     "frame": 2120,
+     "endFrame": 2136
+    },
+    {
+     "token": "All",
+     "frame": 2147,
+     "endFrame": 2157
+    },
+    {
+     "token": "of",
+     "frame": 2157,
+     "endFrame": 2158
+    },
+    {
+     "token": "that",
+     "frame": 2158,
+     "endFrame": 2165
+    },
+    {
+     "token": "I'll",
+     "frame": 2165,
+     "endFrame": 2178
+    },
+    {
+     "token": "be",
+     "frame": 2178,
+     "endFrame": 2182
+    },
+    {
+     "token": "explained",
+     "frame": 2182,
+     "endFrame": 2193
+    },
+    {
+     "token": "in",
+     "frame": 2193,
+     "endFrame": 2202
+    },
+    {
+     "token": "my",
+     "frame": 2202,
+     "endFrame": 2207
+    },
+    {
+     "token": "video",
+     "frame": 2207,
+     "endFrame": 2215
+    },
+    {
+     "token": "on",
+     "frame": 2215,
+     "endFrame": 2223
+    },
+    {
+     "token": "my",
+     "frame": 2223,
+     "endFrame": 2229
+    },
+    {
+     "token": "page.",
+     "frame": 2229,
+     "endFrame": 2234
+    },
+    {
+     "token": "So",
+     "frame": 2243,
+     "endFrame": 2252
+    },
+    {
+     "token": "next",
+     "frame": 2252,
+     "endFrame": 2267
+    },
+    {
+     "token": "time,",
+     "frame": 2280,
+     "endFrame": 2289
+    },
+    {
+     "token": "somebody",
+     "frame": 2289,
+     "endFrame": 2304
+    },
+    {
+     "token": "says",
+     "frame": 2304,
+     "endFrame": 2315
+    },
+    {
+     "token": "to",
+     "frame": 2315,
+     "endFrame": 2316
+    },
+    {
+     "token": "you,",
+     "frame": 2316,
+     "endFrame": 2328
+    },
+    {
+     "token": "\"We",
+     "frame": 2328,
+     "endFrame": 2329
+    },
+    {
+     "token": "use",
+     "frame": 2328,
+     "endFrame": 2333
+    },
+    {
+     "token": "AI,",
+     "frame": 2333,
+     "endFrame": 2344
+    },
+    {
+     "token": "it",
+     "frame": 2344,
+     "endFrame": 2345
+    },
+    {
+     "token": "doesn't",
+     "frame": 2345,
+     "endFrame": 2361
+    },
+    {
+     "token": "tell",
+     "frame": 2361,
+     "endFrame": 2370
+    },
+    {
+     "token": "you",
+     "frame": 2370,
+     "endFrame": 2377
+    },
+    {
+     "token": "much.\"",
+     "frame": 2377,
+     "endFrame": 2382
+    },
+    {
+     "token": "You",
+     "frame": 2390,
+     "endFrame": 2396
+    },
+    {
+     "token": "ask,",
+     "frame": 2396,
+     "endFrame": 2408
+    },
+    {
+     "token": "\"Okay,",
+     "frame": 2414,
+     "endFrame": 2425
+    },
+    {
+     "token": "show",
+     "frame": 2438,
+     "endFrame": 2446
+    },
+    {
+     "token": "me",
+     "frame": 2446,
+     "endFrame": 2453
+    },
+    {
+     "token": "what",
+     "frame": 2453,
+     "endFrame": 2458
+    },
+    {
+     "token": "it",
+     "frame": 2458,
+     "endFrame": 2465
+    },
+    {
+     "token": "does",
+     "frame": 2465,
+     "endFrame": 2473
+    },
+    {
+     "token": "in",
+     "frame": 2473,
+     "endFrame": 2480
+    },
+    {
+     "token": "my",
+     "frame": 2480,
+     "endFrame": 2484
+    },
+    {
+     "token": "working",
+     "frame": 2484,
+     "endFrame": 2500
+    },
+    {
+     "token": "day.\"",
+     "frame": 2500,
+     "endFrame": 2504
+    }
+   ]
+  },
+  {
+   "id": "S7",
+   "text": "If you want to start Learning too, explore NVIDIA Deep Learning Institute, or just follow me.",
+   "from": 2510,
+   "to": 2675,
+   "speechEnd": 2667,
+   "words": [
+    {
+     "token": "If",
+     "frame": 2513,
+     "endFrame": 2514
+    },
+    {
+     "token": "you",
+     "frame": 2514,
+     "endFrame": 2527
+    },
+    {
+     "token": "want",
+     "frame": 2527,
+     "endFrame": 2532
+    },
+    {
+     "token": "to",
+     "frame": 2532,
+     "endFrame": 2539
+    },
+    {
+     "token": "start",
+     "frame": 2539,
+     "endFrame": 2550
+    },
+    {
+     "token": "Learning",
+     "frame": 2550,
+     "endFrame": 2562
+    },
+    {
+     "token": "too,",
+     "frame": 2562,
+     "endFrame": 2568
+    },
+    {
+     "token": "explore",
+     "frame": 2568,
+     "endFrame": 2580
+    },
+    {
+     "token": "NVIDIA",
+     "frame": 2580,
+     "endFrame": 2597
+    },
+    {
+     "token": "Deep",
+     "frame": 2597,
+     "endFrame": 2604
+    },
+    {
+     "token": "Learning",
+     "frame": 2604,
+     "endFrame": 2618
+    },
+    {
+     "token": "Institute,",
+     "frame": 2626,
+     "endFrame": 2634
+    },
+    {
+     "token": "or",
+     "frame": 2634,
+     "endFrame": 2636
+    },
+    {
+     "token": "just",
+     "frame": 2644,
+     "endFrame": 2651
+    },
+    {
+     "token": "follow",
+     "frame": 2651,
+     "endFrame": 2666
+    },
+    {
+     "token": "me.",
+     "frame": 2666,
+     "endFrame": 2667
+    }
+   ]
+  },
+  {
+   "id": "S8",
+   "text": "Every video I will share one useful thing from that day's course.",
+   "from": 2675,
+   "to": 2820,
+   "speechEnd": 2812,
+   "words": [
+    {
+     "token": "Every",
+     "frame": 2678,
+     "endFrame": 2688
+    },
+    {
+     "token": "video",
+     "frame": 2688,
+     "endFrame": 2701
+    },
+    {
+     "token": "I",
+     "frame": 2701,
+     "endFrame": 2702
+    },
+    {
+     "token": "will",
+     "frame": 2701,
+     "endFrame": 2712
+    },
+    {
+     "token": "share",
+     "frame": 2712,
+     "endFrame": 2719
+    },
+    {
+     "token": "one",
+     "frame": 2719,
+     "endFrame": 2732
+    },
+    {
+     "token": "useful",
+     "frame": 2732,
+     "endFrame": 2740
+    },
+    {
+     "token": "thing",
+     "frame": 2740,
+     "endFrame": 2751
+    },
+    {
+     "token": "from",
+     "frame": 2751,
+     "endFrame": 2762
+    },
+    {
+     "token": "that",
+     "frame": 2767,
+     "endFrame": 2776
+    },
+    {
+     "token": "day's",
+     "frame": 2776,
+     "endFrame": 2788
+    },
+    {
+     "token": "course.",
+     "frame": 2801,
+     "endFrame": 2812
+    }
+   ]
+  }
+ ]
+}

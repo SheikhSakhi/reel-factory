@@ -83,13 +83,13 @@ export const PopCaptions: React.FC<PopCaptionsProps> = ({
         textTransform: uppercase ? "uppercase" : "none", letterSpacing: "-0.01em",
         transform: `scale(${band ? 1 : 0.85 + 0.15 * enter})`, opacity: Math.min(1, enter * 1.5),
       }}>
-        {chunk.words.map((w) => {
+        {chunk.words.map((w, i) => {
           const active = f >= w.frame && f < w.endFrame + 2;
           const hit = pop(f, w.frame, 10);
           const marked = strong.has(normToken(w.token));
           if (band) {
             return (
-              <span key={w.frame} style={{
+              <span key={`${w.frame}-${i}`} style={{
                 display: "inline-block", color: active ? accent : color, textShadow: "0 3px 14px rgba(0,0,0,0.75), 0 0 2px rgba(0,0,0,0.9)",
                 textDecoration: marked ? `underline ${accent}` : "none", textDecorationThickness: "0.1em", textUnderlineOffset: "0.16em",
               }}>{w.token.replace(/[.,;:]$/, "")}</span>
@@ -97,7 +97,7 @@ export const PopCaptions: React.FC<PopCaptionsProps> = ({
           }
           // The spoken word sits on an accent box: readable on any footage, whatever the brand colour.
           return (
-            <span key={w.frame} style={{
+            <span key={`${w.frame}-${i}`} style={{
               display: "inline-block", color, padding: "0 0.1em", borderRadius: "0.16em",
               background: active ? accent : "transparent",
               WebkitTextStroke: active ? "0" : "8px rgba(0,0,0,0.8)", paintOrder: "stroke fill",

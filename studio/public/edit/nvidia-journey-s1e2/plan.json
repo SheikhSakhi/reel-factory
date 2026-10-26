@@ -1,0 +1,78 @@
+{
+  "layout": {
+    "default": "full",
+    "scenes": {
+      "S2": "split",
+      "S3": "split",
+      "S5": "split",
+      "S8": "panel"
+    },
+    "transition": "cut"
+  },
+  "panelTheme": {
+    "bg": "#0A0D14",
+    "fg": "#E8E6E1",
+    "muted": "#7A7F8C",
+    "accent": "#F2A23A",
+    "surface": "#141924"
+  },
+  "captions": {
+    "style": "band",
+    "highlight": true,
+    "emphasis": [
+      "NVIDIA",
+      "doctor.",
+      "certificate.",
+      "certified."
+    ]
+  },
+  "zooms": [
+    {
+      "at": "S1:tech",
+      "scale": 1.12,
+      "hold": 40
+    },
+    {
+      "at": "S4:end,",
+      "scale": 1.15,
+      "hold": 45
+    }
+  ],
+  "progress": true,
+  "overlays": [
+    {
+      "type": "callout",
+      "at": "S1:first",
+      "hold": 105,
+      "kicker": "NVIDIA JOURNEY \u00b7 S1E2",
+      "text": "A doctor gets NVIDIA certified",
+      "side": "right",
+      "y": 330
+    },
+    {
+      "type": "callout",
+      "at": "S4:end,",
+      "hold": 110,
+      "kicker": "STAY TO THE END",
+      "text": "Where you can start learning too",
+      "side": "right"
+    },
+    {
+      "type": "callout",
+      "at": "S6:show",
+      "hold": 100,
+      "kicker": "ASK THIS INSTEAD",
+      "text": "Show me what it does in my working day.",
+      "side": "left"
+    },
+    {
+      "type": "callout",
+      "at": "S7:explore",
+      "hold": 120,
+      "kicker": "START HERE",
+      "text": "NVIDIA Deep Learning Institute",
+      "side": "right"
+    }
+  ],
+  "cover": "S3:certified."
+}

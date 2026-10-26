@@ -43,10 +43,10 @@ export const DialogueCaptions: React.FC<Props> = ({ lines, colors, font, y = 130
         position: "absolute", left: 60, right: 60, top: y - fontSize, minHeight: fontSize * 2,
         display: "flex", flexWrap: "wrap", justifyContent: "center", alignContent: "center", gap: "12px 10px",
       }}>
-        {chunk.filter((w) => f >= w.frame - 2).map((w) => {
+        {chunk.filter((w) => f >= w.frame - 2).map((w, i) => {
           const t = pop(f, w.frame - 2, 16);
           return (
-            <span key={w.frame} style={{
+            <span key={`${w.frame}-${i}`} style={{
               fontFamily: font, fontSize, fontWeight: 600, lineHeight: 1.1, color: "#FFFFFF", background: color,
               padding: "6px 16px 10px", borderRadius: 6, boxShadow: "0 8px 22px rgba(0,0,0,0.3)",
               transform: `translateY(${(1 - t) * 14}px) scale(${0.85 + 0.15 * t})`, opacity: Math.min(1, t * 1.6),
