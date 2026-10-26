@@ -85,3 +85,14 @@ Then QA and render again, and send the new version.
 - Nothing is invented: stats, screenshots and comments come from the user or verified research.
 - Medical content stays educational; no individual advice in on-screen text.
 - Publishing only after the user's explicit yes (`/reel-factory` step 5).
+
+## Where the effort goes (user feedback, 2026-10-26)
+
+Edit like an editor, not a decorator:
+- **Talking head:** captions, a few punch-in zooms on the words that matter, one title at the start. No panels or widgets over ordinary lines.
+- **The creator's own animations and B-roll** are the set pieces. Watch them at 10 fps, list every visual beat (an element lands, a snap, a glow, a burst, a camera move) and score each one in `plan.json`:
+  - `sounds`: hand-placed cues (`whoosh`/`swoosh` on entrances and camera moves, `impact` on snaps, `riser` into a reveal, `shimmer` on a glow, `blip`/`tick` for data steps, `particles` for dust, `hum` as a bed under a sequence)
+  - `moves`: `push` (slow zoom across the sequence), `shake` and `bloom` on impacts and glows
+  - `captions.hide`: no captions while their animation carries the words; no progress bar over their type
+- Keep peaks under -1 dBFS: impacts land on top of the voice (`volume` ≤ 0.45).
+

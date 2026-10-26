@@ -1,78 +1,431 @@
 {
-  "layout": {
-    "default": "full",
-    "scenes": {
-      "S2": "split",
-      "S3": "split",
-      "S5": "split",
-      "S8": "panel"
-    },
-    "transition": "cut"
+ "layout": {
+  "default": "full",
+  "scenes": {
+   "S8": "panel"
   },
-  "panelTheme": {
-    "bg": "#0A0D14",
-    "fg": "#E8E6E1",
-    "muted": "#7A7F8C",
-    "accent": "#F2A23A",
-    "surface": "#141924"
-  },
-  "captions": {
-    "style": "band",
-    "highlight": true,
-    "emphasis": [
-      "NVIDIA",
-      "doctor.",
-      "certificate.",
-      "certified."
-    ]
-  },
-  "zooms": [
-    {
-      "at": "S1:tech",
-      "scale": 1.12,
-      "hold": 40
-    },
-    {
-      "at": "S4:end,",
-      "scale": 1.15,
-      "hold": 45
-    }
+  "transition": "cut"
+ },
+ "panelTheme": {
+  "bg": "#0A0D14",
+  "fg": "#E8E6E1",
+  "muted": "#7A7F8C",
+  "accent": "#F2A23A",
+  "surface": "#141924"
+ },
+ "captions": {
+  "style": "band",
+  "highlight": true,
+  "emphasis": [
+   "NVIDIA",
+   "doctor.",
+   "certificate.",
+   "certified."
   ],
-  "progress": true,
-  "overlays": [
-    {
-      "type": "callout",
-      "at": "S1:first",
-      "hold": 105,
-      "kicker": "NVIDIA JOURNEY \u00b7 S1E2",
-      "text": "A doctor gets NVIDIA certified",
-      "side": "right",
-      "y": 330
-    },
-    {
-      "type": "callout",
-      "at": "S4:end,",
-      "hold": 110,
-      "kicker": "STAY TO THE END",
-      "text": "Where you can start learning too",
-      "side": "right"
-    },
-    {
-      "type": "callout",
-      "at": "S6:show",
-      "hold": 100,
-      "kicker": "ASK THIS INSTEAD",
-      "text": "Show me what it does in my working day.",
-      "side": "left"
-    },
-    {
-      "type": "callout",
-      "at": "S7:explore",
-      "hold": 120,
-      "kicker": "START HERE",
-      "text": "NVIDIA Deep Learning Institute",
-      "side": "right"
-    }
-  ],
-  "cover": "S3:certified."
+  "hide": [
+   [
+    990,
+    1174
+   ],
+   [
+    1322,
+    1423
+   ],
+   [
+    1651,
+    1724
+   ],
+   [
+    1786,
+    1918
+   ],
+   [
+    2040,
+    2282
+   ],
+   [
+    "S8:start",
+    2820
+   ]
+  ]
+ },
+ "zooms": [
+  {
+   "at": "S2:doctor.",
+   "scale": 1.12,
+   "hold": 40
+  },
+  {
+   "at": "S3:certificate.",
+   "scale": 1.12,
+   "hold": 35
+  },
+  {
+   "at": "S3:certified.",
+   "scale": 1.15,
+   "hold": 40
+  },
+  {
+   "at": "S4:end,",
+   "scale": 1.12,
+   "hold": 40
+  }
+ ],
+ "moves": [
+  {
+   "type": "push",
+   "from": 990,
+   "to": 1174,
+   "scale": 1.07
+  },
+  {
+   "type": "push",
+   "from": 1322,
+   "to": 1423,
+   "scale": 1.06
+  },
+  {
+   "type": "shake",
+   "at": 1343,
+   "hold": 14,
+   "amount": 12
+  },
+  {
+   "type": "bloom",
+   "at": 1341,
+   "hold": 18,
+   "x": 540,
+   "y": 900,
+   "size": 1400,
+   "color": "#FFFFFF"
+  },
+  {
+   "type": "bloom",
+   "at": 1386,
+   "hold": 45,
+   "x": 320,
+   "y": 1020,
+   "size": 900
+  },
+  {
+   "type": "push",
+   "from": 1651,
+   "to": 1724,
+   "scale": 1.05
+  },
+  {
+   "type": "push",
+   "from": 1786,
+   "to": 1918,
+   "scale": 1.05
+  },
+  {
+   "type": "bloom",
+   "at": 2059,
+   "hold": 40,
+   "x": 440,
+   "y": 1090,
+   "size": 800
+  },
+  {
+   "type": "shake",
+   "at": 2118,
+   "hold": 16,
+   "amount": 14
+  },
+  {
+   "type": "bloom",
+   "at": 2116,
+   "hold": 20,
+   "x": 520,
+   "y": 1120,
+   "size": 1500,
+   "color": "#FFE6B8"
+  },
+  {
+   "type": "push",
+   "from": 2124,
+   "to": 2282,
+   "scale": 1.06
+  }
+ ],
+ "sounds": [
+  {
+   "at": 990,
+   "sound": "hum",
+   "volume": 0.22
+  },
+  {
+   "at": 989,
+   "sound": "whoosh",
+   "volume": 0.35
+  },
+  {
+   "at": 995,
+   "sound": "blip",
+   "volume": 0.25
+  },
+  {
+   "at": 1014,
+   "sound": "whoosh",
+   "volume": 0.3
+  },
+  {
+   "at": 1020,
+   "sound": "blip",
+   "volume": 0.25
+  },
+  {
+   "at": 1029,
+   "sound": "whoosh",
+   "volume": 0.3
+  },
+  {
+   "at": 1035,
+   "sound": "blip",
+   "volume": 0.25
+  },
+  {
+   "at": 1046,
+   "sound": "whoosh",
+   "volume": 0.35
+  },
+  {
+   "at": 1052,
+   "sound": "blip",
+   "volume": 0.3
+  },
+  {
+   "at": 1114,
+   "sound": "swoosh",
+   "volume": 0.35
+  },
+  {
+   "at": 1277,
+   "sound": "riser",
+   "volume": 0.3
+  },
+  {
+   "at": 1322,
+   "sound": "hum",
+   "volume": 0.22
+  },
+  {
+   "at": 1334,
+   "sound": "particles",
+   "volume": 0.35
+  },
+  {
+   "at": 1343,
+   "sound": "impact",
+   "volume": 0.42
+  },
+  {
+   "at": 1378,
+   "sound": "whoosh",
+   "volume": 0.2
+  },
+  {
+   "at": 1385,
+   "sound": "shimmer",
+   "volume": 0.35
+  },
+  {
+   "at": 1393,
+   "sound": "swoosh",
+   "volume": 0.45
+  },
+  {
+   "at": 1651,
+   "sound": "hum",
+   "volume": 0.2
+  },
+  {
+   "at": 1660,
+   "sound": "blip",
+   "volume": 0.25
+  },
+  {
+   "at": 1672,
+   "sound": "blip",
+   "volume": 0.25
+  },
+  {
+   "at": 1684,
+   "sound": "blip",
+   "volume": 0.25
+  },
+  {
+   "at": 1696,
+   "sound": "blip",
+   "volume": 0.25
+  },
+  {
+   "at": 1708,
+   "sound": "blip",
+   "volume": 0.25
+  },
+  {
+   "at": 1717,
+   "sound": "blip",
+   "volume": 0.3
+  },
+  {
+   "at": 1786,
+   "sound": "swoosh",
+   "volume": 0.3
+  },
+  {
+   "at": 1786,
+   "sound": "hum",
+   "volume": 0.2
+  },
+  {
+   "at": 1812,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 1827,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 1840,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 1851,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 1862,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 1871,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 1879,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 1886,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 1894,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 1901,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 1909,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 1916,
+   "sound": "tick",
+   "volume": 0.12
+  },
+  {
+   "at": 2040,
+   "sound": "hum",
+   "volume": 0.22
+  },
+  {
+   "at": 2058,
+   "sound": "shimmer",
+   "volume": 0.3
+  },
+  {
+   "at": 2066,
+   "sound": "swoosh",
+   "volume": 0.45
+  },
+  {
+   "at": 2050,
+   "sound": "riser",
+   "volume": 0.28
+  },
+  {
+   "at": 2112,
+   "sound": "particles",
+   "volume": 0.4
+  },
+  {
+   "at": 2118,
+   "sound": "impact",
+   "volume": 0.42
+  },
+  {
+   "at": 2124,
+   "sound": "particles",
+   "volume": 0.25
+  },
+  {
+   "at": 2181,
+   "sound": "blip",
+   "volume": 0.3
+  },
+  {
+   "at": 2202,
+   "sound": "blip",
+   "volume": 0.3
+  },
+  {
+   "at": 2223,
+   "sound": "blip",
+   "volume": 0.3
+  },
+  {
+   "at": 2200,
+   "sound": "hum",
+   "volume": 0.18
+  },
+  {
+   "at": 2262,
+   "sound": "whoosh",
+   "volume": 0.25
+  },
+  {
+   "at": 2274,
+   "sound": "click",
+   "volume": 0.3
+  },
+  {
+   "at": "S8:start",
+   "sound": "swoosh",
+   "volume": 0.35
+  },
+  {
+   "at": "S8:course.",
+   "sound": "shimmer",
+   "volume": 0.3
+  }
+ ],
+ "overlays": [
+  {
+   "type": "callout",
+   "at": "S1:first",
+   "hold": 105,
+   "kicker": "NVIDIA JOURNEY \u00b7 S1E2",
+   "text": "A doctor gets NVIDIA certified",
+   "side": "right",
+   "y": 330
+  }
+ ],
+ "cover": "S3:certified."
 }
