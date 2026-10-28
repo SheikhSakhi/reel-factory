@@ -1,0 +1,8 @@
+[S1] Nine forty at night. Dinner's cold. And you're still charting.
+[S2] So the hospital buys an AI scribe. It listens. It writes the note. Problem solved?
+[S3] A JAMA study just followed eight thousand five hundred clinicians, across five health systems.
+[S4] Time spent on notes went down. Sixteen minutes, for every eight hours of patients.
+[S5] Time on the computer after hours? No significant change.
+[S6] Because the note was never the whole evening. It's the inbox. The results. The quick question.
+[S7] The scribe fixed the visit. Nobody fixed what happens between visits.
+[S8] That's the work that follows you home.

@@ -1,0 +1,753 @@
+{
+  "file": "vo/2026-10-28-scribe-evening/take.mp3",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "+8%",
+  "fps": 30,
+  "totalFrames": 1128,
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "Nine forty at night. Dinner's cold. And you're still charting.",
+      "from": 0,
+      "words": [
+        {
+          "token": "Nine",
+          "start": 0.093,
+          "end": 0.289,
+          "frame": 3,
+          "endFrame": 9
+        },
+        {
+          "token": "forty",
+          "start": 0.301,
+          "end": 0.579,
+          "frame": 9,
+          "endFrame": 17
+        },
+        {
+          "token": "at",
+          "start": 0.59,
+          "end": 0.66,
+          "frame": 18,
+          "endFrame": 20
+        },
+        {
+          "token": "night.",
+          "start": 0.66,
+          "end": 0.961,
+          "frame": 20,
+          "endFrame": 29
+        },
+        {
+          "token": "Dinner's",
+          "start": 1.343,
+          "end": 1.597,
+          "frame": 40,
+          "endFrame": 48
+        },
+        {
+          "token": "cold.",
+          "start": 1.609,
+          "end": 2.014,
+          "frame": 48,
+          "endFrame": 60
+        },
+        {
+          "token": "And",
+          "start": 2.396,
+          "end": 2.442,
+          "frame": 72,
+          "endFrame": 73
+        },
+        {
+          "token": "you're",
+          "start": 2.442,
+          "end": 2.535,
+          "frame": 73,
+          "endFrame": 76
+        },
+        {
+          "token": "still",
+          "start": 2.535,
+          "end": 2.801,
+          "frame": 76,
+          "endFrame": 84
+        },
+        {
+          "token": "charting.",
+          "start": 2.801,
+          "end": 3.229,
+          "frame": 84,
+          "endFrame": 97
+        }
+      ],
+      "to": 105,
+      "speechEnd": 97
+    },
+    {
+      "id": "S2",
+      "text": "So the hospital buys an AI scribe. It listens. It writes the note. Problem solved?",
+      "from": 105,
+      "words": [
+        {
+          "token": "So",
+          "start": 3.6,
+          "end": 3.692,
+          "frame": 108,
+          "endFrame": 111
+        },
+        {
+          "token": "the",
+          "start": 3.692,
+          "end": 3.75,
+          "frame": 111,
+          "endFrame": 112
+        },
+        {
+          "token": "hospital",
+          "start": 3.75,
+          "end": 4.213,
+          "frame": 112,
+          "endFrame": 126
+        },
+        {
+          "token": "buys",
+          "start": 4.225,
+          "end": 4.722,
+          "frame": 127,
+          "endFrame": 142
+        },
+        {
+          "token": "an",
+          "start": 4.722,
+          "end": 4.826,
+          "frame": 142,
+          "endFrame": 145
+        },
+        {
+          "token": "AI",
+          "start": 4.931,
+          "end": 5.336,
+          "frame": 148,
+          "endFrame": 160
+        },
+        {
+          "token": "scribe.",
+          "start": 5.347,
+          "end": 5.856,
+          "frame": 160,
+          "endFrame": 176
+        },
+        {
+          "token": "It",
+          "start": 6.238,
+          "end": 6.343,
+          "frame": 187,
+          "endFrame": 190
+        },
+        {
+          "token": "listens.",
+          "start": 6.343,
+          "end": 6.898,
+          "frame": 190,
+          "endFrame": 207
+        },
+        {
+          "token": "It",
+          "start": 7.28,
+          "end": 7.384,
+          "frame": 218,
+          "endFrame": 222
+        },
+        {
+          "token": "writes",
+          "start": 7.396,
+          "end": 7.627,
+          "frame": 222,
+          "endFrame": 229
+        },
+        {
+          "token": "the",
+          "start": 7.627,
+          "end": 7.697,
+          "frame": 229,
+          "endFrame": 231
+        },
+        {
+          "token": "note.",
+          "start": 7.708,
+          "end": 8.044,
+          "frame": 231,
+          "endFrame": 241
+        },
+        {
+          "token": "Problem",
+          "start": 8.414,
+          "end": 8.681,
+          "frame": 252,
+          "endFrame": 260
+        },
+        {
+          "token": "solved?",
+          "start": 8.681,
+          "end": 9.12,
+          "frame": 260,
+          "endFrame": 274
+        }
+      ],
+      "to": 282,
+      "speechEnd": 274
+    },
+    {
+      "id": "S3",
+      "text": "A JAMA study just followed eight thousand five hundred clinicians, across five health systems.",
+      "from": 282,
+      "words": [
+        {
+          "token": "A",
+          "start": 9.491,
+          "end": 9.537,
+          "frame": 285,
+          "endFrame": 286
+        },
+        {
+          "token": "JAMA",
+          "start": 9.549,
+          "end": 9.896,
+          "frame": 286,
+          "endFrame": 297
+        },
+        {
+          "token": "study",
+          "start": 9.896,
+          "end": 10.324,
+          "frame": 297,
+          "endFrame": 310
+        },
+        {
+          "token": "just",
+          "start": 10.428,
+          "end": 10.602,
+          "frame": 313,
+          "endFrame": 318
+        },
+        {
+          "token": "followed",
+          "start": 10.602,
+          "end": 11.03,
+          "frame": 318,
+          "endFrame": 331
+        },
+        {
+          "token": "eight",
+          "start": 11.215,
+          "end": 11.377,
+          "frame": 336,
+          "endFrame": 341
+        },
+        {
+          "token": "thousand",
+          "start": 11.389,
+          "end": 11.921,
+          "frame": 342,
+          "endFrame": 358
+        },
+        {
+          "token": "five",
+          "start": 11.921,
+          "end": 12.245,
+          "frame": 358,
+          "endFrame": 367
+        },
+        {
+          "token": "hundred",
+          "start": 12.245,
+          "end": 12.477,
+          "frame": 367,
+          "endFrame": 374
+        },
+        {
+          "token": "clinicians,",
+          "start": 12.477,
+          "end": 13.102,
+          "frame": 374,
+          "endFrame": 393
+        },
+        {
+          "token": "across",
+          "start": 13.287,
+          "end": 13.669,
+          "frame": 399,
+          "endFrame": 410
+        },
+        {
+          "token": "five",
+          "start": 13.669,
+          "end": 14.005,
+          "frame": 410,
+          "endFrame": 420
+        },
+        {
+          "token": "health",
+          "start": 14.005,
+          "end": 14.178,
+          "frame": 420,
+          "endFrame": 425
+        },
+        {
+          "token": "systems.",
+          "start": 14.19,
+          "end": 14.757,
+          "frame": 426,
+          "endFrame": 443
+        }
+      ],
+      "to": 451,
+      "speechEnd": 443
+    },
+    {
+      "id": "S4",
+      "text": "Time spent on notes went down. Sixteen minutes, for every eight hours of patients.",
+      "from": 451,
+      "words": [
+        {
+          "token": "Time",
+          "start": 15.127,
+          "end": 15.289,
+          "frame": 454,
+          "endFrame": 459
+        },
+        {
+          "token": "spent",
+          "start": 15.301,
+          "end": 15.532,
+          "frame": 459,
+          "endFrame": 466
+        },
+        {
+          "token": "on",
+          "start": 15.532,
+          "end": 15.671,
+          "frame": 466,
+          "endFrame": 470
+        },
+        {
+          "token": "notes",
+          "start": 15.671,
+          "end": 15.914,
+          "frame": 470,
+          "endFrame": 477
+        },
+        {
+          "token": "went",
+          "start": 15.914,
+          "end": 16.076,
+          "frame": 477,
+          "endFrame": 482
+        },
+        {
+          "token": "down.",
+          "start": 16.088,
+          "end": 16.389,
+          "frame": 483,
+          "endFrame": 492
+        },
+        {
+          "token": "Sixteen",
+          "start": 16.759,
+          "end": 17.199,
+          "frame": 503,
+          "endFrame": 516
+        },
+        {
+          "token": "minutes,",
+          "start": 17.199,
+          "end": 17.65,
+          "frame": 516,
+          "endFrame": 530
+        },
+        {
+          "token": "for",
+          "start": 17.847,
+          "end": 18.032,
+          "frame": 535,
+          "endFrame": 541
+        },
+        {
+          "token": "every",
+          "start": 18.171,
+          "end": 18.507,
+          "frame": 545,
+          "endFrame": 555
+        },
+        {
+          "token": "eight",
+          "start": 18.507,
+          "end": 18.681,
+          "frame": 555,
+          "endFrame": 560
+        },
+        {
+          "token": "hours",
+          "start": 18.692,
+          "end": 19.028,
+          "frame": 561,
+          "endFrame": 571
+        },
+        {
+          "token": "of",
+          "start": 19.039,
+          "end": 19.097,
+          "frame": 571,
+          "endFrame": 573
+        },
+        {
+          "token": "patients.",
+          "start": 19.097,
+          "end": 19.699,
+          "frame": 573,
+          "endFrame": 591
+        }
+      ],
+      "to": 599,
+      "speechEnd": 591
+    },
+    {
+      "id": "S5",
+      "text": "Time on the computer after hours? No significant change.",
+      "from": 599,
+      "words": [
+        {
+          "token": "Time",
+          "start": 20.081,
+          "end": 20.278,
+          "frame": 602,
+          "endFrame": 608
+        },
+        {
+          "token": "on",
+          "start": 20.278,
+          "end": 20.336,
+          "frame": 608,
+          "endFrame": 610
+        },
+        {
+          "token": "the",
+          "start": 20.336,
+          "end": 20.394,
+          "frame": 610,
+          "endFrame": 612
+        },
+        {
+          "token": "computer",
+          "start": 20.405,
+          "end": 20.891,
+          "frame": 612,
+          "endFrame": 627
+        },
+        {
+          "token": "after",
+          "start": 21.076,
+          "end": 21.331,
+          "frame": 632,
+          "endFrame": 640
+        },
+        {
+          "token": "hours?",
+          "start": 21.343,
+          "end": 21.852,
+          "frame": 640,
+          "endFrame": 656
+        },
+        {
+          "token": "No",
+          "start": 22.234,
+          "end": 22.396,
+          "frame": 667,
+          "endFrame": 672
+        },
+        {
+          "token": "significant",
+          "start": 22.396,
+          "end": 22.94,
+          "frame": 672,
+          "endFrame": 688
+        },
+        {
+          "token": "change.",
+          "start": 22.94,
+          "end": 23.461,
+          "frame": 688,
+          "endFrame": 704
+        }
+      ],
+      "to": 712,
+      "speechEnd": 704
+    },
+    {
+      "id": "S6",
+      "text": "Because the note was never the whole evening. It's the inbox. The results. The quick question.",
+      "from": 712,
+      "words": [
+        {
+          "token": "Because",
+          "start": 23.843,
+          "end": 24.109,
+          "frame": 715,
+          "endFrame": 723
+        },
+        {
+          "token": "the",
+          "start": 24.109,
+          "end": 24.178,
+          "frame": 723,
+          "endFrame": 725
+        },
+        {
+          "token": "note",
+          "start": 24.178,
+          "end": 24.514,
+          "frame": 725,
+          "endFrame": 735
+        },
+        {
+          "token": "was",
+          "start": 24.699,
+          "end": 24.873,
+          "frame": 741,
+          "endFrame": 746
+        },
+        {
+          "token": "never",
+          "start": 24.884,
+          "end": 25.22,
+          "frame": 747,
+          "endFrame": 757
+        },
+        {
+          "token": "the",
+          "start": 25.22,
+          "end": 25.278,
+          "frame": 757,
+          "endFrame": 758
+        },
+        {
+          "token": "whole",
+          "start": 25.278,
+          "end": 25.544,
+          "frame": 758,
+          "endFrame": 766
+        },
+        {
+          "token": "evening.",
+          "start": 25.544,
+          "end": 25.949,
+          "frame": 766,
+          "endFrame": 778
+        },
+        {
+          "token": "It's",
+          "start": 26.331,
+          "end": 26.424,
+          "frame": 790,
+          "endFrame": 793
+        },
+        {
+          "token": "the",
+          "start": 26.424,
+          "end": 26.493,
+          "frame": 793,
+          "endFrame": 795
+        },
+        {
+          "token": "inbox.",
+          "start": 26.493,
+          "end": 27.095,
+          "frame": 795,
+          "endFrame": 813
+        },
+        {
+          "token": "The",
+          "start": 27.454,
+          "end": 27.5,
+          "frame": 824,
+          "endFrame": 825
+        },
+        {
+          "token": "results.",
+          "start": 27.5,
+          "end": 28.079,
+          "frame": 825,
+          "endFrame": 842
+        },
+        {
+          "token": "The",
+          "start": 28.461,
+          "end": 28.507,
+          "frame": 854,
+          "endFrame": 855
+        },
+        {
+          "token": "quick",
+          "start": 28.518,
+          "end": 28.669,
+          "frame": 856,
+          "endFrame": 860
+        },
+        {
+          "token": "question.",
+          "start": 28.669,
+          "end": 29.144,
+          "frame": 860,
+          "endFrame": 874
+        }
+      ],
+      "to": 882,
+      "speechEnd": 874
+    },
+    {
+      "id": "S7",
+      "text": "The scribe fixed the visit. Nobody fixed what happens between visits.",
+      "from": 882,
+      "words": [
+        {
+          "token": "The",
+          "start": 29.514,
+          "end": 29.572,
+          "frame": 885,
+          "endFrame": 887
+        },
+        {
+          "token": "scribe",
+          "start": 29.572,
+          "end": 30.0,
+          "frame": 887,
+          "endFrame": 900
+        },
+        {
+          "token": "fixed",
+          "start": 30.116,
+          "end": 30.428,
+          "frame": 903,
+          "endFrame": 913
+        },
+        {
+          "token": "the",
+          "start": 30.428,
+          "end": 30.475,
+          "frame": 913,
+          "endFrame": 914
+        },
+        {
+          "token": "visit.",
+          "start": 30.475,
+          "end": 30.822,
+          "frame": 914,
+          "endFrame": 925
+        },
+        {
+          "token": "Nobody",
+          "start": 31.192,
+          "end": 31.458,
+          "frame": 936,
+          "endFrame": 944
+        },
+        {
+          "token": "fixed",
+          "start": 31.458,
+          "end": 31.944,
+          "frame": 944,
+          "endFrame": 958
+        },
+        {
+          "token": "what",
+          "start": 31.956,
+          "end": 32.06,
+          "frame": 959,
+          "endFrame": 962
+        },
+        {
+          "token": "happens",
+          "start": 32.06,
+          "end": 32.407,
+          "frame": 962,
+          "endFrame": 972
+        },
+        {
+          "token": "between",
+          "start": 32.419,
+          "end": 32.743,
+          "frame": 973,
+          "endFrame": 982
+        },
+        {
+          "token": "visits.",
+          "start": 32.743,
+          "end": 33.333,
+          "frame": 982,
+          "endFrame": 1000
+        }
+      ],
+      "to": 1008,
+      "speechEnd": 1000
+    },
+    {
+      "id": "S8",
+      "text": "That's the work that follows you home.",
+      "from": 1008,
+      "words": [
+        {
+          "token": "That's",
+          "start": 33.715,
+          "end": 33.9,
+          "frame": 1011,
+          "endFrame": 1017
+        },
+        {
+          "token": "the",
+          "start": 33.9,
+          "end": 34.016,
+          "frame": 1017,
+          "endFrame": 1020
+        },
+        {
+          "token": "work",
+          "start": 34.028,
+          "end": 34.329,
+          "frame": 1021,
+          "endFrame": 1030
+        },
+        {
+          "token": "that",
+          "start": 34.514,
+          "end": 34.63,
+          "frame": 1035,
+          "endFrame": 1039
+        },
+        {
+          "token": "follows",
+          "start": 34.641,
+          "end": 35.116,
+          "frame": 1039,
+          "endFrame": 1053
+        },
+        {
+          "token": "you",
+          "start": 35.127,
+          "end": 35.231,
+          "frame": 1054,
+          "endFrame": 1057
+        },
+        {
+          "token": "home.",
+          "start": 35.231,
+          "end": 35.567,
+          "frame": 1057,
+          "endFrame": 1067
+        }
+      ],
+      "to": 1128,
+      "speechEnd": 1067
+    }
+  ]
+}
