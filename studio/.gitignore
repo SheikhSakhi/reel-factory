@@ -9,3 +9,5 @@ node_modules
 out
 briefs/*/dialogue
 public/edit/*/clean.mp4
+briefs/*/*.wav
+briefs/*/stems/
