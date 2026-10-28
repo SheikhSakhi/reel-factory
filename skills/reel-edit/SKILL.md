@@ -96,3 +96,25 @@ Edit like an editor, not a decorator:
   - `captions.hide`: no captions while their animation carries the words; no progress bar over their type
 - Keep peaks under -1 dBFS: impacts land on top of the voice (`volume` ≤ 0.45).
 
+## Face-tracked effects (fx pack)
+
+`studio/fx/` vendors [claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects) (MIT): 45 effects that track the speaker's face and can sit **behind their head** (person cut-out): `backdrop-word`, `spotlight` / `glitter-spotlight`, `locked-on`, `lean-in`, `slow-push`, `headline-box`, `split-headline`, `liquid-glass-graph`, `over-the-shoulder-zoom`, `todo`, `checklist`, `apple-toggles`, `messages`, `reject-stamp`, `led-sign`, `cover-star`, `match-cut`, `dot-reveal` and more. Every effect and option: `studio/fx/EFFECTS.md`.
+
+Add them to `plan.json`; `edit_render.py` burns them into the footage first (`scripts/fxpass.py`), then the factory adds captions, overlays, moves and sound on top:
+
+```json
+"fx": [
+  { "fx": "backdrop-word", "from": "S2:doctor.", "hold": 70, "text": "DOCTOR" },
+  { "fx": "liquid-glass-graph", "from": "S4:sixteen", "to": "S4:patients.", "text": "Documentation time", "opt": { "from": "0", "to": "16 min" } }
+]
+```
+
+`from`/`to` are plan moments ("S2:word", "12.5s", frames) or `hold` in frames; every other key is passed to the effect as its option; options named like the timing keys (a graph's own `from`/`to`) go in `"opt"`.
+
+Rules (on top of the pack's own: never cover the face, zoom at most 2x):
+- **Only on the talking head**, and only on the 2-4 lines that carry the hook or the payoff: one strong effect per line, 1.5-4 s each. Never on the creator's own animations or B-roll.
+- The pack is silent: give every effect a sound in `sounds` (`impact` on a stamp, `swoosh` on a push, `shimmer` on a spotlight, `blip` on ticks).
+- Numbers on graphs and counters come from the speaker or verified research, never invented.
+- Check first: `python3 scripts/edit_render.py <slug> --qa <frames inside each effect>`; the fx pass alone takes about 2-4 minutes per minute of footage.
+- Setup once per machine: `npm run fx:setup` (Python 3.10-3.12; on Linux it also needs `libegl1 libgles2`).
+

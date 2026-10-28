@@ -71,6 +71,11 @@ export type Plan = {
     readonly hide?: readonly (readonly [At, At])[];
   };
   readonly moves?: readonly Move[];
+  /**
+   * Face-tracked effects burned into the footage before rendering by scripts/fxpass.py (vendored pack in fx/,
+   * list in fx/EFFECTS.md), e.g. { fx: "backdrop-word", from: "S2:doctor.", hold: 75, text: "DOCTOR" }.
+   */
+  readonly fx?: readonly ({ fx: string; from: At; to?: At; hold?: number } & Record<string, unknown>)[];
   /** Sound design placed by hand on visual beats (on top of the automatic overlay sounds). */
   readonly sounds?: readonly { at: At; sound: SfxName; volume?: number }[];
   readonly zooms?: readonly { at: At; scale?: number; hold?: number }[];
