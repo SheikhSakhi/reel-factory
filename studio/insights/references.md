@@ -88,3 +88,15 @@ What they do:
 Lines are short (2-8 words), spoken by alternating voices, with almost no narration. The lesson is never announced; a character discovers it.
 
 **B-roll monologue shape:** a confession or tension line → personal stakes and numbers (9 weeks, 15M views) → the honest twist ("I thought this idea was dumb") → the question for the audience → an update or CTA. It's spoken quickly and informally, like talking to a friend.
+
+## 4. Screen-over-camera explainer (added 2026-10-26, for the user's own footage)
+
+| Reel | Account | Length | Shots | Likes |
+|---|---|---|---|---|
+| [DewpMRLvvNi](https://www.instagram.com/reel/DewpMRLvvNi/) | Bilawal Sidhu, "God's eye view" | 32 s | ~12 cuts | 260 |
+
+- Three modes that alternate: **talking head full frame** for the hook and the payoff lines; **screen over camera** (product screen on top, webcam below, each in a small Mac-style window with a title bar) while explaining; **full-screen B-roll** on key nouns.
+- A branded HUD title ("GOD'S EYE VIEW") on the product shots.
+- Captions: bold white sentence case with one key word in amber on the face; small lowercase monospace on the seam in split mode.
+- Hook is a promise: "if you want a sense of where X is going next, this is a really good hint."
+- Used for: nvidia-journey-s1e2 (the user's own recording; split panels drawn in code over the talking-head half).

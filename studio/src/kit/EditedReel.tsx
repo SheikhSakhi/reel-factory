@@ -7,7 +7,7 @@ import { CtaCard } from "./CtaCard";
 import { Arrow, Burst, Callout, Flash, LowerThird, PictureCard, ProgressLine, Slam, StatPop } from "./Fx";
 import { PopCaptions } from "./PopCaptions";
 import { ProofShot } from "./Proof";
-import { SfxTrack, type SfxCue } from "./Sfx";
+import { SfxTrack, type SfxCue, type SfxName } from "./Sfx";
 import { PanelContext, type Panels } from "./PanelKit";
 import { TalkingHead, loadEdit, type Edit, type FootageBox, type Punch } from "./TalkingHead";
 import { EASE_IN_OUT } from "./motion";
@@ -42,6 +42,15 @@ export type Overlay =
 
 export type Layout = "full" | "split" | "panel";
 
+/**
+ * Camera and light moves on the footage, for B-roll and animation the creator made themselves:
+ * "push" a slow zoom across a range, "shake" a hit on an impact, "bloom" a soft light flare.
+ */
+export type Move =
+  | { type: "push"; from: At; to: At; scale?: number }
+  | { type: "shake"; at: At; hold?: number; amount?: number }
+  | { type: "bloom"; at: At; hold?: number; x?: number; y?: number; size?: number; color?: string };
+
 export type Plan = {
   /** Layout per scene id; scenes not listed use `default` (default "full"). */
   readonly layout?: {
@@ -58,7 +67,17 @@ export type Plan = {
     readonly keepTogether?: readonly string[];
     /** false: no accent on the spoken word (plain white phrases, like most explainers). */
     readonly highlight?: boolean;
+    /** Ranges with no captions, e.g. while the creator's own animation already shows the words. */
+    readonly hide?: readonly (readonly [At, At])[];
   };
+  readonly moves?: readonly Move[];
+  /**
+   * Face-tracked effects burned into the footage before rendering by scripts/fxpass.py (vendored pack in fx/,
+   * list in fx/EFFECTS.md), e.g. { fx: "backdrop-word", from: "S2:doctor.", hold: 75, text: "DOCTOR" }.
+   */
+  readonly fx?: readonly ({ fx: string; from: At; to?: At; hold?: number } & Record<string, unknown>)[];
+  /** Sound design placed by hand on visual beats (on top of the automatic overlay sounds). */
+  readonly sounds?: readonly { at: At; sound: SfxName; volume?: number }[];
   readonly zooms?: readonly { at: At; scale?: number; hold?: number }[];
   readonly overlays?: readonly Overlay[];
   readonly progress?: boolean;
@@ -107,6 +126,9 @@ export const loadPlan = (raw: unknown, take: VoTake): Plan => {
     resolveAt(take, o.at);
   });
   (plan.zooms ?? []).forEach((z) => resolveAt(take, z.at));
+  (plan.sounds ?? []).forEach((c) => resolveAt(take, c.at));
+  (plan.captions?.hide ?? []).forEach(([a, b]) => { resolveAt(take, a); resolveAt(take, b); });
+  (plan.moves ?? []).forEach((m) => (m.type === "push" ? [m.from, m.to] : [m.at]).forEach((at) => resolveAt(take, at)));
   return plan;
 };
 
@@ -185,6 +207,57 @@ const PanelFade: React.FC<{ height: number; children: React.ReactNode }> = ({ he
   return <AbsoluteFill style={{ height, overflow: "hidden", opacity: interpolate(f, [0, 8], [0, 1], { extrapolateRight: "clamp" }) }}>{children}</AbsoluteFill>;
 };
 
+type Resolved =
+  | { type: "push"; from: number; to: number; scale: number }
+  | { type: "shake"; at: number; hold: number; amount: number }
+  | { type: "bloom"; at: number; hold: number; x: number; y: number; size: number; color: string };
+
+const resolveMoves = (take: VoTake, moves: readonly Move[]): Resolved[] => moves.map((m) => {
+  if (m.type === "push") return { type: "push", from: resolveAt(take, m.from), to: resolveAt(take, m.to), scale: m.scale ?? 1.08 };
+  if (m.type === "shake") return { type: "shake", at: resolveAt(take, m.at), hold: m.hold ?? 12, amount: m.amount ?? 14 };
+  return { type: "bloom", at: resolveAt(take, m.at), hold: m.hold ?? 30, x: m.x ?? 540, y: m.y ?? 860, size: m.size ?? 700, color: m.color ?? "#F2A23A" };
+});
+
+/** Pushes and shakes the footage; deterministic (no randomness between renders). */
+const Camera: React.FC<{ moves: readonly Resolved[]; children: React.ReactNode }> = ({ moves, children }) => {
+  const f = useCurrentFrame();
+  let scale = 1, dx = 0, dy = 0;
+  for (const m of moves) {
+    if (m.type === "push" && f >= m.from - 1 && f <= m.to + 1) {
+      scale *= interpolate(f, [m.from, m.to], [1, m.scale], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: EASE_IN_OUT });
+    }
+    if (m.type === "shake" && f >= m.at && f < m.at + m.hold) {
+      const k = 1 - (f - m.at) / m.hold;
+      dx += Math.sin((f - m.at) * 2.7) * m.amount * k * k;
+      dy += Math.cos((f - m.at) * 3.3) * m.amount * 0.7 * k * k;
+      scale *= 1 + 0.03 * k;
+    }
+  }
+  return <AbsoluteFill style={{ transform: `translate(${dx}px, ${dy}px) scale(${scale})` }}>{children}</AbsoluteFill>;
+};
+
+const Blooms: React.FC<{ moves: readonly Resolved[] }> = ({ moves }) => {
+  const f = useCurrentFrame();
+  return (
+    <>
+      {moves.map((m, i) => {
+        if (m.type !== "bloom" || f < m.at || f >= m.at + m.hold) return null;
+        const a = interpolate(f, [m.at, m.at + 4, m.at + m.hold], [0, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+        return (
+          <AbsoluteFill key={`bloom-${i}`} style={{ pointerEvents: "none", mixBlendMode: "screen", opacity: a,
+            background: `radial-gradient(circle ${m.size / 2}px at ${m.x}px ${m.y}px, ${m.color}CC 0%, ${m.color}44 35%, transparent 70%)` }} />
+        );
+      })}
+    </>
+  );
+};
+
+/** Hides captions inside the given absolute frame ranges. */
+const CaptionGate: React.FC<{ hide: readonly (readonly [number, number])[]; children: React.ReactNode }> = ({ hide, children }) => {
+  const f = useCurrentFrame();
+  return hide.some(([a, b]) => f >= a && f < b) ? null : <>{children}</>;
+};
+
 const mix = (a: FootageBox, b: FootageBox, t: number): FootageBox => ({ top: a.top + (b.top - a.top) * t, height: a.height + (b.height - a.height) * t });
 
 export const EditedReel: React.FC<EditedReelProps & { brand: Brand }> = ({ slug, edit, take, plan = {}, missing, brand, panels = {} }) => {
@@ -201,6 +274,9 @@ export const EditedReel: React.FC<EditedReelProps & { brand: Brand }> = ({ slug,
     const sound = SFX[o.type];
     return sound ? [{ at: resolveAt(take, o.at), sound, volume: o.type === "slam" ? 0.4 : 0.25 }] : [];
   });
+  cues.push(...(plan.sounds ?? []).map((c) => ({ at: resolveAt(take, c.at), sound: c.sound, volume: c.volume ?? 0.4 })));
+  const moves = resolveMoves(take, plan.moves ?? []);
+  const hide = (plan.captions?.hide ?? []).map(([a, b]) => [resolveAt(take, a), resolveAt(take, b)] as const);
   const style = plan.captions?.style ?? "pop";
   const ctaAt = overlays.filter((o) => o.type === "cta").map((o) => resolveAt(take, o.at))[0];
   const lastFrame = take.totalFrames;
@@ -235,7 +311,8 @@ export const EditedReel: React.FC<EditedReelProps & { brand: Brand }> = ({ slug,
           </Sequence>
         );
       })}
-      <TalkingHead edit={edit} punches={punches} box={box} faceY={0.42} />
+      <Camera moves={moves}><TalkingHead edit={edit} punches={punches} box={box} faceY={0.42} /></Camera>
+      <Blooms moves={moves} />
       {overlays.map((o, i) => {
         const from = resolveAt(take, o.at);
         const hold = Math.min("hold" in o && o.hold ? o.hold : DEFAULT_HOLD[o.type], Math.max(1, lastFrame - from));
@@ -246,9 +323,11 @@ export const EditedReel: React.FC<EditedReelProps & { brand: Brand }> = ({ slug,
         );
       })}
       {style === "pop" || style === "band" ? (
-        <PopCaptions take={take} font={brand.theme.fontBody} scenes={plan.captions?.scenes}
-          emphasis={plan.captions?.emphasis} until={ctaAt} variant={style} yAt={captionY}
-          accent={plan.captions?.highlight === false ? "#FFFFFF" : brand.theme.accent} />
+        <CaptionGate hide={hide}>
+          <PopCaptions take={take} font={brand.theme.fontBody} scenes={plan.captions?.scenes}
+            emphasis={plan.captions?.emphasis} until={ctaAt} variant={style} yAt={captionY}
+            accent={plan.captions?.highlight === false ? "#FFFFFF" : brand.theme.accent} />
+        </CaptionGate>
       ) : null}
       {style === "pill" ? (
         <Captions take={take} scenes={plan.captions?.scenes} keepTogether={plan.captions?.keepTogether} {...captionProps(brand)} />

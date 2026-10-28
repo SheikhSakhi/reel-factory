@@ -1,7 +1,7 @@
 import React from "react";
 import { Audio, Sequence, staticFile } from "remotion";
 
-export type SfxName = "whoosh" | "pop" | "click" | "tick" | "rise" | "thud" | "ding";
+export type SfxName = "whoosh" | "pop" | "click" | "tick" | "rise" | "thud" | "ding" | "impact" | "swoosh" | "riser" | "shimmer" | "blip" | "particles" | "hum";
 export type SfxCue = { readonly at: number; readonly sound: SfxName; readonly volume?: number };
 
 /** Plays the sound director's cue sheet. Files come from `npm run sfx`. */

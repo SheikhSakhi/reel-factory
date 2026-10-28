@@ -8,3 +8,9 @@ inbox
 node_modules
 out
 briefs/*/dialogue
+public/edit/*/clean.mp4
+briefs/*/*.wav
+briefs/*/stems/
+briefs/*/*.mp4
+fx/.venv
+public/edit/*/clean-fx.mp4

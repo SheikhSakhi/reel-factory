@@ -42,6 +42,8 @@ def main() -> None:
     if len(sys.argv) < 2:
         sys.exit(__doc__)
     slug = sys.argv[1]
+    # Face-tracked effects from plan.json "fx" are burned into the footage first (no-op without them).
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "fxpass.py"), slug], check=True, cwd=ROOT)
     base = ROOT / "public" / "edit" / slug
     take = json.loads((base / "take.json").read_text())
     plan = json.loads((base / "plan.json").read_text()) if (base / "plan.json").exists() else {}

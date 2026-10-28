@@ -17,7 +17,8 @@
     "ig": "python3 scripts/ig.py",
     "trends": "python3 scripts/trends.py",
     "weekly": "python3 scripts/ig.py sync && python3 scripts/ig.py discover && python3 scripts/trends.py outliers && python3 scripts/trends.py report",
-    "test": "python3 -m unittest discover -s tests"
+    "test": "python3 -m unittest discover -s tests",
+    "fx:setup": "bash fx/scripts/setup.sh"
   },
   "dependencies": {
     "@react-three/fiber": "9.3.0",

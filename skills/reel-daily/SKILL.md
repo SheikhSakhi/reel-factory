@@ -14,7 +14,7 @@ One finished reel, made without the user, delivered for their approval. **Nothin
 ```bash
 cd ~/Projects/reel-studio 2>/dev/null || cd "$(git rev-parse --show-toplevel)/studio"
 [ -d node_modules ] || npm install --no-audit --no-fund
-[ -f public/sfx/pop.wav ] || npm run sfx
+[ -f public/sfx/hum.wav ] || npm run sfx
 python3 -c "import edge_tts" 2>/dev/null || pip3 install -q -U edge-tts
 git pull --ff-only 2>/dev/null || true   # learnings and history from earlier runs
 ```

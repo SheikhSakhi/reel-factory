@@ -22,7 +22,7 @@ If `~/Projects/reel-studio` does not exist, clone this skill's repo and run its 
 
 ```bash
 cd ~/Projects/reel-studio && [ -d node_modules ] || npm install
-[ -f public/sfx/pop.wav ] || npm run sfx
+[ -f public/sfx/hum.wav ] || npm run sfx
 python3 -c "import edge_tts" 2>/dev/null || pip3 install -U edge-tts
 ```
 

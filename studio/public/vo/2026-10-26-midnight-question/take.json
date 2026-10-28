@@ -1,0 +1,865 @@
+{
+  "file": "vo/2026-10-26-midnight-question/take.mp3",
+  "voice": "en-US-EmmaMultilingualNeural",
+  "rate": "+4%",
+  "fps": 30,
+  "totalFrames": 1227,
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "Eleven forty seven at night. Three days on a new pill. And one question.",
+      "from": 0,
+      "words": [
+        {
+          "token": "Eleven",
+          "start": 0.084,
+          "end": 0.481,
+          "frame": 3,
+          "endFrame": 14
+        },
+        {
+          "token": "forty",
+          "start": 0.493,
+          "end": 0.829,
+          "frame": 15,
+          "endFrame": 25
+        },
+        {
+          "token": "seven",
+          "start": 0.841,
+          "end": 1.178,
+          "frame": 25,
+          "endFrame": 35
+        },
+        {
+          "token": "at",
+          "start": 1.19,
+          "end": 1.334,
+          "frame": 36,
+          "endFrame": 40
+        },
+        {
+          "token": "night.",
+          "start": 1.346,
+          "end": 1.791,
+          "frame": 40,
+          "endFrame": 54
+        },
+        {
+          "token": "Three",
+          "start": 2.175,
+          "end": 2.404,
+          "frame": 65,
+          "endFrame": 72
+        },
+        {
+          "token": "days",
+          "start": 2.416,
+          "end": 2.716,
+          "frame": 72,
+          "endFrame": 81
+        },
+        {
+          "token": "on",
+          "start": 2.728,
+          "end": 2.837,
+          "frame": 82,
+          "endFrame": 85
+        },
+        {
+          "token": "a",
+          "start": 2.849,
+          "end": 2.885,
+          "frame": 85,
+          "endFrame": 87
+        },
+        {
+          "token": "new",
+          "start": 2.897,
+          "end": 3.101,
+          "frame": 87,
+          "endFrame": 93
+        },
+        {
+          "token": "pill.",
+          "start": 3.113,
+          "end": 3.558,
+          "frame": 93,
+          "endFrame": 107
+        },
+        {
+          "token": "And",
+          "start": 3.954,
+          "end": 4.099,
+          "frame": 119,
+          "endFrame": 123
+        },
+        {
+          "token": "one",
+          "start": 4.111,
+          "end": 4.303,
+          "frame": 123,
+          "endFrame": 129
+        },
+        {
+          "token": "question.",
+          "start": 4.315,
+          "end": 4.952,
+          "frame": 129,
+          "endFrame": 149
+        }
+      ],
+      "to": 157,
+      "speechEnd": 149
+    },
+    {
+      "id": "S2",
+      "text": "So she asks a chatbot. One in seven people in the UK already have, instead of calling their doctor.",
+      "from": 157,
+      "words": [
+        {
+          "token": "So",
+          "start": 5.337,
+          "end": 5.481,
+          "frame": 160,
+          "endFrame": 164
+        },
+        {
+          "token": "she",
+          "start": 5.493,
+          "end": 5.673,
+          "frame": 165,
+          "endFrame": 170
+        },
+        {
+          "token": "asks",
+          "start": 5.685,
+          "end": 5.949,
+          "frame": 171,
+          "endFrame": 178
+        },
+        {
+          "token": "a",
+          "start": 5.962,
+          "end": 6.01,
+          "frame": 179,
+          "endFrame": 180
+        },
+        {
+          "token": "chatbot.",
+          "start": 6.022,
+          "end": 6.683,
+          "frame": 181,
+          "endFrame": 200
+        },
+        {
+          "token": "One",
+          "start": 7.079,
+          "end": 7.272,
+          "frame": 212,
+          "endFrame": 218
+        },
+        {
+          "token": "in",
+          "start": 7.284,
+          "end": 7.428,
+          "frame": 219,
+          "endFrame": 223
+        },
+        {
+          "token": "seven",
+          "start": 7.44,
+          "end": 7.776,
+          "frame": 223,
+          "endFrame": 233
+        },
+        {
+          "token": "people",
+          "start": 7.788,
+          "end": 8.149,
+          "frame": 234,
+          "endFrame": 244
+        },
+        {
+          "token": "in",
+          "start": 8.161,
+          "end": 8.257,
+          "frame": 245,
+          "endFrame": 248
+        },
+        {
+          "token": "the",
+          "start": 8.269,
+          "end": 8.341,
+          "frame": 248,
+          "endFrame": 250
+        },
+        {
+          "token": "UK",
+          "start": 8.353,
+          "end": 8.834,
+          "frame": 251,
+          "endFrame": 265
+        },
+        {
+          "token": "already",
+          "start": 8.846,
+          "end": 9.231,
+          "frame": 265,
+          "endFrame": 277
+        },
+        {
+          "token": "have,",
+          "start": 9.243,
+          "end": 9.603,
+          "frame": 277,
+          "endFrame": 288
+        },
+        {
+          "token": "instead",
+          "start": 9.76,
+          "end": 10.108,
+          "frame": 293,
+          "endFrame": 303
+        },
+        {
+          "token": "of",
+          "start": 10.12,
+          "end": 10.204,
+          "frame": 304,
+          "endFrame": 306
+        },
+        {
+          "token": "calling",
+          "start": 10.216,
+          "end": 10.553,
+          "frame": 306,
+          "endFrame": 317
+        },
+        {
+          "token": "their",
+          "start": 10.565,
+          "end": 10.709,
+          "frame": 317,
+          "endFrame": 321
+        },
+        {
+          "token": "doctor.",
+          "start": 10.721,
+          "end": 11.286,
+          "frame": 322,
+          "endFrame": 339
+        }
+      ],
+      "to": 347,
+      "speechEnd": 339
+    },
+    {
+      "id": "S3",
+      "text": "The answer sounds calm. Common side effect. Rest. Drink water.",
+      "from": 347,
+      "words": [
+        {
+          "token": "The",
+          "start": 11.683,
+          "end": 11.767,
+          "frame": 350,
+          "endFrame": 353
+        },
+        {
+          "token": "answer",
+          "start": 11.779,
+          "end": 12.163,
+          "frame": 353,
+          "endFrame": 365
+        },
+        {
+          "token": "sounds",
+          "start": 12.175,
+          "end": 12.524,
+          "frame": 365,
+          "endFrame": 376
+        },
+        {
+          "token": "calm.",
+          "start": 12.536,
+          "end": 12.981,
+          "frame": 376,
+          "endFrame": 389
+        },
+        {
+          "token": "Common",
+          "start": 13.365,
+          "end": 13.702,
+          "frame": 401,
+          "endFrame": 411
+        },
+        {
+          "token": "side",
+          "start": 13.714,
+          "end": 13.966,
+          "frame": 411,
+          "endFrame": 419
+        },
+        {
+          "token": "effect.",
+          "start": 13.978,
+          "end": 14.507,
+          "frame": 419,
+          "endFrame": 435
+        },
+        {
+          "token": "Rest.",
+          "start": 14.892,
+          "end": 15.397,
+          "frame": 447,
+          "endFrame": 462
+        },
+        {
+          "token": "Drink",
+          "start": 15.781,
+          "end": 16.046,
+          "frame": 473,
+          "endFrame": 481
+        },
+        {
+          "token": "water.",
+          "start": 16.058,
+          "end": 16.502,
+          "frame": 482,
+          "endFrame": 495
+        }
+      ],
+      "to": 504,
+      "speechEnd": 495
+    },
+    {
+      "id": "S4",
+      "text": "But it doesn't know which pill. It doesn't know the dose went up on Monday. Or that this morning's reading was the lowest in a month.",
+      "from": 504,
+      "words": [
+        {
+          "token": "But",
+          "start": 16.911,
+          "end": 17.019,
+          "frame": 507,
+          "endFrame": 511
+        },
+        {
+          "token": "it",
+          "start": 17.031,
+          "end": 17.139,
+          "frame": 511,
+          "endFrame": 514
+        },
+        {
+          "token": "doesn't",
+          "start": 17.151,
+          "end": 17.464,
+          "frame": 515,
+          "endFrame": 524
+        },
+        {
+          "token": "know",
+          "start": 17.476,
+          "end": 17.62,
+          "frame": 524,
+          "endFrame": 529
+        },
+        {
+          "token": "which",
+          "start": 17.632,
+          "end": 17.873,
+          "frame": 529,
+          "endFrame": 536
+        },
+        {
+          "token": "pill.",
+          "start": 17.885,
+          "end": 18.317,
+          "frame": 537,
+          "endFrame": 550
+        },
+        {
+          "token": "It",
+          "start": 18.714,
+          "end": 18.81,
+          "frame": 561,
+          "endFrame": 564
+        },
+        {
+          "token": "doesn't",
+          "start": 18.822,
+          "end": 19.135,
+          "frame": 565,
+          "endFrame": 574
+        },
+        {
+          "token": "know",
+          "start": 19.147,
+          "end": 19.279,
+          "frame": 574,
+          "endFrame": 578
+        },
+        {
+          "token": "the",
+          "start": 19.291,
+          "end": 19.411,
+          "frame": 579,
+          "endFrame": 582
+        },
+        {
+          "token": "dose",
+          "start": 19.423,
+          "end": 19.772,
+          "frame": 583,
+          "endFrame": 593
+        },
+        {
+          "token": "went",
+          "start": 19.784,
+          "end": 19.976,
+          "frame": 594,
+          "endFrame": 599
+        },
+        {
+          "token": "up",
+          "start": 19.988,
+          "end": 20.132,
+          "frame": 600,
+          "endFrame": 604
+        },
+        {
+          "token": "on",
+          "start": 20.144,
+          "end": 20.276,
+          "frame": 604,
+          "endFrame": 608
+        },
+        {
+          "token": "Monday.",
+          "start": 20.288,
+          "end": 20.817,
+          "frame": 609,
+          "endFrame": 625
+        },
+        {
+          "token": "Or",
+          "start": 21.214,
+          "end": 21.334,
+          "frame": 636,
+          "endFrame": 640
+        },
+        {
+          "token": "that",
+          "start": 21.346,
+          "end": 21.502,
+          "frame": 640,
+          "endFrame": 645
+        },
+        {
+          "token": "this",
+          "start": 21.514,
+          "end": 21.731,
+          "frame": 645,
+          "endFrame": 652
+        },
+        {
+          "token": "morning's",
+          "start": 21.743,
+          "end": 22.2,
+          "frame": 652,
+          "endFrame": 666
+        },
+        {
+          "token": "reading",
+          "start": 22.212,
+          "end": 22.56,
+          "frame": 666,
+          "endFrame": 677
+        },
+        {
+          "token": "was",
+          "start": 22.572,
+          "end": 22.716,
+          "frame": 677,
+          "endFrame": 681
+        },
+        {
+          "token": "the",
+          "start": 22.728,
+          "end": 22.849,
+          "frame": 682,
+          "endFrame": 685
+        },
+        {
+          "token": "lowest",
+          "start": 22.861,
+          "end": 23.305,
+          "frame": 686,
+          "endFrame": 699
+        },
+        {
+          "token": "in",
+          "start": 23.317,
+          "end": 23.389,
+          "frame": 700,
+          "endFrame": 702
+        },
+        {
+          "token": "a",
+          "start": 23.401,
+          "end": 23.45,
+          "frame": 702,
+          "endFrame": 703
+        },
+        {
+          "token": "month.",
+          "start": 23.462,
+          "end": 23.954,
+          "frame": 704,
+          "endFrame": 719
+        }
+      ],
+      "to": 728,
+      "speechEnd": 719
+    },
+    {
+      "id": "S5",
+      "text": "And one in five users say a chatbot talked them out of seeing a professional.",
+      "from": 728,
+      "words": [
+        {
+          "token": "And",
+          "start": 24.351,
+          "end": 24.495,
+          "frame": 731,
+          "endFrame": 735
+        },
+        {
+          "token": "one",
+          "start": 24.507,
+          "end": 24.687,
+          "frame": 735,
+          "endFrame": 741
+        },
+        {
+          "token": "in",
+          "start": 24.7,
+          "end": 24.82,
+          "frame": 741,
+          "endFrame": 745
+        },
+        {
+          "token": "five",
+          "start": 24.832,
+          "end": 25.132,
+          "frame": 745,
+          "endFrame": 754
+        },
+        {
+          "token": "users",
+          "start": 25.144,
+          "end": 25.541,
+          "frame": 754,
+          "endFrame": 766
+        },
+        {
+          "token": "say",
+          "start": 25.553,
+          "end": 25.709,
+          "frame": 767,
+          "endFrame": 771
+        },
+        {
+          "token": "a",
+          "start": 25.721,
+          "end": 25.781,
+          "frame": 772,
+          "endFrame": 773
+        },
+        {
+          "token": "chatbot",
+          "start": 25.793,
+          "end": 26.322,
+          "frame": 774,
+          "endFrame": 790
+        },
+        {
+          "token": "talked",
+          "start": 26.334,
+          "end": 26.599,
+          "frame": 790,
+          "endFrame": 798
+        },
+        {
+          "token": "them",
+          "start": 26.611,
+          "end": 26.743,
+          "frame": 798,
+          "endFrame": 802
+        },
+        {
+          "token": "out",
+          "start": 26.755,
+          "end": 26.887,
+          "frame": 803,
+          "endFrame": 807
+        },
+        {
+          "token": "of",
+          "start": 26.899,
+          "end": 26.983,
+          "frame": 807,
+          "endFrame": 809
+        },
+        {
+          "token": "seeing",
+          "start": 26.995,
+          "end": 27.284,
+          "frame": 810,
+          "endFrame": 819
+        },
+        {
+          "token": "a",
+          "start": 27.296,
+          "end": 27.344,
+          "frame": 819,
+          "endFrame": 820
+        },
+        {
+          "token": "professional.",
+          "start": 27.356,
+          "end": 28.113,
+          "frame": 821,
+          "endFrame": 843
+        }
+      ],
+      "to": 852,
+      "speechEnd": 843
+    },
+    {
+      "id": "S6",
+      "text": "Same message. Different inbox. This one knows the pill, the dose, and the readings.",
+      "from": 852,
+      "words": [
+        {
+          "token": "Same",
+          "start": 28.498,
+          "end": 28.75,
+          "frame": 855,
+          "endFrame": 862
+        },
+        {
+          "token": "message.",
+          "start": 28.762,
+          "end": 29.327,
+          "frame": 863,
+          "endFrame": 880
+        },
+        {
+          "token": "Different",
+          "start": 29.724,
+          "end": 30.108,
+          "frame": 892,
+          "endFrame": 903
+        },
+        {
+          "token": "inbox.",
+          "start": 30.12,
+          "end": 30.781,
+          "frame": 904,
+          "endFrame": 923
+        },
+        {
+          "token": "This",
+          "start": 31.166,
+          "end": 31.358,
+          "frame": 935,
+          "endFrame": 941
+        },
+        {
+          "token": "one",
+          "start": 31.37,
+          "end": 31.575,
+          "frame": 941,
+          "endFrame": 947
+        },
+        {
+          "token": "knows",
+          "start": 31.587,
+          "end": 31.815,
+          "frame": 948,
+          "endFrame": 954
+        },
+        {
+          "token": "the",
+          "start": 31.827,
+          "end": 31.923,
+          "frame": 955,
+          "endFrame": 958
+        },
+        {
+          "token": "pill,",
+          "start": 31.935,
+          "end": 32.296,
+          "frame": 958,
+          "endFrame": 969
+        },
+        {
+          "token": "the",
+          "start": 32.464,
+          "end": 32.572,
+          "frame": 974,
+          "endFrame": 977
+        },
+        {
+          "token": "dose,",
+          "start": 32.584,
+          "end": 32.993,
+          "frame": 978,
+          "endFrame": 990
+        },
+        {
+          "token": "and",
+          "start": 33.185,
+          "end": 33.305,
+          "frame": 996,
+          "endFrame": 999
+        },
+        {
+          "token": "the",
+          "start": 33.317,
+          "end": 33.401,
+          "frame": 1000,
+          "endFrame": 1002
+        },
+        {
+          "token": "readings.",
+          "start": 33.413,
+          "end": 34.038,
+          "frame": 1002,
+          "endFrame": 1021
+        }
+      ],
+      "to": 1030,
+      "speechEnd": 1021
+    },
+    {
+      "id": "S7",
+      "text": "It doesn't play doctor. It tells hers.",
+      "from": 1030,
+      "words": [
+        {
+          "token": "It",
+          "start": 34.435,
+          "end": 34.519,
+          "frame": 1033,
+          "endFrame": 1036
+        },
+        {
+          "token": "doesn't",
+          "start": 34.531,
+          "end": 34.844,
+          "frame": 1036,
+          "endFrame": 1045
+        },
+        {
+          "token": "play",
+          "start": 34.856,
+          "end": 35.036,
+          "frame": 1046,
+          "endFrame": 1051
+        },
+        {
+          "token": "doctor.",
+          "start": 35.048,
+          "end": 35.601,
+          "frame": 1051,
+          "endFrame": 1068
+        },
+        {
+          "token": "It",
+          "start": 35.986,
+          "end": 36.094,
+          "frame": 1080,
+          "endFrame": 1083
+        },
+        {
+          "token": "tells",
+          "start": 36.106,
+          "end": 36.418,
+          "frame": 1083,
+          "endFrame": 1093
+        },
+        {
+          "token": "hers.",
+          "start": 36.43,
+          "end": 36.911,
+          "frame": 1093,
+          "endFrame": 1107
+        }
+      ],
+      "to": 1116,
+      "speechEnd": 1107
+    },
+    {
+      "id": "S8",
+      "text": "Ask the one who knows your plan.",
+      "from": 1116,
+      "words": [
+        {
+          "token": "Ask",
+          "start": 37.296,
+          "end": 37.548,
+          "frame": 1119,
+          "endFrame": 1126
+        },
+        {
+          "token": "the",
+          "start": 37.56,
+          "end": 37.656,
+          "frame": 1127,
+          "endFrame": 1130
+        },
+        {
+          "token": "one",
+          "start": 37.668,
+          "end": 37.873,
+          "frame": 1130,
+          "endFrame": 1136
+        },
+        {
+          "token": "who",
+          "start": 37.885,
+          "end": 38.029,
+          "frame": 1137,
+          "endFrame": 1141
+        },
+        {
+          "token": "knows",
+          "start": 38.041,
+          "end": 38.281,
+          "frame": 1141,
+          "endFrame": 1148
+        },
+        {
+          "token": "your",
+          "start": 38.293,
+          "end": 38.413,
+          "frame": 1149,
+          "endFrame": 1152
+        },
+        {
+          "token": "plan.",
+          "start": 38.425,
+          "end": 38.894,
+          "frame": 1153,
+          "endFrame": 1167
+        }
+      ],
+      "to": 1227,
+      "speechEnd": 1167
+    }
+  ]
+}
