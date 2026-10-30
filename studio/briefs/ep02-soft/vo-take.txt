@@ -1,0 +1,13 @@
+[S1] DOCTOR: Doc. Why did I get four hundred alerts today?
+[S2] DOC: You said, alert me on everything.
+[S3] DOCTOR: I meant the important things.
+[S4] DOC: They were all important. To someone.
+[S5] DOCTOR: I stopped reading them after lunch.
+[S6] DOC: Most doctors do. Studies found safety alerts get overridden in half to almost all cases.
+[S7] DOCTOR: So alerts don't work?
+[S8] DOC: Alerts nobody owns don't work.
+[S9] DOC: For each patient: one threshold. One person. One action.
+[S10] DOCTOR: Fine. Mrs. Rao. If her oxygen drops below what we agreed, you call me.
+[S11] DOC: Done. Four hundred alerts. Now, one.
+[S12] DOCTOR: And if I miss that one?
+[S13] DOC: Then I call again. That's what owning it means.

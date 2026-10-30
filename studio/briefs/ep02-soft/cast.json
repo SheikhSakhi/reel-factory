@@ -1,0 +1,4 @@
+{
+  "DOCTOR": {"voice": "en-US-EmmaMultilingualNeural", "rate": "-6%", "pitch": "-3Hz"},
+  "DOC": {"voice": "en-US-BrianMultilingualNeural", "rate": "-9%", "pitch": "-6Hz", "gap": 0.55}
+}

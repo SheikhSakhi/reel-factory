@@ -10,6 +10,7 @@ Rules learned from ratings and real results. Every run reads this first. Maintai
 - Ad tone: slogans, a product name or tagline as the ending ("DOCX · ...", "A plan is."), selling instead of explaining (monitor-not-plan disliked: "like an advertisement", 2026-10-30)
 
 ## User preferences
+- Character episodes (F1): no generic sound effects; a soft ambient music bed (scripts/ambient.py) that dips under the voices, plus room tone. Calm voices: slower (about -6 to -9%), lower pitch, longer pauses between lines. Soft visuals: smooth rounded clay characters (kit/SoftWorld.tsx), a bright daylight space, soft cinematic light (window rays, haze, gentle glow, light grain) rather than dark and moody (2026-10-30, reference: the VoiceStudio explainer reel)
 - No CTA by default. "Better no CTA than a bad CTA": no product tag, no "follow for more", no keyword unless a real lead magnet exists and the user asked for it; end on the insight (2026-10-30)
 - The synthetic voice is the weakest part of every reel so far (edge-tts judged poor on midnight-question, forgotten-plan, monitor-not-plan); a better voice is the top fix (2026-10-30)
 - Editing own footage, B-roll style: don't decorate the talking head (no panels over plain lines); put the effort into the creator's own animations and B-roll: sound design on every visual beat, camera push/shake/bloom on impacts, no captions or progress bar over their type (user feedback on nvidia-journey-s1e2, 2026-10-26)
