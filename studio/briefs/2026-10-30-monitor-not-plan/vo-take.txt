@@ -1,0 +1,7 @@
+[S1] Send sepsis survivors home with a monitor, and fewer of them come back. That's the logic.
+[S2] A trial in JAMA Network Open just tested it. One thousand two hundred eighty six patients, after sepsis or pneumonia.
+[S3] Vitals and symptoms, tracked from home. Four different monitoring strategies.
+[S4] Ninety days later, readmissions with monitoring: thirty six to forty four percent. With usual follow up: thirty eight.
+[S5] No significant difference. And older patients were readmitted more often, not less.
+[S6] A monitor collects numbers. Someone still has to decide what each number means, for this patient.
+[S7] More data isn't more care. A plan is.

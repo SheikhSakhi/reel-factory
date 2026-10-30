@@ -1,0 +1,772 @@
+{
+  "file": "vo/2026-10-30-monitor-not-plan/take.mp3",
+  "voice": "en-US-BrianMultilingualNeural",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 1298,
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "Send sepsis survivors home with a monitor, and fewer of them come back. That's the logic.",
+      "from": 0,
+      "words": [
+        {
+          "token": "Send",
+          "start": 0.083,
+          "end": 0.413,
+          "frame": 2,
+          "endFrame": 12
+        },
+        {
+          "token": "sepsis",
+          "start": 0.425,
+          "end": 0.92,
+          "frame": 13,
+          "endFrame": 28
+        },
+        {
+          "token": "survivors",
+          "start": 0.932,
+          "end": 1.462,
+          "frame": 28,
+          "endFrame": 44
+        },
+        {
+          "token": "home",
+          "start": 1.474,
+          "end": 1.781,
+          "frame": 44,
+          "endFrame": 53
+        },
+        {
+          "token": "with",
+          "start": 1.792,
+          "end": 1.91,
+          "frame": 54,
+          "endFrame": 57
+        },
+        {
+          "token": "a",
+          "start": 1.922,
+          "end": 1.958,
+          "frame": 58,
+          "endFrame": 59
+        },
+        {
+          "token": "monitor,",
+          "start": 1.969,
+          "end": 2.571,
+          "frame": 59,
+          "endFrame": 77
+        },
+        {
+          "token": "and",
+          "start": 2.795,
+          "end": 3.019,
+          "frame": 84,
+          "endFrame": 91
+        },
+        {
+          "token": "fewer",
+          "start": 3.031,
+          "end": 3.42,
+          "frame": 91,
+          "endFrame": 103
+        },
+        {
+          "token": "of",
+          "start": 3.432,
+          "end": 3.514,
+          "frame": 103,
+          "endFrame": 105
+        },
+        {
+          "token": "them",
+          "start": 3.526,
+          "end": 3.703,
+          "frame": 106,
+          "endFrame": 111
+        },
+        {
+          "token": "come",
+          "start": 3.715,
+          "end": 3.903,
+          "frame": 111,
+          "endFrame": 117
+        },
+        {
+          "token": "back.",
+          "start": 3.915,
+          "end": 4.34,
+          "frame": 117,
+          "endFrame": 130
+        },
+        {
+          "token": "That's",
+          "start": 4.705,
+          "end": 4.953,
+          "frame": 141,
+          "endFrame": 149
+        },
+        {
+          "token": "the",
+          "start": 4.965,
+          "end": 5.083,
+          "frame": 149,
+          "endFrame": 152
+        },
+        {
+          "token": "logic.",
+          "start": 5.094,
+          "end": 5.684,
+          "frame": 153,
+          "endFrame": 171
+        }
+      ],
+      "to": 179,
+      "speechEnd": 171
+    },
+    {
+      "id": "S2",
+      "text": "A trial in JAMA Network Open just tested it. One thousand two hundred eighty six patients, after sepsis or pneumonia.",
+      "from": 179,
+      "words": [
+        {
+          "token": "A",
+          "start": 6.061,
+          "end": 6.108,
+          "frame": 182,
+          "endFrame": 183
+        },
+        {
+          "token": "trial",
+          "start": 6.12,
+          "end": 6.639,
+          "frame": 184,
+          "endFrame": 199
+        },
+        {
+          "token": "in",
+          "start": 6.651,
+          "end": 6.804,
+          "frame": 200,
+          "endFrame": 204
+        },
+        {
+          "token": "JAMA",
+          "start": 6.816,
+          "end": 7.087,
+          "frame": 204,
+          "endFrame": 213
+        },
+        {
+          "token": "Network",
+          "start": 7.099,
+          "end": 7.5,
+          "frame": 213,
+          "endFrame": 225
+        },
+        {
+          "token": "Open",
+          "start": 7.512,
+          "end": 7.901,
+          "frame": 225,
+          "endFrame": 237
+        },
+        {
+          "token": "just",
+          "start": 7.913,
+          "end": 8.16,
+          "frame": 237,
+          "endFrame": 245
+        },
+        {
+          "token": "tested",
+          "start": 8.172,
+          "end": 8.538,
+          "frame": 245,
+          "endFrame": 256
+        },
+        {
+          "token": "it.",
+          "start": 8.55,
+          "end": 8.821,
+          "frame": 256,
+          "endFrame": 265
+        },
+        {
+          "token": "One",
+          "start": 9.21,
+          "end": 9.422,
+          "frame": 276,
+          "endFrame": 283
+        },
+        {
+          "token": "thousand",
+          "start": 9.434,
+          "end": 9.87,
+          "frame": 283,
+          "endFrame": 296
+        },
+        {
+          "token": "two",
+          "start": 9.882,
+          "end": 10.024,
+          "frame": 296,
+          "endFrame": 301
+        },
+        {
+          "token": "hundred",
+          "start": 10.035,
+          "end": 10.354,
+          "frame": 301,
+          "endFrame": 311
+        },
+        {
+          "token": "eighty",
+          "start": 10.366,
+          "end": 10.566,
+          "frame": 311,
+          "endFrame": 317
+        },
+        {
+          "token": "six",
+          "start": 10.578,
+          "end": 10.849,
+          "frame": 317,
+          "endFrame": 325
+        },
+        {
+          "token": "patients,",
+          "start": 10.861,
+          "end": 11.462,
+          "frame": 326,
+          "endFrame": 344
+        },
+        {
+          "token": "after",
+          "start": 11.686,
+          "end": 12.028,
+          "frame": 351,
+          "endFrame": 361
+        },
+        {
+          "token": "sepsis",
+          "start": 12.04,
+          "end": 12.559,
+          "frame": 361,
+          "endFrame": 377
+        },
+        {
+          "token": "or",
+          "start": 12.571,
+          "end": 12.7,
+          "frame": 377,
+          "endFrame": 381
+        },
+        {
+          "token": "pneumonia.",
+          "start": 12.712,
+          "end": 13.278,
+          "frame": 381,
+          "endFrame": 398
+        }
+      ],
+      "to": 406,
+      "speechEnd": 398
+    },
+    {
+      "id": "S3",
+      "text": "Vitals and symptoms, tracked from home. Four different monitoring strategies.",
+      "from": 406,
+      "words": [
+        {
+          "token": "Vitals",
+          "start": 13.632,
+          "end": 14.092,
+          "frame": 409,
+          "endFrame": 423
+        },
+        {
+          "token": "and",
+          "start": 14.104,
+          "end": 14.198,
+          "frame": 423,
+          "endFrame": 426
+        },
+        {
+          "token": "symptoms,",
+          "start": 14.21,
+          "end": 14.835,
+          "frame": 426,
+          "endFrame": 445
+        },
+        {
+          "token": "tracked",
+          "start": 14.858,
+          "end": 15.212,
+          "frame": 446,
+          "endFrame": 456
+        },
+        {
+          "token": "from",
+          "start": 15.224,
+          "end": 15.389,
+          "frame": 457,
+          "endFrame": 462
+        },
+        {
+          "token": "home.",
+          "start": 15.401,
+          "end": 15.802,
+          "frame": 462,
+          "endFrame": 474
+        },
+        {
+          "token": "Four",
+          "start": 16.179,
+          "end": 16.356,
+          "frame": 485,
+          "endFrame": 491
+        },
+        {
+          "token": "different",
+          "start": 16.368,
+          "end": 16.792,
+          "frame": 491,
+          "endFrame": 504
+        },
+        {
+          "token": "monitoring",
+          "start": 16.804,
+          "end": 17.347,
+          "frame": 504,
+          "endFrame": 520
+        },
+        {
+          "token": "strategies.",
+          "start": 17.358,
+          "end": 18.137,
+          "frame": 521,
+          "endFrame": 544
+        }
+      ],
+      "to": 552,
+      "speechEnd": 544
+    },
+    {
+      "id": "S4",
+      "text": "Ninety days later, readmissions with monitoring: thirty six to forty four percent. With usual follow up: thirty eight.",
+      "from": 552,
+      "words": [
+        {
+          "token": "Ninety",
+          "start": 18.502,
+          "end": 18.809,
+          "frame": 555,
+          "endFrame": 564
+        },
+        {
+          "token": "days",
+          "start": 18.821,
+          "end": 19.08,
+          "frame": 565,
+          "endFrame": 572
+        },
+        {
+          "token": "later,",
+          "start": 19.092,
+          "end": 19.469,
+          "frame": 573,
+          "endFrame": 584
+        },
+        {
+          "token": "readmissions",
+          "start": 20.035,
+          "end": 20.66,
+          "frame": 601,
+          "endFrame": 620
+        },
+        {
+          "token": "with",
+          "start": 20.672,
+          "end": 20.825,
+          "frame": 620,
+          "endFrame": 625
+        },
+        {
+          "token": "monitoring:",
+          "start": 20.837,
+          "end": 21.486,
+          "frame": 625,
+          "endFrame": 645
+        },
+        {
+          "token": "thirty",
+          "start": 22.052,
+          "end": 22.335,
+          "frame": 662,
+          "endFrame": 670
+        },
+        {
+          "token": "six",
+          "start": 22.347,
+          "end": 22.748,
+          "frame": 670,
+          "endFrame": 682
+        },
+        {
+          "token": "to",
+          "start": 22.759,
+          "end": 22.866,
+          "frame": 683,
+          "endFrame": 686
+        },
+        {
+          "token": "forty",
+          "start": 22.877,
+          "end": 23.172,
+          "frame": 686,
+          "endFrame": 695
+        },
+        {
+          "token": "four",
+          "start": 23.184,
+          "end": 23.384,
+          "frame": 696,
+          "endFrame": 702
+        },
+        {
+          "token": "percent.",
+          "start": 23.396,
+          "end": 23.891,
+          "frame": 702,
+          "endFrame": 717
+        },
+        {
+          "token": "With",
+          "start": 24.269,
+          "end": 24.399,
+          "frame": 728,
+          "endFrame": 732
+        },
+        {
+          "token": "usual",
+          "start": 24.41,
+          "end": 24.811,
+          "frame": 732,
+          "endFrame": 744
+        },
+        {
+          "token": "follow",
+          "start": 24.823,
+          "end": 25.259,
+          "frame": 745,
+          "endFrame": 758
+        },
+        {
+          "token": "up:",
+          "start": 25.271,
+          "end": 25.507,
+          "frame": 758,
+          "endFrame": 765
+        },
+        {
+          "token": "thirty",
+          "start": 26.014,
+          "end": 26.368,
+          "frame": 780,
+          "endFrame": 791
+        },
+        {
+          "token": "eight.",
+          "start": 26.38,
+          "end": 26.651,
+          "frame": 791,
+          "endFrame": 800
+        }
+      ],
+      "to": 807,
+      "speechEnd": 800
+    },
+    {
+      "id": "S5",
+      "text": "No significant difference. And older patients were readmitted more often, not less.",
+      "from": 807,
+      "words": [
+        {
+          "token": "No",
+          "start": 27.017,
+          "end": 27.241,
+          "frame": 810,
+          "endFrame": 817
+        },
+        {
+          "token": "significant",
+          "start": 27.252,
+          "end": 27.913,
+          "frame": 818,
+          "endFrame": 837
+        },
+        {
+          "token": "difference.",
+          "start": 27.925,
+          "end": 28.514,
+          "frame": 838,
+          "endFrame": 855
+        },
+        {
+          "token": "And",
+          "start": 28.892,
+          "end": 29.045,
+          "frame": 867,
+          "endFrame": 871
+        },
+        {
+          "token": "older",
+          "start": 29.057,
+          "end": 29.375,
+          "frame": 872,
+          "endFrame": 881
+        },
+        {
+          "token": "patients",
+          "start": 29.387,
+          "end": 29.906,
+          "frame": 882,
+          "endFrame": 897
+        },
+        {
+          "token": "were",
+          "start": 29.917,
+          "end": 30.13,
+          "frame": 898,
+          "endFrame": 904
+        },
+        {
+          "token": "readmitted",
+          "start": 30.142,
+          "end": 30.59,
+          "frame": 904,
+          "endFrame": 918
+        },
+        {
+          "token": "more",
+          "start": 30.601,
+          "end": 30.825,
+          "frame": 918,
+          "endFrame": 925
+        },
+        {
+          "token": "often,",
+          "start": 30.837,
+          "end": 31.285,
+          "frame": 925,
+          "endFrame": 939
+        },
+        {
+          "token": "not",
+          "start": 31.297,
+          "end": 31.592,
+          "frame": 939,
+          "endFrame": 948
+        },
+        {
+          "token": "less.",
+          "start": 31.604,
+          "end": 32.028,
+          "frame": 948,
+          "endFrame": 961
+        }
+      ],
+      "to": 968,
+      "speechEnd": 961
+    },
+    {
+      "id": "S6",
+      "text": "A monitor collects numbers. Someone still has to decide what each number means, for this patient.",
+      "from": 968,
+      "words": [
+        {
+          "token": "A",
+          "start": 32.382,
+          "end": 32.429,
+          "frame": 971,
+          "endFrame": 973
+        },
+        {
+          "token": "monitor",
+          "start": 32.441,
+          "end": 32.901,
+          "frame": 973,
+          "endFrame": 987
+        },
+        {
+          "token": "collects",
+          "start": 32.913,
+          "end": 33.349,
+          "frame": 987,
+          "endFrame": 1000
+        },
+        {
+          "token": "numbers.",
+          "start": 33.361,
+          "end": 33.95,
+          "frame": 1001,
+          "endFrame": 1019
+        },
+        {
+          "token": "Someone",
+          "start": 34.294,
+          "end": 34.636,
+          "frame": 1029,
+          "endFrame": 1039
+        },
+        {
+          "token": "still",
+          "start": 34.648,
+          "end": 34.942,
+          "frame": 1039,
+          "endFrame": 1048
+        },
+        {
+          "token": "has",
+          "start": 34.954,
+          "end": 35.178,
+          "frame": 1049,
+          "endFrame": 1055
+        },
+        {
+          "token": "to",
+          "start": 35.19,
+          "end": 35.284,
+          "frame": 1056,
+          "endFrame": 1059
+        },
+        {
+          "token": "decide",
+          "start": 35.296,
+          "end": 35.803,
+          "frame": 1059,
+          "endFrame": 1074
+        },
+        {
+          "token": "what",
+          "start": 35.815,
+          "end": 35.992,
+          "frame": 1074,
+          "endFrame": 1080
+        },
+        {
+          "token": "each",
+          "start": 36.004,
+          "end": 36.204,
+          "frame": 1080,
+          "endFrame": 1086
+        },
+        {
+          "token": "number",
+          "start": 36.216,
+          "end": 36.499,
+          "frame": 1086,
+          "endFrame": 1095
+        },
+        {
+          "token": "means,",
+          "start": 36.511,
+          "end": 37.018,
+          "frame": 1095,
+          "endFrame": 1111
+        },
+        {
+          "token": "for",
+          "start": 37.419,
+          "end": 37.608,
+          "frame": 1123,
+          "endFrame": 1128
+        },
+        {
+          "token": "this",
+          "start": 37.619,
+          "end": 37.796,
+          "frame": 1129,
+          "endFrame": 1134
+        },
+        {
+          "token": "patient.",
+          "start": 37.808,
+          "end": 38.35,
+          "frame": 1134,
+          "endFrame": 1151
+        }
+      ],
+      "to": 1158,
+      "speechEnd": 1151
+    },
+    {
+      "id": "S7",
+      "text": "More data isn't more care. A plan is.",
+      "from": 1158,
+      "words": [
+        {
+          "token": "More",
+          "start": 38.703,
+          "end": 38.927,
+          "frame": 1161,
+          "endFrame": 1168
+        },
+        {
+          "token": "data",
+          "start": 38.939,
+          "end": 39.304,
+          "frame": 1168,
+          "endFrame": 1179
+        },
+        {
+          "token": "isn't",
+          "start": 39.316,
+          "end": 39.599,
+          "frame": 1179,
+          "endFrame": 1188
+        },
+        {
+          "token": "more",
+          "start": 39.611,
+          "end": 39.799,
+          "frame": 1188,
+          "endFrame": 1194
+        },
+        {
+          "token": "care.",
+          "start": 39.811,
+          "end": 40.224,
+          "frame": 1194,
+          "endFrame": 1207
+        },
+        {
+          "token": "A",
+          "start": 40.566,
+          "end": 40.601,
+          "frame": 1217,
+          "endFrame": 1218
+        },
+        {
+          "token": "plan",
+          "start": 40.613,
+          "end": 40.908,
+          "frame": 1218,
+          "endFrame": 1227
+        },
+        {
+          "token": "is.",
+          "start": 40.92,
+          "end": 41.262,
+          "frame": 1228,
+          "endFrame": 1238
+        }
+      ],
+      "to": 1298,
+      "speechEnd": 1238
+    }
+  ]
+}
