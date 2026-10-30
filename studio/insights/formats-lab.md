@@ -9,6 +9,7 @@ The daily run tests a different format and style each time, faceless and without
 3. After that: 60% the best-rated format (mean rating), 40% the others, so new ideas still get tried.
 4. A format rated 4 or lower twice in a row is paused; one rated 8+ gets a variation next time (same format, new style or topic angle).
 5. Each run states in the delivery which format and style it tested, so the rating is clear.
+6. The user rates in words ("liked", "best", "disliked"), not always 1-10: record the words, and score them ++ / + / − for the rotation.
 
 ## Formats
 
@@ -16,7 +17,7 @@ The daily run tests a different format and style each time, faceless and without
 |---|---|---|---|---|---|
 | F1 | **Mascot sitcom**: a recurring mascot and a human-ish sidekick in a short scene; the lesson comes out of a mistake | Klod series | 3D mascot (three.js) in a simple lit set, prop card, laptop screen | 2 voices dialogue | testing (pilot ep01) |
 | F2 | **Faceless parable**: a situation, a dialogue, one reframing line, a resolution; one metaphor object | Garib | flat illustrated scenes (SVG people with blank faces), film camera grammar via parallax and cuts | narrator + 1-2 voices | untested |
-| F3 | **B-roll story**: one continuous first-person narration, a new picture every 1-2 s, screens as proof, a pattern break every 5-8 s | farza, Adema | kinetic typography, UI screens built in code, charts, icons, stock clips if a Pexels key exists | 1 narrator | testing |
+| F3 | **B-roll story**: one continuous first-person narration, a new picture every 1-2 s, screens as proof, a pattern break every 5-8 s | farza, Adema | kinetic typography, UI screens built in code, charts, icons, stock clips if a Pexels key exists | 1 narrator | leading |
 | F4 | **Chat drama**: a patient-doctor (or doctor-AI) conversation played out on a phone screen; the twist is in the last message | dialogue refs | phone UI in code, typing dots, reactions, a final reveal card | message sounds + optional narrator | testing |
 | F5 | **Drawn explainer**: the split-screen panel style without the speaker, full-screen drawing on the words | DerkrLKITbV (earlier ref) | panels drawn in code | 1 narrator | testing |
 
@@ -32,8 +33,8 @@ Names and looks can change after feedback; keep them stable once something wins.
 
 | Format | Runs | Ratings | Mean | Notes |
 |---|---|---|---|---|
-| F1 | 1 | | | ep01-forgotten-plan: 3D toy diorama, `kit/Cast3D.tsx` |
+| F1 | 1 | liked | + | ep01: dialogue good; voice and 3D animation poor |
 | F2 | 0 | | | |
-| F3 | 1 | | | 2026-10-28-scribe-evening: editorial kinetic type, cut every 1-2 s, sound on every beat |
-| F4 | 1 | | | 2026-10-26-midnight-question: night mode, split-screen twist, 1 narrator |
-| F5 | 1 | | | 2026-10-30-monitor-not-plan: navy blueprint panels, chart held for the verdict |
+| F3 | 1 | liked, best | ++ | scribe-evening: clear narration arc (hook, explanation, reward) |
+| F4 | 1 | liked | + | midnight-question: problem framed right; voice not good |
+| F5 | 1 | disliked | − | monitor-not-plan: ad tone and CTA, not the drawings, were the problem; retry once with the F3 narration rules before pausing |
