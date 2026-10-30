@@ -32,7 +32,7 @@ const SHOTS: Record<string, Shot> = {
   wideEnd: { pos: [0.9, 1.5, 2.6], look: [-0.1, 1.2, 0], fov: 36, drift: [0.5, 0.25, 0.9] },
   doctor: { pos: [0.55, 1.6, 1.25], look: [-0.65, 1.45, 0], fov: 32, drift: [-0.06, 0, -0.1] },
   doc: { pos: [-0.75, 1.5, 1.75], look: [0.45, 1.38, 0.08], fov: 32, drift: [0.06, 0, -0.15] },
-  ots: { pos: [1.55, 1.65, -0.35], look: [-0.65, 1.42, 0.05], fov: 34, drift: [-0.1, 0, 0.1] },
+  ots: { pos: [2.2, 1.7, 1.25], look: [-0.5, 1.38, 0], fov: 30, drift: [-0.15, 0, -0.1] },
 };
 const SHOT_OF: Record<string, keyof typeof SHOTS> = {
   S1: "wide", S2: "doc", S3: "doctor", S4: "doc", S5: "doctor", S6: "ots", S7: "doctor", S8: "doc", S9: "wide",
@@ -256,7 +256,7 @@ export const Ep02AlertNobodyOwned: React.FC = () => {
       <TopCard />
       <Subs />
       <CinemaGrade grain={0.08} vignette={0} glow="#000000" />
-      <VoiceOver take={TAKE} volume={1} />
+      <VoiceOver take={TAKE} volume={1.25} />
       <SfxTrack cues={sfx()} />
     </AbsoluteFill>
   );

@@ -33,7 +33,7 @@ Names and looks can change after feedback; keep them stable once something wins.
 
 | Format | Runs | Ratings | Mean | Notes |
 |---|---|---|---|---|
-| F1 | 1 | liked | + | ep01: dialogue good; voice and 3D animation poor |
+| F1 | 2 | liked | + | ep01: dialogue good; voice and 3D animation poor. ep02: v2 look (low-poly, cinematic grade, split UI card, kit/LowPoly.tsx + kit/CinemaGrade.tsx) |
 | F2 | 0 | | | |
 | F3 | 1 | liked, best | ++ | scribe-evening: clear narration arc (hook, explanation, reward) |
 | F4 | 1 | liked | + | midnight-question: problem framed right; voice not good |
