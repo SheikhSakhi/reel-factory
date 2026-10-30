@@ -160,18 +160,18 @@ export const DocBot: React.FC<DocProps> = ({ position, frame, talk = 0, turn = 0
   return (
     <group position={[position[0], position[1] + hover + bob, position[2]]} rotation={[0, turn, Math.sin(frame / 45) * 0.04]}>
       <M><icosahedronGeometry args={[size, 1]} /><Flat color={color} rough={0.45} metal={0.1} /></M>
-      {/* screen face */}
-      <mesh position={[0, 0, size * 0.62]} rotation={[0, 0, 0]}>
-        <circleGeometry args={[size * 0.72, 10]} />
-        <meshStandardMaterial color="#0C1012" roughness={0.25} metalness={0.2} flatShading />
+      {/* screen face: a dark visor set into the front of the head, with a light bezel */}
+      <mesh position={[0, 0, size * 0.9]} scale={[1, 0.86, 0.32]}>
+        <sphereGeometry args={[size * 0.66, 12, 8]} />
+        <meshStandardMaterial color="#0C1012" roughness={0.2} metalness={0.3} flatShading />
       </mesh>
-      <mesh position={[0, 0, size * 0.6]}>
-        <torusGeometry args={[size * 0.74, size * 0.05, 4, 10]} />
+      <mesh position={[0, 0, size * 0.88]} scale={[1, 0.86, 1]}>
+        <torusGeometry args={[size * 0.68, size * 0.06, 4, 12]} />
         <meshStandardMaterial color="#E9E2D3" roughness={0.5} flatShading />
       </mesh>
       {/* eyes */}
       {[-1, 1].map((s) => (
-        <mesh key={s} position={[s * size * 0.26, size * 0.14, size * 0.64]} scale={[1, blink, 1]}>
+        <mesh key={s} position={[s * size * 0.26, size * 0.12, size * 1.12]} scale={[1, blink, 1]}>
           <boxGeometry args={[size * 0.2, size * 0.1, 0.01]} />
           <meshStandardMaterial color={eyes} emissive={eyes} emissiveIntensity={2.2} />
         </mesh>
@@ -180,7 +180,7 @@ export const DocBot: React.FC<DocProps> = ({ position, frame, talk = 0, turn = 0
       {Array.from({ length: bars }).map((_, i) => {
         const h = size * (0.04 + 0.12 * talk * Math.abs(Math.sin(frame * 0.8 + i * 1.3)));
         return (
-          <mesh key={i} position={[(i - (bars - 1) / 2) * size * 0.07, -size * 0.2, size * 0.64]}>
+          <mesh key={i} position={[(i - (bars - 1) / 2) * size * 0.07, -size * 0.2, size * 1.11]}>
             <boxGeometry args={[size * 0.04, h, 0.01]} />
             <meshStandardMaterial color={eyes} emissive={eyes} emissiveIntensity={1.8} />
           </mesh>
@@ -256,7 +256,7 @@ export const NightStudio: React.FC<{ frame: number; screen?: string; lamp?: numb
         <mesh position={[-0.1, 0.43, 0.15]}><icosahedronGeometry args={[0.04, 0]} /><meshStandardMaterial color="#FFE2B0" emissive="#FFC27A" emissiveIntensity={3 * lamp} /></mesh>
       </group>
       {/* mic on a stand, as in a creator's studio */}
-      <group position={[0.15, 0, 0.55]}>
+      <group position={[1.45, 0, -0.9]}>
         <M position={[0, 0.02, 0]}><cylinderGeometry args={[0.16, 0.18, 0.03, 6]} /><Flat color="#1E1E1E" /></M>
         <M position={[0, 0.8, 0]}><cylinderGeometry args={[0.012, 0.012, 1.6, 5]} /><Flat color="#1E1E1E" /></M>
         <M position={[0, 1.62, 0.04]} rotation={[0.4, 0, 0]}><cylinderGeometry args={[0.035, 0.035, 0.14, 6]} /><Flat color="#3A3A3A" metal={0.5} rough={0.4} /></M>

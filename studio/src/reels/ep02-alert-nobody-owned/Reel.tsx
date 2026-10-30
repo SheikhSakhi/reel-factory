@@ -31,7 +31,7 @@ const SHOTS: Record<string, Shot> = {
   wide: { pos: [1.15, 1.55, 3.1], look: [-0.1, 1.2, 0], fov: 36, drift: [-0.15, 0, -0.2] },
   wideEnd: { pos: [0.9, 1.5, 2.6], look: [-0.1, 1.2, 0], fov: 36, drift: [0.5, 0.25, 0.9] },
   doctor: { pos: [0.55, 1.6, 1.25], look: [-0.65, 1.45, 0], fov: 32, drift: [-0.06, 0, -0.1] },
-  doc: { pos: [-0.35, 1.5, 1.15], look: [0.5, 1.42, 0.08], fov: 32, drift: [0.05, 0, -0.12] },
+  doc: { pos: [-0.75, 1.5, 1.75], look: [0.45, 1.38, 0.08], fov: 32, drift: [0.06, 0, -0.15] },
   ots: { pos: [1.55, 1.65, -0.35], look: [-0.65, 1.42, 0.05], fov: 34, drift: [-0.1, 0, 0.1] },
 };
 const SHOT_OF: Record<string, keyof typeof SHOTS> = {
@@ -39,7 +39,7 @@ const SHOT_OF: Record<string, keyof typeof SHOTS> = {
   S10: "doctor", S11: "doc", S12: "doctor", S13: "wideEnd",
 };
 // Doc faces the doctor (-PI/2) or turns toward the camera in its close-ups.
-const DOC_TURN: Record<keyof typeof SHOTS, number> = { wide: -1.0, wideEnd: -1.0, doctor: -Math.PI / 2, doc: -0.69, ots: -Math.PI / 2 };
+const DOC_TURN: Record<keyof typeof SHOTS, number> = { wide: -0.75, wideEnd: -0.8, doctor: -Math.PI / 2, doc: -0.62, ots: -Math.PI / 2 };
 
 const lineAt = (f: number): Line => LINES.find((l) => f >= l.from && f < l.to) ?? LINES[LINES.length - 1];
 const L = (id: string): Line => LINES.find((l) => l.id === id)!;
