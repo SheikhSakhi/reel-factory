@@ -1,0 +1,851 @@
+{
+  "file": "vo/ep02-alert-nobody-owned/take.mp3",
+  "voice": "dialogue",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 1267,
+  "cast": {
+    "DOCTOR": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "+2%",
+      "pitch": "-4Hz"
+    },
+    "DOC": {
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": "+6%",
+      "pitch": "+8Hz"
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "Doc. Why did I get four hundred alerts today?",
+      "from": 0,
+      "words": [
+        {
+          "token": "Doc.",
+          "start": 0.098,
+          "end": 0.686,
+          "frame": 3,
+          "endFrame": 21
+        },
+        {
+          "token": "Why",
+          "start": 1.078,
+          "end": 1.152,
+          "frame": 32,
+          "endFrame": 35
+        },
+        {
+          "token": "did",
+          "start": 1.152,
+          "end": 1.225,
+          "frame": 35,
+          "endFrame": 37
+        },
+        {
+          "token": "I",
+          "start": 1.226,
+          "end": 1.311,
+          "frame": 37,
+          "endFrame": 39
+        },
+        {
+          "token": "get",
+          "start": 1.311,
+          "end": 1.446,
+          "frame": 39,
+          "endFrame": 43
+        },
+        {
+          "token": "four",
+          "start": 1.446,
+          "end": 1.777,
+          "frame": 43,
+          "endFrame": 53
+        },
+        {
+          "token": "hundred",
+          "start": 1.789,
+          "end": 1.973,
+          "frame": 54,
+          "endFrame": 59
+        },
+        {
+          "token": "alerts",
+          "start": 1.985,
+          "end": 2.267,
+          "frame": 60,
+          "endFrame": 68
+        },
+        {
+          "token": "today?",
+          "start": 2.267,
+          "end": 2.672,
+          "frame": 68,
+          "endFrame": 80
+        }
+      ],
+      "to": 92,
+      "speechEnd": 80,
+      "speaker": "DOCTOR"
+    },
+    {
+      "id": "S2",
+      "text": "You said, alert me on everything.",
+      "from": 92,
+      "words": [
+        {
+          "token": "You",
+          "start": 3.163,
+          "end": 3.245,
+          "frame": 95,
+          "endFrame": 97
+        },
+        {
+          "token": "said,",
+          "start": 3.257,
+          "end": 3.623,
+          "frame": 98,
+          "endFrame": 109
+        },
+        {
+          "token": "alert",
+          "start": 4.024,
+          "end": 4.271,
+          "frame": 121,
+          "endFrame": 128
+        },
+        {
+          "token": "me",
+          "start": 4.283,
+          "end": 4.483,
+          "frame": 128,
+          "endFrame": 135
+        },
+        {
+          "token": "on",
+          "start": 4.495,
+          "end": 4.802,
+          "frame": 135,
+          "endFrame": 144
+        },
+        {
+          "token": "everything.",
+          "start": 4.92,
+          "end": 5.533,
+          "frame": 148,
+          "endFrame": 166
+        }
+      ],
+      "to": 179,
+      "speechEnd": 166,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S3",
+      "text": "I meant the important things.",
+      "from": 179,
+      "words": [
+        {
+          "token": "I",
+          "start": 6.051,
+          "end": 6.088,
+          "frame": 182,
+          "endFrame": 183
+        },
+        {
+          "token": "meant",
+          "start": 6.088,
+          "end": 6.284,
+          "frame": 183,
+          "endFrame": 189
+        },
+        {
+          "token": "the",
+          "start": 6.284,
+          "end": 6.345,
+          "frame": 189,
+          "endFrame": 190
+        },
+        {
+          "token": "important",
+          "start": 6.345,
+          "end": 6.762,
+          "frame": 190,
+          "endFrame": 203
+        },
+        {
+          "token": "things.",
+          "start": 6.774,
+          "end": 7.362,
+          "frame": 203,
+          "endFrame": 221
+        }
+      ],
+      "to": 233,
+      "speechEnd": 221,
+      "speaker": "DOCTOR"
+    },
+    {
+      "id": "S4",
+      "text": "They were all important. To someone.",
+      "from": 233,
+      "words": [
+        {
+          "token": "They",
+          "start": 7.865,
+          "end": 7.982,
+          "frame": 236,
+          "endFrame": 239
+        },
+        {
+          "token": "were",
+          "start": 7.982,
+          "end": 8.206,
+          "frame": 239,
+          "endFrame": 246
+        },
+        {
+          "token": "all",
+          "start": 8.218,
+          "end": 8.431,
+          "frame": 247,
+          "endFrame": 253
+        },
+        {
+          "token": "important.",
+          "start": 8.431,
+          "end": 8.973,
+          "frame": 253,
+          "endFrame": 269
+        },
+        {
+          "token": "To",
+          "start": 9.339,
+          "end": 9.409,
+          "frame": 280,
+          "endFrame": 282
+        },
+        {
+          "token": "someone.",
+          "start": 9.421,
+          "end": 9.975,
+          "frame": 283,
+          "endFrame": 299
+        }
+      ],
+      "to": 312,
+      "speechEnd": 299,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S5",
+      "text": "I stopped reading them after lunch.",
+      "from": 312,
+      "words": [
+        {
+          "token": "I",
+          "start": 10.493,
+          "end": 10.554,
+          "frame": 315,
+          "endFrame": 317
+        },
+        {
+          "token": "stopped",
+          "start": 10.554,
+          "end": 10.861,
+          "frame": 317,
+          "endFrame": 326
+        },
+        {
+          "token": "reading",
+          "start": 10.861,
+          "end": 11.069,
+          "frame": 326,
+          "endFrame": 332
+        },
+        {
+          "token": "them",
+          "start": 11.069,
+          "end": 11.167,
+          "frame": 332,
+          "endFrame": 335
+        },
+        {
+          "token": "after",
+          "start": 11.167,
+          "end": 11.388,
+          "frame": 335,
+          "endFrame": 342
+        },
+        {
+          "token": "lunch.",
+          "start": 11.4,
+          "end": 11.841,
+          "frame": 342,
+          "endFrame": 355
+        }
+      ],
+      "to": 367,
+      "speechEnd": 355,
+      "speaker": "DOCTOR"
+    },
+    {
+      "id": "S6",
+      "text": "Most doctors do. Studies found safety alerts get overridden in half to almost all cases.",
+      "from": 367,
+      "words": [
+        {
+          "token": "Most",
+          "start": 12.344,
+          "end": 12.65,
+          "frame": 370,
+          "endFrame": 380
+        },
+        {
+          "token": "doctors",
+          "start": 12.662,
+          "end": 13.086,
+          "frame": 380,
+          "endFrame": 393
+        },
+        {
+          "token": "do.",
+          "start": 13.086,
+          "end": 13.393,
+          "frame": 393,
+          "endFrame": 402
+        },
+        {
+          "token": "Studies",
+          "start": 13.759,
+          "end": 14.16,
+          "frame": 413,
+          "endFrame": 425
+        },
+        {
+          "token": "found",
+          "start": 14.171,
+          "end": 14.419,
+          "frame": 425,
+          "endFrame": 433
+        },
+        {
+          "token": "safety",
+          "start": 14.419,
+          "end": 14.796,
+          "frame": 433,
+          "endFrame": 444
+        },
+        {
+          "token": "alerts",
+          "start": 14.808,
+          "end": 15.162,
+          "frame": 444,
+          "endFrame": 455
+        },
+        {
+          "token": "get",
+          "start": 15.174,
+          "end": 15.351,
+          "frame": 455,
+          "endFrame": 461
+        },
+        {
+          "token": "overridden",
+          "start": 15.398,
+          "end": 15.881,
+          "frame": 462,
+          "endFrame": 476
+        },
+        {
+          "token": "in",
+          "start": 15.881,
+          "end": 15.964,
+          "frame": 476,
+          "endFrame": 479
+        },
+        {
+          "token": "half",
+          "start": 15.964,
+          "end": 16.4,
+          "frame": 479,
+          "endFrame": 492
+        },
+        {
+          "token": "to",
+          "start": 16.412,
+          "end": 16.542,
+          "frame": 492,
+          "endFrame": 496
+        },
+        {
+          "token": "almost",
+          "start": 16.542,
+          "end": 16.919,
+          "frame": 496,
+          "endFrame": 508
+        },
+        {
+          "token": "all",
+          "start": 16.978,
+          "end": 17.178,
+          "frame": 509,
+          "endFrame": 515
+        },
+        {
+          "token": "cases.",
+          "start": 17.19,
+          "end": 17.827,
+          "frame": 516,
+          "endFrame": 535
+        }
+      ],
+      "to": 547,
+      "speechEnd": 535,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S7",
+      "text": "So alerts don't work?",
+      "from": 547,
+      "words": [
+        {
+          "token": "So",
+          "start": 18.345,
+          "end": 18.492,
+          "frame": 550,
+          "endFrame": 555
+        },
+        {
+          "token": "alerts",
+          "start": 18.504,
+          "end": 18.774,
+          "frame": 555,
+          "endFrame": 563
+        },
+        {
+          "token": "don't",
+          "start": 18.774,
+          "end": 18.97,
+          "frame": 563,
+          "endFrame": 569
+        },
+        {
+          "token": "work?",
+          "start": 18.982,
+          "end": 19.313,
+          "frame": 569,
+          "endFrame": 579
+        }
+      ],
+      "to": 591,
+      "speechEnd": 579,
+      "speaker": "DOCTOR"
+    },
+    {
+      "id": "S8",
+      "text": "Alerts nobody owns don't work.",
+      "from": 591,
+      "words": [
+        {
+          "token": "Alerts",
+          "start": 19.804,
+          "end": 20.205,
+          "frame": 594,
+          "endFrame": 606
+        },
+        {
+          "token": "nobody",
+          "start": 20.217,
+          "end": 20.724,
+          "frame": 606,
+          "endFrame": 622
+        },
+        {
+          "token": "owns",
+          "start": 20.735,
+          "end": 21.018,
+          "frame": 622,
+          "endFrame": 631
+        },
+        {
+          "token": "don't",
+          "start": 21.018,
+          "end": 21.219,
+          "frame": 631,
+          "endFrame": 637
+        },
+        {
+          "token": "work.",
+          "start": 21.231,
+          "end": 21.584,
+          "frame": 637,
+          "endFrame": 648
+        }
+      ],
+      "to": 661,
+      "speechEnd": 648,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S9",
+      "text": "For each patient: one threshold. One person. One action.",
+      "from": 661,
+      "words": [
+        {
+          "token": "For",
+          "start": 22.122,
+          "end": 22.263,
+          "frame": 664,
+          "endFrame": 668
+        },
+        {
+          "token": "each",
+          "start": 22.346,
+          "end": 22.617,
+          "frame": 670,
+          "endFrame": 679
+        },
+        {
+          "token": "patient:",
+          "start": 22.629,
+          "end": 23.124,
+          "frame": 679,
+          "endFrame": 694
+        },
+        {
+          "token": "one",
+          "start": 23.62,
+          "end": 23.891,
+          "frame": 709,
+          "endFrame": 717
+        },
+        {
+          "token": "threshold.",
+          "start": 23.903,
+          "end": 24.539,
+          "frame": 717,
+          "endFrame": 736
+        },
+        {
+          "token": "One",
+          "start": 24.883,
+          "end": 25.083,
+          "frame": 746,
+          "endFrame": 752
+        },
+        {
+          "token": "person.",
+          "start": 25.095,
+          "end": 25.555,
+          "frame": 753,
+          "endFrame": 767
+        },
+        {
+          "token": "One",
+          "start": 25.884,
+          "end": 26.12,
+          "frame": 777,
+          "endFrame": 784
+        },
+        {
+          "token": "action.",
+          "start": 26.132,
+          "end": 26.651,
+          "frame": 784,
+          "endFrame": 800
+        }
+      ],
+      "to": 814,
+      "speechEnd": 800,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S10",
+      "text": "Fine. Mrs. Rao. If her oxygen drops below what we agreed, you call me.",
+      "from": 814,
+      "words": [
+        {
+          "token": "Fine.",
+          "start": 27.23,
+          "end": 27.573,
+          "frame": 817,
+          "endFrame": 827
+        },
+        {
+          "token": "Mrs.",
+          "start": 27.966,
+          "end": 28.26,
+          "frame": 839,
+          "endFrame": 848
+        },
+        {
+          "token": "Rao.",
+          "start": 28.26,
+          "end": 28.615,
+          "frame": 848,
+          "endFrame": 858
+        },
+        {
+          "token": "If",
+          "start": 29.007,
+          "end": 29.105,
+          "frame": 870,
+          "endFrame": 873
+        },
+        {
+          "token": "her",
+          "start": 29.105,
+          "end": 29.265,
+          "frame": 873,
+          "endFrame": 878
+        },
+        {
+          "token": "oxygen",
+          "start": 29.265,
+          "end": 29.743,
+          "frame": 878,
+          "endFrame": 892
+        },
+        {
+          "token": "drops",
+          "start": 29.755,
+          "end": 30.098,
+          "frame": 893,
+          "endFrame": 903
+        },
+        {
+          "token": "below",
+          "start": 30.098,
+          "end": 30.441,
+          "frame": 903,
+          "endFrame": 913
+        },
+        {
+          "token": "what",
+          "start": 30.453,
+          "end": 30.576,
+          "frame": 914,
+          "endFrame": 917
+        },
+        {
+          "token": "we",
+          "start": 30.576,
+          "end": 30.711,
+          "frame": 917,
+          "endFrame": 921
+        },
+        {
+          "token": "agreed,",
+          "start": 30.711,
+          "end": 31.152,
+          "frame": 921,
+          "endFrame": 935
+        },
+        {
+          "token": "you",
+          "start": 31.385,
+          "end": 31.483,
+          "frame": 942,
+          "endFrame": 944
+        },
+        {
+          "token": "call",
+          "start": 31.495,
+          "end": 31.765,
+          "frame": 945,
+          "endFrame": 953
+        },
+        {
+          "token": "me.",
+          "start": 31.777,
+          "end": 32.01,
+          "frame": 953,
+          "endFrame": 960
+        }
+      ],
+      "to": 972,
+      "speechEnd": 960,
+      "speaker": "DOCTOR"
+    },
+    {
+      "id": "S11",
+      "text": "Done. Four hundred alerts. Now, one.",
+      "from": 972,
+      "words": [
+        {
+          "token": "Done.",
+          "start": 32.501,
+          "end": 32.807,
+          "frame": 975,
+          "endFrame": 984
+        },
+        {
+          "token": "Four",
+          "start": 33.255,
+          "end": 33.468,
+          "frame": 998,
+          "endFrame": 1004
+        },
+        {
+          "token": "hundred",
+          "start": 33.48,
+          "end": 33.81,
+          "frame": 1004,
+          "endFrame": 1014
+        },
+        {
+          "token": "alerts.",
+          "start": 33.822,
+          "end": 34.34,
+          "frame": 1015,
+          "endFrame": 1030
+        },
+        {
+          "token": "Now,",
+          "start": 34.682,
+          "end": 35.072,
+          "frame": 1040,
+          "endFrame": 1052
+        },
+        {
+          "token": "one.",
+          "start": 35.083,
+          "end": 35.543,
+          "frame": 1052,
+          "endFrame": 1066
+        }
+      ],
+      "to": 1079,
+      "speechEnd": 1066,
+      "speaker": "DOC"
+    },
+    {
+      "id": "S12",
+      "text": "And if I miss that one?",
+      "from": 1079,
+      "words": [
+        {
+          "token": "And",
+          "start": 36.061,
+          "end": 36.11,
+          "frame": 1082,
+          "endFrame": 1083
+        },
+        {
+          "token": "if",
+          "start": 36.11,
+          "end": 36.196,
+          "frame": 1083,
+          "endFrame": 1086
+        },
+        {
+          "token": "I",
+          "start": 36.196,
+          "end": 36.257,
+          "frame": 1086,
+          "endFrame": 1088
+        },
+        {
+          "token": "miss",
+          "start": 36.269,
+          "end": 36.514,
+          "frame": 1088,
+          "endFrame": 1095
+        },
+        {
+          "token": "that",
+          "start": 36.527,
+          "end": 36.674,
+          "frame": 1096,
+          "endFrame": 1100
+        },
+        {
+          "token": "one?",
+          "start": 36.674,
+          "end": 36.882,
+          "frame": 1100,
+          "endFrame": 1106
+        }
+      ],
+      "to": 1118,
+      "speechEnd": 1106,
+      "speaker": "DOCTOR"
+    },
+    {
+      "id": "S13",
+      "text": "Then I call again. That's what owning it means.",
+      "from": 1118,
+      "words": [
+        {
+          "token": "Then",
+          "start": 37.373,
+          "end": 37.585,
+          "frame": 1121,
+          "endFrame": 1128
+        },
+        {
+          "token": "I",
+          "start": 37.597,
+          "end": 37.703,
+          "frame": 1128,
+          "endFrame": 1131
+        },
+        {
+          "token": "call",
+          "start": 37.715,
+          "end": 37.986,
+          "frame": 1131,
+          "endFrame": 1140
+        },
+        {
+          "token": "again.",
+          "start": 37.986,
+          "end": 38.422,
+          "frame": 1140,
+          "endFrame": 1153
+        },
+        {
+          "token": "That's",
+          "start": 38.788,
+          "end": 39.059,
+          "frame": 1164,
+          "endFrame": 1172
+        },
+        {
+          "token": "what",
+          "start": 39.071,
+          "end": 39.212,
+          "frame": 1172,
+          "endFrame": 1176
+        },
+        {
+          "token": "owning",
+          "start": 39.224,
+          "end": 39.495,
+          "frame": 1177,
+          "endFrame": 1185
+        },
+        {
+          "token": "it",
+          "start": 39.507,
+          "end": 39.59,
+          "frame": 1185,
+          "endFrame": 1188
+        },
+        {
+          "token": "means.",
+          "start": 39.602,
+          "end": 40.203,
+          "frame": 1188,
+          "endFrame": 1206
+        }
+      ],
+      "to": 1267,
+      "speechEnd": 1206,
+      "speaker": "DOC"
+    }
+  ]
+}
