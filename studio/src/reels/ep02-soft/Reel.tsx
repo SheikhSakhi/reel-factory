@@ -250,7 +250,7 @@ export const Ep02Soft: React.FC = () => {
       <Subs />
       <CinemaGrade grain={0.04} vignette={0} glow="#000000" />
       <VoiceOver take={TAKE} volume={1.25} />
-      <Audio src={staticFile("music/ep02-soft.wav")} volume={(f) => musicVolume(f)} />
+      <Audio src={staticFile("music/ep02-soft.mp3")} volume={(f) => musicVolume(f)} />
     </AbsoluteFill>
   );
 };
