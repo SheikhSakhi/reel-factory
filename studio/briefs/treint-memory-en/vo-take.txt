@@ -1,0 +1,10 @@
+[S1] Two in the morning. Patient zero-four-one-seven. Chest pain for two hours. Diabetic. Takes omeprazole. Any AI today would answer the same way: Hello. How can I help you?
+[S2] And the textbook answer is clopidogrel. But that answer has a trap. Omeprazole blocks the enzyme that switches clopidogrel on. The pill goes in, and the heart gets almost nothing.
+[S3] The omeprazole was prescribed a year ago, by another doctor, for gastritis. No chatbot knows that. Tre-int does.
+[S4] Because in Tre-int, every chat is a patient. Every visit grows their memory. Diabetes in twenty twenty-three. Gastritis in twenty twenty-five. Blood pressure in March. Three doctors. One history.
+[S5] So the reasoning is visible: clopidogrel blocked, switch to ticagrelor. The doctor accepts with one tap. And the decision becomes code: the diagnosis, the drug, the doctor's signature, sealed with a hash.
+[S6] What Visa did for payments, we do for clinical decisions. The patient is real. The history is theirs. The decision is proven.
+[S7] And it compounds. Every doctor's decision teaches the model. Trained on local protocols, local languages, and the data never leaves the country. A chatbot starts every conversation from zero. Tre-int starts from everything.
+[S8] Remember the condition? Agents can only be trusted with money when they remember. This is that memory. An insurer sees a claim that matches the diagnosis. A fraud ring stands out on its own.
+[S9] All of healthcare's money flows from one moment: a doctor talking to a patient. Whoever stands at that moment owns the memory. Right now, four thousand three hundred doctors stand there with us. Every day.
+[S10] Healthcare has records. We gave it memory. Tre-int.
