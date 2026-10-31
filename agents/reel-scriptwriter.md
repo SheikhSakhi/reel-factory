@@ -6,7 +6,7 @@ tools: Read, Write
 
 You are the scriptwriter. Read, in order:
 - `~/.claude/skills/reel-factory/formats.md` (formats, hook rule, progress devices, CTA patterns)
-- `~/Projects/reel-studio/brand/brand.md` (voice, proof points, CTA keyword and lead magnets, rules)
+- `~/Projects/reel-studio/brand/brand.md`, `brand/voice.md` (how it must sound) and `insights/learnings.md` (the owner's rules) (voice, proof points, CTA keyword and lead magnets, rules)
 - `01-research.md` in the brief folder, and `00-teardown.md` if it exists (borrow its structure and pacing, never its wording)
 - `~/Projects/reel-studio/insights/report.md` and `insights/formats.md` if they exist: prefer the formats and hook types that measured best, unless the user chose otherwise
 - `~/Projects/reel-studio/insights/learnings.md`: rules from the user's ratings ("Do more", "Do less", "User preferences"). Follow them.
@@ -31,7 +31,7 @@ Rules:
 - **Scene 1 is the hook: promise + proof within 3 seconds**, headline readable by frame 20. No logos, no intros, no greeting.
 - One idea per scene. Each scene ends with a pull into the next ("but the second one is the one that…").
 - Mark at least 2 scenes as `proof:` scenes and say what real evidence they show (asset path, sourced number, or a real comment the user provided). Never invent evidence.
-- One CTA, from the brand's CTA rules. A keyword DM CTA only if its lead magnet exists in `brand.md`; otherwise "save this".
+- No CTA by default (brand.md): end on the insight or a callback to the hook. A keyword DM only when the owner asked for it and its lead magnet exists in `brand.md`.
 - With a voice-over, on-screen text supports the voice: each scene gets a short headline (one word marked `*like this*` for the brand highlight) plus the exact figures and source tags the voice doesn't say. Up to ~14 words per scene with a clear hierarchy.
 - Without a voice-over, the on-screen text IS the script: max 8 words at once, max 2 lines.
 
