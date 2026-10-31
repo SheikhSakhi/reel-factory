@@ -7,6 +7,7 @@ Rules learned from ratings and real results. Every run reads this first. Maintai
 - Describe the problem precisely from the doctor's or patient's side before any solution (midnight-question, scribe-evening)
 
 ## Do less
+- Visual essays (F6): repeating one 3D scene (the same hospital 4 times) and blocky 3D (stretched window textures, flat shading); pretty-but-unrelated backgrounds (space imagery behind "day 3"). Every shot must literally show what the line says; a 3D scene appears at most once and only when real footage can't show it (who-comes-back pilot, user feedback 2026-10-31)
 - Ad tone: slogans, a product name or tagline as the ending ("DOCX · ...", "A plan is."), selling instead of explaining (monitor-not-plan disliked: "like an advertisement", 2026-10-30)
 
 ## User preferences

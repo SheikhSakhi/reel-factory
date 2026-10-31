@@ -117,4 +117,6 @@ What it does (watched at 1 and 4 fps, transcribed):
 - **Structure**: hook claim (they count cars from space) → mechanism → proof with a number and a study → escalation (oil, weather) → the name of the thing ("alternative data") → a moral question ("legal, not a fair fight") → callback to the viewer ("next time you park at Walmart, smile").
 - **Honesty markers**: the source study and imagery credits in the caption; "some visuals are illustrations". (Ends with "follow so you're never the last to know": a CTA; per learnings we skip it.)
 
+Rule learned from our pilot: the footage is literal. Each line gets the picture it names (a parking lot for "parking lot"); never a generic beautiful background, never the same scene twice.
+
 What we can make: real footage from open-licence libraries (NASA and ESA imagery, Copernicus, USDA NAIP, NIH and CDC public-domain medical images, Wikimedia Commons with credit; stock video with a free Pexels key), animated in Remotion (counters, boxes, glows, stamps, charts drawn onto the footage) with three.js scenes in between (globe, hospital at night, a floating dashboard). Never news or broadcast footage, never other creators' clips.

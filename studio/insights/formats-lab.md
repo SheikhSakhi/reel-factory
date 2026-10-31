@@ -38,5 +38,5 @@ Names and looks can change after feedback; keep them stable once something wins.
 | F2 | 0 | | | |
 | F3 | 1 | liked, best | ++ | scribe-evening: clear narration arc (hook, explanation, reward) |
 | F4 | 1 | liked | + | midnight-question: problem framed right; voice not good |
-| F6 | 1 | | | 2026-10-31-who-comes-back: pilot, kit/NightCity.tsx, NASA imagery (public domain) |
+| F6 | 1 | format liked, execution poor | + | who-comes-back: same 3D hospital 4x, poor 3D, space imagery unrelated to the lines. Needs literal footage per line (Pexels key) and one-off 3D |
 | F5 | 1 | disliked | − | monitor-not-plan: ad tone and CTA, not the drawings, were the problem; retry once with the F3 narration rules before pausing |
