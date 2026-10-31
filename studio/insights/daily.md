@@ -10,4 +10,6 @@ Read by /reel-daily on every scheduled run. Change these lines to change the run
 - **Face:** none. Faceless characters, a mascot, screens and drawings only
 - **Style:** rotate formats and styles per `formats-lab.md`, studied from `references.md`; surprise the user, never repeat the last run's look
 - **Topics:** AI in healthcare, doctor workflows, patient care between visits, DocX/Treint where relevant
+- **CTA:** none. End on the insight. No product tag or slogan at the end, no "follow for more"; DocX appears only when the story is genuinely about it
+- **Tone:** a calm colleague explaining, never an advert
 - **Never:** individual medical advice, drug dosing, named patients, unverified claims, politics

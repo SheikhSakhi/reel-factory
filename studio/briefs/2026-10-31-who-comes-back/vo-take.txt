@@ -1,0 +1,9 @@
+[S1] Before a patient even leaves the hospital, the hospital can estimate whether they will be back.
+[S2] It matters. In one American study, almost one in five Medicare patients was back in hospital within thirty days.
+[S3] So doctors built a score. Four letters. L. A. C. E.
+[S4] Length of stay. Acuity of the admission. Comorbidities. Emergency visits in the past six months.
+[S5] Add up the points. Zero meant about a two percent risk of coming back, or dying, within a month. Nineteen meant forty four.
+[S6] It's called risk stratification. And it works, roughly.
+[S7] But look at what happened next. In that same study, about half of the medical patients who came back had not seen a doctor in between.
+[S8] The score said who was at risk. Nobody called them on day three.
+[S9] The hospital knew they'd be back. It just didn't call.

@@ -3,6 +3,10 @@ import { DemoReel, DEMO_DURATION } from "./demo/Reel";
 import { Ep01ForgottenPlan, EP01_COVER, EP01_DURATION } from "./ep01-forgotten-plan/Reel";
 import { MidnightQuestion, MIDNIGHT_COVER, MIDNIGHT_DURATION } from "./2026-10-26-midnight-question/Reel";
 import { ScribeEvening, SCRIBE_COVER, SCRIBE_DURATION } from "./2026-10-28-scribe-evening/Reel";
+import { MonitorNotPlan, MONITOR_COVER, MONITOR_DURATION } from "./2026-10-30-monitor-not-plan/Reel";
+import { Ep02AlertNobodyOwned, EP02_COVER, EP02_DURATION } from "./ep02-alert-nobody-owned/Reel";
+import { Ep02Soft, EP02_SOFT_COVER, EP02_SOFT_DURATION } from "./ep02-soft/Reel";
+import { WhoComesBack, WHO_BACK_COVER, WHO_BACK_DURATION } from "./2026-10-31-who-comes-back/Reel";
 import { SeriesDemoReel, SERIES_DEMO_COVER, SERIES_DEMO_DURATION } from "./series-demo/Reel";
 
 export type ReelEntry = {
@@ -20,4 +24,8 @@ export const REELS: readonly ReelEntry[] = [
   { id: "ep01-forgotten-plan", component: Ep01ForgottenPlan, durationInFrames: EP01_DURATION, coverFrame: EP01_COVER },
   { id: "2026-10-26-midnight-question", component: MidnightQuestion, durationInFrames: MIDNIGHT_DURATION, coverFrame: MIDNIGHT_COVER },
   { id: "2026-10-28-scribe-evening", component: ScribeEvening, durationInFrames: SCRIBE_DURATION, coverFrame: SCRIBE_COVER },
+  { id: "2026-10-30-monitor-not-plan", component: MonitorNotPlan, durationInFrames: MONITOR_DURATION, coverFrame: MONITOR_COVER },
+  { id: "ep02-alert-nobody-owned", component: Ep02AlertNobodyOwned, durationInFrames: EP02_DURATION, coverFrame: EP02_COVER },
+  { id: "ep02-soft", component: Ep02Soft, durationInFrames: EP02_SOFT_DURATION, coverFrame: EP02_SOFT_COVER },
+  { id: "2026-10-31-who-comes-back", component: WhoComesBack, durationInFrames: WHO_BACK_DURATION, coverFrame: WHO_BACK_COVER },
 ];

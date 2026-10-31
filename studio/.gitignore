@@ -14,3 +14,4 @@ briefs/*/stems/
 briefs/*/*.mp4
 fx/.venv
 public/edit/*/clean-fx.mp4
+public/music/*.wav

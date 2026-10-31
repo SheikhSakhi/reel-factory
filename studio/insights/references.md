@@ -100,3 +100,23 @@ Lines are short (2-8 words), spoken by alternating voices, with almost no narrat
 - Captions: bold white sentence case with one key word in amber on the face; small lowercase monospace on the seam in split mode.
 - Hook is a promise: "if you want a sense of where X is going next, this is a really good hint."
 - Used for: nvidia-journey-s1e2 (the user's own recording; split panels drawn in code over the talking-head half).
+
+## 5. Visual essay / narrated documentary explainer (added 2026-10-31)
+
+| Reel | Account | Length | Cuts | Likes |
+|---|---|---|---|---|
+| [DfH-_JCo1C3](https://www.instagram.com/reel/DfH-_JCo1C3/) | The Plain Read, "They count cars to make money" | 60 s | 9 hard cuts, but constant camera motion | 9.7k |
+
+What it does (watched at 1 and 4 fps, transcribed):
+- **One calm documentary narrator** (a storyteller, never on screen), short declarative sentences: "Fuller lot, sales up. Empty, sales down."
+- **Real footage as the base layer**: open satellite and aerial imagery (USDA NAIP, Copernicus Sentinel-2, credited in the caption), slowly zoomed and panned so it always moves.
+- **Data drawn onto the real footage**: cars counted with a live counter (95 → 577), boxes and glows on the objects, shadow measurement on oil tanks, a "SALES ↓" pill, a SELL stamp.
+- **3D scenes in between**: the Earth from orbit with a satellite passing, city lights igniting into "67,000 stores", a dark trading room with floating screens and charts, golden scales of justice.
+- **Camera grammar**: from space down to one parking lot, then back up; every scene opens with a push-in.
+- **Captions**: 1-3 white words, the key word on a yellow highlight box ("67,000", "earnings", "floating").
+- **Structure**: hook claim (they count cars from space) → mechanism → proof with a number and a study → escalation (oil, weather) → the name of the thing ("alternative data") → a moral question ("legal, not a fair fight") → callback to the viewer ("next time you park at Walmart, smile").
+- **Honesty markers**: the source study and imagery credits in the caption; "some visuals are illustrations". (Ends with "follow so you're never the last to know": a CTA; per learnings we skip it.)
+
+Rule learned from our pilot: the footage is literal. Each line gets the picture it names (a parking lot for "parking lot"); never a generic beautiful background, never the same scene twice.
+
+What we can make: real footage from open-licence libraries (NASA and ESA imagery, Copernicus, USDA NAIP, NIH and CDC public-domain medical images, Wikimedia Commons with credit; stock video with a free Pexels key), animated in Remotion (counters, boxes, glows, stamps, charts drawn onto the footage) with three.js scenes in between (globe, hospital at night, a floating dashboard). Never news or broadcast footage, never other creators' clips.

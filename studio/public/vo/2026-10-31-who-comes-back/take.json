@@ -1,0 +1,1077 @@
+{
+  "file": "vo/2026-10-31-who-comes-back/take.mp3",
+  "voice": "en-US-BrianMultilingualNeural",
+  "rate": "-4%",
+  "fps": 30,
+  "totalFrames": 1786,
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "Before a patient even leaves the hospital, the hospital can estimate whether they will be back.",
+      "from": 0,
+      "words": [
+        {
+          "token": "Before",
+          "start": 0.078,
+          "end": 0.443,
+          "frame": 2,
+          "endFrame": 13
+        },
+        {
+          "token": "a",
+          "start": 0.456,
+          "end": 0.521,
+          "frame": 14,
+          "endFrame": 16
+        },
+        {
+          "token": "patient",
+          "start": 0.534,
+          "end": 1.042,
+          "frame": 16,
+          "endFrame": 31
+        },
+        {
+          "token": "even",
+          "start": 1.068,
+          "end": 1.367,
+          "frame": 32,
+          "endFrame": 41
+        },
+        {
+          "token": "leaves",
+          "start": 1.38,
+          "end": 1.706,
+          "frame": 41,
+          "endFrame": 51
+        },
+        {
+          "token": "the",
+          "start": 1.719,
+          "end": 1.797,
+          "frame": 52,
+          "endFrame": 54
+        },
+        {
+          "token": "hospital,",
+          "start": 1.81,
+          "end": 2.513,
+          "frame": 54,
+          "endFrame": 75
+        },
+        {
+          "token": "the",
+          "start": 2.812,
+          "end": 2.93,
+          "frame": 84,
+          "endFrame": 88
+        },
+        {
+          "token": "hospital",
+          "start": 2.943,
+          "end": 3.49,
+          "frame": 88,
+          "endFrame": 105
+        },
+        {
+          "token": "can",
+          "start": 3.503,
+          "end": 3.685,
+          "frame": 105,
+          "endFrame": 111
+        },
+        {
+          "token": "estimate",
+          "start": 3.698,
+          "end": 4.297,
+          "frame": 111,
+          "endFrame": 129
+        },
+        {
+          "token": "whether",
+          "start": 4.31,
+          "end": 4.609,
+          "frame": 129,
+          "endFrame": 138
+        },
+        {
+          "token": "they",
+          "start": 4.622,
+          "end": 4.766,
+          "frame": 139,
+          "endFrame": 143
+        },
+        {
+          "token": "will",
+          "start": 4.779,
+          "end": 4.922,
+          "frame": 143,
+          "endFrame": 148
+        },
+        {
+          "token": "be",
+          "start": 4.935,
+          "end": 5.065,
+          "frame": 148,
+          "endFrame": 152
+        },
+        {
+          "token": "back.",
+          "start": 5.078,
+          "end": 5.586,
+          "frame": 152,
+          "endFrame": 168
+        }
+      ],
+      "to": 176,
+      "speechEnd": 168
+    },
+    {
+      "id": "S2",
+      "text": "It matters. In one American study, almost one in five Medicare patients was back in hospital within thirty days.",
+      "from": 176,
+      "words": [
+        {
+          "token": "It",
+          "start": 5.961,
+          "end": 6.092,
+          "frame": 179,
+          "endFrame": 183
+        },
+        {
+          "token": "matters.",
+          "start": 6.105,
+          "end": 6.73,
+          "frame": 183,
+          "endFrame": 202
+        },
+        {
+          "token": "In",
+          "start": 7.148,
+          "end": 7.305,
+          "frame": 214,
+          "endFrame": 219
+        },
+        {
+          "token": "one",
+          "start": 7.318,
+          "end": 7.487,
+          "frame": 220,
+          "endFrame": 225
+        },
+        {
+          "token": "American",
+          "start": 7.5,
+          "end": 7.943,
+          "frame": 225,
+          "endFrame": 238
+        },
+        {
+          "token": "study,",
+          "start": 7.956,
+          "end": 8.49,
+          "frame": 239,
+          "endFrame": 255
+        },
+        {
+          "token": "almost",
+          "start": 8.776,
+          "end": 9.206,
+          "frame": 263,
+          "endFrame": 276
+        },
+        {
+          "token": "one",
+          "start": 9.219,
+          "end": 9.479,
+          "frame": 277,
+          "endFrame": 284
+        },
+        {
+          "token": "in",
+          "start": 9.492,
+          "end": 9.661,
+          "frame": 285,
+          "endFrame": 290
+        },
+        {
+          "token": "five",
+          "start": 9.675,
+          "end": 10.039,
+          "frame": 290,
+          "endFrame": 301
+        },
+        {
+          "token": "Medicare",
+          "start": 10.052,
+          "end": 10.469,
+          "frame": 302,
+          "endFrame": 314
+        },
+        {
+          "token": "patients",
+          "start": 10.482,
+          "end": 11.003,
+          "frame": 314,
+          "endFrame": 330
+        },
+        {
+          "token": "was",
+          "start": 11.016,
+          "end": 11.211,
+          "frame": 330,
+          "endFrame": 336
+        },
+        {
+          "token": "back",
+          "start": 11.224,
+          "end": 11.51,
+          "frame": 337,
+          "endFrame": 345
+        },
+        {
+          "token": "in",
+          "start": 11.523,
+          "end": 11.602,
+          "frame": 346,
+          "endFrame": 348
+        },
+        {
+          "token": "hospital",
+          "start": 11.615,
+          "end": 12.214,
+          "frame": 348,
+          "endFrame": 366
+        },
+        {
+          "token": "within",
+          "start": 12.227,
+          "end": 12.539,
+          "frame": 367,
+          "endFrame": 376
+        },
+        {
+          "token": "thirty",
+          "start": 12.552,
+          "end": 12.839,
+          "frame": 377,
+          "endFrame": 385
+        },
+        {
+          "token": "days.",
+          "start": 12.852,
+          "end": 13.32,
+          "frame": 386,
+          "endFrame": 400
+        }
+      ],
+      "to": 408,
+      "speechEnd": 400
+    },
+    {
+      "id": "S3",
+      "text": "So doctors built a score. Four letters. L. A. C. E.",
+      "from": 408,
+      "words": [
+        {
+          "token": "So",
+          "start": 13.697,
+          "end": 13.853,
+          "frame": 411,
+          "endFrame": 416
+        },
+        {
+          "token": "doctors",
+          "start": 13.866,
+          "end": 14.387,
+          "frame": 416,
+          "endFrame": 432
+        },
+        {
+          "token": "built",
+          "start": 14.4,
+          "end": 14.7,
+          "frame": 432,
+          "endFrame": 441
+        },
+        {
+          "token": "a",
+          "start": 14.713,
+          "end": 14.765,
+          "frame": 441,
+          "endFrame": 443
+        },
+        {
+          "token": "score.",
+          "start": 14.778,
+          "end": 15.39,
+          "frame": 443,
+          "endFrame": 462
+        },
+        {
+          "token": "Four",
+          "start": 15.794,
+          "end": 15.924,
+          "frame": 474,
+          "endFrame": 478
+        },
+        {
+          "token": "letters.",
+          "start": 15.938,
+          "end": 16.523,
+          "frame": 478,
+          "endFrame": 496
+        },
+        {
+          "token": "L.",
+          "start": 16.899,
+          "end": 17.147,
+          "frame": 507,
+          "endFrame": 514
+        },
+        {
+          "token": "A.",
+          "start": 17.72,
+          "end": 17.889,
+          "frame": 532,
+          "endFrame": 537
+        },
+        {
+          "token": "C.",
+          "start": 18.267,
+          "end": 18.657,
+          "frame": 548,
+          "endFrame": 560
+        },
+        {
+          "token": "E.",
+          "start": 19.269,
+          "end": 19.478,
+          "frame": 578,
+          "endFrame": 584
+        }
+      ],
+      "to": 584,
+      "speechEnd": 584
+    },
+    {
+      "id": "S4",
+      "text": "Length of stay. Acuity of the admission. Comorbidities. Emergency visits in the past six months.",
+      "from": 584,
+      "words": [
+        {
+          "token": "Length",
+          "start": 19.569,
+          "end": 19.933,
+          "frame": 587,
+          "endFrame": 598
+        },
+        {
+          "token": "of",
+          "start": 19.946,
+          "end": 20.024,
+          "frame": 598,
+          "endFrame": 601
+        },
+        {
+          "token": "stay.",
+          "start": 20.038,
+          "end": 20.493,
+          "frame": 601,
+          "endFrame": 615
+        },
+        {
+          "token": "Acuity",
+          "start": 20.87,
+          "end": 21.521,
+          "frame": 626,
+          "endFrame": 646
+        },
+        {
+          "token": "of",
+          "start": 21.534,
+          "end": 21.717,
+          "frame": 646,
+          "endFrame": 651
+        },
+        {
+          "token": "the",
+          "start": 21.73,
+          "end": 21.821,
+          "frame": 652,
+          "endFrame": 655
+        },
+        {
+          "token": "admission.",
+          "start": 21.834,
+          "end": 22.511,
+          "frame": 655,
+          "endFrame": 675
+        },
+        {
+          "token": "Comorbidities.",
+          "start": 22.904,
+          "end": 23.88,
+          "frame": 687,
+          "endFrame": 716
+        },
+        {
+          "token": "Emergency",
+          "start": 24.284,
+          "end": 24.909,
+          "frame": 729,
+          "endFrame": 747
+        },
+        {
+          "token": "visits",
+          "start": 24.922,
+          "end": 25.469,
+          "frame": 748,
+          "endFrame": 764
+        },
+        {
+          "token": "in",
+          "start": 25.495,
+          "end": 25.664,
+          "frame": 765,
+          "endFrame": 770
+        },
+        {
+          "token": "the",
+          "start": 25.677,
+          "end": 25.768,
+          "frame": 770,
+          "endFrame": 773
+        },
+        {
+          "token": "past",
+          "start": 25.781,
+          "end": 26.198,
+          "frame": 773,
+          "endFrame": 786
+        },
+        {
+          "token": "six",
+          "start": 26.211,
+          "end": 26.523,
+          "frame": 786,
+          "endFrame": 796
+        },
+        {
+          "token": "months.",
+          "start": 26.536,
+          "end": 27.044,
+          "frame": 796,
+          "endFrame": 811
+        }
+      ],
+      "to": 821,
+      "speechEnd": 811
+    },
+    {
+      "id": "S5",
+      "text": "Add up the points. Zero meant about a two percent risk of coming back, or dying, within a month. Nineteen meant forty four.",
+      "from": 821,
+      "words": [
+        {
+          "token": "Add",
+          "start": 27.461,
+          "end": 27.604,
+          "frame": 824,
+          "endFrame": 828
+        },
+        {
+          "token": "up",
+          "start": 27.617,
+          "end": 27.76,
+          "frame": 829,
+          "endFrame": 833
+        },
+        {
+          "token": "the",
+          "start": 27.773,
+          "end": 27.878,
+          "frame": 833,
+          "endFrame": 836
+        },
+        {
+          "token": "points.",
+          "start": 27.891,
+          "end": 28.49,
+          "frame": 837,
+          "endFrame": 855
+        },
+        {
+          "token": "Zero",
+          "start": 28.906,
+          "end": 29.336,
+          "frame": 867,
+          "endFrame": 880
+        },
+        {
+          "token": "meant",
+          "start": 29.349,
+          "end": 29.674,
+          "frame": 880,
+          "endFrame": 890
+        },
+        {
+          "token": "about",
+          "start": 29.701,
+          "end": 30.026,
+          "frame": 891,
+          "endFrame": 901
+        },
+        {
+          "token": "a",
+          "start": 30.039,
+          "end": 30.13,
+          "frame": 901,
+          "endFrame": 904
+        },
+        {
+          "token": "two",
+          "start": 30.143,
+          "end": 30.365,
+          "frame": 904,
+          "endFrame": 911
+        },
+        {
+          "token": "percent",
+          "start": 30.378,
+          "end": 30.833,
+          "frame": 911,
+          "endFrame": 925
+        },
+        {
+          "token": "risk",
+          "start": 30.846,
+          "end": 31.172,
+          "frame": 925,
+          "endFrame": 935
+        },
+        {
+          "token": "of",
+          "start": 31.185,
+          "end": 31.289,
+          "frame": 936,
+          "endFrame": 939
+        },
+        {
+          "token": "coming",
+          "start": 31.302,
+          "end": 31.615,
+          "frame": 939,
+          "endFrame": 948
+        },
+        {
+          "token": "back,",
+          "start": 31.628,
+          "end": 32.005,
+          "frame": 949,
+          "endFrame": 960
+        },
+        {
+          "token": "or",
+          "start": 32.031,
+          "end": 32.201,
+          "frame": 961,
+          "endFrame": 966
+        },
+        {
+          "token": "dying,",
+          "start": 32.214,
+          "end": 32.721,
+          "frame": 966,
+          "endFrame": 982
+        },
+        {
+          "token": "within",
+          "start": 32.747,
+          "end": 33.034,
+          "frame": 982,
+          "endFrame": 991
+        },
+        {
+          "token": "a",
+          "start": 33.047,
+          "end": 33.099,
+          "frame": 991,
+          "endFrame": 993
+        },
+        {
+          "token": "month.",
+          "start": 33.112,
+          "end": 33.62,
+          "frame": 993,
+          "endFrame": 1009
+        },
+        {
+          "token": "Nineteen",
+          "start": 34.01,
+          "end": 34.544,
+          "frame": 1020,
+          "endFrame": 1036
+        },
+        {
+          "token": "meant",
+          "start": 34.557,
+          "end": 34.818,
+          "frame": 1037,
+          "endFrame": 1045
+        },
+        {
+          "token": "forty",
+          "start": 34.831,
+          "end": 35.156,
+          "frame": 1045,
+          "endFrame": 1055
+        },
+        {
+          "token": "four.",
+          "start": 35.169,
+          "end": 35.664,
+          "frame": 1055,
+          "endFrame": 1070
+        }
+      ],
+      "to": 1078,
+      "speechEnd": 1070
+    },
+    {
+      "id": "S6",
+      "text": "It's called risk stratification. And it works, roughly.",
+      "from": 1078,
+      "words": [
+        {
+          "token": "It's",
+          "start": 36.04,
+          "end": 36.17,
+          "frame": 1081,
+          "endFrame": 1085
+        },
+        {
+          "token": "called",
+          "start": 36.183,
+          "end": 36.561,
+          "frame": 1085,
+          "endFrame": 1097
+        },
+        {
+          "token": "risk",
+          "start": 36.574,
+          "end": 36.899,
+          "frame": 1097,
+          "endFrame": 1107
+        },
+        {
+          "token": "stratification.",
+          "start": 36.913,
+          "end": 38.006,
+          "frame": 1107,
+          "endFrame": 1140
+        },
+        {
+          "token": "And",
+          "start": 38.385,
+          "end": 38.515,
+          "frame": 1152,
+          "endFrame": 1155
+        },
+        {
+          "token": "it",
+          "start": 38.528,
+          "end": 38.645,
+          "frame": 1156,
+          "endFrame": 1159
+        },
+        {
+          "token": "works,",
+          "start": 38.658,
+          "end": 39.114,
+          "frame": 1160,
+          "endFrame": 1173
+        },
+        {
+          "token": "roughly.",
+          "start": 39.127,
+          "end": 39.778,
+          "frame": 1174,
+          "endFrame": 1193
+        }
+      ],
+      "to": 1202,
+      "speechEnd": 1193
+    },
+    {
+      "id": "S7",
+      "text": "But look at what happened next. In that same study, about half of the medical patients who came back had not seen a doctor in between.",
+      "from": 1202,
+      "words": [
+        {
+          "token": "But",
+          "start": 40.182,
+          "end": 40.326,
+          "frame": 1205,
+          "endFrame": 1210
+        },
+        {
+          "token": "look",
+          "start": 40.339,
+          "end": 40.586,
+          "frame": 1210,
+          "endFrame": 1218
+        },
+        {
+          "token": "at",
+          "start": 40.599,
+          "end": 40.742,
+          "frame": 1218,
+          "endFrame": 1222
+        },
+        {
+          "token": "what",
+          "start": 40.755,
+          "end": 40.898,
+          "frame": 1223,
+          "endFrame": 1227
+        },
+        {
+          "token": "happened",
+          "start": 40.911,
+          "end": 41.328,
+          "frame": 1227,
+          "endFrame": 1240
+        },
+        {
+          "token": "next.",
+          "start": 41.341,
+          "end": 41.888,
+          "frame": 1240,
+          "endFrame": 1257
+        },
+        {
+          "token": "In",
+          "start": 42.305,
+          "end": 42.422,
+          "frame": 1269,
+          "endFrame": 1273
+        },
+        {
+          "token": "that",
+          "start": 42.435,
+          "end": 42.643,
+          "frame": 1273,
+          "endFrame": 1279
+        },
+        {
+          "token": "same",
+          "start": 42.656,
+          "end": 42.917,
+          "frame": 1280,
+          "endFrame": 1287
+        },
+        {
+          "token": "study,",
+          "start": 42.93,
+          "end": 43.503,
+          "frame": 1288,
+          "endFrame": 1305
+        },
+        {
+          "token": "about",
+          "start": 43.698,
+          "end": 44.076,
+          "frame": 1311,
+          "endFrame": 1322
+        },
+        {
+          "token": "half",
+          "start": 44.089,
+          "end": 44.44,
+          "frame": 1323,
+          "endFrame": 1333
+        },
+        {
+          "token": "of",
+          "start": 44.453,
+          "end": 44.544,
+          "frame": 1334,
+          "endFrame": 1336
+        },
+        {
+          "token": "the",
+          "start": 44.557,
+          "end": 44.635,
+          "frame": 1337,
+          "endFrame": 1339
+        },
+        {
+          "token": "medical",
+          "start": 44.648,
+          "end": 45.039,
+          "frame": 1339,
+          "endFrame": 1351
+        },
+        {
+          "token": "patients",
+          "start": 45.052,
+          "end": 45.573,
+          "frame": 1352,
+          "endFrame": 1367
+        },
+        {
+          "token": "who",
+          "start": 45.586,
+          "end": 45.716,
+          "frame": 1368,
+          "endFrame": 1371
+        },
+        {
+          "token": "came",
+          "start": 45.729,
+          "end": 45.99,
+          "frame": 1372,
+          "endFrame": 1380
+        },
+        {
+          "token": "back",
+          "start": 46.003,
+          "end": 46.315,
+          "frame": 1380,
+          "endFrame": 1389
+        },
+        {
+          "token": "had",
+          "start": 46.328,
+          "end": 46.51,
+          "frame": 1390,
+          "endFrame": 1395
+        },
+        {
+          "token": "not",
+          "start": 46.523,
+          "end": 46.758,
+          "frame": 1396,
+          "endFrame": 1403
+        },
+        {
+          "token": "seen",
+          "start": 46.771,
+          "end": 47.005,
+          "frame": 1403,
+          "endFrame": 1410
+        },
+        {
+          "token": "a",
+          "start": 47.018,
+          "end": 47.083,
+          "frame": 1411,
+          "endFrame": 1413
+        },
+        {
+          "token": "doctor",
+          "start": 47.096,
+          "end": 47.526,
+          "frame": 1413,
+          "endFrame": 1426
+        },
+        {
+          "token": "in",
+          "start": 47.539,
+          "end": 47.695,
+          "frame": 1426,
+          "endFrame": 1431
+        },
+        {
+          "token": "between.",
+          "start": 47.708,
+          "end": 48.229,
+          "frame": 1431,
+          "endFrame": 1447
+        }
+      ],
+      "to": 1456,
+      "speechEnd": 1447
+    },
+    {
+      "id": "S8",
+      "text": "The score said who was at risk. Nobody called them on day three.",
+      "from": 1456,
+      "words": [
+        {
+          "token": "The",
+          "start": 48.633,
+          "end": 48.698,
+          "frame": 1459,
+          "endFrame": 1461
+        },
+        {
+          "token": "score",
+          "start": 48.711,
+          "end": 49.089,
+          "frame": 1461,
+          "endFrame": 1473
+        },
+        {
+          "token": "said",
+          "start": 49.102,
+          "end": 49.414,
+          "frame": 1473,
+          "endFrame": 1482
+        },
+        {
+          "token": "who",
+          "start": 49.427,
+          "end": 49.622,
+          "frame": 1483,
+          "endFrame": 1489
+        },
+        {
+          "token": "was",
+          "start": 49.635,
+          "end": 49.844,
+          "frame": 1489,
+          "endFrame": 1495
+        },
+        {
+          "token": "at",
+          "start": 49.857,
+          "end": 50.052,
+          "frame": 1496,
+          "endFrame": 1502
+        },
+        {
+          "token": "risk.",
+          "start": 50.065,
+          "end": 50.573,
+          "frame": 1502,
+          "endFrame": 1517
+        },
+        {
+          "token": "Nobody",
+          "start": 50.964,
+          "end": 51.315,
+          "frame": 1529,
+          "endFrame": 1539
+        },
+        {
+          "token": "called",
+          "start": 51.328,
+          "end": 51.641,
+          "frame": 1540,
+          "endFrame": 1549
+        },
+        {
+          "token": "them",
+          "start": 51.654,
+          "end": 51.849,
+          "frame": 1550,
+          "endFrame": 1555
+        },
+        {
+          "token": "on",
+          "start": 51.862,
+          "end": 52.07,
+          "frame": 1556,
+          "endFrame": 1562
+        },
+        {
+          "token": "day",
+          "start": 52.083,
+          "end": 52.318,
+          "frame": 1562,
+          "endFrame": 1570
+        },
+        {
+          "token": "three.",
+          "start": 52.331,
+          "end": 52.8,
+          "frame": 1570,
+          "endFrame": 1584
+        }
+      ],
+      "to": 1593,
+      "speechEnd": 1584
+    },
+    {
+      "id": "S9",
+      "text": "The hospital knew they'd be back. It just didn't call.",
+      "from": 1593,
+      "words": [
+        {
+          "token": "The",
+          "start": 53.19,
+          "end": 53.255,
+          "frame": 1596,
+          "endFrame": 1598
+        },
+        {
+          "token": "hospital",
+          "start": 53.268,
+          "end": 53.776,
+          "frame": 1598,
+          "endFrame": 1613
+        },
+        {
+          "token": "knew",
+          "start": 53.789,
+          "end": 54.115,
+          "frame": 1614,
+          "endFrame": 1623
+        },
+        {
+          "token": "they'd",
+          "start": 54.128,
+          "end": 54.323,
+          "frame": 1624,
+          "endFrame": 1630
+        },
+        {
+          "token": "be",
+          "start": 54.336,
+          "end": 54.479,
+          "frame": 1630,
+          "endFrame": 1634
+        },
+        {
+          "token": "back.",
+          "start": 54.492,
+          "end": 55.013,
+          "frame": 1635,
+          "endFrame": 1650
+        },
+        {
+          "token": "It",
+          "start": 55.389,
+          "end": 55.506,
+          "frame": 1662,
+          "endFrame": 1665
+        },
+        {
+          "token": "just",
+          "start": 55.519,
+          "end": 55.714,
+          "frame": 1666,
+          "endFrame": 1671
+        },
+        {
+          "token": "didn't",
+          "start": 55.727,
+          "end": 56.001,
+          "frame": 1672,
+          "endFrame": 1680
+        },
+        {
+          "token": "call.",
+          "start": 56.014,
+          "end": 56.508,
+          "frame": 1680,
+          "endFrame": 1695
+        }
+      ],
+      "to": 1786,
+      "speechEnd": 1695
+    }
+  ]
+}
