@@ -1,10 +1,10 @@
-[S1] Two in the morning. Patient zero-four-one-seven. Chest pain for two hours. Diabetic. Takes omeprazole. Any AI today would answer the same way: Hello. How can I help you?
-[S2] And the textbook answer is clopidogrel. But that answer has a trap. Omeprazole blocks the enzyme that switches clopidogrel on. The pill goes in, and the heart gets almost nothing.
-[S3] The omeprazole was prescribed a year ago, by another doctor, for gastritis. No chatbot knows that. Tre-int does.
-[S4] Because in Tre-int, every chat is a patient. Every visit grows their memory. Diabetes in twenty twenty-three. Gastritis in twenty twenty-five. Blood pressure in March. Three doctors. One history.
-[S5] So the reasoning is visible: clopidogrel blocked, switch to ticagrelor. The doctor accepts with one tap. And the decision becomes code: the diagnosis, the drug, the doctor's signature, sealed with a hash.
-[S6] What Visa did for payments, we do for clinical decisions. The patient is real. The history is theirs. The decision is proven.
-[S7] And it compounds. Every doctor's decision teaches the model. Trained on local protocols, local languages, and the data never leaves the country. A chatbot starts every conversation from zero. Tre-int starts from everything.
-[S8] Remember the condition? Agents can only be trusted with money when they remember. This is that memory. An insurer sees a claim that matches the diagnosis. A fraud ring stands out on its own.
-[S9] All of healthcare's money flows from one moment: a doctor talking to a patient. Whoever stands at that moment owns the memory. Right now, four thousand three hundred doctors stand there with us. Every day.
+[S1] Think about the last time you saw a doctor. You told your story from the beginning. Again.
+[S2] Your history lives in pieces. A notebook. A messenger. A file in another clinic. And every new conversation with AI starts the same way: from zero.
+[S3] Now imagine care that remembers. Not a file you upload. A memory that grows with you, visit after visit, doctor after doctor.
+[S4] That's what Tre-int is. Every chat is a patient. Every patient has a living memory. And every doctor has one too: how they think, how they treat, how their decisions turn out.
+[S5] When care remembers, it stops being a series of visits. It becomes management. The memory stays awake between appointments. It knows what changed, what was missed, and what comes next. The doctor sees it before the patient has to say it.
+[S6] And because it remembers, it can prove. Every decision is written as code, not paper. The diagnosis. The treatment. The doctor's signature. Sealed with a hash. No one can quietly rewrite it. Anyone with the right to see it can verify it.
+[S7] What Visa did for payments, we do for clinical decisions. The patient is real. The history is theirs. The decision is proven.
+[S8] This is the memory the agent economy was waiting for. When a patient's agent, a doctor's agent and an insurer's agent meet, they don't have to trust each other. They check the memory.
+[S9] Records sit still. Memory moves. It learns, it manages, it proves.
 [S10] Healthcare has records. We gave it memory. Tre-int.
