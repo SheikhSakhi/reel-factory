@@ -1,5 +1,6 @@
 import type React from "react";
 import { DemoReel, DEMO_DURATION } from "./demo/Reel";
+import { TreintMemoryReel, TREINT_MEMORY_DURATION } from "./treint-memory/Reel";
 import { AgentBankReel, AgentBankReelEn, AgentBankReelEnFast, AGENT_BANK_DURATION, AGENT_BANK_EN_DURATION, AGENT_BANK_EN_FAST_DURATION, AGENT_BANK_SIZE } from "./agent-bank/Reel";
 
 export type ReelEntry = {
@@ -17,4 +18,5 @@ export const REELS: readonly ReelEntry[] = [
   { id: "agent-bank", component: AgentBankReel, durationInFrames: AGENT_BANK_DURATION, ...AGENT_BANK_SIZE },
   { id: "agent-bank-en", component: AgentBankReelEn, durationInFrames: AGENT_BANK_EN_DURATION, ...AGENT_BANK_SIZE },
   { id: "agent-bank-en-fast", component: AgentBankReelEnFast, durationInFrames: AGENT_BANK_EN_FAST_DURATION, ...AGENT_BANK_SIZE },
+  { id: "treint-memory-en", component: TreintMemoryReel, durationInFrames: TREINT_MEMORY_DURATION, width: 1920, height: 1080 },
 ];
