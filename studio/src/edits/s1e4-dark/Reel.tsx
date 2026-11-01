@@ -63,10 +63,12 @@ const STRETCHES: { from: number; dur: number; src: number }[] = (() => {
   for (const p of PIECES) {
     if (p.kind === "src" || p.dur < 5) out.push({ from: p.out, dur: p.dur, src: p.src });
     else {
+      // Only stretches with nothing but the robot in the lower frame (the source shows a label and an icon 98.5-104.5).
+      const CLEAN = [94.0, 105.0];
       let at = p.out;
-      while (at < p.out + p.dur) {
-        const d = Math.min(4.8, p.out + p.dur - at);
-        out.push({ from: at, dur: d, src: 93.6 });
+      for (let k = 0; at < p.out + p.dur; k++) {
+        const d = Math.min(3.9, p.out + p.dur - at);
+        out.push({ from: at, dur: d, src: CLEAN[k % 2] });
         at += d;
       }
     }
@@ -76,14 +78,14 @@ const STRETCHES: { from: number; dur: number; src: number }[] = (() => {
 
 // ---------- shared pieces for the rebuilt panels ----------
 
-const Panel: React.FC<{ from: number; to: number; children: React.ReactNode }> = ({ from, to, children }) => {
+const Panel: React.FC<{ from: number; to: number; h?: number; children: React.ReactNode }> = ({ from, to, h = PANEL_H, children }) => {
   const f = useCurrentFrame();
   const s = f / FPS;
   if (s < from || s >= to) return null;
   const a = Math.min(progress(f, F(from), 8), 1 - progress(f, F(to) - 8, 8));
   return (
-    <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: PANEL_H + 140, opacity: a,
-      background: `linear-gradient(180deg, ${BG} 0%, ${BG} ${(PANEL_H / (PANEL_H + 140)) * 100}%, transparent 100%)` }}>
+    <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: h + 140, opacity: a,
+      background: `linear-gradient(180deg, ${BG} 0%, ${BG} ${(h / (h + 140)) * 100}%, transparent 100%)` }}>
       {children}
     </div>
   );
@@ -230,6 +232,74 @@ const CatPanel: React.FC = () => {
           </div>
         </div>
       ) : null}
+    </Panel>
+  );
+};
+
+// ---------- next word (replaces the cat sentence and "tired" in the layers scene) ----------
+
+const NEXT: [string, number][] = [["night", 41], ["times", 16], ["rest", 9], ["home", 7], ["work", 5]];
+
+const NextWordPanel: React.FC = () => {
+  const f = useCurrentFrame();
+  const s = f / FPS;
+  const from = CAT_TO;
+  const to = t("but", 73) - 0.05;
+  const stack = t("stack", 65);
+  const last = t("last", 67);
+  const scores = t("scores", 69);
+  const pick = t("pick", 71);
+  const add = t("add", 72);
+  const repeat = t("repeat.", 72.5);
+  const LAYERS = 9;
+  const filled = s >= add + 0.25;
+  return (
+    <Panel from={from} to={to} h={1450}>
+      <TopCaption from={from} to={to} />
+      {/* the stack of layers */}
+      {Array.from({ length: LAYERS }).map((_, i) => {
+        const p = progress(f, F(stack) + i * 3, 10);
+        const isLast = i === 0 && s >= last;
+        const y = 700 + i * 62 - (s >= scores ? 0 : 0);
+        return (
+          <div key={i} style={{ position: "absolute", left: 190, width: 700, top: y, height: 120, opacity: p * (s >= scores && i > 0 ? 0.55 : 1),
+            transform: `perspective(900px) rotateX(62deg) translateY(${(1 - p) * 60}px)`,
+            border: `2px solid ${isLast ? BLUE : "#5B6B9A88"}`, background: isLast ? "#4C8DFF22" : "#1A223A55", borderRadius: 10,
+            boxShadow: isLast ? `0 0 30px ${BLUE}` : "none" }} />
+        );
+      })}
+      {s >= stack && s < scores ? (
+        <div style={{ position: "absolute", right: 70, top: 640, fontFamily: MONO, fontSize: 24, letterSpacing: "0.12em", color: "#FFFFFF88", textAlign: "right",
+          opacity: progress(f, F(t("dozens", 66)), 8) }}>DOZENS<br />OF LAYERS</div>
+      ) : null}
+      {/* scores for every possible next word */}
+      {s >= scores - 0.1 ? NEXT.map(([w, pct], i) => {
+        const p = progress(f, F(scores) + i * 4, 14);
+        const hot = i === 0 && s >= pick;
+        const hgt = pct * 9 * p;
+        return (
+          <div key={w} style={{ position: "absolute", left: 200 + i * 140, width: 100, top: 300, height: 400 }}>
+            <div style={{ position: "absolute", bottom: hgt + 10, width: 100, textAlign: "center", fontFamily: SANS, fontWeight: hot ? 800 : 600, fontSize: 28,
+              color: hot ? "#FFFFFF" : "#FFFFFFBB", opacity: p }}>{w}<div style={{ fontFamily: MONO, fontSize: 20, color: "#FFFFFF77" }}>{pct}%</div></div>
+            <div style={{ position: "absolute", bottom: 0, width: 100, height: hgt, borderRadius: "10px 10px 0 0",
+              background: i === 0 ? "#E8EDF5" : BLUE, boxShadow: hot ? "0 0 30px #FFFFFFAA" : "none",
+              opacity: s >= pick && i > 0 ? 0.45 : 1 }} />
+          </div>
+        );
+      }) : null}
+      {s >= pick - 0.1 && s < add ? (
+        <div style={{ position: "absolute", left: 0, right: 0, top: 240, textAlign: "center", fontFamily: MONO, fontSize: 24, letterSpacing: "0.16em", color: BLUE,
+          opacity: progress(f, F(pick), 6) }}>NEXT WORD</div>
+      ) : null}
+      {/* the sentence, waiting for its next word */}
+      <div style={{ position: "absolute", left: 50, right: 50, top: 1310, textAlign: "center", fontFamily: SANS, fontSize: 34, color: "#FFFFFFDD",
+        opacity: progress(f, F(stack) + 10, 10) }}>
+        I have a cough and it is getting worse at{" "}
+        <span style={{ display: "inline-block", minWidth: 110, padding: "2px 14px", borderRadius: 10, fontWeight: 800,
+          background: filled ? BLUE : "transparent", border: filled ? "none" : "2px dashed #FFFFFF55", color: "#FFFFFF",
+          transform: `scale(${filled ? 0.9 + 0.1 * pop(f, F(add) + 8, 12) : 1})` }}>{filled ? "night" : " "}</span>
+        {s >= repeat ? <span style={{ marginLeft: 14, fontFamily: MONO, fontSize: 28, color: BLUE, opacity: progress(f, F(repeat), 6) }}>↻</span> : null}
+      </div>
     </Panel>
   );
 };
@@ -408,6 +478,7 @@ export const S1E4Dark: React.FC = () => (
       </Sequence>
     ))}
     <CatPanel />
+    <NextWordPanel />
     <EndPanel />
     <Audio src={staticFile(`${D}/voice.mp3`)} />
   </AbsoluteFill>
