@@ -1,0 +1,416 @@
+import React from "react";
+import { AbsoluteFill, Audio, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
+import { BRAND } from "../../brand/brand";
+import { pop, progress } from "../../kit";
+import timeline from "../../../public/edit/s1e4-dark/timeline.json";
+import light from "../../../public/edit/s1e4-dark/light.json";
+import wordsJson from "../../../public/edit/s1e4-dark/words.json";
+
+// NVIDIA Journey S1E4, dark rebuild: the creator's own footage (auto-darkened where a scene is light), the narration
+// spliced with converted inserts (briefs/nvidia-s1e4), a rebuilt cough example for attention, and a new ending: what a
+// general AI does with that sentence, closing on Treatment Intelligence.
+
+const FPS = 30;
+const D = "edit/s1e4-dark";
+const SANS = BRAND.theme.fontBody;
+const SERIF = BRAND.theme.fontDisplay;
+const MONO = BRAND.theme.fontMono;
+const BLUE = "#4C8DFF";
+const GOLD = "#F2C14E";
+const BG = "#05070D";
+const PANEL_H = 1270;
+
+type Piece = { kind: "src" | "new"; out: number; dur: number; src: number };
+const PIECES = (timeline as { total: number; pieces: Piece[] }).pieces;
+export const S1E4_DURATION = Math.ceil((timeline as { total: number }).total * FPS);
+const LIGHT = light as [number, number][];
+type W = { text: string; start: number; end: number };
+const WORDS = (wordsJson as { words: W[] }).words;
+
+/** Output second of the first spoken word matching `token` after `after` seconds. */
+const t = (token: string, after = 0): number => {
+  const w = WORDS.find((x) => x.start >= after && x.text.toLowerCase().replace(/[^a-z0-9']/g, "") === token.toLowerCase().replace(/[^a-z0-9']/g, ""));
+  if (!w) throw new Error(`word "${token}" after ${after}s not found`);
+  return w.start;
+};
+const F = (sec: number) => Math.round(sec * FPS);
+
+const CAT_FROM = 44.4;
+const CAT_TO = t("transformer", 64) + 1.0;
+const END_FROM = PIECES[5].out;
+
+// ---------- the footage, remapped and darkened ----------
+
+const isLight = (srcSec: number) => LIGHT.some(([a, b]) => srcSec >= a && srcSec < b);
+
+/** One stretch of source footage on the output timeline; inverts light scenes into a dark theme frame by frame. */
+const Footage: React.FC<{ srcStart: number }> = ({ srcStart }) => {
+  const f = useCurrentFrame();
+  const srcSec = srcStart + f / FPS;
+  const dark = isLight(srcSec);
+  return (
+    <AbsoluteFill style={{ background: BG }}>
+      <OffthreadVideo src={staticFile(`${D}/source.mp4`)} startFrom={F(srcStart)} muted
+        style={{ width: "100%", height: "100%", objectFit: "cover", filter: dark ? "invert(1) hue-rotate(180deg) contrast(1.05)" : "contrast(1.04) brightness(0.96)" }} />
+    </AbsoluteFill>
+  );
+};
+
+/** Footage stretches: the source pieces as they are; inserts keep the robot moving from the cut point; the long new
+ * ending loops a dark stretch of the robot (the top of the frame is covered by the rebuilt panels there). */
+const STRETCHES: { from: number; dur: number; src: number }[] = (() => {
+  const out: { from: number; dur: number; src: number }[] = [];
+  for (const p of PIECES) {
+    if (p.kind === "src" || p.dur < 5) out.push({ from: p.out, dur: p.dur, src: p.src });
+    else {
+      let at = p.out;
+      while (at < p.out + p.dur) {
+        const d = Math.min(4.8, p.out + p.dur - at);
+        out.push({ from: at, dur: d, src: 93.6 });
+        at += d;
+      }
+    }
+  }
+  return out;
+})();
+
+// ---------- shared pieces for the rebuilt panels ----------
+
+const Panel: React.FC<{ from: number; to: number; children: React.ReactNode }> = ({ from, to, children }) => {
+  const f = useCurrentFrame();
+  const s = f / FPS;
+  if (s < from || s >= to) return null;
+  const a = Math.min(progress(f, F(from), 8), 1 - progress(f, F(to) - 8, 8));
+  return (
+    <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: PANEL_H + 140, opacity: a,
+      background: `linear-gradient(180deg, ${BG} 0%, ${BG} ${(PANEL_H / (PANEL_H + 140)) * 100}%, transparent 100%)` }}>
+      {children}
+    </div>
+  );
+};
+
+/** Top captions in the original's style: the current few words, the spoken one white and bold, the rest grey. */
+const TopCaption: React.FC<{ from: number; to: number }> = ({ from, to }) => {
+  const f = useCurrentFrame();
+  const s = f / FPS;
+  const ws = WORDS.filter((w) => w.start >= from - 0.05 && w.start < to);
+  const i = ws.findIndex((w, k) => s >= w.start - 0.05 && s < (ws[k + 1]?.start ?? w.end + 0.6));
+  if (i < 0) return null;
+  const start = Math.floor(i / 3) * 3;
+  return (
+    <div style={{ position: "absolute", left: 60, right: 60, top: 96, textAlign: "center", fontFamily: SANS, fontSize: 46, letterSpacing: "-0.01em" }}>
+      {ws.slice(start, start + 3).map((w, k) => (
+        <span key={`${w.start}-${k}`} style={{ color: start + k === i ? "#FFFFFF" : "#FFFFFF66", fontWeight: start + k === i ? 800 : 500, marginRight: 14 }}>
+          {w.text.replace(/[.,?]$/, "")}
+        </span>
+      ))}
+    </div>
+  );
+};
+
+// ---------- the cough example (replaces the cat sentence) ----------
+
+const SENT = ["I", "have", "a", "cough", "and", "it", "is", "getting", "worse", "at", "night"];
+const COUGH = [2, 3]; // "a cough"
+const IT = 5;
+const colX = (i: number) => 60 + i * 96;
+
+const Column: React.FC<{ i: number; at: number }> = ({ i, at }) => {
+  const f = useCurrentFrame();
+  const p = pop(f, at, 14);
+  const seed = (k: number) => Math.abs(Math.sin(i * 12.9898 + k * 78.233)) % 1;
+  return (
+    <div style={{ position: "absolute", left: colX(i) - 20, top: 640, width: 40, opacity: Math.min(1, p * 1.5), transform: `translateY(${(1 - p) * 40}px)` }}>
+      {Array.from({ length: 7 }).map((_, k) => {
+        const r = seed(k);
+        const c = r < 0.45 ? "#2F5FBF" : r < 0.75 ? "#DCE3EE" : "#E3A955";
+        return <div key={k} style={{ width: 40, height: 22, marginBottom: 6, borderRadius: 5, background: c, opacity: 0.9 }} />;
+      })}
+    </div>
+  );
+};
+
+const Arc: React.FC<{ from: number; to: number; at: number; color: string; width?: number; lift?: number }> = ({ from, to, at, color, width = 3, lift = 120 }) => {
+  const f = useCurrentFrame();
+  const p = progress(f, at, 14);
+  const x1 = colX(from), x2 = colX(to), y = 630;
+  const d = `M ${x1} ${y} Q ${(x1 + x2) / 2} ${y - lift} ${x2} ${y}`;
+  return (
+    <svg width={1080} height={900} style={{ position: "absolute", left: 0, top: 0, overflow: "visible" }}>
+      <path d={d} fill="none" stroke={color} strokeWidth={width} pathLength={1} strokeDasharray={1} strokeDashoffset={1 - p} strokeLinecap="round"
+        style={{ filter: `drop-shadow(0 0 8px ${color})` }} />
+    </svg>
+  );
+};
+
+const CatPanel: React.FC = () => {
+  const f = useCurrentFrame();
+  const s = f / FPS;
+  const typeFrom = t("type", 44) + 0.2;
+  const typed = "I have a cough and it is getting worse at night".slice(0, Math.max(0, Math.floor((s - typeFrom) * 32)));
+  const every = t("every", 45);
+  const paper = t("2017", 48);
+  const attention = t("attention.", 50);
+  const each = t("each", 52);
+  const sentence = t("sentence,", 56);
+  const links = t("links", 60);
+  const cough2 = t("cough,", 62);
+  const thats = t("that's", 62.5);
+  const tT = t("t", 63);
+  const transformer = t("transformer.", 64);
+  const showTyped = s < every;
+  return (
+    <Panel from={CAT_FROM} to={CAT_TO}>
+      <TopCaption from={CAT_FROM} to={CAT_TO} />
+      {/* typing the sentence */}
+      {showTyped ? (
+        <div style={{ position: "absolute", left: 80, right: 80, top: 420, padding: "26px 30px", borderRadius: 26, background: "#121826", border: "1px solid #FFFFFF22",
+          fontFamily: SANS, fontSize: 40, color: "#FFFFFF", display: "flex", alignItems: "center", justifyContent: "space-between", opacity: progress(f, F(CAT_FROM), 8) }}>
+          <span>{typed}<span style={{ color: BLUE, opacity: Math.floor(f / 15) % 2 }}>|</span></span>
+          <span style={{ width: 54, height: 54, borderRadius: 27, background: BLUE, flexShrink: 0 }} />
+        </div>
+      ) : null}
+      {/* every word becomes a list of numbers */}
+      {s >= every ? SENT.map((w, i) => {
+        const isCough = COUGH.includes(i), isIt = i === IT;
+        const hot = (isCough && s >= cough2 - 0.4) || (isIt && s >= links + 0.2);
+        return (
+          <React.Fragment key={i}>
+            <Column i={i} at={F(every) + i * 3} />
+            <div style={{ position: "absolute", left: colX(i) - 48, width: 96, top: 1050, textAlign: "center", fontFamily: SANS, fontWeight: hot ? 800 : 600,
+              fontSize: 25, color: hot ? (isIt ? GOLD : "#FFFFFF") : "#FFFFFFAA", opacity: progress(f, F(every) + i * 3, 8),
+              textShadow: hot ? `0 0 14px ${isIt ? GOLD : "#FFFFFF"}` : "none" }}>{w}</div>
+          </React.Fragment>
+        );
+      }) : null}
+      {/* the 2017 paper */}
+      {s >= paper - 0.2 && s < each ? (
+        <div style={{ position: "absolute", left: 140, right: 140, top: 250, padding: "22px 28px", borderRadius: 14, background: "#0F1624", border: "1px solid #FFFFFF22",
+          display: "flex", gap: 20, alignItems: "center", opacity: progress(f, F(paper) - 6, 8), transform: `translateY(${(1 - progress(f, F(paper) - 6, 10)) * -30}px)` }}>
+          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 56, color: BLUE }}>2017</div>
+          <div>
+            <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 32, color: "#FFFFFF" }}>Attention Is All You Need</div>
+            <div style={{ fontFamily: MONO, fontSize: 20, color: "#FFFFFF88" }}>Vaswani et al. · Google</div>
+          </div>
+        </div>
+      ) : null}
+      {s >= attention - 0.2 && s < each ? (
+        <div style={{ position: "absolute", left: 0, right: 0, top: 420, textAlign: "center", fontFamily: SERIF, fontSize: 120, color: "#FFFFFF",
+          textShadow: `0 0 30px ${BLUE}`, opacity: progress(f, F(attention) - 6, 8) }}>Attention</div>
+      ) : null}
+      {/* each word looks back */}
+      {s >= each && s < links ? SENT.map((_, i) => (i > 0 ? (
+        <Arc key={i} from={i} to={Math.max(0, i - 1 - (i % 3))} at={F(each) + i * 5} color="#6FA0FF" width={2} lift={70 + (i % 3) * 40} />
+      ) : null)) : null}
+      {/* the sentence, read aloud */}
+      {s >= sentence - 0.2 ? (
+        <div style={{ position: "absolute", left: 70, right: 70, top: 250, textAlign: "center", fontFamily: SERIF, fontSize: 64, lineHeight: 1.15, color: "#FFFFFF",
+          opacity: progress(f, F(sentence) - 6, 8) * (1 - progress(f, F(thats) - 4, 8)) }}>
+          “{SENT.map((w, i) => {
+            const on = (COUGH.includes(i) && s >= cough2 - 0.4) || (i === IT && s >= links + 0.2);
+            return <span key={i} style={{ color: on ? (i === IT ? GOLD : "#FFFFFF") : "#FFFFFFCC", fontStyle: on ? "italic" : "normal",
+              background: on ? "#FFFFFF14" : "transparent", borderRadius: 8, padding: on ? "0 6px" : 0 }}>{w}{i < SENT.length - 1 ? " " : ""}</span>;
+          })}”
+        </div>
+      ) : null}
+      {/* attention links "it" to "a cough" */}
+      {s >= links ? <Arc from={IT} to={3} at={F(links) + 6} color={GOLD} width={6} lift={260} /> : null}
+      {s >= links + 0.3 && s < thats ? (
+        <div style={{ position: "absolute", left: colX(3) - 120, width: colX(IT) - colX(3) + 240, top: 440, textAlign: "center", fontFamily: MONO, fontSize: 32, color: GOLD,
+          opacity: progress(f, F(links) + 12, 8) }}>“it” → “a cough”</div>
+      ) : null}
+      {/* ChatGPT: the T */}
+      {s >= thats - 0.1 ? (
+        <div style={{ position: "absolute", left: 0, right: 0, top: 300, textAlign: "center", opacity: progress(f, F(thats) - 4, 8) }}>
+          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 150, letterSpacing: "-0.04em", color: "#FFFFFF" }}>
+            ChatGP<span style={{ color: s >= tT - 0.1 ? BLUE : "#FFFFFF", textShadow: s >= tT - 0.1 ? `0 0 30px ${BLUE}` : "none" }}>T</span>
+          </div>
+          <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 40, color: "#FFFFFFAA", marginTop: 6, opacity: progress(f, F(transformer) - 8, 8) }}>
+            Generative Pre-trained <span style={{ color: BLUE, fontWeight: 800 }}>Transformer</span>
+          </div>
+        </div>
+      ) : null}
+    </Panel>
+  );
+};
+
+// ---------- the new ending: a general AI answers the same sentence ----------
+
+const QUESTIONS = [
+  "How long have you had it, and is it dry or producing phlegm?",
+  "Any fever, wheezing, shortness of breath, or chest pain?",
+  "Does it worsen when you lie down? Any blocked or runny nose, mucus in your throat, heartburn, or sour taste?",
+];
+
+const Chat: React.FC = () => {
+  const f = useCurrentFrame();
+  const s = f / FPS;
+  const start = t("now", 95);
+  const userAt = t("i", 98);
+  const watch = t("watch", 101);
+  const searches = t("searches", 102);
+  const knows = t("knows", 104);
+  const asks = t("asks", 106);
+  const how = t("how", 108);
+  const fever = t("fever", 110);
+  const careless = t("careless.", 112);
+  const typed = "I have a cough and it is getting worse at night".slice(0, Math.max(0, Math.floor((s - userAt) * 26)));
+  const dim = progress(f, F(t("simply", 113)), 12);
+  const site = Math.floor((s - searches) * 3) % 4;
+  return (
+    <div style={{ position: "absolute", left: 60, right: 60, top: 190, opacity: progress(f, F(start) - 6, 10) * (1 - dim), transform: `scale(${1 - dim * 0.06})`, transformOrigin: "50% 0%" }}>
+      <div style={{ fontFamily: MONO, fontSize: 22, letterSpacing: "0.18em", color: "#FFFFFF77", marginBottom: 22 }}>A GENERAL AI ASSISTANT · EXAMPLE</div>
+      {s >= userAt - 0.1 ? (
+        <div style={{ marginLeft: "auto", width: "fit-content", maxWidth: 760, background: "#0B1A6E", color: "#DDE4FF", fontFamily: SANS, fontSize: 38, lineHeight: 1.3,
+          padding: "22px 30px", borderRadius: 34 }}>{typed || " "}</div>
+      ) : null}
+      {s >= watch - 0.2 ? (
+        <div style={{ marginTop: 30, fontFamily: SANS, fontSize: 32, color: "#FFFFFFDD", opacity: progress(f, F(watch) - 6, 8) }}>
+          I'll check current guidance on nighttime cough and the symptoms that need urgent assessment.
+        </div>
+      ) : null}
+      {s >= searches - 0.3 && s < knows + 0.3 ? (
+        <div style={{ marginTop: 22, display: "flex", alignItems: "center", gap: 14, fontFamily: SANS, fontSize: 30, color: "#FFFFFF99" }}>
+          <div style={{ width: 34, height: 34, borderRadius: 17, border: "3px solid #FFFFFF44", borderTopColor: "#FFFFFF", transform: `rotate(${f * 18}deg)` }} />
+          Searching {4} websites
+          <span style={{ fontFamily: MONO, fontSize: 24, color: "#FFFFFF77" }}>{["nhs.uk", "website 2", "website 3", "website 4"][site]}</span>
+        </div>
+      ) : null}
+      {s >= knows + 0.3 ? (
+        <div style={{ marginTop: 22, opacity: progress(f, F(knows) + 9, 8) }}>
+          <div style={{ fontFamily: SANS, fontSize: 24, color: "#FFFFFF66" }}>Worked for 24s ›</div>
+          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 32, lineHeight: 1.35, color: "#FFFFFF", marginTop: 10 }}>
+            A cough that worsens at night can occur with mucus draining from the nose, acid reflux, or asthma; a respiratory infection is another common cause.
+            <span style={{ fontWeight: 500, color: "#FFFFFFCC" }}> The nighttime pattern alone cannot establish the diagnosis.</span>
+            <span style={{ marginLeft: 10, fontFamily: SANS, fontWeight: 600, fontSize: 22, color: "#FFFFFFAA", background: "#FFFFFF14", padding: "4px 12px", borderRadius: 14 }}>nhs.uk +1</span>
+          </div>
+        </div>
+      ) : null}
+      {s >= asks ? (
+        <div style={{ marginTop: 22 }}>
+          <div style={{ fontFamily: SANS, fontSize: 30, color: "#FFFFFF", opacity: progress(f, F(asks), 8) }}>To narrow it down:</div>
+          {QUESTIONS.map((q, i) => {
+            const at = [how, fever, careless][i];
+            return (
+              <div key={i} style={{ display: "flex", gap: 14, marginTop: 12, fontFamily: SANS, fontWeight: 700, fontSize: 28, lineHeight: 1.3, color: "#FFFFFF",
+                opacity: progress(f, F(at) - 6, 8) }}>
+                <span style={{ color: "#FFFFFF99" }}>{i + 1}.</span><span>{q}</span>
+              </div>
+            );
+          })}
+          {s >= how - 0.2 && s < t("simply", 113) ? (
+            <div style={{ marginTop: 16, display: "inline-block", fontFamily: MONO, fontSize: 22, letterSpacing: "0.14em", color: GOLD, border: `2px solid ${GOLD}`,
+              borderRadius: 8, padding: "6px 14px", opacity: progress(f, F(how), 8) }}>THE SAME QUESTIONS FOR EVERYONE</div>
+          ) : null}
+        </div>
+      ) : null}
+    </div>
+  );
+};
+
+const Memory: React.FC = () => {
+  const f = useCurrentFrame();
+  const s = f / FPS;
+  const simply = t("simply", 113);
+  const predicts = t("predicts", 120);
+  if (s < simply - 0.1 || s >= predicts) return null;
+  const rows: [string, number][] = [["Your diagnosis", t("diagnosis,", 115)], ["Your medicines", t("medicines,", 116)], ["Your doctor's plan", t("plan", 118)]];
+  return (
+    <div style={{ position: "absolute", left: 90, right: 90, top: 330, padding: "34px 36px", borderRadius: 26, background: "#0E1320", border: "1px solid #FFFFFF22",
+      opacity: progress(f, F(simply), 10) * (1 - progress(f, F(predicts) - 8, 8)) }}>
+      <div style={{ fontFamily: MONO, fontSize: 24, letterSpacing: "0.16em", color: "#FFFFFF88" }}>MEMORY OF YOUR TREATMENT</div>
+      <div style={{ fontFamily: SERIF, fontSize: 72, color: "#FFFFFF", marginTop: 8 }}>Empty.</div>
+      {rows.map(([label, at]) => (
+        <div key={label} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 18, padding: "18px 22px", borderRadius: 16,
+          border: "2px dashed #FFFFFF33", opacity: progress(f, F(at) - 6, 8) }}>
+          <span style={{ fontFamily: SANS, fontWeight: 600, fontSize: 34, color: "#FFFFFFCC" }}>{label}</span>
+          <span style={{ fontFamily: MONO, fontSize: 26, color: "#FF6B5A" }}>not known</span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const Internet: React.FC = () => {
+  const f = useCurrentFrame();
+  const s = f / FPS;
+  const from = t("predicts", 120);
+  const to = t("your", 123);
+  if (s < from - 0.1 || s >= to) return null;
+  const snippets = ["…common causes of night cough…", "…postnasal drip…", "…acid reflux at night…", "…when to see a GP…", "…asthma symptoms…", "…home remedies…",
+    "…cough lasting 3 weeks…", "…chest infection…", "…lying down makes it…", "…dry or chesty…"];
+  return (
+    <div style={{ position: "absolute", left: 0, right: 0, top: 200, height: 1000, opacity: progress(f, F(from), 8) * (1 - progress(f, F(to) - 6, 6)) }}>
+      {snippets.map((sn, i) => {
+        const y = 900 - ((f - F(from) + i * 14) * 6) % 900;
+        return (
+          <div key={i} style={{ position: "absolute", left: 80 + (i % 3) * 280, top: y, fontFamily: MONO, fontSize: 24, color: "#FFFFFF66",
+            background: "#FFFFFF0D", padding: "8px 14px", borderRadius: 10 }}>{sn}</div>
+        );
+      })}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 380, textAlign: "center", fontFamily: SANS, fontWeight: 800, fontSize: 64, color: "#FFFFFF",
+        textShadow: "0 4px 30px #000" }}>likely words<br /><span style={{ fontWeight: 500, fontSize: 40, color: "#FFFFFFAA" }}>from what's written online</span></div>
+    </div>
+  );
+};
+
+const TI: React.FC = () => {
+  const f = useCurrentFrame();
+  const s = f / FPS;
+  const from = t("your", 123);
+  const why = t("that's", 128);
+  if (s < from - 0.1) return null;
+  const rows = ["Diagnosis", "Medicines", "Your doctor's plan", "Follow-up"];
+  const final = s >= why - 0.1;
+  return (
+    <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: PANEL_H }}>
+      {!final ? (
+        <div style={{ position: "absolute", left: 90, right: 90, top: 330, padding: "34px 36px", borderRadius: 26, background: "#0C1A1A", border: `1px solid ${"#3FC1AE"}55`,
+          opacity: progress(f, F(from), 10) }}>
+          <div style={{ fontFamily: MONO, fontSize: 24, letterSpacing: "0.16em", color: "#3FC1AE" }}>BUILT FOR TREATMENT</div>
+          <div style={{ fontFamily: SERIF, fontSize: 64, color: "#FFFFFF", marginTop: 8 }}>Remembers your care.</div>
+          {rows.map((r, i) => (
+            <div key={r} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 16, padding: "16px 22px", borderRadius: 16,
+              background: "#3FC1AE14", opacity: progress(f, F(t("remembers", 126)) + i * 5, 8) }}>
+              <span style={{ fontFamily: SANS, fontWeight: 600, fontSize: 34, color: "#FFFFFF" }}>{r}</span>
+              <span style={{ fontFamily: SANS, fontWeight: 800, fontSize: 32, color: "#3FC1AE" }}>✓</span>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div style={{ position: "absolute", left: 0, right: 0, top: 380, textAlign: "center", opacity: progress(f, F(why), 12) }}>
+          <div style={{ fontFamily: MONO, fontSize: 26, letterSpacing: "0.3em", color: "#FFFFFF88" }}>FOR YOUR HEALTH</div>
+          <div style={{ fontFamily: SERIF, fontSize: 112, lineHeight: 1.0, color: "#FFFFFF", marginTop: 20, transform: `scale(${0.9 + 0.1 * pop(f, F(t("treatment", 129)), 16)})` }}>
+            Treatment<br /><span style={{ color: "#3FC1AE", fontStyle: "italic" }}>Intelligence</span>
+          </div>
+          <div style={{ fontFamily: MONO, fontSize: 24, letterSpacing: "0.2em", color: "#FFFFFF66", marginTop: 26, opacity: progress(f, F(t("intelligence.", 129)) + 15, 10) }}>TI · TREINT</div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+const EndPanel: React.FC = () => (
+  <Panel from={END_FROM} to={999}>
+    <TopCaption from={END_FROM} to={999} />
+    <Chat />
+    <Memory />
+    <Internet />
+    <TI />
+  </Panel>
+);
+
+export const S1E4Dark: React.FC = () => (
+  <AbsoluteFill style={{ background: BG }}>
+    {STRETCHES.map((st, i) => (
+      <Sequence key={i} from={F(st.from)} durationInFrames={Math.max(1, F(st.from + st.dur) - F(st.from))} name={`footage ${i}`}>
+        <Footage srcStart={st.src} />
+      </Sequence>
+    ))}
+    <CatPanel />
+    <EndPanel />
+    <Audio src={staticFile(`${D}/voice.mp3`)} />
+  </AbsoluteFill>
+);
+
+export const S1E4_COVER = F(t("transformer", 64));

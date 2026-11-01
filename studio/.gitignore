@@ -15,3 +15,8 @@ briefs/*/*.mp4
 fx/.venv
 public/edit/*/clean-fx.mp4
 public/music/*.wav
+# the creator's own footage and voice (public repo): never commit
+public/edit/*/source.mp4
+public/edit/*/voice.mp3
+briefs/*/new/*.wav
+briefs/*/new/*.mp3

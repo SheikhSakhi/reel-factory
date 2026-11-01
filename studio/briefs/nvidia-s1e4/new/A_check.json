@@ -1,0 +1,60 @@
+{
+  "language": "en",
+  "model": "small",
+  "words": [
+    {
+      "text": "I",
+      "start": 0.1,
+      "end": 0.1,
+      "p": 0.903073
+    },
+    {
+      "text": "have",
+      "start": 0.15,
+      "end": 0.5,
+      "p": 0.987483
+    },
+    {
+      "text": "a",
+      "start": 0.5,
+      "end": 0.6,
+      "p": 0.989285
+    },
+    {
+      "text": "cough.",
+      "start": 0.6,
+      "end": 1.28,
+      "p": 0.61318
+    },
+    {
+      "text": "It",
+      "start": 1.34,
+      "end": 1.39,
+      "p": 0.625723
+    },
+    {
+      "text": "is",
+      "start": 1.39,
+      "end": 1.5,
+      "p": 0.906521
+    },
+    {
+      "text": "getting",
+      "start": 1.5,
+      "end": 1.87,
+      "p": 0.99922
+    },
+    {
+      "text": "worse",
+      "start": 1.87,
+      "end": 2.15,
+      "p": 0.984008
+    },
+    {
+      "text": "tonight.",
+      "start": 2.15,
+      "end": 2.62,
+      "p": 0.373056
+    }
+  ]
+}

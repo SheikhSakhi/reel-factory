@@ -7,6 +7,7 @@ import { MonitorNotPlan, MONITOR_COVER, MONITOR_DURATION } from "./2026-10-30-mo
 import { Ep02AlertNobodyOwned, EP02_COVER, EP02_DURATION } from "./ep02-alert-nobody-owned/Reel";
 import { Ep02Soft, EP02_SOFT_COVER, EP02_SOFT_DURATION } from "./ep02-soft/Reel";
 import { WhoComesBack, WHO_BACK_COVER, WHO_BACK_DURATION } from "./2026-10-31-who-comes-back/Reel";
+import { S1E4Dark, S1E4_COVER, S1E4_DURATION } from "../edits/s1e4-dark/Reel";
 import { SeriesDemoReel, SERIES_DEMO_COVER, SERIES_DEMO_DURATION } from "./series-demo/Reel";
 
 export type ReelEntry = {
@@ -28,4 +29,5 @@ export const REELS: readonly ReelEntry[] = [
   { id: "ep02-alert-nobody-owned", component: Ep02AlertNobodyOwned, durationInFrames: EP02_DURATION, coverFrame: EP02_COVER },
   { id: "ep02-soft", component: Ep02Soft, durationInFrames: EP02_SOFT_DURATION, coverFrame: EP02_SOFT_COVER },
   { id: "2026-10-31-who-comes-back", component: WhoComesBack, durationInFrames: WHO_BACK_DURATION, coverFrame: WHO_BACK_COVER },
+  { id: "nvidia-s1e4-dark", component: S1E4Dark, durationInFrames: S1E4_DURATION, coverFrame: S1E4_COVER },
 ];
