@@ -11,6 +11,8 @@ Rules learned from ratings and real results. Every run reads this first. Maintai
 - Ad tone: slogans, a product name or tagline as the ending ("DOCX · ...", "A plan is."), selling instead of explaining (monitor-not-plan disliked: "like an advertisement", 2026-10-30)
 
 ## User preferences
+- Hooks don't have to be medical: the first line must make anyone stop and listen (a human moment, a surprise, a question, a visual puzzle), then the story turns to care. The-gardener opened on a clinical line ("She came back worse"): script and design rated good, hook too narrow (2026-11-02)
+- Faceless parable (F2) works: sunlit flat illustration, an old wise character + a young doctor, one metaphor object, a reframing line, a callback ending; rated good (the-gardener, 2026-11-02)
 - Character episodes (F1): no generic sound effects; a soft ambient music bed (scripts/ambient.py) that dips under the voices, plus room tone. Calm voices: slower (about -6 to -9%), lower pitch, longer pauses between lines. Soft visuals: smooth rounded clay characters (kit/SoftWorld.tsx), a bright daylight space, soft cinematic light (window rays, haze, gentle glow, light grain) rather than dark and moody (2026-10-30, reference: the VoiceStudio explainer reel)
 - No CTA by default. "Better no CTA than a bad CTA": no product tag, no "follow for more", no keyword unless a real lead magnet exists and the user asked for it; end on the insight (2026-10-30)
 - The synthetic voice is the weakest part of every reel so far (edge-tts judged poor on midnight-question, forgotten-plan, monitor-not-plan); a better voice is the top fix (2026-10-30)
