@@ -491,6 +491,9 @@ const Ti: React.FC = () => {
       {/* cover the robot: a feathered dark shape over its area only, so the animations around it stay visible */}
       <div style={{ position: "absolute", left: 140, width: 800, top: 1400, height: 580,
         background: "radial-gradient(ellipse 50% 55% at 50% 62%, #0C0C0E 0%, #0C0C0E 62%, rgba(12,12,14,0.85) 74%, rgba(12,12,14,0) 100%)" }} />
+      {/* and a band along the bottom edge, where the robot's hands reached */}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1700, height: 220,
+        background: "linear-gradient(180deg, rgba(12,12,14,0) 0%, #0C0C0E 45%, #0C0C0E 100%)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 1220, height: 700 }}>
         <ThreeCanvas width={1080} height={700} dpr={1} gl={{ antialias: true, preserveDrawingBuffer: true }} camera={{ position: [0, 0.75, 4.2], fov: 30 }}>
           <NarratorLights />
