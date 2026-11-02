@@ -84,11 +84,15 @@ const Arm: React.FC<{ side: -1 | 1; raise: number }> = ({ side, raise }) => (
 );
 
 /** The narrator, standing (companion) or hovering (cube, lantern) with its base at the origin. */
-export const TiNarrator: React.FC<{ frame: number; talk?: number; look?: NarratorLook; gesture?: number; turn?: number }> = ({
-  frame, talk = 0, look = "cube", gesture = 0, turn = 0,
+/** A reaction pose added on top of the calm idle: nod (+ looks down), look (+ looks up), tilt (roll), lift (height). */
+export type TiPose = { nod?: number; look?: number; tilt?: number; lift?: number };
+
+export const TiNarrator: React.FC<{ frame: number; talk?: number; look?: NarratorLook; gesture?: number; turn?: number; pose?: TiPose }> = ({
+  frame, talk = 0, look = "cube", gesture = 0, turn = 0, pose = {},
 }) => {
-  const hover = Math.sin(frame / 24) * 0.04;
-  const nod = talk * 0.05 * Math.sin(frame / 3.1);
+  // calm idle: a very slow, small float; no motion driven by speech (the light line shows the talking)
+  const hover = Math.sin(frame / 75) * 0.015 + (pose.lift ?? 0);
+  const nod = (pose.nod ?? 0) - (pose.look ?? 0);
   const body = useRounded(0.8, 0.7, 0.55, 0.24);
   return (
     <group rotation={[0, turn, 0]}>
@@ -110,7 +114,7 @@ export const TiNarrator: React.FC<{ frame: number; talk?: number; look?: Narrato
           </group>
         </group>
       ) : (
-        <group position={[0, 0.85 + hover, 0]} rotation={[nod, Math.sin(frame / 60) * 0.08, Math.sin(frame / 50) * 0.03]}>
+        <group position={[0, 0.85 + hover, 0]} rotation={[nod, Math.sin(frame / 160) * 0.03, (pose.tilt ?? 0)]}>
           <Head frame={frame} talk={talk} look={look} />
         </group>
       )}

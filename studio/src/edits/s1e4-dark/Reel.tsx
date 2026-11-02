@@ -3,7 +3,8 @@ import { AbsoluteFill, Audio, OffthreadVideo, Sequence, interpolate, staticFile,
 import { BRAND } from "../../brand/brand";
 import { pop, progress } from "../../kit";
 import { ThreeCanvas } from "@remotion/three";
-import { NarratorLights, TiNarrator } from "../../kit/Narrator3D";
+import { NarratorLights, TiNarrator, type TiPose } from "../../kit/Narrator3D";
+import envJson from "../../../public/edit/s1e4-dark/env.json";
 import timeline from "../../../public/edit/s1e4-dark/timeline.json";
 import light from "../../../public/edit/s1e4-dark/light.json";
 import wordsJson from "../../../public/edit/s1e4-dark/words.json";
@@ -474,31 +475,55 @@ const EndPanel: React.FC = () => (
 
 // ---------- Ti, the narrator (replaces the robot baked into the source footage) ----------
 
-const talkAt = (sec: number): number => {
-  const w = WORDS.find((x) => sec >= x.start - 0.03 && sec <= x.end + 0.03);
-  if (!w) return 0;
-  return 0.35 + 0.65 * Math.abs(Math.sin((sec - w.start) * 26));
+const ENV = (envJson as { env: number[] }).env;
+
+/** Reactions only on the moments that matter; between them Ti stays calm. */
+type Beat = { at: number; kind: keyof TiPose; amount: number };
+const BEATS: Beat[] = [
+  { at: 17.01, kind: "lift", amount: 0.06 },   // 86 billion
+  { at: 27.09, kind: "nod", amount: 0.12 },    // 1943
+  { at: 42.96, kind: "tilt", amount: 0.1 },    // a matrix
+  { at: 51.59, kind: "look", amount: 0.16 },   // attention
+  { at: 61.45, kind: "nod", amount: 0.14 },    // links it to a cough
+  { at: 64.9, kind: "lift", amount: 0.07 },    // transformer
+  { at: 77.49, kind: "look", amount: 0.14 },   // 175 billion
+  { at: 94.68, kind: "tilt", amount: -0.1 },   // light bulb
+  { at: 102.96, kind: "look", amount: 0.16 },  // it searches websites
+  { at: 112.66, kind: "tilt", amount: 0.1 },   // it isn't careless
+  { at: 114.35, kind: "nod", amount: 0.12 },   // no memory
+  { at: 122.63, kind: "tilt", amount: -0.08 }, // internet
+  { at: 129.73, kind: "lift", amount: 0.08 },  // use Treatment Intelligence
+];
+/** A smooth bump: rises over ~0.25 s, settles over ~0.9 s. */
+const bump = (sec: number, at: number) => {
+  const d = sec - at;
+  if (d < -0.25 || d > 1.2) return 0;
+  return d < 0 ? Math.sin(((d + 0.25) / 0.25) * (Math.PI / 2)) : Math.cos((d / 1.2) * (Math.PI / 2)) ** 2;
+};
+const poseAt = (sec: number): TiPose => {
+  const p: TiPose = {};
+  for (const b of BEATS) p[b.kind] = (p[b.kind] ?? 0) + b.amount * bump(sec, b.at);
+  return p;
 };
 
 const Ti: React.FC = () => {
   const f = useCurrentFrame();
   const sec = f / FPS;
-  const talk = talkAt(sec);
+  const talk = ENV[Math.min(ENV.length - 1, f)] ?? 0;
   // a slow drift so it never sits frozen; a small lean toward the panels while the new ending plays
-  const turn = -0.22 + Math.sin(f / 90) * 0.12;
+  const turn = -0.18;
   return (
     <>
-      {/* cover the robot: a feathered dark shape over its area only, so the animations around it stay visible */}
-      <div style={{ position: "absolute", left: 140, width: 800, top: 1400, height: 580,
-        background: "radial-gradient(ellipse 50% 55% at 50% 62%, #0C0C0E 0%, #0C0C0E 62%, rgba(12,12,14,0.85) 74%, rgba(12,12,14,0) 100%)" }} />
-      {/* and a band along the bottom edge, where the robot's hands reached */}
-      <div style={{ position: "absolute", left: 0, right: 0, top: 1700, height: 220,
-        background: "linear-gradient(180deg, rgba(12,12,14,0) 0%, #0C0C0E 45%, #0C0C0E 100%)" }} />
+      {/* a dark stage across the bottom of the frame: it hides the robot baked into the footage, raised arms included */}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1300, height: 620,
+        background: "linear-gradient(180deg, rgba(12,12,14,0) 0%, rgba(12,12,14,0.92) 14%, #0C0C0E 22%, #0C0C0E 100%)" }} />
+      <div style={{ position: "absolute", left: 240, width: 600, top: 1700, height: 160,
+        background: "radial-gradient(ellipse 50% 40% at 50% 50%, rgba(255,138,58,0.10) 0%, rgba(255,138,58,0) 100%)" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 1220, height: 700 }}>
         <ThreeCanvas width={1080} height={700} dpr={1} gl={{ antialias: true, preserveDrawingBuffer: true }} camera={{ position: [0, 0.75, 4.2], fov: 30 }}>
           <NarratorLights />
           <group position={[0, -0.95, 0]} rotation={[0.05, turn, 0]} scale={1.0}>
-            <TiNarrator frame={f} talk={talk} look="cube" />
+            <TiNarrator frame={f} talk={talk} look="cube" pose={poseAt(sec)} />
           </group>
         </ThreeCanvas>
       </div>
