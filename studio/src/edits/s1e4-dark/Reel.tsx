@@ -2,6 +2,8 @@ import React from "react";
 import { AbsoluteFill, Audio, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { BRAND } from "../../brand/brand";
 import { pop, progress } from "../../kit";
+import { ThreeCanvas } from "@remotion/three";
+import { NarratorLights, TiNarrator } from "../../kit/Narrator3D";
 import timeline from "../../../public/edit/s1e4-dark/timeline.json";
 import light from "../../../public/edit/s1e4-dark/light.json";
 import wordsJson from "../../../public/edit/s1e4-dark/words.json";
@@ -260,7 +262,7 @@ const NextWordPanel: React.FC = () => {
       {Array.from({ length: LAYERS }).map((_, i) => {
         const p = progress(f, F(stack) + i * 3, 10);
         const isLast = i === 0 && s >= last;
-        const y = 700 + i * 62 - (s >= scores ? 0 : 0);
+        const y = 640 + i * 54;
         return (
           <div key={i} style={{ position: "absolute", left: 190, width: 700, top: y, height: 120, opacity: p * (s >= scores && i > 0 ? 0.55 : 1),
             transform: `perspective(900px) rotateX(62deg) translateY(${(1 - p) * 60}px)`,
@@ -292,7 +294,7 @@ const NextWordPanel: React.FC = () => {
           opacity: progress(f, F(pick), 6) }}>NEXT WORD</div>
       ) : null}
       {/* the sentence, waiting for its next word */}
-      <div style={{ position: "absolute", left: 50, right: 50, top: 1310, textAlign: "center", fontFamily: SANS, fontSize: 34, color: "#FFFFFFDD",
+      <div style={{ position: "absolute", left: 50, right: 50, top: 1190, textAlign: "center", fontFamily: SANS, fontSize: 34, color: "#FFFFFFDD",
         opacity: progress(f, F(stack) + 10, 10) }}>
         I have a cough and it is getting worse at{" "}
         <span style={{ display: "inline-block", minWidth: 110, padding: "2px 14px", borderRadius: 10, fontWeight: 800,
@@ -470,6 +472,37 @@ const EndPanel: React.FC = () => (
   </Panel>
 );
 
+// ---------- Ti, the narrator (replaces the robot baked into the source footage) ----------
+
+const talkAt = (sec: number): number => {
+  const w = WORDS.find((x) => sec >= x.start - 0.03 && sec <= x.end + 0.03);
+  if (!w) return 0;
+  return 0.35 + 0.65 * Math.abs(Math.sin((sec - w.start) * 26));
+};
+
+const Ti: React.FC = () => {
+  const f = useCurrentFrame();
+  const sec = f / FPS;
+  const talk = talkAt(sec);
+  // a slow drift so it never sits frozen; a small lean toward the panels while the new ending plays
+  const turn = -0.22 + Math.sin(f / 90) * 0.12;
+  return (
+    <>
+      {/* cover the robot: a feathered dark shape over its area only, so the animations around it stay visible */}
+      <div style={{ position: "absolute", left: 140, width: 800, top: 1400, height: 580,
+        background: "radial-gradient(ellipse 50% 55% at 50% 62%, #0C0C0E 0%, #0C0C0E 62%, rgba(12,12,14,0.85) 74%, rgba(12,12,14,0) 100%)" }} />
+      <div style={{ position: "absolute", left: 0, right: 0, top: 1220, height: 700 }}>
+        <ThreeCanvas width={1080} height={700} dpr={1} gl={{ antialias: true, preserveDrawingBuffer: true }} camera={{ position: [0, 0.75, 4.2], fov: 30 }}>
+          <NarratorLights />
+          <group position={[0, -0.95, 0]} rotation={[0.05, turn, 0]} scale={1.0}>
+            <TiNarrator frame={f} talk={talk} look="cube" />
+          </group>
+        </ThreeCanvas>
+      </div>
+    </>
+  );
+};
+
 export const S1E4Dark: React.FC = () => (
   <AbsoluteFill style={{ background: BG }}>
     {STRETCHES.map((st, i) => (
@@ -480,6 +513,7 @@ export const S1E4Dark: React.FC = () => (
     <CatPanel />
     <NextWordPanel />
     <EndPanel />
+    <Ti />
     <Audio src={staticFile(`${D}/voice.mp3`)} />
   </AbsoluteFill>
 );

@@ -92,11 +92,11 @@ export const TiNarrator: React.FC<{ frame: number; talk?: number; look?: Narrato
   const body = useRounded(0.8, 0.7, 0.55, 0.24);
   return (
     <group rotation={[0, turn, 0]}>
-      {/* contact glow / shadow */}
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.002, 0]}>
+      {/* contact shadow (only when it stands on the ground) */}
+      {look === "companion" ? <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.002, 0]}>
         <circleGeometry args={[look === "companion" ? 0.55 : 0.45, 48]} />
         <meshBasicMaterial color={look === "companion" ? "#000000" : "#FF8A3A"} transparent opacity={look === "companion" ? 0.35 : 0.16 - hover * 0.5} />
-      </mesh>
+      </mesh> : null}
       {look === "companion" ? (
         <group position={[0, 0.02, 0]}>
           <mesh geometry={body} position={[0, 0.45, 0]} castShadow><Mat color="#F3EEE6" rough={0.45} /></mesh>
