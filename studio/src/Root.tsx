@@ -4,6 +4,7 @@ import { EditedReel, REEL, calculateEditMetadata, type EditedReelProps } from ".
 import { BRAND } from "./brand/brand";
 import { PANELS } from "./edits/registry";
 import { REELS, type ReelEntry } from "./reels/registry";
+import { TiDesign } from "./edits/ti-narrator/Designs";
 
 /**
  * One frame of a reel as `<id>-cover` for the profile grid. It is a full-length composition
@@ -45,6 +46,8 @@ export const RemotionRoot: React.FC = () => (
         height={REEL.height}
       />
     ))}
+    <Composition id="ti-design" component={TiDesign} defaultProps={{ look: "cube" as const }} durationInFrames={60}
+      fps={REEL.fps} width={REEL.width} height={REEL.height} />
     {COVERS.map((cover) => (
       <Composition key={cover.id} id={cover.id} component={cover.component} durationInFrames={cover.durationInFrames}
         fps={REEL.fps} width={REEL.width} height={REEL.height} />

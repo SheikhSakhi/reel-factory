@@ -21,3 +21,4 @@ public/edit/*/voice.mp3
 briefs/*/new/*.wav
 briefs/*/new/*.mp3
 build/
+public/edit/*/preview.jpg
