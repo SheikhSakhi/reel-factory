@@ -1,0 +1,977 @@
+{
+  "file": "vo/2026-11-02-the-gardener/take.mp3",
+  "voice": "dialogue",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 1558,
+  "cast": {
+    "YOUNG": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "-6%",
+      "pitch": "-2Hz"
+    },
+    "OLD": {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-14%",
+      "pitch": "-6Hz",
+      "gap": 0.6
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "She came back worse. And I did everything right.",
+      "from": 0,
+      "words": [
+        {
+          "token": "She",
+          "start": 0.106,
+          "end": 0.226,
+          "frame": 3,
+          "endFrame": 7
+        },
+        {
+          "token": "came",
+          "start": 0.226,
+          "end": 0.426,
+          "frame": 7,
+          "endFrame": 13
+        },
+        {
+          "token": "back",
+          "start": 0.426,
+          "end": 0.665,
+          "frame": 13,
+          "endFrame": 20
+        },
+        {
+          "token": "worse.",
+          "start": 0.678,
+          "end": 1.223,
+          "frame": 20,
+          "endFrame": 37
+        },
+        {
+          "token": "And",
+          "start": 1.662,
+          "end": 1.742,
+          "frame": 50,
+          "endFrame": 52
+        },
+        {
+          "token": "I",
+          "start": 1.742,
+          "end": 1.809,
+          "frame": 52,
+          "endFrame": 54
+        },
+        {
+          "token": "did",
+          "start": 1.822,
+          "end": 2.008,
+          "frame": 55,
+          "endFrame": 60
+        },
+        {
+          "token": "everything",
+          "start": 2.008,
+          "end": 2.513,
+          "frame": 60,
+          "endFrame": 75
+        },
+        {
+          "token": "right.",
+          "start": 2.527,
+          "end": 2.899,
+          "frame": 76,
+          "endFrame": 87
+        }
+      ],
+      "to": 109,
+      "speechEnd": 87,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S2",
+      "text": "Tell me.",
+      "from": 109,
+      "words": [
+        {
+          "token": "Tell",
+          "start": 3.719,
+          "end": 4.024,
+          "frame": 112,
+          "endFrame": 121
+        },
+        {
+          "token": "me.",
+          "start": 4.039,
+          "end": 4.3,
+          "frame": 121,
+          "endFrame": 129
+        }
+      ],
+      "to": 139,
+      "speechEnd": 129,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S3",
+      "text": "Right diagnosis. Right medicine. A clear plan.",
+      "from": 139,
+      "words": [
+        {
+          "token": "Right",
+          "start": 4.746,
+          "end": 4.986,
+          "frame": 142,
+          "endFrame": 150
+        },
+        {
+          "token": "diagnosis.",
+          "start": 4.999,
+          "end": 5.983,
+          "frame": 150,
+          "endFrame": 179
+        },
+        {
+          "token": "Right",
+          "start": 6.409,
+          "end": 6.608,
+          "frame": 192,
+          "endFrame": 198
+        },
+        {
+          "token": "medicine.",
+          "start": 6.608,
+          "end": 7.113,
+          "frame": 198,
+          "endFrame": 213
+        },
+        {
+          "token": "A",
+          "start": 7.526,
+          "end": 7.579,
+          "frame": 226,
+          "endFrame": 227
+        },
+        {
+          "token": "clear",
+          "start": 7.579,
+          "end": 7.898,
+          "frame": 227,
+          "endFrame": 237
+        },
+        {
+          "token": "plan.",
+          "start": 7.898,
+          "end": 8.297,
+          "frame": 237,
+          "endFrame": 249
+        }
+      ],
+      "to": 271,
+      "speechEnd": 249,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S4",
+      "text": "And after the visit?",
+      "from": 271,
+      "words": [
+        {
+          "token": "And",
+          "start": 9.117,
+          "end": 9.35,
+          "frame": 274,
+          "endFrame": 280
+        },
+        {
+          "token": "after",
+          "start": 9.364,
+          "end": 9.655,
+          "frame": 281,
+          "endFrame": 290
+        },
+        {
+          "token": "the",
+          "start": 9.669,
+          "end": 9.771,
+          "frame": 290,
+          "endFrame": 293
+        },
+        {
+          "token": "visit?",
+          "start": 9.786,
+          "end": 10.338,
+          "frame": 294,
+          "endFrame": 310
+        }
+      ],
+      "to": 321,
+      "speechEnd": 310,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S5",
+      "text": "I saw her again. Three months later.",
+      "from": 321,
+      "words": [
+        {
+          "token": "I",
+          "start": 10.784,
+          "end": 10.838,
+          "frame": 324,
+          "endFrame": 325
+        },
+        {
+          "token": "saw",
+          "start": 10.851,
+          "end": 11.104,
+          "frame": 326,
+          "endFrame": 333
+        },
+        {
+          "token": "her",
+          "start": 11.104,
+          "end": 11.276,
+          "frame": 333,
+          "endFrame": 338
+        },
+        {
+          "token": "again.",
+          "start": 11.276,
+          "end": 11.635,
+          "frame": 338,
+          "endFrame": 349
+        },
+        {
+          "token": "Three",
+          "start": 12.127,
+          "end": 12.314,
+          "frame": 364,
+          "endFrame": 369
+        },
+        {
+          "token": "months",
+          "start": 12.327,
+          "end": 12.633,
+          "frame": 370,
+          "endFrame": 379
+        },
+        {
+          "token": "later.",
+          "start": 12.633,
+          "end": 13.005,
+          "frame": 379,
+          "endFrame": 390
+        }
+      ],
+      "to": 412,
+      "speechEnd": 390,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S6",
+      "text": "How much time did you spend with her this year?",
+      "from": 412,
+      "words": [
+        {
+          "token": "How",
+          "start": 13.827,
+          "end": 14.103,
+          "frame": 415,
+          "endFrame": 423
+        },
+        {
+          "token": "much",
+          "start": 14.118,
+          "end": 14.394,
+          "frame": 424,
+          "endFrame": 432
+        },
+        {
+          "token": "time",
+          "start": 14.408,
+          "end": 14.699,
+          "frame": 432,
+          "endFrame": 441
+        },
+        {
+          "token": "did",
+          "start": 14.714,
+          "end": 14.874,
+          "frame": 441,
+          "endFrame": 446
+        },
+        {
+          "token": "you",
+          "start": 14.888,
+          "end": 14.99,
+          "frame": 447,
+          "endFrame": 450
+        },
+        {
+          "token": "spend",
+          "start": 15.004,
+          "end": 15.397,
+          "frame": 450,
+          "endFrame": 462
+        },
+        {
+          "token": "with",
+          "start": 15.411,
+          "end": 15.571,
+          "frame": 462,
+          "endFrame": 467
+        },
+        {
+          "token": "her",
+          "start": 15.586,
+          "end": 15.775,
+          "frame": 468,
+          "endFrame": 473
+        },
+        {
+          "token": "this",
+          "start": 15.789,
+          "end": 16.036,
+          "frame": 474,
+          "endFrame": 481
+        },
+        {
+          "token": "year?",
+          "start": 16.051,
+          "end": 16.531,
+          "frame": 482,
+          "endFrame": 496
+        }
+      ],
+      "to": 506,
+      "speechEnd": 496,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S7",
+      "text": "An hour. Maybe.",
+      "from": 506,
+      "words": [
+        {
+          "token": "An",
+          "start": 16.951,
+          "end": 17.031,
+          "frame": 509,
+          "endFrame": 511
+        },
+        {
+          "token": "hour.",
+          "start": 17.031,
+          "end": 17.403,
+          "frame": 511,
+          "endFrame": 522
+        },
+        {
+          "token": "Maybe.",
+          "start": 17.828,
+          "end": 18.227,
+          "frame": 535,
+          "endFrame": 547
+        }
+      ],
+      "to": 568,
+      "speechEnd": 547,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S8",
+      "text": "A year has eight thousand, seven hundred and sixty hours.",
+      "from": 568,
+      "words": [
+        {
+          "token": "A",
+          "start": 19.047,
+          "end": 19.207,
+          "frame": 571,
+          "endFrame": 576
+        },
+        {
+          "token": "year",
+          "start": 19.221,
+          "end": 19.614,
+          "frame": 577,
+          "endFrame": 588
+        },
+        {
+          "token": "has",
+          "start": 19.628,
+          "end": 19.846,
+          "frame": 589,
+          "endFrame": 595
+        },
+        {
+          "token": "eight",
+          "start": 19.861,
+          "end": 20.064,
+          "frame": 596,
+          "endFrame": 602
+        },
+        {
+          "token": "thousand,",
+          "start": 20.079,
+          "end": 20.689,
+          "frame": 602,
+          "endFrame": 621
+        },
+        {
+          "token": "seven",
+          "start": 20.878,
+          "end": 21.213,
+          "frame": 626,
+          "endFrame": 636
+        },
+        {
+          "token": "hundred",
+          "start": 21.227,
+          "end": 21.634,
+          "frame": 637,
+          "endFrame": 649
+        },
+        {
+          "token": "and",
+          "start": 21.736,
+          "end": 21.925,
+          "frame": 652,
+          "endFrame": 658
+        },
+        {
+          "token": "sixty",
+          "start": 21.939,
+          "end": 22.39,
+          "frame": 658,
+          "endFrame": 672
+        },
+        {
+          "token": "hours.",
+          "start": 22.405,
+          "end": 23.015,
+          "frame": 672,
+          "endFrame": 690
+        }
+      ],
+      "to": 712,
+      "speechEnd": 690,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S9",
+      "text": "You planted well. But a garden isn't grown on the day you plant it.",
+      "from": 712,
+      "words": [
+        {
+          "token": "You",
+          "start": 23.835,
+          "end": 24.038,
+          "frame": 715,
+          "endFrame": 721
+        },
+        {
+          "token": "planted",
+          "start": 24.053,
+          "end": 24.562,
+          "frame": 722,
+          "endFrame": 737
+        },
+        {
+          "token": "well.",
+          "start": 24.576,
+          "end": 25.07,
+          "frame": 737,
+          "endFrame": 752
+        },
+        {
+          "token": "But",
+          "start": 26.081,
+          "end": 26.3,
+          "frame": 782,
+          "endFrame": 789
+        },
+        {
+          "token": "a",
+          "start": 26.314,
+          "end": 26.387,
+          "frame": 789,
+          "endFrame": 792
+        },
+        {
+          "token": "garden",
+          "start": 26.401,
+          "end": 26.866,
+          "frame": 792,
+          "endFrame": 806
+        },
+        {
+          "token": "isn't",
+          "start": 26.881,
+          "end": 27.157,
+          "frame": 806,
+          "endFrame": 815
+        },
+        {
+          "token": "grown",
+          "start": 27.172,
+          "end": 27.52,
+          "frame": 815,
+          "endFrame": 826
+        },
+        {
+          "token": "on",
+          "start": 27.535,
+          "end": 27.651,
+          "frame": 826,
+          "endFrame": 830
+        },
+        {
+          "token": "the",
+          "start": 27.666,
+          "end": 27.753,
+          "frame": 830,
+          "endFrame": 833
+        },
+        {
+          "token": "day",
+          "start": 27.768,
+          "end": 27.971,
+          "frame": 833,
+          "endFrame": 839
+        },
+        {
+          "token": "you",
+          "start": 27.986,
+          "end": 28.145,
+          "frame": 840,
+          "endFrame": 844
+        },
+        {
+          "token": "plant",
+          "start": 28.16,
+          "end": 28.581,
+          "frame": 845,
+          "endFrame": 857
+        },
+        {
+          "token": "it.",
+          "start": 28.596,
+          "end": 28.872,
+          "frame": 858,
+          "endFrame": 866
+        }
+      ],
+      "to": 888,
+      "speechEnd": 866,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S10",
+      "text": "It's grown on the days you're not there.",
+      "from": 888,
+      "words": [
+        {
+          "token": "It's",
+          "start": 29.692,
+          "end": 29.954,
+          "frame": 891,
+          "endFrame": 899
+        },
+        {
+          "token": "grown",
+          "start": 29.968,
+          "end": 30.317,
+          "frame": 899,
+          "endFrame": 910
+        },
+        {
+          "token": "on",
+          "start": 30.332,
+          "end": 30.433,
+          "frame": 910,
+          "endFrame": 913
+        },
+        {
+          "token": "the",
+          "start": 30.448,
+          "end": 30.535,
+          "frame": 913,
+          "endFrame": 916
+        },
+        {
+          "token": "days",
+          "start": 30.55,
+          "end": 30.898,
+          "frame": 916,
+          "endFrame": 927
+        },
+        {
+          "token": "you're",
+          "start": 30.913,
+          "end": 31.087,
+          "frame": 927,
+          "endFrame": 933
+        },
+        {
+          "token": "not",
+          "start": 31.102,
+          "end": 31.378,
+          "frame": 933,
+          "endFrame": 941
+        },
+        {
+          "token": "there.",
+          "start": 31.393,
+          "end": 31.712,
+          "frame": 942,
+          "endFrame": 951
+        }
+      ],
+      "to": 962,
+      "speechEnd": 951,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S11",
+      "text": "I can't be there every day. I have hundreds of them.",
+      "from": 962,
+      "words": [
+        {
+          "token": "I",
+          "start": 32.158,
+          "end": 32.225,
+          "frame": 965,
+          "endFrame": 967
+        },
+        {
+          "token": "can't",
+          "start": 32.225,
+          "end": 32.478,
+          "frame": 967,
+          "endFrame": 974
+        },
+        {
+          "token": "be",
+          "start": 32.478,
+          "end": 32.597,
+          "frame": 974,
+          "endFrame": 978
+        },
+        {
+          "token": "there",
+          "start": 32.611,
+          "end": 32.823,
+          "frame": 978,
+          "endFrame": 985
+        },
+        {
+          "token": "every",
+          "start": 32.956,
+          "end": 33.182,
+          "frame": 989,
+          "endFrame": 995
+        },
+        {
+          "token": "day.",
+          "start": 33.182,
+          "end": 33.581,
+          "frame": 995,
+          "endFrame": 1007
+        },
+        {
+          "token": "I",
+          "start": 34.02,
+          "end": 34.073,
+          "frame": 1021,
+          "endFrame": 1022
+        },
+        {
+          "token": "have",
+          "start": 34.073,
+          "end": 34.233,
+          "frame": 1022,
+          "endFrame": 1027
+        },
+        {
+          "token": "hundreds",
+          "start": 34.246,
+          "end": 34.685,
+          "frame": 1027,
+          "endFrame": 1041
+        },
+        {
+          "token": "of",
+          "start": 34.685,
+          "end": 34.751,
+          "frame": 1041,
+          "endFrame": 1043
+        },
+        {
+          "token": "them.",
+          "start": 34.765,
+          "end": 35.004,
+          "frame": 1043,
+          "endFrame": 1050
+        }
+      ],
+      "to": 1072,
+      "speechEnd": 1050,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S12",
+      "text": "Then don't water every plant. Watch which one is drying.",
+      "from": 1072,
+      "words": [
+        {
+          "token": "Then",
+          "start": 35.824,
+          "end": 36.071,
+          "frame": 1075,
+          "endFrame": 1082
+        },
+        {
+          "token": "don't",
+          "start": 36.086,
+          "end": 36.333,
+          "frame": 1083,
+          "endFrame": 1090
+        },
+        {
+          "token": "water",
+          "start": 36.347,
+          "end": 36.696,
+          "frame": 1090,
+          "endFrame": 1101
+        },
+        {
+          "token": "every",
+          "start": 36.711,
+          "end": 36.987,
+          "frame": 1101,
+          "endFrame": 1110
+        },
+        {
+          "token": "plant.",
+          "start": 37.001,
+          "end": 37.583,
+          "frame": 1110,
+          "endFrame": 1127
+        },
+        {
+          "token": "Watch",
+          "start": 38.594,
+          "end": 38.914,
+          "frame": 1158,
+          "endFrame": 1167
+        },
+        {
+          "token": "which",
+          "start": 38.928,
+          "end": 39.204,
+          "frame": 1168,
+          "endFrame": 1176
+        },
+        {
+          "token": "one",
+          "start": 39.219,
+          "end": 39.495,
+          "frame": 1177,
+          "endFrame": 1185
+        },
+        {
+          "token": "is",
+          "start": 39.509,
+          "end": 39.655,
+          "frame": 1185,
+          "endFrame": 1190
+        },
+        {
+          "token": "drying.",
+          "start": 39.669,
+          "end": 40.294,
+          "frame": 1190,
+          "endFrame": 1209
+        }
+      ],
+      "to": 1230,
+      "speechEnd": 1209,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S13",
+      "text": "One small question a week. Notice who wilts first.",
+      "from": 1230,
+      "words": [
+        {
+          "token": "One",
+          "start": 41.114,
+          "end": 41.477,
+          "frame": 1233,
+          "endFrame": 1244
+        },
+        {
+          "token": "small",
+          "start": 41.492,
+          "end": 41.884,
+          "frame": 1245,
+          "endFrame": 1257
+        },
+        {
+          "token": "question",
+          "start": 41.899,
+          "end": 42.364,
+          "frame": 1257,
+          "endFrame": 1271
+        },
+        {
+          "token": "a",
+          "start": 42.379,
+          "end": 42.422,
+          "frame": 1271,
+          "endFrame": 1273
+        },
+        {
+          "token": "week.",
+          "start": 42.437,
+          "end": 42.931,
+          "frame": 1273,
+          "endFrame": 1288
+        },
+        {
+          "token": "Notice",
+          "start": 43.942,
+          "end": 44.494,
+          "frame": 1318,
+          "endFrame": 1335
+        },
+        {
+          "token": "who",
+          "start": 44.509,
+          "end": 44.683,
+          "frame": 1335,
+          "endFrame": 1340
+        },
+        {
+          "token": "wilts",
+          "start": 44.698,
+          "end": 45.047,
+          "frame": 1341,
+          "endFrame": 1351
+        },
+        {
+          "token": "first.",
+          "start": 45.061,
+          "end": 45.701,
+          "frame": 1352,
+          "endFrame": 1371
+        }
+      ],
+      "to": 1381,
+      "speechEnd": 1371,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S14",
+      "text": "So the plan wasn't the problem.",
+      "from": 1381,
+      "words": [
+        {
+          "token": "So",
+          "start": 46.147,
+          "end": 46.267,
+          "frame": 1384,
+          "endFrame": 1388
+        },
+        {
+          "token": "the",
+          "start": 46.267,
+          "end": 46.373,
+          "frame": 1388,
+          "endFrame": 1391
+        },
+        {
+          "token": "plan",
+          "start": 46.373,
+          "end": 46.799,
+          "frame": 1391,
+          "endFrame": 1404
+        },
+        {
+          "token": "wasn't",
+          "start": 46.799,
+          "end": 47.105,
+          "frame": 1404,
+          "endFrame": 1413
+        },
+        {
+          "token": "the",
+          "start": 47.105,
+          "end": 47.171,
+          "frame": 1413,
+          "endFrame": 1415
+        },
+        {
+          "token": "problem.",
+          "start": 47.171,
+          "end": 47.69,
+          "frame": 1415,
+          "endFrame": 1431
+        }
+      ],
+      "to": 1452,
+      "speechEnd": 1431,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S15",
+      "text": "The plan was the seed.",
+      "from": 1452,
+      "words": [
+        {
+          "token": "The",
+          "start": 48.51,
+          "end": 48.684,
+          "frame": 1455,
+          "endFrame": 1461
+        },
+        {
+          "token": "plan",
+          "start": 48.699,
+          "end": 49.062,
+          "frame": 1461,
+          "endFrame": 1472
+        },
+        {
+          "token": "was",
+          "start": 49.077,
+          "end": 49.251,
+          "frame": 1472,
+          "endFrame": 1478
+        },
+        {
+          "token": "the",
+          "start": 49.266,
+          "end": 49.368,
+          "frame": 1478,
+          "endFrame": 1481
+        },
+        {
+          "token": "seed.",
+          "start": 49.382,
+          "end": 49.92,
+          "frame": 1481,
+          "endFrame": 1498
+        }
+      ],
+      "to": 1558,
+      "speechEnd": 1498,
+      "speaker": "OLD"
+    }
+  ]
+}

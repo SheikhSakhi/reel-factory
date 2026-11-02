@@ -16,7 +16,7 @@ The daily run tests a different format and style each time, faceless and without
 | ID | Format | From reference | Picture (all code) | Sound | Status |
 |---|---|---|---|---|---|
 | F1 | **Mascot sitcom**: a recurring mascot and a human-ish sidekick in a short scene; the lesson comes out of a mistake | Klod series + user's VoiceStudio reference | soft clay 3D (kit/SoftWorld.tsx) in a bright clinic, split layout with a light UI card on top, soft cinematic grade | 2 calm voices + ambient music bed, no sound effects | testing (v3 ep02-soft) |
-| F2 | **Faceless parable**: a situation, a dialogue, one reframing line, a resolution; one metaphor object | Garib | flat illustrated scenes (SVG people with blank faces), film camera grammar via parallax and cuts | narrator + 1-2 voices | untested |
+| F2 | **Faceless parable**: a situation, a dialogue, one reframing line, a resolution; one metaphor object | Garib | flat illustrated scenes (SVG people with blank faces), film camera grammar via parallax and cuts | 2 calm voices + warm ambient bed, no SFX | testing (the-gardener) |
 | F3 | **B-roll story**: one continuous first-person narration, a new picture every 1-2 s, screens as proof, a pattern break every 5-8 s | farza, Adema | kinetic typography, UI screens built in code, charts, icons, stock clips if a Pexels key exists | 1 narrator | leading |
 | F4 | **Chat drama**: a patient-doctor (or doctor-AI) conversation played out on a phone screen; the twist is in the last message | dialogue refs | phone UI in code, typing dots, reactions, a final reveal card | message sounds + optional narrator | testing |
 | F6 | **Visual essay**: a calm documentary narrator; real open-licence footage (satellite, aerial, medical imagery) with data drawn onto it, 3D scenes in between; claim → mechanism → proof → escalation → name it → moral question → callback | The Plain Read (references.md §5) | open imagery + Remotion overlays (counters, boxes, glows, stamps) + three.js (globe, night hospital, floating screens), slow push-ins everywhere | 1 calm narrator + ambient bed | testing (pilot) |
@@ -35,7 +35,7 @@ Names and looks can change after feedback; keep them stable once something wins.
 | Format | Runs | Ratings | Mean | Notes |
 |---|---|---|---|---|
 | F1 | 2 | liked | + | ep01: dialogue good; voice and 3D animation poor. ep02: v2 look (low-poly, cinematic grade, split UI card, kit/LowPoly.tsx + kit/CinemaGrade.tsx) |
-| F2 | 0 | | | |
+| F2 | 1 | | | the-gardener: sunlit flat SVG illustration, old gardener + young doctor, metaphor: a potted plant |
 | F3 | 1 | liked, best | ++ | scribe-evening: clear narration arc (hook, explanation, reward) |
 | F4 | 1 | liked | + | midnight-question: problem framed right; voice not good |
 | F6 | 1 | format liked, execution poor | + | who-comes-back: same 3D hospital 4x, poor 3D, space imagery unrelated to the lines. Needs literal footage per line (Pexels key) and one-off 3D |

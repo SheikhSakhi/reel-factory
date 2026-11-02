@@ -1,0 +1,15 @@
+[S1] YOUNG: She came back worse. And I did everything right.
+[S2] OLD: Tell me.
+[S3] YOUNG: Right diagnosis. Right medicine. A clear plan.
+[S4] OLD: And after the visit?
+[S5] YOUNG: I saw her again. Three months later.
+[S6] OLD: How much time did you spend with her this year?
+[S7] YOUNG: An hour. Maybe.
+[S8] OLD: A year has eight thousand, seven hundred and sixty hours.
+[S9] OLD: You planted well. But a garden isn't grown on the day you plant it.
+[S10] OLD: It's grown on the days you're not there.
+[S11] YOUNG: I can't be there every day. I have hundreds of them.
+[S12] OLD: Then don't water every plant. Watch which one is drying.
+[S13] OLD: One small question a week. Notice who wilts first.
+[S14] YOUNG: So the plan wasn't the problem.
+[S15] OLD: The plan was the seed.
