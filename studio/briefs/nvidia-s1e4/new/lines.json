@@ -1,5 +1,6 @@
 {
  "A": "I have a cough, and it is getting worse at night.",
  "B": "a cough.",
- "C": "Now ask a general AI that same sentence. I have a cough, and it is getting worse at night. Watch what it does. It searches websites, because it knows nothing about you. Then it asks the questions it would ask anyone. How long have you had it? Is it dry? Any fever? It isn't careless. It simply has no memory of your treatment. No diagnosis, no medicines, no plan from your doctor. It predicts likely words from what's written on the internet. Your health needs a model built for treatment, one that remembers your care. That's why, for your health, use Treatment Intelligence."
+ "C": "Now ask a general AI that same sentence. I have a cough, and it is getting worse at night. Watch what it does. It searches websites, because it knows nothing about you. Then it asks the questions it would ask anyone. How long have you had it? Is it dry? Any fever? It isn't careless. It simply has no memory of your treatment. No diagnosis, no medicines, no plan from your doctor. It predicts likely words from what's written on the internet. Your health needs a model built for treatment, one that remembers your care. That's why, for your health, use Treatment Intelligence.",
+ "D": "I have a cough, and it is getting worse at night. Attention links it, to a cough."
 }

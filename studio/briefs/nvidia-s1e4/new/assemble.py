@@ -2,7 +2,7 @@
 import json, subprocess, wave
 import numpy as np
 W = 'briefs/nvidia-s1e4'; N = W + '/new'; SR = 44100
-CUTS = {'seg1': (0, 57.12), 'seg2': (59.28, 60.89), 'seg3': (61.54, 93.45)}  # from the waveform, not whisper timestamps
+CUTS = {'seg1': (0, 57.12), 'seg3': (61.54, 93.45)}  # from the waveform, not whisper timestamps
 
 
 def load(path):
@@ -25,11 +25,34 @@ def rms(x):
 
 
 level = rms(voc[int(30 * SR):int(60 * SR)])
-A, B, C = [x * (level / rms(x)) for x in (clip('A'), clip('B'), clip('C'))]
+
+
+def fade(x, ms=14):
+    n = int(SR * ms / 1000)
+    x = x.copy(); r = np.linspace(0, 1, n, dtype=np.float32)
+    x[:n] *= r; x[-n:] *= r[::-1]
+    return x
+
+
+def span(k, t0, t1):
+    a = load(f'{N}/{k}_me.wav')
+    return a[int(t0 * SR):int(t1 * SR)]
+
+
+# The attention example as one voice: the clean take of the sentence (from line C, where it converted well: line A
+# lost "and" and blurred "at night"), the creator's own "Attention links it to" passed through the same converter
+# (so the timbre doesn't jump mid-phrase), then "a cough". Short fades at every join.
+cw = json.load(open(f'{N}/C_check.json'))['words']
+sent = span('C', cw[8]['start'] - 0.06, cw[18]['end'] + 0.12)
+bw = json.load(open(f'{N}/B_check.json'))['words']
+cough = span('B', bw[0]['start'] - 0.05, bw[-1]['end'] + 0.12)
+links = load(f'{N}/seg2_me.wav')
+C = clip('C')
+sent, links, cough, C = [fade(x * (level / rms(x))) for x in (sent, links, cough, C)]
 sil = lambda s: np.zeros(int(s * SR), np.float32)  # noqa: E731
-src = lambda k: voc[int(CUTS[k][0] * SR):int(CUTS[k][1] * SR)]  # noqa: E731
-pieces = [('src', src('seg1'), CUTS['seg1'][0]), ('new', np.concatenate([sil(0.12), A, sil(0.2)]), CUTS['seg1'][1]),
-          ('src', src('seg2'), CUTS['seg2'][0]), ('new', np.concatenate([sil(0.1), B, sil(0.3)]), CUTS['seg2'][1]),
+src = lambda k: fade(voc[int(CUTS[k][0] * SR):int(CUTS[k][1] * SR)], 8)  # noqa: E731
+D = np.concatenate([sil(0.12), sent, sil(0.32), links, sil(0.04), cough, sil(0.25)])
+pieces = [('src', src('seg1'), CUTS['seg1'][0]), ('new', D, CUTS['seg1'][1]),
           ('src', src('seg3'), CUTS['seg3'][0]), ('new', np.concatenate([sil(0.6), C, sil(2.5)]), CUTS['seg3'][1])]
 vo = np.concatenate([p[1] for p in pieces])
 mix = vo + np.concatenate([mus] * 3)[:len(vo)]

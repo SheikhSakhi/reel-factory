@@ -40,7 +40,7 @@ const F = (sec: number) => Math.round(sec * FPS);
 
 const CAT_FROM = 44.4;
 const CAT_TO = t("transformer", 64) + 1.0;
-const END_FROM = PIECES[5].out;
+const END_FROM = PIECES[PIECES.length - 1].out;
 
 // ---------- the footage, remapped and darkened ----------
 
@@ -506,6 +506,31 @@ const poseAt = (sec: number): TiPose => {
   return p;
 };
 
+// ---------- bits of the source that sit in the stage area (the AI name pills, the "?" bubble), shown above the stage ----------
+
+type Inset = { from: number; to: number; x: number; y: number; w: number; h: number; r: number };
+// Source pixels, measured on the footage (y in source coordinates; the frame is cropped 40 px at the top).
+const INSETS: Inset[] = [
+  { from: 1.25, to: 3.2, x: 33, y: 1526, w: 292, h: 87, r: 44 },   // ChatGPT
+  { from: 1.8, to: 3.2, x: 413, y: 1398, w: 256, h: 87, r: 44 },   // Claude
+  { from: 2.55, to: 3.2, x: 772, y: 1526, w: 261, h: 87, r: 44 },  // Gemini
+  { from: 6.9, to: 9.4, x: 680, y: 1367, w: 156, h: 156, r: 78 },  // the "?" bubble
+];
+
+const SourceInsets: React.FC = () => (
+  <>
+    {INSETS.map((b, i) => (
+      <Sequence key={i} from={F(b.from)} durationInFrames={F(b.to) - F(b.from)} layout="none" name={`inset ${i}`}>
+        <div style={{ position: "absolute", left: b.x - 4, top: b.y - 40 - 4, width: b.w + 8, height: b.h + 8, borderRadius: b.r + 4, overflow: "hidden" }}>
+          <OffthreadVideo src={staticFile(`${D}/source.mp4`)} startFrom={F(b.from)} muted
+            style={{ position: "absolute", left: -(b.x - 4), top: -(b.y - 4), width: 1080, height: 2000,
+              filter: isLight((b.from + b.to) / 2) ? "invert(1) hue-rotate(180deg) contrast(1.05)" : "contrast(1.04) brightness(0.96)" }} />
+        </div>
+      </Sequence>
+    ))}
+  </>
+);
+
 const Ti: React.FC = () => {
   const f = useCurrentFrame();
   const sec = f / FPS;
@@ -519,6 +544,7 @@ const Ti: React.FC = () => {
         background: "linear-gradient(180deg, rgba(12,12,14,0) 0%, rgba(12,12,14,0.92) 14%, #0C0C0E 22%, #0C0C0E 100%)" }} />
       <div style={{ position: "absolute", left: 240, width: 600, top: 1700, height: 160,
         background: "radial-gradient(ellipse 50% 40% at 50% 50%, rgba(255,138,58,0.10) 0%, rgba(255,138,58,0) 100%)" }} />
+      <SourceInsets />
       <div style={{ position: "absolute", left: 0, right: 0, top: 1220, height: 700 }}>
         <ThreeCanvas width={1080} height={700} dpr={1} gl={{ antialias: true, preserveDrawingBuffer: true }} camera={{ position: [0, 0.75, 4.2], fov: 30 }}>
           <NarratorLights />
