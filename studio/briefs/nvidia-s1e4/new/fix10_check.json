@@ -1,0 +1,66 @@
+{
+  "language": "en",
+  "model": "base",
+  "words": [
+    {
+      "text": "No",
+      "start": 0.13,
+      "end": 0.21,
+      "p": 0.405053
+    },
+    {
+      "text": "diagnoses,",
+      "start": 0.21,
+      "end": 1.28,
+      "p": 0.464844
+    },
+    {
+      "text": "no",
+      "start": 1.46,
+      "end": 1.48,
+      "p": 0.932497
+    },
+    {
+      "text": "medicine",
+      "start": 1.48,
+      "end": 2.3,
+      "p": 0.979671
+    },
+    {
+      "text": "list,",
+      "start": 2.3,
+      "end": 2.78,
+      "p": 0.84094
+    },
+    {
+      "text": "no",
+      "start": 2.87,
+      "end": 2.9,
+      "p": 0.944753
+    },
+    {
+      "text": "plan",
+      "start": 2.9,
+      "end": 3.15,
+      "p": 0.990592
+    },
+    {
+      "text": "for",
+      "start": 3.15,
+      "end": 3.29,
+      "p": 0.99704
+    },
+    {
+      "text": "your",
+      "start": 3.37,
+      "end": 3.59,
+      "p": 0.970865
+    },
+    {
+      "text": "doctor.",
+      "start": 3.59,
+      "end": 4,
+      "p": 0.849988
+    }
+  ]
+}

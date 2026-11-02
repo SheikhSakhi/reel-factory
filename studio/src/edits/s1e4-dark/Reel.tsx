@@ -484,15 +484,15 @@ const BEATS: Beat[] = [
   { at: 27.09, kind: "nod", amount: 0.12 },    // 1943
   { at: 42.96, kind: "tilt", amount: 0.1 },    // a matrix
   { at: 51.59, kind: "look", amount: 0.16 },   // attention
-  { at: 61.45, kind: "nod", amount: 0.14 },    // links it to a cough
+  { at: 61.31, kind: "nod", amount: 0.14 },    // links it to a cough
   { at: 64.9, kind: "lift", amount: 0.07 },    // transformer
   { at: 77.49, kind: "look", amount: 0.14 },   // 175 billion
-  { at: 94.68, kind: "tilt", amount: -0.1 },   // light bulb
-  { at: 102.96, kind: "look", amount: 0.16 },  // it searches websites
-  { at: 112.66, kind: "tilt", amount: 0.1 },   // it isn't careless
-  { at: 114.35, kind: "nod", amount: 0.12 },   // no memory
-  { at: 122.63, kind: "tilt", amount: -0.08 }, // internet
-  { at: 129.73, kind: "lift", amount: 0.08 },  // use Treatment Intelligence
+  { at: 94.62, kind: "tilt", amount: -0.1 },   // light bulb
+  { at: 103.54, kind: "look", amount: 0.16 },  // it searches websites
+  { at: 113.64, kind: "tilt", amount: 0.1 },   // it isn't careless
+  { at: 115.39, kind: "nod", amount: 0.12 },   // no memory
+  { at: 124.57, kind: "tilt", amount: -0.08 }, // internet
+  { at: 132.44, kind: "lift", amount: 0.08 },  // use Treatment Intelligence
 ];
 /** A smooth bump: rises over ~0.25 s, settles over ~0.9 s. */
 const bump = (sec: number, at: number) => {

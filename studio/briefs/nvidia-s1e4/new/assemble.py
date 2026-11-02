@@ -42,12 +42,12 @@ def span(k, t0, t1):
 # The attention example as one voice: the clean take of the sentence (from line C, where it converted well: line A
 # lost "and" and blurred "at night"), the creator's own "Attention links it to" passed through the same converter
 # (so the timbre doesn't jump mid-phrase), then "a cough". Short fades at every join.
-cw = json.load(open(f'{N}/C_check.json'))['words']
-sent = span('C', cw[8]['start'] - 0.06, cw[18]['end'] + 0.12)
+cw = json.load(open(f'{N}/Cold_check.json'))['words']
+sent = span('Cold', cw[8]['start'] - 0.06, cw[18]['end'] + 0.12)
 bw = json.load(open(f'{N}/B_check.json'))['words']
 cough = span('B', bw[0]['start'] - 0.05, bw[-1]['end'] + 0.12)
 links = load(f'{N}/seg2_me.wav')
-C = clip('C')
+C = clip('C2')
 sent, links, cough, C = [fade(x * (level / rms(x))) for x in (sent, links, cough, C)]
 sil = lambda s: np.zeros(int(s * SR), np.float32)  # noqa: E731
 src = lambda k: fade(voc[int(CUTS[k][0] * SR):int(CUTS[k][1] * SR)], 8)  # noqa: E731

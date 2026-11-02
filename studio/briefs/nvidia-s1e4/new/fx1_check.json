@@ -1,0 +1,60 @@
+{
+  "language": "en",
+  "model": "base",
+  "words": [
+    {
+      "text": "No",
+      "start": 0.15,
+      "end": 0.22,
+      "p": 0.592237
+    },
+    {
+      "text": "diagnosis,",
+      "start": 0.22,
+      "end": 1.29,
+      "p": 0.802236
+    },
+    {
+      "text": "no",
+      "start": 1.57,
+      "end": 1.6,
+      "p": 0.964567
+    },
+    {
+      "text": "medicines,",
+      "start": 1.6,
+      "end": 2.38,
+      "p": 0.948353
+    },
+    {
+      "text": "no",
+      "start": 2.64,
+      "end": 2.64,
+      "p": 0.943406
+    },
+    {
+      "text": "plan",
+      "start": 2.65,
+      "end": 2.94,
+      "p": 0.936115
+    },
+    {
+      "text": "for",
+      "start": 2.96,
+      "end": 3.14,
+      "p": 0.625047
+    },
+    {
+      "text": "your",
+      "start": 3.22,
+      "end": 3.5,
+      "p": 0.774239
+    },
+    {
+      "text": "doctor.",
+      "start": 3.5,
+      "end": 4.23,
+      "p": 0.855019
+    }
+  ]
+}

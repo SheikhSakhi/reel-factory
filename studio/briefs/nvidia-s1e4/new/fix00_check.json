@@ -1,0 +1,54 @@
+{
+  "language": "en",
+  "model": "base",
+  "words": [
+    {
+      "text": "Now,",
+      "start": 0.14,
+      "end": 0.38,
+      "p": 0.7482
+    },
+    {
+      "text": "ask",
+      "start": 0.85,
+      "end": 0.85,
+      "p": 0.910615
+    },
+    {
+      "text": "a",
+      "start": 0.87,
+      "end": 0.95,
+      "p": 0.973905
+    },
+    {
+      "text": "general",
+      "start": 0.95,
+      "end": 1.69,
+      "p": 0.90272
+    },
+    {
+      "text": "AI",
+      "start": 1.69,
+      "end": 1.9,
+      "p": 0.847434
+    },
+    {
+      "text": "the",
+      "start": 1.9,
+      "end": 2.21,
+      "p": 0.974739
+    },
+    {
+      "text": "same",
+      "start": 2.48,
+      "end": 2.64,
+      "p": 0.999394
+    },
+    {
+      "text": "sentence.",
+      "start": 2.64,
+      "end": 3.6,
+      "p": 0.895926
+    }
+  ]
+}
