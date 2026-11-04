@@ -1,0 +1,853 @@
+{
+  "file": "vo/2026-11-04-seven-doctors/take.mp3",
+  "voice": "en-US-AvaMultilingualNeural",
+  "rate": "-4%",
+  "fps": 30,
+  "totalFrames": 1310,
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "My father has seven doctors. I'm the only one who knows all of them.",
+      "from": 0,
+      "words": [
+        {
+          "token": "My",
+          "start": 0.078,
+          "end": 0.247,
+          "frame": 2,
+          "endFrame": 7
+        },
+        {
+          "token": "father",
+          "start": 0.26,
+          "end": 0.755,
+          "frame": 8,
+          "endFrame": 23
+        },
+        {
+          "token": "has",
+          "start": 0.768,
+          "end": 1.016,
+          "frame": 23,
+          "endFrame": 30
+        },
+        {
+          "token": "seven",
+          "start": 1.029,
+          "end": 1.328,
+          "frame": 31,
+          "endFrame": 40
+        },
+        {
+          "token": "doctors.",
+          "start": 1.341,
+          "end": 2.005,
+          "frame": 40,
+          "endFrame": 60
+        },
+        {
+          "token": "I'm",
+          "start": 2.409,
+          "end": 2.578,
+          "frame": 72,
+          "endFrame": 77
+        },
+        {
+          "token": "the",
+          "start": 2.578,
+          "end": 2.695,
+          "frame": 77,
+          "endFrame": 81
+        },
+        {
+          "token": "only",
+          "start": 2.76,
+          "end": 3.086,
+          "frame": 83,
+          "endFrame": 93
+        },
+        {
+          "token": "one",
+          "start": 3.099,
+          "end": 3.294,
+          "frame": 93,
+          "endFrame": 99
+        },
+        {
+          "token": "who",
+          "start": 3.307,
+          "end": 3.437,
+          "frame": 99,
+          "endFrame": 103
+        },
+        {
+          "token": "knows",
+          "start": 3.451,
+          "end": 3.698,
+          "frame": 104,
+          "endFrame": 111
+        },
+        {
+          "token": "all",
+          "start": 3.711,
+          "end": 3.867,
+          "frame": 111,
+          "endFrame": 116
+        },
+        {
+          "token": "of",
+          "start": 3.88,
+          "end": 3.984,
+          "frame": 116,
+          "endFrame": 120
+        },
+        {
+          "token": "them.",
+          "start": 3.997,
+          "end": 4.336,
+          "frame": 120,
+          "endFrame": 130
+        }
+      ],
+      "to": 139,
+      "speechEnd": 130
+    },
+    {
+      "id": "S2",
+      "text": "On Monday, his heart doctor changed a pill.",
+      "from": 139,
+      "words": [
+        {
+          "token": "On",
+          "start": 4.74,
+          "end": 4.922,
+          "frame": 142,
+          "endFrame": 148
+        },
+        {
+          "token": "Monday,",
+          "start": 4.935,
+          "end": 5.469,
+          "frame": 148,
+          "endFrame": 164
+        },
+        {
+          "token": "his",
+          "start": 5.482,
+          "end": 5.625,
+          "frame": 164,
+          "endFrame": 169
+        },
+        {
+          "token": "heart",
+          "start": 5.625,
+          "end": 5.951,
+          "frame": 169,
+          "endFrame": 179
+        },
+        {
+          "token": "doctor",
+          "start": 5.964,
+          "end": 6.328,
+          "frame": 179,
+          "endFrame": 190
+        },
+        {
+          "token": "changed",
+          "start": 6.341,
+          "end": 6.719,
+          "frame": 190,
+          "endFrame": 202
+        },
+        {
+          "token": "a",
+          "start": 6.732,
+          "end": 6.784,
+          "frame": 202,
+          "endFrame": 204
+        },
+        {
+          "token": "pill.",
+          "start": 6.797,
+          "end": 7.227,
+          "frame": 204,
+          "endFrame": 217
+        }
+      ],
+      "to": 226,
+      "speechEnd": 217
+    },
+    {
+      "id": "S3",
+      "text": "By Friday, his kidney doctor still didn't know.",
+      "from": 226,
+      "words": [
+        {
+          "token": "By",
+          "start": 7.63,
+          "end": 7.812,
+          "frame": 229,
+          "endFrame": 234
+        },
+        {
+          "token": "Friday,",
+          "start": 7.826,
+          "end": 8.503,
+          "frame": 235,
+          "endFrame": 255
+        },
+        {
+          "token": "his",
+          "start": 8.529,
+          "end": 8.75,
+          "frame": 256,
+          "endFrame": 263
+        },
+        {
+          "token": "kidney",
+          "start": 8.763,
+          "end": 9.115,
+          "frame": 263,
+          "endFrame": 273
+        },
+        {
+          "token": "doctor",
+          "start": 9.128,
+          "end": 9.531,
+          "frame": 274,
+          "endFrame": 286
+        },
+        {
+          "token": "still",
+          "start": 9.544,
+          "end": 9.844,
+          "frame": 286,
+          "endFrame": 295
+        },
+        {
+          "token": "didn't",
+          "start": 9.857,
+          "end": 10.039,
+          "frame": 296,
+          "endFrame": 301
+        },
+        {
+          "token": "know.",
+          "start": 10.039,
+          "end": 10.378,
+          "frame": 301,
+          "endFrame": 311
+        }
+      ],
+      "to": 321,
+      "speechEnd": 311
+    },
+    {
+      "id": "S4",
+      "text": "His GP has one list. The pharmacy has another.",
+      "from": 321,
+      "words": [
+        {
+          "token": "His",
+          "start": 10.794,
+          "end": 11.016,
+          "frame": 324,
+          "endFrame": 330
+        },
+        {
+          "token": "GP",
+          "start": 11.016,
+          "end": 11.536,
+          "frame": 330,
+          "endFrame": 346
+        },
+        {
+          "token": "has",
+          "start": 11.55,
+          "end": 11.758,
+          "frame": 346,
+          "endFrame": 353
+        },
+        {
+          "token": "one",
+          "start": 11.771,
+          "end": 12.005,
+          "frame": 353,
+          "endFrame": 360
+        },
+        {
+          "token": "list.",
+          "start": 12.005,
+          "end": 12.5,
+          "frame": 360,
+          "endFrame": 375
+        },
+        {
+          "token": "The",
+          "start": 12.904,
+          "end": 12.982,
+          "frame": 387,
+          "endFrame": 389
+        },
+        {
+          "token": "pharmacy",
+          "start": 12.982,
+          "end": 13.724,
+          "frame": 389,
+          "endFrame": 412
+        },
+        {
+          "token": "has",
+          "start": 13.815,
+          "end": 14.05,
+          "frame": 414,
+          "endFrame": 421
+        },
+        {
+          "token": "another.",
+          "start": 14.062,
+          "end": 14.57,
+          "frame": 422,
+          "endFrame": 437
+        }
+      ],
+      "to": 446,
+      "speechEnd": 437
+    },
+    {
+      "id": "S5",
+      "text": "And every visit starts the same way. So, what are you taking now?",
+      "from": 446,
+      "words": [
+        {
+          "token": "And",
+          "start": 14.961,
+          "end": 15.208,
+          "frame": 449,
+          "endFrame": 456
+        },
+        {
+          "token": "every",
+          "start": 15.495,
+          "end": 15.781,
+          "frame": 465,
+          "endFrame": 473
+        },
+        {
+          "token": "visit",
+          "start": 15.794,
+          "end": 16.107,
+          "frame": 474,
+          "endFrame": 483
+        },
+        {
+          "token": "starts",
+          "start": 16.12,
+          "end": 16.497,
+          "frame": 484,
+          "endFrame": 495
+        },
+        {
+          "token": "the",
+          "start": 16.51,
+          "end": 16.602,
+          "frame": 495,
+          "endFrame": 498
+        },
+        {
+          "token": "same",
+          "start": 16.615,
+          "end": 16.992,
+          "frame": 498,
+          "endFrame": 510
+        },
+        {
+          "token": "way.",
+          "start": 16.992,
+          "end": 17.396,
+          "frame": 510,
+          "endFrame": 522
+        },
+        {
+          "token": "So,",
+          "start": 17.812,
+          "end": 18.19,
+          "frame": 534,
+          "endFrame": 546
+        },
+        {
+          "token": "what",
+          "start": 18.346,
+          "end": 18.464,
+          "frame": 550,
+          "endFrame": 554
+        },
+        {
+          "token": "are",
+          "start": 18.477,
+          "end": 18.542,
+          "frame": 554,
+          "endFrame": 556
+        },
+        {
+          "token": "you",
+          "start": 18.555,
+          "end": 18.659,
+          "frame": 557,
+          "endFrame": 560
+        },
+        {
+          "token": "taking",
+          "start": 18.672,
+          "end": 19.049,
+          "frame": 560,
+          "endFrame": 571
+        },
+        {
+          "token": "now?",
+          "start": 19.049,
+          "end": 19.466,
+          "frame": 571,
+          "endFrame": 584
+        }
+      ],
+      "to": 592,
+      "speechEnd": 584
+    },
+    {
+      "id": "S6",
+      "text": "The answer lives in my phone. A screenshot of a screenshot.",
+      "from": 592,
+      "words": [
+        {
+          "token": "The",
+          "start": 19.844,
+          "end": 19.948,
+          "frame": 595,
+          "endFrame": 598
+        },
+        {
+          "token": "answer",
+          "start": 19.961,
+          "end": 20.365,
+          "frame": 599,
+          "endFrame": 611
+        },
+        {
+          "token": "lives",
+          "start": 20.378,
+          "end": 20.742,
+          "frame": 611,
+          "endFrame": 622
+        },
+        {
+          "token": "in",
+          "start": 20.755,
+          "end": 20.82,
+          "frame": 623,
+          "endFrame": 625
+        },
+        {
+          "token": "my",
+          "start": 20.833,
+          "end": 20.99,
+          "frame": 625,
+          "endFrame": 630
+        },
+        {
+          "token": "phone.",
+          "start": 21.003,
+          "end": 21.484,
+          "frame": 630,
+          "endFrame": 645
+        },
+        {
+          "token": "A",
+          "start": 21.888,
+          "end": 21.992,
+          "frame": 657,
+          "endFrame": 660
+        },
+        {
+          "token": "screenshot",
+          "start": 22.005,
+          "end": 22.865,
+          "frame": 660,
+          "endFrame": 686
+        },
+        {
+          "token": "of",
+          "start": 22.878,
+          "end": 22.969,
+          "frame": 686,
+          "endFrame": 689
+        },
+        {
+          "token": "a",
+          "start": 22.982,
+          "end": 23.034,
+          "frame": 689,
+          "endFrame": 691
+        },
+        {
+          "token": "screenshot.",
+          "start": 23.047,
+          "end": 23.802,
+          "frame": 691,
+          "endFrame": 714
+        }
+      ],
+      "to": 723,
+      "speechEnd": 714
+    },
+    {
+      "id": "S7",
+      "text": "This isn't rare. In one large US study of older patients, the typical patient saw seven doctors in a year, across four different practices.",
+      "from": 723,
+      "words": [
+        {
+          "token": "This",
+          "start": 24.206,
+          "end": 24.466,
+          "frame": 726,
+          "endFrame": 734
+        },
+        {
+          "token": "isn't",
+          "start": 24.505,
+          "end": 24.766,
+          "frame": 735,
+          "endFrame": 743
+        },
+        {
+          "token": "rare.",
+          "start": 24.779,
+          "end": 25.247,
+          "frame": 743,
+          "endFrame": 757
+        },
+        {
+          "token": "In",
+          "start": 25.651,
+          "end": 25.833,
+          "frame": 770,
+          "endFrame": 775
+        },
+        {
+          "token": "one",
+          "start": 25.833,
+          "end": 26.133,
+          "frame": 775,
+          "endFrame": 784
+        },
+        {
+          "token": "large",
+          "start": 26.146,
+          "end": 26.51,
+          "frame": 784,
+          "endFrame": 795
+        },
+        {
+          "token": "US",
+          "start": 26.523,
+          "end": 26.875,
+          "frame": 796,
+          "endFrame": 806
+        },
+        {
+          "token": "study",
+          "start": 26.875,
+          "end": 27.227,
+          "frame": 806,
+          "endFrame": 817
+        },
+        {
+          "token": "of",
+          "start": 27.24,
+          "end": 27.344,
+          "frame": 817,
+          "endFrame": 820
+        },
+        {
+          "token": "older",
+          "start": 27.396,
+          "end": 27.604,
+          "frame": 822,
+          "endFrame": 828
+        },
+        {
+          "token": "patients,",
+          "start": 27.617,
+          "end": 28.203,
+          "frame": 829,
+          "endFrame": 846
+        },
+        {
+          "token": "the",
+          "start": 28.464,
+          "end": 28.555,
+          "frame": 854,
+          "endFrame": 857
+        },
+        {
+          "token": "typical",
+          "start": 28.568,
+          "end": 28.932,
+          "frame": 857,
+          "endFrame": 868
+        },
+        {
+          "token": "patient",
+          "start": 28.945,
+          "end": 29.349,
+          "frame": 868,
+          "endFrame": 880
+        },
+        {
+          "token": "saw",
+          "start": 29.362,
+          "end": 29.622,
+          "frame": 881,
+          "endFrame": 889
+        },
+        {
+          "token": "seven",
+          "start": 29.635,
+          "end": 29.961,
+          "frame": 889,
+          "endFrame": 899
+        },
+        {
+          "token": "doctors",
+          "start": 29.961,
+          "end": 30.456,
+          "frame": 899,
+          "endFrame": 914
+        },
+        {
+          "token": "in",
+          "start": 30.469,
+          "end": 30.586,
+          "frame": 914,
+          "endFrame": 918
+        },
+        {
+          "token": "a",
+          "start": 30.599,
+          "end": 30.625,
+          "frame": 918,
+          "endFrame": 919
+        },
+        {
+          "token": "year,",
+          "start": 30.638,
+          "end": 31.146,
+          "frame": 919,
+          "endFrame": 934
+        },
+        {
+          "token": "across",
+          "start": 31.654,
+          "end": 32.07,
+          "frame": 950,
+          "endFrame": 962
+        },
+        {
+          "token": "four",
+          "start": 32.083,
+          "end": 32.435,
+          "frame": 962,
+          "endFrame": 973
+        },
+        {
+          "token": "different",
+          "start": 32.448,
+          "end": 32.721,
+          "frame": 973,
+          "endFrame": 982
+        },
+        {
+          "token": "practices.",
+          "start": 32.721,
+          "end": 33.49,
+          "frame": 982,
+          "endFrame": 1005
+        }
+      ],
+      "to": 1014,
+      "speechEnd": 1005
+    },
+    {
+      "id": "S8",
+      "text": "Each one did their part well. Nobody held the whole picture.",
+      "from": 1014,
+      "words": [
+        {
+          "token": "Each",
+          "start": 33.893,
+          "end": 34.167,
+          "frame": 1017,
+          "endFrame": 1025
+        },
+        {
+          "token": "one",
+          "start": 34.18,
+          "end": 34.479,
+          "frame": 1025,
+          "endFrame": 1034
+        },
+        {
+          "token": "did",
+          "start": 34.479,
+          "end": 34.635,
+          "frame": 1034,
+          "endFrame": 1039
+        },
+        {
+          "token": "their",
+          "start": 34.635,
+          "end": 34.779,
+          "frame": 1039,
+          "endFrame": 1043
+        },
+        {
+          "token": "part",
+          "start": 34.792,
+          "end": 35.065,
+          "frame": 1044,
+          "endFrame": 1052
+        },
+        {
+          "token": "well.",
+          "start": 35.078,
+          "end": 35.482,
+          "frame": 1052,
+          "endFrame": 1064
+        },
+        {
+          "token": "Nobody",
+          "start": 35.898,
+          "end": 36.393,
+          "frame": 1077,
+          "endFrame": 1092
+        },
+        {
+          "token": "held",
+          "start": 36.406,
+          "end": 36.628,
+          "frame": 1092,
+          "endFrame": 1099
+        },
+        {
+          "token": "the",
+          "start": 36.641,
+          "end": 36.693,
+          "frame": 1099,
+          "endFrame": 1101
+        },
+        {
+          "token": "whole",
+          "start": 36.706,
+          "end": 36.966,
+          "frame": 1101,
+          "endFrame": 1109
+        },
+        {
+          "token": "picture.",
+          "start": 36.979,
+          "end": 37.526,
+          "frame": 1109,
+          "endFrame": 1126
+        }
+      ],
+      "to": 1135,
+      "speechEnd": 1126
+    },
+    {
+      "id": "S9",
+      "text": "So the family holds it. Until the day the family can't.",
+      "from": 1135,
+      "words": [
+        {
+          "token": "So",
+          "start": 37.943,
+          "end": 38.151,
+          "frame": 1138,
+          "endFrame": 1145
+        },
+        {
+          "token": "the",
+          "start": 38.164,
+          "end": 38.255,
+          "frame": 1145,
+          "endFrame": 1148
+        },
+        {
+          "token": "family",
+          "start": 38.255,
+          "end": 38.75,
+          "frame": 1148,
+          "endFrame": 1162
+        },
+        {
+          "token": "holds",
+          "start": 38.763,
+          "end": 39.128,
+          "frame": 1163,
+          "endFrame": 1174
+        },
+        {
+          "token": "it.",
+          "start": 39.128,
+          "end": 39.388,
+          "frame": 1174,
+          "endFrame": 1182
+        },
+        {
+          "token": "Until",
+          "start": 39.766,
+          "end": 40.104,
+          "frame": 1193,
+          "endFrame": 1203
+        },
+        {
+          "token": "the",
+          "start": 40.104,
+          "end": 40.221,
+          "frame": 1203,
+          "endFrame": 1207
+        },
+        {
+          "token": "day",
+          "start": 40.234,
+          "end": 40.573,
+          "frame": 1207,
+          "endFrame": 1217
+        },
+        {
+          "token": "the",
+          "start": 40.586,
+          "end": 40.69,
+          "frame": 1218,
+          "endFrame": 1221
+        },
+        {
+          "token": "family",
+          "start": 40.703,
+          "end": 41.172,
+          "frame": 1221,
+          "endFrame": 1235
+        },
+        {
+          "token": "can't.",
+          "start": 41.185,
+          "end": 41.641,
+          "frame": 1236,
+          "endFrame": 1249
+        }
+      ],
+      "to": 1310,
+      "speechEnd": 1249
+    }
+  ]
+}
