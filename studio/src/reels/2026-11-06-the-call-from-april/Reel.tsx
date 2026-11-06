@@ -208,11 +208,62 @@ const ReportCard: React.FC<{ frame: number }> = ({ frame }) => {
   );
 };
 
+const PlanCard: React.FC<{ frame: number }> = ({ frame }) => {
+  const rows: [string, string, number, string][] = [
+    ["18 Apr", "Scan done", W("S12", "plan") - 6, "#2F7DF6"],
+    ["18 Apr", "Result reviewed the day it came in", W("S13", "sees"), "#2E9E6A"],
+    ["Next", "Follow-up scan in 3 months", W("S13", "next") - 4, "#2F7DF6"],
+    ["11 Jul", "Reminder: book the scan this week", W("S13", "when") - 4, "#E5A13A"],
+    ["18 Jul", "Scan reviewed, plan updated", W("S13", "when") + 8, "#2E9E6A"],
+  ];
+  return (
+    <div style={{ position: "absolute", left: 100, top: 330, width: 880, height: 1240, background: C.paper, borderRadius: 10, padding: "64px 60px",
+      boxShadow: "24px 36px 60px #2A170A55", transform: "rotate(-1.2deg)" }}>
+      <div style={{ fontFamily: MONO, fontSize: 24, letterSpacing: "0.14em", color: C.muted }}>WHAT FOLLOW-UP SHOULD LOOK LIKE</div>
+      <div style={{ fontFamily: SERIF, fontSize: 76, lineHeight: 1.04, color: C.ink, marginTop: 18 }}>One doctor.<br /><i>One plan.</i></div>
+      <div style={{ position: "relative", marginTop: 50 }}>
+        <div style={{ position: "absolute", left: 173, top: 20, bottom: 30, width: 4, background: "#E3DED2" }} />
+        {rows.map(([when, what, at, col], i) => (
+          <div key={i} style={{ display: "flex", alignItems: "center", gap: 30, marginBottom: 46, opacity: progress(frame, at, 8), transform: `translateX(${(1 - pop(frame, at, 14)) * -30}px)` }}>
+            <div style={{ width: 130, flexShrink: 0, whiteSpace: "nowrap", textAlign: "right", fontFamily: SANS, fontWeight: 700, fontSize: 30, color: C.muted }}>{when}</div>
+            <div style={{ width: 30, height: 30, borderRadius: 15, background: col, flexShrink: 0, zIndex: 1 }} />
+            <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 38, lineHeight: 1.2, color: C.ink }}>{what}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+const EvidenceCard: React.FC<{ frame: number }> = ({ frame }) => {
+  const eighteen = W("S14", "eighteen");
+  return (
+    <div style={{ position: "absolute", left: 110, top: 380, width: 860, height: 1120, background: C.paper, borderRadius: 10, padding: "70px 64px",
+      boxShadow: "24px 36px 60px #2A170A55", transform: "rotate(1.2deg)" }}>
+      <div style={{ fontFamily: MONO, fontSize: 24, letterSpacing: "0.14em", color: C.muted }}>PEREIRA GRAY ET AL. · BMJ OPEN · 2018</div>
+      <div style={{ fontFamily: SERIF, fontSize: 62, lineHeight: 1.08, color: C.ink, marginTop: 22 }}>Seeing the same doctor over time</div>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(11, 1fr)", gap: 14, marginTop: 60 }}>
+        {Array.from({ length: 22 }).map((_, i) => {
+          const on = i < 18 && frame >= eighteen + i;
+          return <div key={i} style={{ height: 56, borderRadius: 10, background: on ? "#2E9E6A" : "#E3DED2", opacity: progress(frame, W("S14", "twenty") + i, 6) }} />;
+        })}
+      </div>
+      <div style={{ textAlign: "center", fontFamily: SANS, fontWeight: 800, fontSize: 110, color: "#2E9E6A", marginTop: 50, opacity: progress(frame, eighteen, 8) }}>18 of 22</div>
+      <div style={{ textAlign: "center", fontFamily: SANS, fontSize: 40, lineHeight: 1.25, color: C.ink, opacity: progress(frame, W("S14", "linked") - 4, 8) }}>
+        studies linked it to <b>fewer deaths</b>
+      </div>
+      <div style={{ textAlign: "center", fontFamily: SANS, fontSize: 24, color: C.muted, marginTop: 30, opacity: progress(frame, W("S14", "linked"), 8) }}>Observational studies · generalists and specialists</div>
+    </div>
+  );
+};
+
 // ---------- the cut ----------
 
 const cutaway = (f: number): React.ReactNode | null => {
   if (f >= W("S8", "four") - 4 && f < L("S8").to) return <StudyCard frame={f} />;
   if (f >= W("S9", "follow") - 4 && f < L("S9").to) return <ReportCard frame={f} />;
+  if (f >= W("S12", "whole") - 4 && f < L("S13").to) return <PlanCard frame={f} />;
+  if (f >= W("S14", "in") - 4 && f < L("S14").to) return <EvidenceCard frame={f} />;
   return null;
 };
 
@@ -227,7 +278,7 @@ export const CallFromApril: React.FC = () => {
   const cut = cutaway(f);
   // the camera: a slow drift and push toward the newest message
   const push = 1 + Math.min(1, f / APRIL_DURATION) * 0.08;
-  const end = progress(f, L("S11").to + 6, 40);
+  const end = progress(f, L("S15").to + 6, 40);
   return (
     <AbsoluteFill style={{ background: C.wood }}>
       <Graded warmth={0.08} contrast={1.03} brightness={1.02}>

@@ -3,7 +3,7 @@
   "voice": "dialogue",
   "rate": "+6%",
   "fps": 30,
-  "totalFrames": 1413,
+  "totalFrames": 2056,
   "cast": {
     "MOM": {
       "voice": "en-US-EmmaMultilingualNeural",
@@ -836,102 +836,583 @@
           "endFrame": 1223
         }
       ],
-      "to": 1241,
+      "to": 1240,
       "speechEnd": 1223,
       "speaker": "DAUGHTER"
     },
     {
       "id": "S11",
-      "text": "And next time, before I leave, I'm asking who will call me.",
-      "from": 1241,
+      "text": "Next time, I don't want to be the one asking who will call me.",
+      "from": 1240,
       "words": [
         {
-          "token": "And",
-          "start": 41.46,
-          "end": 41.571,
-          "frame": 1244,
-          "endFrame": 1247
-        },
-        {
-          "token": "next",
-          "start": 41.585,
-          "end": 41.918,
-          "frame": 1248,
-          "endFrame": 1258
+          "token": "Next",
+          "start": 41.446,
+          "end": 41.821,
+          "frame": 1243,
+          "endFrame": 1255
         },
         {
           "token": "time,",
-          "start": 41.932,
-          "end": 42.252,
-          "frame": 1258,
-          "endFrame": 1268
-        },
-        {
-          "token": "before",
-          "start": 42.28,
-          "end": 42.627,
-          "frame": 1268,
-          "endFrame": 1279
+          "start": 41.835,
+          "end": 42.224,
+          "frame": 1255,
+          "endFrame": 1267
         },
         {
           "token": "I",
-          "start": 42.641,
+          "start": 42.418,
+          "end": 42.46,
+          "frame": 1273,
+          "endFrame": 1274
+        },
+        {
+          "token": "don't",
+          "start": 42.474,
           "end": 42.724,
-          "frame": 1279,
+          "frame": 1274,
           "endFrame": 1282
         },
         {
-          "token": "leave,",
+          "token": "want",
           "start": 42.738,
-          "end": 43.21,
+          "end": 42.918,
           "frame": 1282,
-          "endFrame": 1296
+          "endFrame": 1288
         },
         {
-          "token": "I'm",
-          "start": 43.557,
-          "end": 43.682,
-          "frame": 1307,
-          "endFrame": 1310
+          "token": "to",
+          "start": 42.932,
+          "end": 43.016,
+          "frame": 1288,
+          "endFrame": 1290
+        },
+        {
+          "token": "be",
+          "start": 43.03,
+          "end": 43.168,
+          "frame": 1291,
+          "endFrame": 1295
+        },
+        {
+          "token": "the",
+          "start": 43.182,
+          "end": 43.321,
+          "frame": 1295,
+          "endFrame": 1300
+        },
+        {
+          "token": "one",
+          "start": 43.335,
+          "end": 43.613,
+          "frame": 1300,
+          "endFrame": 1308
         },
         {
           "token": "asking",
-          "start": 43.696,
-          "end": 44.168,
-          "frame": 1311,
-          "endFrame": 1325
+          "start": 43.627,
+          "end": 44.141,
+          "frame": 1309,
+          "endFrame": 1324
         },
         {
           "token": "who",
-          "start": 44.182,
-          "end": 44.307,
+          "start": 44.155,
+          "end": 44.28,
           "frame": 1325,
-          "endFrame": 1329
+          "endFrame": 1328
         },
         {
           "token": "will",
-          "start": 44.321,
-          "end": 44.474,
-          "frame": 1330,
-          "endFrame": 1334
+          "start": 44.293,
+          "end": 44.418,
+          "frame": 1329,
+          "endFrame": 1333
         },
         {
           "token": "call",
-          "start": 44.488,
-          "end": 44.766,
-          "frame": 1335,
-          "endFrame": 1343
+          "start": 44.432,
+          "end": 44.724,
+          "frame": 1333,
+          "endFrame": 1342
         },
         {
           "token": "me.",
-          "start": 44.78,
-          "end": 45.071,
-          "frame": 1343,
-          "endFrame": 1352
+          "start": 44.738,
+          "end": 45.03,
+          "frame": 1342,
+          "endFrame": 1351
         }
       ],
-      "to": 1413,
-      "speechEnd": 1352,
+      "to": 1368,
+      "speechEnd": 1351,
+      "speaker": "MOM"
+    },
+    {
+      "id": "S12",
+      "text": "I want one doctor who holds my whole plan.",
+      "from": 1368,
+      "words": [
+        {
+          "token": "I",
+          "start": 45.711,
+          "end": 45.781,
+          "frame": 1371,
+          "endFrame": 1373
+        },
+        {
+          "token": "want",
+          "start": 45.794,
+          "end": 46.058,
+          "frame": 1374,
+          "endFrame": 1382
+        },
+        {
+          "token": "one",
+          "start": 46.072,
+          "end": 46.294,
+          "frame": 1382,
+          "endFrame": 1389
+        },
+        {
+          "token": "doctor",
+          "start": 46.308,
+          "end": 46.794,
+          "frame": 1389,
+          "endFrame": 1404
+        },
+        {
+          "token": "who",
+          "start": 46.808,
+          "end": 46.961,
+          "frame": 1404,
+          "endFrame": 1409
+        },
+        {
+          "token": "holds",
+          "start": 46.975,
+          "end": 47.322,
+          "frame": 1409,
+          "endFrame": 1420
+        },
+        {
+          "token": "my",
+          "start": 47.336,
+          "end": 47.475,
+          "frame": 1420,
+          "endFrame": 1424
+        },
+        {
+          "token": "whole",
+          "start": 47.489,
+          "end": 47.753,
+          "frame": 1425,
+          "endFrame": 1433
+        },
+        {
+          "token": "plan.",
+          "start": 47.767,
+          "end": 48.308,
+          "frame": 1433,
+          "endFrame": 1449
+        }
+      ],
+      "to": 1466,
+      "speechEnd": 1449,
+      "speaker": "MOM"
+    },
+    {
+      "id": "S13",
+      "text": "Who sees the result the day it comes in. And tells you what's next, and when.",
+      "from": 1466,
+      "words": [
+        {
+          "token": "Who",
+          "start": 48.968,
+          "end": 49.083,
+          "frame": 1469,
+          "endFrame": 1472
+        },
+        {
+          "token": "sees",
+          "start": 49.083,
+          "end": 49.478,
+          "frame": 1472,
+          "endFrame": 1484
+        },
+        {
+          "token": "the",
+          "start": 49.491,
+          "end": 49.568,
+          "frame": 1485,
+          "endFrame": 1487
+        },
+        {
+          "token": "result",
+          "start": 49.581,
+          "end": 49.95,
+          "frame": 1487,
+          "endFrame": 1499
+        },
+        {
+          "token": "the",
+          "start": 49.963,
+          "end": 50.052,
+          "frame": 1499,
+          "endFrame": 1502
+        },
+        {
+          "token": "day",
+          "start": 50.065,
+          "end": 50.282,
+          "frame": 1502,
+          "endFrame": 1508
+        },
+        {
+          "token": "it",
+          "start": 50.295,
+          "end": 50.384,
+          "frame": 1509,
+          "endFrame": 1512
+        },
+        {
+          "token": "comes",
+          "start": 50.397,
+          "end": 50.741,
+          "frame": 1512,
+          "endFrame": 1522
+        },
+        {
+          "token": "in.",
+          "start": 50.754,
+          "end": 51.098,
+          "frame": 1523,
+          "endFrame": 1533
+        },
+        {
+          "token": "And",
+          "start": 51.481,
+          "end": 51.609,
+          "frame": 1544,
+          "endFrame": 1548
+        },
+        {
+          "token": "tells",
+          "start": 51.609,
+          "end": 51.915,
+          "frame": 1548,
+          "endFrame": 1557
+        },
+        {
+          "token": "you",
+          "start": 51.928,
+          "end": 52.017,
+          "frame": 1558,
+          "endFrame": 1561
+        },
+        {
+          "token": "what's",
+          "start": 52.017,
+          "end": 52.221,
+          "frame": 1561,
+          "endFrame": 1567
+        },
+        {
+          "token": "next,",
+          "start": 52.234,
+          "end": 52.68,
+          "frame": 1567,
+          "endFrame": 1580
+        },
+        {
+          "token": "and",
+          "start": 52.693,
+          "end": 52.833,
+          "frame": 1581,
+          "endFrame": 1585
+        },
+        {
+          "token": "when.",
+          "start": 52.846,
+          "end": 53.267,
+          "frame": 1585,
+          "endFrame": 1598
+        }
+      ],
+      "to": 1613,
+      "speechEnd": 1598,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S14",
+      "text": "It matters. In a review of twenty two studies, eighteen found that seeing the same doctor over time was linked to fewer deaths.",
+      "from": 1613,
+      "words": [
+        {
+          "token": "It",
+          "start": 53.864,
+          "end": 53.978,
+          "frame": 1616,
+          "endFrame": 1619
+        },
+        {
+          "token": "matters.",
+          "start": 53.991,
+          "end": 54.731,
+          "frame": 1620,
+          "endFrame": 1642
+        },
+        {
+          "token": "In",
+          "start": 55.139,
+          "end": 55.241,
+          "frame": 1654,
+          "endFrame": 1657
+        },
+        {
+          "token": "a",
+          "start": 55.254,
+          "end": 55.305,
+          "frame": 1658,
+          "endFrame": 1659
+        },
+        {
+          "token": "review",
+          "start": 55.318,
+          "end": 55.726,
+          "frame": 1660,
+          "endFrame": 1672
+        },
+        {
+          "token": "of",
+          "start": 55.739,
+          "end": 55.866,
+          "frame": 1672,
+          "endFrame": 1676
+        },
+        {
+          "token": "twenty",
+          "start": 55.879,
+          "end": 56.21,
+          "frame": 1676,
+          "endFrame": 1686
+        },
+        {
+          "token": "two",
+          "start": 56.223,
+          "end": 56.415,
+          "frame": 1687,
+          "endFrame": 1692
+        },
+        {
+          "token": "studies,",
+          "start": 56.427,
+          "end": 56.937,
+          "frame": 1693,
+          "endFrame": 1708
+        },
+        {
+          "token": "eighteen",
+          "start": 57.524,
+          "end": 57.932,
+          "frame": 1726,
+          "endFrame": 1738
+        },
+        {
+          "token": "found",
+          "start": 57.945,
+          "end": 58.341,
+          "frame": 1738,
+          "endFrame": 1750
+        },
+        {
+          "token": "that",
+          "start": 58.353,
+          "end": 58.545,
+          "frame": 1751,
+          "endFrame": 1756
+        },
+        {
+          "token": "seeing",
+          "start": 58.557,
+          "end": 58.864,
+          "frame": 1757,
+          "endFrame": 1766
+        },
+        {
+          "token": "the",
+          "start": 58.876,
+          "end": 58.966,
+          "frame": 1766,
+          "endFrame": 1769
+        },
+        {
+          "token": "same",
+          "start": 58.966,
+          "end": 59.323,
+          "frame": 1769,
+          "endFrame": 1780
+        },
+        {
+          "token": "doctor",
+          "start": 59.323,
+          "end": 59.795,
+          "frame": 1780,
+          "endFrame": 1794
+        },
+        {
+          "token": "over",
+          "start": 59.807,
+          "end": 59.973,
+          "frame": 1794,
+          "endFrame": 1799
+        },
+        {
+          "token": "time",
+          "start": 59.986,
+          "end": 60.369,
+          "frame": 1800,
+          "endFrame": 1811
+        },
+        {
+          "token": "was",
+          "start": 60.381,
+          "end": 60.534,
+          "frame": 1811,
+          "endFrame": 1816
+        },
+        {
+          "token": "linked",
+          "start": 60.547,
+          "end": 60.904,
+          "frame": 1816,
+          "endFrame": 1827
+        },
+        {
+          "token": "to",
+          "start": 60.917,
+          "end": 61.006,
+          "frame": 1828,
+          "endFrame": 1830
+        },
+        {
+          "token": "fewer",
+          "start": 61.019,
+          "end": 61.338,
+          "frame": 1831,
+          "endFrame": 1840
+        },
+        {
+          "token": "deaths.",
+          "start": 61.351,
+          "end": 61.886,
+          "frame": 1841,
+          "endFrame": 1857
+        }
+      ],
+      "to": 1873,
+      "speechEnd": 1857,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S15",
+      "text": "So the plan should follow me home. Not wait for me to call.",
+      "from": 1873,
+      "words": [
+        {
+          "token": "So",
+          "start": 62.539,
+          "end": 62.692,
+          "frame": 1876,
+          "endFrame": 1881
+        },
+        {
+          "token": "the",
+          "start": 62.706,
+          "end": 62.831,
+          "frame": 1881,
+          "endFrame": 1885
+        },
+        {
+          "token": "plan",
+          "start": 62.845,
+          "end": 63.206,
+          "frame": 1885,
+          "endFrame": 1896
+        },
+        {
+          "token": "should",
+          "start": 63.22,
+          "end": 63.442,
+          "frame": 1897,
+          "endFrame": 1903
+        },
+        {
+          "token": "follow",
+          "start": 63.456,
+          "end": 63.775,
+          "frame": 1904,
+          "endFrame": 1913
+        },
+        {
+          "token": "me",
+          "start": 63.789,
+          "end": 63.942,
+          "frame": 1914,
+          "endFrame": 1918
+        },
+        {
+          "token": "home.",
+          "start": 63.956,
+          "end": 64.47,
+          "frame": 1919,
+          "endFrame": 1934
+        },
+        {
+          "token": "Not",
+          "start": 64.928,
+          "end": 65.164,
+          "frame": 1948,
+          "endFrame": 1955
+        },
+        {
+          "token": "wait",
+          "start": 65.178,
+          "end": 65.428,
+          "frame": 1955,
+          "endFrame": 1963
+        },
+        {
+          "token": "for",
+          "start": 65.442,
+          "end": 65.623,
+          "frame": 1963,
+          "endFrame": 1969
+        },
+        {
+          "token": "me",
+          "start": 65.637,
+          "end": 65.789,
+          "frame": 1969,
+          "endFrame": 1974
+        },
+        {
+          "token": "to",
+          "start": 65.803,
+          "end": 65.956,
+          "frame": 1974,
+          "endFrame": 1979
+        },
+        {
+          "token": "call.",
+          "start": 65.97,
+          "end": 66.525,
+          "frame": 1979,
+          "endFrame": 1996
+        }
+      ],
+      "to": 2056,
+      "speechEnd": 1996,
       "speaker": "MOM"
     }
   ]

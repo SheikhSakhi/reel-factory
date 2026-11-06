@@ -8,4 +8,8 @@
 [S8] DAUGHTER: I looked it up. In one study, four in ten patients left hospital with results still pending. And their doctors missed many of the ones that mattered.
 [S9] MOM: The report says, follow up in three months.
 [S10] DAUGHTER: That was five months ago. I'm booking it today.
-[S11] MOM: And next time, before I leave, I'm asking who will call me.
+[S11] MOM: Next time, I don't want to be the one asking who will call me.
+[S12] MOM: I want one doctor who holds my whole plan.
+[S13] DAUGHTER: Who sees the result the day it comes in. And tells you what's next, and when.
+[S14] DAUGHTER: It matters. In a review of twenty two studies, eighteen found that seeing the same doctor over time was linked to fewer deaths.
+[S15] MOM: So the plan should follow me home. Not wait for me to call.
