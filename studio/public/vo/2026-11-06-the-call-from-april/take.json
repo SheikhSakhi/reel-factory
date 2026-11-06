@@ -1,0 +1,938 @@
+{
+  "file": "vo/2026-11-06-the-call-from-april/take.mp3",
+  "voice": "dialogue",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 1413,
+  "cast": {
+    "MOM": {
+      "voice": "en-US-EmmaMultilingualNeural",
+      "rate": "-10%",
+      "pitch": "-5Hz",
+      "gap": 0.45
+    },
+    "DAUGHTER": {
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": "-2%",
+      "pitch": "+0Hz",
+      "gap": 0.4
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "The hospital just called. About a scan from April.",
+      "from": 0,
+      "words": [
+        {
+          "token": "The",
+          "start": 0.111,
+          "end": 0.181,
+          "frame": 3,
+          "endFrame": 5
+        },
+        {
+          "token": "hospital",
+          "start": 0.194,
+          "end": 0.875,
+          "frame": 6,
+          "endFrame": 26
+        },
+        {
+          "token": "just",
+          "start": 0.889,
+          "end": 1.181,
+          "frame": 27,
+          "endFrame": 35
+        },
+        {
+          "token": "called.",
+          "start": 1.194,
+          "end": 1.736,
+          "frame": 36,
+          "endFrame": 52
+        },
+        {
+          "token": "About",
+          "start": 2.194,
+          "end": 2.5,
+          "frame": 66,
+          "endFrame": 75
+        },
+        {
+          "token": "a",
+          "start": 2.514,
+          "end": 2.569,
+          "frame": 75,
+          "endFrame": 77
+        },
+        {
+          "token": "scan",
+          "start": 2.583,
+          "end": 3.0,
+          "frame": 77,
+          "endFrame": 90
+        },
+        {
+          "token": "from",
+          "start": 3.014,
+          "end": 3.264,
+          "frame": 90,
+          "endFrame": 98
+        },
+        {
+          "token": "April.",
+          "start": 3.333,
+          "end": 3.931,
+          "frame": 100,
+          "endFrame": 118
+        }
+      ],
+      "to": 133,
+      "speechEnd": 118,
+      "speaker": "MOM"
+    },
+    {
+      "id": "S2",
+      "text": "April? Mom, it's September.",
+      "from": 133,
+      "words": [
+        {
+          "token": "April?",
+          "start": 4.528,
+          "end": 4.987,
+          "frame": 136,
+          "endFrame": 150
+        },
+        {
+          "token": "Mom,",
+          "start": 5.369,
+          "end": 5.956,
+          "frame": 161,
+          "endFrame": 179
+        },
+        {
+          "token": "it's",
+          "start": 6.109,
+          "end": 6.249,
+          "frame": 183,
+          "endFrame": 187
+        },
+        {
+          "token": "September.",
+          "start": 6.262,
+          "end": 6.9,
+          "frame": 188,
+          "endFrame": 207
+        }
+      ],
+      "to": 224,
+      "speechEnd": 207,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S3",
+      "text": "The result came back after I went home. Nobody saw it.",
+      "from": 224,
+      "words": [
+        {
+          "token": "The",
+          "start": 7.581,
+          "end": 7.664,
+          "frame": 227,
+          "endFrame": 230
+        },
+        {
+          "token": "result",
+          "start": 7.678,
+          "end": 8.123,
+          "frame": 230,
+          "endFrame": 244
+        },
+        {
+          "token": "came",
+          "start": 8.137,
+          "end": 8.401,
+          "frame": 244,
+          "endFrame": 252
+        },
+        {
+          "token": "back",
+          "start": 8.414,
+          "end": 8.72,
+          "frame": 252,
+          "endFrame": 262
+        },
+        {
+          "token": "after",
+          "start": 8.734,
+          "end": 9.081,
+          "frame": 262,
+          "endFrame": 272
+        },
+        {
+          "token": "I",
+          "start": 9.095,
+          "end": 9.178,
+          "frame": 273,
+          "endFrame": 275
+        },
+        {
+          "token": "went",
+          "start": 9.192,
+          "end": 9.414,
+          "frame": 276,
+          "endFrame": 282
+        },
+        {
+          "token": "home.",
+          "start": 9.428,
+          "end": 9.942,
+          "frame": 283,
+          "endFrame": 298
+        },
+        {
+          "token": "Nobody",
+          "start": 10.401,
+          "end": 10.859,
+          "frame": 312,
+          "endFrame": 326
+        },
+        {
+          "token": "saw",
+          "start": 10.873,
+          "end": 11.178,
+          "frame": 326,
+          "endFrame": 335
+        },
+        {
+          "token": "it.",
+          "start": 11.192,
+          "end": 11.539,
+          "frame": 336,
+          "endFrame": 346
+        }
+      ],
+      "to": 361,
+      "speechEnd": 346,
+      "speaker": "MOM"
+    },
+    {
+      "id": "S4",
+      "text": "You were in that ward for four days.",
+      "from": 361,
+      "words": [
+        {
+          "token": "You",
+          "start": 12.136,
+          "end": 12.25,
+          "frame": 364,
+          "endFrame": 368
+        },
+        {
+          "token": "were",
+          "start": 12.25,
+          "end": 12.416,
+          "frame": 368,
+          "endFrame": 372
+        },
+        {
+          "token": "in",
+          "start": 12.429,
+          "end": 12.569,
+          "frame": 373,
+          "endFrame": 377
+        },
+        {
+          "token": "that",
+          "start": 12.582,
+          "end": 12.812,
+          "frame": 377,
+          "endFrame": 384
+        },
+        {
+          "token": "ward",
+          "start": 12.824,
+          "end": 13.079,
+          "frame": 385,
+          "endFrame": 392
+        },
+        {
+          "token": "for",
+          "start": 13.092,
+          "end": 13.22,
+          "frame": 393,
+          "endFrame": 397
+        },
+        {
+          "token": "four",
+          "start": 13.232,
+          "end": 13.462,
+          "frame": 397,
+          "endFrame": 404
+        },
+        {
+          "token": "days.",
+          "start": 13.475,
+          "end": 13.972,
+          "frame": 404,
+          "endFrame": 419
+        }
+      ],
+      "to": 437,
+      "speechEnd": 419,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S5",
+      "text": "The doctor who ordered it had moved to another team.",
+      "from": 437,
+      "words": [
+        {
+          "token": "The",
+          "start": 14.653,
+          "end": 14.736,
+          "frame": 440,
+          "endFrame": 442
+        },
+        {
+          "token": "doctor",
+          "start": 14.75,
+          "end": 15.195,
+          "frame": 443,
+          "endFrame": 456
+        },
+        {
+          "token": "who",
+          "start": 15.209,
+          "end": 15.375,
+          "frame": 456,
+          "endFrame": 461
+        },
+        {
+          "token": "ordered",
+          "start": 15.389,
+          "end": 15.792,
+          "frame": 462,
+          "endFrame": 474
+        },
+        {
+          "token": "it",
+          "start": 15.806,
+          "end": 15.917,
+          "frame": 474,
+          "endFrame": 478
+        },
+        {
+          "token": "had",
+          "start": 15.931,
+          "end": 16.139,
+          "frame": 478,
+          "endFrame": 484
+        },
+        {
+          "token": "moved",
+          "start": 16.153,
+          "end": 16.486,
+          "frame": 485,
+          "endFrame": 495
+        },
+        {
+          "token": "to",
+          "start": 16.5,
+          "end": 16.639,
+          "frame": 495,
+          "endFrame": 499
+        },
+        {
+          "token": "another",
+          "start": 16.653,
+          "end": 17.042,
+          "frame": 500,
+          "endFrame": 511
+        },
+        {
+          "token": "team.",
+          "start": 17.056,
+          "end": 17.5,
+          "frame": 512,
+          "endFrame": 525
+        }
+      ],
+      "to": 540,
+      "speechEnd": 525,
+      "speaker": "MOM"
+    },
+    {
+      "id": "S6",
+      "text": "So who was supposed to call you?",
+      "from": 540,
+      "words": [
+        {
+          "token": "So",
+          "start": 18.109,
+          "end": 18.415,
+          "frame": 543,
+          "endFrame": 552
+        },
+        {
+          "token": "who",
+          "start": 18.492,
+          "end": 18.607,
+          "frame": 555,
+          "endFrame": 558
+        },
+        {
+          "token": "was",
+          "start": 18.619,
+          "end": 18.747,
+          "frame": 559,
+          "endFrame": 562
+        },
+        {
+          "token": "supposed",
+          "start": 18.76,
+          "end": 19.142,
+          "frame": 563,
+          "endFrame": 574
+        },
+        {
+          "token": "to",
+          "start": 19.155,
+          "end": 19.206,
+          "frame": 575,
+          "endFrame": 576
+        },
+        {
+          "token": "call",
+          "start": 19.206,
+          "end": 19.474,
+          "frame": 576,
+          "endFrame": 584
+        },
+        {
+          "token": "you?",
+          "start": 19.487,
+          "end": 19.716,
+          "frame": 585,
+          "endFrame": 591
+        }
+      ],
+      "to": 609,
+      "speechEnd": 591,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S7",
+      "text": "That's what I asked. She said it fell between teams.",
+      "from": 609,
+      "words": [
+        {
+          "token": "That's",
+          "start": 20.397,
+          "end": 20.647,
+          "frame": 612,
+          "endFrame": 619
+        },
+        {
+          "token": "what",
+          "start": 20.661,
+          "end": 20.842,
+          "frame": 620,
+          "endFrame": 625
+        },
+        {
+          "token": "I",
+          "start": 20.855,
+          "end": 20.967,
+          "frame": 626,
+          "endFrame": 629
+        },
+        {
+          "token": "asked.",
+          "start": 20.98,
+          "end": 21.578,
+          "frame": 629,
+          "endFrame": 647
+        },
+        {
+          "token": "She",
+          "start": 22.022,
+          "end": 22.189,
+          "frame": 661,
+          "endFrame": 666
+        },
+        {
+          "token": "said",
+          "start": 22.203,
+          "end": 22.425,
+          "frame": 666,
+          "endFrame": 673
+        },
+        {
+          "token": "it",
+          "start": 22.439,
+          "end": 22.55,
+          "frame": 673,
+          "endFrame": 676
+        },
+        {
+          "token": "fell",
+          "start": 22.564,
+          "end": 22.855,
+          "frame": 677,
+          "endFrame": 686
+        },
+        {
+          "token": "between",
+          "start": 22.869,
+          "end": 23.314,
+          "frame": 686,
+          "endFrame": 699
+        },
+        {
+          "token": "teams.",
+          "start": 23.328,
+          "end": 23.967,
+          "frame": 700,
+          "endFrame": 719
+        }
+      ],
+      "to": 735,
+      "speechEnd": 719,
+      "speaker": "MOM"
+    },
+    {
+      "id": "S8",
+      "text": "I looked it up. In one study, four in ten patients left hospital with results still pending. And their doctors missed many of the ones that mattered.",
+      "from": 735,
+      "words": [
+        {
+          "token": "I",
+          "start": 24.602,
+          "end": 24.704,
+          "frame": 738,
+          "endFrame": 741
+        },
+        {
+          "token": "looked",
+          "start": 24.717,
+          "end": 24.997,
+          "frame": 741,
+          "endFrame": 750
+        },
+        {
+          "token": "it",
+          "start": 25.01,
+          "end": 25.086,
+          "frame": 750,
+          "endFrame": 753
+        },
+        {
+          "token": "up.",
+          "start": 25.086,
+          "end": 25.367,
+          "frame": 753,
+          "endFrame": 761
+        },
+        {
+          "token": "In",
+          "start": 25.75,
+          "end": 25.928,
+          "frame": 772,
+          "endFrame": 778
+        },
+        {
+          "token": "one",
+          "start": 25.941,
+          "end": 26.183,
+          "frame": 778,
+          "endFrame": 786
+        },
+        {
+          "token": "study,",
+          "start": 26.196,
+          "end": 26.668,
+          "frame": 786,
+          "endFrame": 800
+        },
+        {
+          "token": "four",
+          "start": 27.051,
+          "end": 27.178,
+          "frame": 812,
+          "endFrame": 815
+        },
+        {
+          "token": "in",
+          "start": 27.191,
+          "end": 27.344,
+          "frame": 816,
+          "endFrame": 820
+        },
+        {
+          "token": "ten",
+          "start": 27.357,
+          "end": 27.676,
+          "frame": 821,
+          "endFrame": 830
+        },
+        {
+          "token": "patients",
+          "start": 27.689,
+          "end": 28.16,
+          "frame": 831,
+          "endFrame": 845
+        },
+        {
+          "token": "left",
+          "start": 28.173,
+          "end": 28.441,
+          "frame": 845,
+          "endFrame": 853
+        },
+        {
+          "token": "hospital",
+          "start": 28.454,
+          "end": 29.079,
+          "frame": 854,
+          "endFrame": 872
+        },
+        {
+          "token": "with",
+          "start": 29.092,
+          "end": 29.257,
+          "frame": 873,
+          "endFrame": 878
+        },
+        {
+          "token": "results",
+          "start": 29.257,
+          "end": 29.653,
+          "frame": 878,
+          "endFrame": 890
+        },
+        {
+          "token": "still",
+          "start": 29.653,
+          "end": 29.87,
+          "frame": 890,
+          "endFrame": 896
+        },
+        {
+          "token": "pending.",
+          "start": 29.882,
+          "end": 30.405,
+          "frame": 896,
+          "endFrame": 912
+        },
+        {
+          "token": "And",
+          "start": 30.814,
+          "end": 30.967,
+          "frame": 924,
+          "endFrame": 929
+        },
+        {
+          "token": "their",
+          "start": 30.979,
+          "end": 31.132,
+          "frame": 929,
+          "endFrame": 934
+        },
+        {
+          "token": "doctors",
+          "start": 31.145,
+          "end": 31.732,
+          "frame": 934,
+          "endFrame": 952
+        },
+        {
+          "token": "missed",
+          "start": 31.808,
+          "end": 32.191,
+          "frame": 954,
+          "endFrame": 966
+        },
+        {
+          "token": "many",
+          "start": 32.204,
+          "end": 32.523,
+          "frame": 966,
+          "endFrame": 976
+        },
+        {
+          "token": "of",
+          "start": 32.535,
+          "end": 32.612,
+          "frame": 976,
+          "endFrame": 978
+        },
+        {
+          "token": "the",
+          "start": 32.625,
+          "end": 32.701,
+          "frame": 979,
+          "endFrame": 981
+        },
+        {
+          "token": "ones",
+          "start": 32.701,
+          "end": 32.982,
+          "frame": 981,
+          "endFrame": 989
+        },
+        {
+          "token": "that",
+          "start": 32.995,
+          "end": 33.16,
+          "frame": 990,
+          "endFrame": 995
+        },
+        {
+          "token": "mattered.",
+          "start": 33.16,
+          "end": 33.632,
+          "frame": 995,
+          "endFrame": 1009
+        }
+      ],
+      "to": 1026,
+      "speechEnd": 1009,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S9",
+      "text": "The report says, follow up in three months.",
+      "from": 1026,
+      "words": [
+        {
+          "token": "The",
+          "start": 34.313,
+          "end": 34.41,
+          "frame": 1029,
+          "endFrame": 1032
+        },
+        {
+          "token": "report",
+          "start": 34.424,
+          "end": 34.883,
+          "frame": 1033,
+          "endFrame": 1046
+        },
+        {
+          "token": "says,",
+          "start": 34.896,
+          "end": 35.313,
+          "frame": 1047,
+          "endFrame": 1059
+        },
+        {
+          "token": "follow",
+          "start": 35.521,
+          "end": 35.924,
+          "frame": 1066,
+          "endFrame": 1078
+        },
+        {
+          "token": "up",
+          "start": 35.938,
+          "end": 36.105,
+          "frame": 1078,
+          "endFrame": 1083
+        },
+        {
+          "token": "in",
+          "start": 36.119,
+          "end": 36.258,
+          "frame": 1084,
+          "endFrame": 1088
+        },
+        {
+          "token": "three",
+          "start": 36.271,
+          "end": 36.521,
+          "frame": 1088,
+          "endFrame": 1096
+        },
+        {
+          "token": "months.",
+          "start": 36.535,
+          "end": 37.16,
+          "frame": 1096,
+          "endFrame": 1115
+        }
+      ],
+      "to": 1130,
+      "speechEnd": 1115,
+      "speaker": "MOM"
+    },
+    {
+      "id": "S10",
+      "text": "That was five months ago. I'm booking it today.",
+      "from": 1130,
+      "words": [
+        {
+          "token": "That",
+          "start": 37.757,
+          "end": 37.935,
+          "frame": 1133,
+          "endFrame": 1138
+        },
+        {
+          "token": "was",
+          "start": 37.935,
+          "end": 38.177,
+          "frame": 1138,
+          "endFrame": 1145
+        },
+        {
+          "token": "five",
+          "start": 38.19,
+          "end": 38.662,
+          "frame": 1146,
+          "endFrame": 1160
+        },
+        {
+          "token": "months",
+          "start": 38.675,
+          "end": 38.968,
+          "frame": 1160,
+          "endFrame": 1169
+        },
+        {
+          "token": "ago.",
+          "start": 38.968,
+          "end": 39.389,
+          "frame": 1169,
+          "endFrame": 1182
+        },
+        {
+          "token": "I'm",
+          "start": 39.797,
+          "end": 39.989,
+          "frame": 1194,
+          "endFrame": 1200
+        },
+        {
+          "token": "booking",
+          "start": 40.001,
+          "end": 40.282,
+          "frame": 1200,
+          "endFrame": 1208
+        },
+        {
+          "token": "it",
+          "start": 40.282,
+          "end": 40.346,
+          "frame": 1208,
+          "endFrame": 1210
+        },
+        {
+          "token": "today.",
+          "start": 40.346,
+          "end": 40.779,
+          "frame": 1210,
+          "endFrame": 1223
+        }
+      ],
+      "to": 1241,
+      "speechEnd": 1223,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S11",
+      "text": "And next time, before I leave, I'm asking who will call me.",
+      "from": 1241,
+      "words": [
+        {
+          "token": "And",
+          "start": 41.46,
+          "end": 41.571,
+          "frame": 1244,
+          "endFrame": 1247
+        },
+        {
+          "token": "next",
+          "start": 41.585,
+          "end": 41.918,
+          "frame": 1248,
+          "endFrame": 1258
+        },
+        {
+          "token": "time,",
+          "start": 41.932,
+          "end": 42.252,
+          "frame": 1258,
+          "endFrame": 1268
+        },
+        {
+          "token": "before",
+          "start": 42.28,
+          "end": 42.627,
+          "frame": 1268,
+          "endFrame": 1279
+        },
+        {
+          "token": "I",
+          "start": 42.641,
+          "end": 42.724,
+          "frame": 1279,
+          "endFrame": 1282
+        },
+        {
+          "token": "leave,",
+          "start": 42.738,
+          "end": 43.21,
+          "frame": 1282,
+          "endFrame": 1296
+        },
+        {
+          "token": "I'm",
+          "start": 43.557,
+          "end": 43.682,
+          "frame": 1307,
+          "endFrame": 1310
+        },
+        {
+          "token": "asking",
+          "start": 43.696,
+          "end": 44.168,
+          "frame": 1311,
+          "endFrame": 1325
+        },
+        {
+          "token": "who",
+          "start": 44.182,
+          "end": 44.307,
+          "frame": 1325,
+          "endFrame": 1329
+        },
+        {
+          "token": "will",
+          "start": 44.321,
+          "end": 44.474,
+          "frame": 1330,
+          "endFrame": 1334
+        },
+        {
+          "token": "call",
+          "start": 44.488,
+          "end": 44.766,
+          "frame": 1335,
+          "endFrame": 1343
+        },
+        {
+          "token": "me.",
+          "start": 44.78,
+          "end": 45.071,
+          "frame": 1343,
+          "endFrame": 1352
+        }
+      ],
+      "to": 1413,
+      "speechEnd": 1352,
+      "speaker": "MOM"
+    }
+  ]
+}

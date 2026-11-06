@@ -1,0 +1,11 @@
+[S1] MOM: The hospital just called. About a scan from April.
+[S2] DAUGHTER: April? Mom, it's September.
+[S3] MOM: The result came back after I went home. Nobody saw it.
+[S4] DAUGHTER: You were in that ward for four days.
+[S5] MOM: The doctor who ordered it had moved to another team.
+[S6] DAUGHTER: So who was supposed to call you?
+[S7] MOM: That's what I asked. She said it fell between teams.
+[S8] DAUGHTER: I looked it up. In one study, four in ten patients left hospital with results still pending. And their doctors missed many of the ones that mattered.
+[S9] MOM: The report says, follow up in three months.
+[S10] DAUGHTER: That was five months ago. I'm booking it today.
+[S11] MOM: And next time, before I leave, I'm asking who will call me.

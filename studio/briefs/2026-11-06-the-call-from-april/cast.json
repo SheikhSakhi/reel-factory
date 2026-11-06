@@ -1,0 +1,4 @@
+{
+  "MOM": {"voice": "en-US-EmmaMultilingualNeural", "rate": "-10%", "pitch": "-5Hz", "gap": 0.45},
+  "DAUGHTER": {"voice": "en-US-AvaMultilingualNeural", "rate": "-2%", "pitch": "+0Hz", "gap": 0.4}
+}
