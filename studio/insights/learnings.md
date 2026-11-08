@@ -11,6 +11,12 @@ Rules learned from ratings and real results. Every run reads this first. Maintai
 - Ad tone: slogans, a product name or tagline as the ending ("DOCX · ...", "A plan is."), selling instead of explaining (monitor-not-plan disliked: "like an advertisement", 2026-10-30)
 
 ## User preferences
+- WINNER (call-from-april v2, "brilliant", 2026-11-08). What made it work, repeat it:
+  - a hook anyone feels: a family moment on a phone ("The hospital just called. About a scan from April." / "April? Mom, it's September.")
+  - a real system failure shown through people, not explained (the result fell between teams)
+  - proof as physical cutaways on the same set (a study card, the report with the line underlined), one sourced number each
+  - an ending that answers: what good care looks like, concrete (one doctor, one plan, a dated timeline), plus one piece of evidence, no product name, no CTA
+  - calm daylight look, two voices, ambient bed, no SFX
 - Endings: don't stop at the problem or a question for the viewer ("who will call me?"). Close with the answer: what good care looks like (one doctor holding the plan, results seen on time, a clear next step and date), shown concretely, with one piece of evidence. Still no product name or CTA unless asked (call-from-april, user note 2026-11-06)
 - Hooks don't have to be medical: the first line must make anyone stop and listen (a human moment, a surprise, a question, a visual puzzle), then the story turns to care. The-gardener opened on a clinical line ("She came back worse"): script and design rated good, hook too narrow (2026-11-02)
 - Faceless parable (F2) works: sunlit flat illustration, an old wise character + a young doctor, one metaphor object, a reframing line, a callback ending; rated good (the-gardener, 2026-11-02)
