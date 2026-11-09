@@ -1,0 +1,1192 @@
+{
+  "file": "vo/2026-11-09-all-fine-i-think/take.mp3",
+  "voice": "dialogue",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 1810,
+  "cast": {
+    "DAD": {
+      "voice": "en-US-BrianMultilingualNeural",
+      "rate": "-9%",
+      "pitch": "-6Hz",
+      "gap": 0.45
+    },
+    "SON": {
+      "voice": "en-US-AndrewMultilingualNeural",
+      "rate": "-2%",
+      "pitch": "+0Hz",
+      "gap": 0.4
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "Just left the doctor. All fine, I think.",
+      "from": 0,
+      "words": [
+        {
+          "token": "Just",
+          "start": 0.055,
+          "end": 0.343,
+          "frame": 2,
+          "endFrame": 10
+        },
+        {
+          "token": "left",
+          "start": 0.357,
+          "end": 0.714,
+          "frame": 11,
+          "endFrame": 21
+        },
+        {
+          "token": "the",
+          "start": 0.728,
+          "end": 0.824,
+          "frame": 22,
+          "endFrame": 25
+        },
+        {
+          "token": "doctor.",
+          "start": 0.838,
+          "end": 1.497,
+          "frame": 25,
+          "endFrame": 45
+        },
+        {
+          "token": "All",
+          "start": 1.909,
+          "end": 2.033,
+          "frame": 57,
+          "endFrame": 61
+        },
+        {
+          "token": "fine,",
+          "start": 2.047,
+          "end": 2.459,
+          "frame": 61,
+          "endFrame": 74
+        },
+        {
+          "token": "I",
+          "start": 2.486,
+          "end": 2.61,
+          "frame": 75,
+          "endFrame": 78
+        },
+        {
+          "token": "think.",
+          "start": 2.624,
+          "end": 3.036,
+          "frame": 79,
+          "endFrame": 91
+        }
+      ],
+      "to": 106,
+      "speechEnd": 91,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S2",
+      "text": "You think? Dad, what did she say?",
+      "from": 106,
+      "words": [
+        {
+          "token": "You",
+          "start": 3.645,
+          "end": 3.735,
+          "frame": 109,
+          "endFrame": 112
+        },
+        {
+          "token": "think?",
+          "start": 3.735,
+          "end": 4.13,
+          "frame": 112,
+          "endFrame": 124
+        },
+        {
+          "token": "Dad,",
+          "start": 4.538,
+          "end": 4.742,
+          "frame": 136,
+          "endFrame": 142
+        },
+        {
+          "token": "what",
+          "start": 4.755,
+          "end": 4.844,
+          "frame": 143,
+          "endFrame": 145
+        },
+        {
+          "token": "did",
+          "start": 4.844,
+          "end": 4.934,
+          "frame": 145,
+          "endFrame": 148
+        },
+        {
+          "token": "she",
+          "start": 4.934,
+          "end": 5.112,
+          "frame": 148,
+          "endFrame": 153
+        },
+        {
+          "token": "say?",
+          "start": 5.112,
+          "end": 5.559,
+          "frame": 153,
+          "endFrame": 167
+        }
+      ],
+      "to": 184,
+      "speechEnd": 167,
+      "speaker": "SON"
+    },
+    {
+      "id": "S3",
+      "text": "Something about my sugar. A new tablet. Or a new dose of the old one.",
+      "from": 184,
+      "words": [
+        {
+          "token": "Something",
+          "start": 6.225,
+          "end": 6.692,
+          "frame": 187,
+          "endFrame": 201
+        },
+        {
+          "token": "about",
+          "start": 6.706,
+          "end": 7.091,
+          "frame": 201,
+          "endFrame": 213
+        },
+        {
+          "token": "my",
+          "start": 7.104,
+          "end": 7.269,
+          "frame": 213,
+          "endFrame": 218
+        },
+        {
+          "token": "sugar.",
+          "start": 7.283,
+          "end": 7.942,
+          "frame": 218,
+          "endFrame": 238
+        },
+        {
+          "token": "A",
+          "start": 8.354,
+          "end": 8.409,
+          "frame": 251,
+          "endFrame": 252
+        },
+        {
+          "token": "new",
+          "start": 8.423,
+          "end": 8.684,
+          "frame": 253,
+          "endFrame": 261
+        },
+        {
+          "token": "tablet.",
+          "start": 8.698,
+          "end": 9.343,
+          "frame": 261,
+          "endFrame": 280
+        },
+        {
+          "token": "Or",
+          "start": 9.783,
+          "end": 9.948,
+          "frame": 293,
+          "endFrame": 298
+        },
+        {
+          "token": "a",
+          "start": 9.961,
+          "end": 10.016,
+          "frame": 299,
+          "endFrame": 300
+        },
+        {
+          "token": "new",
+          "start": 10.03,
+          "end": 10.319,
+          "frame": 301,
+          "endFrame": 310
+        },
+        {
+          "token": "dose",
+          "start": 10.332,
+          "end": 10.731,
+          "frame": 310,
+          "endFrame": 322
+        },
+        {
+          "token": "of",
+          "start": 10.744,
+          "end": 10.882,
+          "frame": 322,
+          "endFrame": 326
+        },
+        {
+          "token": "the",
+          "start": 10.896,
+          "end": 10.964,
+          "frame": 327,
+          "endFrame": 329
+        },
+        {
+          "token": "old",
+          "start": 10.978,
+          "end": 11.308,
+          "frame": 329,
+          "endFrame": 339
+        },
+        {
+          "token": "one.",
+          "start": 11.321,
+          "end": 11.678,
+          "frame": 340,
+          "endFrame": 350
+        }
+      ],
+      "to": 366,
+      "speechEnd": 350,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S4",
+      "text": "Which one?",
+      "from": 366,
+      "words": [
+        {
+          "token": "Which",
+          "start": 12.3,
+          "end": 12.44,
+          "frame": 369,
+          "endFrame": 373
+        },
+        {
+          "token": "one?",
+          "start": 12.453,
+          "end": 12.772,
+          "frame": 374,
+          "endFrame": 383
+        }
+      ],
+      "to": 399,
+      "speechEnd": 383,
+      "speaker": "SON"
+    },
+    {
+      "id": "S5",
+      "text": "She explained it so clearly. I just can't remember.",
+      "from": 399,
+      "words": [
+        {
+          "token": "She",
+          "start": 13.397,
+          "end": 13.576,
+          "frame": 402,
+          "endFrame": 407
+        },
+        {
+          "token": "explained",
+          "start": 13.589,
+          "end": 14.166,
+          "frame": 408,
+          "endFrame": 425
+        },
+        {
+          "token": "it",
+          "start": 14.18,
+          "end": 14.304,
+          "frame": 425,
+          "endFrame": 429
+        },
+        {
+          "token": "so",
+          "start": 14.317,
+          "end": 14.551,
+          "frame": 430,
+          "endFrame": 437
+        },
+        {
+          "token": "clearly.",
+          "start": 14.565,
+          "end": 15.238,
+          "frame": 437,
+          "endFrame": 457
+        },
+        {
+          "token": "I",
+          "start": 15.636,
+          "end": 15.718,
+          "frame": 469,
+          "endFrame": 472
+        },
+        {
+          "token": "just",
+          "start": 15.732,
+          "end": 15.993,
+          "frame": 472,
+          "endFrame": 480
+        },
+        {
+          "token": "can't",
+          "start": 16.007,
+          "end": 16.35,
+          "frame": 480,
+          "endFrame": 491
+        },
+        {
+          "token": "remember.",
+          "start": 16.364,
+          "end": 17.023,
+          "frame": 491,
+          "endFrame": 511
+        }
+      ],
+      "to": 527,
+      "speechEnd": 511,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S6",
+      "text": "That's normal. A review found patients forget forty to eighty percent of what doctors tell them, almost straight away.",
+      "from": 527,
+      "words": [
+        {
+          "token": "That's",
+          "start": 17.658,
+          "end": 17.811,
+          "frame": 530,
+          "endFrame": 534
+        },
+        {
+          "token": "normal.",
+          "start": 17.811,
+          "end": 18.232,
+          "frame": 534,
+          "endFrame": 547
+        },
+        {
+          "token": "A",
+          "start": 18.653,
+          "end": 18.704,
+          "frame": 560,
+          "endFrame": 561
+        },
+        {
+          "token": "review",
+          "start": 18.704,
+          "end": 19.099,
+          "frame": 561,
+          "endFrame": 573
+        },
+        {
+          "token": "found",
+          "start": 19.099,
+          "end": 19.418,
+          "frame": 573,
+          "endFrame": 583
+        },
+        {
+          "token": "patients",
+          "start": 19.418,
+          "end": 19.864,
+          "frame": 583,
+          "endFrame": 596
+        },
+        {
+          "token": "forget",
+          "start": 19.877,
+          "end": 20.158,
+          "frame": 596,
+          "endFrame": 605
+        },
+        {
+          "token": "forty",
+          "start": 20.158,
+          "end": 20.617,
+          "frame": 605,
+          "endFrame": 619
+        },
+        {
+          "token": "to",
+          "start": 20.63,
+          "end": 20.821,
+          "frame": 619,
+          "endFrame": 625
+        },
+        {
+          "token": "eighty",
+          "start": 20.949,
+          "end": 21.204,
+          "frame": 628,
+          "endFrame": 636
+        },
+        {
+          "token": "percent",
+          "start": 21.216,
+          "end": 21.854,
+          "frame": 636,
+          "endFrame": 656
+        },
+        {
+          "token": "of",
+          "start": 21.944,
+          "end": 22.033,
+          "frame": 658,
+          "endFrame": 661
+        },
+        {
+          "token": "what",
+          "start": 22.033,
+          "end": 22.301,
+          "frame": 661,
+          "endFrame": 669
+        },
+        {
+          "token": "doctors",
+          "start": 22.339,
+          "end": 22.773,
+          "frame": 670,
+          "endFrame": 683
+        },
+        {
+          "token": "tell",
+          "start": 22.773,
+          "end": 23.028,
+          "frame": 683,
+          "endFrame": 691
+        },
+        {
+          "token": "them,",
+          "start": 23.04,
+          "end": 23.232,
+          "frame": 691,
+          "endFrame": 697
+        },
+        {
+          "token": "almost",
+          "start": 23.716,
+          "end": 23.984,
+          "frame": 711,
+          "endFrame": 720
+        },
+        {
+          "token": "straight",
+          "start": 23.997,
+          "end": 24.252,
+          "frame": 720,
+          "endFrame": 728
+        },
+        {
+          "token": "away.",
+          "start": 24.252,
+          "end": 24.66,
+          "frame": 728,
+          "endFrame": 740
+        }
+      ],
+      "to": 755,
+      "speechEnd": 740,
+      "speaker": "SON"
+    },
+    {
+      "id": "S7",
+      "text": "And almost half of what they do remember is wrong.",
+      "from": 755,
+      "words": [
+        {
+          "token": "And",
+          "start": 25.282,
+          "end": 25.397,
+          "frame": 758,
+          "endFrame": 762
+        },
+        {
+          "token": "almost",
+          "start": 25.41,
+          "end": 25.703,
+          "frame": 762,
+          "endFrame": 771
+        },
+        {
+          "token": "half",
+          "start": 25.703,
+          "end": 26.098,
+          "frame": 771,
+          "endFrame": 783
+        },
+        {
+          "token": "of",
+          "start": 26.111,
+          "end": 26.2,
+          "frame": 783,
+          "endFrame": 786
+        },
+        {
+          "token": "what",
+          "start": 26.2,
+          "end": 26.328,
+          "frame": 786,
+          "endFrame": 790
+        },
+        {
+          "token": "they",
+          "start": 26.328,
+          "end": 26.43,
+          "frame": 790,
+          "endFrame": 793
+        },
+        {
+          "token": "do",
+          "start": 26.43,
+          "end": 26.609,
+          "frame": 793,
+          "endFrame": 798
+        },
+        {
+          "token": "remember",
+          "start": 26.621,
+          "end": 27.004,
+          "frame": 799,
+          "endFrame": 810
+        },
+        {
+          "token": "is",
+          "start": 27.004,
+          "end": 27.119,
+          "frame": 810,
+          "endFrame": 814
+        },
+        {
+          "token": "wrong.",
+          "start": 27.119,
+          "end": 27.552,
+          "frame": 814,
+          "endFrame": 827
+        }
+      ],
+      "to": 842,
+      "speechEnd": 827,
+      "speaker": "SON"
+    },
+    {
+      "id": "S8",
+      "text": "So I go back and ask again?",
+      "from": 842,
+      "words": [
+        {
+          "token": "So",
+          "start": 28.174,
+          "end": 28.394,
+          "frame": 845,
+          "endFrame": 852
+        },
+        {
+          "token": "I",
+          "start": 28.408,
+          "end": 28.518,
+          "frame": 852,
+          "endFrame": 856
+        },
+        {
+          "token": "go",
+          "start": 28.532,
+          "end": 28.696,
+          "frame": 856,
+          "endFrame": 861
+        },
+        {
+          "token": "back",
+          "start": 28.71,
+          "end": 29.026,
+          "frame": 861,
+          "endFrame": 871
+        },
+        {
+          "token": "and",
+          "start": 29.04,
+          "end": 29.136,
+          "frame": 871,
+          "endFrame": 874
+        },
+        {
+          "token": "ask",
+          "start": 29.15,
+          "end": 29.493,
+          "frame": 874,
+          "endFrame": 885
+        },
+        {
+          "token": "again?",
+          "start": 29.507,
+          "end": 29.946,
+          "frame": 885,
+          "endFrame": 898
+        }
+      ],
+      "to": 914,
+      "speechEnd": 898,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S9",
+      "text": "You shouldn't have to. The plan should be written down, from her, on your phone.",
+      "from": 914,
+      "words": [
+        {
+          "token": "You",
+          "start": 30.568,
+          "end": 30.67,
+          "frame": 917,
+          "endFrame": 920
+        },
+        {
+          "token": "shouldn't",
+          "start": 30.683,
+          "end": 30.938,
+          "frame": 920,
+          "endFrame": 928
+        },
+        {
+          "token": "have",
+          "start": 30.951,
+          "end": 31.219,
+          "frame": 929,
+          "endFrame": 937
+        },
+        {
+          "token": "to.",
+          "start": 31.219,
+          "end": 31.499,
+          "frame": 937,
+          "endFrame": 945
+        },
+        {
+          "token": "The",
+          "start": 31.92,
+          "end": 31.971,
+          "frame": 958,
+          "endFrame": 959
+        },
+        {
+          "token": "plan",
+          "start": 31.971,
+          "end": 32.213,
+          "frame": 959,
+          "endFrame": 966
+        },
+        {
+          "token": "should",
+          "start": 32.226,
+          "end": 32.392,
+          "frame": 967,
+          "endFrame": 972
+        },
+        {
+          "token": "be",
+          "start": 32.392,
+          "end": 32.545,
+          "frame": 972,
+          "endFrame": 976
+        },
+        {
+          "token": "written",
+          "start": 32.545,
+          "end": 32.838,
+          "frame": 976,
+          "endFrame": 985
+        },
+        {
+          "token": "down,",
+          "start": 32.838,
+          "end": 33.323,
+          "frame": 985,
+          "endFrame": 1000
+        },
+        {
+          "token": "from",
+          "start": 33.553,
+          "end": 33.731,
+          "frame": 1007,
+          "endFrame": 1012
+        },
+        {
+          "token": "her,",
+          "start": 33.744,
+          "end": 34.05,
+          "frame": 1012,
+          "endFrame": 1022
+        },
+        {
+          "token": "on",
+          "start": 34.458,
+          "end": 34.56,
+          "frame": 1034,
+          "endFrame": 1037
+        },
+        {
+          "token": "your",
+          "start": 34.573,
+          "end": 34.662,
+          "frame": 1037,
+          "endFrame": 1040
+        },
+        {
+          "token": "phone.",
+          "start": 34.662,
+          "end": 35.02,
+          "frame": 1040,
+          "endFrame": 1051
+        }
+      ],
+      "to": 1067,
+      "speechEnd": 1051,
+      "speaker": "SON"
+    },
+    {
+      "id": "S10",
+      "text": "Wait. A message just came in. From the clinic.",
+      "from": 1067,
+      "words": [
+        {
+          "token": "Wait.",
+          "start": 35.659,
+          "end": 35.933,
+          "frame": 1070,
+          "endFrame": 1078
+        },
+        {
+          "token": "A",
+          "start": 36.331,
+          "end": 36.413,
+          "frame": 1090,
+          "endFrame": 1092
+        },
+        {
+          "token": "message",
+          "start": 36.427,
+          "end": 36.99,
+          "frame": 1093,
+          "endFrame": 1110
+        },
+        {
+          "token": "just",
+          "start": 37.004,
+          "end": 37.306,
+          "frame": 1110,
+          "endFrame": 1119
+        },
+        {
+          "token": "came",
+          "start": 37.32,
+          "end": 37.594,
+          "frame": 1120,
+          "endFrame": 1128
+        },
+        {
+          "token": "in.",
+          "start": 37.608,
+          "end": 37.979,
+          "frame": 1128,
+          "endFrame": 1139
+        },
+        {
+          "token": "From",
+          "start": 38.406,
+          "end": 38.639,
+          "frame": 1152,
+          "endFrame": 1159
+        },
+        {
+          "token": "the",
+          "start": 38.653,
+          "end": 38.763,
+          "frame": 1160,
+          "endFrame": 1163
+        },
+        {
+          "token": "clinic.",
+          "start": 38.777,
+          "end": 39.436,
+          "frame": 1163,
+          "endFrame": 1183
+        }
+      ],
+      "to": 1200,
+      "speechEnd": 1183,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S11",
+      "text": "What changed. When to take it. Check my sugar every morning, and send her the numbers.",
+      "from": 1200,
+      "words": [
+        {
+          "token": "What",
+          "start": 40.088,
+          "end": 40.212,
+          "frame": 1203,
+          "endFrame": 1206
+        },
+        {
+          "token": "changed.",
+          "start": 40.226,
+          "end": 40.858,
+          "frame": 1207,
+          "endFrame": 1226
+        },
+        {
+          "token": "When",
+          "start": 41.283,
+          "end": 41.462,
+          "frame": 1239,
+          "endFrame": 1244
+        },
+        {
+          "token": "to",
+          "start": 41.476,
+          "end": 41.613,
+          "frame": 1244,
+          "endFrame": 1248
+        },
+        {
+          "token": "take",
+          "start": 41.627,
+          "end": 41.97,
+          "frame": 1249,
+          "endFrame": 1259
+        },
+        {
+          "token": "it.",
+          "start": 41.984,
+          "end": 42.272,
+          "frame": 1260,
+          "endFrame": 1268
+        },
+        {
+          "token": "Check",
+          "start": 42.712,
+          "end": 43.014,
+          "frame": 1281,
+          "endFrame": 1290
+        },
+        {
+          "token": "my",
+          "start": 43.028,
+          "end": 43.193,
+          "frame": 1291,
+          "endFrame": 1296
+        },
+        {
+          "token": "sugar",
+          "start": 43.207,
+          "end": 43.701,
+          "frame": 1296,
+          "endFrame": 1311
+        },
+        {
+          "token": "every",
+          "start": 43.715,
+          "end": 43.989,
+          "frame": 1311,
+          "endFrame": 1320
+        },
+        {
+          "token": "morning,",
+          "start": 44.003,
+          "end": 44.553,
+          "frame": 1320,
+          "endFrame": 1337
+        },
+        {
+          "token": "and",
+          "start": 44.58,
+          "end": 44.759,
+          "frame": 1337,
+          "endFrame": 1343
+        },
+        {
+          "token": "send",
+          "start": 44.773,
+          "end": 45.102,
+          "frame": 1343,
+          "endFrame": 1353
+        },
+        {
+          "token": "her",
+          "start": 45.116,
+          "end": 45.267,
+          "frame": 1353,
+          "endFrame": 1358
+        },
+        {
+          "token": "the",
+          "start": 45.281,
+          "end": 45.377,
+          "frame": 1358,
+          "endFrame": 1361
+        },
+        {
+          "token": "numbers.",
+          "start": 45.391,
+          "end": 46.064,
+          "frame": 1362,
+          "endFrame": 1382
+        }
+      ],
+      "to": 1397,
+      "speechEnd": 1382,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S12",
+      "text": "And the next visit?",
+      "from": 1397,
+      "words": [
+        {
+          "token": "And",
+          "start": 46.673,
+          "end": 46.724,
+          "frame": 1400,
+          "endFrame": 1402
+        },
+        {
+          "token": "the",
+          "start": 46.737,
+          "end": 46.801,
+          "frame": 1402,
+          "endFrame": 1404
+        },
+        {
+          "token": "next",
+          "start": 46.814,
+          "end": 47.094,
+          "frame": 1404,
+          "endFrame": 1413
+        },
+        {
+          "token": "visit?",
+          "start": 47.107,
+          "end": 47.477,
+          "frame": 1413,
+          "endFrame": 1424
+        }
+      ],
+      "to": 1441,
+      "speechEnd": 1424,
+      "speaker": "SON"
+    },
+    {
+      "id": "S13",
+      "text": "Second of December. And if I'm unsure, I reply here. She reads it.",
+      "from": 1441,
+      "words": [
+        {
+          "token": "Second",
+          "start": 48.143,
+          "end": 48.693,
+          "frame": 1444,
+          "endFrame": 1461
+        },
+        {
+          "token": "of",
+          "start": 48.706,
+          "end": 48.899,
+          "frame": 1461,
+          "endFrame": 1467
+        },
+        {
+          "token": "December.",
+          "start": 48.912,
+          "end": 49.668,
+          "frame": 1467,
+          "endFrame": 1490
+        },
+        {
+          "token": "And",
+          "start": 50.094,
+          "end": 50.19,
+          "frame": 1503,
+          "endFrame": 1506
+        },
+        {
+          "token": "if",
+          "start": 50.204,
+          "end": 50.341,
+          "frame": 1506,
+          "endFrame": 1510
+        },
+        {
+          "token": "I'm",
+          "start": 50.355,
+          "end": 50.52,
+          "frame": 1511,
+          "endFrame": 1516
+        },
+        {
+          "token": "unsure,",
+          "start": 50.533,
+          "end": 51.151,
+          "frame": 1516,
+          "endFrame": 1535
+        },
+        {
+          "token": "I",
+          "start": 51.605,
+          "end": 51.742,
+          "frame": 1548,
+          "endFrame": 1552
+        },
+        {
+          "token": "reply",
+          "start": 51.756,
+          "end": 52.195,
+          "frame": 1553,
+          "endFrame": 1566
+        },
+        {
+          "token": "here.",
+          "start": 52.209,
+          "end": 52.621,
+          "frame": 1566,
+          "endFrame": 1579
+        },
+        {
+          "token": "She",
+          "start": 53.016,
+          "end": 53.236,
+          "frame": 1590,
+          "endFrame": 1597
+        },
+        {
+          "token": "reads",
+          "start": 53.249,
+          "end": 53.606,
+          "frame": 1597,
+          "endFrame": 1608
+        },
+        {
+          "token": "it.",
+          "start": 53.62,
+          "end": 53.922,
+          "frame": 1609,
+          "endFrame": 1618
+        }
+      ],
+      "to": 1633,
+      "speechEnd": 1618,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S14",
+      "text": "Written is remembered better, Dad. That's the visit, still with you at home.",
+      "from": 1633,
+      "words": [
+        {
+          "token": "Written",
+          "start": 54.519,
+          "end": 54.735,
+          "frame": 1636,
+          "endFrame": 1642
+        },
+        {
+          "token": "is",
+          "start": 54.748,
+          "end": 54.888,
+          "frame": 1642,
+          "endFrame": 1647
+        },
+        {
+          "token": "remembered",
+          "start": 54.888,
+          "end": 55.284,
+          "frame": 1647,
+          "endFrame": 1659
+        },
+        {
+          "token": "better,",
+          "start": 55.297,
+          "end": 55.654,
+          "frame": 1659,
+          "endFrame": 1670
+        },
+        {
+          "token": "Dad.",
+          "start": 55.679,
+          "end": 56.087,
+          "frame": 1670,
+          "endFrame": 1683
+        },
+        {
+          "token": "That's",
+          "start": 56.496,
+          "end": 56.649,
+          "frame": 1695,
+          "endFrame": 1699
+        },
+        {
+          "token": "the",
+          "start": 56.661,
+          "end": 56.751,
+          "frame": 1700,
+          "endFrame": 1703
+        },
+        {
+          "token": "visit,",
+          "start": 56.751,
+          "end": 57.172,
+          "frame": 1703,
+          "endFrame": 1715
+        },
+        {
+          "token": "still",
+          "start": 57.478,
+          "end": 57.72,
+          "frame": 1724,
+          "endFrame": 1732
+        },
+        {
+          "token": "with",
+          "start": 57.72,
+          "end": 57.848,
+          "frame": 1732,
+          "endFrame": 1735
+        },
+        {
+          "token": "you",
+          "start": 57.86,
+          "end": 57.988,
+          "frame": 1736,
+          "endFrame": 1740
+        },
+        {
+          "token": "at",
+          "start": 57.988,
+          "end": 58.026,
+          "frame": 1740,
+          "endFrame": 1741
+        },
+        {
+          "token": "home.",
+          "start": 58.026,
+          "end": 58.332,
+          "frame": 1741,
+          "endFrame": 1750
+        }
+      ],
+      "to": 1810,
+      "speechEnd": 1750,
+      "speaker": "SON"
+    }
+  ]
+}

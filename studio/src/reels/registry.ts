@@ -11,6 +11,7 @@ import { S1E4Dark, S1E4_COVER, S1E4_DURATION } from "../edits/s1e4-dark/Reel";
 import { TheGardener, GARDENER_COVER, GARDENER_DURATION } from "./2026-11-02-the-gardener/Reel";
 import { SevenDoctors, SEVEN_COVER, SEVEN_DURATION } from "./2026-11-04-seven-doctors/Reel";
 import { CallFromApril, APRIL_COVER, APRIL_DURATION } from "./2026-11-06-the-call-from-april/Reel";
+import { AllFineIThink, FINE_COVER, FINE_DURATION } from "./2026-11-09-all-fine-i-think/Reel";
 import { SeriesDemoReel, SERIES_DEMO_COVER, SERIES_DEMO_DURATION } from "./series-demo/Reel";
 
 export type ReelEntry = {
@@ -35,5 +36,6 @@ export const REELS: readonly ReelEntry[] = [
   { id: "2026-11-02-the-gardener", component: TheGardener, durationInFrames: GARDENER_DURATION, coverFrame: GARDENER_COVER },
   { id: "2026-11-04-seven-doctors", component: SevenDoctors, durationInFrames: SEVEN_DURATION, coverFrame: SEVEN_COVER },
   { id: "2026-11-06-the-call-from-april", component: CallFromApril, durationInFrames: APRIL_DURATION, coverFrame: APRIL_COVER },
+  { id: "2026-11-09-all-fine-i-think", component: AllFineIThink, durationInFrames: FINE_DURATION, coverFrame: FINE_COVER },
   { id: "nvidia-s1e4-dark", component: S1E4Dark, durationInFrames: S1E4_DURATION, coverFrame: S1E4_COVER },
 ];

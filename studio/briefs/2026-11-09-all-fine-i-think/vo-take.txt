@@ -1,0 +1,14 @@
+[S1] DAD: Just left the doctor. All fine, I think.
+[S2] SON: You think? Dad, what did she say?
+[S3] DAD: Something about my sugar. A new tablet. Or a new dose of the old one.
+[S4] SON: Which one?
+[S5] DAD: She explained it so clearly. I just can't remember.
+[S6] SON: That's normal. A review found patients forget forty to eighty percent of what doctors tell them, almost straight away.
+[S7] SON: And almost half of what they do remember is wrong.
+[S8] DAD: So I go back and ask again?
+[S9] SON: You shouldn't have to. The plan should be written down, from her, on your phone.
+[S10] DAD: Wait. A message just came in. From the clinic.
+[S11] DAD: What changed. When to take it. Check my sugar every morning, and send her the numbers.
+[S12] SON: And the next visit?
+[S13] DAD: Second of December. And if I'm unsure, I reply here. She reads it.
+[S14] SON: Written is remembered better, Dad. That's the visit, still with you at home.
