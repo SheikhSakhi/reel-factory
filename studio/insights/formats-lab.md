@@ -35,7 +35,7 @@ Names and looks can change after feedback; keep them stable once something wins.
 | Format | Runs | Ratings | Mean | Notes |
 |---|---|---|---|---|
 | F1 | 2 | liked | + | ep01: dialogue good; voice and 3D animation poor. ep02: v2 look (low-poly, cinematic grade, split UI card, kit/LowPoly.tsx + kit/CinemaGrade.tsx) |
-| F2 | 1 | good | + | the-gardener: sunlit flat SVG illustration, old gardener + young doctor, metaphor: a potted plant |
+| F2 | 2 | good | + | the-lighthouse: sumi-e ink, keeper + young doctor. the-gardener: sunlit flat SVG illustration, old gardener + young doctor, metaphor: a potted plant |
 | F3 | 2 | liked, best | ++ | scribe-evening: clear narration arc (hook, explanation, reward). seven-doctors: risograph style, caregiver hook |
 | F4 | 3 | liked, brilliant | ++ | midnight-question: problem framed right; voice not good. call-from-april v2 (brilliant): daylight table, family chat, cutaways for proof, ending that answers |
 | F6 | 1 | format liked, execution poor | + | who-comes-back: same 3D hospital 4x, poor 3D, space imagery unrelated to the lines. Needs literal footage per line (Pexels key) and one-off 3D |

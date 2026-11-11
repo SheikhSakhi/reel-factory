@@ -1,0 +1,12 @@
+[S1] YOUNG: Why do you keep the light on? Nobody's called for help in years.
+[S2] OLD: The boats that need it most never call.
+[S3] YOUNG: Then how do you know they're in trouble?
+[S4] OLD: I watch the water. The small changes come long before the storm.
+[S5] YOUNG: My patients call when it's already a storm.
+[S6] OLD: And the small changes?
+[S7] YOUNG: With heart failure, it's weight. A study found it starts creeping up at least a week before people end up in hospital.
+[S8] OLD: A week of water rising. And nobody on the shore.
+[S9] YOUNG: I see them every three months.
+[S10] OLD: Then don't wait for the call. Keep a light on between the visits.
+[S11] YOUNG: A scale every morning. A line we agree on together. And someone who sees when it's crossed.
+[S12] OLD: Now you're keeping a lighthouse.

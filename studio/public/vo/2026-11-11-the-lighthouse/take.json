@@ -1,0 +1,1024 @@
+{
+  "file": "vo/2026-11-11-the-lighthouse/take.mp3",
+  "voice": "dialogue",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 1533,
+  "cast": {
+    "YOUNG": {
+      "voice": "en-US-EmmaMultilingualNeural",
+      "rate": "-6%",
+      "pitch": "-2Hz"
+    },
+    "OLD": {
+      "voice": "en-IE-ConnorNeural",
+      "rate": "-14%",
+      "pitch": "-6Hz",
+      "gap": 0.6
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "Why do you keep the light on? Nobody's called for help in years.",
+      "from": 0,
+      "words": [
+        {
+          "token": "Why",
+          "start": 0.106,
+          "end": 0.213,
+          "frame": 3,
+          "endFrame": 6
+        },
+        {
+          "token": "do",
+          "start": 0.226,
+          "end": 0.319,
+          "frame": 7,
+          "endFrame": 10
+        },
+        {
+          "token": "you",
+          "start": 0.332,
+          "end": 0.439,
+          "frame": 10,
+          "endFrame": 13
+        },
+        {
+          "token": "keep",
+          "start": 0.452,
+          "end": 0.665,
+          "frame": 14,
+          "endFrame": 20
+        },
+        {
+          "token": "the",
+          "start": 0.678,
+          "end": 0.785,
+          "frame": 20,
+          "endFrame": 24
+        },
+        {
+          "token": "light",
+          "start": 0.798,
+          "end": 1.064,
+          "frame": 24,
+          "endFrame": 32
+        },
+        {
+          "token": "on?",
+          "start": 1.077,
+          "end": 1.423,
+          "frame": 32,
+          "endFrame": 43
+        },
+        {
+          "token": "Nobody's",
+          "start": 1.848,
+          "end": 2.394,
+          "frame": 55,
+          "endFrame": 72
+        },
+        {
+          "token": "called",
+          "start": 2.407,
+          "end": 2.699,
+          "frame": 72,
+          "endFrame": 81
+        },
+        {
+          "token": "for",
+          "start": 2.713,
+          "end": 2.872,
+          "frame": 81,
+          "endFrame": 86
+        },
+        {
+          "token": "help",
+          "start": 2.886,
+          "end": 3.152,
+          "frame": 87,
+          "endFrame": 95
+        },
+        {
+          "token": "in",
+          "start": 3.165,
+          "end": 3.271,
+          "frame": 95,
+          "endFrame": 98
+        },
+        {
+          "token": "years.",
+          "start": 3.285,
+          "end": 3.896,
+          "frame": 99,
+          "endFrame": 117
+        }
+      ],
+      "to": 139,
+      "speechEnd": 117,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S2",
+      "text": "The boats that need it most never call.",
+      "from": 139,
+      "words": [
+        {
+          "token": "The",
+          "start": 4.724,
+          "end": 4.811,
+          "frame": 142,
+          "endFrame": 144
+        },
+        {
+          "token": "boats",
+          "start": 4.826,
+          "end": 5.189,
+          "frame": 145,
+          "endFrame": 156
+        },
+        {
+          "token": "that",
+          "start": 5.189,
+          "end": 5.422,
+          "frame": 156,
+          "endFrame": 163
+        },
+        {
+          "token": "need",
+          "start": 5.436,
+          "end": 5.727,
+          "frame": 163,
+          "endFrame": 172
+        },
+        {
+          "token": "it",
+          "start": 5.742,
+          "end": 5.858,
+          "frame": 172,
+          "endFrame": 176
+        },
+        {
+          "token": "most",
+          "start": 5.887,
+          "end": 6.25,
+          "frame": 177,
+          "endFrame": 188
+        },
+        {
+          "token": "never",
+          "start": 6.265,
+          "end": 6.541,
+          "frame": 188,
+          "endFrame": 196
+        },
+        {
+          "token": "call.",
+          "start": 6.628,
+          "end": 7.006,
+          "frame": 199,
+          "endFrame": 210
+        }
+      ],
+      "to": 221,
+      "speechEnd": 210,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S3",
+      "text": "Then how do you know they're in trouble?",
+      "from": 221,
+      "words": [
+        {
+          "token": "Then",
+          "start": 7.452,
+          "end": 7.612,
+          "frame": 224,
+          "endFrame": 228
+        },
+        {
+          "token": "how",
+          "start": 7.625,
+          "end": 7.798,
+          "frame": 229,
+          "endFrame": 234
+        },
+        {
+          "token": "do",
+          "start": 7.811,
+          "end": 7.878,
+          "frame": 234,
+          "endFrame": 236
+        },
+        {
+          "token": "you",
+          "start": 7.891,
+          "end": 7.998,
+          "frame": 237,
+          "endFrame": 240
+        },
+        {
+          "token": "know",
+          "start": 8.011,
+          "end": 8.197,
+          "frame": 240,
+          "endFrame": 246
+        },
+        {
+          "token": "they're",
+          "start": 8.21,
+          "end": 8.423,
+          "frame": 246,
+          "endFrame": 253
+        },
+        {
+          "token": "in",
+          "start": 8.436,
+          "end": 8.543,
+          "frame": 253,
+          "endFrame": 256
+        },
+        {
+          "token": "trouble?",
+          "start": 8.556,
+          "end": 9.101,
+          "frame": 257,
+          "endFrame": 273
+        }
+      ],
+      "to": 295,
+      "speechEnd": 273,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S4",
+      "text": "I watch the water. The small changes come long before the storm.",
+      "from": 295,
+      "words": [
+        {
+          "token": "I",
+          "start": 9.929,
+          "end": 10.089,
+          "frame": 298,
+          "endFrame": 303
+        },
+        {
+          "token": "watch",
+          "start": 10.118,
+          "end": 10.38,
+          "frame": 304,
+          "endFrame": 311
+        },
+        {
+          "token": "the",
+          "start": 10.38,
+          "end": 10.496,
+          "frame": 311,
+          "endFrame": 315
+        },
+        {
+          "token": "water.",
+          "start": 10.554,
+          "end": 10.99,
+          "frame": 317,
+          "endFrame": 330
+        },
+        {
+          "token": "The",
+          "start": 12.103,
+          "end": 12.219,
+          "frame": 363,
+          "endFrame": 367
+        },
+        {
+          "token": "small",
+          "start": 12.248,
+          "end": 12.612,
+          "frame": 367,
+          "endFrame": 378
+        },
+        {
+          "token": "changes",
+          "start": 12.684,
+          "end": 13.179,
+          "frame": 381,
+          "endFrame": 395
+        },
+        {
+          "token": "come",
+          "start": 13.237,
+          "end": 13.455,
+          "frame": 397,
+          "endFrame": 404
+        },
+        {
+          "token": "long",
+          "start": 13.469,
+          "end": 13.745,
+          "frame": 404,
+          "endFrame": 412
+        },
+        {
+          "token": "before",
+          "start": 13.818,
+          "end": 14.181,
+          "frame": 415,
+          "endFrame": 425
+        },
+        {
+          "token": "the",
+          "start": 14.211,
+          "end": 14.312,
+          "frame": 426,
+          "endFrame": 429
+        },
+        {
+          "token": "storm.",
+          "start": 14.341,
+          "end": 14.937,
+          "frame": 430,
+          "endFrame": 448
+        }
+      ],
+      "to": 459,
+      "speechEnd": 448,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S5",
+      "text": "My patients call when it's already a storm.",
+      "from": 459,
+      "words": [
+        {
+          "token": "My",
+          "start": 15.383,
+          "end": 15.516,
+          "frame": 462,
+          "endFrame": 465
+        },
+        {
+          "token": "patients",
+          "start": 15.53,
+          "end": 16.101,
+          "frame": 466,
+          "endFrame": 483
+        },
+        {
+          "token": "call",
+          "start": 16.115,
+          "end": 16.434,
+          "frame": 483,
+          "endFrame": 493
+        },
+        {
+          "token": "when",
+          "start": 16.447,
+          "end": 16.593,
+          "frame": 493,
+          "endFrame": 498
+        },
+        {
+          "token": "it's",
+          "start": 16.607,
+          "end": 16.78,
+          "frame": 498,
+          "endFrame": 503
+        },
+        {
+          "token": "already",
+          "start": 16.793,
+          "end": 17.205,
+          "frame": 504,
+          "endFrame": 516
+        },
+        {
+          "token": "a",
+          "start": 17.218,
+          "end": 17.285,
+          "frame": 517,
+          "endFrame": 519
+        },
+        {
+          "token": "storm.",
+          "start": 17.298,
+          "end": 17.897,
+          "frame": 519,
+          "endFrame": 537
+        }
+      ],
+      "to": 559,
+      "speechEnd": 537,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S6",
+      "text": "And the small changes?",
+      "from": 559,
+      "words": [
+        {
+          "token": "And",
+          "start": 18.725,
+          "end": 18.841,
+          "frame": 562,
+          "endFrame": 565
+        },
+        {
+          "token": "the",
+          "start": 18.885,
+          "end": 18.958,
+          "frame": 567,
+          "endFrame": 569
+        },
+        {
+          "token": "small",
+          "start": 18.987,
+          "end": 19.365,
+          "frame": 570,
+          "endFrame": 581
+        },
+        {
+          "token": "changes?",
+          "start": 19.423,
+          "end": 20.033,
+          "frame": 583,
+          "endFrame": 601
+        }
+      ],
+      "to": 611,
+      "speechEnd": 601,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S7",
+      "text": "With heart failure, it's weight. A study found it starts creeping up at least a week before people end up in hospital.",
+      "from": 611,
+      "words": [
+        {
+          "token": "With",
+          "start": 20.479,
+          "end": 20.612,
+          "frame": 614,
+          "endFrame": 618
+        },
+        {
+          "token": "heart",
+          "start": 20.626,
+          "end": 20.905,
+          "frame": 619,
+          "endFrame": 627
+        },
+        {
+          "token": "failure,",
+          "start": 20.918,
+          "end": 21.503,
+          "frame": 628,
+          "endFrame": 645
+        },
+        {
+          "token": "it's",
+          "start": 21.69,
+          "end": 21.849,
+          "frame": 651,
+          "endFrame": 655
+        },
+        {
+          "token": "weight.",
+          "start": 21.862,
+          "end": 22.381,
+          "frame": 656,
+          "endFrame": 671
+        },
+        {
+          "token": "A",
+          "start": 22.806,
+          "end": 22.886,
+          "frame": 684,
+          "endFrame": 687
+        },
+        {
+          "token": "study",
+          "start": 22.9,
+          "end": 23.285,
+          "frame": 687,
+          "endFrame": 699
+        },
+        {
+          "token": "found",
+          "start": 23.299,
+          "end": 23.578,
+          "frame": 699,
+          "endFrame": 707
+        },
+        {
+          "token": "it",
+          "start": 23.591,
+          "end": 23.684,
+          "frame": 708,
+          "endFrame": 711
+        },
+        {
+          "token": "starts",
+          "start": 23.697,
+          "end": 24.056,
+          "frame": 711,
+          "endFrame": 722
+        },
+        {
+          "token": "creeping",
+          "start": 24.07,
+          "end": 24.548,
+          "frame": 722,
+          "endFrame": 736
+        },
+        {
+          "token": "up",
+          "start": 24.562,
+          "end": 24.721,
+          "frame": 737,
+          "endFrame": 742
+        },
+        {
+          "token": "at",
+          "start": 24.735,
+          "end": 24.868,
+          "frame": 742,
+          "endFrame": 746
+        },
+        {
+          "token": "least",
+          "start": 24.881,
+          "end": 25.173,
+          "frame": 746,
+          "endFrame": 755
+        },
+        {
+          "token": "a",
+          "start": 25.187,
+          "end": 25.253,
+          "frame": 756,
+          "endFrame": 758
+        },
+        {
+          "token": "week",
+          "start": 25.267,
+          "end": 25.639,
+          "frame": 758,
+          "endFrame": 769
+        },
+        {
+          "token": "before",
+          "start": 25.732,
+          "end": 26.118,
+          "frame": 772,
+          "endFrame": 784
+        },
+        {
+          "token": "people",
+          "start": 26.131,
+          "end": 26.556,
+          "frame": 784,
+          "endFrame": 797
+        },
+        {
+          "token": "end",
+          "start": 26.57,
+          "end": 26.743,
+          "frame": 797,
+          "endFrame": 802
+        },
+        {
+          "token": "up",
+          "start": 26.756,
+          "end": 26.889,
+          "frame": 803,
+          "endFrame": 807
+        },
+        {
+          "token": "in",
+          "start": 26.902,
+          "end": 27.009,
+          "frame": 807,
+          "endFrame": 810
+        },
+        {
+          "token": "hospital.",
+          "start": 27.022,
+          "end": 27.713,
+          "frame": 811,
+          "endFrame": 831
+        }
+      ],
+      "to": 853,
+      "speechEnd": 831,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S8",
+      "text": "A week of water rising. And nobody on the shore.",
+      "from": 853,
+      "words": [
+        {
+          "token": "A",
+          "start": 28.541,
+          "end": 28.628,
+          "frame": 856,
+          "endFrame": 859
+        },
+        {
+          "token": "week",
+          "start": 28.687,
+          "end": 28.934,
+          "frame": 861,
+          "endFrame": 868
+        },
+        {
+          "token": "of",
+          "start": 28.948,
+          "end": 29.093,
+          "frame": 868,
+          "endFrame": 873
+        },
+        {
+          "token": "water",
+          "start": 29.093,
+          "end": 29.413,
+          "frame": 873,
+          "endFrame": 882
+        },
+        {
+          "token": "rising.",
+          "start": 29.5,
+          "end": 30.024,
+          "frame": 885,
+          "endFrame": 901
+        },
+        {
+          "token": "And",
+          "start": 31.035,
+          "end": 31.18,
+          "frame": 931,
+          "endFrame": 935
+        },
+        {
+          "token": "nobody",
+          "start": 31.195,
+          "end": 31.645,
+          "frame": 936,
+          "endFrame": 949
+        },
+        {
+          "token": "on",
+          "start": 31.703,
+          "end": 31.849,
+          "frame": 951,
+          "endFrame": 955
+        },
+        {
+          "token": "the",
+          "start": 31.892,
+          "end": 31.95,
+          "frame": 957,
+          "endFrame": 959
+        },
+        {
+          "token": "shore.",
+          "start": 31.994,
+          "end": 32.372,
+          "frame": 960,
+          "endFrame": 971
+        }
+      ],
+      "to": 981,
+      "speechEnd": 971,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S9",
+      "text": "I see them every three months.",
+      "from": 981,
+      "words": [
+        {
+          "token": "I",
+          "start": 32.805,
+          "end": 32.872,
+          "frame": 984,
+          "endFrame": 986
+        },
+        {
+          "token": "see",
+          "start": 32.885,
+          "end": 33.098,
+          "frame": 987,
+          "endFrame": 993
+        },
+        {
+          "token": "them",
+          "start": 33.111,
+          "end": 33.284,
+          "frame": 993,
+          "endFrame": 999
+        },
+        {
+          "token": "every",
+          "start": 33.417,
+          "end": 33.709,
+          "frame": 1003,
+          "endFrame": 1011
+        },
+        {
+          "token": "three",
+          "start": 33.723,
+          "end": 33.989,
+          "frame": 1012,
+          "endFrame": 1020
+        },
+        {
+          "token": "months.",
+          "start": 34.002,
+          "end": 34.627,
+          "frame": 1020,
+          "endFrame": 1039
+        }
+      ],
+      "to": 1061,
+      "speechEnd": 1039,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S10",
+      "text": "Then don't wait for the call. Keep a light on between the visits.",
+      "from": 1061,
+      "words": [
+        {
+          "token": "Then",
+          "start": 35.455,
+          "end": 35.688,
+          "frame": 1064,
+          "endFrame": 1071
+        },
+        {
+          "token": "don't",
+          "start": 35.731,
+          "end": 35.964,
+          "frame": 1072,
+          "endFrame": 1079
+        },
+        {
+          "token": "wait",
+          "start": 35.978,
+          "end": 36.255,
+          "frame": 1079,
+          "endFrame": 1088
+        },
+        {
+          "token": "for",
+          "start": 36.269,
+          "end": 36.385,
+          "frame": 1088,
+          "endFrame": 1092
+        },
+        {
+          "token": "the",
+          "start": 36.414,
+          "end": 36.502,
+          "frame": 1092,
+          "endFrame": 1095
+        },
+        {
+          "token": "call.",
+          "start": 36.574,
+          "end": 36.952,
+          "frame": 1097,
+          "endFrame": 1109
+        },
+        {
+          "token": "Keep",
+          "start": 38.065,
+          "end": 38.312,
+          "frame": 1142,
+          "endFrame": 1149
+        },
+        {
+          "token": "a",
+          "start": 38.327,
+          "end": 38.356,
+          "frame": 1150,
+          "endFrame": 1151
+        },
+        {
+          "token": "light",
+          "start": 38.414,
+          "end": 38.705,
+          "frame": 1152,
+          "endFrame": 1161
+        },
+        {
+          "token": "on",
+          "start": 38.719,
+          "end": 38.864,
+          "frame": 1162,
+          "endFrame": 1166
+        },
+        {
+          "token": "between",
+          "start": 38.879,
+          "end": 39.315,
+          "frame": 1166,
+          "endFrame": 1179
+        },
+        {
+          "token": "the",
+          "start": 39.344,
+          "end": 39.417,
+          "frame": 1180,
+          "endFrame": 1183
+        },
+        {
+          "token": "visits.",
+          "start": 39.446,
+          "end": 39.998,
+          "frame": 1183,
+          "endFrame": 1200
+        }
+      ],
+      "to": 1210,
+      "speechEnd": 1200,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S11",
+      "text": "A scale every morning. A line we agree on together. And someone who sees when it's crossed.",
+      "from": 1210,
+      "words": [
+        {
+          "token": "A",
+          "start": 40.431,
+          "end": 40.511,
+          "frame": 1213,
+          "endFrame": 1215
+        },
+        {
+          "token": "scale",
+          "start": 40.524,
+          "end": 41.003,
+          "frame": 1216,
+          "endFrame": 1230
+        },
+        {
+          "token": "every",
+          "start": 41.029,
+          "end": 41.322,
+          "frame": 1231,
+          "endFrame": 1240
+        },
+        {
+          "token": "morning.",
+          "start": 41.335,
+          "end": 41.934,
+          "frame": 1240,
+          "endFrame": 1258
+        },
+        {
+          "token": "A",
+          "start": 42.359,
+          "end": 42.426,
+          "frame": 1271,
+          "endFrame": 1273
+        },
+        {
+          "token": "line",
+          "start": 42.439,
+          "end": 42.745,
+          "frame": 1273,
+          "endFrame": 1282
+        },
+        {
+          "token": "we",
+          "start": 42.758,
+          "end": 42.891,
+          "frame": 1283,
+          "endFrame": 1287
+        },
+        {
+          "token": "agree",
+          "start": 42.904,
+          "end": 43.25,
+          "frame": 1287,
+          "endFrame": 1298
+        },
+        {
+          "token": "on",
+          "start": 43.264,
+          "end": 43.423,
+          "frame": 1298,
+          "endFrame": 1303
+        },
+        {
+          "token": "together.",
+          "start": 43.436,
+          "end": 44.061,
+          "frame": 1303,
+          "endFrame": 1322
+        },
+        {
+          "token": "And",
+          "start": 44.5,
+          "end": 44.633,
+          "frame": 1335,
+          "endFrame": 1339
+        },
+        {
+          "token": "someone",
+          "start": 44.647,
+          "end": 45.032,
+          "frame": 1339,
+          "endFrame": 1351
+        },
+        {
+          "token": "who",
+          "start": 45.045,
+          "end": 45.218,
+          "frame": 1351,
+          "endFrame": 1357
+        },
+        {
+          "token": "sees",
+          "start": 45.232,
+          "end": 45.631,
+          "frame": 1357,
+          "endFrame": 1369
+        },
+        {
+          "token": "when",
+          "start": 45.644,
+          "end": 45.79,
+          "frame": 1369,
+          "endFrame": 1374
+        },
+        {
+          "token": "it's",
+          "start": 45.803,
+          "end": 45.963,
+          "frame": 1374,
+          "endFrame": 1379
+        },
+        {
+          "token": "crossed.",
+          "start": 45.976,
+          "end": 46.628,
+          "frame": 1379,
+          "endFrame": 1399
+        }
+      ],
+      "to": 1421,
+      "speechEnd": 1399,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S12",
+      "text": "Now you're keeping a lighthouse.",
+      "from": 1421,
+      "words": [
+        {
+          "token": "Now",
+          "start": 47.456,
+          "end": 47.732,
+          "frame": 1424,
+          "endFrame": 1432
+        },
+        {
+          "token": "you're",
+          "start": 47.761,
+          "end": 47.878,
+          "frame": 1433,
+          "endFrame": 1436
+        },
+        {
+          "token": "keeping",
+          "start": 47.95,
+          "end": 48.314,
+          "frame": 1439,
+          "endFrame": 1449
+        },
+        {
+          "token": "a",
+          "start": 48.314,
+          "end": 48.357,
+          "frame": 1449,
+          "endFrame": 1451
+        },
+        {
+          "token": "lighthouse.",
+          "start": 48.415,
+          "end": 49.084,
+          "frame": 1452,
+          "endFrame": 1473
+        }
+      ],
+      "to": 1533,
+      "speechEnd": 1473,
+      "speaker": "OLD"
+    }
+  ]
+}
