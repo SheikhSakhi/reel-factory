@@ -1,0 +1,11 @@
+[S1] Think about the last time you saw a doctor. You told your story from the beginning. Again.
+[S2] Your history lives in pieces. A notebook. A messenger. A file in another clinic. And every new conversation with AI starts the same way: from zero.
+[S3] Now imagine care that remembers. A memory that grows with you, visit after visit, doctor after doctor.
+[S4] That's Treatment Intelligence. Every chat is a patient with a living memory. And every doctor has one too: how they think, how they treat, how their decisions turn out.
+[S5] When care remembers, a doctor no longer has to hold every patient in their head. The memory follows thousands of them at once, between visits. It knows who changed, who missed a step, and who needs attention today. The doctor opens one list, most urgent first, and leads care at a scale no notebook ever could.
+[S6] For a patient with a chronic condition, that is worth paying for. They subscribe to stay in their doctor's follow-up memory: watched, reminded, and never starting from zero again.
+[S7] And the memory acts on the doctor's plan. It suggests the right insurance. It offers the tests and services the doctor prescribed. It reserves a time at a partner clinic before the patient has to ask.
+[S8] Because it remembers, it can prove. Every decision is written as code, not paper: the diagnosis, the treatment, the doctor's signature, sealed with a hash. What Visa did for payments, we do for clinical decisions.
+[S9] So agents can finally pay each other. The patient's agent, the clinic's agent and the insurer's agent settle in one trusted layer. No calls. No paperwork. Verified care, and the money follows it.
+[S10] Records sit still. Memory moves. It manages, it proves, it pays.
+[S11] Healthcare has records. We gave it memory. Treatment Intelligence.

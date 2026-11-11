@@ -3,2192 +3,2411 @@
   "voice": "en-US-AndrewMultilingualNeural",
   "rate": "+0%",
   "fps": 30,
-  "totalFrames": 3601,
+  "totalFrames": 3964,
   "scenes": [
     {
       "id": "S1",
-      "text": "Think about the last time you saw a doctor. You told your story from the beginning. Again.",
+      "text": "A doctor sees you for fifteen minutes. The rest of the year, five hundred and twenty-five thousand minutes, nobody is watching.",
       "from": 0,
       "words": [
         {
-          "token": "Think",
-          "start": 0.1,
-          "end": 0.212,
+          "token": "A",
+          "start": 0.087,
+          "end": 0.138,
           "frame": 3,
-          "endFrame": 6
+          "endFrame": 4
         },
         {
-          "token": "about",
-          "start": 0.212,
+          "token": "doctor",
+          "start": 0.138,
           "end": 0.475,
-          "frame": 6,
+          "frame": 4,
           "endFrame": 14
         },
         {
-          "token": "the",
+          "token": "sees",
           "start": 0.475,
-          "end": 0.562,
+          "end": 0.8,
           "frame": 14,
-          "endFrame": 17
-        },
-        {
-          "token": "last",
-          "start": 0.575,
-          "end": 0.988,
-          "frame": 17,
-          "endFrame": 30
-        },
-        {
-          "token": "time",
-          "start": 0.988,
-          "end": 1.212,
-          "frame": 30,
-          "endFrame": 36
+          "endFrame": 24
         },
         {
           "token": "you",
-          "start": 1.225,
-          "end": 1.3,
-          "frame": 37,
-          "endFrame": 39
-        },
-        {
-          "token": "saw",
-          "start": 1.3,
-          "end": 1.512,
-          "frame": 39,
-          "endFrame": 45
-        },
-        {
-          "token": "a",
-          "start": 1.525,
-          "end": 1.562,
-          "frame": 46,
-          "endFrame": 47
-        },
-        {
-          "token": "doctor.",
-          "start": 1.575,
-          "end": 2.125,
-          "frame": 47,
-          "endFrame": 64
-        },
-        {
-          "token": "You",
-          "start": 2.538,
-          "end": 2.625,
-          "frame": 76,
-          "endFrame": 79
-        },
-        {
-          "token": "told",
-          "start": 2.625,
-          "end": 2.888,
-          "frame": 79,
-          "endFrame": 87
-        },
-        {
-          "token": "your",
-          "start": 2.9,
-          "end": 3.013,
-          "frame": 87,
-          "endFrame": 90
-        },
-        {
-          "token": "story",
-          "start": 3.013,
-          "end": 3.375,
-          "frame": 90,
-          "endFrame": 101
-        },
-        {
-          "token": "from",
-          "start": 3.375,
-          "end": 3.513,
-          "frame": 101,
-          "endFrame": 105
-        },
-        {
-          "token": "the",
-          "start": 3.513,
-          "end": 3.575,
-          "frame": 105,
-          "endFrame": 107
-        },
-        {
-          "token": "beginning.",
-          "start": 3.575,
-          "end": 4.037,
-          "frame": 107,
-          "endFrame": 121
-        },
-        {
-          "token": "Again.",
-          "start": 4.45,
-          "end": 4.875,
-          "frame": 134,
-          "endFrame": 146
-        }
-      ],
-      "to": 156,
-      "speechEnd": 146
-    },
-    {
-      "id": "S2",
-      "text": "Your history lives in pieces. A notebook. A messenger. A file in another clinic. And every new conversation with AI starts the same way: from zero.",
-      "from": 156,
-      "words": [
-        {
-          "token": "Your",
-          "start": 5.287,
-          "end": 5.388,
-          "frame": 159,
-          "endFrame": 162
-        },
-        {
-          "token": "history",
-          "start": 5.4,
-          "end": 5.888,
-          "frame": 162,
-          "endFrame": 177
-        },
-        {
-          "token": "lives",
-          "start": 5.888,
-          "end": 6.325,
-          "frame": 177,
-          "endFrame": 190
-        },
-        {
-          "token": "in",
-          "start": 6.325,
-          "end": 6.425,
-          "frame": 190,
-          "endFrame": 193
-        },
-        {
-          "token": "pieces.",
-          "start": 6.425,
-          "end": 7.088,
-          "frame": 193,
-          "endFrame": 213
-        },
-        {
-          "token": "A",
-          "start": 7.487,
-          "end": 7.525,
-          "frame": 225,
-          "endFrame": 226
-        },
-        {
-          "token": "notebook.",
-          "start": 7.525,
-          "end": 8.037,
-          "frame": 226,
-          "endFrame": 241
-        },
-        {
-          "token": "A",
-          "start": 8.438,
-          "end": 8.475,
-          "frame": 253,
-          "endFrame": 254
-        },
-        {
-          "token": "messenger.",
-          "start": 8.475,
-          "end": 9.075,
-          "frame": 254,
-          "endFrame": 272
-        },
-        {
-          "token": "A",
-          "start": 9.475,
-          "end": 9.525,
-          "frame": 284,
-          "endFrame": 286
-        },
-        {
-          "token": "file",
-          "start": 9.537,
-          "end": 9.95,
-          "frame": 286,
-          "endFrame": 298
-        },
-        {
-          "token": "in",
-          "start": 9.963,
-          "end": 10.025,
-          "frame": 299,
-          "endFrame": 301
-        },
-        {
-          "token": "another",
-          "start": 10.037,
-          "end": 10.312,
-          "frame": 301,
-          "endFrame": 309
-        },
-        {
-          "token": "clinic.",
-          "start": 10.325,
-          "end": 10.787,
-          "frame": 310,
-          "endFrame": 324
-        },
-        {
-          "token": "And",
-          "start": 11.175,
-          "end": 11.312,
-          "frame": 335,
-          "endFrame": 339
-        },
-        {
-          "token": "every",
-          "start": 11.312,
-          "end": 11.575,
-          "frame": 339,
-          "endFrame": 347
-        },
-        {
-          "token": "new",
-          "start": 11.588,
-          "end": 11.787,
-          "frame": 348,
-          "endFrame": 354
-        },
-        {
-          "token": "conversation",
-          "start": 11.8,
-          "end": 12.475,
-          "frame": 354,
-          "endFrame": 374
-        },
-        {
-          "token": "with",
-          "start": 12.475,
-          "end": 12.613,
-          "frame": 374,
-          "endFrame": 378
-        },
-        {
-          "token": "AI",
-          "start": 12.7,
-          "end": 13.275,
-          "frame": 381,
-          "endFrame": 398
-        },
-        {
-          "token": "starts",
-          "start": 13.55,
-          "end": 13.925,
-          "frame": 406,
-          "endFrame": 418
-        },
-        {
-          "token": "the",
-          "start": 13.938,
-          "end": 14.025,
-          "frame": 418,
-          "endFrame": 421
-        },
-        {
-          "token": "same",
-          "start": 14.037,
-          "end": 14.387,
-          "frame": 421,
-          "endFrame": 432
-        },
-        {
-          "token": "way:",
-          "start": 14.387,
-          "end": 14.762,
-          "frame": 432,
-          "endFrame": 443
-        },
-        {
-          "token": "from",
-          "start": 15.2,
-          "end": 15.4,
-          "frame": 456,
-          "endFrame": 462
-        },
-        {
-          "token": "zero.",
-          "start": 15.4,
-          "end": 15.988,
-          "frame": 462,
-          "endFrame": 480
-        }
-      ],
-      "to": 488,
-      "speechEnd": 480
-    },
-    {
-      "id": "S3",
-      "text": "Now imagine care that remembers. A memory that grows with you, visit after visit, doctor after doctor.",
-      "from": 488,
-      "words": [
-        {
-          "token": "Now",
-          "start": 16.375,
-          "end": 16.587,
-          "frame": 491,
-          "endFrame": 498
-        },
-        {
-          "token": "imagine",
-          "start": 16.688,
-          "end": 17.137,
-          "frame": 501,
-          "endFrame": 514
-        },
-        {
-          "token": "care",
-          "start": 17.137,
-          "end": 17.413,
-          "frame": 514,
-          "endFrame": 522
-        },
-        {
-          "token": "that",
-          "start": 17.425,
-          "end": 17.538,
-          "frame": 523,
-          "endFrame": 526
-        },
-        {
-          "token": "remembers.",
-          "start": 17.538,
-          "end": 18.2,
-          "frame": 526,
-          "endFrame": 546
-        },
-        {
-          "token": "A",
-          "start": 18.575,
-          "end": 18.637,
-          "frame": 557,
-          "endFrame": 559
-        },
-        {
-          "token": "memory",
-          "start": 18.65,
-          "end": 19.15,
-          "frame": 560,
-          "endFrame": 574
-        },
-        {
-          "token": "that",
-          "start": 19.163,
-          "end": 19.35,
-          "frame": 575,
-          "endFrame": 580
-        },
-        {
-          "token": "grows",
-          "start": 19.35,
-          "end": 19.812,
-          "frame": 580,
-          "endFrame": 594
-        },
-        {
-          "token": "with",
-          "start": 19.825,
-          "end": 20.012,
-          "frame": 595,
-          "endFrame": 600
-        },
-        {
-          "token": "you,",
-          "start": 20.012,
-          "end": 20.262,
-          "frame": 600,
-          "endFrame": 608
-        },
-        {
-          "token": "visit",
-          "start": 20.538,
-          "end": 21.025,
-          "frame": 616,
-          "endFrame": 631
-        },
-        {
-          "token": "after",
-          "start": 21.125,
-          "end": 21.438,
-          "frame": 634,
-          "endFrame": 643
-        },
-        {
-          "token": "visit,",
-          "start": 21.438,
-          "end": 21.9,
-          "frame": 643,
-          "endFrame": 657
-        },
-        {
-          "token": "doctor",
-          "start": 22.137,
-          "end": 22.5,
-          "frame": 664,
-          "endFrame": 675
-        },
-        {
-          "token": "after",
-          "start": 22.5,
-          "end": 22.725,
-          "frame": 675,
-          "endFrame": 682
-        },
-        {
-          "token": "doctor.",
-          "start": 22.725,
-          "end": 23.25,
-          "frame": 682,
-          "endFrame": 698
-        }
-      ],
-      "to": 707,
-      "speechEnd": 698
-    },
-    {
-      "id": "S4",
-      "text": "That's Treatment Intelligence. Every chat is a patient with a living memory. And every doctor has one too: how they think, how they treat, how their decisions turn out.",
-      "from": 707,
-      "words": [
-        {
-          "token": "That's",
-          "start": 23.675,
-          "end": 23.85,
-          "frame": 710,
-          "endFrame": 716
-        },
-        {
-          "token": "Treatment",
-          "start": 23.85,
-          "end": 24.25,
-          "frame": 716,
-          "endFrame": 728
-        },
-        {
-          "token": "Intelligence.",
-          "start": 24.262,
-          "end": 25.0,
-          "frame": 728,
-          "endFrame": 750
-        },
-        {
-          "token": "Every",
-          "start": 25.375,
-          "end": 25.613,
-          "frame": 761,
-          "endFrame": 768
-        },
-        {
-          "token": "chat",
-          "start": 25.625,
-          "end": 26.038,
-          "frame": 769,
-          "endFrame": 781
-        },
-        {
-          "token": "is",
-          "start": 26.137,
-          "end": 26.25,
-          "frame": 784,
-          "endFrame": 788
-        },
-        {
-          "token": "a",
-          "start": 26.262,
-          "end": 26.325,
-          "frame": 788,
-          "endFrame": 790
-        },
-        {
-          "token": "patient",
-          "start": 26.337,
-          "end": 26.875,
-          "frame": 790,
-          "endFrame": 806
-        },
-        {
-          "token": "with",
-          "start": 26.875,
-          "end": 27.0,
-          "frame": 806,
-          "endFrame": 810
-        },
-        {
-          "token": "a",
-          "start": 27.0,
-          "end": 27.025,
-          "frame": 810,
-          "endFrame": 811
-        },
-        {
-          "token": "living",
-          "start": 27.038,
-          "end": 27.413,
-          "frame": 811,
-          "endFrame": 822
-        },
-        {
-          "token": "memory.",
-          "start": 27.413,
-          "end": 27.887,
-          "frame": 822,
-          "endFrame": 837
-        },
-        {
-          "token": "And",
-          "start": 28.3,
-          "end": 28.45,
-          "frame": 849,
-          "endFrame": 854
-        },
-        {
-          "token": "every",
-          "start": 28.462,
-          "end": 28.725,
-          "frame": 854,
-          "endFrame": 862
-        },
-        {
-          "token": "doctor",
-          "start": 28.725,
-          "end": 29.163,
-          "frame": 862,
-          "endFrame": 875
-        },
-        {
-          "token": "has",
-          "start": 29.175,
-          "end": 29.462,
-          "frame": 875,
-          "endFrame": 884
-        },
-        {
-          "token": "one",
-          "start": 29.462,
-          "end": 29.775,
-          "frame": 884,
-          "endFrame": 893
-        },
-        {
-          "token": "too:",
-          "start": 29.788,
-          "end": 30.3,
-          "frame": 894,
-          "endFrame": 909
-        },
-        {
-          "token": "how",
-          "start": 30.85,
-          "end": 30.962,
-          "frame": 926,
-          "endFrame": 929
-        },
-        {
-          "token": "they",
-          "start": 30.962,
-          "end": 31.137,
-          "frame": 929,
-          "endFrame": 934
-        },
-        {
-          "token": "think,",
-          "start": 31.15,
-          "end": 31.663,
-          "frame": 934,
-          "endFrame": 950
-        },
-        {
-          "token": "how",
-          "start": 32.087,
-          "end": 32.175,
-          "frame": 963,
-          "endFrame": 965
-        },
-        {
-          "token": "they",
-          "start": 32.175,
-          "end": 32.288,
-          "frame": 965,
-          "endFrame": 969
-        },
-        {
-          "token": "treat,",
-          "start": 32.3,
-          "end": 32.85,
-          "frame": 969,
-          "endFrame": 986
-        },
-        {
-          "token": "how",
-          "start": 33.0,
-          "end": 33.125,
-          "frame": 990,
-          "endFrame": 994
-        },
-        {
-          "token": "their",
-          "start": 33.125,
-          "end": 33.237,
-          "frame": 994,
-          "endFrame": 997
-        },
-        {
-          "token": "decisions",
-          "start": 33.237,
-          "end": 33.775,
-          "frame": 997,
-          "endFrame": 1013
-        },
-        {
-          "token": "turn",
-          "start": 33.788,
-          "end": 34.025,
-          "frame": 1014,
-          "endFrame": 1021
-        },
-        {
-          "token": "out.",
-          "start": 34.025,
-          "end": 34.337,
-          "frame": 1021,
-          "endFrame": 1030
-        }
-      ],
-      "to": 1039,
-      "speechEnd": 1030
-    },
-    {
-      "id": "S5",
-      "text": "When care remembers, a doctor no longer has to hold every patient in their head. The memory follows thousands of them at once, between visits. It knows who changed, who missed a step, and who needs attention today. The doctor opens one list, most urgent first, and leads care at a scale no notebook ever could.",
-      "from": 1039,
-      "words": [
-        {
-          "token": "When",
-          "start": 34.737,
-          "end": 34.837,
-          "frame": 1042,
-          "endFrame": 1045
-        },
-        {
-          "token": "care",
-          "start": 34.837,
-          "end": 35.112,
-          "frame": 1045,
-          "endFrame": 1053
-        },
-        {
-          "token": "remembers,",
-          "start": 35.125,
-          "end": 35.9,
-          "frame": 1054,
-          "endFrame": 1077
-        },
-        {
-          "token": "a",
-          "start": 36.138,
-          "end": 36.188,
-          "frame": 1084,
-          "endFrame": 1086
-        },
-        {
-          "token": "doctor",
-          "start": 36.188,
-          "end": 36.525,
-          "frame": 1086,
-          "endFrame": 1096
-        },
-        {
-          "token": "no",
-          "start": 36.525,
-          "end": 36.725,
-          "frame": 1096,
-          "endFrame": 1102
-        },
-        {
-          "token": "longer",
-          "start": 36.725,
-          "end": 37.188,
-          "frame": 1102,
-          "endFrame": 1116
-        },
-        {
-          "token": "has",
-          "start": 37.2,
-          "end": 37.438,
-          "frame": 1116,
-          "endFrame": 1123
-        },
-        {
-          "token": "to",
-          "start": 37.438,
-          "end": 37.513,
-          "frame": 1123,
-          "endFrame": 1125
-        },
-        {
-          "token": "hold",
-          "start": 37.525,
-          "end": 37.975,
-          "frame": 1126,
-          "endFrame": 1139
-        },
-        {
-          "token": "every",
-          "start": 38.175,
-          "end": 38.438,
-          "frame": 1145,
-          "endFrame": 1153
-        },
-        {
-          "token": "patient",
-          "start": 38.45,
-          "end": 38.888,
-          "frame": 1154,
-          "endFrame": 1167
-        },
-        {
-          "token": "in",
-          "start": 38.888,
-          "end": 38.938,
-          "frame": 1167,
-          "endFrame": 1168
-        },
-        {
-          "token": "their",
-          "start": 38.938,
-          "end": 39.062,
-          "frame": 1168,
-          "endFrame": 1172
-        },
-        {
-          "token": "head.",
-          "start": 39.075,
-          "end": 39.425,
-          "frame": 1172,
-          "endFrame": 1183
+          "start": 0.8,
+          "end": 1.062,
+          "frame": 24,
+          "endFrame": 32
+        },
+        {
+          "token": "for",
+          "start": 1.25,
+          "end": 1.387,
+          "frame": 38,
+          "endFrame": 42
+        },
+        {
+          "token": "fifteen",
+          "start": 1.4,
+          "end": 1.887,
+          "frame": 42,
+          "endFrame": 57
+        },
+        {
+          "token": "minutes.",
+          "start": 1.887,
+          "end": 2.375,
+          "frame": 57,
+          "endFrame": 71
         },
         {
           "token": "The",
-          "start": 39.825,
-          "end": 39.875,
-          "frame": 1195,
-          "endFrame": 1196
+          "start": 2.775,
+          "end": 2.85,
+          "frame": 83,
+          "endFrame": 86
         },
         {
-          "token": "memory",
-          "start": 39.875,
-          "end": 40.337,
-          "frame": 1196,
-          "endFrame": 1210
-        },
-        {
-          "token": "follows",
-          "start": 40.337,
-          "end": 40.9,
-          "frame": 1210,
-          "endFrame": 1227
-        },
-        {
-          "token": "thousands",
-          "start": 40.913,
-          "end": 41.513,
-          "frame": 1227,
-          "endFrame": 1245
+          "token": "rest",
+          "start": 2.85,
+          "end": 3.1,
+          "frame": 86,
+          "endFrame": 93
         },
         {
           "token": "of",
-          "start": 41.525,
-          "end": 41.6,
-          "frame": 1246,
-          "endFrame": 1248
+          "start": 3.1,
+          "end": 3.15,
+          "frame": 93,
+          "endFrame": 94
         },
         {
-          "token": "them",
-          "start": 41.6,
-          "end": 41.737,
-          "frame": 1248,
-          "endFrame": 1252
+          "token": "the",
+          "start": 3.15,
+          "end": 3.188,
+          "frame": 94,
+          "endFrame": 96
+        },
+        {
+          "token": "year,",
+          "start": 3.188,
+          "end": 3.562,
+          "frame": 96,
+          "endFrame": 107
+        },
+        {
+          "token": "five",
+          "start": 3.95,
+          "end": 4.188,
+          "frame": 118,
+          "endFrame": 126
+        },
+        {
+          "token": "hundred",
+          "start": 4.2,
+          "end": 4.388,
+          "frame": 126,
+          "endFrame": 132
+        },
+        {
+          "token": "and",
+          "start": 4.388,
+          "end": 4.425,
+          "frame": 132,
+          "endFrame": 133
+        },
+        {
+          "token": "twenty-five",
+          "start": 4.438,
+          "end": 4.938,
+          "frame": 133,
+          "endFrame": 148
+        },
+        {
+          "token": "thousand",
+          "start": 4.938,
+          "end": 5.263,
+          "frame": 148,
+          "endFrame": 158
+        },
+        {
+          "token": "minutes,",
+          "start": 5.263,
+          "end": 5.7,
+          "frame": 158,
+          "endFrame": 171
+        },
+        {
+          "token": "nobody",
+          "start": 5.963,
+          "end": 6.55,
+          "frame": 179,
+          "endFrame": 196
+        },
+        {
+          "token": "is",
+          "start": 6.675,
+          "end": 6.8,
+          "frame": 200,
+          "endFrame": 204
+        },
+        {
+          "token": "watching.",
+          "start": 6.812,
+          "end": 7.375,
+          "frame": 204,
+          "endFrame": 221
+        }
+      ],
+      "to": 230,
+      "speechEnd": 221
+    },
+    {
+      "id": "S2",
+      "text": "That's when it happens. The pills run out. The pressure climbs. The sugar drifts. And at the next visit, you tell your story from the beginning. Again.",
+      "from": 230,
+      "words": [
+        {
+          "token": "That's",
+          "start": 7.775,
+          "end": 7.912,
+          "frame": 233,
+          "endFrame": 237
+        },
+        {
+          "token": "when",
+          "start": 7.912,
+          "end": 7.987,
+          "frame": 237,
+          "endFrame": 240
+        },
+        {
+          "token": "it",
+          "start": 7.987,
+          "end": 8.025,
+          "frame": 240,
+          "endFrame": 241
+        },
+        {
+          "token": "happens.",
+          "start": 8.025,
+          "end": 8.637,
+          "frame": 241,
+          "endFrame": 259
+        },
+        {
+          "token": "The",
+          "start": 9.062,
+          "end": 9.137,
+          "frame": 272,
+          "endFrame": 274
+        },
+        {
+          "token": "pills",
+          "start": 9.15,
+          "end": 9.55,
+          "frame": 274,
+          "endFrame": 286
+        },
+        {
+          "token": "run",
+          "start": 9.562,
+          "end": 9.775,
+          "frame": 287,
+          "endFrame": 293
+        },
+        {
+          "token": "out.",
+          "start": 9.775,
+          "end": 10.05,
+          "frame": 293,
+          "endFrame": 302
+        },
+        {
+          "token": "The",
+          "start": 10.45,
+          "end": 10.512,
+          "frame": 314,
+          "endFrame": 315
+        },
+        {
+          "token": "pressure",
+          "start": 10.512,
+          "end": 10.9,
+          "frame": 315,
+          "endFrame": 327
+        },
+        {
+          "token": "climbs.",
+          "start": 10.9,
+          "end": 11.562,
+          "frame": 327,
+          "endFrame": 347
+        },
+        {
+          "token": "The",
+          "start": 11.963,
+          "end": 12.0,
+          "frame": 359,
+          "endFrame": 360
+        },
+        {
+          "token": "sugar",
+          "start": 12.0,
+          "end": 12.3,
+          "frame": 360,
+          "endFrame": 369
+        },
+        {
+          "token": "drifts.",
+          "start": 12.3,
+          "end": 12.887,
+          "frame": 369,
+          "endFrame": 387
+        },
+        {
+          "token": "And",
+          "start": 13.3,
+          "end": 13.4,
+          "frame": 399,
+          "endFrame": 402
         },
         {
           "token": "at",
-          "start": 41.75,
-          "end": 41.837,
-          "frame": 1252,
-          "endFrame": 1255
+          "start": 13.637,
+          "end": 13.713,
+          "frame": 409,
+          "endFrame": 411
         },
         {
-          "token": "once,",
-          "start": 41.85,
-          "end": 42.3,
+          "token": "the",
+          "start": 13.713,
+          "end": 13.775,
+          "frame": 411,
+          "endFrame": 413
+        },
+        {
+          "token": "next",
+          "start": 13.787,
+          "end": 14.125,
+          "frame": 414,
+          "endFrame": 424
+        },
+        {
+          "token": "visit,",
+          "start": 14.137,
+          "end": 14.525,
+          "frame": 424,
+          "endFrame": 436
+        },
+        {
+          "token": "you",
+          "start": 14.938,
+          "end": 15.037,
+          "frame": 448,
+          "endFrame": 451
+        },
+        {
+          "token": "tell",
+          "start": 15.05,
+          "end": 15.238,
+          "frame": 452,
+          "endFrame": 457
+        },
+        {
+          "token": "your",
+          "start": 15.238,
+          "end": 15.363,
+          "frame": 457,
+          "endFrame": 461
+        },
+        {
+          "token": "story",
+          "start": 15.363,
+          "end": 15.713,
+          "frame": 461,
+          "endFrame": 471
+        },
+        {
+          "token": "from",
+          "start": 15.725,
+          "end": 15.875,
+          "frame": 472,
+          "endFrame": 476
+        },
+        {
+          "token": "the",
+          "start": 15.875,
+          "end": 15.925,
+          "frame": 476,
+          "endFrame": 478
+        },
+        {
+          "token": "beginning.",
+          "start": 15.925,
+          "end": 16.387,
+          "frame": 478,
+          "endFrame": 492
+        },
+        {
+          "token": "Again.",
+          "start": 16.8,
+          "end": 17.238,
+          "frame": 504,
+          "endFrame": 517
+        }
+      ],
+      "to": 526,
+      "speechEnd": 517
+    },
+    {
+      "id": "S3",
+      "text": "Meet Aziz. Fifty-eight. Diabetes and high blood pressure. His doctor has thousands of patients just like him.",
+      "from": 526,
+      "words": [
+        {
+          "token": "Meet",
+          "start": 17.637,
+          "end": 17.8,
+          "frame": 529,
+          "endFrame": 534
+        },
+        {
+          "token": "Aziz.",
+          "start": 17.8,
+          "end": 18.45,
+          "frame": 534,
+          "endFrame": 554
+        },
+        {
+          "token": "Fifty-eight.",
+          "start": 18.925,
+          "end": 19.488,
+          "frame": 568,
+          "endFrame": 585
+        },
+        {
+          "token": "Diabetes",
+          "start": 19.887,
+          "end": 20.663,
+          "frame": 597,
+          "endFrame": 620
+        },
+        {
+          "token": "and",
+          "start": 20.788,
+          "end": 20.887,
+          "frame": 624,
+          "endFrame": 627
+        },
+        {
+          "token": "high",
+          "start": 20.887,
+          "end": 21.125,
+          "frame": 627,
+          "endFrame": 634
+        },
+        {
+          "token": "blood",
+          "start": 21.137,
+          "end": 21.375,
+          "frame": 634,
+          "endFrame": 641
+        },
+        {
+          "token": "pressure.",
+          "start": 21.375,
+          "end": 21.85,
+          "frame": 641,
+          "endFrame": 656
+        },
+        {
+          "token": "His",
+          "start": 22.25,
+          "end": 22.337,
+          "frame": 668,
+          "endFrame": 670
+        },
+        {
+          "token": "doctor",
+          "start": 22.35,
+          "end": 22.712,
+          "frame": 670,
+          "endFrame": 681
+        },
+        {
+          "token": "has",
+          "start": 22.712,
+          "end": 22.913,
+          "frame": 681,
+          "endFrame": 687
+        },
+        {
+          "token": "thousands",
+          "start": 22.925,
+          "end": 23.45,
+          "frame": 688,
+          "endFrame": 704
+        },
+        {
+          "token": "of",
+          "start": 23.45,
+          "end": 23.512,
+          "frame": 704,
+          "endFrame": 705
+        },
+        {
+          "token": "patients",
+          "start": 23.512,
+          "end": 23.975,
+          "frame": 705,
+          "endFrame": 719
+        },
+        {
+          "token": "just",
+          "start": 23.988,
+          "end": 24.188,
+          "frame": 720,
+          "endFrame": 726
+        },
+        {
+          "token": "like",
+          "start": 24.188,
+          "end": 24.4,
+          "frame": 726,
+          "endFrame": 732
+        },
+        {
+          "token": "him.",
+          "start": 24.4,
+          "end": 24.587,
+          "frame": 732,
+          "endFrame": 738
+        }
+      ],
+      "to": 747,
+      "speechEnd": 738
+    },
+    {
+      "id": "S4",
+      "text": "With Treatment Intelligence, every conversation with Aziz becomes his memory. Not notes. Code. Every diagnosis, every drug, every result, signed by his doctor.",
+      "from": 747,
+      "words": [
+        {
+          "token": "With",
+          "start": 25.0,
+          "end": 25.125,
+          "frame": 750,
+          "endFrame": 754
+        },
+        {
+          "token": "Treatment",
+          "start": 25.125,
+          "end": 25.475,
+          "frame": 754,
+          "endFrame": 764
+        },
+        {
+          "token": "Intelligence,",
+          "start": 25.475,
+          "end": 26.3,
+          "frame": 764,
+          "endFrame": 789
+        },
+        {
+          "token": "every",
+          "start": 26.688,
+          "end": 26.962,
+          "frame": 801,
+          "endFrame": 809
+        },
+        {
+          "token": "conversation",
+          "start": 26.962,
+          "end": 27.663,
+          "frame": 809,
+          "endFrame": 830
+        },
+        {
+          "token": "with",
+          "start": 27.663,
+          "end": 27.8,
+          "frame": 830,
+          "endFrame": 834
+        },
+        {
+          "token": "Aziz",
+          "start": 27.812,
+          "end": 28.387,
+          "frame": 834,
+          "endFrame": 852
+        },
+        {
+          "token": "becomes",
+          "start": 28.5,
+          "end": 28.9,
+          "frame": 855,
+          "endFrame": 867
+        },
+        {
+          "token": "his",
+          "start": 28.9,
+          "end": 29.025,
+          "frame": 867,
+          "endFrame": 871
+        },
+        {
+          "token": "memory.",
+          "start": 29.038,
+          "end": 29.587,
+          "frame": 871,
+          "endFrame": 888
+        },
+        {
+          "token": "Not",
+          "start": 30.0,
+          "end": 30.175,
+          "frame": 900,
+          "endFrame": 905
+        },
+        {
+          "token": "notes.",
+          "start": 30.175,
+          "end": 30.725,
+          "frame": 905,
+          "endFrame": 922
+        },
+        {
+          "token": "Code.",
+          "start": 31.125,
+          "end": 31.438,
+          "frame": 934,
+          "endFrame": 943
+        },
+        {
+          "token": "Every",
+          "start": 31.837,
+          "end": 32.05,
+          "frame": 955,
+          "endFrame": 961
+        },
+        {
+          "token": "diagnosis,",
+          "start": 32.05,
+          "end": 33.013,
+          "frame": 961,
+          "endFrame": 990
+        },
+        {
+          "token": "every",
+          "start": 33.237,
+          "end": 33.487,
+          "frame": 997,
+          "endFrame": 1005
+        },
+        {
+          "token": "drug,",
+          "start": 33.5,
+          "end": 33.975,
+          "frame": 1005,
+          "endFrame": 1019
+        },
+        {
+          "token": "every",
+          "start": 34.263,
+          "end": 34.55,
+          "frame": 1028,
+          "endFrame": 1036
+        },
+        {
+          "token": "result,",
+          "start": 34.55,
+          "end": 35.025,
+          "frame": 1036,
+          "endFrame": 1051
+        },
+        {
+          "token": "signed",
+          "start": 35.3,
+          "end": 35.575,
+          "frame": 1059,
+          "endFrame": 1067
+        },
+        {
+          "token": "by",
+          "start": 35.575,
+          "end": 35.688,
+          "frame": 1067,
+          "endFrame": 1071
+        },
+        {
+          "token": "his",
+          "start": 35.688,
+          "end": 35.812,
+          "frame": 1071,
+          "endFrame": 1074
+        },
+        {
+          "token": "doctor.",
+          "start": 35.812,
+          "end": 36.362,
+          "frame": 1074,
+          "endFrame": 1091
+        }
+      ],
+      "to": 1100,
+      "speechEnd": 1091
+    },
+    {
+      "id": "S5",
+      "text": "Then his doctor writes the plan once. The targets. What to measure. When to raise the alarm. Aziz subscribes to stay on that plan, inside his doctor's memory.",
+      "from": 1100,
+      "words": [
+        {
+          "token": "Then",
+          "start": 36.763,
+          "end": 36.875,
+          "frame": 1103,
+          "endFrame": 1106
+        },
+        {
+          "token": "his",
+          "start": 36.875,
+          "end": 37.013,
+          "frame": 1106,
+          "endFrame": 1110
+        },
+        {
+          "token": "doctor",
+          "start": 37.013,
+          "end": 37.462,
+          "frame": 1110,
+          "endFrame": 1124
+        },
+        {
+          "token": "writes",
+          "start": 37.475,
+          "end": 37.75,
+          "frame": 1124,
+          "endFrame": 1132
+        },
+        {
+          "token": "the",
+          "start": 37.75,
+          "end": 37.812,
+          "frame": 1132,
+          "endFrame": 1134
+        },
+        {
+          "token": "plan",
+          "start": 37.825,
+          "end": 38.138,
+          "frame": 1135,
+          "endFrame": 1144
+        },
+        {
+          "token": "once.",
+          "start": 38.138,
+          "end": 38.663,
+          "frame": 1144,
+          "endFrame": 1160
+        },
+        {
+          "token": "The",
+          "start": 39.062,
+          "end": 39.125,
+          "frame": 1172,
+          "endFrame": 1174
+        },
+        {
+          "token": "targets.",
+          "start": 39.125,
+          "end": 39.788,
+          "frame": 1174,
+          "endFrame": 1194
+        },
+        {
+          "token": "What",
+          "start": 40.188,
+          "end": 40.275,
+          "frame": 1206,
+          "endFrame": 1208
+        },
+        {
+          "token": "to",
+          "start": 40.275,
+          "end": 40.337,
+          "frame": 1208,
+          "endFrame": 1210
+        },
+        {
+          "token": "measure.",
+          "start": 40.337,
+          "end": 40.75,
+          "frame": 1210,
+          "endFrame": 1222
+        },
+        {
+          "token": "When",
+          "start": 41.15,
+          "end": 41.237,
+          "frame": 1234,
+          "endFrame": 1237
+        },
+        {
+          "token": "to",
+          "start": 41.237,
+          "end": 41.325,
+          "frame": 1237,
+          "endFrame": 1240
+        },
+        {
+          "token": "raise",
+          "start": 41.325,
+          "end": 41.8,
+          "frame": 1240,
+          "endFrame": 1254
+        },
+        {
+          "token": "the",
+          "start": 41.8,
+          "end": 41.875,
+          "frame": 1254,
+          "endFrame": 1256
+        },
+        {
+          "token": "alarm.",
+          "start": 41.875,
+          "end": 42.312,
           "frame": 1256,
           "endFrame": 1269
         },
         {
-          "token": "between",
-          "start": 42.325,
-          "end": 42.7,
-          "frame": 1270,
-          "endFrame": 1281
-        },
-        {
-          "token": "visits.",
-          "start": 42.7,
-          "end": 43.375,
+          "token": "Aziz",
+          "start": 42.712,
+          "end": 43.125,
           "frame": 1281,
-          "endFrame": 1301
+          "endFrame": 1294
         },
         {
-          "token": "It",
-          "start": 43.788,
-          "end": 43.862,
-          "frame": 1314,
-          "endFrame": 1316
-        },
-        {
-          "token": "knows",
-          "start": 43.862,
-          "end": 44.263,
-          "frame": 1316,
-          "endFrame": 1328
-        },
-        {
-          "token": "who",
-          "start": 44.263,
-          "end": 44.375,
-          "frame": 1328,
-          "endFrame": 1331
-        },
-        {
-          "token": "changed,",
-          "start": 44.375,
-          "end": 45.025,
-          "frame": 1331,
-          "endFrame": 1351
-        },
-        {
-          "token": "who",
-          "start": 45.475,
-          "end": 45.538,
-          "frame": 1364,
-          "endFrame": 1366
-        },
-        {
-          "token": "missed",
-          "start": 45.538,
-          "end": 45.775,
-          "frame": 1366,
-          "endFrame": 1373
-        },
-        {
-          "token": "a",
-          "start": 45.788,
-          "end": 45.825,
-          "frame": 1374,
-          "endFrame": 1375
-        },
-        {
-          "token": "step,",
-          "start": 45.837,
-          "end": 46.263,
-          "frame": 1375,
-          "endFrame": 1388
-        },
-        {
-          "token": "and",
-          "start": 46.763,
-          "end": 46.8,
-          "frame": 1403,
-          "endFrame": 1404
-        },
-        {
-          "token": "who",
-          "start": 46.8,
-          "end": 46.913,
-          "frame": 1404,
-          "endFrame": 1407
-        },
-        {
-          "token": "needs",
-          "start": 46.913,
-          "end": 47.15,
-          "frame": 1407,
-          "endFrame": 1414
-        },
-        {
-          "token": "attention",
-          "start": 47.15,
-          "end": 47.562,
-          "frame": 1414,
-          "endFrame": 1427
-        },
-        {
-          "token": "today.",
-          "start": 47.562,
-          "end": 48.013,
-          "frame": 1427,
-          "endFrame": 1440
-        },
-        {
-          "token": "The",
-          "start": 48.413,
-          "end": 48.475,
-          "frame": 1452,
-          "endFrame": 1454
-        },
-        {
-          "token": "doctor",
-          "start": 48.475,
-          "end": 48.888,
-          "frame": 1454,
-          "endFrame": 1467
-        },
-        {
-          "token": "opens",
-          "start": 48.888,
-          "end": 49.25,
-          "frame": 1467,
-          "endFrame": 1478
-        },
-        {
-          "token": "one",
-          "start": 49.25,
-          "end": 49.625,
-          "frame": 1478,
-          "endFrame": 1489
-        },
-        {
-          "token": "list,",
-          "start": 49.625,
-          "end": 50.087,
-          "frame": 1489,
-          "endFrame": 1503
-        },
-        {
-          "token": "most",
-          "start": 50.462,
-          "end": 50.8,
-          "frame": 1514,
-          "endFrame": 1524
-        },
-        {
-          "token": "urgent",
-          "start": 50.913,
-          "end": 51.225,
-          "frame": 1527,
-          "endFrame": 1537
-        },
-        {
-          "token": "first,",
-          "start": 51.225,
-          "end": 51.888,
-          "frame": 1537,
-          "endFrame": 1557
-        },
-        {
-          "token": "and",
-          "start": 52.138,
-          "end": 52.275,
-          "frame": 1564,
-          "endFrame": 1568
-        },
-        {
-          "token": "leads",
-          "start": 52.275,
-          "end": 52.462,
-          "frame": 1568,
-          "endFrame": 1574
-        },
-        {
-          "token": "care",
-          "start": 52.475,
-          "end": 52.688,
-          "frame": 1574,
-          "endFrame": 1581
-        },
-        {
-          "token": "at",
-          "start": 52.688,
-          "end": 52.725,
-          "frame": 1581,
-          "endFrame": 1582
-        },
-        {
-          "token": "a",
-          "start": 52.725,
-          "end": 52.763,
-          "frame": 1582,
-          "endFrame": 1583
-        },
-        {
-          "token": "scale",
-          "start": 52.775,
-          "end": 53.212,
-          "frame": 1583,
-          "endFrame": 1596
-        },
-        {
-          "token": "no",
-          "start": 53.225,
-          "end": 53.413,
-          "frame": 1597,
-          "endFrame": 1602
-        },
-        {
-          "token": "notebook",
-          "start": 53.413,
-          "end": 54.112,
-          "frame": 1602,
-          "endFrame": 1623
-        },
-        {
-          "token": "ever",
-          "start": 54.263,
-          "end": 54.45,
-          "frame": 1628,
-          "endFrame": 1634
-        },
-        {
-          "token": "could.",
-          "start": 54.462,
-          "end": 54.775,
-          "frame": 1634,
-          "endFrame": 1643
-        }
-      ],
-      "to": 1653,
-      "speechEnd": 1643
-    },
-    {
-      "id": "S6",
-      "text": "For a patient with a chronic condition, that is worth paying for. They subscribe to stay in their doctor's follow-up memory: watched, reminded, and never starting from zero again.",
-      "from": 1653,
-      "words": [
-        {
-          "token": "For",
-          "start": 55.2,
-          "end": 55.3,
-          "frame": 1656,
-          "endFrame": 1659
-        },
-        {
-          "token": "a",
-          "start": 55.3,
-          "end": 55.35,
-          "frame": 1659,
-          "endFrame": 1660
-        },
-        {
-          "token": "patient",
-          "start": 55.362,
-          "end": 55.85,
-          "frame": 1661,
-          "endFrame": 1676
-        },
-        {
-          "token": "with",
-          "start": 55.862,
-          "end": 56.013,
-          "frame": 1676,
-          "endFrame": 1680
-        },
-        {
-          "token": "a",
-          "start": 56.013,
-          "end": 56.05,
-          "frame": 1680,
-          "endFrame": 1682
-        },
-        {
-          "token": "chronic",
-          "start": 56.05,
-          "end": 56.4,
-          "frame": 1682,
-          "endFrame": 1692
-        },
-        {
-          "token": "condition,",
-          "start": 56.4,
-          "end": 56.913,
-          "frame": 1692,
-          "endFrame": 1707
-        },
-        {
-          "token": "that",
-          "start": 57.35,
-          "end": 57.487,
-          "frame": 1720,
-          "endFrame": 1725
-        },
-        {
-          "token": "is",
-          "start": 57.5,
-          "end": 57.612,
-          "frame": 1725,
-          "endFrame": 1728
-        },
-        {
-          "token": "worth",
-          "start": 57.625,
-          "end": 57.85,
-          "frame": 1729,
-          "endFrame": 1736
-        },
-        {
-          "token": "paying",
-          "start": 57.862,
-          "end": 58.237,
-          "frame": 1736,
-          "endFrame": 1747
-        },
-        {
-          "token": "for.",
-          "start": 58.25,
-          "end": 58.712,
-          "frame": 1748,
-          "endFrame": 1761
-        },
-        {
-          "token": "They",
-          "start": 59.125,
-          "end": 59.212,
-          "frame": 1774,
-          "endFrame": 1776
-        },
-        {
-          "token": "subscribe",
-          "start": 59.225,
-          "end": 59.775,
-          "frame": 1777,
-          "endFrame": 1793
+          "token": "subscribes",
+          "start": 43.125,
+          "end": 43.75,
+          "frame": 1294,
+          "endFrame": 1312
         },
         {
           "token": "to",
-          "start": 59.775,
-          "end": 59.837,
-          "frame": 1793,
-          "endFrame": 1795
+          "start": 43.75,
+          "end": 43.837,
+          "frame": 1312,
+          "endFrame": 1315
         },
         {
           "token": "stay",
-          "start": 59.85,
-          "end": 60.188,
-          "frame": 1796,
-          "endFrame": 1806
-        },
-        {
-          "token": "in",
-          "start": 60.188,
-          "end": 60.263,
-          "frame": 1806,
-          "endFrame": 1808
-        },
-        {
-          "token": "their",
-          "start": 60.263,
-          "end": 60.388,
-          "frame": 1808,
-          "endFrame": 1812
-        },
-        {
-          "token": "doctor's",
-          "start": 60.388,
-          "end": 60.862,
-          "frame": 1812,
-          "endFrame": 1826
-        },
-        {
-          "token": "follow-up",
-          "start": 60.862,
-          "end": 61.413,
-          "frame": 1826,
-          "endFrame": 1842
-        },
-        {
-          "token": "memory:",
-          "start": 61.413,
-          "end": 61.862,
-          "frame": 1842,
-          "endFrame": 1856
-        },
-        {
-          "token": "watched,",
-          "start": 62.337,
-          "end": 62.85,
-          "frame": 1870,
-          "endFrame": 1886
-        },
-        {
-          "token": "reminded,",
-          "start": 63.025,
-          "end": 63.55,
-          "frame": 1891,
-          "endFrame": 1906
-        },
-        {
-          "token": "and",
-          "start": 63.975,
-          "end": 64.138,
-          "frame": 1919,
-          "endFrame": 1924
-        },
-        {
-          "token": "never",
-          "start": 64.237,
-          "end": 64.525,
-          "frame": 1927,
-          "endFrame": 1936
-        },
-        {
-          "token": "starting",
-          "start": 64.537,
-          "end": 64.875,
-          "frame": 1936,
-          "endFrame": 1946
-        },
-        {
-          "token": "from",
-          "start": 64.888,
-          "end": 65.025,
-          "frame": 1947,
-          "endFrame": 1951
-        },
-        {
-          "token": "zero",
-          "start": 65.025,
-          "end": 65.362,
-          "frame": 1951,
-          "endFrame": 1961
-        },
-        {
-          "token": "again.",
-          "start": 65.375,
-          "end": 65.725,
-          "frame": 1961,
-          "endFrame": 1972
-        }
-      ],
-      "to": 1980,
-      "speechEnd": 1972
-    },
-    {
-      "id": "S7",
-      "text": "And the memory acts on the doctor's plan. It suggests the right insurance. It offers the tests and services the doctor prescribed. It reserves a time at a partner clinic before the patient has to ask.",
-      "from": 1980,
-      "words": [
-        {
-          "token": "And",
-          "start": 66.112,
-          "end": 66.175,
-          "frame": 1983,
-          "endFrame": 1985
-        },
-        {
-          "token": "the",
-          "start": 66.175,
-          "end": 66.237,
-          "frame": 1985,
-          "endFrame": 1987
-        },
-        {
-          "token": "memory",
-          "start": 66.25,
-          "end": 66.725,
-          "frame": 1988,
-          "endFrame": 2002
-        },
-        {
-          "token": "acts",
-          "start": 66.725,
-          "end": 67.088,
-          "frame": 2002,
-          "endFrame": 2013
+          "start": 43.837,
+          "end": 44.163,
+          "frame": 1315,
+          "endFrame": 1325
         },
         {
           "token": "on",
-          "start": 67.088,
-          "end": 67.138,
-          "frame": 2013,
-          "endFrame": 2014
+          "start": 44.163,
+          "end": 44.288,
+          "frame": 1325,
+          "endFrame": 1329
         },
         {
-          "token": "the",
-          "start": 67.15,
-          "end": 67.213,
-          "frame": 2015,
-          "endFrame": 2016
+          "token": "that",
+          "start": 44.3,
+          "end": 44.475,
+          "frame": 1329,
+          "endFrame": 1334
+        },
+        {
+          "token": "plan,",
+          "start": 44.475,
+          "end": 44.888,
+          "frame": 1334,
+          "endFrame": 1347
+        },
+        {
+          "token": "inside",
+          "start": 45.263,
+          "end": 45.737,
+          "frame": 1358,
+          "endFrame": 1372
+        },
+        {
+          "token": "his",
+          "start": 45.737,
+          "end": 45.85,
+          "frame": 1372,
+          "endFrame": 1376
         },
         {
           "token": "doctor's",
-          "start": 67.213,
-          "end": 67.65,
-          "frame": 2016,
-          "endFrame": 2030
+          "start": 45.862,
+          "end": 46.25,
+          "frame": 1376,
+          "endFrame": 1388
+        },
+        {
+          "token": "memory.",
+          "start": 46.25,
+          "end": 46.7,
+          "frame": 1388,
+          "endFrame": 1401
+        }
+      ],
+      "to": 1411,
+      "speechEnd": 1401
+    },
+    {
+      "id": "S6",
+      "text": "From that moment, the memory works between visits. It reads his numbers, his messages and his refills against his whole history and his doctor's plan. Most days, it simply keeps him on track.",
+      "from": 1411,
+      "words": [
+        {
+          "token": "From",
+          "start": 47.138,
+          "end": 47.288,
+          "frame": 1414,
+          "endFrame": 1419
+        },
+        {
+          "token": "that",
+          "start": 47.3,
+          "end": 47.487,
+          "frame": 1419,
+          "endFrame": 1425
+        },
+        {
+          "token": "moment,",
+          "start": 47.487,
+          "end": 47.938,
+          "frame": 1425,
+          "endFrame": 1438
+        },
+        {
+          "token": "the",
+          "start": 48.35,
+          "end": 48.425,
+          "frame": 1450,
+          "endFrame": 1453
+        },
+        {
+          "token": "memory",
+          "start": 48.425,
+          "end": 48.788,
+          "frame": 1453,
+          "endFrame": 1464
+        },
+        {
+          "token": "works",
+          "start": 48.8,
+          "end": 49.125,
+          "frame": 1464,
+          "endFrame": 1474
+        },
+        {
+          "token": "between",
+          "start": 49.125,
+          "end": 49.513,
+          "frame": 1474,
+          "endFrame": 1485
+        },
+        {
+          "token": "visits.",
+          "start": 49.513,
+          "end": 50.188,
+          "frame": 1485,
+          "endFrame": 1506
+        },
+        {
+          "token": "It",
+          "start": 50.6,
+          "end": 50.737,
+          "frame": 1518,
+          "endFrame": 1522
+        },
+        {
+          "token": "reads",
+          "start": 50.75,
+          "end": 50.987,
+          "frame": 1522,
+          "endFrame": 1530
+        },
+        {
+          "token": "his",
+          "start": 51.0,
+          "end": 51.15,
+          "frame": 1530,
+          "endFrame": 1534
+        },
+        {
+          "token": "numbers,",
+          "start": 51.15,
+          "end": 51.888,
+          "frame": 1534,
+          "endFrame": 1557
+        },
+        {
+          "token": "his",
+          "start": 51.925,
+          "end": 52.05,
+          "frame": 1558,
+          "endFrame": 1562
+        },
+        {
+          "token": "messages",
+          "start": 52.05,
+          "end": 52.862,
+          "frame": 1562,
+          "endFrame": 1586
+        },
+        {
+          "token": "and",
+          "start": 52.875,
+          "end": 53.025,
+          "frame": 1586,
+          "endFrame": 1591
+        },
+        {
+          "token": "his",
+          "start": 53.038,
+          "end": 53.225,
+          "frame": 1591,
+          "endFrame": 1597
+        },
+        {
+          "token": "refills",
+          "start": 53.225,
+          "end": 53.938,
+          "frame": 1597,
+          "endFrame": 1618
+        },
+        {
+          "token": "against",
+          "start": 53.938,
+          "end": 54.288,
+          "frame": 1618,
+          "endFrame": 1629
+        },
+        {
+          "token": "his",
+          "start": 54.288,
+          "end": 54.4,
+          "frame": 1629,
+          "endFrame": 1632
+        },
+        {
+          "token": "whole",
+          "start": 54.413,
+          "end": 54.812,
+          "frame": 1632,
+          "endFrame": 1644
+        },
+        {
+          "token": "history",
+          "start": 54.812,
+          "end": 55.525,
+          "frame": 1644,
+          "endFrame": 1666
+        },
+        {
+          "token": "and",
+          "start": 55.725,
+          "end": 55.837,
+          "frame": 1672,
+          "endFrame": 1675
+        },
+        {
+          "token": "his",
+          "start": 55.837,
+          "end": 55.962,
+          "frame": 1675,
+          "endFrame": 1679
+        },
+        {
+          "token": "doctor's",
+          "start": 55.975,
+          "end": 56.362,
+          "frame": 1679,
+          "endFrame": 1691
         },
         {
           "token": "plan.",
-          "start": 67.65,
-          "end": 68.062,
-          "frame": 2030,
-          "endFrame": 2042
+          "start": 56.362,
+          "end": 56.775,
+          "frame": 1691,
+          "endFrame": 1703
         },
         {
-          "token": "It",
-          "start": 68.45,
-          "end": 68.513,
-          "frame": 2054,
-          "endFrame": 2055
+          "token": "Most",
+          "start": 57.175,
+          "end": 57.388,
+          "frame": 1715,
+          "endFrame": 1722
         },
         {
-          "token": "suggests",
-          "start": 68.513,
-          "end": 69.088,
-          "frame": 2055,
-          "endFrame": 2073
+          "token": "days,",
+          "start": 57.388,
+          "end": 57.763,
+          "frame": 1722,
+          "endFrame": 1733
         },
         {
-          "token": "the",
-          "start": 69.088,
-          "end": 69.175,
-          "frame": 2073,
-          "endFrame": 2075
+          "token": "it",
+          "start": 57.825,
+          "end": 57.9,
+          "frame": 1735,
+          "endFrame": 1737
         },
         {
-          "token": "right",
-          "start": 69.188,
-          "end": 69.425,
-          "frame": 2076,
-          "endFrame": 2083
+          "token": "simply",
+          "start": 57.9,
+          "end": 58.2,
+          "frame": 1737,
+          "endFrame": 1746
         },
         {
-          "token": "insurance.",
-          "start": 69.425,
-          "end": 70.138,
-          "frame": 2083,
-          "endFrame": 2104
+          "token": "keeps",
+          "start": 58.2,
+          "end": 58.45,
+          "frame": 1746,
+          "endFrame": 1754
         },
         {
-          "token": "It",
-          "start": 70.525,
-          "end": 70.588,
-          "frame": 2116,
-          "endFrame": 2118
+          "token": "him",
+          "start": 58.45,
+          "end": 58.525,
+          "frame": 1754,
+          "endFrame": 1756
         },
         {
-          "token": "offers",
-          "start": 70.588,
-          "end": 70.925,
-          "frame": 2118,
-          "endFrame": 2128
+          "token": "on",
+          "start": 58.538,
+          "end": 58.65,
+          "frame": 1756,
+          "endFrame": 1760
         },
         {
-          "token": "the",
-          "start": 70.925,
-          "end": 71.025,
-          "frame": 2128,
-          "endFrame": 2131
+          "token": "track.",
+          "start": 58.65,
+          "end": 59.15,
+          "frame": 1760,
+          "endFrame": 1774
+        }
+      ],
+      "to": 1784,
+      "speechEnd": 1774
+    },
+    {
+      "id": "S7",
+      "text": "The day something breaks the plan, Aziz moves to the top of his doctor's list, with his history and a proposed next step. One tap to approve. That's how one doctor leads thousands of patients, and misses none.",
+      "from": 1784,
+      "words": [
+        {
+          "token": "The",
+          "start": 59.562,
+          "end": 59.638,
+          "frame": 1787,
+          "endFrame": 1789
         },
         {
-          "token": "tests",
-          "start": 71.037,
-          "end": 71.575,
-          "frame": 2131,
-          "endFrame": 2147
+          "token": "day",
+          "start": 59.65,
+          "end": 59.825,
+          "frame": 1790,
+          "endFrame": 1795
         },
         {
-          "token": "and",
-          "start": 71.575,
-          "end": 71.812,
-          "frame": 2147,
-          "endFrame": 2154
+          "token": "something",
+          "start": 59.825,
+          "end": 60.175,
+          "frame": 1795,
+          "endFrame": 1805
         },
         {
-          "token": "services",
-          "start": 71.812,
-          "end": 72.537,
-          "frame": 2154,
-          "endFrame": 2176
-        },
-        {
-          "token": "the",
-          "start": 72.55,
-          "end": 72.65,
-          "frame": 2176,
-          "endFrame": 2180
-        },
-        {
-          "token": "doctor",
-          "start": 72.662,
-          "end": 73.025,
-          "frame": 2180,
-          "endFrame": 2191
-        },
-        {
-          "token": "prescribed.",
-          "start": 73.037,
-          "end": 73.688,
-          "frame": 2191,
-          "endFrame": 2211
-        },
-        {
-          "token": "It",
-          "start": 74.1,
-          "end": 74.175,
-          "frame": 2223,
-          "endFrame": 2225
-        },
-        {
-          "token": "reserves",
-          "start": 74.175,
-          "end": 74.537,
-          "frame": 2225,
-          "endFrame": 2236
-        },
-        {
-          "token": "a",
-          "start": 74.537,
-          "end": 74.588,
-          "frame": 2236,
-          "endFrame": 2238
-        },
-        {
-          "token": "time",
-          "start": 74.588,
-          "end": 75.025,
-          "frame": 2238,
-          "endFrame": 2251
-        },
-        {
-          "token": "at",
-          "start": 75.15,
-          "end": 75.225,
-          "frame": 2254,
-          "endFrame": 2257
-        },
-        {
-          "token": "a",
-          "start": 75.225,
-          "end": 75.263,
-          "frame": 2257,
-          "endFrame": 2258
-        },
-        {
-          "token": "partner",
-          "start": 75.263,
-          "end": 75.662,
-          "frame": 2258,
-          "endFrame": 2270
-        },
-        {
-          "token": "clinic",
-          "start": 75.675,
-          "end": 76.075,
-          "frame": 2270,
-          "endFrame": 2282
-        },
-        {
-          "token": "before",
-          "start": 76.175,
-          "end": 76.537,
-          "frame": 2285,
-          "endFrame": 2296
+          "token": "breaks",
+          "start": 60.188,
+          "end": 60.513,
+          "frame": 1806,
+          "endFrame": 1815
         },
         {
           "token": "the",
-          "start": 76.537,
-          "end": 76.612,
-          "frame": 2296,
-          "endFrame": 2298
+          "start": 60.513,
+          "end": 60.6,
+          "frame": 1815,
+          "endFrame": 1818
         },
         {
-          "token": "patient",
-          "start": 76.612,
-          "end": 77.025,
-          "frame": 2298,
-          "endFrame": 2311
+          "token": "plan,",
+          "start": 60.612,
+          "end": 61.038,
+          "frame": 1818,
+          "endFrame": 1831
         },
         {
-          "token": "has",
-          "start": 77.025,
-          "end": 77.312,
-          "frame": 2311,
-          "endFrame": 2319
+          "token": "Aziz",
+          "start": 61.438,
+          "end": 61.975,
+          "frame": 1843,
+          "endFrame": 1859
+        },
+        {
+          "token": "moves",
+          "start": 61.975,
+          "end": 62.362,
+          "frame": 1859,
+          "endFrame": 1871
         },
         {
           "token": "to",
-          "start": 77.325,
-          "end": 77.412,
-          "frame": 2320,
-          "endFrame": 2322
-        },
-        {
-          "token": "ask.",
-          "start": 77.412,
-          "end": 77.9,
-          "frame": 2322,
-          "endFrame": 2337
-        }
-      ],
-      "to": 2346,
-      "speechEnd": 2337
-    },
-    {
-      "id": "S8",
-      "text": "Because it remembers, it can prove. Every decision is written as code, not paper: the diagnosis, the treatment, the doctor's signature, sealed with a hash. What Visa did for payments, we do for clinical decisions.",
-      "from": 2346,
-      "words": [
-        {
-          "token": "Because",
-          "start": 78.312,
-          "end": 78.588,
-          "frame": 2349,
-          "endFrame": 2358
-        },
-        {
-          "token": "it",
-          "start": 78.6,
-          "end": 78.675,
-          "frame": 2358,
-          "endFrame": 2360
-        },
-        {
-          "token": "remembers,",
-          "start": 78.688,
-          "end": 79.35,
-          "frame": 2361,
-          "endFrame": 2380
-        },
-        {
-          "token": "it",
-          "start": 79.525,
-          "end": 79.625,
-          "frame": 2386,
-          "endFrame": 2389
-        },
-        {
-          "token": "can",
-          "start": 79.625,
-          "end": 79.763,
-          "frame": 2389,
-          "endFrame": 2393
-        },
-        {
-          "token": "prove.",
-          "start": 79.763,
-          "end": 80.463,
-          "frame": 2393,
-          "endFrame": 2414
-        },
-        {
-          "token": "Every",
-          "start": 80.875,
-          "end": 81.112,
-          "frame": 2426,
-          "endFrame": 2433
-        },
-        {
-          "token": "decision",
-          "start": 81.112,
-          "end": 81.688,
-          "frame": 2433,
-          "endFrame": 2451
-        },
-        {
-          "token": "is",
-          "start": 81.737,
-          "end": 81.95,
-          "frame": 2452,
-          "endFrame": 2458
-        },
-        {
-          "token": "written",
-          "start": 81.95,
-          "end": 82.388,
-          "frame": 2458,
-          "endFrame": 2472
-        },
-        {
-          "token": "as",
-          "start": 82.5,
-          "end": 82.675,
-          "frame": 2475,
-          "endFrame": 2480
-        },
-        {
-          "token": "code,",
-          "start": 82.675,
-          "end": 83.213,
-          "frame": 2480,
-          "endFrame": 2496
-        },
-        {
-          "token": "not",
-          "start": 83.763,
-          "end": 84.125,
-          "frame": 2513,
-          "endFrame": 2524
-        },
-        {
-          "token": "paper:",
-          "start": 84.125,
-          "end": 84.525,
-          "frame": 2524,
-          "endFrame": 2536
+          "start": 62.375,
+          "end": 62.462,
+          "frame": 1871,
+          "endFrame": 1874
         },
         {
           "token": "the",
-          "start": 85.075,
-          "end": 85.138,
-          "frame": 2552,
-          "endFrame": 2554
+          "start": 62.462,
+          "end": 62.562,
+          "frame": 1874,
+          "endFrame": 1877
         },
         {
-          "token": "diagnosis,",
-          "start": 85.15,
-          "end": 85.938,
-          "frame": 2554,
-          "endFrame": 2578
+          "token": "top",
+          "start": 62.575,
+          "end": 62.925,
+          "frame": 1877,
+          "endFrame": 1888
         },
         {
-          "token": "the",
-          "start": 86.0,
-          "end": 86.088,
-          "frame": 2580,
-          "endFrame": 2583
+          "token": "of",
+          "start": 62.925,
+          "end": 63.0,
+          "frame": 1888,
+          "endFrame": 1890
         },
         {
-          "token": "treatment,",
-          "start": 86.088,
-          "end": 86.575,
-          "frame": 2583,
-          "endFrame": 2597
-        },
-        {
-          "token": "the",
-          "start": 86.588,
-          "end": 86.688,
-          "frame": 2598,
-          "endFrame": 2601
+          "token": "his",
+          "start": 63.013,
+          "end": 63.112,
+          "frame": 1890,
+          "endFrame": 1893
         },
         {
           "token": "doctor's",
-          "start": 86.7,
-          "end": 87.112,
-          "frame": 2601,
-          "endFrame": 2613
+          "start": 63.125,
+          "end": 63.575,
+          "frame": 1894,
+          "endFrame": 1907
         },
         {
-          "token": "signature,",
-          "start": 87.112,
-          "end": 87.638,
-          "frame": 2613,
-          "endFrame": 2629
-        },
-        {
-          "token": "sealed",
-          "start": 87.888,
-          "end": 88.338,
-          "frame": 2637,
-          "endFrame": 2650
+          "token": "list,",
+          "start": 63.587,
+          "end": 64.088,
+          "frame": 1908,
+          "endFrame": 1923
         },
         {
           "token": "with",
-          "start": 88.338,
-          "end": 88.475,
-          "frame": 2650,
-          "endFrame": 2654
+          "start": 64.325,
+          "end": 64.45,
+          "frame": 1930,
+          "endFrame": 1934
         },
         {
-          "token": "a",
-          "start": 88.475,
-          "end": 88.513,
-          "frame": 2654,
-          "endFrame": 2655
+          "token": "his",
+          "start": 64.45,
+          "end": 64.575,
+          "frame": 1934,
+          "endFrame": 1937
         },
         {
-          "token": "hash.",
-          "start": 88.525,
-          "end": 89.15,
-          "frame": 2656,
-          "endFrame": 2674
-        },
-        {
-          "token": "What",
-          "start": 89.562,
-          "end": 89.737,
-          "frame": 2687,
-          "endFrame": 2692
-        },
-        {
-          "token": "Visa",
-          "start": 89.75,
-          "end": 90.112,
-          "frame": 2692,
-          "endFrame": 2703
-        },
-        {
-          "token": "did",
-          "start": 90.112,
-          "end": 90.312,
-          "frame": 2703,
-          "endFrame": 2709
-        },
-        {
-          "token": "for",
-          "start": 90.325,
-          "end": 90.45,
-          "frame": 2710,
-          "endFrame": 2714
-        },
-        {
-          "token": "payments,",
-          "start": 90.463,
-          "end": 91.062,
-          "frame": 2714,
-          "endFrame": 2732
-        },
-        {
-          "token": "we",
-          "start": 91.287,
-          "end": 91.487,
-          "frame": 2739,
-          "endFrame": 2745
-        },
-        {
-          "token": "do",
-          "start": 91.5,
-          "end": 91.862,
-          "frame": 2745,
-          "endFrame": 2756
-        },
-        {
-          "token": "for",
-          "start": 91.875,
-          "end": 92.037,
-          "frame": 2756,
-          "endFrame": 2761
-        },
-        {
-          "token": "clinical",
-          "start": 92.05,
-          "end": 92.45,
-          "frame": 2762,
-          "endFrame": 2774
-        },
-        {
-          "token": "decisions.",
-          "start": 92.45,
-          "end": 93.175,
-          "frame": 2774,
-          "endFrame": 2795
-        }
-      ],
-      "to": 2804,
-      "speechEnd": 2795
-    },
-    {
-      "id": "S9",
-      "text": "So agents can finally pay each other. The patient's agent, the clinic's agent and the insurer's agent settle in one trusted layer. No calls. No paperwork. Verified care, and the money follows it.",
-      "from": 2804,
-      "words": [
-        {
-          "token": "So",
-          "start": 93.575,
-          "end": 93.825,
-          "frame": 2807,
-          "endFrame": 2815
-        },
-        {
-          "token": "agents",
-          "start": 93.95,
-          "end": 94.312,
-          "frame": 2818,
-          "endFrame": 2829
-        },
-        {
-          "token": "can",
-          "start": 94.312,
-          "end": 94.438,
-          "frame": 2829,
-          "endFrame": 2833
-        },
-        {
-          "token": "finally",
-          "start": 94.438,
-          "end": 94.862,
-          "frame": 2833,
-          "endFrame": 2846
-        },
-        {
-          "token": "pay",
-          "start": 94.862,
-          "end": 95.1,
-          "frame": 2846,
-          "endFrame": 2853
-        },
-        {
-          "token": "each",
-          "start": 95.1,
-          "end": 95.287,
-          "frame": 2853,
-          "endFrame": 2859
-        },
-        {
-          "token": "other.",
-          "start": 95.3,
-          "end": 95.662,
-          "frame": 2859,
-          "endFrame": 2870
-        },
-        {
-          "token": "The",
-          "start": 96.075,
-          "end": 96.125,
-          "frame": 2882,
-          "endFrame": 2884
-        },
-        {
-          "token": "patient's",
-          "start": 96.125,
-          "end": 96.612,
-          "frame": 2884,
-          "endFrame": 2898
-        },
-        {
-          "token": "agent,",
-          "start": 96.625,
-          "end": 97.037,
-          "frame": 2899,
-          "endFrame": 2911
-        },
-        {
-          "token": "the",
-          "start": 97.275,
-          "end": 97.362,
-          "frame": 2918,
-          "endFrame": 2921
-        },
-        {
-          "token": "clinic's",
-          "start": 97.362,
-          "end": 97.787,
-          "frame": 2921,
-          "endFrame": 2934
-        },
-        {
-          "token": "agent",
-          "start": 97.8,
-          "end": 98.25,
-          "frame": 2934,
-          "endFrame": 2948
+          "token": "history",
+          "start": 64.575,
+          "end": 65.162,
+          "frame": 1937,
+          "endFrame": 1955
         },
         {
           "token": "and",
-          "start": 98.4,
-          "end": 98.475,
-          "frame": 2952,
-          "endFrame": 2954
+          "start": 65.312,
+          "end": 65.4,
+          "frame": 1959,
+          "endFrame": 1962
         },
         {
-          "token": "the",
-          "start": 98.475,
-          "end": 98.55,
-          "frame": 2954,
-          "endFrame": 2956
+          "token": "a",
+          "start": 65.4,
+          "end": 65.45,
+          "frame": 1962,
+          "endFrame": 1964
         },
         {
-          "token": "insurer's",
-          "start": 98.55,
-          "end": 99.162,
-          "frame": 2956,
-          "endFrame": 2975
+          "token": "proposed",
+          "start": 65.45,
+          "end": 66.25,
+          "frame": 1964,
+          "endFrame": 1988
         },
         {
-          "token": "agent",
-          "start": 99.175,
-          "end": 99.513,
-          "frame": 2975,
-          "endFrame": 2985
+          "token": "next",
+          "start": 66.263,
+          "end": 66.562,
+          "frame": 1988,
+          "endFrame": 1997
         },
         {
-          "token": "settle",
-          "start": 99.513,
-          "end": 99.938,
-          "frame": 2985,
-          "endFrame": 2998
+          "token": "step.",
+          "start": 66.575,
+          "end": 66.925,
+          "frame": 1997,
+          "endFrame": 2008
         },
         {
-          "token": "in",
-          "start": 100.112,
-          "end": 100.275,
-          "frame": 3003,
-          "endFrame": 3008
+          "token": "One",
+          "start": 67.338,
+          "end": 67.525,
+          "frame": 2020,
+          "endFrame": 2026
+        },
+        {
+          "token": "tap",
+          "start": 67.525,
+          "end": 67.862,
+          "frame": 2026,
+          "endFrame": 2036
+        },
+        {
+          "token": "to",
+          "start": 68.025,
+          "end": 68.175,
+          "frame": 2041,
+          "endFrame": 2045
+        },
+        {
+          "token": "approve.",
+          "start": 68.175,
+          "end": 68.7,
+          "frame": 2045,
+          "endFrame": 2061
+        },
+        {
+          "token": "That's",
+          "start": 69.112,
+          "end": 69.275,
+          "frame": 2073,
+          "endFrame": 2078
+        },
+        {
+          "token": "how",
+          "start": 69.275,
+          "end": 69.463,
+          "frame": 2078,
+          "endFrame": 2084
         },
         {
           "token": "one",
-          "start": 100.275,
-          "end": 100.7,
-          "frame": 3008,
-          "endFrame": 3021
+          "start": 69.475,
+          "end": 69.812,
+          "frame": 2084,
+          "endFrame": 2094
         },
         {
-          "token": "trusted",
-          "start": 100.7,
-          "end": 101.162,
-          "frame": 3021,
-          "endFrame": 3035
+          "token": "doctor",
+          "start": 69.812,
+          "end": 70.237,
+          "frame": 2094,
+          "endFrame": 2107
         },
         {
-          "token": "layer.",
+          "token": "leads",
+          "start": 70.25,
+          "end": 70.588,
+          "frame": 2108,
+          "endFrame": 2118
+        },
+        {
+          "token": "thousands",
+          "start": 70.688,
+          "end": 71.263,
+          "frame": 2121,
+          "endFrame": 2138
+        },
+        {
+          "token": "of",
+          "start": 71.263,
+          "end": 71.325,
+          "frame": 2138,
+          "endFrame": 2140
+        },
+        {
+          "token": "patients,",
+          "start": 71.338,
+          "end": 72.025,
+          "frame": 2140,
+          "endFrame": 2161
+        },
+        {
+          "token": "and",
+          "start": 72.225,
+          "end": 72.35,
+          "frame": 2167,
+          "endFrame": 2170
+        },
+        {
+          "token": "misses",
+          "start": 72.362,
+          "end": 72.713,
+          "frame": 2171,
+          "endFrame": 2181
+        },
+        {
+          "token": "none.",
+          "start": 72.713,
+          "end": 73.05,
+          "frame": 2181,
+          "endFrame": 2192
+        }
+      ],
+      "to": 2201,
+      "speechEnd": 2192
+    },
+    {
+      "id": "S8",
+      "text": "Tuesday morning. Aziz's sugar has been high for three days. His doctor approves a new test. What happens next takes less than a minute.",
+      "from": 2201,
+      "words": [
+        {
+          "token": "Tuesday",
+          "start": 73.463,
+          "end": 73.763,
+          "frame": 2204,
+          "endFrame": 2213
+        },
+        {
+          "token": "morning.",
+          "start": 73.763,
+          "end": 74.175,
+          "frame": 2213,
+          "endFrame": 2225
+        },
+        {
+          "token": "Aziz's",
+          "start": 74.575,
+          "end": 75.0,
+          "frame": 2237,
+          "endFrame": 2250
+        },
+        {
+          "token": "sugar",
+          "start": 75.013,
+          "end": 75.35,
+          "frame": 2250,
+          "endFrame": 2260
+        },
+        {
+          "token": "has",
+          "start": 75.35,
+          "end": 75.463,
+          "frame": 2260,
+          "endFrame": 2264
+        },
+        {
+          "token": "been",
+          "start": 75.475,
+          "end": 75.6,
+          "frame": 2264,
+          "endFrame": 2268
+        },
+        {
+          "token": "high",
+          "start": 75.6,
+          "end": 76.0,
+          "frame": 2268,
+          "endFrame": 2280
+        },
+        {
+          "token": "for",
+          "start": 76.2,
+          "end": 76.375,
+          "frame": 2286,
+          "endFrame": 2291
+        },
+        {
+          "token": "three",
+          "start": 76.375,
+          "end": 76.812,
+          "frame": 2291,
+          "endFrame": 2304
+        },
+        {
+          "token": "days.",
+          "start": 76.812,
+          "end": 77.338,
+          "frame": 2304,
+          "endFrame": 2320
+        },
+        {
+          "token": "His",
+          "start": 77.737,
+          "end": 77.825,
+          "frame": 2332,
+          "endFrame": 2335
+        },
+        {
+          "token": "doctor",
+          "start": 77.838,
+          "end": 78.175,
+          "frame": 2335,
+          "endFrame": 2345
+        },
+        {
+          "token": "approves",
+          "start": 78.175,
+          "end": 78.6,
+          "frame": 2345,
+          "endFrame": 2358
+        },
+        {
+          "token": "a",
+          "start": 78.6,
+          "end": 78.625,
+          "frame": 2358,
+          "endFrame": 2359
+        },
+        {
+          "token": "new",
+          "start": 78.638,
+          "end": 78.938,
+          "frame": 2359,
+          "endFrame": 2368
+        },
+        {
+          "token": "test.",
+          "start": 78.938,
+          "end": 79.463,
+          "frame": 2368,
+          "endFrame": 2384
+        },
+        {
+          "token": "What",
+          "start": 79.862,
+          "end": 79.938,
+          "frame": 2396,
+          "endFrame": 2398
+        },
+        {
+          "token": "happens",
+          "start": 79.938,
+          "end": 80.263,
+          "frame": 2398,
+          "endFrame": 2408
+        },
+        {
+          "token": "next",
+          "start": 80.275,
+          "end": 80.5,
+          "frame": 2408,
+          "endFrame": 2415
+        },
+        {
+          "token": "takes",
+          "start": 80.5,
+          "end": 80.812,
+          "frame": 2415,
+          "endFrame": 2424
+        },
+        {
+          "token": "less",
+          "start": 80.875,
+          "end": 81.138,
+          "frame": 2426,
+          "endFrame": 2434
+        },
+        {
+          "token": "than",
+          "start": 81.138,
+          "end": 81.25,
+          "frame": 2434,
+          "endFrame": 2438
+        },
+        {
+          "token": "a",
+          "start": 81.25,
+          "end": 81.275,
+          "frame": 2438,
+          "endFrame": 2438
+        },
+        {
+          "token": "minute.",
+          "start": 81.275,
+          "end": 81.65,
+          "frame": 2438,
+          "endFrame": 2450
+        }
+      ],
+      "to": 2459,
+      "speechEnd": 2450
+    },
+    {
+      "id": "S9",
+      "text": "Aziz's agent books a slot at a partner clinic near his home. The test isn't covered, so it suggests the right insurance, and Aziz taps yes. The clinic's agent confirms. The insurer's agent checks the memory: the diagnosis matches the plan, the doctor signed it. Paid.",
+      "from": 2459,
+      "words": [
+        {
+          "token": "Aziz's",
+          "start": 82.05,
+          "end": 82.562,
+          "frame": 2462,
+          "endFrame": 2477
+        },
+        {
+          "token": "agent",
+          "start": 82.562,
+          "end": 82.912,
+          "frame": 2477,
+          "endFrame": 2487
+        },
+        {
+          "token": "books",
+          "start": 82.925,
+          "end": 83.237,
+          "frame": 2488,
+          "endFrame": 2497
+        },
+        {
+          "token": "a",
+          "start": 83.312,
+          "end": 83.362,
+          "frame": 2499,
+          "endFrame": 2501
+        },
+        {
+          "token": "slot",
+          "start": 83.362,
+          "end": 83.95,
+          "frame": 2501,
+          "endFrame": 2518
+        },
+        {
+          "token": "at",
+          "start": 84.15,
+          "end": 84.213,
+          "frame": 2524,
+          "endFrame": 2526
+        },
+        {
+          "token": "a",
+          "start": 84.213,
+          "end": 84.263,
+          "frame": 2526,
+          "endFrame": 2528
+        },
+        {
+          "token": "partner",
+          "start": 84.275,
+          "end": 84.675,
+          "frame": 2528,
+          "endFrame": 2540
+        },
+        {
+          "token": "clinic",
+          "start": 84.675,
+          "end": 85.062,
+          "frame": 2540,
+          "endFrame": 2552
+        },
+        {
+          "token": "near",
+          "start": 85.125,
+          "end": 85.3,
+          "frame": 2554,
+          "endFrame": 2559
+        },
+        {
+          "token": "his",
+          "start": 85.3,
+          "end": 85.412,
+          "frame": 2559,
+          "endFrame": 2562
+        },
+        {
+          "token": "home.",
+          "start": 85.412,
+          "end": 85.725,
+          "frame": 2562,
+          "endFrame": 2572
+        },
+        {
+          "token": "The",
+          "start": 86.112,
+          "end": 86.175,
+          "frame": 2583,
+          "endFrame": 2585
+        },
+        {
+          "token": "test",
+          "start": 86.175,
+          "end": 86.625,
+          "frame": 2585,
+          "endFrame": 2599
+        },
+        {
+          "token": "isn't",
+          "start": 86.85,
+          "end": 87.088,
+          "frame": 2606,
+          "endFrame": 2613
+        },
+        {
+          "token": "covered,",
+          "start": 87.088,
+          "end": 87.5,
+          "frame": 2613,
+          "endFrame": 2625
+        },
+        {
+          "token": "so",
+          "start": 87.912,
+          "end": 88.05,
+          "frame": 2637,
+          "endFrame": 2642
+        },
+        {
+          "token": "it",
+          "start": 88.05,
+          "end": 88.112,
+          "frame": 2642,
+          "endFrame": 2643
+        },
+        {
+          "token": "suggests",
+          "start": 88.112,
+          "end": 88.638,
+          "frame": 2643,
+          "endFrame": 2659
+        },
+        {
+          "token": "the",
+          "start": 88.638,
+          "end": 88.725,
+          "frame": 2659,
+          "endFrame": 2662
+        },
+        {
+          "token": "right",
+          "start": 88.725,
+          "end": 88.975,
+          "frame": 2662,
+          "endFrame": 2669
+        },
+        {
+          "token": "insurance,",
+          "start": 88.975,
+          "end": 89.675,
+          "frame": 2669,
+          "endFrame": 2690
+        },
+        {
+          "token": "and",
+          "start": 89.875,
+          "end": 90.25,
+          "frame": 2696,
+          "endFrame": 2708
+        },
+        {
+          "token": "Aziz",
+          "start": 90.388,
+          "end": 90.787,
+          "frame": 2712,
+          "endFrame": 2724
+        },
+        {
+          "token": "taps",
+          "start": 90.8,
+          "end": 91.175,
+          "frame": 2724,
+          "endFrame": 2735
+        },
+        {
+          "token": "yes.",
+          "start": 91.175,
+          "end": 91.688,
+          "frame": 2735,
+          "endFrame": 2751
+        },
+        {
+          "token": "The",
+          "start": 92.112,
+          "end": 92.175,
+          "frame": 2763,
+          "endFrame": 2765
+        },
+        {
+          "token": "clinic's",
+          "start": 92.175,
+          "end": 92.562,
+          "frame": 2765,
+          "endFrame": 2777
+        },
+        {
+          "token": "agent",
+          "start": 92.612,
+          "end": 92.888,
+          "frame": 2778,
+          "endFrame": 2787
+        },
+        {
+          "token": "confirms.",
+          "start": 92.888,
+          "end": 93.625,
+          "frame": 2787,
+          "endFrame": 2809
+        },
+        {
+          "token": "The",
+          "start": 94.037,
+          "end": 94.1,
+          "frame": 2821,
+          "endFrame": 2823
+        },
+        {
+          "token": "insurer's",
+          "start": 94.1,
+          "end": 94.8,
+          "frame": 2823,
+          "endFrame": 2844
+        },
+        {
+          "token": "agent",
+          "start": 94.812,
+          "end": 95.263,
+          "frame": 2844,
+          "endFrame": 2858
+        },
+        {
+          "token": "checks",
+          "start": 95.375,
+          "end": 95.763,
+          "frame": 2861,
+          "endFrame": 2873
+        },
+        {
+          "token": "the",
+          "start": 95.775,
+          "end": 95.85,
+          "frame": 2873,
+          "endFrame": 2876
+        },
+        {
+          "token": "memory:",
+          "start": 95.85,
+          "end": 96.35,
+          "frame": 2876,
+          "endFrame": 2890
+        },
+        {
+          "token": "the",
+          "start": 96.75,
+          "end": 96.85,
+          "frame": 2902,
+          "endFrame": 2906
+        },
+        {
+          "token": "diagnosis",
+          "start": 96.85,
+          "end": 97.7,
+          "frame": 2906,
+          "endFrame": 2931
+        },
+        {
+          "token": "matches",
+          "start": 97.713,
+          "end": 98.237,
+          "frame": 2931,
+          "endFrame": 2947
+        },
+        {
+          "token": "the",
+          "start": 98.25,
+          "end": 98.338,
+          "frame": 2948,
+          "endFrame": 2950
+        },
+        {
+          "token": "plan,",
+          "start": 98.35,
+          "end": 98.838,
+          "frame": 2950,
+          "endFrame": 2965
+        },
+        {
+          "token": "the",
+          "start": 99.037,
+          "end": 99.125,
+          "frame": 2971,
+          "endFrame": 2974
+        },
+        {
+          "token": "doctor",
+          "start": 99.138,
+          "end": 99.513,
+          "frame": 2974,
+          "endFrame": 2985
+        },
+        {
+          "token": "signed",
+          "start": 99.525,
+          "end": 99.862,
+          "frame": 2986,
+          "endFrame": 2996
+        },
+        {
+          "token": "it.",
+          "start": 99.862,
+          "end": 100.025,
+          "frame": 2996,
+          "endFrame": 3001
+        },
+        {
+          "token": "Paid.",
+          "start": 100.45,
+          "end": 100.75,
+          "frame": 3014,
+          "endFrame": 3022
+        }
+      ],
+      "to": 3032,
+      "speechEnd": 3022
+    },
+    {
+      "id": "S10",
+      "text": "Aziz gets one message: Thursday, nine a.m. Covered. He never made a call. Nobody filled in a form. The clinic got a patient. The insurer got proof. The doctor kept his patient on track.",
+      "from": 3032,
+      "words": [
+        {
+          "token": "Aziz",
           "start": 101.162,
-          "end": 101.55,
+          "end": 101.525,
           "frame": 3035,
           "endFrame": 3046
         },
         {
-          "token": "No",
-          "start": 101.963,
-          "end": 102.075,
-          "frame": 3059,
-          "endFrame": 3062
+          "token": "gets",
+          "start": 101.525,
+          "end": 101.688,
+          "frame": 3046,
+          "endFrame": 3051
         },
         {
-          "token": "calls.",
-          "start": 102.075,
-          "end": 102.575,
-          "frame": 3062,
-          "endFrame": 3077
+          "token": "one",
+          "start": 101.688,
+          "end": 101.987,
+          "frame": 3051,
+          "endFrame": 3060
         },
         {
-          "token": "No",
-          "start": 102.963,
-          "end": 103.112,
-          "frame": 3089,
-          "endFrame": 3093
+          "token": "message:",
+          "start": 102.0,
+          "end": 102.588,
+          "frame": 3060,
+          "endFrame": 3078
         },
         {
-          "token": "paperwork.",
-          "start": 103.125,
-          "end": 103.838,
-          "frame": 3094,
-          "endFrame": 3115
+          "token": "Thursday,",
+          "start": 102.95,
+          "end": 103.6,
+          "frame": 3088,
+          "endFrame": 3108
         },
         {
-          "token": "Verified",
-          "start": 104.237,
-          "end": 104.8,
-          "frame": 3127,
-          "endFrame": 3144
+          "token": "nine",
+          "start": 104.062,
+          "end": 104.338,
+          "frame": 3122,
+          "endFrame": 3130
         },
         {
-          "token": "care,",
-          "start": 104.812,
-          "end": 105.175,
-          "frame": 3144,
-          "endFrame": 3155
+          "token": "a.m.",
+          "start": 104.338,
+          "end": 104.588,
+          "frame": 3130,
+          "endFrame": 3138
         },
         {
-          "token": "and",
-          "start": 105.612,
-          "end": 105.65,
-          "frame": 3168,
+          "token": "Covered.",
+          "start": 104.588,
+          "end": 104.987,
+          "frame": 3138,
+          "endFrame": 3150
+        },
+        {
+          "token": "He",
+          "start": 105.412,
+          "end": 105.45,
+          "frame": 3162,
+          "endFrame": 3164
+        },
+        {
+          "token": "never",
+          "start": 105.463,
+          "end": 105.662,
+          "frame": 3164,
           "endFrame": 3170
         },
         {
-          "token": "the",
-          "start": 105.65,
-          "end": 105.713,
+          "token": "made",
+          "start": 105.662,
+          "end": 105.787,
           "frame": 3170,
-          "endFrame": 3171
+          "endFrame": 3174
         },
         {
-          "token": "money",
-          "start": 105.713,
-          "end": 106.037,
-          "frame": 3171,
-          "endFrame": 3181
+          "token": "a",
+          "start": 105.787,
+          "end": 105.825,
+          "frame": 3174,
+          "endFrame": 3175
         },
         {
-          "token": "follows",
-          "start": 106.05,
-          "end": 106.562,
-          "frame": 3182,
-          "endFrame": 3197
+          "token": "call.",
+          "start": 105.838,
+          "end": 106.2,
+          "frame": 3175,
+          "endFrame": 3186
         },
         {
-          "token": "it.",
-          "start": 106.562,
-          "end": 106.763,
-          "frame": 3197,
-          "endFrame": 3203
-        }
-      ],
-      "to": 3212,
-      "speechEnd": 3203
-    },
-    {
-      "id": "S10",
-      "text": "Records sit still. Memory moves. It manages, it proves, it pays.",
-      "from": 3212,
-      "words": [
+          "token": "Nobody",
+          "start": 106.588,
+          "end": 106.938,
+          "frame": 3198,
+          "endFrame": 3208
+        },
         {
-          "token": "Records",
-          "start": 107.162,
+          "token": "filled",
+          "start": 106.95,
+          "end": 107.412,
+          "frame": 3208,
+          "endFrame": 3222
+        },
+        {
+          "token": "in",
+          "start": 107.412,
+          "end": 107.487,
+          "frame": 3222,
+          "endFrame": 3225
+        },
+        {
+          "token": "a",
+          "start": 107.487,
           "end": 107.525,
-          "frame": 3215,
+          "frame": 3225,
           "endFrame": 3226
         },
         {
-          "token": "sit",
+          "token": "form.",
           "start": 107.525,
-          "end": 107.85,
+          "end": 107.987,
           "frame": 3226,
-          "endFrame": 3236
+          "endFrame": 3240
         },
         {
-          "token": "still.",
-          "start": 107.862,
-          "end": 108.388,
-          "frame": 3236,
-          "endFrame": 3252
+          "token": "The",
+          "start": 108.4,
+          "end": 108.45,
+          "frame": 3252,
+          "endFrame": 3254
         },
         {
-          "token": "Memory",
-          "start": 108.775,
-          "end": 109.062,
-          "frame": 3263,
-          "endFrame": 3272
+          "token": "clinic",
+          "start": 108.463,
+          "end": 108.725,
+          "frame": 3254,
+          "endFrame": 3262
         },
         {
-          "token": "moves.",
-          "start": 109.062,
-          "end": 109.675,
-          "frame": 3272,
-          "endFrame": 3290
+          "token": "got",
+          "start": 108.737,
+          "end": 108.862,
+          "frame": 3262,
+          "endFrame": 3266
         },
         {
-          "token": "It",
-          "start": 110.088,
-          "end": 110.175,
-          "frame": 3303,
-          "endFrame": 3305
+          "token": "a",
+          "start": 108.862,
+          "end": 108.9,
+          "frame": 3266,
+          "endFrame": 3267
         },
         {
-          "token": "manages,",
-          "start": 110.175,
-          "end": 110.787,
-          "frame": 3305,
-          "endFrame": 3324
+          "token": "patient.",
+          "start": 108.912,
+          "end": 109.4,
+          "frame": 3267,
+          "endFrame": 3282
         },
         {
-          "token": "it",
-          "start": 110.8,
-          "end": 110.912,
-          "frame": 3324,
-          "endFrame": 3327
+          "token": "The",
+          "start": 109.812,
+          "end": 109.85,
+          "frame": 3294,
+          "endFrame": 3296
         },
         {
-          "token": "proves,",
-          "start": 110.912,
-          "end": 111.475,
-          "frame": 3327,
-          "endFrame": 3344
+          "token": "insurer",
+          "start": 109.85,
+          "end": 110.325,
+          "frame": 3296,
+          "endFrame": 3310
         },
         {
-          "token": "it",
+          "token": "got",
+          "start": 110.325,
+          "end": 110.537,
+          "frame": 3310,
+          "endFrame": 3316
+        },
+        {
+          "token": "proof.",
+          "start": 110.55,
+          "end": 111.088,
+          "frame": 3316,
+          "endFrame": 3333
+        },
+        {
+          "token": "The",
           "start": 111.487,
-          "end": 111.575,
+          "end": 111.55,
           "frame": 3345,
-          "endFrame": 3347
+          "endFrame": 3346
         },
         {
-          "token": "pays.",
-          "start": 111.575,
-          "end": 112.15,
-          "frame": 3347,
-          "endFrame": 3364
+          "token": "doctor",
+          "start": 111.55,
+          "end": 112.0,
+          "frame": 3346,
+          "endFrame": 3360
+        },
+        {
+          "token": "kept",
+          "start": 112.013,
+          "end": 112.237,
+          "frame": 3360,
+          "endFrame": 3367
+        },
+        {
+          "token": "his",
+          "start": 112.237,
+          "end": 112.35,
+          "frame": 3367,
+          "endFrame": 3370
+        },
+        {
+          "token": "patient",
+          "start": 112.35,
+          "end": 112.713,
+          "frame": 3370,
+          "endFrame": 3381
+        },
+        {
+          "token": "on",
+          "start": 112.725,
+          "end": 112.825,
+          "frame": 3382,
+          "endFrame": 3385
+        },
+        {
+          "token": "track.",
+          "start": 112.838,
+          "end": 113.375,
+          "frame": 3385,
+          "endFrame": 3401
         }
       ],
-      "to": 3374,
-      "speechEnd": 3364
+      "to": 3410,
+      "speechEnd": 3401
     },
     {
       "id": "S11",
-      "text": "Healthcare has records. We gave it memory. Treatment Intelligence.",
-      "from": 3374,
+      "text": "Now multiply Aziz by every chronic patient on earth. Agents paying agents, on a memory everyone can trust. That's the new economy, and it runs on one layer.",
+      "from": 3410,
       "words": [
         {
-          "token": "Healthcare",
-          "start": 112.562,
-          "end": 113.088,
-          "frame": 3377,
-          "endFrame": 3393
+          "token": "Now",
+          "start": 113.775,
+          "end": 113.938,
+          "frame": 3413,
+          "endFrame": 3418
         },
         {
-          "token": "has",
-          "start": 113.237,
-          "end": 113.487,
-          "frame": 3397,
-          "endFrame": 3405
+          "token": "multiply",
+          "start": 113.938,
+          "end": 114.562,
+          "frame": 3418,
+          "endFrame": 3437
         },
         {
-          "token": "records.",
-          "start": 113.5,
-          "end": 114.112,
-          "frame": 3405,
-          "endFrame": 3423
+          "token": "Aziz",
+          "start": 114.562,
+          "end": 115.062,
+          "frame": 3437,
+          "endFrame": 3452
         },
         {
-          "token": "We",
-          "start": 114.525,
-          "end": 114.6,
-          "frame": 3436,
-          "endFrame": 3438
-        },
-        {
-          "token": "gave",
-          "start": 114.612,
-          "end": 114.775,
-          "frame": 3438,
-          "endFrame": 3443
-        },
-        {
-          "token": "it",
-          "start": 114.775,
-          "end": 114.825,
-          "frame": 3443,
-          "endFrame": 3445
-        },
-        {
-          "token": "memory.",
-          "start": 114.825,
-          "end": 115.287,
-          "frame": 3445,
+          "token": "by",
+          "start": 115.075,
+          "end": 115.3,
+          "frame": 3452,
           "endFrame": 3459
         },
         {
-          "token": "Treatment",
-          "start": 115.675,
-          "end": 116.138,
-          "frame": 3470,
+          "token": "every",
+          "start": 115.463,
+          "end": 115.787,
+          "frame": 3464,
+          "endFrame": 3474
+        },
+        {
+          "token": "chronic",
+          "start": 115.787,
+          "end": 116.125,
+          "frame": 3474,
           "endFrame": 3484
         },
         {
-          "token": "Intelligence.",
-          "start": 116.15,
-          "end": 117.013,
+          "token": "patient",
+          "start": 116.138,
+          "end": 116.513,
           "frame": 3484,
+          "endFrame": 3495
+        },
+        {
+          "token": "on",
+          "start": 116.525,
+          "end": 116.638,
+          "frame": 3496,
+          "endFrame": 3499
+        },
+        {
+          "token": "earth.",
+          "start": 116.638,
+          "end": 117.0,
+          "frame": 3499,
           "endFrame": 3510
+        },
+        {
+          "token": "Agents",
+          "start": 117.375,
+          "end": 117.763,
+          "frame": 3521,
+          "endFrame": 3533
+        },
+        {
+          "token": "paying",
+          "start": 117.763,
+          "end": 118.112,
+          "frame": 3533,
+          "endFrame": 3543
+        },
+        {
+          "token": "agents,",
+          "start": 118.125,
+          "end": 118.688,
+          "frame": 3544,
+          "endFrame": 3561
+        },
+        {
+          "token": "on",
+          "start": 118.925,
+          "end": 119.025,
+          "frame": 3568,
+          "endFrame": 3571
+        },
+        {
+          "token": "a",
+          "start": 119.025,
+          "end": 119.062,
+          "frame": 3571,
+          "endFrame": 3572
+        },
+        {
+          "token": "memory",
+          "start": 119.062,
+          "end": 119.638,
+          "frame": 3572,
+          "endFrame": 3589
+        },
+        {
+          "token": "everyone",
+          "start": 119.838,
+          "end": 120.362,
+          "frame": 3595,
+          "endFrame": 3611
+        },
+        {
+          "token": "can",
+          "start": 120.362,
+          "end": 120.5,
+          "frame": 3611,
+          "endFrame": 3615
+        },
+        {
+          "token": "trust.",
+          "start": 120.5,
+          "end": 121.125,
+          "frame": 3615,
+          "endFrame": 3634
+        },
+        {
+          "token": "That's",
+          "start": 121.537,
+          "end": 121.675,
+          "frame": 3646,
+          "endFrame": 3650
+        },
+        {
+          "token": "the",
+          "start": 121.675,
+          "end": 121.75,
+          "frame": 3650,
+          "endFrame": 3652
+        },
+        {
+          "token": "new",
+          "start": 121.75,
+          "end": 121.975,
+          "frame": 3652,
+          "endFrame": 3659
+        },
+        {
+          "token": "economy,",
+          "start": 121.975,
+          "end": 122.562,
+          "frame": 3659,
+          "endFrame": 3677
+        },
+        {
+          "token": "and",
+          "start": 122.938,
+          "end": 123.025,
+          "frame": 3688,
+          "endFrame": 3691
+        },
+        {
+          "token": "it",
+          "start": 123.025,
+          "end": 123.2,
+          "frame": 3691,
+          "endFrame": 3696
+        },
+        {
+          "token": "runs",
+          "start": 123.2,
+          "end": 123.487,
+          "frame": 3696,
+          "endFrame": 3705
+        },
+        {
+          "token": "on",
+          "start": 123.487,
+          "end": 123.65,
+          "frame": 3705,
+          "endFrame": 3710
+        },
+        {
+          "token": "one",
+          "start": 123.662,
+          "end": 123.9,
+          "frame": 3710,
+          "endFrame": 3717
+        },
+        {
+          "token": "layer.",
+          "start": 123.9,
+          "end": 124.362,
+          "frame": 3717,
+          "endFrame": 3731
         }
       ],
-      "to": 3601,
-      "speechEnd": 3510
+      "to": 3740,
+      "speechEnd": 3731
+    },
+    {
+      "id": "S12",
+      "text": "Healthcare has records. We gave it memory. Treatment Intelligence.",
+      "from": 3740,
+      "words": [
+        {
+          "token": "Healthcare",
+          "start": 124.775,
+          "end": 125.275,
+          "frame": 3743,
+          "endFrame": 3758
+        },
+        {
+          "token": "has",
+          "start": 125.425,
+          "end": 125.713,
+          "frame": 3763,
+          "endFrame": 3771
+        },
+        {
+          "token": "records.",
+          "start": 125.725,
+          "end": 126.325,
+          "frame": 3772,
+          "endFrame": 3790
+        },
+        {
+          "token": "We",
+          "start": 126.737,
+          "end": 126.812,
+          "frame": 3802,
+          "endFrame": 3804
+        },
+        {
+          "token": "gave",
+          "start": 126.812,
+          "end": 126.975,
+          "frame": 3804,
+          "endFrame": 3809
+        },
+        {
+          "token": "it",
+          "start": 126.975,
+          "end": 127.013,
+          "frame": 3809,
+          "endFrame": 3810
+        },
+        {
+          "token": "memory.",
+          "start": 127.025,
+          "end": 127.438,
+          "frame": 3811,
+          "endFrame": 3823
+        },
+        {
+          "token": "Treatment",
+          "start": 127.85,
+          "end": 128.262,
+          "frame": 3836,
+          "endFrame": 3848
+        },
+        {
+          "token": "Intelligence.",
+          "start": 128.275,
+          "end": 129.113,
+          "frame": 3848,
+          "endFrame": 3873
+        }
+      ],
+      "to": 3964,
+      "speechEnd": 3873
     }
   ]
 }
