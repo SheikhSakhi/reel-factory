@@ -11,6 +11,9 @@ Rules learned from ratings and real results. Every run reads this first. Maintai
 - Ad tone: slogans, a product name or tagline as the ending ("DOCX · ...", "A plan is."), selling instead of explaining (monitor-not-plan disliked: "like an advertisement", 2026-10-30)
 
 ## User preferences
+- Parables (F2): bridge the metaphor to medicine with a personal beat, not a cut. In the-lighthouse the doctor jumped from the keeper's sea to "My patients call when it's already a storm" and the user found the transition weak (8/10, 2026-11-11). Next time: the guest brings a concrete case first ("A patient of mine. Fine at her visit. In hospital two weeks later."), the wise one asks the question that links it ("What did the water look like before?"), and only then the fact
+- Voices that worked (first voice praise, 2026-11-11): en-IE-ConnorNeural at -14% / -6Hz for an old wise character, en-US-EmmaMultilingualNeural at -6% / -2Hz for a young doctor; slow, low, long pauses between lines (gap 0.6)
+- Ink-wash faceless characters (blank ovals with an ink outline) were rated good: faces don't need detail
 - WINNER (call-from-april v2, "brilliant", 2026-11-08). What made it work, repeat it:
   - a hook anyone feels: a family moment on a phone ("The hospital just called. About a scan from April." / "April? Mom, it's September.")
   - a real system failure shown through people, not explained (the result fell between teams)
