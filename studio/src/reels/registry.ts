@@ -13,6 +13,7 @@ import { SevenDoctors, SEVEN_COVER, SEVEN_DURATION } from "./2026-11-04-seven-do
 import { CallFromApril, APRIL_COVER, APRIL_DURATION } from "./2026-11-06-the-call-from-april/Reel";
 import { AllFineIThink, FINE_COVER, FINE_DURATION } from "./2026-11-09-all-fine-i-think/Reel";
 import { TheLighthouse, LIGHTHOUSE_COVER, LIGHTHOUSE_DURATION } from "./2026-11-11-the-lighthouse/Reel";
+import { WhyAreYouHere, WHY_COVER, WHY_DURATION } from "./2026-11-13-why-are-you-here/Reel";
 import { SeriesDemoReel, SERIES_DEMO_COVER, SERIES_DEMO_DURATION } from "./series-demo/Reel";
 
 export type ReelEntry = {
@@ -39,5 +40,6 @@ export const REELS: readonly ReelEntry[] = [
   { id: "2026-11-06-the-call-from-april", component: CallFromApril, durationInFrames: APRIL_DURATION, coverFrame: APRIL_COVER },
   { id: "2026-11-09-all-fine-i-think", component: AllFineIThink, durationInFrames: FINE_DURATION, coverFrame: FINE_COVER },
   { id: "2026-11-11-the-lighthouse", component: TheLighthouse, durationInFrames: LIGHTHOUSE_DURATION, coverFrame: LIGHTHOUSE_COVER },
+  { id: "2026-11-13-why-are-you-here", component: WhyAreYouHere, durationInFrames: WHY_DURATION, coverFrame: WHY_COVER },
   { id: "nvidia-s1e4-dark", component: S1E4Dark, durationInFrames: S1E4_DURATION, coverFrame: S1E4_COVER },
 ];

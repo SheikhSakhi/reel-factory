@@ -1,0 +1,1079 @@
+{
+  "file": "vo/2026-11-13-why-are-you-here/take.mp3",
+  "voice": "en-US-EmmaMultilingualNeural",
+  "rate": "-6%",
+  "fps": 30,
+  "totalFrames": 1507,
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "The specialist looked up from her screen and asked, so, why are you here?",
+      "from": 0,
+      "words": [
+        {
+          "token": "The",
+          "start": 0.106,
+          "end": 0.173,
+          "frame": 3,
+          "endFrame": 5
+        },
+        {
+          "token": "specialist",
+          "start": 0.186,
+          "end": 0.918,
+          "frame": 6,
+          "endFrame": 28
+        },
+        {
+          "token": "looked",
+          "start": 0.931,
+          "end": 1.17,
+          "frame": 28,
+          "endFrame": 35
+        },
+        {
+          "token": "up",
+          "start": 1.183,
+          "end": 1.29,
+          "frame": 36,
+          "endFrame": 39
+        },
+        {
+          "token": "from",
+          "start": 1.303,
+          "end": 1.476,
+          "frame": 39,
+          "endFrame": 44
+        },
+        {
+          "token": "her",
+          "start": 1.489,
+          "end": 1.649,
+          "frame": 45,
+          "endFrame": 49
+        },
+        {
+          "token": "screen",
+          "start": 1.662,
+          "end": 2.061,
+          "frame": 50,
+          "endFrame": 62
+        },
+        {
+          "token": "and",
+          "start": 2.074,
+          "end": 2.207,
+          "frame": 62,
+          "endFrame": 66
+        },
+        {
+          "token": "asked,",
+          "start": 2.221,
+          "end": 2.646,
+          "frame": 67,
+          "endFrame": 79
+        },
+        {
+          "token": "so,",
+          "start": 2.673,
+          "end": 2.992,
+          "frame": 80,
+          "endFrame": 90
+        },
+        {
+          "token": "why",
+          "start": 3.298,
+          "end": 3.497,
+          "frame": 99,
+          "endFrame": 105
+        },
+        {
+          "token": "are",
+          "start": 3.511,
+          "end": 3.63,
+          "frame": 105,
+          "endFrame": 109
+        },
+        {
+          "token": "you",
+          "start": 3.644,
+          "end": 3.777,
+          "frame": 109,
+          "endFrame": 113
+        },
+        {
+          "token": "here?",
+          "start": 3.79,
+          "end": 4.269,
+          "frame": 114,
+          "endFrame": 128
+        }
+      ],
+      "to": 138,
+      "speechEnd": 128
+    },
+    {
+      "id": "S2",
+      "text": "I thought she'd know. My doctor sent me.",
+      "from": 138,
+      "words": [
+        {
+          "token": "I",
+          "start": 4.694,
+          "end": 4.787,
+          "frame": 141,
+          "endFrame": 144
+        },
+        {
+          "token": "thought",
+          "start": 4.801,
+          "end": 5.08,
+          "frame": 144,
+          "endFrame": 152
+        },
+        {
+          "token": "she'd",
+          "start": 5.093,
+          "end": 5.332,
+          "frame": 153,
+          "endFrame": 160
+        },
+        {
+          "token": "know.",
+          "start": 5.346,
+          "end": 5.731,
+          "frame": 160,
+          "endFrame": 172
+        },
+        {
+          "token": "My",
+          "start": 6.17,
+          "end": 6.277,
+          "frame": 185,
+          "endFrame": 188
+        },
+        {
+          "token": "doctor",
+          "start": 6.29,
+          "end": 6.729,
+          "frame": 189,
+          "endFrame": 202
+        },
+        {
+          "token": "sent",
+          "start": 6.742,
+          "end": 7.061,
+          "frame": 202,
+          "endFrame": 212
+        },
+        {
+          "token": "me.",
+          "start": 7.074,
+          "end": 7.367,
+          "frame": 212,
+          "endFrame": 221
+        }
+      ],
+      "to": 231,
+      "speechEnd": 221
+    },
+    {
+      "id": "S3",
+      "text": "Three weeks of waiting. Two buses. And I told my story from the start.",
+      "from": 231,
+      "words": [
+        {
+          "token": "Three",
+          "start": 7.793,
+          "end": 8.005,
+          "frame": 234,
+          "endFrame": 240
+        },
+        {
+          "token": "weeks",
+          "start": 8.019,
+          "end": 8.338,
+          "frame": 241,
+          "endFrame": 250
+        },
+        {
+          "token": "of",
+          "start": 8.351,
+          "end": 8.484,
+          "frame": 251,
+          "endFrame": 255
+        },
+        {
+          "token": "waiting.",
+          "start": 8.497,
+          "end": 9.003,
+          "frame": 255,
+          "endFrame": 270
+        },
+        {
+          "token": "Two",
+          "start": 9.441,
+          "end": 9.614,
+          "frame": 283,
+          "endFrame": 288
+        },
+        {
+          "token": "buses.",
+          "start": 9.628,
+          "end": 10.279,
+          "frame": 289,
+          "endFrame": 308
+        },
+        {
+          "token": "And",
+          "start": 10.718,
+          "end": 10.824,
+          "frame": 322,
+          "endFrame": 325
+        },
+        {
+          "token": "I",
+          "start": 10.838,
+          "end": 10.904,
+          "frame": 325,
+          "endFrame": 327
+        },
+        {
+          "token": "told",
+          "start": 10.918,
+          "end": 11.25,
+          "frame": 328,
+          "endFrame": 337
+        },
+        {
+          "token": "my",
+          "start": 11.263,
+          "end": 11.41,
+          "frame": 338,
+          "endFrame": 342
+        },
+        {
+          "token": "story",
+          "start": 11.423,
+          "end": 11.875,
+          "frame": 343,
+          "endFrame": 356
+        },
+        {
+          "token": "from",
+          "start": 11.888,
+          "end": 12.114,
+          "frame": 357,
+          "endFrame": 363
+        },
+        {
+          "token": "the",
+          "start": 12.128,
+          "end": 12.221,
+          "frame": 364,
+          "endFrame": 367
+        },
+        {
+          "token": "start.",
+          "start": 12.234,
+          "end": 12.806,
+          "frame": 367,
+          "endFrame": 384
+        }
+      ],
+      "to": 394,
+      "speechEnd": 384
+    },
+    {
+      "id": "S4",
+      "text": "So where did my doctor's letter go?",
+      "from": 394,
+      "words": [
+        {
+          "token": "So",
+          "start": 13.231,
+          "end": 13.471,
+          "frame": 397,
+          "endFrame": 404
+        },
+        {
+          "token": "where",
+          "start": 13.484,
+          "end": 13.683,
+          "frame": 405,
+          "endFrame": 411
+        },
+        {
+          "token": "did",
+          "start": 13.697,
+          "end": 13.87,
+          "frame": 411,
+          "endFrame": 416
+        },
+        {
+          "token": "my",
+          "start": 13.883,
+          "end": 14.016,
+          "frame": 416,
+          "endFrame": 420
+        },
+        {
+          "token": "doctor's",
+          "start": 14.029,
+          "end": 14.561,
+          "frame": 421,
+          "endFrame": 437
+        },
+        {
+          "token": "letter",
+          "start": 14.574,
+          "end": 14.854,
+          "frame": 437,
+          "endFrame": 446
+        },
+        {
+          "token": "go?",
+          "start": 14.867,
+          "end": 15.253,
+          "frame": 446,
+          "endFrame": 458
+        }
+      ],
+      "to": 468,
+      "speechEnd": 458
+    },
+    {
+      "id": "S5",
+      "text": "Doctors were asked that too. In a US survey of nearly five thousand physicians, seven in ten family doctors said they send the history with a referral.",
+      "from": 468,
+      "words": [
+        {
+          "token": "Doctors",
+          "start": 15.691,
+          "end": 16.17,
+          "frame": 471,
+          "endFrame": 485
+        },
+        {
+          "token": "were",
+          "start": 16.183,
+          "end": 16.356,
+          "frame": 486,
+          "endFrame": 491
+        },
+        {
+          "token": "asked",
+          "start": 16.37,
+          "end": 16.675,
+          "frame": 491,
+          "endFrame": 500
+        },
+        {
+          "token": "that",
+          "start": 16.689,
+          "end": 16.915,
+          "frame": 501,
+          "endFrame": 507
+        },
+        {
+          "token": "too.",
+          "start": 16.928,
+          "end": 17.34,
+          "frame": 508,
+          "endFrame": 520
+        },
+        {
+          "token": "In",
+          "start": 17.766,
+          "end": 17.886,
+          "frame": 533,
+          "endFrame": 537
+        },
+        {
+          "token": "a",
+          "start": 17.899,
+          "end": 17.952,
+          "frame": 537,
+          "endFrame": 539
+        },
+        {
+          "token": "US",
+          "start": 17.965,
+          "end": 18.378,
+          "frame": 539,
+          "endFrame": 551
+        },
+        {
+          "token": "survey",
+          "start": 18.391,
+          "end": 18.843,
+          "frame": 552,
+          "endFrame": 565
+        },
+        {
+          "token": "of",
+          "start": 18.856,
+          "end": 18.976,
+          "frame": 566,
+          "endFrame": 569
+        },
+        {
+          "token": "nearly",
+          "start": 18.989,
+          "end": 19.362,
+          "frame": 570,
+          "endFrame": 581
+        },
+        {
+          "token": "five",
+          "start": 19.375,
+          "end": 19.707,
+          "frame": 581,
+          "endFrame": 591
+        },
+        {
+          "token": "thousand",
+          "start": 19.721,
+          "end": 20.199,
+          "frame": 592,
+          "endFrame": 606
+        },
+        {
+          "token": "physicians,",
+          "start": 20.213,
+          "end": 20.918,
+          "frame": 606,
+          "endFrame": 628
+        },
+        {
+          "token": "seven",
+          "start": 21.476,
+          "end": 21.835,
+          "frame": 644,
+          "endFrame": 655
+        },
+        {
+          "token": "in",
+          "start": 21.848,
+          "end": 21.968,
+          "frame": 655,
+          "endFrame": 659
+        },
+        {
+          "token": "ten",
+          "start": 21.981,
+          "end": 22.247,
+          "frame": 659,
+          "endFrame": 667
+        },
+        {
+          "token": "family",
+          "start": 22.261,
+          "end": 22.62,
+          "frame": 668,
+          "endFrame": 679
+        },
+        {
+          "token": "doctors",
+          "start": 22.633,
+          "end": 23.152,
+          "frame": 679,
+          "endFrame": 695
+        },
+        {
+          "token": "said",
+          "start": 23.165,
+          "end": 23.351,
+          "frame": 695,
+          "endFrame": 701
+        },
+        {
+          "token": "they",
+          "start": 23.364,
+          "end": 23.484,
+          "frame": 701,
+          "endFrame": 705
+        },
+        {
+          "token": "send",
+          "start": 23.497,
+          "end": 23.75,
+          "frame": 705,
+          "endFrame": 712
+        },
+        {
+          "token": "the",
+          "start": 23.763,
+          "end": 23.816,
+          "frame": 713,
+          "endFrame": 714
+        },
+        {
+          "token": "history",
+          "start": 23.83,
+          "end": 24.375,
+          "frame": 715,
+          "endFrame": 731
+        },
+        {
+          "token": "with",
+          "start": 24.388,
+          "end": 24.561,
+          "frame": 732,
+          "endFrame": 737
+        },
+        {
+          "token": "a",
+          "start": 24.574,
+          "end": 24.614,
+          "frame": 737,
+          "endFrame": 738
+        },
+        {
+          "token": "referral.",
+          "start": 24.628,
+          "end": 25.306,
+          "frame": 739,
+          "endFrame": 759
+        }
+      ],
+      "to": 769,
+      "speechEnd": 759
+    },
+    {
+      "id": "S6",
+      "text": "Only about one in three specialists said they get it.",
+      "from": 769,
+      "words": [
+        {
+          "token": "Only",
+          "start": 25.745,
+          "end": 25.997,
+          "frame": 772,
+          "endFrame": 780
+        },
+        {
+          "token": "about",
+          "start": 26.011,
+          "end": 26.343,
+          "frame": 780,
+          "endFrame": 790
+        },
+        {
+          "token": "one",
+          "start": 26.356,
+          "end": 26.596,
+          "frame": 791,
+          "endFrame": 798
+        },
+        {
+          "token": "in",
+          "start": 26.609,
+          "end": 26.755,
+          "frame": 798,
+          "endFrame": 803
+        },
+        {
+          "token": "three",
+          "start": 26.769,
+          "end": 27.008,
+          "frame": 803,
+          "endFrame": 810
+        },
+        {
+          "token": "specialists",
+          "start": 27.021,
+          "end": 27.699,
+          "frame": 811,
+          "endFrame": 831
+        },
+        {
+          "token": "said",
+          "start": 27.713,
+          "end": 27.912,
+          "frame": 831,
+          "endFrame": 837
+        },
+        {
+          "token": "they",
+          "start": 27.926,
+          "end": 28.058,
+          "frame": 838,
+          "endFrame": 842
+        },
+        {
+          "token": "get",
+          "start": 28.072,
+          "end": 28.298,
+          "frame": 842,
+          "endFrame": 849
+        },
+        {
+          "token": "it.",
+          "start": 28.311,
+          "end": 28.63,
+          "frame": 849,
+          "endFrame": 859
+        }
+      ],
+      "to": 869,
+      "speechEnd": 859
+    },
+    {
+      "id": "S7",
+      "text": "Both sides think they did their part. The story gets lost on the way.",
+      "from": 869,
+      "words": [
+        {
+          "token": "Both",
+          "start": 29.082,
+          "end": 29.335,
+          "frame": 872,
+          "endFrame": 880
+        },
+        {
+          "token": "sides",
+          "start": 29.348,
+          "end": 29.721,
+          "frame": 880,
+          "endFrame": 892
+        },
+        {
+          "token": "think",
+          "start": 29.734,
+          "end": 29.973,
+          "frame": 892,
+          "endFrame": 899
+        },
+        {
+          "token": "they",
+          "start": 29.987,
+          "end": 30.093,
+          "frame": 900,
+          "endFrame": 903
+        },
+        {
+          "token": "did",
+          "start": 30.106,
+          "end": 30.293,
+          "frame": 903,
+          "endFrame": 909
+        },
+        {
+          "token": "their",
+          "start": 30.306,
+          "end": 30.452,
+          "frame": 909,
+          "endFrame": 914
+        },
+        {
+          "token": "part.",
+          "start": 30.465,
+          "end": 30.971,
+          "frame": 914,
+          "endFrame": 929
+        },
+        {
+          "token": "The",
+          "start": 31.396,
+          "end": 31.476,
+          "frame": 942,
+          "endFrame": 944
+        },
+        {
+          "token": "story",
+          "start": 31.489,
+          "end": 31.902,
+          "frame": 945,
+          "endFrame": 957
+        },
+        {
+          "token": "gets",
+          "start": 31.915,
+          "end": 32.194,
+          "frame": 957,
+          "endFrame": 966
+        },
+        {
+          "token": "lost",
+          "start": 32.207,
+          "end": 32.62,
+          "frame": 966,
+          "endFrame": 979
+        },
+        {
+          "token": "on",
+          "start": 32.633,
+          "end": 32.753,
+          "frame": 979,
+          "endFrame": 983
+        },
+        {
+          "token": "the",
+          "start": 32.766,
+          "end": 32.872,
+          "frame": 983,
+          "endFrame": 986
+        },
+        {
+          "token": "way.",
+          "start": 32.886,
+          "end": 33.285,
+          "frame": 987,
+          "endFrame": 999
+        }
+      ],
+      "to": 1008,
+      "speechEnd": 999
+    },
+    {
+      "id": "S8",
+      "text": "A referral should travel with the question, the history, and the plan.",
+      "from": 1008,
+      "words": [
+        {
+          "token": "A",
+          "start": 33.71,
+          "end": 33.777,
+          "frame": 1011,
+          "endFrame": 1013
+        },
+        {
+          "token": "referral",
+          "start": 33.79,
+          "end": 34.295,
+          "frame": 1014,
+          "endFrame": 1029
+        },
+        {
+          "token": "should",
+          "start": 34.309,
+          "end": 34.521,
+          "frame": 1029,
+          "endFrame": 1036
+        },
+        {
+          "token": "travel",
+          "start": 34.535,
+          "end": 34.987,
+          "frame": 1036,
+          "endFrame": 1050
+        },
+        {
+          "token": "with",
+          "start": 35.0,
+          "end": 35.146,
+          "frame": 1050,
+          "endFrame": 1054
+        },
+        {
+          "token": "the",
+          "start": 35.16,
+          "end": 35.253,
+          "frame": 1055,
+          "endFrame": 1058
+        },
+        {
+          "token": "question,",
+          "start": 35.266,
+          "end": 35.891,
+          "frame": 1058,
+          "endFrame": 1077
+        },
+        {
+          "token": "the",
+          "start": 36.117,
+          "end": 36.21,
+          "frame": 1084,
+          "endFrame": 1086
+        },
+        {
+          "token": "history,",
+          "start": 36.223,
+          "end": 36.875,
+          "frame": 1087,
+          "endFrame": 1106
+        },
+        {
+          "token": "and",
+          "start": 37.074,
+          "end": 37.207,
+          "frame": 1112,
+          "endFrame": 1116
+        },
+        {
+          "token": "the",
+          "start": 37.221,
+          "end": 37.314,
+          "frame": 1117,
+          "endFrame": 1119
+        },
+        {
+          "token": "plan.",
+          "start": 37.327,
+          "end": 37.886,
+          "frame": 1120,
+          "endFrame": 1137
+        }
+      ],
+      "to": 1147,
+      "speechEnd": 1137
+    },
+    {
+      "id": "S9",
+      "text": "And the answer should come back to the doctor who holds my whole picture, with my next step and its date.",
+      "from": 1147,
+      "words": [
+        {
+          "token": "And",
+          "start": 38.324,
+          "end": 38.431,
+          "frame": 1150,
+          "endFrame": 1153
+        },
+        {
+          "token": "the",
+          "start": 38.444,
+          "end": 38.551,
+          "frame": 1153,
+          "endFrame": 1157
+        },
+        {
+          "token": "answer",
+          "start": 38.564,
+          "end": 38.976,
+          "frame": 1157,
+          "endFrame": 1169
+        },
+        {
+          "token": "should",
+          "start": 38.989,
+          "end": 39.202,
+          "frame": 1170,
+          "endFrame": 1176
+        },
+        {
+          "token": "come",
+          "start": 39.215,
+          "end": 39.415,
+          "frame": 1176,
+          "endFrame": 1182
+        },
+        {
+          "token": "back",
+          "start": 39.428,
+          "end": 39.681,
+          "frame": 1183,
+          "endFrame": 1190
+        },
+        {
+          "token": "to",
+          "start": 39.694,
+          "end": 39.814,
+          "frame": 1191,
+          "endFrame": 1194
+        },
+        {
+          "token": "the",
+          "start": 39.827,
+          "end": 39.96,
+          "frame": 1195,
+          "endFrame": 1199
+        },
+        {
+          "token": "doctor",
+          "start": 39.973,
+          "end": 40.439,
+          "frame": 1199,
+          "endFrame": 1213
+        },
+        {
+          "token": "who",
+          "start": 40.452,
+          "end": 40.598,
+          "frame": 1214,
+          "endFrame": 1218
+        },
+        {
+          "token": "holds",
+          "start": 40.612,
+          "end": 40.904,
+          "frame": 1218,
+          "endFrame": 1227
+        },
+        {
+          "token": "my",
+          "start": 40.918,
+          "end": 41.05,
+          "frame": 1228,
+          "endFrame": 1232
+        },
+        {
+          "token": "whole",
+          "start": 41.064,
+          "end": 41.316,
+          "frame": 1232,
+          "endFrame": 1239
+        },
+        {
+          "token": "picture,",
+          "start": 41.33,
+          "end": 41.835,
+          "frame": 1240,
+          "endFrame": 1255
+        },
+        {
+          "token": "with",
+          "start": 42.168,
+          "end": 42.34,
+          "frame": 1265,
+          "endFrame": 1270
+        },
+        {
+          "token": "my",
+          "start": 42.354,
+          "end": 42.487,
+          "frame": 1271,
+          "endFrame": 1275
+        },
+        {
+          "token": "next",
+          "start": 42.5,
+          "end": 42.859,
+          "frame": 1275,
+          "endFrame": 1286
+        },
+        {
+          "token": "step",
+          "start": 42.872,
+          "end": 43.205,
+          "frame": 1286,
+          "endFrame": 1296
+        },
+        {
+          "token": "and",
+          "start": 43.231,
+          "end": 43.324,
+          "frame": 1297,
+          "endFrame": 1300
+        },
+        {
+          "token": "its",
+          "start": 43.338,
+          "end": 43.524,
+          "frame": 1300,
+          "endFrame": 1306
+        },
+        {
+          "token": "date.",
+          "start": 43.537,
+          "end": 44.029,
+          "frame": 1306,
+          "endFrame": 1321
+        }
+      ],
+      "to": 1331,
+      "speechEnd": 1321
+    },
+    {
+      "id": "S10",
+      "text": "So next time I sit down, nobody has to ask why I'm here.",
+      "from": 1331,
+      "words": [
+        {
+          "token": "So",
+          "start": 44.468,
+          "end": 44.614,
+          "frame": 1334,
+          "endFrame": 1338
+        },
+        {
+          "token": "next",
+          "start": 44.628,
+          "end": 44.973,
+          "frame": 1339,
+          "endFrame": 1349
+        },
+        {
+          "token": "time",
+          "start": 44.987,
+          "end": 45.186,
+          "frame": 1350,
+          "endFrame": 1356
+        },
+        {
+          "token": "I",
+          "start": 45.199,
+          "end": 45.266,
+          "frame": 1356,
+          "endFrame": 1358
+        },
+        {
+          "token": "sit",
+          "start": 45.279,
+          "end": 45.545,
+          "frame": 1358,
+          "endFrame": 1366
+        },
+        {
+          "token": "down,",
+          "start": 45.559,
+          "end": 45.971,
+          "frame": 1367,
+          "endFrame": 1379
+        },
+        {
+          "token": "nobody",
+          "start": 46.263,
+          "end": 46.636,
+          "frame": 1388,
+          "endFrame": 1399
+        },
+        {
+          "token": "has",
+          "start": 46.649,
+          "end": 46.875,
+          "frame": 1399,
+          "endFrame": 1406
+        },
+        {
+          "token": "to",
+          "start": 46.888,
+          "end": 46.995,
+          "frame": 1407,
+          "endFrame": 1410
+        },
+        {
+          "token": "ask",
+          "start": 47.008,
+          "end": 47.354,
+          "frame": 1410,
+          "endFrame": 1421
+        },
+        {
+          "token": "why",
+          "start": 47.367,
+          "end": 47.553,
+          "frame": 1421,
+          "endFrame": 1427
+        },
+        {
+          "token": "I'm",
+          "start": 47.566,
+          "end": 47.739,
+          "frame": 1427,
+          "endFrame": 1432
+        },
+        {
+          "token": "here.",
+          "start": 47.753,
+          "end": 48.205,
+          "frame": 1433,
+          "endFrame": 1446
+        }
+      ],
+      "to": 1507,
+      "speechEnd": 1446
+    }
+  ]
+}
