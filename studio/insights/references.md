@@ -120,3 +120,10 @@ What it does (watched at 1 and 4 fps, transcribed):
 Rule learned from our pilot: the footage is literal. Each line gets the picture it names (a parking lot for "parking lot"); never a generic beautiful background, never the same scene twice.
 
 What we can make: real footage from open-licence libraries (NASA and ESA imagery, Copernicus, USDA NAIP, NIH and CDC public-domain medical images, Wikimedia Commons with credit; stock video with a free Pexels key), animated in Remotion (counters, boxes, glows, stamps, charts drawn onto the footage) with three.js scenes in between (globe, hospital at night, a floating dashboard). Never news or broadcast footage, never other creators' clips.
+
+## 6. Animated flipped explainer (added 2026-11-13, user's own example, shared from Drive)
+
+- A Russian narrator reads a short meditation on the hermetic maxim "Что вверху, то и внизу" (as above, so below): its origin, one law for a star and a speck of dust, a kingdom like a house and a house like its owner, the large already happened in the small, "so a mess on the desk is a mess in the thoughts, lowered to where the eye can see it", whoever can't reach the top starts below (a room, a desk, one shelf), and the top quietly follows; callback to the maxim.
+- Look: near-black background, two small mirrored square frames (above / below) with scattered white strokes, word labels beside them ("мысли" / "стол"), a photographic hand reaches in and the strokes become neat rows; serif subtitles centred under the frames, word-by-word; the maxim as a small header. 58 s, calm low male voice (~111 Hz), ~115 words per minute.
+- What the user wants from it (the genre): start general and very attention-catching, not medical; flip exactly where the general idea maps onto care ("a cluttered treatment plan is a cluttered life"), then medical narration. Copy the structure and pace, never the creator's words, design or voice.
+
