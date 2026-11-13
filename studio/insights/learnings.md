@@ -11,6 +11,7 @@ Rules learned from ratings and real results. Every run reads this first. Maintai
 - Ad tone: slogans, a product name or tagline as the ending ("DOCX · ...", "A plan is."), selling instead of explaining (monitor-not-plan disliked: "like an advertisement", 2026-10-30)
 
 ## User preferences
+- Flipped explainer (F7): the user wants the general opening to be strong and recognisable; for the first test they asked to keep the reference narration word for word up to the flip (translated), and to flip on the line 'a mess on the desk is a mess in the mind' -> 'a mess in the treatment plan is a mess in the patient's life' (2026-11-13). For published reels, write our own general opening in the same register unless the user owns or licenses the source text
 - HOOKS are the weakest part (user, 2026-11-13, after 'why-are-you-here': "hooks still gotta be improved"). Rules for the first 2 seconds:
   1. Land the tension in the first 1.5 s, in under 10 words; no setup clause first ("The specialist looked up from her screen and asked..." took 4 s to reach the point).
   2. Put the viewer in it: "you", or a moment they've lived.

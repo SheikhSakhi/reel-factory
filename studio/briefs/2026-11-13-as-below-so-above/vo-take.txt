@@ -1,13 +1,14 @@
 [S1] NARRATOR: As above, so below. As below, so above.
-[S2] NARRATOR: One of the oldest sentences anyone ever wrote down. And it was never about the sky.
-[S3] NARRATOR: The same law holds a planet in its orbit, and a drop of water on a leaf.
-[S4] NARRATOR: A city mirrors its streets. A home mirrors the one who lives in it.
-[S5] NARRATOR: What you cannot see always shows up in what you can.
-[S6] NARRATOR: That's why a cluttered desk is a cluttered mind, brought down to where the eye can see it.
-[S7] NARRATOR: And a cluttered treatment plan is a cluttered life, brought down onto paper.
-[S8] NARRATOR: Three doctors. Five pills. Two lists that don't agree. A result nobody read.
-[S9] NARRATOR: Up there, the patient only feels it. Worry. A missed dose. A call at midnight.
-[S10] NARRATOR: Down here, you can see it. And what you can see, you can put in order.
-[S11] NARRATOR: One list. One doctor who holds it. One next step, with a date.
-[S12] NARRATOR: The plan gives way easily. And slowly, without anyone noticing, the days begin to follow.
-[S13] NARRATOR: As below, so above.
+[S2] NARRATOR: It is one of the oldest written lines. And it is not about the sky.
+[S3] NARRATOR: A star and a speck of dust obey the same law.
+[S4] NARRATOR: A kingdom is built like a house. And a house, like the one who lives in it.
+[S5] NARRATOR: Everything that happens in the large has already happened in the small.
+[S6] NARRATOR: And everything that happens in the small has already happened within.
+[S7] NARRATOR: That is why a mess on the desk is a mess in the mind, only lowered down, to where the eye can see it.
+[S8] NARRATOR: And a mess in the treatment plan is a mess in the patient's life.
+[S9] NARRATOR: Three doctors. Five pills. Two lists that don't agree. A result nobody read.
+[S10] NARRATOR: Up there, the patient only feels it. Worry. A missed dose. A call at midnight.
+[S11] NARRATOR: Down here, you can see it. And what you can see, you can put in order.
+[S12] NARRATOR: One list. One doctor who holds it. One next step, with a date.
+[S13] NARRATOR: The plan obeys easily. And after a while, without anyone noticing, the days begin to follow.
+[S14] NARRATOR: As below, so above.

@@ -3,7 +3,7 @@
   "voice": "dialogue",
   "rate": "+6%",
   "fps": 30,
-  "totalFrames": 2164,
+  "totalFrames": 2245,
   "cast": {
     "NARRATOR": {
       "voice": "en-IE-ConnorNeural",
@@ -81,1277 +81,1399 @@
     },
     {
       "id": "S2",
-      "text": "One of the oldest sentences anyone ever wrote down. And it was never about the sky.",
+      "text": "It is one of the oldest written lines. And it is not about the sky.",
       "from": 140,
       "words": [
         {
-          "token": "One",
+          "token": "It",
           "start": 4.765,
-          "end": 4.965,
+          "end": 4.885,
           "frame": 143,
-          "endFrame": 149
+          "endFrame": 147
         },
         {
-          "token": "of",
-          "start": 4.965,
-          "end": 5.044,
-          "frame": 149,
+          "token": "is",
+          "start": 4.885,
+          "end": 5.018,
+          "frame": 147,
           "endFrame": 151
         },
         {
-          "token": "the",
-          "start": 5.044,
-          "end": 5.151,
+          "token": "one",
+          "start": 5.031,
+          "end": 5.217,
           "frame": 151,
-          "endFrame": 155
+          "endFrame": 157
+        },
+        {
+          "token": "of",
+          "start": 5.217,
+          "end": 5.297,
+          "frame": 157,
+          "endFrame": 159
+        },
+        {
+          "token": "the",
+          "start": 5.297,
+          "end": 5.404,
+          "frame": 159,
+          "endFrame": 162
         },
         {
           "token": "oldest",
-          "start": 5.244,
-          "end": 5.63,
-          "frame": 157,
-          "endFrame": 169
+          "start": 5.497,
+          "end": 5.842,
+          "frame": 165,
+          "endFrame": 175
         },
         {
-          "token": "sentences",
-          "start": 5.683,
-          "end": 6.281,
-          "frame": 170,
-          "endFrame": 188
+          "token": "written",
+          "start": 5.856,
+          "end": 6.148,
+          "frame": 176,
+          "endFrame": 184
         },
         {
-          "token": "anyone",
-          "start": 6.361,
-          "end": 6.786,
-          "frame": 191,
-          "endFrame": 204
-        },
-        {
-          "token": "ever",
-          "start": 6.866,
-          "end": 7.066,
-          "frame": 206,
-          "endFrame": 212
-        },
-        {
-          "token": "wrote",
-          "start": 7.159,
-          "end": 7.398,
-          "frame": 215,
-          "endFrame": 222
-        },
-        {
-          "token": "down.",
-          "start": 7.438,
-          "end": 7.864,
-          "frame": 223,
-          "endFrame": 236
+          "token": "lines.",
+          "start": 6.148,
+          "end": 6.6,
+          "frame": 184,
+          "endFrame": 198
         },
         {
           "token": "And",
-          "start": 8.784,
-          "end": 8.917,
-          "frame": 264,
-          "endFrame": 268
+          "start": 7.641,
+          "end": 7.774,
+          "frame": 229,
+          "endFrame": 233
         },
         {
           "token": "it",
-          "start": 8.917,
-          "end": 8.984,
-          "frame": 268,
-          "endFrame": 270
+          "start": 7.774,
+          "end": 7.867,
+          "frame": 233,
+          "endFrame": 236
         },
         {
-          "token": "was",
-          "start": 8.997,
-          "end": 9.183,
-          "frame": 270,
-          "endFrame": 275
+          "token": "is",
+          "start": 7.867,
+          "end": 8.0,
+          "frame": 236,
+          "endFrame": 240
         },
         {
-          "token": "never",
-          "start": 9.183,
-          "end": 9.436,
-          "frame": 275,
-          "endFrame": 283
+          "token": "not",
+          "start": 8.026,
+          "end": 8.226,
+          "frame": 241,
+          "endFrame": 247
         },
         {
           "token": "about",
-          "start": 9.463,
-          "end": 9.715,
-          "frame": 284,
-          "endFrame": 291
+          "start": 8.226,
+          "end": 8.492,
+          "frame": 247,
+          "endFrame": 255
         },
         {
           "token": "the",
-          "start": 9.729,
-          "end": 9.795,
-          "frame": 292,
-          "endFrame": 294
+          "start": 8.492,
+          "end": 8.558,
+          "frame": 255,
+          "endFrame": 257
         },
         {
           "token": "sky.",
-          "start": 9.822,
-          "end": 10.207,
-          "frame": 295,
-          "endFrame": 306
+          "start": 8.585,
+          "end": 8.971,
+          "frame": 258,
+          "endFrame": 269
         }
       ],
-      "to": 323,
-      "speechEnd": 306,
+      "to": 285,
+      "speechEnd": 269,
       "speaker": "NARRATOR"
     },
     {
       "id": "S3",
-      "text": "The same law holds a planet in its orbit, and a drop of water on a leaf.",
-      "from": 323,
+      "text": "A star and a speck of dust obey the same law.",
+      "from": 285,
       "words": [
         {
-          "token": "The",
-          "start": 10.85,
-          "end": 10.957,
-          "frame": 326,
-          "endFrame": 329
+          "token": "A",
+          "start": 9.614,
+          "end": 9.707,
+          "frame": 288,
+          "endFrame": 291
         },
         {
-          "token": "same",
-          "start": 10.996,
-          "end": 11.302,
-          "frame": 330,
-          "endFrame": 339
-        },
-        {
-          "token": "law",
-          "start": 11.302,
-          "end": 11.488,
-          "frame": 339,
-          "endFrame": 345
-        },
-        {
-          "token": "holds",
-          "start": 11.542,
-          "end": 11.927,
-          "frame": 346,
-          "endFrame": 358
-        },
-        {
-          "token": "a",
-          "start": 11.927,
-          "end": 11.967,
-          "frame": 358,
-          "endFrame": 359
-        },
-        {
-          "token": "planet",
-          "start": 12.047,
-          "end": 12.393,
-          "frame": 361,
-          "endFrame": 372
-        },
-        {
-          "token": "in",
-          "start": 12.406,
-          "end": 12.512,
-          "frame": 372,
-          "endFrame": 375
-        },
-        {
-          "token": "its",
-          "start": 12.512,
-          "end": 12.645,
-          "frame": 375,
-          "endFrame": 379
-        },
-        {
-          "token": "orbit,",
-          "start": 12.685,
-          "end": 13.058,
-          "frame": 381,
-          "endFrame": 392
+          "token": "star",
+          "start": 9.721,
+          "end": 10.08,
+          "frame": 292,
+          "endFrame": 302
         },
         {
           "token": "and",
-          "start": 13.39,
-          "end": 13.483,
-          "frame": 402,
-          "endFrame": 404
+          "start": 10.093,
+          "end": 10.186,
+          "frame": 303,
+          "endFrame": 306
         },
         {
           "token": "a",
-          "start": 13.483,
-          "end": 13.523,
-          "frame": 404,
-          "endFrame": 406
+          "start": 10.186,
+          "end": 10.239,
+          "frame": 306,
+          "endFrame": 307
         },
         {
-          "token": "drop",
-          "start": 13.59,
-          "end": 13.882,
-          "frame": 408,
-          "endFrame": 416
+          "token": "speck",
+          "start": 10.253,
+          "end": 10.625,
+          "frame": 308,
+          "endFrame": 319
         },
         {
           "token": "of",
-          "start": 13.882,
-          "end": 14.028,
-          "frame": 416,
-          "endFrame": 421
+          "start": 10.625,
+          "end": 10.744,
+          "frame": 319,
+          "endFrame": 322
         },
         {
-          "token": "water",
-          "start": 14.028,
-          "end": 14.401,
-          "frame": 421,
-          "endFrame": 432
+          "token": "dust",
+          "start": 10.758,
+          "end": 10.997,
+          "frame": 323,
+          "endFrame": 330
         },
         {
-          "token": "on",
-          "start": 14.454,
-          "end": 14.627,
-          "frame": 434,
-          "endFrame": 439
+          "token": "obey",
+          "start": 10.997,
+          "end": 11.263,
+          "frame": 330,
+          "endFrame": 338
         },
         {
-          "token": "a",
-          "start": 14.627,
-          "end": 14.667,
-          "frame": 439,
-          "endFrame": 440
+          "token": "the",
+          "start": 11.276,
+          "end": 11.369,
+          "frame": 338,
+          "endFrame": 341
         },
         {
-          "token": "leaf.",
-          "start": 14.72,
-          "end": 15.052,
-          "frame": 442,
-          "endFrame": 452
+          "token": "same",
+          "start": 11.409,
+          "end": 11.715,
+          "frame": 342,
+          "endFrame": 351
+        },
+        {
+          "token": "law.",
+          "start": 11.715,
+          "end": 12.034,
+          "frame": 351,
+          "endFrame": 361
         }
       ],
-      "to": 468,
-      "speechEnd": 452,
+      "to": 377,
+      "speechEnd": 361,
       "speaker": "NARRATOR"
     },
     {
       "id": "S4",
-      "text": "A city mirrors its streets. A home mirrors the one who lives in it.",
-      "from": 468,
+      "text": "A kingdom is built like a house. And a house, like the one who lives in it.",
+      "from": 377,
       "words": [
         {
           "token": "A",
-          "start": 15.695,
-          "end": 15.788,
-          "frame": 471,
-          "endFrame": 474
+          "start": 12.677,
+          "end": 12.744,
+          "frame": 380,
+          "endFrame": 382
         },
         {
-          "token": "city",
-          "start": 15.815,
-          "end": 16.121,
-          "frame": 474,
-          "endFrame": 484
+          "token": "kingdom",
+          "start": 12.81,
+          "end": 13.169,
+          "frame": 384,
+          "endFrame": 395
         },
         {
-          "token": "mirrors",
-          "start": 16.161,
-          "end": 16.546,
-          "frame": 485,
-          "endFrame": 496
+          "token": "is",
+          "start": 13.182,
+          "end": 13.302,
+          "frame": 395,
+          "endFrame": 399
         },
         {
-          "token": "its",
-          "start": 16.586,
-          "end": 16.719,
-          "frame": 498,
-          "endFrame": 502
+          "token": "built",
+          "start": 13.316,
+          "end": 13.568,
+          "frame": 399,
+          "endFrame": 407
         },
         {
-          "token": "streets.",
-          "start": 16.719,
-          "end": 17.264,
-          "frame": 502,
-          "endFrame": 518
+          "token": "like",
+          "start": 13.568,
+          "end": 13.768,
+          "frame": 407,
+          "endFrame": 413
         },
         {
-          "token": "A",
-          "start": 18.252,
-          "end": 18.345,
-          "frame": 548,
-          "endFrame": 550
+          "token": "a",
+          "start": 13.768,
+          "end": 13.794,
+          "frame": 413,
+          "endFrame": 414
         },
         {
-          "token": "home",
-          "start": 18.385,
-          "end": 18.664,
-          "frame": 552,
-          "endFrame": 560
+          "token": "house.",
+          "start": 13.861,
+          "end": 14.3,
+          "frame": 416,
+          "endFrame": 429
         },
         {
-          "token": "mirrors",
-          "start": 18.664,
-          "end": 19.01,
-          "frame": 560,
-          "endFrame": 570
+          "token": "And",
+          "start": 15.3,
+          "end": 15.433,
+          "frame": 459,
+          "endFrame": 463
+        },
+        {
+          "token": "a",
+          "start": 15.433,
+          "end": 15.46,
+          "frame": 463,
+          "endFrame": 464
+        },
+        {
+          "token": "house,",
+          "start": 15.526,
+          "end": 15.978,
+          "frame": 466,
+          "endFrame": 479
+        },
+        {
+          "token": "like",
+          "start": 16.218,
+          "end": 16.417,
+          "frame": 487,
+          "endFrame": 493
         },
         {
           "token": "the",
-          "start": 19.01,
-          "end": 19.129,
-          "frame": 570,
-          "endFrame": 574
+          "start": 16.417,
+          "end": 16.523,
+          "frame": 493,
+          "endFrame": 496
         },
         {
           "token": "one",
-          "start": 19.169,
-          "end": 19.435,
-          "frame": 575,
-          "endFrame": 583
+          "start": 16.55,
+          "end": 16.803,
+          "frame": 497,
+          "endFrame": 504
         },
         {
           "token": "who",
-          "start": 19.448,
-          "end": 19.608,
-          "frame": 583,
-          "endFrame": 588
+          "start": 16.816,
+          "end": 16.962,
+          "frame": 504,
+          "endFrame": 509
         },
         {
           "token": "lives",
-          "start": 19.661,
-          "end": 19.954,
-          "frame": 590,
-          "endFrame": 599
+          "start": 17.015,
+          "end": 17.308,
+          "frame": 510,
+          "endFrame": 519
         },
         {
           "token": "in",
-          "start": 19.954,
-          "end": 20.06,
-          "frame": 599,
-          "endFrame": 602
+          "start": 17.308,
+          "end": 17.414,
+          "frame": 519,
+          "endFrame": 522
         },
         {
           "token": "it.",
-          "start": 20.06,
-          "end": 20.206,
-          "frame": 602,
-          "endFrame": 606
+          "start": 17.414,
+          "end": 17.561,
+          "frame": 522,
+          "endFrame": 527
         }
       ],
-      "to": 622,
-      "speechEnd": 606,
+      "to": 543,
+      "speechEnd": 527,
       "speaker": "NARRATOR"
     },
     {
       "id": "S5",
-      "text": "What you cannot see always shows up in what you can.",
-      "from": 622,
+      "text": "Everything that happens in the large has already happened in the small.",
+      "from": 543,
       "words": [
         {
-          "token": "What",
-          "start": 20.849,
-          "end": 21.075,
-          "frame": 625,
-          "endFrame": 632
+          "token": "Everything",
+          "start": 18.204,
+          "end": 18.643,
+          "frame": 546,
+          "endFrame": 559
         },
         {
-          "token": "you",
-          "start": 21.089,
-          "end": 21.142,
-          "frame": 633,
-          "endFrame": 634
+          "token": "that",
+          "start": 18.696,
+          "end": 18.816,
+          "frame": 561,
+          "endFrame": 564
         },
         {
-          "token": "cannot",
-          "start": 21.208,
-          "end": 21.488,
-          "frame": 636,
-          "endFrame": 645
-        },
-        {
-          "token": "see",
-          "start": 21.488,
-          "end": 21.62,
-          "frame": 645,
-          "endFrame": 649
-        },
-        {
-          "token": "always",
-          "start": 21.7,
-          "end": 22.033,
-          "frame": 651,
-          "endFrame": 661
-        },
-        {
-          "token": "shows",
-          "start": 22.046,
-          "end": 22.352,
-          "frame": 661,
-          "endFrame": 671
-        },
-        {
-          "token": "up",
-          "start": 22.352,
-          "end": 22.538,
-          "frame": 671,
-          "endFrame": 676
+          "token": "happens",
+          "start": 18.829,
+          "end": 19.281,
+          "frame": 565,
+          "endFrame": 578
         },
         {
           "token": "in",
-          "start": 22.578,
-          "end": 22.671,
-          "frame": 677,
-          "endFrame": 680
+          "start": 19.281,
+          "end": 19.348,
+          "frame": 578,
+          "endFrame": 580
         },
         {
-          "token": "what",
-          "start": 22.684,
-          "end": 22.897,
-          "frame": 681,
-          "endFrame": 687
+          "token": "the",
+          "start": 19.414,
+          "end": 19.428,
+          "frame": 582,
+          "endFrame": 583
         },
         {
-          "token": "you",
-          "start": 22.91,
-          "end": 22.964,
-          "frame": 687,
-          "endFrame": 689
+          "token": "large",
+          "start": 19.494,
+          "end": 19.88,
+          "frame": 585,
+          "endFrame": 596
         },
         {
-          "token": "can.",
-          "start": 23.03,
-          "end": 23.416,
-          "frame": 691,
-          "endFrame": 702
+          "token": "has",
+          "start": 19.893,
+          "end": 20.119,
+          "frame": 597,
+          "endFrame": 604
+        },
+        {
+          "token": "already",
+          "start": 20.172,
+          "end": 20.585,
+          "frame": 605,
+          "endFrame": 618
+        },
+        {
+          "token": "happened",
+          "start": 20.624,
+          "end": 21.023,
+          "frame": 619,
+          "endFrame": 631
+        },
+        {
+          "token": "in",
+          "start": 21.037,
+          "end": 21.116,
+          "frame": 631,
+          "endFrame": 633
+        },
+        {
+          "token": "the",
+          "start": 21.156,
+          "end": 21.196,
+          "frame": 635,
+          "endFrame": 636
+        },
+        {
+          "token": "small.",
+          "start": 21.223,
+          "end": 21.662,
+          "frame": 637,
+          "endFrame": 650
         }
       ],
-      "to": 719,
-      "speechEnd": 702,
+      "to": 666,
+      "speechEnd": 650,
       "speaker": "NARRATOR"
     },
     {
       "id": "S6",
-      "text": "That's why a cluttered desk is a cluttered mind, brought down to where the eye can see it.",
-      "from": 719,
+      "text": "And everything that happens in the small has already happened within.",
+      "from": 666,
       "words": [
         {
-          "token": "That's",
-          "start": 24.059,
-          "end": 24.272,
-          "frame": 722,
-          "endFrame": 728
+          "token": "And",
+          "start": 22.305,
+          "end": 22.451,
+          "frame": 669,
+          "endFrame": 674
         },
         {
-          "token": "why",
-          "start": 24.312,
-          "end": 24.511,
-          "frame": 729,
-          "endFrame": 735
+          "token": "everything",
+          "start": 22.491,
+          "end": 22.944,
+          "frame": 675,
+          "endFrame": 688
         },
         {
-          "token": "a",
-          "start": 24.525,
-          "end": 24.578,
-          "frame": 736,
-          "endFrame": 737
+          "token": "that",
+          "start": 22.997,
+          "end": 23.116,
+          "frame": 690,
+          "endFrame": 693
         },
         {
-          "token": "cluttered",
-          "start": 24.644,
-          "end": 25.003,
-          "frame": 739,
-          "endFrame": 750
+          "token": "happens",
+          "start": 23.13,
+          "end": 23.555,
+          "frame": 694,
+          "endFrame": 707
         },
         {
-          "token": "desk",
-          "start": 25.017,
-          "end": 25.376,
-          "frame": 750,
-          "endFrame": 761
-        },
-        {
-          "token": "is",
-          "start": 25.389,
-          "end": 25.535,
-          "frame": 762,
-          "endFrame": 766
-        },
-        {
-          "token": "a",
-          "start": 25.535,
-          "end": 25.575,
-          "frame": 766,
-          "endFrame": 767
-        },
-        {
-          "token": "cluttered",
-          "start": 25.655,
-          "end": 25.987,
-          "frame": 770,
-          "endFrame": 780
-        },
-        {
-          "token": "mind,",
-          "start": 26.001,
-          "end": 26.426,
-          "frame": 780,
-          "endFrame": 793
-        },
-        {
-          "token": "brought",
-          "start": 26.666,
-          "end": 26.958,
-          "frame": 800,
-          "endFrame": 809
-        },
-        {
-          "token": "down",
-          "start": 26.985,
-          "end": 27.197,
-          "frame": 810,
-          "endFrame": 816
-        },
-        {
-          "token": "to",
-          "start": 27.251,
-          "end": 27.304,
-          "frame": 818,
-          "endFrame": 819
-        },
-        {
-          "token": "where",
-          "start": 27.33,
-          "end": 27.53,
-          "frame": 820,
-          "endFrame": 826
+          "token": "in",
+          "start": 23.555,
+          "end": 23.622,
+          "frame": 707,
+          "endFrame": 709
         },
         {
           "token": "the",
-          "start": 27.557,
-          "end": 27.65,
-          "frame": 827,
-          "endFrame": 829
+          "start": 23.675,
+          "end": 23.728,
+          "frame": 710,
+          "endFrame": 712
         },
         {
-          "token": "eye",
-          "start": 27.69,
-          "end": 27.809,
-          "frame": 831,
-          "endFrame": 834
+          "token": "small",
+          "start": 23.755,
+          "end": 24.18,
+          "frame": 713,
+          "endFrame": 725
         },
         {
-          "token": "can",
-          "start": 27.849,
-          "end": 27.969,
-          "frame": 835,
-          "endFrame": 839
+          "token": "has",
+          "start": 24.22,
+          "end": 24.446,
+          "frame": 727,
+          "endFrame": 733
         },
         {
-          "token": "see",
-          "start": 27.995,
-          "end": 28.208,
-          "frame": 840,
-          "endFrame": 846
+          "token": "already",
+          "start": 24.513,
+          "end": 24.912,
+          "frame": 735,
+          "endFrame": 747
         },
         {
-          "token": "it.",
-          "start": 28.221,
-          "end": 28.368,
-          "frame": 847,
-          "endFrame": 851
+          "token": "happened",
+          "start": 24.951,
+          "end": 25.324,
+          "frame": 749,
+          "endFrame": 760
+        },
+        {
+          "token": "within.",
+          "start": 25.337,
+          "end": 25.829,
+          "frame": 760,
+          "endFrame": 775
         }
       ],
-      "to": 867,
-      "speechEnd": 851,
+      "to": 791,
+      "speechEnd": 775,
       "speaker": "NARRATOR"
     },
     {
       "id": "S7",
-      "text": "And a cluttered treatment plan is a cluttered life, brought down onto paper.",
-      "from": 867,
+      "text": "That is why a mess on the desk is a mess in the mind, only lowered down, to where the eye can see it.",
+      "from": 791,
       "words": [
         {
-          "token": "And",
-          "start": 29.011,
-          "end": 29.144,
-          "frame": 870,
-          "endFrame": 874
-        },
-        {
-          "token": "a",
-          "start": 29.144,
-          "end": 29.184,
-          "frame": 874,
-          "endFrame": 876
-        },
-        {
-          "token": "cluttered",
-          "start": 29.264,
-          "end": 29.636,
-          "frame": 878,
-          "endFrame": 889
-        },
-        {
-          "token": "treatment",
-          "start": 29.65,
-          "end": 30.035,
-          "frame": 889,
-          "endFrame": 901
-        },
-        {
-          "token": "plan",
-          "start": 30.102,
-          "end": 30.407,
-          "frame": 903,
-          "endFrame": 912
+          "token": "That",
+          "start": 26.472,
+          "end": 26.645,
+          "frame": 794,
+          "endFrame": 799
         },
         {
           "token": "is",
-          "start": 30.434,
-          "end": 30.58,
-          "frame": 913,
-          "endFrame": 917
+          "start": 26.645,
+          "end": 26.778,
+          "frame": 799,
+          "endFrame": 803
+        },
+        {
+          "token": "why",
+          "start": 26.805,
+          "end": 26.978,
+          "frame": 804,
+          "endFrame": 809
         },
         {
           "token": "a",
-          "start": 30.58,
-          "end": 30.607,
-          "frame": 917,
-          "endFrame": 918
+          "start": 26.991,
+          "end": 27.044,
+          "frame": 810,
+          "endFrame": 811
         },
         {
-          "token": "cluttered",
-          "start": 30.687,
-          "end": 31.032,
+          "token": "mess",
+          "start": 27.071,
+          "end": 27.376,
+          "frame": 812,
+          "endFrame": 821
+        },
+        {
+          "token": "on",
+          "start": 27.376,
+          "end": 27.483,
+          "frame": 821,
+          "endFrame": 824
+        },
+        {
+          "token": "the",
+          "start": 27.523,
+          "end": 27.563,
+          "frame": 826,
+          "endFrame": 827
+        },
+        {
+          "token": "desk",
+          "start": 27.629,
+          "end": 27.988,
+          "frame": 829,
+          "endFrame": 840
+        },
+        {
+          "token": "is",
+          "start": 28.001,
+          "end": 28.148,
+          "frame": 840,
+          "endFrame": 844
+        },
+        {
+          "token": "a",
+          "start": 28.148,
+          "end": 28.201,
+          "frame": 844,
+          "endFrame": 846
+        },
+        {
+          "token": "mess",
+          "start": 28.228,
+          "end": 28.533,
+          "frame": 847,
+          "endFrame": 856
+        },
+        {
+          "token": "in",
+          "start": 28.533,
+          "end": 28.587,
+          "frame": 856,
+          "endFrame": 858
+        },
+        {
+          "token": "the",
+          "start": 28.653,
+          "end": 28.693,
+          "frame": 860,
+          "endFrame": 861
+        },
+        {
+          "token": "mind,",
+          "start": 28.72,
+          "end": 29.132,
+          "frame": 862,
+          "endFrame": 874
+        },
+        {
+          "token": "only",
+          "start": 29.464,
+          "end": 29.664,
+          "frame": 884,
+          "endFrame": 890
+        },
+        {
+          "token": "lowered",
+          "start": 29.704,
+          "end": 30.036,
+          "frame": 891,
+          "endFrame": 901
+        },
+        {
+          "token": "down,",
+          "start": 30.063,
+          "end": 30.462,
+          "frame": 902,
+          "endFrame": 914
+        },
+        {
+          "token": "to",
+          "start": 30.714,
+          "end": 30.767,
           "frame": 921,
-          "endFrame": 931
+          "endFrame": 923
         },
         {
-          "token": "life,",
-          "start": 31.032,
-          "end": 31.391,
-          "frame": 931,
-          "endFrame": 942
+          "token": "where",
+          "start": 30.781,
+          "end": 30.967,
+          "frame": 923,
+          "endFrame": 929
         },
         {
-          "token": "brought",
-          "start": 31.631,
-          "end": 31.923,
-          "frame": 949,
-          "endFrame": 958
+          "token": "the",
+          "start": 30.993,
+          "end": 31.087,
+          "frame": 930,
+          "endFrame": 933
         },
         {
-          "token": "down",
-          "start": 31.963,
-          "end": 32.216,
-          "frame": 959,
-          "endFrame": 966
+          "token": "eye",
+          "start": 31.126,
+          "end": 31.246,
+          "frame": 934,
+          "endFrame": 937
         },
         {
-          "token": "onto",
-          "start": 32.229,
-          "end": 32.562,
-          "frame": 967,
-          "endFrame": 977
+          "token": "can",
+          "start": 31.286,
+          "end": 31.419,
+          "frame": 939,
+          "endFrame": 943
         },
         {
-          "token": "paper.",
-          "start": 32.628,
-          "end": 32.987,
-          "frame": 979,
-          "endFrame": 990
+          "token": "see",
+          "start": 31.446,
+          "end": 31.658,
+          "frame": 943,
+          "endFrame": 950
+        },
+        {
+          "token": "it.",
+          "start": 31.672,
+          "end": 31.831,
+          "frame": 950,
+          "endFrame": 955
         }
       ],
-      "to": 1006,
-      "speechEnd": 990,
+      "to": 971,
+      "speechEnd": 955,
       "speaker": "NARRATOR"
     },
     {
       "id": "S8",
-      "text": "Three doctors. Five pills. Two lists that don't agree. A result nobody read.",
-      "from": 1006,
+      "text": "And a mess in the treatment plan is a mess in the patient's life.",
+      "from": 971,
       "words": [
         {
-          "token": "Three",
-          "start": 33.63,
-          "end": 33.856,
-          "frame": 1009,
-          "endFrame": 1016
+          "token": "And",
+          "start": 32.474,
+          "end": 32.607,
+          "frame": 974,
+          "endFrame": 978
         },
         {
-          "token": "doctors.",
-          "start": 33.909,
-          "end": 34.428,
-          "frame": 1017,
-          "endFrame": 1033
+          "token": "a",
+          "start": 32.607,
+          "end": 32.647,
+          "frame": 978,
+          "endFrame": 979
         },
         {
-          "token": "Five",
-          "start": 35.442,
-          "end": 35.801,
-          "frame": 1063,
-          "endFrame": 1074
+          "token": "mess",
+          "start": 32.674,
+          "end": 32.979,
+          "frame": 980,
+          "endFrame": 989
         },
         {
-          "token": "pills.",
-          "start": 35.828,
-          "end": 36.266,
-          "frame": 1075,
-          "endFrame": 1088
+          "token": "in",
+          "start": 32.98,
+          "end": 33.046,
+          "frame": 989,
+          "endFrame": 991
         },
         {
-          "token": "Two",
-          "start": 37.264,
-          "end": 37.476,
-          "frame": 1118,
-          "endFrame": 1124
+          "token": "the",
+          "start": 33.099,
+          "end": 33.152,
+          "frame": 993,
+          "endFrame": 995
         },
         {
-          "token": "lists",
-          "start": 37.556,
-          "end": 37.982,
-          "frame": 1127,
-          "endFrame": 1139
+          "token": "treatment",
+          "start": 33.219,
+          "end": 33.591,
+          "frame": 997,
+          "endFrame": 1008
         },
         {
-          "token": "that",
-          "start": 37.995,
-          "end": 38.208,
-          "frame": 1140,
-          "endFrame": 1146
+          "token": "plan",
+          "start": 33.658,
+          "end": 33.964,
+          "frame": 1010,
+          "endFrame": 1019
         },
         {
-          "token": "don't",
-          "start": 38.248,
-          "end": 38.447,
-          "frame": 1147,
-          "endFrame": 1153
+          "token": "is",
+          "start": 34.003,
+          "end": 34.15,
+          "frame": 1020,
+          "endFrame": 1024
         },
         {
-          "token": "agree.",
-          "start": 38.447,
-          "end": 38.859,
-          "frame": 1153,
-          "endFrame": 1166
+          "token": "a",
+          "start": 34.15,
+          "end": 34.19,
+          "frame": 1024,
+          "endFrame": 1026
         },
         {
-          "token": "A",
-          "start": 39.897,
-          "end": 39.963,
-          "frame": 1197,
-          "endFrame": 1199
+          "token": "mess",
+          "start": 34.216,
+          "end": 34.535,
+          "frame": 1026,
+          "endFrame": 1036
         },
         {
-          "token": "result",
-          "start": 40.016,
-          "end": 40.455,
-          "frame": 1200,
-          "endFrame": 1214
+          "token": "in",
+          "start": 34.535,
+          "end": 34.589,
+          "frame": 1036,
+          "endFrame": 1038
         },
         {
-          "token": "nobody",
-          "start": 40.522,
-          "end": 40.934,
-          "frame": 1216,
-          "endFrame": 1228
+          "token": "the",
+          "start": 34.642,
+          "end": 34.682,
+          "frame": 1039,
+          "endFrame": 1040
         },
         {
-          "token": "read.",
-          "start": 41.0,
-          "end": 41.373,
-          "frame": 1230,
-          "endFrame": 1241
+          "token": "patient's",
+          "start": 34.761,
+          "end": 35.174,
+          "frame": 1043,
+          "endFrame": 1055
+        },
+        {
+          "token": "life.",
+          "start": 35.174,
+          "end": 35.519,
+          "frame": 1055,
+          "endFrame": 1066
         }
       ],
-      "to": 1257,
-      "speechEnd": 1241,
+      "to": 1082,
+      "speechEnd": 1066,
       "speaker": "NARRATOR"
     },
     {
       "id": "S9",
-      "text": "Up there, the patient only feels it. Worry. A missed dose. A call at midnight.",
-      "from": 1257,
+      "text": "Three doctors. Five pills. Two lists that don't agree. A result nobody read.",
+      "from": 1082,
       "words": [
         {
-          "token": "Up",
-          "start": 42.016,
-          "end": 42.216,
-          "frame": 1260,
-          "endFrame": 1266
+          "token": "Three",
+          "start": 36.162,
+          "end": 36.388,
+          "frame": 1085,
+          "endFrame": 1092
         },
         {
-          "token": "there,",
-          "start": 42.229,
-          "end": 42.508,
-          "frame": 1267,
+          "token": "doctors.",
+          "start": 36.441,
+          "end": 36.96,
+          "frame": 1093,
+          "endFrame": 1109
+        },
+        {
+          "token": "Five",
+          "start": 37.974,
+          "end": 38.333,
+          "frame": 1139,
+          "endFrame": 1150
+        },
+        {
+          "token": "pills.",
+          "start": 38.36,
+          "end": 38.798,
+          "frame": 1151,
+          "endFrame": 1164
+        },
+        {
+          "token": "Two",
+          "start": 39.796,
+          "end": 40.008,
+          "frame": 1194,
+          "endFrame": 1200
+        },
+        {
+          "token": "lists",
+          "start": 40.088,
+          "end": 40.514,
+          "frame": 1203,
+          "endFrame": 1215
+        },
+        {
+          "token": "that",
+          "start": 40.527,
+          "end": 40.74,
+          "frame": 1216,
+          "endFrame": 1222
+        },
+        {
+          "token": "don't",
+          "start": 40.78,
+          "end": 40.979,
+          "frame": 1223,
+          "endFrame": 1229
+        },
+        {
+          "token": "agree.",
+          "start": 40.979,
+          "end": 41.391,
+          "frame": 1229,
+          "endFrame": 1242
+        },
+        {
+          "token": "A",
+          "start": 42.429,
+          "end": 42.495,
+          "frame": 1273,
           "endFrame": 1275
         },
         {
-          "token": "the",
-          "start": 42.708,
-          "end": 42.801,
-          "frame": 1281,
-          "endFrame": 1284
+          "token": "result",
+          "start": 42.548,
+          "end": 42.987,
+          "frame": 1276,
+          "endFrame": 1290
         },
         {
-          "token": "patient",
-          "start": 42.867,
-          "end": 43.24,
-          "frame": 1286,
-          "endFrame": 1297
+          "token": "nobody",
+          "start": 43.054,
+          "end": 43.466,
+          "frame": 1292,
+          "endFrame": 1304
         },
         {
-          "token": "only",
-          "start": 43.306,
-          "end": 43.559,
-          "frame": 1299,
-          "endFrame": 1307
-        },
-        {
-          "token": "feels",
-          "start": 43.585,
-          "end": 43.971,
-          "frame": 1308,
-          "endFrame": 1319
-        },
-        {
-          "token": "it.",
-          "start": 43.971,
-          "end": 44.117,
-          "frame": 1319,
-          "endFrame": 1324
-        },
-        {
-          "token": "Worry.",
-          "start": 45.131,
-          "end": 45.517,
-          "frame": 1354,
-          "endFrame": 1366
-        },
-        {
-          "token": "A",
-          "start": 46.541,
-          "end": 46.647,
-          "frame": 1396,
-          "endFrame": 1399
-        },
-        {
-          "token": "missed",
-          "start": 46.66,
-          "end": 46.979,
-          "frame": 1400,
-          "endFrame": 1409
-        },
-        {
-          "token": "dose.",
-          "start": 46.98,
-          "end": 47.392,
-          "frame": 1409,
-          "endFrame": 1422
-        },
-        {
-          "token": "A",
-          "start": 48.389,
-          "end": 48.495,
-          "frame": 1452,
-          "endFrame": 1455
-        },
-        {
-          "token": "call",
-          "start": 48.575,
-          "end": 48.855,
-          "frame": 1457,
-          "endFrame": 1466
-        },
-        {
-          "token": "at",
-          "start": 48.868,
-          "end": 49.001,
-          "frame": 1466,
-          "endFrame": 1470
-        },
-        {
-          "token": "midnight.",
-          "start": 49.027,
-          "end": 49.506,
-          "frame": 1471,
-          "endFrame": 1485
+          "token": "read.",
+          "start": 43.532,
+          "end": 43.905,
+          "frame": 1306,
+          "endFrame": 1317
         }
       ],
-      "to": 1501,
-      "speechEnd": 1485,
+      "to": 1333,
+      "speechEnd": 1317,
       "speaker": "NARRATOR"
     },
     {
       "id": "S10",
-      "text": "Down here, you can see it. And what you can see, you can put in order.",
-      "from": 1501,
+      "text": "Up there, the patient only feels it. Worry. A missed dose. A call at midnight.",
+      "from": 1333,
       "words": [
         {
-          "token": "Down",
-          "start": 50.149,
-          "end": 50.428,
-          "frame": 1504,
-          "endFrame": 1513
+          "token": "Up",
+          "start": 44.548,
+          "end": 44.748,
+          "frame": 1336,
+          "endFrame": 1342
         },
         {
-          "token": "here,",
-          "start": 50.428,
-          "end": 50.734,
-          "frame": 1513,
-          "endFrame": 1522
+          "token": "there,",
+          "start": 44.761,
+          "end": 45.04,
+          "frame": 1343,
+          "endFrame": 1351
         },
         {
-          "token": "you",
-          "start": 51.014,
-          "end": 51.093,
-          "frame": 1530,
-          "endFrame": 1533
+          "token": "the",
+          "start": 45.24,
+          "end": 45.333,
+          "frame": 1357,
+          "endFrame": 1360
         },
         {
-          "token": "can",
-          "start": 51.133,
-          "end": 51.266,
-          "frame": 1534,
-          "endFrame": 1538
+          "token": "patient",
+          "start": 45.399,
+          "end": 45.772,
+          "frame": 1362,
+          "endFrame": 1373
         },
         {
-          "token": "see",
-          "start": 51.293,
-          "end": 51.506,
-          "frame": 1539,
-          "endFrame": 1545
+          "token": "only",
+          "start": 45.838,
+          "end": 46.091,
+          "frame": 1375,
+          "endFrame": 1383
+        },
+        {
+          "token": "feels",
+          "start": 46.117,
+          "end": 46.503,
+          "frame": 1384,
+          "endFrame": 1395
         },
         {
           "token": "it.",
-          "start": 51.532,
-          "end": 51.678,
-          "frame": 1546,
-          "endFrame": 1550
+          "start": 46.503,
+          "end": 46.649,
+          "frame": 1395,
+          "endFrame": 1399
         },
         {
-          "token": "And",
-          "start": 52.692,
-          "end": 52.799,
-          "frame": 1581,
-          "endFrame": 1584
+          "token": "Worry.",
+          "start": 47.663,
+          "end": 48.049,
+          "frame": 1430,
+          "endFrame": 1441
         },
         {
-          "token": "what",
-          "start": 52.799,
-          "end": 53.011,
-          "frame": 1584,
-          "endFrame": 1590
+          "token": "A",
+          "start": 49.073,
+          "end": 49.179,
+          "frame": 1472,
+          "endFrame": 1475
         },
         {
-          "token": "you",
-          "start": 53.025,
-          "end": 53.065,
-          "frame": 1591,
-          "endFrame": 1592
+          "token": "missed",
+          "start": 49.192,
+          "end": 49.511,
+          "frame": 1476,
+          "endFrame": 1485
         },
         {
-          "token": "can",
-          "start": 53.118,
-          "end": 53.224,
-          "frame": 1594,
-          "endFrame": 1597
+          "token": "dose.",
+          "start": 49.512,
+          "end": 49.924,
+          "frame": 1485,
+          "endFrame": 1498
         },
         {
-          "token": "see,",
-          "start": 53.251,
-          "end": 53.557,
-          "frame": 1598,
-          "endFrame": 1607
+          "token": "A",
+          "start": 50.921,
+          "end": 51.027,
+          "frame": 1528,
+          "endFrame": 1531
         },
         {
-          "token": "you",
-          "start": 53.823,
-          "end": 53.902,
-          "frame": 1615,
-          "endFrame": 1617
+          "token": "call",
+          "start": 51.107,
+          "end": 51.387,
+          "frame": 1533,
+          "endFrame": 1542
         },
         {
-          "token": "can",
-          "start": 53.929,
-          "end": 54.035,
-          "frame": 1618,
-          "endFrame": 1621
+          "token": "at",
+          "start": 51.4,
+          "end": 51.533,
+          "frame": 1542,
+          "endFrame": 1546
         },
         {
-          "token": "put",
-          "start": 54.102,
-          "end": 54.275,
-          "frame": 1623,
-          "endFrame": 1628
-        },
-        {
-          "token": "in",
-          "start": 54.275,
-          "end": 54.381,
-          "frame": 1628,
-          "endFrame": 1631
-        },
-        {
-          "token": "order.",
-          "start": 54.381,
-          "end": 54.714,
-          "frame": 1631,
-          "endFrame": 1641
+          "token": "midnight.",
+          "start": 51.559,
+          "end": 52.038,
+          "frame": 1547,
+          "endFrame": 1561
         }
       ],
-      "to": 1658,
-      "speechEnd": 1641,
+      "to": 1577,
+      "speechEnd": 1561,
       "speaker": "NARRATOR"
     },
     {
       "id": "S11",
-      "text": "One list. One doctor who holds it. One next step, with a date.",
-      "from": 1658,
+      "text": "Down here, you can see it. And what you can see, you can put in order.",
+      "from": 1577,
       "words": [
         {
-          "token": "One",
-          "start": 55.357,
-          "end": 55.583,
-          "frame": 1661,
-          "endFrame": 1667
+          "token": "Down",
+          "start": 52.681,
+          "end": 52.96,
+          "frame": 1580,
+          "endFrame": 1589
         },
         {
-          "token": "list.",
-          "start": 55.597,
-          "end": 55.995,
-          "frame": 1668,
-          "endFrame": 1680
+          "token": "here,",
+          "start": 52.96,
+          "end": 53.266,
+          "frame": 1589,
+          "endFrame": 1598
         },
         {
-          "token": "One",
-          "start": 57.009,
-          "end": 57.235,
-          "frame": 1710,
-          "endFrame": 1717
+          "token": "you",
+          "start": 53.546,
+          "end": 53.625,
+          "frame": 1606,
+          "endFrame": 1609
         },
         {
-          "token": "doctor",
-          "start": 57.275,
-          "end": 57.648,
-          "frame": 1718,
-          "endFrame": 1729
+          "token": "can",
+          "start": 53.665,
+          "end": 53.798,
+          "frame": 1610,
+          "endFrame": 1614
         },
         {
-          "token": "who",
-          "start": 57.688,
-          "end": 57.807,
-          "frame": 1731,
-          "endFrame": 1734
-        },
-        {
-          "token": "holds",
-          "start": 57.86,
-          "end": 58.286,
-          "frame": 1736,
-          "endFrame": 1749
+          "token": "see",
+          "start": 53.825,
+          "end": 54.038,
+          "frame": 1615,
+          "endFrame": 1621
         },
         {
           "token": "it.",
-          "start": 58.286,
-          "end": 58.459,
-          "frame": 1749,
-          "endFrame": 1754
+          "start": 54.064,
+          "end": 54.21,
+          "frame": 1622,
+          "endFrame": 1626
         },
         {
-          "token": "One",
-          "start": 59.469,
-          "end": 59.722,
-          "frame": 1784,
-          "endFrame": 1792
+          "token": "And",
+          "start": 55.224,
+          "end": 55.331,
+          "frame": 1657,
+          "endFrame": 1660
         },
         {
-          "token": "next",
-          "start": 59.735,
-          "end": 60.001,
-          "frame": 1792,
-          "endFrame": 1800
+          "token": "what",
+          "start": 55.331,
+          "end": 55.543,
+          "frame": 1660,
+          "endFrame": 1666
         },
         {
-          "token": "step,",
-          "start": 60.001,
-          "end": 60.414,
-          "frame": 1800,
-          "endFrame": 1812
+          "token": "you",
+          "start": 55.557,
+          "end": 55.597,
+          "frame": 1667,
+          "endFrame": 1668
         },
         {
-          "token": "with",
-          "start": 60.64,
-          "end": 60.759,
-          "frame": 1819,
-          "endFrame": 1823
+          "token": "can",
+          "start": 55.65,
+          "end": 55.756,
+          "frame": 1669,
+          "endFrame": 1673
         },
         {
-          "token": "a",
-          "start": 60.759,
-          "end": 60.799,
-          "frame": 1823,
-          "endFrame": 1824
+          "token": "see,",
+          "start": 55.783,
+          "end": 56.089,
+          "frame": 1673,
+          "endFrame": 1683
         },
         {
-          "token": "date.",
-          "start": 60.879,
-          "end": 61.185,
-          "frame": 1826,
-          "endFrame": 1836
+          "token": "you",
+          "start": 56.355,
+          "end": 56.434,
+          "frame": 1691,
+          "endFrame": 1693
+        },
+        {
+          "token": "can",
+          "start": 56.461,
+          "end": 56.567,
+          "frame": 1694,
+          "endFrame": 1697
+        },
+        {
+          "token": "put",
+          "start": 56.634,
+          "end": 56.807,
+          "frame": 1699,
+          "endFrame": 1704
+        },
+        {
+          "token": "in",
+          "start": 56.807,
+          "end": 56.913,
+          "frame": 1704,
+          "endFrame": 1707
+        },
+        {
+          "token": "order.",
+          "start": 56.913,
+          "end": 57.246,
+          "frame": 1707,
+          "endFrame": 1717
         }
       ],
-      "to": 1852,
-      "speechEnd": 1836,
+      "to": 1734,
+      "speechEnd": 1717,
       "speaker": "NARRATOR"
     },
     {
       "id": "S12",
-      "text": "The plan gives way easily. And slowly, without anyone noticing, the days begin to follow.",
-      "from": 1852,
+      "text": "One list. One doctor who holds it. One next step, with a date.",
+      "from": 1734,
       "words": [
         {
-          "token": "The",
-          "start": 61.828,
-          "end": 61.908,
-          "frame": 1855,
-          "endFrame": 1857
+          "token": "One",
+          "start": 57.889,
+          "end": 58.115,
+          "frame": 1737,
+          "endFrame": 1743
         },
         {
-          "token": "plan",
-          "start": 61.988,
+          "token": "list.",
+          "start": 58.129,
+          "end": 58.527,
+          "frame": 1744,
+          "endFrame": 1756
+        },
+        {
+          "token": "One",
+          "start": 59.541,
+          "end": 59.767,
+          "frame": 1786,
+          "endFrame": 1793
+        },
+        {
+          "token": "doctor",
+          "start": 59.807,
+          "end": 60.18,
+          "frame": 1794,
+          "endFrame": 1805
+        },
+        {
+          "token": "who",
+          "start": 60.22,
+          "end": 60.339,
+          "frame": 1807,
+          "endFrame": 1810
+        },
+        {
+          "token": "holds",
+          "start": 60.392,
+          "end": 60.818,
+          "frame": 1812,
+          "endFrame": 1825
+        },
+        {
+          "token": "it.",
+          "start": 60.818,
+          "end": 60.991,
+          "frame": 1825,
+          "endFrame": 1830
+        },
+        {
+          "token": "One",
+          "start": 62.001,
           "end": 62.254,
           "frame": 1860,
           "endFrame": 1868
         },
         {
-          "token": "gives",
-          "start": 62.32,
-          "end": 62.599,
-          "frame": 1870,
-          "endFrame": 1878
+          "token": "next",
+          "start": 62.267,
+          "end": 62.533,
+          "frame": 1868,
+          "endFrame": 1876
         },
         {
-          "token": "way",
-          "start": 62.626,
-          "end": 62.786,
-          "frame": 1879,
-          "endFrame": 1884
+          "token": "step,",
+          "start": 62.533,
+          "end": 62.946,
+          "frame": 1876,
+          "endFrame": 1888
         },
         {
-          "token": "easily.",
-          "start": 62.865,
+          "token": "with",
+          "start": 63.172,
           "end": 63.291,
-          "frame": 1886,
+          "frame": 1895,
           "endFrame": 1899
         },
         {
-          "token": "And",
-          "start": 64.278,
-          "end": 64.438,
-          "frame": 1928,
-          "endFrame": 1933
+          "token": "a",
+          "start": 63.291,
+          "end": 63.331,
+          "frame": 1899,
+          "endFrame": 1900
         },
         {
-          "token": "slowly,",
-          "start": 64.451,
-          "end": 64.903,
-          "frame": 1934,
-          "endFrame": 1947
-        },
-        {
-          "token": "without",
-          "start": 65.143,
-          "end": 65.448,
-          "frame": 1954,
-          "endFrame": 1963
-        },
-        {
-          "token": "anyone",
-          "start": 65.515,
-          "end": 65.887,
-          "frame": 1965,
-          "endFrame": 1977
-        },
-        {
-          "token": "noticing,",
-          "start": 65.887,
-          "end": 66.472,
-          "frame": 1977,
-          "endFrame": 1994
-        },
-        {
-          "token": "the",
-          "start": 66.659,
-          "end": 66.725,
-          "frame": 2000,
-          "endFrame": 2002
-        },
-        {
-          "token": "days",
-          "start": 66.805,
-          "end": 67.097,
-          "frame": 2004,
-          "endFrame": 2013
-        },
-        {
-          "token": "begin",
-          "start": 67.111,
-          "end": 67.456,
-          "frame": 2013,
-          "endFrame": 2024
-        },
-        {
-          "token": "to",
-          "start": 67.51,
-          "end": 67.576,
-          "frame": 2025,
-          "endFrame": 2027
-        },
-        {
-          "token": "follow.",
-          "start": 67.603,
-          "end": 67.988,
-          "frame": 2028,
-          "endFrame": 2040
+          "token": "date.",
+          "start": 63.411,
+          "end": 63.717,
+          "frame": 1902,
+          "endFrame": 1912
         }
       ],
-      "to": 2056,
-      "speechEnd": 2040,
+      "to": 1928,
+      "speechEnd": 1912,
       "speaker": "NARRATOR"
     },
     {
       "id": "S13",
-      "text": "As below, so above.",
-      "from": 2056,
+      "text": "The plan obeys easily. And after a while, without anyone noticing, the days begin to follow.",
+      "from": 1928,
       "words": [
         {
-          "token": "As",
-          "start": 68.631,
-          "end": 68.817,
-          "frame": 2059,
-          "endFrame": 2065
+          "token": "The",
+          "start": 64.36,
+          "end": 64.44,
+          "frame": 1931,
+          "endFrame": 1933
         },
         {
-          "token": "below,",
-          "start": 68.831,
-          "end": 69.216,
-          "frame": 2065,
+          "token": "plan",
+          "start": 64.52,
+          "end": 64.786,
+          "frame": 1936,
+          "endFrame": 1944
+        },
+        {
+          "token": "obeys",
+          "start": 64.786,
+          "end": 65.185,
+          "frame": 1944,
+          "endFrame": 1956
+        },
+        {
+          "token": "easily.",
+          "start": 65.238,
+          "end": 65.677,
+          "frame": 1957,
+          "endFrame": 1970
+        },
+        {
+          "token": "And",
+          "start": 66.664,
+          "end": 66.81,
+          "frame": 2000,
+          "endFrame": 2004
+        },
+        {
+          "token": "after",
+          "start": 66.81,
+          "end": 67.103,
+          "frame": 2004,
+          "endFrame": 2013
+        },
+        {
+          "token": "a",
+          "start": 67.156,
+          "end": 67.156,
+          "frame": 2015,
+          "endFrame": 2015
+        },
+        {
+          "token": "while,",
+          "start": 67.249,
+          "end": 67.635,
+          "frame": 2017,
+          "endFrame": 2029
+        },
+        {
+          "token": "without",
+          "start": 67.887,
+          "end": 68.18,
+          "frame": 2037,
+          "endFrame": 2045
+        },
+        {
+          "token": "anyone",
+          "start": 68.246,
+          "end": 68.619,
+          "frame": 2047,
+          "endFrame": 2059
+        },
+        {
+          "token": "noticing,",
+          "start": 68.619,
+          "end": 69.204,
+          "frame": 2059,
           "endFrame": 2076
         },
         {
+          "token": "the",
+          "start": 69.39,
+          "end": 69.456,
+          "frame": 2082,
+          "endFrame": 2084
+        },
+        {
+          "token": "days",
+          "start": 69.536,
+          "end": 69.816,
+          "frame": 2086,
+          "endFrame": 2094
+        },
+        {
+          "token": "begin",
+          "start": 69.829,
+          "end": 70.175,
+          "frame": 2095,
+          "endFrame": 2105
+        },
+        {
+          "token": "to",
+          "start": 70.228,
+          "end": 70.294,
+          "frame": 2107,
+          "endFrame": 2109
+        },
+        {
+          "token": "follow.",
+          "start": 70.321,
+          "end": 70.693,
+          "frame": 2110,
+          "endFrame": 2121
+        }
+      ],
+      "to": 2137,
+      "speechEnd": 2121,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S14",
+      "text": "As below, so above.",
+      "from": 2137,
+      "words": [
+        {
+          "token": "As",
+          "start": 71.336,
+          "end": 71.522,
+          "frame": 2140,
+          "endFrame": 2146
+        },
+        {
+          "token": "below,",
+          "start": 71.536,
+          "end": 71.921,
+          "frame": 2146,
+          "endFrame": 2158
+        },
+        {
           "token": "so",
-          "start": 69.456,
-          "end": 69.629,
-          "frame": 2084,
-          "endFrame": 2089
+          "start": 72.161,
+          "end": 72.334,
+          "frame": 2165,
+          "endFrame": 2170
         },
         {
           "token": "above.",
-          "start": 69.695,
-          "end": 70.121,
-          "frame": 2091,
-          "endFrame": 2104
+          "start": 72.4,
+          "end": 72.826,
+          "frame": 2172,
+          "endFrame": 2185
         }
       ],
-      "to": 2164,
-      "speechEnd": 2104,
+      "to": 2245,
+      "speechEnd": 2185,
       "speaker": "NARRATOR"
     }
   ]

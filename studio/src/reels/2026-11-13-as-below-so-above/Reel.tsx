@@ -88,8 +88,8 @@ const Envelope: React.FC<{ x: number; y: number; r: number; c?: string }> = ({ x
 
 /** The patient's plan below: clutter (t=0) to one list, one doctor, one next date (t=1). */
 const PlanBelow: React.FC<{ f: number }> = ({ f }) => {
-  const s8 = (w: string) => progress(f, W("S8", w) - 3, 8);
-  const ordered = (w: string) => progress(f, W("S11", w) - 4, 22);
+  const s8 = (w: string) => progress(f, W("S9", w) - 3, 8);
+  const ordered = (w: string) => progress(f, W("S12", w) - 4, 22);
   const tList = ordered("list"), tDoc = ordered("doctor"), tDate = ordered("next");
   const mix = (a: number, b: number, t: number) => a + (b - a) * t;
   return (
@@ -136,18 +136,25 @@ const Stars: React.FC<{ seed: number; f: number; tiny?: boolean }> = ({ seed, f,
   );
 };
 
+const Within: React.FC<{ big?: boolean }> = ({ big }) => (
+  <g>{(big ? [150, 110, 70, 30] : [60, 30]).map((r) => <circle key={r} cx={0} cy={0} r={r} fill="none" stroke={LINE} strokeWidth={2.5} opacity={Math.min(1, 0.4 + 30 / r)} />)}
+    <circle cx={0} cy={0} r={6} fill={LINE} /></g>
+);
+const Orbit: React.FC<{ f: number }> = ({ f }) => (
+  <g><ellipse cx={0} cy={0} rx={150} ry={60} fill="none" stroke={DIM} strokeWidth={2.5} />
+    <circle cx={0} cy={0} r={26} fill="none" stroke={LINE} strokeWidth={3} />
+    <circle cx={Math.cos(f / 22) * 150} cy={Math.sin(f / 22) * 60} r={10} fill={LINE} /></g>
+);
+const Drop: React.FC<{ f: number }> = ({ f }) => (
+  <g><path d="M -150 60 Q -20 -150 150 -40 Q 20 120 -150 60 Z" fill="none" stroke={LINE} strokeWidth={3} />
+    <path d="M -150 60 Q 0 0 150 -40" fill="none" stroke={DIM} strokeWidth={2} />
+    <path d={`M 10 ${-10 + Math.sin(f / 18) * 2} q 16 26 0 38 q -16 -12 0 -38 Z`} fill="none" stroke={LINE} strokeWidth={3} /></g>
+);
+
 const STAGES: Stage[] = [
   { from: 0, labels: ["above", "below"], top: (f) => <Stars seed={3} f={f} />, bot: (f) => <Stars seed={3} f={f + 30} tiny /> },
-  { from: L("S3").from, labels: ["a planet", "a drop"], top: (f) => (
-    <g><ellipse cx={0} cy={0} rx={150} ry={60} fill="none" stroke={DIM} strokeWidth={2.5} />
-      <circle cx={0} cy={0} r={26} fill="none" stroke={LINE} strokeWidth={3} />
-      <circle cx={Math.cos(f / 22) * 150} cy={Math.sin(f / 22) * 60} r={10} fill={LINE} /></g>
-  ), bot: (f) => (
-    <g><path d="M -150 60 Q -20 -150 150 -40 Q 20 120 -150 60 Z" fill="none" stroke={LINE} strokeWidth={3} />
-      <path d="M -150 60 Q 0 0 150 -40" fill="none" stroke={DIM} strokeWidth={2} />
-      <path d={`M 10 ${-10 + Math.sin(f / 18) * 2} q 16 26 0 38 q -16 -12 0 -38 Z`} fill="none" stroke={LINE} strokeWidth={3} /></g>
-  ) },
-  { from: L("S4").from, labels: ["a city", "a home"], top: () => (
+  { from: L("S3").from, labels: ["a star", "dust"], top: (f) => <Stars seed={7} f={f} />, bot: (f) => <Stars seed={7} f={f + 30} tiny /> },
+  { from: L("S4").from, labels: ["a kingdom", "a house"], top: () => (
     <g>{[-120, -40, 40, 120].map((x) => <line key={x} x1={x} y1={-160} x2={x} y2={160} stroke={LINE} strokeWidth={2.5} />)}
       {[-120, -40, 40, 120].map((y) => <line key={y} x1={-160} y1={y} x2={160} y2={y} stroke={LINE} strokeWidth={2.5} />)}</g>
   ), bot: () => (
@@ -155,27 +162,29 @@ const STAGES: Stage[] = [
       <rect x={-20} y={80} width={40} height={60} fill="none" stroke={LINE} strokeWidth={3} />
       <circle cx={-55} cy={70} r={12} fill={LINE} opacity={0.8} /></g>
   ) },
-  { from: L("S5").from, labels: ["mind", "desk"], top: (f) => <Strokes seed={11} t={0} frame={f} />, bot: (f) => <Strokes seed={11} t={0} frame={f} /> },
+  { from: L("S5").from, labels: ["the large", "the small"], top: (f) => <Orbit f={f} />, bot: (f) => <Drop f={f} /> },
+  { from: L("S6").from, labels: ["the small", "within"], top: (f) => <Drop f={f} />, bot: () => <Within big /> },
+  { from: L("S7").from, labels: ["mind", "desk"], top: (f) => <Strokes seed={11} t={0} frame={f} />, bot: (f) => <Strokes seed={11} t={0} frame={f} /> },
   // the flip: below becomes the plan, above becomes the life; the first colour arrives
-  { from: W("S7", "treatment") - 4, labels: ["life", "plan"], top: (f) => {
-    const settle = progress(f, L("S12").from + 30, L("S12").to - L("S12").from);
-    const worry = f >= L("S9").from && f < L("S10").from ? 1 : 0.25;
+  { from: W("S8", "treatment") - 4, labels: ["life", "plan"], top: (f) => {
+    const settle = progress(f, L("S13").from + 30, L("S13").to - L("S13").from);
+    const worry = f >= L("S10").from && f < L("S11").from ? 1 : 0.25;
     return (
       <g>
         <Strokes seed={11} t={settle} frame={f} jitter={worry * (1 - settle)} color={settle > 0.6 ? TEAL : LINE} />
-        {f >= W("S9", "midnight") - 4 && f < L("S10").to ? (
-          <path d="M 120 -150 A 40 40 0 1 0 150 -100 A 30 30 0 1 1 120 -150 Z" fill={LINE} opacity={progress(f, W("S9", "midnight") - 4, 8)} />
+        {f >= W("S10", "midnight") - 4 && f < L("S11").to ? (
+          <path d="M 120 -150 A 40 40 0 1 0 150 -100 A 30 30 0 1 1 120 -150 Z" fill={LINE} opacity={progress(f, W("S10", "midnight") - 4, 8)} />
         ) : null}
       </g>
     );
-  }, bot: (f) => (f < L("S8").from ? <Strokes seed={11} t={0} frame={f} color={TEAL} /> : <PlanBelow f={f} />) },
+  }, bot: (f) => (f < L("S9").from ? <Strokes seed={11} t={0} frame={f} color={TEAL} /> : <PlanBelow f={f} />) },
 ];
 
 const stageAt = (f: number) => [...STAGES].reverse().find((s) => f >= s.from) ?? STAGES[0];
 
 /** A hand drawn in line, reaching into the lower frame while the plan is put in order. */
 const Hand: React.FC<{ f: number }> = ({ f }) => {
-  const a = W("S10", "put") - 6, b = L("S11").to;
+  const a = W("S11", "put") - 6, b = L("S12").to;
   if (f < a || f > b + 10) return null;
   const inn = progress(f, a, 18) - progress(f, b - 10, 18);
   const x = 980 - inn * 260;
@@ -192,8 +201,8 @@ const Frames: React.FC = () => {
   const st = stageAt(f);
   const idx = STAGES.indexOf(st);
   const fadeIn = idx === 0 ? progress(f, 0, 12) : progress(f, st.from, 12);
-  const flip = progress(f, W("S7", "treatment") - 4, 16);
-  const done = progress(f, L("S13").from, 20);
+  const flip = progress(f, W("S8", "treatment") - 4, 16);
+  const done = progress(f, L("S14").from, 20);
   const frameColor = (above: boolean) => (above ? (done > 0 ? TEAL : LINE) : flip > 0 ? TEAL : LINE);
   return (
     <svg width={1080} height={1920} style={{ position: "absolute", inset: 0 }}>
@@ -228,11 +237,11 @@ const Narration: React.FC = () => {
   ws.forEach((w) => { cur.push(w); if (/[.?!]$/.test(w.token)) { sentences.push(cur); cur = []; } });
   if (cur.length) sentences.push(cur);
   const sent = [...sentences].reverse().find((s) => f >= s[0].frame - 3) ?? sentences[0];
-  const flipLine = line.id === "S7";
+  const flipLine = line.id === "S8";
   return (
     <div style={{ position: "absolute", left: 90, right: 90, top: 1420, textAlign: "center", fontFamily: SERIF, fontSize: 52, lineHeight: 1.25 }}>
       {sent.map((w, k) => (
-        <span key={`${w.frame}-${k}`} style={{ color: f >= w.frame - 2 ? (flipLine && k >= 2 && k <= 4 ? TEAL : LINE) : "#E9E6DF22", transition: "none" }}>{w.token} </span>
+        <span key={`${w.frame}-${k}`} style={{ color: f >= w.frame - 2 ? (flipLine && k >= 2 && k <= 6 ? TEAL : LINE) : "#E9E6DF22", transition: "none" }}>{w.token} </span>
       ))}
     </div>
   );
@@ -241,7 +250,7 @@ const Narration: React.FC = () => {
 const Header: React.FC = () => {
   const f = useCurrentFrame();
   const show = progress(f, L("S2").from, 20);
-  const glow = progress(f, L("S13").from, 20);
+  const glow = progress(f, L("S14").from, 20);
   return (
     <div style={{ position: "absolute", left: 0, right: 0, top: 230, textAlign: "center", fontFamily: SERIF, fontStyle: "italic", fontSize: 36, lineHeight: 1.3,
       color: glow > 0 ? TEAL : "#E9E6DF99", opacity: show }}>
@@ -274,4 +283,4 @@ export const AsBelowSoAbove: React.FC = () => {
   );
 };
 
-export const ABOVE_COVER = W("S7", "life") + 10;
+export const ABOVE_COVER = W("S8", "life") + 10;
