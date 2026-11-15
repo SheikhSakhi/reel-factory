@@ -15,6 +15,7 @@ import { AllFineIThink, FINE_COVER, FINE_DURATION } from "./2026-11-09-all-fine-
 import { TheLighthouse, LIGHTHOUSE_COVER, LIGHTHOUSE_DURATION } from "./2026-11-11-the-lighthouse/Reel";
 import { WhyAreYouHere, WHY_COVER, WHY_DURATION } from "./2026-11-13-why-are-you-here/Reel";
 import { AsBelowSoAbove, ABOVE_COVER, ABOVE_DURATION } from "./2026-11-13-as-below-so-above/Reel";
+import { ThePeak, PEAK_COVER, PEAK_DURATION } from "./2026-11-15-the-peak/Reel";
 import { SeriesDemoReel, SERIES_DEMO_COVER, SERIES_DEMO_DURATION } from "./series-demo/Reel";
 
 export type ReelEntry = {
@@ -43,5 +44,6 @@ export const REELS: readonly ReelEntry[] = [
   { id: "2026-11-11-the-lighthouse", component: TheLighthouse, durationInFrames: LIGHTHOUSE_DURATION, coverFrame: LIGHTHOUSE_COVER },
   { id: "2026-11-13-why-are-you-here", component: WhyAreYouHere, durationInFrames: WHY_DURATION, coverFrame: WHY_COVER },
   { id: "2026-11-13-as-below-so-above", component: AsBelowSoAbove, durationInFrames: ABOVE_DURATION, coverFrame: ABOVE_COVER },
+  { id: "2026-11-15-the-peak", component: ThePeak, durationInFrames: PEAK_DURATION, coverFrame: PEAK_COVER },
   { id: "nvidia-s1e4-dark", component: S1E4Dark, durationInFrames: S1E4_DURATION, coverFrame: S1E4_COVER },
 ];

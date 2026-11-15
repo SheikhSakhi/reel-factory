@@ -1,0 +1,1687 @@
+{
+  "file": "vo/2026-11-15-the-peak/take.mp3",
+  "voice": "dialogue",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 2280,
+  "cast": {
+    "NARRATOR": {
+      "voice": "en-IE-ConnorNeural",
+      "rate": "-6%",
+      "pitch": "-8Hz",
+      "gap": 0.42
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "The higher the peak, the thinner the air.",
+      "from": 0,
+      "words": [
+        {
+          "token": "The",
+          "start": 0.103,
+          "end": 0.183,
+          "frame": 3,
+          "endFrame": 5
+        },
+        {
+          "token": "higher",
+          "start": 0.236,
+          "end": 0.515,
+          "frame": 7,
+          "endFrame": 15
+        },
+        {
+          "token": "the",
+          "start": 0.529,
+          "end": 0.622,
+          "frame": 16,
+          "endFrame": 19
+        },
+        {
+          "token": "peak,",
+          "start": 0.702,
+          "end": 0.994,
+          "frame": 21,
+          "endFrame": 30
+        },
+        {
+          "token": "the",
+          "start": 1.234,
+          "end": 1.313,
+          "frame": 37,
+          "endFrame": 39
+        },
+        {
+          "token": "thinner",
+          "start": 1.353,
+          "end": 1.646,
+          "frame": 41,
+          "endFrame": 49
+        },
+        {
+          "token": "the",
+          "start": 1.672,
+          "end": 1.792,
+          "frame": 50,
+          "endFrame": 54
+        },
+        {
+          "token": "air.",
+          "start": 1.845,
+          "end": 2.071,
+          "frame": 55,
+          "endFrame": 62
+        }
+      ],
+      "to": 78,
+      "speechEnd": 62,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S2",
+      "text": "Everything you gain becomes something you can lose. That is how gaining works, and it works no other way.",
+      "from": 78,
+      "words": [
+        {
+          "token": "Everything",
+          "start": 2.714,
+          "end": 3.166,
+          "frame": 81,
+          "endFrame": 95
+        },
+        {
+          "token": "you",
+          "start": 3.206,
+          "end": 3.286,
+          "frame": 96,
+          "endFrame": 99
+        },
+        {
+          "token": "gain",
+          "start": 3.339,
+          "end": 3.579,
+          "frame": 100,
+          "endFrame": 107
+        },
+        {
+          "token": "becomes",
+          "start": 3.592,
+          "end": 3.977,
+          "frame": 108,
+          "endFrame": 119
+        },
+        {
+          "token": "something",
+          "start": 3.978,
+          "end": 4.363,
+          "frame": 119,
+          "endFrame": 131
+        },
+        {
+          "token": "you",
+          "start": 4.403,
+          "end": 4.483,
+          "frame": 132,
+          "endFrame": 134
+        },
+        {
+          "token": "can",
+          "start": 4.523,
+          "end": 4.656,
+          "frame": 136,
+          "endFrame": 140
+        },
+        {
+          "token": "lose.",
+          "start": 4.656,
+          "end": 5.094,
+          "frame": 140,
+          "endFrame": 153
+        },
+        {
+          "token": "That",
+          "start": 6.122,
+          "end": 6.281,
+          "frame": 184,
+          "endFrame": 188
+        },
+        {
+          "token": "is",
+          "start": 6.281,
+          "end": 6.401,
+          "frame": 188,
+          "endFrame": 192
+        },
+        {
+          "token": "how",
+          "start": 6.414,
+          "end": 6.56,
+          "frame": 192,
+          "endFrame": 197
+        },
+        {
+          "token": "gaining",
+          "start": 6.614,
+          "end": 6.919,
+          "frame": 198,
+          "endFrame": 208
+        },
+        {
+          "token": "works,",
+          "start": 6.946,
+          "end": 7.358,
+          "frame": 208,
+          "endFrame": 221
+        },
+        {
+          "token": "and",
+          "start": 7.598,
+          "end": 7.677,
+          "frame": 228,
+          "endFrame": 230
+        },
+        {
+          "token": "it",
+          "start": 7.677,
+          "end": 7.744,
+          "frame": 230,
+          "endFrame": 232
+        },
+        {
+          "token": "works",
+          "start": 7.757,
+          "end": 8.103,
+          "frame": 233,
+          "endFrame": 243
+        },
+        {
+          "token": "no",
+          "start": 8.13,
+          "end": 8.289,
+          "frame": 244,
+          "endFrame": 249
+        },
+        {
+          "token": "other",
+          "start": 8.369,
+          "end": 8.542,
+          "frame": 251,
+          "endFrame": 256
+        },
+        {
+          "token": "way.",
+          "start": 8.595,
+          "end": 8.901,
+          "frame": 258,
+          "endFrame": 267
+        }
+      ],
+      "to": 283,
+      "speechEnd": 267,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S3",
+      "text": "The one who reaches the top is the first to learn how cold it is up there, and learns it alone, because from below the peak looks different.",
+      "from": 283,
+      "words": [
+        {
+          "token": "The",
+          "start": 9.544,
+          "end": 9.651,
+          "frame": 286,
+          "endFrame": 290
+        },
+        {
+          "token": "one",
+          "start": 9.664,
+          "end": 9.917,
+          "frame": 290,
+          "endFrame": 297
+        },
+        {
+          "token": "who",
+          "start": 9.93,
+          "end": 10.049,
+          "frame": 298,
+          "endFrame": 301
+        },
+        {
+          "token": "reaches",
+          "start": 10.129,
+          "end": 10.528,
+          "frame": 304,
+          "endFrame": 316
+        },
+        {
+          "token": "the",
+          "start": 10.528,
+          "end": 10.635,
+          "frame": 316,
+          "endFrame": 319
+        },
+        {
+          "token": "top",
+          "start": 10.714,
+          "end": 10.994,
+          "frame": 321,
+          "endFrame": 330
+        },
+        {
+          "token": "is",
+          "start": 11.007,
+          "end": 11.127,
+          "frame": 330,
+          "endFrame": 334
+        },
+        {
+          "token": "the",
+          "start": 11.127,
+          "end": 11.233,
+          "frame": 334,
+          "endFrame": 337
+        },
+        {
+          "token": "first",
+          "start": 11.273,
+          "end": 11.645,
+          "frame": 338,
+          "endFrame": 349
+        },
+        {
+          "token": "to",
+          "start": 11.645,
+          "end": 11.725,
+          "frame": 349,
+          "endFrame": 352
+        },
+        {
+          "token": "learn",
+          "start": 11.765,
+          "end": 12.044,
+          "frame": 353,
+          "endFrame": 361
+        },
+        {
+          "token": "how",
+          "start": 12.044,
+          "end": 12.244,
+          "frame": 361,
+          "endFrame": 367
+        },
+        {
+          "token": "cold",
+          "start": 12.323,
+          "end": 12.629,
+          "frame": 370,
+          "endFrame": 379
+        },
+        {
+          "token": "it",
+          "start": 12.629,
+          "end": 12.736,
+          "frame": 379,
+          "endFrame": 382
+        },
+        {
+          "token": "is",
+          "start": 12.736,
+          "end": 12.895,
+          "frame": 382,
+          "endFrame": 387
+        },
+        {
+          "token": "up",
+          "start": 12.895,
+          "end": 13.042,
+          "frame": 387,
+          "endFrame": 391
+        },
+        {
+          "token": "there,",
+          "start": 13.068,
+          "end": 13.321,
+          "frame": 392,
+          "endFrame": 400
+        },
+        {
+          "token": "and",
+          "start": 13.706,
+          "end": 13.826,
+          "frame": 411,
+          "endFrame": 415
+        },
+        {
+          "token": "learns",
+          "start": 13.839,
+          "end": 14.172,
+          "frame": 415,
+          "endFrame": 425
+        },
+        {
+          "token": "it",
+          "start": 14.172,
+          "end": 14.265,
+          "frame": 425,
+          "endFrame": 428
+        },
+        {
+          "token": "alone,",
+          "start": 14.265,
+          "end": 14.77,
+          "frame": 428,
+          "endFrame": 443
+        },
+        {
+          "token": "because",
+          "start": 15.023,
+          "end": 15.315,
+          "frame": 451,
+          "endFrame": 459
+        },
+        {
+          "token": "from",
+          "start": 15.342,
+          "end": 15.475,
+          "frame": 460,
+          "endFrame": 464
+        },
+        {
+          "token": "below",
+          "start": 15.502,
+          "end": 15.807,
+          "frame": 465,
+          "endFrame": 474
+        },
+        {
+          "token": "the",
+          "start": 15.834,
+          "end": 15.927,
+          "frame": 475,
+          "endFrame": 478
+        },
+        {
+          "token": "peak",
+          "start": 16.02,
+          "end": 16.26,
+          "frame": 481,
+          "endFrame": 488
+        },
+        {
+          "token": "looks",
+          "start": 16.286,
+          "end": 16.579,
+          "frame": 489,
+          "endFrame": 497
+        },
+        {
+          "token": "different.",
+          "start": 16.579,
+          "end": 17.031,
+          "frame": 497,
+          "endFrame": 511
+        }
+      ],
+      "to": 527,
+      "speechEnd": 511,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S4",
+      "text": "The question, what is bad about this good thing, is asked at the foot of the mountain, while your feet are still on the ground and the price has not yet been named.",
+      "from": 527,
+      "words": [
+        {
+          "token": "The",
+          "start": 17.674,
+          "end": 17.754,
+          "frame": 530,
+          "endFrame": 533
+        },
+        {
+          "token": "question,",
+          "start": 17.82,
+          "end": 18.352,
+          "frame": 535,
+          "endFrame": 551
+        },
+        {
+          "token": "what",
+          "start": 18.565,
+          "end": 18.685,
+          "frame": 557,
+          "endFrame": 561
+        },
+        {
+          "token": "is",
+          "start": 18.685,
+          "end": 18.804,
+          "frame": 561,
+          "endFrame": 564
+        },
+        {
+          "token": "bad",
+          "start": 18.818,
+          "end": 19.057,
+          "frame": 565,
+          "endFrame": 572
+        },
+        {
+          "token": "about",
+          "start": 19.057,
+          "end": 19.31,
+          "frame": 572,
+          "endFrame": 579
+        },
+        {
+          "token": "this",
+          "start": 19.31,
+          "end": 19.509,
+          "frame": 579,
+          "endFrame": 585
+        },
+        {
+          "token": "good",
+          "start": 19.562,
+          "end": 19.762,
+          "frame": 587,
+          "endFrame": 593
+        },
+        {
+          "token": "thing,",
+          "start": 19.775,
+          "end": 20.174,
+          "frame": 593,
+          "endFrame": 605
+        },
+        {
+          "token": "is",
+          "start": 20.414,
+          "end": 20.56,
+          "frame": 612,
+          "endFrame": 617
+        },
+        {
+          "token": "asked",
+          "start": 20.586,
+          "end": 20.919,
+          "frame": 618,
+          "endFrame": 628
+        },
+        {
+          "token": "at",
+          "start": 20.919,
+          "end": 21.039,
+          "frame": 628,
+          "endFrame": 631
+        },
+        {
+          "token": "the",
+          "start": 21.052,
+          "end": 21.105,
+          "frame": 632,
+          "endFrame": 633
+        },
+        {
+          "token": "foot",
+          "start": 21.145,
+          "end": 21.384,
+          "frame": 634,
+          "endFrame": 642
+        },
+        {
+          "token": "of",
+          "start": 21.384,
+          "end": 21.477,
+          "frame": 642,
+          "endFrame": 644
+        },
+        {
+          "token": "the",
+          "start": 21.477,
+          "end": 21.557,
+          "frame": 644,
+          "endFrame": 647
+        },
+        {
+          "token": "mountain,",
+          "start": 21.584,
+          "end": 22.089,
+          "frame": 648,
+          "endFrame": 663
+        },
+        {
+          "token": "while",
+          "start": 22.368,
+          "end": 22.528,
+          "frame": 671,
+          "endFrame": 676
+        },
+        {
+          "token": "your",
+          "start": 22.555,
+          "end": 22.634,
+          "frame": 677,
+          "endFrame": 679
+        },
+        {
+          "token": "feet",
+          "start": 22.674,
+          "end": 22.967,
+          "frame": 680,
+          "endFrame": 689
+        },
+        {
+          "token": "are",
+          "start": 23.007,
+          "end": 23.14,
+          "frame": 690,
+          "endFrame": 694
+        },
+        {
+          "token": "still",
+          "start": 23.166,
+          "end": 23.485,
+          "frame": 695,
+          "endFrame": 705
+        },
+        {
+          "token": "on",
+          "start": 23.485,
+          "end": 23.618,
+          "frame": 705,
+          "endFrame": 709
+        },
+        {
+          "token": "the",
+          "start": 23.658,
+          "end": 23.698,
+          "frame": 710,
+          "endFrame": 711
+        },
+        {
+          "token": "ground",
+          "start": 23.751,
+          "end": 24.11,
+          "frame": 713,
+          "endFrame": 723
+        },
+        {
+          "token": "and",
+          "start": 24.124,
+          "end": 24.23,
+          "frame": 724,
+          "endFrame": 727
+        },
+        {
+          "token": "the",
+          "start": 24.243,
+          "end": 24.297,
+          "frame": 727,
+          "endFrame": 729
+        },
+        {
+          "token": "price",
+          "start": 24.376,
+          "end": 24.709,
+          "frame": 731,
+          "endFrame": 741
+        },
+        {
+          "token": "has",
+          "start": 24.709,
+          "end": 24.882,
+          "frame": 741,
+          "endFrame": 746
+        },
+        {
+          "token": "not",
+          "start": 24.895,
+          "end": 25.121,
+          "frame": 747,
+          "endFrame": 754
+        },
+        {
+          "token": "yet",
+          "start": 25.148,
+          "end": 25.334,
+          "frame": 754,
+          "endFrame": 760
+        },
+        {
+          "token": "been",
+          "start": 25.347,
+          "end": 25.493,
+          "frame": 760,
+          "endFrame": 765
+        },
+        {
+          "token": "named.",
+          "start": 25.493,
+          "end": 25.919,
+          "frame": 765,
+          "endFrame": 778
+        }
+      ],
+      "to": 794,
+      "speechEnd": 778,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S5",
+      "text": "In medicine, the peak isn't a title. It's the day you stop seeing patients one visit at a time, and start seeing each one's whole path.",
+      "from": 794,
+      "words": [
+        {
+          "token": "In",
+          "start": 26.562,
+          "end": 26.682,
+          "frame": 797,
+          "endFrame": 800
+        },
+        {
+          "token": "medicine,",
+          "start": 26.682,
+          "end": 27.24,
+          "frame": 800,
+          "endFrame": 817
+        },
+        {
+          "token": "the",
+          "start": 27.347,
+          "end": 27.44,
+          "frame": 820,
+          "endFrame": 823
+        },
+        {
+          "token": "peak",
+          "start": 27.52,
+          "end": 27.759,
+          "frame": 826,
+          "endFrame": 833
+        },
+        {
+          "token": "isn't",
+          "start": 27.786,
+          "end": 28.065,
+          "frame": 834,
+          "endFrame": 842
+        },
+        {
+          "token": "a",
+          "start": 28.065,
+          "end": 28.105,
+          "frame": 842,
+          "endFrame": 843
+        },
+        {
+          "token": "title.",
+          "start": 28.171,
+          "end": 28.544,
+          "frame": 845,
+          "endFrame": 856
+        },
+        {
+          "token": "It's",
+          "start": 29.544,
+          "end": 29.704,
+          "frame": 886,
+          "endFrame": 891
+        },
+        {
+          "token": "the",
+          "start": 29.704,
+          "end": 29.823,
+          "frame": 891,
+          "endFrame": 895
+        },
+        {
+          "token": "day",
+          "start": 29.903,
+          "end": 30.063,
+          "frame": 897,
+          "endFrame": 902
+        },
+        {
+          "token": "you",
+          "start": 30.076,
+          "end": 30.169,
+          "frame": 902,
+          "endFrame": 905
+        },
+        {
+          "token": "stop",
+          "start": 30.182,
+          "end": 30.502,
+          "frame": 905,
+          "endFrame": 915
+        },
+        {
+          "token": "seeing",
+          "start": 30.515,
+          "end": 30.807,
+          "frame": 915,
+          "endFrame": 924
+        },
+        {
+          "token": "patients",
+          "start": 30.887,
+          "end": 31.313,
+          "frame": 927,
+          "endFrame": 939
+        },
+        {
+          "token": "one",
+          "start": 31.339,
+          "end": 31.579,
+          "frame": 940,
+          "endFrame": 947
+        },
+        {
+          "token": "visit",
+          "start": 31.605,
+          "end": 31.951,
+          "frame": 948,
+          "endFrame": 959
+        },
+        {
+          "token": "at",
+          "start": 31.978,
+          "end": 32.097,
+          "frame": 959,
+          "endFrame": 963
+        },
+        {
+          "token": "a",
+          "start": 32.097,
+          "end": 32.15,
+          "frame": 963,
+          "endFrame": 965
+        },
+        {
+          "token": "time,",
+          "start": 32.23,
+          "end": 32.656,
+          "frame": 967,
+          "endFrame": 980
+        },
+        {
+          "token": "and",
+          "start": 32.935,
+          "end": 33.041,
+          "frame": 988,
+          "endFrame": 991
+        },
+        {
+          "token": "start",
+          "start": 33.055,
+          "end": 33.387,
+          "frame": 992,
+          "endFrame": 1002
+        },
+        {
+          "token": "seeing",
+          "start": 33.387,
+          "end": 33.693,
+          "frame": 1002,
+          "endFrame": 1011
+        },
+        {
+          "token": "each",
+          "start": 33.733,
+          "end": 33.932,
+          "frame": 1012,
+          "endFrame": 1018
+        },
+        {
+          "token": "one's",
+          "start": 33.959,
+          "end": 34.305,
+          "frame": 1019,
+          "endFrame": 1029
+        },
+        {
+          "token": "whole",
+          "start": 34.331,
+          "end": 34.571,
+          "frame": 1030,
+          "endFrame": 1037
+        },
+        {
+          "token": "path.",
+          "start": 34.624,
+          "end": 34.97,
+          "frame": 1039,
+          "endFrame": 1049
+        }
+      ],
+      "to": 1065,
+      "speechEnd": 1049,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S6",
+      "text": "From there, you see what no visit shows: who is getting better, who is drifting, whose result needs you today.",
+      "from": 1065,
+      "words": [
+        {
+          "token": "From",
+          "start": 35.613,
+          "end": 35.826,
+          "frame": 1068,
+          "endFrame": 1075
+        },
+        {
+          "token": "there,",
+          "start": 35.879,
+          "end": 36.132,
+          "frame": 1076,
+          "endFrame": 1084
+        },
+        {
+          "token": "you",
+          "start": 36.398,
+          "end": 36.504,
+          "frame": 1092,
+          "endFrame": 1095
+        },
+        {
+          "token": "see",
+          "start": 36.544,
+          "end": 36.73,
+          "frame": 1096,
+          "endFrame": 1102
+        },
+        {
+          "token": "what",
+          "start": 36.77,
+          "end": 36.97,
+          "frame": 1103,
+          "endFrame": 1109
+        },
+        {
+          "token": "no",
+          "start": 36.983,
+          "end": 37.169,
+          "frame": 1109,
+          "endFrame": 1115
+        },
+        {
+          "token": "visit",
+          "start": 37.209,
+          "end": 37.541,
+          "frame": 1116,
+          "endFrame": 1126
+        },
+        {
+          "token": "shows:",
+          "start": 37.555,
+          "end": 38.007,
+          "frame": 1127,
+          "endFrame": 1140
+        },
+        {
+          "token": "who",
+          "start": 38.313,
+          "end": 38.379,
+          "frame": 1149,
+          "endFrame": 1151
+        },
+        {
+          "token": "is",
+          "start": 38.432,
+          "end": 38.565,
+          "frame": 1153,
+          "endFrame": 1157
+        },
+        {
+          "token": "getting",
+          "start": 38.592,
+          "end": 38.871,
+          "frame": 1158,
+          "endFrame": 1166
+        },
+        {
+          "token": "better,",
+          "start": 38.911,
+          "end": 39.27,
+          "frame": 1167,
+          "endFrame": 1178
+        },
+        {
+          "token": "who",
+          "start": 39.563,
+          "end": 39.642,
+          "frame": 1187,
+          "endFrame": 1189
+        },
+        {
+          "token": "is",
+          "start": 39.669,
+          "end": 39.815,
+          "frame": 1190,
+          "endFrame": 1194
+        },
+        {
+          "token": "drifting,",
+          "start": 39.815,
+          "end": 40.4,
+          "frame": 1194,
+          "endFrame": 1212
+        },
+        {
+          "token": "whose",
+          "start": 40.627,
+          "end": 40.813,
+          "frame": 1219,
+          "endFrame": 1224
+        },
+        {
+          "token": "result",
+          "start": 40.826,
+          "end": 41.278,
+          "frame": 1225,
+          "endFrame": 1238
+        },
+        {
+          "token": "needs",
+          "start": 41.318,
+          "end": 41.637,
+          "frame": 1240,
+          "endFrame": 1249
+        },
+        {
+          "token": "you",
+          "start": 41.637,
+          "end": 41.73,
+          "frame": 1249,
+          "endFrame": 1252
+        },
+        {
+          "token": "today.",
+          "start": 41.744,
+          "end": 42.169,
+          "frame": 1252,
+          "endFrame": 1265
+        }
+      ],
+      "to": 1281,
+      "speechEnd": 1265,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S7",
+      "text": "You catch the change while it's still small, before the night call.",
+      "from": 1281,
+      "words": [
+        {
+          "token": "You",
+          "start": 42.812,
+          "end": 42.932,
+          "frame": 1284,
+          "endFrame": 1288
+        },
+        {
+          "token": "catch",
+          "start": 42.998,
+          "end": 43.224,
+          "frame": 1290,
+          "endFrame": 1297
+        },
+        {
+          "token": "the",
+          "start": 43.224,
+          "end": 43.317,
+          "frame": 1297,
+          "endFrame": 1300
+        },
+        {
+          "token": "change",
+          "start": 43.384,
+          "end": 43.756,
+          "frame": 1302,
+          "endFrame": 1313
+        },
+        {
+          "token": "while",
+          "start": 43.783,
+          "end": 44.075,
+          "frame": 1313,
+          "endFrame": 1322
+        },
+        {
+          "token": "it's",
+          "start": 44.076,
+          "end": 44.208,
+          "frame": 1322,
+          "endFrame": 1326
+        },
+        {
+          "token": "still",
+          "start": 44.208,
+          "end": 44.541,
+          "frame": 1326,
+          "endFrame": 1336
+        },
+        {
+          "token": "small,",
+          "start": 44.554,
+          "end": 45.006,
+          "frame": 1337,
+          "endFrame": 1350
+        },
+        {
+          "token": "before",
+          "start": 45.259,
+          "end": 45.578,
+          "frame": 1358,
+          "endFrame": 1367
+        },
+        {
+          "token": "the",
+          "start": 45.605,
+          "end": 45.698,
+          "frame": 1368,
+          "endFrame": 1371
+        },
+        {
+          "token": "night",
+          "start": 45.751,
+          "end": 46.004,
+          "frame": 1373,
+          "endFrame": 1380
+        },
+        {
+          "token": "call.",
+          "start": 46.057,
+          "end": 46.403,
+          "frame": 1382,
+          "endFrame": 1392
+        }
+      ],
+      "to": 1408,
+      "speechEnd": 1392,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S8",
+      "text": "Your patients stop falling between visits.",
+      "from": 1408,
+      "words": [
+        {
+          "token": "Your",
+          "start": 47.046,
+          "end": 47.179,
+          "frame": 1411,
+          "endFrame": 1415
+        },
+        {
+          "token": "patients",
+          "start": 47.259,
+          "end": 47.631,
+          "frame": 1418,
+          "endFrame": 1429
+        },
+        {
+          "token": "stop",
+          "start": 47.631,
+          "end": 47.95,
+          "frame": 1429,
+          "endFrame": 1439
+        },
+        {
+          "token": "falling",
+          "start": 47.95,
+          "end": 48.283,
+          "frame": 1439,
+          "endFrame": 1448
+        },
+        {
+          "token": "between",
+          "start": 48.323,
+          "end": 48.682,
+          "frame": 1450,
+          "endFrame": 1460
+        },
+        {
+          "token": "visits.",
+          "start": 48.695,
+          "end": 49.174,
+          "frame": 1461,
+          "endFrame": 1475
+        }
+      ],
+      "to": 1492,
+      "speechEnd": 1475,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S9",
+      "text": "That's why every doctor wants to stand there. It's why we chose medicine.",
+      "from": 1492,
+      "words": [
+        {
+          "token": "That's",
+          "start": 49.817,
+          "end": 50.043,
+          "frame": 1495,
+          "endFrame": 1501
+        },
+        {
+          "token": "why",
+          "start": 50.083,
+          "end": 50.309,
+          "frame": 1502,
+          "endFrame": 1509
+        },
+        {
+          "token": "every",
+          "start": 50.376,
+          "end": 50.615,
+          "frame": 1511,
+          "endFrame": 1518
+        },
+        {
+          "token": "doctor",
+          "start": 50.668,
+          "end": 51.001,
+          "frame": 1520,
+          "endFrame": 1530
+        },
+        {
+          "token": "wants",
+          "start": 51.054,
+          "end": 51.373,
+          "frame": 1532,
+          "endFrame": 1541
+        },
+        {
+          "token": "to",
+          "start": 51.373,
+          "end": 51.479,
+          "frame": 1541,
+          "endFrame": 1544
+        },
+        {
+          "token": "stand",
+          "start": 51.506,
+          "end": 51.852,
+          "frame": 1545,
+          "endFrame": 1556
+        },
+        {
+          "token": "there.",
+          "start": 51.892,
+          "end": 52.104,
+          "frame": 1557,
+          "endFrame": 1563
+        },
+        {
+          "token": "It's",
+          "start": 53.145,
+          "end": 53.318,
+          "frame": 1594,
+          "endFrame": 1600
+        },
+        {
+          "token": "why",
+          "start": 53.358,
+          "end": 53.544,
+          "frame": 1601,
+          "endFrame": 1606
+        },
+        {
+          "token": "we",
+          "start": 53.57,
+          "end": 53.663,
+          "frame": 1607,
+          "endFrame": 1610
+        },
+        {
+          "token": "chose",
+          "start": 53.73,
+          "end": 54.049,
+          "frame": 1612,
+          "endFrame": 1621
+        },
+        {
+          "token": "medicine.",
+          "start": 54.062,
+          "end": 54.621,
+          "frame": 1622,
+          "endFrame": 1639
+        }
+      ],
+      "to": 1655,
+      "speechEnd": 1639,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S10",
+      "text": "But the higher you climb, the more you hold.",
+      "from": 1655,
+      "words": [
+        {
+          "token": "But",
+          "start": 55.264,
+          "end": 55.397,
+          "frame": 1658,
+          "endFrame": 1662
+        },
+        {
+          "token": "the",
+          "start": 55.41,
+          "end": 55.464,
+          "frame": 1662,
+          "endFrame": 1664
+        },
+        {
+          "token": "higher",
+          "start": 55.517,
+          "end": 55.809,
+          "frame": 1666,
+          "endFrame": 1674
+        },
+        {
+          "token": "you",
+          "start": 55.849,
+          "end": 55.942,
+          "frame": 1675,
+          "endFrame": 1678
+        },
+        {
+          "token": "climb,",
+          "start": 56.009,
+          "end": 56.421,
+          "frame": 1680,
+          "endFrame": 1693
+        },
+        {
+          "token": "the",
+          "start": 56.607,
+          "end": 56.7,
+          "frame": 1698,
+          "endFrame": 1701
+        },
+        {
+          "token": "more",
+          "start": 56.727,
+          "end": 56.926,
+          "frame": 1702,
+          "endFrame": 1708
+        },
+        {
+          "token": "you",
+          "start": 56.966,
+          "end": 57.033,
+          "frame": 1709,
+          "endFrame": 1711
+        },
+        {
+          "token": "hold.",
+          "start": 57.073,
+          "end": 57.485,
+          "frame": 1712,
+          "endFrame": 1725
+        }
+      ],
+      "to": 1741,
+      "speechEnd": 1725,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S11",
+      "text": "So the wise ask at the foot: what do I bring?",
+      "from": 1741,
+      "words": [
+        {
+          "token": "So",
+          "start": 58.128,
+          "end": 58.368,
+          "frame": 1744,
+          "endFrame": 1751
+        },
+        {
+          "token": "the",
+          "start": 58.381,
+          "end": 58.461,
+          "frame": 1751,
+          "endFrame": 1754
+        },
+        {
+          "token": "wise",
+          "start": 58.514,
+          "end": 58.846,
+          "frame": 1755,
+          "endFrame": 1765
+        },
+        {
+          "token": "ask",
+          "start": 58.886,
+          "end": 59.192,
+          "frame": 1767,
+          "endFrame": 1776
+        },
+        {
+          "token": "at",
+          "start": 59.192,
+          "end": 59.312,
+          "frame": 1776,
+          "endFrame": 1779
+        },
+        {
+          "token": "the",
+          "start": 59.312,
+          "end": 59.365,
+          "frame": 1779,
+          "endFrame": 1781
+        },
+        {
+          "token": "foot:",
+          "start": 59.392,
+          "end": 59.711,
+          "frame": 1782,
+          "endFrame": 1791
+        },
+        {
+          "token": "what",
+          "start": 60.07,
+          "end": 60.243,
+          "frame": 1802,
+          "endFrame": 1807
+        },
+        {
+          "token": "do",
+          "start": 60.296,
+          "end": 60.415,
+          "frame": 1809,
+          "endFrame": 1812
+        },
+        {
+          "token": "I",
+          "start": 60.482,
+          "end": 60.602,
+          "frame": 1814,
+          "endFrame": 1818
+        },
+        {
+          "token": "bring?",
+          "start": 60.615,
+          "end": 61.054,
+          "frame": 1818,
+          "endFrame": 1832
+        }
+      ],
+      "to": 1848,
+      "speechEnd": 1832,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S12",
+      "text": "A plan for every patient. A line for when to act. And a system that watches with you, so you can see everyone without carrying everyone alone.",
+      "from": 1848,
+      "words": [
+        {
+          "token": "A",
+          "start": 61.697,
+          "end": 61.804,
+          "frame": 1851,
+          "endFrame": 1854
+        },
+        {
+          "token": "plan",
+          "start": 61.87,
+          "end": 62.176,
+          "frame": 1856,
+          "endFrame": 1865
+        },
+        {
+          "token": "for",
+          "start": 62.189,
+          "end": 62.322,
+          "frame": 1866,
+          "endFrame": 1870
+        },
+        {
+          "token": "every",
+          "start": 62.415,
+          "end": 62.668,
+          "frame": 1872,
+          "endFrame": 1880
+        },
+        {
+          "token": "patient.",
+          "start": 62.734,
+          "end": 63.16,
+          "frame": 1882,
+          "endFrame": 1895
+        },
+        {
+          "token": "A",
+          "start": 64.187,
+          "end": 64.267,
+          "frame": 1926,
+          "endFrame": 1928
+        },
+        {
+          "token": "line",
+          "start": 64.307,
+          "end": 64.586,
+          "frame": 1929,
+          "endFrame": 1938
+        },
+        {
+          "token": "for",
+          "start": 64.599,
+          "end": 64.692,
+          "frame": 1938,
+          "endFrame": 1941
+        },
+        {
+          "token": "when",
+          "start": 64.759,
+          "end": 64.958,
+          "frame": 1943,
+          "endFrame": 1949
+        },
+        {
+          "token": "to",
+          "start": 65.012,
+          "end": 65.091,
+          "frame": 1950,
+          "endFrame": 1953
+        },
+        {
+          "token": "act.",
+          "start": 65.158,
+          "end": 65.45,
+          "frame": 1955,
+          "endFrame": 1964
+        },
+        {
+          "token": "And",
+          "start": 66.474,
+          "end": 66.594,
+          "frame": 1994,
+          "endFrame": 1998
+        },
+        {
+          "token": "a",
+          "start": 66.594,
+          "end": 66.647,
+          "frame": 1998,
+          "endFrame": 1999
+        },
+        {
+          "token": "system",
+          "start": 66.661,
+          "end": 67.059,
+          "frame": 2000,
+          "endFrame": 2012
+        },
+        {
+          "token": "that",
+          "start": 67.073,
+          "end": 67.166,
+          "frame": 2012,
+          "endFrame": 2015
+        },
+        {
+          "token": "watches",
+          "start": 67.206,
+          "end": 67.605,
+          "frame": 2016,
+          "endFrame": 2028
+        },
+        {
+          "token": "with",
+          "start": 67.618,
+          "end": 67.777,
+          "frame": 2029,
+          "endFrame": 2033
+        },
+        {
+          "token": "you,",
+          "start": 67.791,
+          "end": 68.017,
+          "frame": 2034,
+          "endFrame": 2041
+        },
+        {
+          "token": "so",
+          "start": 68.336,
+          "end": 68.456,
+          "frame": 2050,
+          "endFrame": 2054
+        },
+        {
+          "token": "you",
+          "start": 68.496,
+          "end": 68.549,
+          "frame": 2055,
+          "endFrame": 2056
+        },
+        {
+          "token": "can",
+          "start": 68.589,
+          "end": 68.695,
+          "frame": 2058,
+          "endFrame": 2061
+        },
+        {
+          "token": "see",
+          "start": 68.722,
+          "end": 68.908,
+          "frame": 2062,
+          "endFrame": 2067
+        },
+        {
+          "token": "everyone",
+          "start": 68.988,
+          "end": 69.453,
+          "frame": 2070,
+          "endFrame": 2084
+        },
+        {
+          "token": "without",
+          "start": 69.466,
+          "end": 69.785,
+          "frame": 2084,
+          "endFrame": 2094
+        },
+        {
+          "token": "carrying",
+          "start": 69.825,
+          "end": 70.238,
+          "frame": 2095,
+          "endFrame": 2107
+        },
+        {
+          "token": "everyone",
+          "start": 70.304,
+          "end": 70.756,
+          "frame": 2109,
+          "endFrame": 2123
+        },
+        {
+          "token": "alone.",
+          "start": 70.756,
+          "end": 71.248,
+          "frame": 2123,
+          "endFrame": 2137
+        }
+      ],
+      "to": 2154,
+      "speechEnd": 2137,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S13",
+      "text": "The higher the peak, the clearer the view.",
+      "from": 2154,
+      "words": [
+        {
+          "token": "The",
+          "start": 71.891,
+          "end": 71.958,
+          "frame": 2157,
+          "endFrame": 2159
+        },
+        {
+          "token": "higher",
+          "start": 72.011,
+          "end": 72.29,
+          "frame": 2160,
+          "endFrame": 2169
+        },
+        {
+          "token": "the",
+          "start": 72.317,
+          "end": 72.41,
+          "frame": 2170,
+          "endFrame": 2172
+        },
+        {
+          "token": "peak,",
+          "start": 72.49,
+          "end": 72.795,
+          "frame": 2175,
+          "endFrame": 2184
+        },
+        {
+          "token": "the",
+          "start": 73.061,
+          "end": 73.141,
+          "frame": 2192,
+          "endFrame": 2194
+        },
+        {
+          "token": "clearer",
+          "start": 73.208,
+          "end": 73.513,
+          "frame": 2196,
+          "endFrame": 2205
+        },
+        {
+          "token": "the",
+          "start": 73.54,
+          "end": 73.633,
+          "frame": 2206,
+          "endFrame": 2209
+        },
+        {
+          "token": "view.",
+          "start": 73.66,
+          "end": 73.979,
+          "frame": 2210,
+          "endFrame": 2219
+        }
+      ],
+      "to": 2280,
+      "speechEnd": 2219,
+      "speaker": "NARRATOR"
+    }
+  ]
+}
