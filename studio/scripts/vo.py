@@ -242,7 +242,7 @@ def wav_seconds(path: Path) -> float:
         return w.getnframes() / w.getframerate()
 
 
-async def make_dialogue(slug: str, rate: str, hold_seconds: float, gap: float) -> None:
+async def make_dialogue(slug: str, rate: str, hold_seconds: float, gap: float, engine: str = "auto") -> None:
     """A dialogue take: each line synthesized in its character's voice, joined with short gaps.
 
     briefs/<slug>/vo-take.txt: "[S1] DOCTOR: Six weeks?! [S2] PATIENT: You said a lot."
@@ -258,10 +258,16 @@ async def make_dialogue(slug: str, rate: str, hold_seconds: float, gap: float) -
     missing = sorted({speaker for _, speaker, _ in lines} - set(cast))
     if missing:
         raise ValueError(f"cast.json has no voice for: {', '.join(missing)}")
-    try:
-        import edge_tts
-    except ImportError:
-        sys.exit("edge-tts is not installed. Run: pip3 install edge-tts")
+    env = read_env()
+    speakers = sorted({speaker for _, speaker, _ in lines})
+    # ElevenLabs voice per speaker: cast.json "elevenlabs_voice", or ELEVENLABS_VOICE_ID when there is only one speaker
+    eleven = {sp: cast[sp].get("elevenlabs_voice") or (env.get("ELEVENLABS_VOICE_ID") if len(speakers) == 1 else None) for sp in speakers}
+    engine = pick_engine(engine, env, list(eleven.values()))
+    if engine == "edge":
+        try:
+            import edge_tts
+        except ImportError:
+            sys.exit("edge-tts is not installed. Run: pip3 install edge-tts")
 
     out_dir = ROOT / "public" / "vo" / slug
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -273,18 +279,21 @@ async def make_dialogue(slug: str, rate: str, hold_seconds: float, gap: float) -
     for i, (scene, speaker, text) in enumerate(lines):
         role = cast[speaker]
         mp3 = work / f"{i:02d}-{scene}.mp3"
-        communicate = edge_tts.Communicate(text, role["voice"], rate=role.get("rate", rate),
-                                           pitch=role.get("pitch", "+0Hz"), boundary="WordBoundary")
-        line_words = []
-        with mp3.open("wb") as audio:
-            async for chunk in communicate.stream():
-                if chunk["type"] == "audio":
-                    audio.write(chunk["data"])
-                elif chunk["type"] == "WordBoundary":
-                    line_words.append({"word": chunk["text"], "start": chunk["offset"] / TICKS_PER_SECOND,
-                                       "end": (chunk["offset"] + chunk["duration"]) / TICKS_PER_SECOND})
+        if engine == "elevenlabs":
+            line_words = elevenlabs_line(text, eleven[speaker], mp3, env, role.get("elevenlabs_settings"))
+        else:
+            communicate = edge_tts.Communicate(text, role["voice"], rate=role.get("rate", rate),
+                                               pitch=role.get("pitch", "+0Hz"), boundary="WordBoundary")
+            line_words = []
+            with mp3.open("wb") as audio:
+                async for chunk in communicate.stream():
+                    if chunk["type"] == "audio":
+                        audio.write(chunk["data"])
+                    elif chunk["type"] == "WordBoundary":
+                        line_words.append({"word": chunk["text"], "start": chunk["offset"] / TICKS_PER_SECOND,
+                                           "end": (chunk["offset"] + chunk["duration"]) / TICKS_PER_SECOND})
         if not line_words:
-            raise RuntimeError(f"edge-tts returned no word timings for {scene} ({role['voice']})")
+            raise RuntimeError(f"{engine} returned no word timings for {scene}")
         wav = work / f"{i:02d}-{scene}.wav"
         # Trim the engine's trailing silence so the gap between lines is ours.
         end = line_words[-1]["end"] + 0.12
@@ -306,7 +315,7 @@ async def make_dialogue(slug: str, rate: str, hold_seconds: float, gap: float) -
     rows, total_frames = build_timeline([(scene, text) for scene, _, text in lines], words, hold_seconds)
     for row, (_, speaker, _) in zip(rows, lines):
         row["speaker"] = speaker
-    take = {"file": f"vo/{slug}/take.mp3", "voice": "dialogue", "rate": rate, "fps": FPS,
+    take = {"file": f"vo/{slug}/take.mp3", "voice": "dialogue", "engine": engine, "rate": rate, "fps": FPS,
             "totalFrames": total_frames, "cast": cast, "scenes": rows}
     (out_dir / "take.json").write_text(json.dumps(take, indent=2))
     for row in rows:
@@ -348,6 +357,60 @@ def elevenlabs_synth(text: str, out_path: Path, env: dict) -> None:
         raise RuntimeError(f"ElevenLabs returned {error.code}: {detail}") from error
 
 
+def elevenlabs_words(alignment: dict) -> list[dict]:
+    """Word timings from ElevenLabs' character alignment (characters + per-character start/end seconds)."""
+    chars = alignment.get("characters", [])
+    starts = alignment.get("character_start_times_seconds", [])
+    ends = alignment.get("character_end_times_seconds", [])
+    words, cur, t0, t1 = [], "", None, None
+    for ch, a, b in zip(chars, starts, ends):
+        if ch.isspace():
+            if cur:
+                words.append({"word": cur, "start": t0, "end": t1})
+            cur, t0, t1 = "", None, None
+            continue
+        if t0 is None:
+            t0 = a
+        cur, t1 = cur + ch, b
+    if cur:
+        words.append({"word": cur, "start": t0, "end": t1})
+    return words
+
+
+def elevenlabs_line(text: str, voice: str, out_mp3: Path, env: dict, settings: dict | None = None) -> list[dict]:
+    """One dialogue line from an ElevenLabs voice, with word timings (the /with-timestamps endpoint)."""
+    import base64
+    key = env.get("ELEVENLABS_API_KEY")
+    if not key:
+        raise RuntimeError("ELEVENLABS_API_KEY is not set (see README: Voice, ElevenLabs)")
+    body = {"text": text, "model_id": env.get("ELEVENLABS_MODEL", ELEVENLABS_MODEL)}
+    if settings:
+        body["voice_settings"] = settings
+    request = urllib.request.Request(
+        f"https://api.elevenlabs.io/v1/text-to-speech/{voice}/with-timestamps?output_format=mp3_44100_128",
+        data=json.dumps(body).encode(), headers={"xi-api-key": key, "Content-Type": "application/json"}, method="POST")
+    try:
+        with urllib.request.urlopen(request, timeout=300) as response:
+            data = json.loads(response.read())
+    except urllib.error.HTTPError as error:
+        detail = error.read().decode(errors="replace")[:300]
+        raise RuntimeError(f"ElevenLabs returned {error.code}: {detail}") from error
+    out_mp3.write_bytes(base64.b64decode(data["audio_base64"]))
+    return elevenlabs_words(data.get("alignment") or data.get("normalized_alignment") or {})
+
+
+def pick_engine(requested: str, env: dict, voices_needed: list[str | None]) -> str:
+    """auto = ElevenLabs when a key and a voice for every speaker are set, else the free edge-tts voices."""
+    if requested != "auto":
+        return requested
+    if env.get("ELEVENLABS_API_KEY") and all(voices_needed):
+        print("voice engine: ElevenLabs (key found)")
+        return "elevenlabs"
+    reason = "no ELEVENLABS_API_KEY" if not env.get("ELEVENLABS_API_KEY") else "no ElevenLabs voice id for every speaker"
+    print(f"voice engine: edge-tts, free ({reason}; see README: Voice, ElevenLabs)")
+    return "edge"
+
+
 def make_take_from_audio(args: argparse.Namespace) -> None:
     from voice_take import build  # local import: needs ffmpeg + whisper, not edge-tts
     take_path = ROOT / "briefs" / args.slug / "vo-take.txt"
@@ -383,7 +446,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--hold", type=float, default=DEFAULT_HOLD_SECONDS,
                         help=f"seconds of silent hold after the last word (default {DEFAULT_HOLD_SECONDS})")
     parser.add_argument("--audio", help="your own recording of vo-take.txt (m4a, mp3, wav, or a video file)")
-    parser.add_argument("--engine", choices=["edge", "elevenlabs"], default="edge", help="voice engine when no --audio (default edge)")
+    parser.add_argument("--engine", choices=["auto", "edge", "elevenlabs"], default="auto",
+                        help="voice engine when no --audio: auto = ElevenLabs if ELEVENLABS_API_KEY (+ voice id) is set, else free edge-tts")
     parser.add_argument("--language", default="auto", help="spoken language for --audio / elevenlabs, e.g. ru, en (default auto)")
     parser.add_argument("--model", default="small", help="whisper model for --audio / elevenlabs (default small)")
     parser.add_argument("--dialogue", action="store_true", help="several characters: '[S1] NAME: line' + briefs/<slug>/cast.json")
@@ -402,8 +466,11 @@ def main() -> None:
         if args.samples:
             asyncio.run(make_samples(args.text, args.rate))
         elif args.dialogue:
-            asyncio.run(make_dialogue(args.slug, args.rate, args.hold, args.gap))
-        elif args.audio or args.engine == "elevenlabs":
+            asyncio.run(make_dialogue(args.slug, args.rate, args.hold, args.gap, args.engine))
+        elif args.audio:
+            make_take_from_audio(args)
+        elif pick_engine(args.engine, read_env(), [read_env().get("ELEVENLABS_VOICE_ID")]) == "elevenlabs":
+            args.engine = "elevenlabs"
             make_take_from_audio(args)
         else:
             asyncio.run(make_take(args.slug, args.voice, args.rate, args.hold))

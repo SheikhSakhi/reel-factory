@@ -30,7 +30,7 @@ If `.env.local` has Instagram credentials, first refresh evidence: `npm run week
 **Mode `auto`** (default): run the `/reel-factory` pipeline steps 1-5 with the pick:
 - researcher → scriptwriter (given `00-pick.md` and `insights/learnings.md`) → voice-over → art director + sound director + caption writer → animator → QA (max 2 fix rounds) → `npm run audio-check -- <slug>` → `sh scripts/render.sh <slug>`.
 - Format and style: from `00-pick.md`, chosen by the rotation rule in `insights/formats-lab.md` (studied from `insights/references.md`). Faceless: a mascot, faceless characters, screens and drawings, all animated in code. Each run must look different from the last one.
-- Voice: ElevenLabs if `ELEVENLABS_API_KEY` is set, else edge-tts. Dialogue formats use two clearly different voices (e.g. `en-US-AndrewMultilingualNeural` and `en-US-AvaMultilingualNeural`). Label synthetic voices as AI when publishing.
+- Voice: `vo.py` picks it (`--engine auto`): ElevenLabs if `ELEVENLABS_API_KEY` and a voice id are set (README: Voice), else free edge-tts; say in the delivery which one was used. Dialogue formats use two clearly different voices (e.g. `en-US-AndrewMultilingualNeural` and `en-US-AvaMultilingualNeural`). Label synthetic voices as AI when publishing.
 - If the user later asks "make it with my voice": send `vo-take.txt` as plain text, and when the recording arrives re-make it with `vo.py --audio` (the half-auto path).
 
 **Mode `half-auto`**: stop after the script. Deliver `vo-take.txt` as plain text with "Read this into Voice Memos and send me the file." When the recording arrives, continue with `vo.py --audio` and the rest of the pipeline.
@@ -56,11 +56,12 @@ When the user replies with a rating or comments (in the same session, later), ru
 The container can be reset between runs, so learning must live in git:
 
 ```bash
+sh scripts/check-secrets.sh   # never commit a key
 git add insights/learnings.md insights/history.md insights/formats-lab.md briefs/<slug> src/reels src/edits public/vo/<slug> 2>/dev/null
 git commit -m "daily: <slug>" && git push origin HEAD
 ```
 
-Push only to the session's working branch. Never commit `.env.local`, `data/` or `out/`.
+Push only to the session's working branch. Never commit `.env.local`, `data/`, `out/` or any key; run `scripts/check-secrets.sh` after `git add` and before `git commit`.
 
 ## Rules
 

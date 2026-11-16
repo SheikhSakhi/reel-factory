@@ -29,3 +29,26 @@ Layout:
 - `ideas/backlog.md`, `ideas/outliers.md`, `plans/`, `replies/`: from `/reel-ideas`, `/reel-insights`, `/reel-plan`, `/reel-replies`
 - `insights/`: `report.md` (your reels) and `formats.md` (what works in the niche)
 - `data/factory.db`, `.env.local`: local memory and secrets, never committed
+
+
+## Voice: ElevenLabs (optional, paid) or free edge-tts
+
+`scripts/vo.py` picks the voice engine by itself (`--engine auto`, the default):
+
+- **ElevenLabs** when `ELEVENLABS_API_KEY` is set **and** there is a voice for every speaker:
+  `ELEVENLABS_VOICE_ID` for one-narrator reels, or `"elevenlabs_voice": "<voice id>"` per speaker in `briefs/<slug>/cast.json`
+  (optional `"elevenlabs_settings": {"stability": 0.5, "similarity_boost": 0.75}`).
+- **edge-tts (free)** otherwise. The run prints which engine it used, and `take.json` records it (`"engine"`).
+
+### Set up ElevenLabs safely
+
+1. Create an account at elevenlabs.io and choose a paid plan with API access (the free tier is for personal, non-commercial use).
+2. Profile, **API Keys**, create a key. Restrict it to **Text to Speech** only and set a monthly credit limit.
+3. Pick a voice from the **Voice Library** (a stock voice, never a clone of someone else) and copy its **Voice ID**.
+4. Store the key where git never sees it:
+   - cloud sessions (claude.ai/code): the environment's settings, **Environment variables**: `ELEVENLABS_API_KEY=...` (and `ELEVENLABS_VOICE_ID=...`). New sessions pick them up.
+   - on a computer: `studio/.env.local` (git-ignored).
+   Never paste a key into a chat, an issue, a brief or any committed file.
+5. Before committing, `scripts/check-secrets.sh` refuses anything that looks like a key.
+
+If a key ever leaks: delete it in ElevenLabs at once and create a new one; git history keeps old commits even after a file is removed.
