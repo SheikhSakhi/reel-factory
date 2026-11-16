@@ -1,0 +1,1132 @@
+{
+  "file": "vo/2026-11-16-one-percent/take.mp3",
+  "voice": "dialogue",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 1829,
+  "cast": {
+    "NARRATOR": {
+      "voice": "en-IE-ConnorNeural",
+      "rate": "-6%",
+      "pitch": "-8Hz",
+      "gap": 0.42
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "One percent a day sounds like nothing.",
+      "from": 0,
+      "words": [
+        {
+          "token": "One",
+          "start": 0.103,
+          "end": 0.289,
+          "frame": 3,
+          "endFrame": 9
+        },
+        {
+          "token": "percent",
+          "start": 0.316,
+          "end": 0.728,
+          "frame": 9,
+          "endFrame": 22
+        },
+        {
+          "token": "a",
+          "start": 0.728,
+          "end": 0.768,
+          "frame": 22,
+          "endFrame": 23
+        },
+        {
+          "token": "day",
+          "start": 0.848,
+          "end": 1.021,
+          "frame": 25,
+          "endFrame": 31
+        },
+        {
+          "token": "sounds",
+          "start": 1.087,
+          "end": 1.473,
+          "frame": 33,
+          "endFrame": 44
+        },
+        {
+          "token": "like",
+          "start": 1.473,
+          "end": 1.712,
+          "frame": 44,
+          "endFrame": 51
+        },
+        {
+          "token": "nothing.",
+          "start": 1.752,
+          "end": 2.231,
+          "frame": 53,
+          "endFrame": 67
+        }
+      ],
+      "to": 83,
+      "speechEnd": 67,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S2",
+      "text": "Do it every day for a year, and it adds up to thirty seven times.",
+      "from": 83,
+      "words": [
+        {
+          "token": "Do",
+          "start": 2.874,
+          "end": 2.981,
+          "frame": 86,
+          "endFrame": 89
+        },
+        {
+          "token": "it",
+          "start": 3.034,
+          "end": 3.14,
+          "frame": 91,
+          "endFrame": 94
+        },
+        {
+          "token": "every",
+          "start": 3.193,
+          "end": 3.446,
+          "frame": 96,
+          "endFrame": 103
+        },
+        {
+          "token": "day",
+          "start": 3.499,
+          "end": 3.685,
+          "frame": 105,
+          "endFrame": 111
+        },
+        {
+          "token": "for",
+          "start": 3.725,
+          "end": 3.818,
+          "frame": 112,
+          "endFrame": 115
+        },
+        {
+          "token": "a",
+          "start": 3.845,
+          "end": 3.885,
+          "frame": 115,
+          "endFrame": 117
+        },
+        {
+          "token": "year,",
+          "start": 3.951,
+          "end": 4.297,
+          "frame": 119,
+          "endFrame": 129
+        },
+        {
+          "token": "and",
+          "start": 4.616,
+          "end": 4.709,
+          "frame": 138,
+          "endFrame": 141
+        },
+        {
+          "token": "it",
+          "start": 4.709,
+          "end": 4.802,
+          "frame": 141,
+          "endFrame": 144
+        },
+        {
+          "token": "adds",
+          "start": 4.816,
+          "end": 5.042,
+          "frame": 144,
+          "endFrame": 151
+        },
+        {
+          "token": "up",
+          "start": 5.055,
+          "end": 5.201,
+          "frame": 152,
+          "endFrame": 156
+        },
+        {
+          "token": "to",
+          "start": 5.228,
+          "end": 5.294,
+          "frame": 157,
+          "endFrame": 159
+        },
+        {
+          "token": "thirty",
+          "start": 5.348,
+          "end": 5.68,
+          "frame": 160,
+          "endFrame": 170
+        },
+        {
+          "token": "seven",
+          "start": 5.72,
+          "end": 6.026,
+          "frame": 172,
+          "endFrame": 181
+        },
+        {
+          "token": "times.",
+          "start": 6.066,
+          "end": 6.518,
+          "frame": 182,
+          "endFrame": 196
+        }
+      ],
+      "to": 212,
+      "speechEnd": 196,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S3",
+      "text": "Lose one percent a day, and by the end of the year, almost nothing is left.",
+      "from": 212,
+      "words": [
+        {
+          "token": "Lose",
+          "start": 7.161,
+          "end": 7.494,
+          "frame": 215,
+          "endFrame": 225
+        },
+        {
+          "token": "one",
+          "start": 7.507,
+          "end": 7.706,
+          "frame": 225,
+          "endFrame": 231
+        },
+        {
+          "token": "percent",
+          "start": 7.733,
+          "end": 8.119,
+          "frame": 232,
+          "endFrame": 244
+        },
+        {
+          "token": "a",
+          "start": 8.119,
+          "end": 8.172,
+          "frame": 244,
+          "endFrame": 245
+        },
+        {
+          "token": "day,",
+          "start": 8.252,
+          "end": 8.518,
+          "frame": 248,
+          "endFrame": 256
+        },
+        {
+          "token": "and",
+          "start": 8.89,
+          "end": 8.983,
+          "frame": 267,
+          "endFrame": 269
+        },
+        {
+          "token": "by",
+          "start": 8.996,
+          "end": 9.143,
+          "frame": 270,
+          "endFrame": 274
+        },
+        {
+          "token": "the",
+          "start": 9.156,
+          "end": 9.249,
+          "frame": 275,
+          "endFrame": 277
+        },
+        {
+          "token": "end",
+          "start": 9.342,
+          "end": 9.555,
+          "frame": 280,
+          "endFrame": 287
+        },
+        {
+          "token": "of",
+          "start": 9.555,
+          "end": 9.621,
+          "frame": 287,
+          "endFrame": 289
+        },
+        {
+          "token": "the",
+          "start": 9.621,
+          "end": 9.728,
+          "frame": 289,
+          "endFrame": 292
+        },
+        {
+          "token": "year,",
+          "start": 9.794,
+          "end": 10.113,
+          "frame": 294,
+          "endFrame": 303
+        },
+        {
+          "token": "almost",
+          "start": 10.406,
+          "end": 10.805,
+          "frame": 312,
+          "endFrame": 324
+        },
+        {
+          "token": "nothing",
+          "start": 10.805,
+          "end": 11.177,
+          "frame": 324,
+          "endFrame": 335
+        },
+        {
+          "token": "is",
+          "start": 11.19,
+          "end": 11.337,
+          "frame": 336,
+          "endFrame": 340
+        },
+        {
+          "token": "left.",
+          "start": 11.35,
+          "end": 11.749,
+          "frame": 341,
+          "endFrame": 352
+        }
+      ],
+      "to": 369,
+      "speechEnd": 352,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S4",
+      "text": "That's the quiet law behind every habit. Nothing happens. Then everything does.",
+      "from": 369,
+      "words": [
+        {
+          "token": "That's",
+          "start": 12.392,
+          "end": 12.618,
+          "frame": 372,
+          "endFrame": 379
+        },
+        {
+          "token": "the",
+          "start": 12.618,
+          "end": 12.725,
+          "frame": 379,
+          "endFrame": 382
+        },
+        {
+          "token": "quiet",
+          "start": 12.791,
+          "end": 13.15,
+          "frame": 384,
+          "endFrame": 395
+        },
+        {
+          "token": "law",
+          "start": 13.163,
+          "end": 13.39,
+          "frame": 395,
+          "endFrame": 402
+        },
+        {
+          "token": "behind",
+          "start": 13.403,
+          "end": 13.855,
+          "frame": 402,
+          "endFrame": 416
+        },
+        {
+          "token": "every",
+          "start": 13.935,
+          "end": 14.174,
+          "frame": 418,
+          "endFrame": 425
+        },
+        {
+          "token": "habit.",
+          "start": 14.214,
+          "end": 14.573,
+          "frame": 426,
+          "endFrame": 437
+        },
+        {
+          "token": "Nothing",
+          "start": 15.587,
+          "end": 15.933,
+          "frame": 468,
+          "endFrame": 478
+        },
+        {
+          "token": "happens.",
+          "start": 15.959,
+          "end": 16.478,
+          "frame": 479,
+          "endFrame": 494
+        },
+        {
+          "token": "Then",
+          "start": 17.475,
+          "end": 17.754,
+          "frame": 524,
+          "endFrame": 533
+        },
+        {
+          "token": "everything",
+          "start": 17.834,
+          "end": 18.286,
+          "frame": 535,
+          "endFrame": 549
+        },
+        {
+          "token": "does.",
+          "start": 18.353,
+          "end": 18.725,
+          "frame": 551,
+          "endFrame": 562
+        }
+      ],
+      "to": 578,
+      "speechEnd": 562,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S5",
+      "text": "And it's the same law behind a patient's year.",
+      "from": 578,
+      "words": [
+        {
+          "token": "And",
+          "start": 19.368,
+          "end": 19.488,
+          "frame": 581,
+          "endFrame": 585
+        },
+        {
+          "token": "it's",
+          "start": 19.488,
+          "end": 19.634,
+          "frame": 585,
+          "endFrame": 589
+        },
+        {
+          "token": "the",
+          "start": 19.634,
+          "end": 19.754,
+          "frame": 589,
+          "endFrame": 593
+        },
+        {
+          "token": "same",
+          "start": 19.794,
+          "end": 20.1,
+          "frame": 594,
+          "endFrame": 603
+        },
+        {
+          "token": "law",
+          "start": 20.1,
+          "end": 20.339,
+          "frame": 603,
+          "endFrame": 610
+        },
+        {
+          "token": "behind",
+          "start": 20.352,
+          "end": 20.764,
+          "frame": 611,
+          "endFrame": 623
+        },
+        {
+          "token": "a",
+          "start": 20.764,
+          "end": 20.804,
+          "frame": 623,
+          "endFrame": 624
+        },
+        {
+          "token": "patient's",
+          "start": 20.884,
+          "end": 21.283,
+          "frame": 627,
+          "endFrame": 638
+        },
+        {
+          "token": "year.",
+          "start": 21.31,
+          "end": 21.589,
+          "frame": 639,
+          "endFrame": 648
+        }
+      ],
+      "to": 664,
+      "speechEnd": 648,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S6",
+      "text": "A skipped pill. A little more salt. A kilo here. A reading creeping up. One percent at a time.",
+      "from": 664,
+      "words": [
+        {
+          "token": "A",
+          "start": 22.232,
+          "end": 22.339,
+          "frame": 667,
+          "endFrame": 670
+        },
+        {
+          "token": "skipped",
+          "start": 22.352,
+          "end": 22.711,
+          "frame": 671,
+          "endFrame": 681
+        },
+        {
+          "token": "pill.",
+          "start": 22.764,
+          "end": 23.043,
+          "frame": 683,
+          "endFrame": 691
+        },
+        {
+          "token": "A",
+          "start": 24.084,
+          "end": 24.164,
+          "frame": 723,
+          "endFrame": 725
+        },
+        {
+          "token": "little",
+          "start": 24.177,
+          "end": 24.456,
+          "frame": 725,
+          "endFrame": 734
+        },
+        {
+          "token": "more",
+          "start": 24.469,
+          "end": 24.642,
+          "frame": 734,
+          "endFrame": 739
+        },
+        {
+          "token": "salt.",
+          "start": 24.682,
+          "end": 25.068,
+          "frame": 740,
+          "endFrame": 752
+        },
+        {
+          "token": "A",
+          "start": 26.092,
+          "end": 26.172,
+          "frame": 783,
+          "endFrame": 785
+        },
+        {
+          "token": "kilo",
+          "start": 26.238,
+          "end": 26.544,
+          "frame": 787,
+          "endFrame": 796
+        },
+        {
+          "token": "here.",
+          "start": 26.597,
+          "end": 26.903,
+          "frame": 798,
+          "endFrame": 807
+        },
+        {
+          "token": "A",
+          "start": 27.953,
+          "end": 28.033,
+          "frame": 839,
+          "endFrame": 841
+        },
+        {
+          "token": "reading",
+          "start": 28.1,
+          "end": 28.446,
+          "frame": 843,
+          "endFrame": 853
+        },
+        {
+          "token": "creeping",
+          "start": 28.499,
+          "end": 28.898,
+          "frame": 855,
+          "endFrame": 867
+        },
+        {
+          "token": "up.",
+          "start": 28.911,
+          "end": 29.124,
+          "frame": 867,
+          "endFrame": 874
+        },
+        {
+          "token": "One",
+          "start": 30.081,
+          "end": 30.267,
+          "frame": 902,
+          "endFrame": 908
+        },
+        {
+          "token": "percent",
+          "start": 30.294,
+          "end": 30.759,
+          "frame": 909,
+          "endFrame": 923
+        },
+        {
+          "token": "at",
+          "start": 30.773,
+          "end": 30.892,
+          "frame": 923,
+          "endFrame": 927
+        },
+        {
+          "token": "a",
+          "start": 30.892,
+          "end": 30.945,
+          "frame": 927,
+          "endFrame": 928
+        },
+        {
+          "token": "time.",
+          "start": 31.012,
+          "end": 31.424,
+          "frame": 930,
+          "endFrame": 943
+        }
+      ],
+      "to": 959,
+      "speechEnd": 943,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S7",
+      "text": "Nobody sees one percent. By the next visit, it looks like a crisis.",
+      "from": 959,
+      "words": [
+        {
+          "token": "Nobody",
+          "start": 32.067,
+          "end": 32.519,
+          "frame": 962,
+          "endFrame": 976
+        },
+        {
+          "token": "sees",
+          "start": 32.573,
+          "end": 32.878,
+          "frame": 977,
+          "endFrame": 986
+        },
+        {
+          "token": "one",
+          "start": 32.905,
+          "end": 33.118,
+          "frame": 987,
+          "endFrame": 994
+        },
+        {
+          "token": "percent.",
+          "start": 33.144,
+          "end": 33.65,
+          "frame": 994,
+          "endFrame": 1009
+        },
+        {
+          "token": "By",
+          "start": 34.677,
+          "end": 34.836,
+          "frame": 1040,
+          "endFrame": 1045
+        },
+        {
+          "token": "the",
+          "start": 34.85,
+          "end": 34.929,
+          "frame": 1045,
+          "endFrame": 1048
+        },
+        {
+          "token": "next",
+          "start": 34.969,
+          "end": 35.235,
+          "frame": 1049,
+          "endFrame": 1057
+        },
+        {
+          "token": "visit,",
+          "start": 35.249,
+          "end": 35.581,
+          "frame": 1057,
+          "endFrame": 1067
+        },
+        {
+          "token": "it",
+          "start": 35.82,
+          "end": 35.927,
+          "frame": 1075,
+          "endFrame": 1078
+        },
+        {
+          "token": "looks",
+          "start": 35.927,
+          "end": 36.179,
+          "frame": 1078,
+          "endFrame": 1085
+        },
+        {
+          "token": "like",
+          "start": 36.179,
+          "end": 36.379,
+          "frame": 1085,
+          "endFrame": 1091
+        },
+        {
+          "token": "a",
+          "start": 36.379,
+          "end": 36.419,
+          "frame": 1091,
+          "endFrame": 1093
+        },
+        {
+          "token": "crisis.",
+          "start": 36.499,
+          "end": 37.03,
+          "frame": 1095,
+          "endFrame": 1111
+        }
+      ],
+      "to": 1127,
+      "speechEnd": 1111,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S8",
+      "text": "But the doctor who sees the trend can turn it while it's small. And small turns compound too.",
+      "from": 1127,
+      "words": [
+        {
+          "token": "But",
+          "start": 37.673,
+          "end": 37.819,
+          "frame": 1130,
+          "endFrame": 1135
+        },
+        {
+          "token": "the",
+          "start": 37.833,
+          "end": 37.899,
+          "frame": 1135,
+          "endFrame": 1137
+        },
+        {
+          "token": "doctor",
+          "start": 37.979,
+          "end": 38.311,
+          "frame": 1139,
+          "endFrame": 1149
+        },
+        {
+          "token": "who",
+          "start": 38.351,
+          "end": 38.471,
+          "frame": 1151,
+          "endFrame": 1154
+        },
+        {
+          "token": "sees",
+          "start": 38.524,
+          "end": 38.817,
+          "frame": 1156,
+          "endFrame": 1165
+        },
+        {
+          "token": "the",
+          "start": 38.817,
+          "end": 38.923,
+          "frame": 1165,
+          "endFrame": 1168
+        },
+        {
+          "token": "trend",
+          "start": 38.99,
+          "end": 39.349,
+          "frame": 1170,
+          "endFrame": 1180
+        },
+        {
+          "token": "can",
+          "start": 39.415,
+          "end": 39.522,
+          "frame": 1182,
+          "endFrame": 1186
+        },
+        {
+          "token": "turn",
+          "start": 39.588,
+          "end": 39.854,
+          "frame": 1188,
+          "endFrame": 1196
+        },
+        {
+          "token": "it",
+          "start": 39.854,
+          "end": 39.934,
+          "frame": 1196,
+          "endFrame": 1198
+        },
+        {
+          "token": "while",
+          "start": 39.96,
+          "end": 40.266,
+          "frame": 1199,
+          "endFrame": 1208
+        },
+        {
+          "token": "it's",
+          "start": 40.266,
+          "end": 40.386,
+          "frame": 1208,
+          "endFrame": 1212
+        },
+        {
+          "token": "small.",
+          "start": 40.386,
+          "end": 40.811,
+          "frame": 1212,
+          "endFrame": 1224
+        },
+        {
+          "token": "And",
+          "start": 41.852,
+          "end": 41.998,
+          "frame": 1256,
+          "endFrame": 1260
+        },
+        {
+          "token": "small",
+          "start": 42.012,
+          "end": 42.357,
+          "frame": 1260,
+          "endFrame": 1271
+        },
+        {
+          "token": "turns",
+          "start": 42.424,
+          "end": 42.743,
+          "frame": 1273,
+          "endFrame": 1282
+        },
+        {
+          "token": "compound",
+          "start": 42.796,
+          "end": 43.355,
+          "frame": 1284,
+          "endFrame": 1301
+        },
+        {
+          "token": "too.",
+          "start": 43.381,
+          "end": 43.674,
+          "frame": 1301,
+          "endFrame": 1310
+        }
+      ],
+      "to": 1327,
+      "speechEnd": 1310,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S9",
+      "text": "That's what a good plan is. Small daily steps. A signal when the line bends. And someone watching the line with you.",
+      "from": 1327,
+      "words": [
+        {
+          "token": "That's",
+          "start": 44.317,
+          "end": 44.543,
+          "frame": 1330,
+          "endFrame": 1336
+        },
+        {
+          "token": "what",
+          "start": 44.583,
+          "end": 44.729,
+          "frame": 1337,
+          "endFrame": 1342
+        },
+        {
+          "token": "a",
+          "start": 44.729,
+          "end": 44.783,
+          "frame": 1342,
+          "endFrame": 1343
+        },
+        {
+          "token": "good",
+          "start": 44.876,
+          "end": 45.049,
+          "frame": 1346,
+          "endFrame": 1351
+        },
+        {
+          "token": "plan",
+          "start": 45.102,
+          "end": 45.421,
+          "frame": 1353,
+          "endFrame": 1363
+        },
+        {
+          "token": "is.",
+          "start": 45.434,
+          "end": 45.753,
+          "frame": 1363,
+          "endFrame": 1373
+        },
+        {
+          "token": "Small",
+          "start": 46.781,
+          "end": 47.193,
+          "frame": 1403,
+          "endFrame": 1416
+        },
+        {
+          "token": "daily",
+          "start": 47.233,
+          "end": 47.525,
+          "frame": 1417,
+          "endFrame": 1426
+        },
+        {
+          "token": "steps.",
+          "start": 47.565,
+          "end": 48.057,
+          "frame": 1427,
+          "endFrame": 1442
+        },
+        {
+          "token": "A",
+          "start": 49.054,
+          "end": 49.147,
+          "frame": 1472,
+          "endFrame": 1474
+        },
+        {
+          "token": "signal",
+          "start": 49.174,
+          "end": 49.6,
+          "frame": 1475,
+          "endFrame": 1488
+        },
+        {
+          "token": "when",
+          "start": 49.613,
+          "end": 49.733,
+          "frame": 1488,
+          "endFrame": 1492
+        },
+        {
+          "token": "the",
+          "start": 49.773,
+          "end": 49.799,
+          "frame": 1493,
+          "endFrame": 1494
+        },
+        {
+          "token": "line",
+          "start": 49.852,
+          "end": 50.158,
+          "frame": 1496,
+          "endFrame": 1505
+        },
+        {
+          "token": "bends.",
+          "start": 50.185,
+          "end": 50.703,
+          "frame": 1506,
+          "endFrame": 1521
+        },
+        {
+          "token": "And",
+          "start": 51.714,
+          "end": 51.847,
+          "frame": 1551,
+          "endFrame": 1555
+        },
+        {
+          "token": "someone",
+          "start": 51.86,
+          "end": 52.193,
+          "frame": 1556,
+          "endFrame": 1566
+        },
+        {
+          "token": "watching",
+          "start": 52.193,
+          "end": 52.552,
+          "frame": 1566,
+          "endFrame": 1577
+        },
+        {
+          "token": "the",
+          "start": 52.592,
+          "end": 52.632,
+          "frame": 1578,
+          "endFrame": 1579
+        },
+        {
+          "token": "line",
+          "start": 52.685,
+          "end": 52.937,
+          "frame": 1581,
+          "endFrame": 1588
+        },
+        {
+          "token": "with",
+          "start": 52.964,
+          "end": 53.137,
+          "frame": 1589,
+          "endFrame": 1594
+        },
+        {
+          "token": "you.",
+          "start": 53.137,
+          "end": 53.323,
+          "frame": 1594,
+          "endFrame": 1600
+        }
+      ],
+      "to": 1616,
+      "speechEnd": 1600,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S10",
+      "text": "One percent a day. The only question is which way, and who is watching.",
+      "from": 1616,
+      "words": [
+        {
+          "token": "One",
+          "start": 53.966,
+          "end": 54.166,
+          "frame": 1619,
+          "endFrame": 1625
+        },
+        {
+          "token": "percent",
+          "start": 54.192,
+          "end": 54.591,
+          "frame": 1626,
+          "endFrame": 1638
+        },
+        {
+          "token": "a",
+          "start": 54.591,
+          "end": 54.644,
+          "frame": 1638,
+          "endFrame": 1639
+        },
+        {
+          "token": "day.",
+          "start": 54.724,
+          "end": 54.99,
+          "frame": 1642,
+          "endFrame": 1650
+        },
+        {
+          "token": "The",
+          "start": 56.044,
+          "end": 56.15,
+          "frame": 1681,
+          "endFrame": 1685
+        },
+        {
+          "token": "only",
+          "start": 56.23,
+          "end": 56.469,
+          "frame": 1687,
+          "endFrame": 1694
+        },
+        {
+          "token": "question",
+          "start": 56.536,
+          "end": 56.988,
+          "frame": 1696,
+          "endFrame": 1710
+        },
+        {
+          "token": "is",
+          "start": 57.001,
+          "end": 57.121,
+          "frame": 1710,
+          "endFrame": 1714
+        },
+        {
+          "token": "which",
+          "start": 57.148,
+          "end": 57.334,
+          "frame": 1714,
+          "endFrame": 1720
+        },
+        {
+          "token": "way,",
+          "start": 57.36,
+          "end": 57.666,
+          "frame": 1721,
+          "endFrame": 1730
+        },
+        {
+          "token": "and",
+          "start": 57.959,
+          "end": 58.078,
+          "frame": 1739,
+          "endFrame": 1742
+        },
+        {
+          "token": "who",
+          "start": 58.092,
+          "end": 58.225,
+          "frame": 1743,
+          "endFrame": 1747
+        },
+        {
+          "token": "is",
+          "start": 58.278,
+          "end": 58.398,
+          "frame": 1748,
+          "endFrame": 1752
+        },
+        {
+          "token": "watching.",
+          "start": 58.424,
+          "end": 58.943,
+          "frame": 1753,
+          "endFrame": 1768
+        }
+      ],
+      "to": 1829,
+      "speechEnd": 1768,
+      "speaker": "NARRATOR"
+    }
+  ]
+}
