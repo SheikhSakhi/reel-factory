@@ -1,0 +1,14 @@
+[S1] GRANDSON: Nani, why is your pill box still full?
+[S2] NANI: I stopped the new one. It made me dizzy.
+[S3] GRANDSON: When?
+[S4] NANI: Three weeks ago. Don't tell the doctor. I don't want to bother her.
+[S5] GRANDSON: Nani, she'd want to know.
+[S6] NANI: She's so busy. I'll tell her at my next visit. In March.
+[S7] GRANDSON: It's November.
+[S8] GRANDSON: And you're not the only one. The World Health Organization says that with long-term illness, about half of people don't take their medicines as prescribed.
+[S9] GRANDSON: Most of them just never tell anyone.
+[S10] NANI: So what do I do?
+[S11] GRANDSON: Tell her now. Dizziness is exactly the kind of thing she can adjust.
+[S12] NANI: Without a visit?
+[S13] GRANDSON: With a plan between visits, yes. You message her, she sees it, she changes the plan, and you hear back the same week.
+[S14] NANI: Then I'll write to her today. And next time, I won't wait for March.

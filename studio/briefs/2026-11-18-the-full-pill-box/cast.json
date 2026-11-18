@@ -1,0 +1,4 @@
+{
+  "NANI": {"voice": "en-US-EmmaMultilingualNeural", "rate": "-12%", "pitch": "-8Hz", "gap": 0.5},
+  "GRANDSON": {"voice": "en-US-AndrewMultilingualNeural", "rate": "-2%", "pitch": "+0Hz", "gap": 0.4}
+}
