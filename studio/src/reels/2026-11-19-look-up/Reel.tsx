@@ -196,8 +196,13 @@ const BackOfHead: React.FC<{ f: number; face: Face; mark?: number; turn?: number
   return (
     <g stroke={LINE} strokeWidth={W} transform={`rotate(${shake} 240 1640)`}>
       <path d="M -60 1920 L -60 1560 Q -40 1440 120 1430 L 460 1440 Q 560 1460 560 1600 L 560 1920 Z" fill={CHAIR} />
-      <path d="M 240 1920 Q 300 1660 520 1640 Q 720 1640 760 1760 Q 790 1840 700 1860 L 700 1920 Z" fill={SKIN} />
-      <path d="M 620 1790 Q 660 1760 700 1790 M 640 1820 Q 680 1800 710 1820" fill="none" strokeWidth={4} />
+      {/* the chair's arm, his back and his arm resting on it, his hand on the armrest */}
+      <path d="M 560 1860 Q 560 1800 640 1800 L 1100 1800 L 1100 1920 L 560 1920 Z" fill={CHAIR_S} />
+      <path d="M -60 1920 L -60 1700 Q 120 1600 320 1610 Q 520 1624 600 1780 L 620 1920 Z" fill={SKIN} />
+      <path d="M 500 1700 Q 620 1720 760 1790" fill="none" stroke={LINE} strokeWidth={96} />
+      <path d="M 500 1700 Q 620 1720 760 1790" fill="none" stroke={SKIN} strokeWidth={84} />
+      <path d="M 740 1760 Q 800 1740 850 1770 Q 880 1790 860 1812 Q 830 1830 760 1826 Z" fill={SKIN} />
+      <path d="M 800 1772 q 22 4 30 18 M 790 1790 q 24 4 34 16" fill="none" strokeWidth={3} />
       <g transform={`translate(300 1440) rotate(${turn * 12})`}>
         <path d="M 0 -250 Q 170 -250 186 -60 Q 196 90 120 160 Q 60 210 -20 200 Q -150 180 -170 30 Q -180 -150 0 -250 Z" fill={SKIN} />
         <path d="M 174 -30 Q 210 -40 214 0 Q 216 40 180 36" fill={SKIN} />
