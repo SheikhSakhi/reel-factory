@@ -1,0 +1,6 @@
+# 2026-11-19: conceptual cartoon (on request)
+
+- Reference: Pietro Cascavilla's animated short ("BLEAH"): a passive man fed by a ceiling tube, a TV, coins into a piggy bank, the wall opens onto a field with a cow painted "LOOK UP!", a blood drop on his forehead, a coin distracts him while a robotic arm lifts the cow, the news, the wide twist (his box is in the field, wired from the sky).
+- User's instruction: copy the whole thing for medicine: doctor (man), doctor's cabinet (room), pills (food), the front wall falls to show the patient on a table barely moving like a wilting plant, "LOOK UP" painted on a panel above, a paint bucket "by DocX", the patient (cow), the same blood drop, the coin distraction and robotic arm, a coin drops each time he prescribes and the pills go through a tube to the patient's mouth.
+- The user accepted the risks raised (a recognisable derivative of a named creator's work; the money-for-prescriptions beat may alienate doctors; the robotic arm reads as "the machine takes the patient"). TEST ONLY until the user decides; not for publishing without the creator's permission.
+- Wordless: a music bed and cartoon sound effects. Drawn in code (SVG), simple poses and tweens.

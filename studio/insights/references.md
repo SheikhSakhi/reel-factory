@@ -127,3 +127,8 @@ What we can make: real footage from open-licence libraries (NASA and ESA imagery
 - Look: near-black background, two small mirrored square frames (above / below) with scattered white strokes, word labels beside them ("мысли" / "стол"), a photographic hand reaches in and the strokes become neat rows; serif subtitles centred under the frames, word-by-word; the maxim as a small header. 58 s, calm low male voice (~111 Hz), ~115 words per minute.
 - What the user wants from it (the genre): start general and very attention-catching, not medical; flip exactly where the general idea maps onto care ("a cluttered treatment plan is a cluttered life"), then medical narration. Copy the structure and pace, never the creator's words, design or voice.
 
+## 7. Conceptual cartoon (added 2026-11-19, user's example from Drive)
+
+- Pietro Cascavilla ("BLEAH"), 54 s, hand-drawn 2D, wordless: a passive man fed by a tube, TV violence, coins into a piggy bank, the wall opens onto a field with a cow painted "LOOK UP!", a blood drop on his forehead, a coin distracts him while a robotic arm takes the cow, the news "don't trust cows", then the wide twist: his box sits in the same field, wired from the sky (he is farmed too). Credit card at the end.
+- The genre the user wants: show a complex concept with simple illustration, a wall that opens, a twist that re-reads the start. Made once as a close medical adaptation on request (look-up, test only).
+

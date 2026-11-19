@@ -18,6 +18,7 @@ import { AsBelowSoAbove, ABOVE_COVER, ABOVE_DURATION } from "./2026-11-13-as-bel
 import { ThePeak, PEAK_COVER, PEAK_DURATION } from "./2026-11-15-the-peak/Reel";
 import { OnePercent, ONE_COVER, ONE_DURATION } from "./2026-11-16-one-percent/Reel";
 import { FullPillBox, PILLBOX_COVER, PILLBOX_DURATION } from "./2026-11-18-the-full-pill-box/Reel";
+import { LookUp, LOOKUP_COVER, LOOKUP_DURATION } from "./2026-11-19-look-up/Reel";
 import { SeriesDemoReel, SERIES_DEMO_COVER, SERIES_DEMO_DURATION } from "./series-demo/Reel";
 
 export type ReelEntry = {
@@ -49,5 +50,6 @@ export const REELS: readonly ReelEntry[] = [
   { id: "2026-11-15-the-peak", component: ThePeak, durationInFrames: PEAK_DURATION, coverFrame: PEAK_COVER },
   { id: "2026-11-16-one-percent", component: OnePercent, durationInFrames: ONE_DURATION, coverFrame: ONE_COVER },
   { id: "2026-11-18-the-full-pill-box", component: FullPillBox, durationInFrames: PILLBOX_DURATION, coverFrame: PILLBOX_COVER },
+  { id: "2026-11-19-look-up", component: LookUp, durationInFrames: LOOKUP_DURATION, coverFrame: LOOKUP_COVER },
   { id: "nvidia-s1e4-dark", component: S1E4Dark, durationInFrames: S1E4_DURATION, coverFrame: S1E4_COVER },
 ];
