@@ -1,0 +1,1186 @@
+{
+  "file": "vo/2026-11-20-the-clockmaker/take.mp3",
+  "voice": "dialogue",
+  "engine": "edge",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 1862,
+  "cast": {
+    "YOUNG": {
+      "voice": "en-US-EmmaMultilingualNeural",
+      "rate": "-6%",
+      "pitch": "-2Hz"
+    },
+    "OLD": {
+      "voice": "en-IE-ConnorNeural",
+      "rate": "-14%",
+      "pitch": "-6Hz",
+      "gap": 0.6
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "How do you keep a hundred clocks right?",
+      "from": 0,
+      "words": [
+        {
+          "token": "How",
+          "start": 0.106,
+          "end": 0.213,
+          "frame": 3,
+          "endFrame": 6
+        },
+        {
+          "token": "do",
+          "start": 0.226,
+          "end": 0.306,
+          "frame": 7,
+          "endFrame": 9
+        },
+        {
+          "token": "you",
+          "start": 0.319,
+          "end": 0.426,
+          "frame": 10,
+          "endFrame": 13
+        },
+        {
+          "token": "keep",
+          "start": 0.439,
+          "end": 0.678,
+          "frame": 13,
+          "endFrame": 20
+        },
+        {
+          "token": "a",
+          "start": 0.692,
+          "end": 0.745,
+          "frame": 21,
+          "endFrame": 22
+        },
+        {
+          "token": "hundred",
+          "start": 0.758,
+          "end": 1.21,
+          "frame": 23,
+          "endFrame": 36
+        },
+        {
+          "token": "clocks",
+          "start": 1.223,
+          "end": 1.662,
+          "frame": 37,
+          "endFrame": 50
+        },
+        {
+          "token": "right?",
+          "start": 1.676,
+          "end": 2.074,
+          "frame": 50,
+          "endFrame": 62
+        }
+      ],
+      "to": 84,
+      "speechEnd": 62,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S2",
+      "text": "I don't set them once. I set them, I check them, and I set them again.",
+      "from": 84,
+      "words": [
+        {
+          "token": "I",
+          "start": 2.902,
+          "end": 3.047,
+          "frame": 87,
+          "endFrame": 91
+        },
+        {
+          "token": "don't",
+          "start": 3.091,
+          "end": 3.338,
+          "frame": 93,
+          "endFrame": 100
+        },
+        {
+          "token": "set",
+          "start": 3.353,
+          "end": 3.614,
+          "frame": 101,
+          "endFrame": 108
+        },
+        {
+          "token": "them",
+          "start": 3.629,
+          "end": 3.774,
+          "frame": 109,
+          "endFrame": 113
+        },
+        {
+          "token": "once.",
+          "start": 3.803,
+          "end": 4.225,
+          "frame": 114,
+          "endFrame": 127
+        },
+        {
+          "token": "I",
+          "start": 5.338,
+          "end": 5.483,
+          "frame": 160,
+          "endFrame": 164
+        },
+        {
+          "token": "set",
+          "start": 5.527,
+          "end": 5.774,
+          "frame": 166,
+          "endFrame": 173
+        },
+        {
+          "token": "them,",
+          "start": 5.788,
+          "end": 6.093,
+          "frame": 174,
+          "endFrame": 183
+        },
+        {
+          "token": "I",
+          "start": 6.239,
+          "end": 6.355,
+          "frame": 187,
+          "endFrame": 191
+        },
+        {
+          "token": "check",
+          "start": 6.428,
+          "end": 6.689,
+          "frame": 193,
+          "endFrame": 201
+        },
+        {
+          "token": "them,",
+          "start": 6.704,
+          "end": 7.038,
+          "frame": 201,
+          "endFrame": 211
+        },
+        {
+          "token": "and",
+          "start": 7.213,
+          "end": 7.314,
+          "frame": 216,
+          "endFrame": 219
+        },
+        {
+          "token": "I",
+          "start": 7.314,
+          "end": 7.416,
+          "frame": 219,
+          "endFrame": 222
+        },
+        {
+          "token": "set",
+          "start": 7.445,
+          "end": 7.692,
+          "frame": 223,
+          "endFrame": 231
+        },
+        {
+          "token": "them",
+          "start": 7.707,
+          "end": 7.867,
+          "frame": 231,
+          "endFrame": 236
+        },
+        {
+          "token": "again.",
+          "start": 7.867,
+          "end": 8.434,
+          "frame": 236,
+          "endFrame": 253
+        }
+      ],
+      "to": 263,
+      "speechEnd": 253,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S3",
+      "text": "A patient of mine. Her blood pressure was perfect the day I prescribed. Six months later, it wasn't.",
+      "from": 263,
+      "words": [
+        {
+          "token": "A",
+          "start": 8.867,
+          "end": 8.947,
+          "frame": 266,
+          "endFrame": 268
+        },
+        {
+          "token": "patient",
+          "start": 8.96,
+          "end": 9.452,
+          "frame": 269,
+          "endFrame": 284
+        },
+        {
+          "token": "of",
+          "start": 9.466,
+          "end": 9.598,
+          "frame": 284,
+          "endFrame": 288
+        },
+        {
+          "token": "mine.",
+          "start": 9.612,
+          "end": 10.13,
+          "frame": 288,
+          "endFrame": 304
+        },
+        {
+          "token": "Her",
+          "start": 10.556,
+          "end": 10.689,
+          "frame": 317,
+          "endFrame": 321
+        },
+        {
+          "token": "blood",
+          "start": 10.702,
+          "end": 10.995,
+          "frame": 321,
+          "endFrame": 330
+        },
+        {
+          "token": "pressure",
+          "start": 11.008,
+          "end": 11.5,
+          "frame": 330,
+          "endFrame": 345
+        },
+        {
+          "token": "was",
+          "start": 11.513,
+          "end": 11.7,
+          "frame": 345,
+          "endFrame": 351
+        },
+        {
+          "token": "perfect",
+          "start": 11.713,
+          "end": 12.152,
+          "frame": 351,
+          "endFrame": 365
+        },
+        {
+          "token": "the",
+          "start": 12.165,
+          "end": 12.258,
+          "frame": 365,
+          "endFrame": 368
+        },
+        {
+          "token": "day",
+          "start": 12.271,
+          "end": 12.484,
+          "frame": 368,
+          "endFrame": 375
+        },
+        {
+          "token": "I",
+          "start": 12.497,
+          "end": 12.59,
+          "frame": 375,
+          "endFrame": 378
+        },
+        {
+          "token": "prescribed.",
+          "start": 12.604,
+          "end": 13.428,
+          "frame": 378,
+          "endFrame": 403
+        },
+        {
+          "token": "Six",
+          "start": 13.854,
+          "end": 14.2,
+          "frame": 416,
+          "endFrame": 426
+        },
+        {
+          "token": "months",
+          "start": 14.213,
+          "end": 14.572,
+          "frame": 426,
+          "endFrame": 437
+        },
+        {
+          "token": "later,",
+          "start": 14.585,
+          "end": 15.011,
+          "frame": 438,
+          "endFrame": 450
+        },
+        {
+          "token": "it",
+          "start": 15.064,
+          "end": 15.197,
+          "frame": 452,
+          "endFrame": 456
+        },
+        {
+          "token": "wasn't.",
+          "start": 15.21,
+          "end": 15.782,
+          "frame": 456,
+          "endFrame": 473
+        }
+      ],
+      "to": 495,
+      "speechEnd": 473,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S4",
+      "text": "And who checked it in between?",
+      "from": 495,
+      "words": [
+        {
+          "token": "And",
+          "start": 16.61,
+          "end": 16.755,
+          "frame": 498,
+          "endFrame": 503
+        },
+        {
+          "token": "who",
+          "start": 16.756,
+          "end": 16.886,
+          "frame": 503,
+          "endFrame": 507
+        },
+        {
+          "token": "checked",
+          "start": 16.974,
+          "end": 17.264,
+          "frame": 509,
+          "endFrame": 518
+        },
+        {
+          "token": "it",
+          "start": 17.264,
+          "end": 17.38,
+          "frame": 518,
+          "endFrame": 521
+        },
+        {
+          "token": "in",
+          "start": 17.381,
+          "end": 17.482,
+          "frame": 521,
+          "endFrame": 524
+        },
+        {
+          "token": "between?",
+          "start": 17.511,
+          "end": 18.136,
+          "frame": 525,
+          "endFrame": 544
+        }
+      ],
+      "to": 554,
+      "speechEnd": 544,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S5",
+      "text": "Nobody. She came back when the headaches did.",
+      "from": 554,
+      "words": [
+        {
+          "token": "Nobody.",
+          "start": 18.569,
+          "end": 19.181,
+          "frame": 557,
+          "endFrame": 575
+        },
+        {
+          "token": "She",
+          "start": 19.62,
+          "end": 19.779,
+          "frame": 589,
+          "endFrame": 593
+        },
+        {
+          "token": "came",
+          "start": 19.793,
+          "end": 20.045,
+          "frame": 594,
+          "endFrame": 601
+        },
+        {
+          "token": "back",
+          "start": 20.058,
+          "end": 20.364,
+          "frame": 602,
+          "endFrame": 611
+        },
+        {
+          "token": "when",
+          "start": 20.378,
+          "end": 20.524,
+          "frame": 611,
+          "endFrame": 616
+        },
+        {
+          "token": "the",
+          "start": 20.537,
+          "end": 20.63,
+          "frame": 616,
+          "endFrame": 619
+        },
+        {
+          "token": "headaches",
+          "start": 20.644,
+          "end": 21.175,
+          "frame": 619,
+          "endFrame": 635
+        },
+        {
+          "token": "did.",
+          "start": 21.189,
+          "end": 21.548,
+          "frame": 636,
+          "endFrame": 646
+        }
+      ],
+      "to": 668,
+      "speechEnd": 646,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S6",
+      "text": "Then you set a clock, and walked out of the shop.",
+      "from": 668,
+      "words": [
+        {
+          "token": "Then",
+          "start": 22.376,
+          "end": 22.58,
+          "frame": 671,
+          "endFrame": 677
+        },
+        {
+          "token": "you",
+          "start": 22.58,
+          "end": 22.667,
+          "frame": 677,
+          "endFrame": 680
+        },
+        {
+          "token": "set",
+          "start": 22.696,
+          "end": 22.914,
+          "frame": 681,
+          "endFrame": 687
+        },
+        {
+          "token": "a",
+          "start": 22.914,
+          "end": 22.958,
+          "frame": 687,
+          "endFrame": 689
+        },
+        {
+          "token": "clock,",
+          "start": 23.059,
+          "end": 23.437,
+          "frame": 692,
+          "endFrame": 703
+        },
+        {
+          "token": "and",
+          "start": 23.713,
+          "end": 23.815,
+          "frame": 711,
+          "endFrame": 714
+        },
+        {
+          "token": "walked",
+          "start": 23.844,
+          "end": 24.178,
+          "frame": 715,
+          "endFrame": 725
+        },
+        {
+          "token": "out",
+          "start": 24.193,
+          "end": 24.411,
+          "frame": 726,
+          "endFrame": 732
+        },
+        {
+          "token": "of",
+          "start": 24.411,
+          "end": 24.527,
+          "frame": 732,
+          "endFrame": 736
+        },
+        {
+          "token": "the",
+          "start": 24.527,
+          "end": 24.629,
+          "frame": 736,
+          "endFrame": 739
+        },
+        {
+          "token": "shop.",
+          "start": 24.673,
+          "end": 25.051,
+          "frame": 740,
+          "endFrame": 752
+        }
+      ],
+      "to": 762,
+      "speechEnd": 752,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S7",
+      "text": "I'm not the only one. The World Health Organization says four out of five people with high blood pressure aren't adequately treated.",
+      "from": 762,
+      "words": [
+        {
+          "token": "I'm",
+          "start": 25.484,
+          "end": 25.617,
+          "frame": 765,
+          "endFrame": 769
+        },
+        {
+          "token": "not",
+          "start": 25.63,
+          "end": 25.843,
+          "frame": 769,
+          "endFrame": 775
+        },
+        {
+          "token": "the",
+          "start": 25.856,
+          "end": 25.976,
+          "frame": 776,
+          "endFrame": 779
+        },
+        {
+          "token": "only",
+          "start": 25.989,
+          "end": 26.335,
+          "frame": 780,
+          "endFrame": 790
+        },
+        {
+          "token": "one.",
+          "start": 26.348,
+          "end": 26.734,
+          "frame": 790,
+          "endFrame": 802
+        },
+        {
+          "token": "The",
+          "start": 27.173,
+          "end": 27.253,
+          "frame": 815,
+          "endFrame": 818
+        },
+        {
+          "token": "World",
+          "start": 27.266,
+          "end": 27.585,
+          "frame": 818,
+          "endFrame": 828
+        },
+        {
+          "token": "Health",
+          "start": 27.598,
+          "end": 27.904,
+          "frame": 828,
+          "endFrame": 837
+        },
+        {
+          "token": "Organization",
+          "start": 27.918,
+          "end": 28.835,
+          "frame": 838,
+          "endFrame": 865
+        },
+        {
+          "token": "says",
+          "start": 28.848,
+          "end": 29.114,
+          "frame": 865,
+          "endFrame": 873
+        },
+        {
+          "token": "four",
+          "start": 29.128,
+          "end": 29.38,
+          "frame": 874,
+          "endFrame": 881
+        },
+        {
+          "token": "out",
+          "start": 29.394,
+          "end": 29.527,
+          "frame": 882,
+          "endFrame": 886
+        },
+        {
+          "token": "of",
+          "start": 29.54,
+          "end": 29.633,
+          "frame": 886,
+          "endFrame": 889
+        },
+        {
+          "token": "five",
+          "start": 29.646,
+          "end": 29.979,
+          "frame": 889,
+          "endFrame": 899
+        },
+        {
+          "token": "people",
+          "start": 29.992,
+          "end": 30.391,
+          "frame": 900,
+          "endFrame": 912
+        },
+        {
+          "token": "with",
+          "start": 30.404,
+          "end": 30.564,
+          "frame": 912,
+          "endFrame": 917
+        },
+        {
+          "token": "high",
+          "start": 30.577,
+          "end": 30.817,
+          "frame": 917,
+          "endFrame": 924
+        },
+        {
+          "token": "blood",
+          "start": 30.83,
+          "end": 31.109,
+          "frame": 925,
+          "endFrame": 933
+        },
+        {
+          "token": "pressure",
+          "start": 31.122,
+          "end": 31.614,
+          "frame": 934,
+          "endFrame": 948
+        },
+        {
+          "token": "aren't",
+          "start": 31.628,
+          "end": 31.867,
+          "frame": 949,
+          "endFrame": 956
+        },
+        {
+          "token": "adequately",
+          "start": 31.88,
+          "end": 32.465,
+          "frame": 956,
+          "endFrame": 974
+        },
+        {
+          "token": "treated.",
+          "start": 32.479,
+          "end": 33.037,
+          "frame": 974,
+          "endFrame": 991
+        }
+      ],
+      "to": 1013,
+      "speechEnd": 991,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S8",
+      "text": "Four clocks in five, drifting. And nobody in the shop.",
+      "from": 1013,
+      "words": [
+        {
+          "token": "Four",
+          "start": 33.865,
+          "end": 34.01,
+          "frame": 1016,
+          "endFrame": 1020
+        },
+        {
+          "token": "clocks",
+          "start": 34.098,
+          "end": 34.447,
+          "frame": 1023,
+          "endFrame": 1033
+        },
+        {
+          "token": "in",
+          "start": 34.447,
+          "end": 34.563,
+          "frame": 1033,
+          "endFrame": 1037
+        },
+        {
+          "token": "five,",
+          "start": 34.577,
+          "end": 35.013,
+          "frame": 1037,
+          "endFrame": 1050
+        },
+        {
+          "token": "drifting.",
+          "start": 35.261,
+          "end": 35.813,
+          "frame": 1058,
+          "endFrame": 1074
+        },
+        {
+          "token": "And",
+          "start": 36.838,
+          "end": 36.984,
+          "frame": 1105,
+          "endFrame": 1110
+        },
+        {
+          "token": "nobody",
+          "start": 36.998,
+          "end": 37.449,
+          "frame": 1110,
+          "endFrame": 1123
+        },
+        {
+          "token": "in",
+          "start": 37.492,
+          "end": 37.58,
+          "frame": 1125,
+          "endFrame": 1127
+        },
+        {
+          "token": "the",
+          "start": 37.623,
+          "end": 37.667,
+          "frame": 1129,
+          "endFrame": 1130
+        },
+        {
+          "token": "shop.",
+          "start": 37.711,
+          "end": 38.103,
+          "frame": 1131,
+          "endFrame": 1143
+        }
+      ],
+      "to": 1153,
+      "speechEnd": 1143,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S9",
+      "text": "But I can't see her every week.",
+      "from": 1153,
+      "words": [
+        {
+          "token": "But",
+          "start": 38.549,
+          "end": 38.669,
+          "frame": 1156,
+          "endFrame": 1160
+        },
+        {
+          "token": "I",
+          "start": 38.682,
+          "end": 38.762,
+          "frame": 1160,
+          "endFrame": 1163
+        },
+        {
+          "token": "can't",
+          "start": 38.775,
+          "end": 39.068,
+          "frame": 1163,
+          "endFrame": 1172
+        },
+        {
+          "token": "see",
+          "start": 39.081,
+          "end": 39.281,
+          "frame": 1172,
+          "endFrame": 1178
+        },
+        {
+          "token": "her",
+          "start": 39.294,
+          "end": 39.507,
+          "frame": 1179,
+          "endFrame": 1185
+        },
+        {
+          "token": "every",
+          "start": 39.52,
+          "end": 39.826,
+          "frame": 1186,
+          "endFrame": 1195
+        },
+        {
+          "token": "week.",
+          "start": 39.839,
+          "end": 40.265,
+          "frame": 1195,
+          "endFrame": 1208
+        }
+      ],
+      "to": 1230,
+      "speechEnd": 1208,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S10",
+      "text": "You don't need to see her. You need to hear the clock.",
+      "from": 1230,
+      "words": [
+        {
+          "token": "You",
+          "start": 41.093,
+          "end": 41.224,
+          "frame": 1233,
+          "endFrame": 1237
+        },
+        {
+          "token": "don't",
+          "start": 41.239,
+          "end": 41.515,
+          "frame": 1237,
+          "endFrame": 1245
+        },
+        {
+          "token": "need",
+          "start": 41.529,
+          "end": 41.776,
+          "frame": 1246,
+          "endFrame": 1253
+        },
+        {
+          "token": "to",
+          "start": 41.791,
+          "end": 41.878,
+          "frame": 1254,
+          "endFrame": 1256
+        },
+        {
+          "token": "see",
+          "start": 41.907,
+          "end": 42.14,
+          "frame": 1257,
+          "endFrame": 1264
+        },
+        {
+          "token": "her.",
+          "start": 42.183,
+          "end": 42.43,
+          "frame": 1265,
+          "endFrame": 1273
+        },
+        {
+          "token": "You",
+          "start": 43.572,
+          "end": 43.703,
+          "frame": 1307,
+          "endFrame": 1311
+        },
+        {
+          "token": "need",
+          "start": 43.732,
+          "end": 43.965,
+          "frame": 1312,
+          "endFrame": 1319
+        },
+        {
+          "token": "to",
+          "start": 43.994,
+          "end": 44.052,
+          "frame": 1320,
+          "endFrame": 1322
+        },
+        {
+          "token": "hear",
+          "start": 44.095,
+          "end": 44.27,
+          "frame": 1323,
+          "endFrame": 1328
+        },
+        {
+          "token": "the",
+          "start": 44.299,
+          "end": 44.386,
+          "frame": 1329,
+          "endFrame": 1332
+        },
+        {
+          "token": "clock.",
+          "start": 44.459,
+          "end": 44.851,
+          "frame": 1334,
+          "endFrame": 1346
+        }
+      ],
+      "to": 1356,
+      "speechEnd": 1346,
+      "speaker": "OLD"
+    },
+    {
+      "id": "S11",
+      "text": "A reading every week. A line we agree on together. And when it drifts, I adjust, without waiting for the visit.",
+      "from": 1356,
+      "words": [
+        {
+          "token": "A",
+          "start": 45.284,
+          "end": 45.377,
+          "frame": 1359,
+          "endFrame": 1361
+        },
+        {
+          "token": "reading",
+          "start": 45.39,
+          "end": 45.776,
+          "frame": 1362,
+          "endFrame": 1373
+        },
+        {
+          "token": "every",
+          "start": 45.789,
+          "end": 46.095,
+          "frame": 1374,
+          "endFrame": 1383
+        },
+        {
+          "token": "week.",
+          "start": 46.109,
+          "end": 46.601,
+          "frame": 1383,
+          "endFrame": 1398
+        },
+        {
+          "token": "A",
+          "start": 47.026,
+          "end": 47.106,
+          "frame": 1411,
+          "endFrame": 1413
+        },
+        {
+          "token": "line",
+          "start": 47.119,
+          "end": 47.465,
+          "frame": 1414,
+          "endFrame": 1424
+        },
+        {
+          "token": "we",
+          "start": 47.478,
+          "end": 47.625,
+          "frame": 1424,
+          "endFrame": 1429
+        },
+        {
+          "token": "agree",
+          "start": 47.638,
+          "end": 47.97,
+          "frame": 1429,
+          "endFrame": 1439
+        },
+        {
+          "token": "on",
+          "start": 47.984,
+          "end": 48.143,
+          "frame": 1440,
+          "endFrame": 1444
+        },
+        {
+          "token": "together.",
+          "start": 48.156,
+          "end": 48.821,
+          "frame": 1445,
+          "endFrame": 1465
+        },
+        {
+          "token": "And",
+          "start": 49.26,
+          "end": 49.38,
+          "frame": 1478,
+          "endFrame": 1481
+        },
+        {
+          "token": "when",
+          "start": 49.393,
+          "end": 49.539,
+          "frame": 1482,
+          "endFrame": 1486
+        },
+        {
+          "token": "it",
+          "start": 49.553,
+          "end": 49.686,
+          "frame": 1487,
+          "endFrame": 1491
+        },
+        {
+          "token": "drifts,",
+          "start": 49.699,
+          "end": 50.178,
+          "frame": 1491,
+          "endFrame": 1505
+        },
+        {
+          "token": "I",
+          "start": 50.43,
+          "end": 50.55,
+          "frame": 1513,
+          "endFrame": 1517
+        },
+        {
+          "token": "adjust,",
+          "start": 50.563,
+          "end": 51.215,
+          "frame": 1517,
+          "endFrame": 1536
+        },
+        {
+          "token": "without",
+          "start": 51.468,
+          "end": 51.88,
+          "frame": 1544,
+          "endFrame": 1556
+        },
+        {
+          "token": "waiting",
+          "start": 51.893,
+          "end": 52.239,
+          "frame": 1557,
+          "endFrame": 1567
+        },
+        {
+          "token": "for",
+          "start": 52.252,
+          "end": 52.398,
+          "frame": 1568,
+          "endFrame": 1572
+        },
+        {
+          "token": "the",
+          "start": 52.412,
+          "end": 52.505,
+          "frame": 1572,
+          "endFrame": 1575
+        },
+        {
+          "token": "visit.",
+          "start": 52.518,
+          "end": 53.117,
+          "frame": 1576,
+          "endFrame": 1593
+        }
+      ],
+      "to": 1615,
+      "speechEnd": 1593,
+      "speaker": "YOUNG"
+    },
+    {
+      "id": "S12",
+      "text": "Set. Check. Adjust. That's how you keep a hundred right.",
+      "from": 1615,
+      "words": [
+        {
+          "token": "Set.",
+          "start": 53.945,
+          "end": 54.279,
+          "frame": 1618,
+          "endFrame": 1628
+        },
+        {
+          "token": "Check.",
+          "start": 55.407,
+          "end": 55.799,
+          "frame": 1662,
+          "endFrame": 1674
+        },
+        {
+          "token": "Adjust.",
+          "start": 56.918,
+          "end": 57.471,
+          "frame": 1708,
+          "endFrame": 1724
+        },
+        {
+          "token": "That's",
+          "start": 58.561,
+          "end": 58.793,
+          "frame": 1757,
+          "endFrame": 1764
+        },
+        {
+          "token": "how",
+          "start": 58.808,
+          "end": 58.939,
+          "frame": 1764,
+          "endFrame": 1768
+        },
+        {
+          "token": "you",
+          "start": 58.968,
+          "end": 59.011,
+          "frame": 1769,
+          "endFrame": 1770
+        },
+        {
+          "token": "keep",
+          "start": 59.099,
+          "end": 59.317,
+          "frame": 1773,
+          "endFrame": 1779
+        },
+        {
+          "token": "a",
+          "start": 59.317,
+          "end": 59.346,
+          "frame": 1779,
+          "endFrame": 1780
+        },
+        {
+          "token": "hundred",
+          "start": 59.389,
+          "end": 59.709,
+          "frame": 1782,
+          "endFrame": 1791
+        },
+        {
+          "token": "right.",
+          "start": 59.724,
+          "end": 60.043,
+          "frame": 1792,
+          "endFrame": 1801
+        }
+      ],
+      "to": 1862,
+      "speechEnd": 1801,
+      "speaker": "OLD"
+    }
+  ]
+}

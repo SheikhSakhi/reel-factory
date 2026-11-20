@@ -1,0 +1,12 @@
+[S1] YOUNG: How do you keep a hundred clocks right?
+[S2] OLD: I don't set them once. I set them, I check them, and I set them again.
+[S3] YOUNG: A patient of mine. Her blood pressure was perfect the day I prescribed. Six months later, it wasn't.
+[S4] OLD: And who checked it in between?
+[S5] YOUNG: Nobody. She came back when the headaches did.
+[S6] OLD: Then you set a clock, and walked out of the shop.
+[S7] YOUNG: I'm not the only one. The World Health Organization says four out of five people with high blood pressure aren't adequately treated.
+[S8] OLD: Four clocks in five, drifting. And nobody in the shop.
+[S9] YOUNG: But I can't see her every week.
+[S10] OLD: You don't need to see her. You need to hear the clock.
+[S11] YOUNG: A reading every week. A line we agree on together. And when it drifts, I adjust, without waiting for the visit.
+[S12] OLD: Set. Check. Adjust. That's how you keep a hundred right.

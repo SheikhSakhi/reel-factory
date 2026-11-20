@@ -38,6 +38,16 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+# Cloud sessions reach the TTS service through an HTTPS proxy with its own CA; use its bundle when present.
+_PROXY_CA = "/root/.ccr/ca-bundle.crt"
+if os.path.exists(_PROXY_CA):
+    os.environ.setdefault("SSL_CERT_FILE", _PROXY_CA)
+    try:  # edge-tts builds its SSL context from certifi.where(); point it at the proxy bundle too
+        import certifi
+        certifi.where = lambda: _PROXY_CA
+    except ImportError:
+        pass
+
 DEFAULT_VOICE = "en-US-AndrewMultilingualNeural"
 DEFAULT_RATE = "+6%"
 SAMPLE_VOICES = (

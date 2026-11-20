@@ -1,0 +1,4 @@
+{
+  "YOUNG": {"voice": "en-US-EmmaMultilingualNeural", "rate": "-6%", "pitch": "-2Hz"},
+  "OLD": {"voice": "en-IE-ConnorNeural", "rate": "-14%", "pitch": "-6Hz", "gap": 0.6}
+}
