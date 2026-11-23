@@ -344,7 +344,28 @@ def read_env() -> dict:
                 key, _, value = line.partition("=")
                 env[key.strip()] = value.strip().strip('"')
     env.update({k: v for k, v in os.environ.items() if k.startswith("ELEVENLABS_")})
+    if not env.get("ELEVENLABS_API_KEY") and _elevenlabs_via_proxy():
+        # Cloud sessions keep the key as a network secret: the proxy adds it to requests; we only send a placeholder.
+        env["ELEVENLABS_API_KEY"] = "proxy-injected"
     return env
+
+
+_PROXY_KEY_OK: bool | None = None
+
+
+def _elevenlabs_via_proxy() -> bool:
+    """True when the session's proxy holds an ElevenLabs key (a placeholder key gets a 200 from /v1/user)."""
+    global _PROXY_KEY_OK
+    if _PROXY_KEY_OK is None:
+        _PROXY_KEY_OK = False
+        if os.environ.get("HTTPS_PROXY"):
+            try:
+                request = urllib.request.Request("https://api.elevenlabs.io/v1/user", headers={"xi-api-key": "proxy-injected"})
+                with urllib.request.urlopen(request, timeout=8) as response:
+                    _PROXY_KEY_OK = response.status == 200
+            except Exception:
+                _PROXY_KEY_OK = False
+    return _PROXY_KEY_OK
 
 
 ELEVENLABS_MODEL = "eleven_multilingual_v2"
