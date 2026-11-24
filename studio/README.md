@@ -35,7 +35,7 @@ Layout:
 
 `scripts/vo.py` picks the voice engine by itself (`--engine auto`, the default):
 
-- **ElevenLabs** when `ELEVENLABS_API_KEY` is set **and** there is a voice for every speaker:
+- **ElevenLabs (the default)** when a key is available, either `ELEVENLABS_API_KEY` or a network secret for api.elevenlabs.io held by the cloud session's proxy (vo.py detects it). Each brief voice maps to an ElevenLabs stock voice (`EDGE_TO_ELEVENLABS` in vo.py), or set one explicitly:
   `ELEVENLABS_VOICE_ID` for one-narrator reels, or `"elevenlabs_voice": "<voice id>"` per speaker in `briefs/<slug>/cast.json`
   (optional `"elevenlabs_settings": {"stability": 0.5, "similarity_boost": 0.75}`).
 - **edge-tts (free)** otherwise. The run prints which engine it used, and `take.json` records it (`"engine"`).

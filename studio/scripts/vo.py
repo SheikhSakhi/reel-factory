@@ -252,7 +252,36 @@ def wav_seconds(path: Path) -> float:
         return w.getnframes() / w.getframerate()
 
 
-async def make_dialogue(slug: str, rate: str, hold_seconds: float, gap: float, engine: str = "auto") -> None:
+# Default ElevenLabs stock voice for each edge-tts voice the briefs use (user's choice 2026-11-24: ElevenLabs by default).
+EDGE_TO_ELEVENLABS = {
+    "en-US-EmmaMultilingualNeural": "EXAVITQu4vr4xnSDxMaL",   # Sarah: mature, reassuring (narrator)
+    "en-US-AvaMultilingualNeural": "XrExE9yKIg1WjnnlVkGX",    # Matilda: knowledgeable, professional
+    "en-US-AndrewMultilingualNeural": "cjVigY5qzO86Huf0OWal", # Eric: smooth, trustworthy
+    "en-US-BrianMultilingualNeural": "nPczCjzI2devNBz1zQrb",  # Brian: deep, resonant, comforting
+    "en-IE-ConnorNeural": "pqHfZKP75CvOlQylNhV4",             # Bill: wise, mature (the elder in parables)
+    "en-GB-RyanNeural": "JBFqnCBsd6RMkjVDRZzb",               # George: warm storyteller
+    "en-GB-SoniaNeural": "pFZP5JQG7iQjIQuC4Bku",              # Lily: velvety, British
+}
+DEFAULT_ELEVENLABS_VOICE = "EXAVITQu4vr4xnSDxMaL"
+
+
+def elevenlabs_budget(env: dict) -> tuple[int, int] | None:
+    """(characters used, monthly limit) of the ElevenLabs account, or None if it can't be read."""
+    try:
+        request = urllib.request.Request("https://api.elevenlabs.io/v1/user", headers={"xi-api-key": env.get("ELEVENLABS_API_KEY", "")})
+        with urllib.request.urlopen(request, timeout=10) as response:
+            sub = json.loads(response.read()).get("subscription", {})
+        return int(sub.get("character_count", 0)), int(sub.get("character_limit", 0))
+    except Exception:
+        return None
+
+
+async def make_narration(slug: str, voice: str, rate: str, hold_seconds: float, engine: str = "auto") -> None:
+    """A single-narrator take through the dialogue path (so ElevenLabs gives word timings line by line)."""
+    await make_dialogue(slug, rate, hold_seconds, 0.35, engine, narrator=voice)
+
+
+async def make_dialogue(slug: str, rate: str, hold_seconds: float, gap: float, engine: str = "auto", narrator: str | None = None) -> None:
     """A dialogue take: each line synthesized in its character's voice, joined with short gaps.
 
     briefs/<slug>/vo-take.txt: "[S1] DOCTOR: Six weeks?! [S2] PATIENT: You said a lot."
@@ -260,19 +289,33 @@ async def make_dialogue(slug: str, rate: str, hold_seconds: float, gap: float, e
     Each scene in take.json gets a "speaker" field, so captions and characters know who talks."""
     brief = ROOT / "briefs" / slug
     scenes = split_scenes((brief / "vo-take.txt").read_text())
-    lines = split_speakers(scenes)
     cast_path = brief / "cast.json"
-    if not cast_path.exists():
-        sys.exit(f"missing {cast_path}: map every speaker to a voice")
-    cast = json.loads(cast_path.read_text())
+    if narrator is not None and not cast_path.exists():
+        # plain narration: "[S1] line" -> one NARRATOR voice
+        lines = [(scene, "NARRATOR", re.sub(r"^NARRATOR:\s*", "", text)) for scene, text in scenes]
+        cast = {"NARRATOR": {"voice": narrator, "rate": rate}}
+    else:
+        lines = split_speakers(scenes)
+        if not cast_path.exists():
+            sys.exit(f"missing {cast_path}: map every speaker to a voice")
+        cast = json.loads(cast_path.read_text())
     missing = sorted({speaker for _, speaker, _ in lines} - set(cast))
     if missing:
         raise ValueError(f"cast.json has no voice for: {', '.join(missing)}")
     env = read_env()
     speakers = sorted({speaker for _, speaker, _ in lines})
     # ElevenLabs voice per speaker: cast.json "elevenlabs_voice", or ELEVENLABS_VOICE_ID when there is only one speaker
-    eleven = {sp: cast[sp].get("elevenlabs_voice") or (env.get("ELEVENLABS_VOICE_ID") if len(speakers) == 1 else None) for sp in speakers}
+    eleven = {sp: cast[sp].get("elevenlabs_voice") or (env.get("ELEVENLABS_VOICE_ID") if len(speakers) == 1 else None)
+              or EDGE_TO_ELEVENLABS.get(cast[sp].get("voice", ""), DEFAULT_ELEVENLABS_VOICE) for sp in speakers}
     engine = pick_engine(engine, env, list(eleven.values()))
+    if engine == "elevenlabs":
+        need = sum(len(text) for _, _, text in lines)
+        budget = elevenlabs_budget(env)
+        if budget and budget[1] and budget[0] + need > budget[1]:
+            print(f"voice engine: edge-tts, free (ElevenLabs credits left {budget[1] - budget[0]} < {need} needed this month)")
+            engine = "edge"
+        elif budget:
+            print(f"ElevenLabs credits: {budget[0] + need}/{budget[1]} after this take")
     if engine == "edge":
         try:
             import edge_tts
@@ -500,11 +543,8 @@ def main() -> None:
             asyncio.run(make_dialogue(args.slug, args.rate, args.hold, args.gap, args.engine))
         elif args.audio:
             make_take_from_audio(args)
-        elif pick_engine(args.engine, read_env(), [read_env().get("ELEVENLABS_VOICE_ID")]) == "elevenlabs":
-            args.engine = "elevenlabs"
-            make_take_from_audio(args)
         else:
-            asyncio.run(make_take(args.slug, args.voice, args.rate, args.hold))
+            asyncio.run(make_narration(args.slug, args.voice, args.rate, args.hold, args.engine))
     except (ValueError, RuntimeError) as error:
         sys.exit(f"vo.py: {error}")
     except Exception as error:
