@@ -18,3 +18,9 @@ Quote candidates (out/voice-auditions/ti-quote-v2.mp3, after the original Jensen
 2. Luke (RNnkVeW25AwKYxZgnHBH), interview-room
 3. Kyle Hudson (lbmEtjv1o5fhobC3UKM4), interview-room
 4. Jerry B, light phone treatment (no echo)
+
+## Decisions (2026-11-25, round 2)
+- Quote: APPROVED = Jerry B (1t1EeRixsJrKbiF1zwM6), light phone treatment, no echo:
+  `highpass=f=260,lowpass=f=4800,asoftclip=type=tanh,equalizer=f=1800:t=q:w=1:g=3,acompressor=threshold=-20dB:ratio=4` + pink room tone at 0.004.
+- Narrator: the user rejected all v2 candidates and wants the exact NVIDIA voice. Scan widened to the whole male English library (~3,400 voices).
+- Music: the user wants the same song. Shazam (on the demucs music stem) = "4 Raws" by 8wakeup (3 of 4 windows; the first 12 s matched "Wavy Emotion (slowed)" by LxstOak, probably the intro). The published version should take it from the Instagram audio picker (licensed); a baked-in copy risks muting.
