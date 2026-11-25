@@ -21,6 +21,7 @@ import { FullPillBox, PILLBOX_COVER, PILLBOX_DURATION } from "./2026-11-18-the-f
 import { LookUp, LOOKUP_COVER, LOOKUP_DURATION } from "./2026-11-19-look-up/Reel";
 import { TheClockmaker, CLOCK_COVER, CLOCK_DURATION } from "./2026-11-20-the-clockmaker/Reel";
 import { ResultsAreReady, RESULTS_COVER, RESULTS_DURATION } from "./2026-11-23-results-are-ready/Reel";
+import { TheChecklist, CHECKLIST_COVER, CHECKLIST_DURATION } from "./2026-11-25-the-checklist/Reel";
 import { SeriesDemoReel, SERIES_DEMO_COVER, SERIES_DEMO_DURATION } from "./series-demo/Reel";
 
 export type ReelEntry = {
@@ -55,5 +56,6 @@ export const REELS: readonly ReelEntry[] = [
   { id: "2026-11-19-look-up", component: LookUp, durationInFrames: LOOKUP_DURATION, coverFrame: LOOKUP_COVER },
   { id: "2026-11-20-the-clockmaker", component: TheClockmaker, durationInFrames: CLOCK_DURATION, coverFrame: CLOCK_COVER },
   { id: "2026-11-23-results-are-ready", component: ResultsAreReady, durationInFrames: RESULTS_DURATION, coverFrame: RESULTS_COVER },
+  { id: "2026-11-25-the-checklist", component: TheChecklist, durationInFrames: CHECKLIST_DURATION, coverFrame: CHECKLIST_COVER },
   { id: "nvidia-s1e4-dark", component: S1E4Dark, durationInFrames: S1E4_DURATION, coverFrame: S1E4_COVER },
 ];

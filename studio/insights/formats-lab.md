@@ -40,5 +40,5 @@ Names and looks can change after feedback; keep them stable once something wins.
 | F3 | 4 | liked, best, good | ++ | why-are-you-here (good; hook weak). scribe-evening: clear narration arc (hook, explanation, reward). seven-doctors: risograph style, caregiver hook |
 | F4 | 4 | liked, brilliant | ++ | midnight-question: problem framed right; voice not good. call-from-april v2 (brilliant): daylight table, family chat, cutaways for proof, ending that answers |
 | F6 | 1 | format liked, execution poor | + | who-comes-back: same 3D hospital 4x, poor 3D, space imagery unrelated to the lines. Needs literal footage per line (Pexels key) and one-off 3D |
-| F7 | 3 | | | as-below-so-above and the-peak (reference text kept, tests); one-percent (own opening, light chart style) |
+| F7 | 4 | | | as-below-so-above and the-peak (reference text kept, tests); one-percent (own opening, light chart style) |
 | F5 | 1 | disliked | − | monitor-not-plan: ad tone and CTA, not the drawings, were the problem; retry once with the F3 narration rules before pausing |

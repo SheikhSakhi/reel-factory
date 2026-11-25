@@ -1,0 +1,1229 @@
+{
+  "file": "vo/2026-11-25-the-checklist/take.mp3",
+  "voice": "dialogue",
+  "engine": "elevenlabs",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 1889,
+  "cast": {
+    "NARRATOR": {
+      "voice": "en-GB-RyanNeural",
+      "rate": "-4%",
+      "elevenlabs_voice": "JBFqnCBsd6RMkjVDRZzb",
+      "elevenlabs_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.2
+      },
+      "gap": 0.4
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "In 1935, the most advanced airplane in the world crashed on its first big test flight.",
+      "from": 0,
+      "words": [
+        {
+          "token": "In",
+          "start": 0.0,
+          "end": 0.163,
+          "frame": 0,
+          "endFrame": 5
+        },
+        {
+          "token": "1935,",
+          "start": 0.209,
+          "end": 1.231,
+          "frame": 6,
+          "endFrame": 37
+        },
+        {
+          "token": "the",
+          "start": 1.324,
+          "end": 1.416,
+          "frame": 40,
+          "endFrame": 42
+        },
+        {
+          "token": "most",
+          "start": 1.463,
+          "end": 1.625,
+          "frame": 44,
+          "endFrame": 49
+        },
+        {
+          "token": "advanced",
+          "start": 1.672,
+          "end": 2.136,
+          "frame": 50,
+          "endFrame": 64
+        },
+        {
+          "token": "airplane",
+          "start": 2.183,
+          "end": 2.635,
+          "frame": 65,
+          "endFrame": 79
+        },
+        {
+          "token": "in",
+          "start": 2.659,
+          "end": 2.717,
+          "frame": 80,
+          "endFrame": 82
+        },
+        {
+          "token": "the",
+          "start": 2.763,
+          "end": 2.833,
+          "frame": 83,
+          "endFrame": 85
+        },
+        {
+          "token": "world",
+          "start": 2.879,
+          "end": 3.193,
+          "frame": 86,
+          "endFrame": 96
+        },
+        {
+          "token": "crashed",
+          "start": 3.286,
+          "end": 3.657,
+          "frame": 99,
+          "endFrame": 110
+        },
+        {
+          "token": "on",
+          "start": 3.692,
+          "end": 3.762,
+          "frame": 111,
+          "endFrame": 113
+        },
+        {
+          "token": "its",
+          "start": 3.808,
+          "end": 3.924,
+          "frame": 114,
+          "endFrame": 118
+        },
+        {
+          "token": "first",
+          "start": 3.982,
+          "end": 4.296,
+          "frame": 119,
+          "endFrame": 129
+        },
+        {
+          "token": "big",
+          "start": 4.377,
+          "end": 4.586,
+          "frame": 131,
+          "endFrame": 138
+        },
+        {
+          "token": "test",
+          "start": 4.644,
+          "end": 4.923,
+          "frame": 139,
+          "endFrame": 148
+        },
+        {
+          "token": "flight.",
+          "start": 4.957,
+          "end": 5.619,
+          "frame": 149,
+          "endFrame": 169
+        }
+      ],
+      "to": 178,
+      "speechEnd": 169,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S2",
+      "text": "Nothing was broken. The pilot was an experienced army test pilot.",
+      "from": 178,
+      "words": [
+        {
+          "token": "Nothing",
+          "start": 6.019,
+          "end": 6.367,
+          "frame": 181,
+          "endFrame": 191
+        },
+        {
+          "token": "was",
+          "start": 6.425,
+          "end": 6.518,
+          "frame": 193,
+          "endFrame": 196
+        },
+        {
+          "token": "broken.",
+          "start": 6.565,
+          "end": 7.134,
+          "frame": 197,
+          "endFrame": 214
+        },
+        {
+          "token": "The",
+          "start": 7.644,
+          "end": 7.76,
+          "frame": 229,
+          "endFrame": 233
+        },
+        {
+          "token": "pilot",
+          "start": 7.819,
+          "end": 8.167,
+          "frame": 235,
+          "endFrame": 245
+        },
+        {
+          "token": "was",
+          "start": 8.213,
+          "end": 8.318,
+          "frame": 246,
+          "endFrame": 250
+        },
+        {
+          "token": "an",
+          "start": 8.353,
+          "end": 8.411,
+          "frame": 251,
+          "endFrame": 252
+        },
+        {
+          "token": "experienced",
+          "start": 8.457,
+          "end": 9.119,
+          "frame": 254,
+          "endFrame": 274
+        },
+        {
+          "token": "army",
+          "start": 9.177,
+          "end": 9.432,
+          "frame": 275,
+          "endFrame": 283
+        },
+        {
+          "token": "test",
+          "start": 9.49,
+          "end": 9.711,
+          "frame": 285,
+          "endFrame": 291
+        },
+        {
+          "token": "pilot.",
+          "start": 9.757,
+          "end": 10.477,
+          "frame": 293,
+          "endFrame": 314
+        }
+      ],
+      "to": 323,
+      "speechEnd": 314,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S3",
+      "text": "The controls were still locked. One forgotten step, among too many to remember.",
+      "from": 323,
+      "words": [
+        {
+          "token": "The",
+          "start": 10.877,
+          "end": 11.04,
+          "frame": 326,
+          "endFrame": 331
+        },
+        {
+          "token": "controls",
+          "start": 11.086,
+          "end": 11.539,
+          "frame": 333,
+          "endFrame": 346
+        },
+        {
+          "token": "were",
+          "start": 11.585,
+          "end": 11.69,
+          "frame": 348,
+          "endFrame": 351
+        },
+        {
+          "token": "still",
+          "start": 11.725,
+          "end": 11.934,
+          "frame": 352,
+          "endFrame": 358
+        },
+        {
+          "token": "locked.",
+          "start": 11.992,
+          "end": 12.468,
+          "frame": 360,
+          "endFrame": 374
+        },
+        {
+          "token": "One",
+          "start": 12.909,
+          "end": 13.129,
+          "frame": 387,
+          "endFrame": 394
+        },
+        {
+          "token": "forgotten",
+          "start": 13.176,
+          "end": 13.582,
+          "frame": 395,
+          "endFrame": 407
+        },
+        {
+          "token": "step,",
+          "start": 13.652,
+          "end": 14.081,
+          "frame": 410,
+          "endFrame": 422
+        },
+        {
+          "token": "among",
+          "start": 14.163,
+          "end": 14.43,
+          "frame": 425,
+          "endFrame": 433
+        },
+        {
+          "token": "too",
+          "start": 14.488,
+          "end": 14.627,
+          "frame": 435,
+          "endFrame": 439
+        },
+        {
+          "token": "many",
+          "start": 14.685,
+          "end": 14.859,
+          "frame": 441,
+          "endFrame": 446
+        },
+        {
+          "token": "to",
+          "start": 14.906,
+          "end": 14.964,
+          "frame": 447,
+          "endFrame": 449
+        },
+        {
+          "token": "remember.",
+          "start": 15.033,
+          "end": 15.8,
+          "frame": 451,
+          "endFrame": 474
+        }
+      ],
+      "to": 483,
+      "speechEnd": 474,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S4",
+      "text": "So pilots didn't try to fly better. They wrote the steps down. The checklist was born, and that plane became the B-17.",
+      "from": 483,
+      "words": [
+        {
+          "token": "So",
+          "start": 16.2,
+          "end": 16.374,
+          "frame": 486,
+          "endFrame": 491
+        },
+        {
+          "token": "pilots",
+          "start": 16.455,
+          "end": 16.827,
+          "frame": 494,
+          "endFrame": 505
+        },
+        {
+          "token": "didn't",
+          "start": 16.873,
+          "end": 17.094,
+          "frame": 506,
+          "endFrame": 513
+        },
+        {
+          "token": "try",
+          "start": 17.129,
+          "end": 17.28,
+          "frame": 514,
+          "endFrame": 518
+        },
+        {
+          "token": "to",
+          "start": 17.338,
+          "end": 17.396,
+          "frame": 520,
+          "endFrame": 522
+        },
+        {
+          "token": "fly",
+          "start": 17.465,
+          "end": 17.674,
+          "frame": 524,
+          "endFrame": 530
+        },
+        {
+          "token": "better.",
+          "start": 17.744,
+          "end": 18.185,
+          "frame": 532,
+          "endFrame": 546
+        },
+        {
+          "token": "They",
+          "start": 18.359,
+          "end": 18.499,
+          "frame": 551,
+          "endFrame": 555
+        },
+        {
+          "token": "wrote",
+          "start": 18.534,
+          "end": 18.719,
+          "frame": 556,
+          "endFrame": 562
+        },
+        {
+          "token": "the",
+          "start": 18.743,
+          "end": 18.812,
+          "frame": 562,
+          "endFrame": 564
+        },
+        {
+          "token": "steps",
+          "start": 18.847,
+          "end": 19.126,
+          "frame": 565,
+          "endFrame": 574
+        },
+        {
+          "token": "down.",
+          "start": 19.184,
+          "end": 19.637,
+          "frame": 576,
+          "endFrame": 589
+        },
+        {
+          "token": "The",
+          "start": 19.846,
+          "end": 19.95,
+          "frame": 595,
+          "endFrame": 599
+        },
+        {
+          "token": "checklist",
+          "start": 19.996,
+          "end": 20.403,
+          "frame": 600,
+          "endFrame": 612
+        },
+        {
+          "token": "was",
+          "start": 20.449,
+          "end": 20.554,
+          "frame": 613,
+          "endFrame": 617
+        },
+        {
+          "token": "born,",
+          "start": 20.612,
+          "end": 21.053,
+          "frame": 618,
+          "endFrame": 632
+        },
+        {
+          "token": "and",
+          "start": 21.169,
+          "end": 21.297,
+          "frame": 635,
+          "endFrame": 639
+        },
+        {
+          "token": "that",
+          "start": 21.343,
+          "end": 21.483,
+          "frame": 640,
+          "endFrame": 644
+        },
+        {
+          "token": "plane",
+          "start": 21.541,
+          "end": 21.808,
+          "frame": 646,
+          "endFrame": 654
+        },
+        {
+          "token": "became",
+          "start": 21.842,
+          "end": 22.109,
+          "frame": 655,
+          "endFrame": 663
+        },
+        {
+          "token": "the",
+          "start": 22.133,
+          "end": 22.202,
+          "frame": 664,
+          "endFrame": 666
+        },
+        {
+          "token": "B-17.",
+          "start": 22.249,
+          "end": 23.398,
+          "frame": 667,
+          "endFrame": 702
+        }
+      ],
+      "to": 711,
+      "speechEnd": 702,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S5",
+      "text": "When work gets complex enough, memory stops being a skill. It becomes a risk.",
+      "from": 711,
+      "words": [
+        {
+          "token": "When",
+          "start": 23.798,
+          "end": 24.019,
+          "frame": 714,
+          "endFrame": 721
+        },
+        {
+          "token": "work",
+          "start": 24.077,
+          "end": 24.297,
+          "frame": 722,
+          "endFrame": 729
+        },
+        {
+          "token": "gets",
+          "start": 24.344,
+          "end": 24.518,
+          "frame": 730,
+          "endFrame": 736
+        },
+        {
+          "token": "complex",
+          "start": 24.564,
+          "end": 25.029,
+          "frame": 737,
+          "endFrame": 751
+        },
+        {
+          "token": "enough,",
+          "start": 25.098,
+          "end": 25.423,
+          "frame": 753,
+          "endFrame": 763
+        },
+        {
+          "token": "memory",
+          "start": 25.598,
+          "end": 25.923,
+          "frame": 768,
+          "endFrame": 778
+        },
+        {
+          "token": "stops",
+          "start": 25.981,
+          "end": 26.271,
+          "frame": 779,
+          "endFrame": 788
+        },
+        {
+          "token": "being",
+          "start": 26.329,
+          "end": 26.573,
+          "frame": 790,
+          "endFrame": 797
+        },
+        {
+          "token": "a",
+          "start": 26.619,
+          "end": 26.642,
+          "frame": 799,
+          "endFrame": 799
+        },
+        {
+          "token": "skill.",
+          "start": 26.7,
+          "end": 27.269,
+          "frame": 801,
+          "endFrame": 818
+        },
+        {
+          "token": "It",
+          "start": 27.653,
+          "end": 27.78,
+          "frame": 830,
+          "endFrame": 833
+        },
+        {
+          "token": "becomes",
+          "start": 27.815,
+          "end": 28.129,
+          "frame": 834,
+          "endFrame": 844
+        },
+        {
+          "token": "a",
+          "start": 28.175,
+          "end": 28.21,
+          "frame": 845,
+          "endFrame": 846
+        },
+        {
+          "token": "risk.",
+          "start": 28.279,
+          "end": 28.999,
+          "frame": 848,
+          "endFrame": 870
+        }
+      ],
+      "to": 879,
+      "speechEnd": 870,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S6",
+      "text": "Medicine is that complex. Especially between visits.",
+      "from": 879,
+      "words": [
+        {
+          "token": "Medicine",
+          "start": 29.4,
+          "end": 29.876,
+          "frame": 882,
+          "endFrame": 896
+        },
+        {
+          "token": "is",
+          "start": 29.911,
+          "end": 29.98,
+          "frame": 897,
+          "endFrame": 899
+        },
+        {
+          "token": "that",
+          "start": 30.027,
+          "end": 30.166,
+          "frame": 901,
+          "endFrame": 905
+        },
+        {
+          "token": "complex.",
+          "start": 30.236,
+          "end": 30.944,
+          "frame": 907,
+          "endFrame": 928
+        },
+        {
+          "token": "Especially",
+          "start": 31.269,
+          "end": 31.838,
+          "frame": 938,
+          "endFrame": 955
+        },
+        {
+          "token": "between",
+          "start": 31.885,
+          "end": 32.244,
+          "frame": 957,
+          "endFrame": 967
+        },
+        {
+          "token": "visits.",
+          "start": 32.314,
+          "end": 33.115,
+          "frame": 969,
+          "endFrame": 993
+        }
+      ],
+      "to": 1002,
+      "speechEnd": 993,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S7",
+      "text": "Surgeons proved it once. A one-page checklist across eight hospitals cut deaths after surgery from one and a half percent to under one.",
+      "from": 1002,
+      "words": [
+        {
+          "token": "Surgeons",
+          "start": 33.515,
+          "end": 34.014,
+          "frame": 1005,
+          "endFrame": 1020
+        },
+        {
+          "token": "proved",
+          "start": 34.072,
+          "end": 34.351,
+          "frame": 1022,
+          "endFrame": 1031
+        },
+        {
+          "token": "it",
+          "start": 34.386,
+          "end": 34.455,
+          "frame": 1032,
+          "endFrame": 1034
+        },
+        {
+          "token": "once.",
+          "start": 34.525,
+          "end": 34.978,
+          "frame": 1036,
+          "endFrame": 1049
+        },
+        {
+          "token": "A",
+          "start": 35.222,
+          "end": 35.291,
+          "frame": 1057,
+          "endFrame": 1059
+        },
+        {
+          "token": "one-page",
+          "start": 35.407,
+          "end": 35.895,
+          "frame": 1062,
+          "endFrame": 1077
+        },
+        {
+          "token": "checklist",
+          "start": 35.941,
+          "end": 36.452,
+          "frame": 1078,
+          "endFrame": 1094
+        },
+        {
+          "token": "across",
+          "start": 36.51,
+          "end": 36.801,
+          "frame": 1095,
+          "endFrame": 1104
+        },
+        {
+          "token": "eight",
+          "start": 36.87,
+          "end": 37.079,
+          "frame": 1106,
+          "endFrame": 1112
+        },
+        {
+          "token": "hospitals",
+          "start": 37.126,
+          "end": 37.671,
+          "frame": 1114,
+          "endFrame": 1130
+        },
+        {
+          "token": "cut",
+          "start": 37.915,
+          "end": 38.136,
+          "frame": 1137,
+          "endFrame": 1144
+        },
+        {
+          "token": "deaths",
+          "start": 38.205,
+          "end": 38.542,
+          "frame": 1146,
+          "endFrame": 1156
+        },
+        {
+          "token": "after",
+          "start": 38.6,
+          "end": 38.867,
+          "frame": 1158,
+          "endFrame": 1166
+        },
+        {
+          "token": "surgery",
+          "start": 38.925,
+          "end": 39.366,
+          "frame": 1168,
+          "endFrame": 1181
+        },
+        {
+          "token": "from",
+          "start": 39.424,
+          "end": 39.564,
+          "frame": 1183,
+          "endFrame": 1187
+        },
+        {
+          "token": "one",
+          "start": 39.645,
+          "end": 39.808,
+          "frame": 1189,
+          "endFrame": 1194
+        },
+        {
+          "token": "and",
+          "start": 39.831,
+          "end": 39.9,
+          "frame": 1195,
+          "endFrame": 1197
+        },
+        {
+          "token": "a",
+          "start": 39.947,
+          "end": 39.97,
+          "frame": 1198,
+          "endFrame": 1199
+        },
+        {
+          "token": "half",
+          "start": 40.028,
+          "end": 40.179,
+          "frame": 1201,
+          "endFrame": 1205
+        },
+        {
+          "token": "percent",
+          "start": 40.226,
+          "end": 40.632,
+          "frame": 1207,
+          "endFrame": 1219
+        },
+        {
+          "token": "to",
+          "start": 40.748,
+          "end": 40.876,
+          "frame": 1222,
+          "endFrame": 1226
+        },
+        {
+          "token": "under",
+          "start": 40.957,
+          "end": 41.189,
+          "frame": 1229,
+          "endFrame": 1236
+        },
+        {
+          "token": "one.",
+          "start": 41.247,
+          "end": 41.828,
+          "frame": 1237,
+          "endFrame": 1255
+        }
+      ],
+      "to": 1264,
+      "speechEnd": 1255,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S8",
+      "text": "Now imagine that for the months between visits. Every patient's next step, held by something more reliable than memory.",
+      "from": 1264,
+      "words": [
+        {
+          "token": "Now",
+          "start": 42.228,
+          "end": 42.425,
+          "frame": 1267,
+          "endFrame": 1273
+        },
+        {
+          "token": "imagine",
+          "start": 42.483,
+          "end": 42.832,
+          "frame": 1274,
+          "endFrame": 1285
+        },
+        {
+          "token": "that",
+          "start": 42.867,
+          "end": 43.041,
+          "frame": 1286,
+          "endFrame": 1291
+        },
+        {
+          "token": "for",
+          "start": 43.099,
+          "end": 43.192,
+          "frame": 1293,
+          "endFrame": 1296
+        },
+        {
+          "token": "the",
+          "start": 43.226,
+          "end": 43.296,
+          "frame": 1297,
+          "endFrame": 1299
+        },
+        {
+          "token": "months",
+          "start": 43.343,
+          "end": 43.61,
+          "frame": 1300,
+          "endFrame": 1308
+        },
+        {
+          "token": "between",
+          "start": 43.656,
+          "end": 43.969,
+          "frame": 1310,
+          "endFrame": 1319
+        },
+        {
+          "token": "visits.",
+          "start": 44.039,
+          "end": 44.596,
+          "frame": 1321,
+          "endFrame": 1338
+        },
+        {
+          "token": "Every",
+          "start": 45.038,
+          "end": 45.316,
+          "frame": 1351,
+          "endFrame": 1359
+        },
+        {
+          "token": "patient's",
+          "start": 45.374,
+          "end": 45.804,
+          "frame": 1361,
+          "endFrame": 1374
+        },
+        {
+          "token": "next",
+          "start": 45.874,
+          "end": 46.117,
+          "frame": 1376,
+          "endFrame": 1383
+        },
+        {
+          "token": "step,",
+          "start": 46.152,
+          "end": 46.64,
+          "frame": 1385,
+          "endFrame": 1399
+        },
+        {
+          "token": "held",
+          "start": 46.849,
+          "end": 47.104,
+          "frame": 1405,
+          "endFrame": 1413
+        },
+        {
+          "token": "by",
+          "start": 47.162,
+          "end": 47.278,
+          "frame": 1415,
+          "endFrame": 1418
+        },
+        {
+          "token": "something",
+          "start": 47.336,
+          "end": 47.65,
+          "frame": 1420,
+          "endFrame": 1429
+        },
+        {
+          "token": "more",
+          "start": 47.708,
+          "end": 47.859,
+          "frame": 1431,
+          "endFrame": 1436
+        },
+        {
+          "token": "reliable",
+          "start": 47.894,
+          "end": 48.358,
+          "frame": 1437,
+          "endFrame": 1451
+        },
+        {
+          "token": "than",
+          "start": 48.393,
+          "end": 48.509,
+          "frame": 1452,
+          "endFrame": 1455
+        },
+        {
+          "token": "memory.",
+          "start": 48.567,
+          "end": 49.287,
+          "frame": 1457,
+          "endFrame": 1479
+        }
+      ],
+      "to": 1488,
+      "speechEnd": 1479,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S9",
+      "text": "A written plan for each patient. What to check. When to act. Who to call.",
+      "from": 1488,
+      "words": [
+        {
+          "token": "A",
+          "start": 49.686,
+          "end": 49.779,
+          "frame": 1491,
+          "endFrame": 1493
+        },
+        {
+          "token": "written",
+          "start": 49.849,
+          "end": 50.116,
+          "frame": 1495,
+          "endFrame": 1503
+        },
+        {
+          "token": "plan",
+          "start": 50.174,
+          "end": 50.452,
+          "frame": 1505,
+          "endFrame": 1514
+        },
+        {
+          "token": "for",
+          "start": 50.51,
+          "end": 50.615,
+          "frame": 1515,
+          "endFrame": 1518
+        },
+        {
+          "token": "each",
+          "start": 50.673,
+          "end": 50.859,
+          "frame": 1520,
+          "endFrame": 1526
+        },
+        {
+          "token": "patient.",
+          "start": 50.917,
+          "end": 51.474,
+          "frame": 1528,
+          "endFrame": 1544
+        },
+        {
+          "token": "What",
+          "start": 51.544,
+          "end": 51.741,
+          "frame": 1546,
+          "endFrame": 1552
+        },
+        {
+          "token": "to",
+          "start": 51.776,
+          "end": 51.834,
+          "frame": 1553,
+          "endFrame": 1555
+        },
+        {
+          "token": "check.",
+          "start": 51.904,
+          "end": 52.287,
+          "frame": 1557,
+          "endFrame": 1569
+        },
+        {
+          "token": "When",
+          "start": 52.356,
+          "end": 52.577,
+          "frame": 1571,
+          "endFrame": 1577
+        },
+        {
+          "token": "to",
+          "start": 52.647,
+          "end": 52.705,
+          "frame": 1579,
+          "endFrame": 1581
+        },
+        {
+          "token": "act.",
+          "start": 52.786,
+          "end": 53.192,
+          "frame": 1584,
+          "endFrame": 1596
+        },
+        {
+          "token": "Who",
+          "start": 53.215,
+          "end": 53.39,
+          "frame": 1596,
+          "endFrame": 1602
+        },
+        {
+          "token": "to",
+          "start": 53.448,
+          "end": 53.506,
+          "frame": 1603,
+          "endFrame": 1605
+        },
+        {
+          "token": "call.",
+          "start": 53.575,
+          "end": 54.237,
+          "frame": 1607,
+          "endFrame": 1627
+        }
+      ],
+      "to": 1636,
+      "speechEnd": 1627,
+      "speaker": "NARRATOR"
+    },
+    {
+      "id": "S10",
+      "text": "The best pilot in 1935 didn't need more skill. He needed a list. So does the best doctor.",
+      "from": 1636,
+      "words": [
+        {
+          "token": "The",
+          "start": 54.638,
+          "end": 54.789,
+          "frame": 1639,
+          "endFrame": 1644
+        },
+        {
+          "token": "best",
+          "start": 54.835,
+          "end": 55.033,
+          "frame": 1645,
+          "endFrame": 1651
+        },
+        {
+          "token": "pilot",
+          "start": 55.091,
+          "end": 55.427,
+          "frame": 1653,
+          "endFrame": 1663
+        },
+        {
+          "token": "in",
+          "start": 55.474,
+          "end": 55.544,
+          "frame": 1664,
+          "endFrame": 1666
+        },
+        {
+          "token": "1935",
+          "start": 55.59,
+          "end": 56.519,
+          "frame": 1668,
+          "endFrame": 1696
+        },
+        {
+          "token": "didn't",
+          "start": 56.635,
+          "end": 56.89,
+          "frame": 1699,
+          "endFrame": 1707
+        },
+        {
+          "token": "need",
+          "start": 56.925,
+          "end": 57.088,
+          "frame": 1708,
+          "endFrame": 1713
+        },
+        {
+          "token": "more",
+          "start": 57.134,
+          "end": 57.297,
+          "frame": 1714,
+          "endFrame": 1719
+        },
+        {
+          "token": "skill.",
+          "start": 57.343,
+          "end": 57.889,
+          "frame": 1720,
+          "endFrame": 1737
+        },
+        {
+          "token": "He",
+          "start": 58.272,
+          "end": 58.376,
+          "frame": 1748,
+          "endFrame": 1751
+        },
+        {
+          "token": "needed",
+          "start": 58.434,
+          "end": 58.69,
+          "frame": 1753,
+          "endFrame": 1761
+        },
+        {
+          "token": "a",
+          "start": 58.736,
+          "end": 58.76,
+          "frame": 1762,
+          "endFrame": 1763
+        },
+        {
+          "token": "list.",
+          "start": 58.818,
+          "end": 59.259,
+          "frame": 1765,
+          "endFrame": 1778
+        },
+        {
+          "token": "So",
+          "start": 59.468,
+          "end": 59.619,
+          "frame": 1784,
+          "endFrame": 1789
+        },
+        {
+          "token": "does",
+          "start": 59.677,
+          "end": 59.816,
+          "frame": 1790,
+          "endFrame": 1794
+        },
+        {
+          "token": "the",
+          "start": 59.851,
+          "end": 59.921,
+          "frame": 1796,
+          "endFrame": 1798
+        },
+        {
+          "token": "best",
+          "start": 59.967,
+          "end": 60.164,
+          "frame": 1799,
+          "endFrame": 1805
+        },
+        {
+          "token": "doctor.",
+          "start": 60.211,
+          "end": 60.954,
+          "frame": 1806,
+          "endFrame": 1829
+        }
+      ],
+      "to": 1889,
+      "speechEnd": 1829,
+      "speaker": "NARRATOR"
+    }
+  ]
+}
