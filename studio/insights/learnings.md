@@ -11,6 +11,14 @@ Rules learned from ratings and real results. Every run reads this first. Maintai
 - Ad tone: slogans, a product name or tagline as the ending ("DOCX · ...", "A plan is."), selling instead of explaining (monitor-not-plan disliked: "like an advertisement", 2026-10-30)
 
 ## User preferences
+- F7 REFERENCE EXAMPLE: 2026-11-25-the-checklist (user: "great example of this genre"). Copy its recipe for every flipped explainer:
+  1. a real, dated, verifiable event from outside medicine (1935, the Model 299 crash), told as a story in 4 short lines
+  2. the universal principle in one line ("When work gets complex enough, memory stops being a skill. It becomes a risk.")
+  3. the flip in one short line ("Medicine is that complex. Especially between visits.")
+  4. one piece of medical evidence that echoes the opening (the surgical checklist study)
+  5. the desire ("Now imagine that for the months between visits"), then the concrete answer in three beats ("What to check. When to act. Who to call.")
+  6. a mirror of the opening that lands on the doctor with respect ("He needed a list. So does the best doctor.")
+  Look: a period-accurate visual world for the opening (here a 1930s technical manual: cream paper, sepia line drawings, typewriter labels, red stamps), one new colour arriving at the flip. Voice: ElevenLabs George, ~65 s
 - Voice (2026-11-24): ElevenLabs judged better than edge-tts on the same reel (results-are-ready, Sarah vs Emma): ElevenLabs is now the default for every run. Voice (2026-11-23): ElevenLabs connected through a secure network secret (never in git). First reel voiced with it: results-are-ready (Sarah). Compare its rating with the edge-tts reels before deciding the default voices
 - Visual tone for doctors (user, 2026-11-20, after the cartoon remake): medical aesthetics, never caricature. Nobody stupid, chubby, greedy or ugly; no coins or bribes; doctors and patients shown with dignity. The villain is the system (overload, sealed rooms, the gap between visits), not the doctor. Premium healthcare-brand look: soft light, clean whites, sage/teal with one warm accent
 - Flipped explainer, after the flip (user, 2026-11-14/15): never go straight to the price or a warning. Order: (1) the desire: why every doctor wants this (see the whole path, catch the change early, patients stop falling between visits, it's why we chose medicine); (2) the honest turn, gently (the higher you climb, the more you hold) -> the question it raises (what do I bring?); (3) the answer as the 'warm clothes' (a plan for every patient, a line for when to act, a system that watches with you); (4) a positive mirror of the opening line. Don't contrast 'ordinary doctors below' with 'the one on top': everyone starts at the foot; the difference is what you bring
