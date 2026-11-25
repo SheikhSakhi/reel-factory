@@ -5,3 +5,16 @@
 - Narrator: ElevenLabs stock voice, deep and confident (audition: Brian vs Adam). The founder's quote ("We saw a completely different kind of healthtech...") plays over the user's own footage, voiced with ElevenLabs (stock or a clone of his own voice, his choice); muted original audio; interview-style sound; lower third "Dr. Sheikhislam Sakhi, Founder, Treint". Caption labels AI voice.
 - Footage: the user's raw clips (pending), product screen recordings (pending), Pexels stock (key pending), code-built data animations for what doesn't exist.
 - Risks raised and accepted by the user: length vs the 56 s original; "the only technology of its kind" (superiority claim); "bring down the death rate" (an aim, not a proven result); the reference's structure belongs to its creator.
+
+## Voice auditions v2 (2026-11-25)
+Stock voices rejected by the user. Method: isolated the NVIDIA narrator with demucs, ranked 878 public ElevenLabs library voices by ECAPA speaker embedding, re-read the NVIDIA opening with the top 14, kept the best 4. The original is paced fast (opening = 9.8 s); candidates use ElevenLabs speed 1.2 plus a small time-stretch to match.
+Narrator candidates (out/voice-auditions/ti-voice-match-v2.mp3, after the original):
+1. Professor H (kJQzNtKOEkJ2Y7ui1GTM)
+2. Bradley, Earnest Narrator (RexqLjNzkCjWogguKyff), one of the most used faceless-narration voices
+3. Roman Voss (TFmrsRqiMPIeENU66yUi)
+4. Grant Whitman (wLoW00IP5kfH8oiOBAPp)
+Quote candidates (out/voice-auditions/ti-quote-v2.mp3, after the original Jensen clip):
+1. Jerry B (1t1EeRixsJrKbiF1zwM6), interview-room treatment
+2. Luke (RNnkVeW25AwKYxZgnHBH), interview-room
+3. Kyle Hudson (lbmEtjv1o5fhobC3UKM4), interview-room
+4. Jerry B, light phone treatment (no echo)
