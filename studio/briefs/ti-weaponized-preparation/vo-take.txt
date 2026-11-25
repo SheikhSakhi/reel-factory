@@ -1,0 +1,11 @@
+[S1] NARRATOR: Everyone thinks Treatment Intelligence is AI for hospitals. It isn't. It is six years of weaponized preparation for an architectural shift in healthcare.
+[S2] NARRATOR: From 2020, Dr. Sakhi intentionally sabotaged his own profit margins. He forced expensive treatment intelligence into every single interaction between a doctor and a patient that his company touched.
+[S3] NARRATOR: Traditional investors laughed at him. They told him to just build a booking system for hospitals.
+[S4] NARRATOR: He was burning millions on a system for a shift in healthcare that investors couldn't see. But doctors and patients were living it every day: caring between visits, between hospitals, by doctor's spreadsheets, from memory, with no hospital system built for it.
+[S5] NARRATOR: He didn't just ignore them, he doubled down for six years.
+[S6] NARRATOR: Then in 2026, healthcare woke up. Chronic disease outgrew the clinic, doctors ran out of hours, and patients started expecting their doctor to keep track of them every day, not once a month.
+[S7] FOUNDER: We saw a completely different kind of healthtech. Not built for one visit, but for one doctor and all their chronic patients with Treatment Intelligence every single day.
+[S8] NARRATOR: It needed a system that could watch thousands of patients and help the doctor manage them all. Treatment Intelligence was the only technology of its kind built for exactly that system.
+[S9] NARRATOR: Dr. Sakhi hadn't predicted the new era of care, he had built it to bring down the death rate from chronic disease.
+[S10] NARRATOR: Most founders optimize for the next quarter. The dangerous ones build the infrastructure for a future nobody else can see yet.
+[S11] NARRATOR: They don't react to medicine. They force medicine to react to them.
