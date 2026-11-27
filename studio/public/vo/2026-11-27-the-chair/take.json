@@ -1,0 +1,1435 @@
+{
+  "file": "vo/2026-11-27-the-chair/take.mp3",
+  "voice": "dialogue",
+  "engine": "elevenlabs",
+  "rate": "+6%",
+  "fps": 30,
+  "totalFrames": 2159,
+  "cast": {
+    "DAD": {
+      "voice": "en-IE-ConnorNeural",
+      "rate": "-8%",
+      "elevenlabs_voice": "pqHfZKP75CvOlQylNhV4",
+      "elevenlabs_settings": {
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "speed": 0.92
+      },
+      "gap": 0.5
+    },
+    "DAUGHTER": {
+      "voice": "en-US-EmmaMultilingualNeural",
+      "rate": "-4%",
+      "elevenlabs_voice": "XrExE9yKIg1WjnnlVkGX",
+      "elevenlabs_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.2,
+        "speed": 0.97
+      },
+      "gap": 0.4
+    }
+  },
+  "scenes": [
+    {
+      "id": "S1",
+      "text": "Dad, why did you sleep in the chair?",
+      "from": 0,
+      "words": [
+        {
+          "token": "Dad,",
+          "start": 0.0,
+          "end": 0.488,
+          "frame": 0,
+          "endFrame": 15
+        },
+        {
+          "token": "why",
+          "start": 0.708,
+          "end": 0.882,
+          "frame": 21,
+          "endFrame": 26
+        },
+        {
+          "token": "did",
+          "start": 0.929,
+          "end": 1.045,
+          "frame": 28,
+          "endFrame": 31
+        },
+        {
+          "token": "you",
+          "start": 1.091,
+          "end": 1.161,
+          "frame": 33,
+          "endFrame": 35
+        },
+        {
+          "token": "sleep",
+          "start": 1.196,
+          "end": 1.405,
+          "frame": 36,
+          "endFrame": 42
+        },
+        {
+          "token": "in",
+          "start": 1.451,
+          "end": 1.498,
+          "frame": 44,
+          "endFrame": 45
+        },
+        {
+          "token": "the",
+          "start": 1.533,
+          "end": 1.602,
+          "frame": 46,
+          "endFrame": 48
+        },
+        {
+          "token": "chair?",
+          "start": 1.637,
+          "end": 2.322,
+          "frame": 49,
+          "endFrame": 70
+        }
+      ],
+      "to": 82,
+      "speechEnd": 70,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S2",
+      "text": "Can't breathe lying flat lately. The chair is easier.",
+      "from": 82,
+      "words": [
+        {
+          "token": "Can't",
+          "start": 2.822,
+          "end": 3.135,
+          "frame": 85,
+          "endFrame": 94
+        },
+        {
+          "token": "breathe",
+          "start": 3.182,
+          "end": 3.507,
+          "frame": 95,
+          "endFrame": 105
+        },
+        {
+          "token": "lying",
+          "start": 3.6,
+          "end": 3.937,
+          "frame": 108,
+          "endFrame": 118
+        },
+        {
+          "token": "flat",
+          "start": 4.018,
+          "end": 4.308,
+          "frame": 121,
+          "endFrame": 129
+        },
+        {
+          "token": "lately.",
+          "start": 4.401,
+          "end": 4.947,
+          "frame": 132,
+          "endFrame": 148
+        },
+        {
+          "token": "The",
+          "start": 5.365,
+          "end": 5.492,
+          "frame": 161,
+          "endFrame": 165
+        },
+        {
+          "token": "chair",
+          "start": 5.539,
+          "end": 5.864,
+          "frame": 166,
+          "endFrame": 176
+        },
+        {
+          "token": "is",
+          "start": 5.957,
+          "end": 6.05,
+          "frame": 179,
+          "endFrame": 182
+        },
+        {
+          "token": "easier.",
+          "start": 6.131,
+          "end": 6.955,
+          "frame": 184,
+          "endFrame": 209
+        }
+      ],
+      "to": 218,
+      "speechEnd": 209,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S3",
+      "text": "Since when?",
+      "from": 218,
+      "words": [
+        {
+          "token": "Since",
+          "start": 7.355,
+          "end": 7.657,
+          "frame": 221,
+          "endFrame": 230
+        },
+        {
+          "token": "when?",
+          "start": 7.692,
+          "end": 8.377,
+          "frame": 231,
+          "endFrame": 251
+        }
+      ],
+      "to": 263,
+      "speechEnd": 251,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S4",
+      "text": "Four nights. And my shoes don't fit. My feet are a bit puffy.",
+      "from": 263,
+      "words": [
+        {
+          "token": "Four",
+          "start": 8.877,
+          "end": 9.202,
+          "frame": 266,
+          "endFrame": 276
+        },
+        {
+          "token": "nights.",
+          "start": 9.283,
+          "end": 9.841,
+          "frame": 278,
+          "endFrame": 295
+        },
+        {
+          "token": "And",
+          "start": 10.189,
+          "end": 10.363,
+          "frame": 306,
+          "endFrame": 311
+        },
+        {
+          "token": "my",
+          "start": 10.421,
+          "end": 10.537,
+          "frame": 313,
+          "endFrame": 316
+        },
+        {
+          "token": "shoes",
+          "start": 10.618,
+          "end": 10.932,
+          "frame": 319,
+          "endFrame": 328
+        },
+        {
+          "token": "don't",
+          "start": 10.99,
+          "end": 11.199,
+          "frame": 330,
+          "endFrame": 336
+        },
+        {
+          "token": "fit.",
+          "start": 11.257,
+          "end": 11.698,
+          "frame": 338,
+          "endFrame": 351
+        },
+        {
+          "token": "My",
+          "start": 12.174,
+          "end": 12.325,
+          "frame": 365,
+          "endFrame": 370
+        },
+        {
+          "token": "feet",
+          "start": 12.406,
+          "end": 12.639,
+          "frame": 372,
+          "endFrame": 379
+        },
+        {
+          "token": "are",
+          "start": 12.685,
+          "end": 12.813,
+          "frame": 381,
+          "endFrame": 384
+        },
+        {
+          "token": "a",
+          "start": 12.859,
+          "end": 12.894,
+          "frame": 386,
+          "endFrame": 387
+        },
+        {
+          "token": "bit",
+          "start": 12.94,
+          "end": 13.115,
+          "frame": 388,
+          "endFrame": 393
+        },
+        {
+          "token": "puffy.",
+          "start": 13.208,
+          "end": 13.985,
+          "frame": 396,
+          "endFrame": 420
+        }
+      ],
+      "to": 429,
+      "speechEnd": 420,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S5",
+      "text": "Dad. You left the hospital two weeks ago. For your heart.",
+      "from": 429,
+      "words": [
+        {
+          "token": "Dad.",
+          "start": 14.385,
+          "end": 14.942,
+          "frame": 432,
+          "endFrame": 448
+        },
+        {
+          "token": "You",
+          "start": 15.395,
+          "end": 15.523,
+          "frame": 462,
+          "endFrame": 466
+        },
+        {
+          "token": "left",
+          "start": 15.592,
+          "end": 15.79,
+          "frame": 468,
+          "endFrame": 474
+        },
+        {
+          "token": "the",
+          "start": 15.825,
+          "end": 15.894,
+          "frame": 475,
+          "endFrame": 477
+        },
+        {
+          "token": "hospital",
+          "start": 15.952,
+          "end": 16.359,
+          "frame": 479,
+          "endFrame": 491
+        },
+        {
+          "token": "two",
+          "start": 16.417,
+          "end": 16.568,
+          "frame": 493,
+          "endFrame": 497
+        },
+        {
+          "token": "weeks",
+          "start": 16.614,
+          "end": 16.823,
+          "frame": 498,
+          "endFrame": 505
+        },
+        {
+          "token": "ago.",
+          "start": 16.858,
+          "end": 17.241,
+          "frame": 506,
+          "endFrame": 517
+        },
+        {
+          "token": "For",
+          "start": 17.299,
+          "end": 17.438,
+          "frame": 519,
+          "endFrame": 523
+        },
+        {
+          "token": "your",
+          "start": 17.473,
+          "end": 17.589,
+          "frame": 524,
+          "endFrame": 528
+        },
+        {
+          "token": "heart.",
+          "start": 17.647,
+          "end": 18.286,
+          "frame": 529,
+          "endFrame": 549
+        }
+      ],
+      "to": 561,
+      "speechEnd": 549,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S6",
+      "text": "I know. They said come back in a month. It's not a month yet.",
+      "from": 561,
+      "words": [
+        {
+          "token": "I",
+          "start": 18.786,
+          "end": 18.879,
+          "frame": 564,
+          "endFrame": 566
+        },
+        {
+          "token": "know.",
+          "start": 18.972,
+          "end": 19.332,
+          "frame": 569,
+          "endFrame": 580
+        },
+        {
+          "token": "They",
+          "start": 19.75,
+          "end": 19.901,
+          "frame": 593,
+          "endFrame": 597
+        },
+        {
+          "token": "said",
+          "start": 19.947,
+          "end": 20.121,
+          "frame": 598,
+          "endFrame": 604
+        },
+        {
+          "token": "come",
+          "start": 20.179,
+          "end": 20.353,
+          "frame": 605,
+          "endFrame": 611
+        },
+        {
+          "token": "back",
+          "start": 20.388,
+          "end": 20.609,
+          "frame": 612,
+          "endFrame": 618
+        },
+        {
+          "token": "in",
+          "start": 20.69,
+          "end": 20.748,
+          "frame": 621,
+          "endFrame": 622
+        },
+        {
+          "token": "a",
+          "start": 20.795,
+          "end": 20.818,
+          "frame": 624,
+          "endFrame": 625
+        },
+        {
+          "token": "month.",
+          "start": 20.876,
+          "end": 21.352,
+          "frame": 626,
+          "endFrame": 641
+        },
+        {
+          "token": "It's",
+          "start": 21.654,
+          "end": 21.874,
+          "frame": 650,
+          "endFrame": 656
+        },
+        {
+          "token": "not",
+          "start": 21.932,
+          "end": 22.118,
+          "frame": 658,
+          "endFrame": 664
+        },
+        {
+          "token": "a",
+          "start": 22.165,
+          "end": 22.188,
+          "frame": 665,
+          "endFrame": 666
+        },
+        {
+          "token": "month",
+          "start": 22.246,
+          "end": 22.478,
+          "frame": 667,
+          "endFrame": 674
+        },
+        {
+          "token": "yet.",
+          "start": 22.536,
+          "end": 23.244,
+          "frame": 676,
+          "endFrame": 697
+        }
+      ],
+      "to": 706,
+      "speechEnd": 697,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S7",
+      "text": "Are you weighing yourself, like they said?",
+      "from": 706,
+      "words": [
+        {
+          "token": "Are",
+          "start": 23.644,
+          "end": 23.807,
+          "frame": 709,
+          "endFrame": 714
+        },
+        {
+          "token": "you",
+          "start": 23.853,
+          "end": 23.934,
+          "frame": 716,
+          "endFrame": 718
+        },
+        {
+          "token": "weighing",
+          "start": 24.027,
+          "end": 24.317,
+          "frame": 721,
+          "endFrame": 730
+        },
+        {
+          "token": "yourself,",
+          "start": 24.364,
+          "end": 24.782,
+          "frame": 731,
+          "endFrame": 743
+        },
+        {
+          "token": "like",
+          "start": 24.817,
+          "end": 24.956,
+          "frame": 745,
+          "endFrame": 749
+        },
+        {
+          "token": "they",
+          "start": 24.979,
+          "end": 25.095,
+          "frame": 749,
+          "endFrame": 753
+        },
+        {
+          "token": "said?",
+          "start": 25.153,
+          "end": 25.827,
+          "frame": 755,
+          "endFrame": 775
+        }
+      ],
+      "to": 787,
+      "speechEnd": 775,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S8",
+      "text": "Every morning. It's all in my notebook. Up three kilos this week.",
+      "from": 787,
+      "words": [
+        {
+          "token": "Every",
+          "start": 26.327,
+          "end": 26.664,
+          "frame": 790,
+          "endFrame": 800
+        },
+        {
+          "token": "morning.",
+          "start": 26.745,
+          "end": 27.256,
+          "frame": 802,
+          "endFrame": 818
+        },
+        {
+          "token": "It's",
+          "start": 27.604,
+          "end": 27.813,
+          "frame": 828,
+          "endFrame": 834
+        },
+        {
+          "token": "all",
+          "start": 27.848,
+          "end": 27.976,
+          "frame": 835,
+          "endFrame": 839
+        },
+        {
+          "token": "in",
+          "start": 28.057,
+          "end": 28.115,
+          "frame": 842,
+          "endFrame": 843
+        },
+        {
+          "token": "my",
+          "start": 28.173,
+          "end": 28.266,
+          "frame": 845,
+          "endFrame": 848
+        },
+        {
+          "token": "notebook.",
+          "start": 28.347,
+          "end": 28.951,
+          "frame": 850,
+          "endFrame": 869
+        },
+        {
+          "token": "Up",
+          "start": 29.299,
+          "end": 29.473,
+          "frame": 879,
+          "endFrame": 884
+        },
+        {
+          "token": "three",
+          "start": 29.531,
+          "end": 29.775,
+          "frame": 886,
+          "endFrame": 893
+        },
+        {
+          "token": "kilos",
+          "start": 29.833,
+          "end": 30.309,
+          "frame": 895,
+          "endFrame": 909
+        },
+        {
+          "token": "this",
+          "start": 30.356,
+          "end": 30.518,
+          "frame": 911,
+          "endFrame": 916
+        },
+        {
+          "token": "week.",
+          "start": 30.599,
+          "end": 31.25,
+          "frame": 918,
+          "endFrame": 938
+        }
+      ],
+      "to": 946,
+      "speechEnd": 938,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S9",
+      "text": "Who sees that notebook?",
+      "from": 946,
+      "words": [
+        {
+          "token": "Who",
+          "start": 31.65,
+          "end": 31.871,
+          "frame": 949,
+          "endFrame": 956
+        },
+        {
+          "token": "sees",
+          "start": 31.94,
+          "end": 32.149,
+          "frame": 958,
+          "endFrame": 964
+        },
+        {
+          "token": "that",
+          "start": 32.196,
+          "end": 32.323,
+          "frame": 966,
+          "endFrame": 970
+        },
+        {
+          "token": "notebook?",
+          "start": 32.393,
+          "end": 33.183,
+          "frame": 972,
+          "endFrame": 995
+        }
+      ],
+      "to": 1007,
+      "speechEnd": 995,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S10",
+      "text": "Me.",
+      "from": 1007,
+      "words": [
+        {
+          "token": "Me.",
+          "start": 33.682,
+          "end": 34.379,
+          "frame": 1010,
+          "endFrame": 1031
+        }
+      ],
+      "to": 1040,
+      "speechEnd": 1031,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S11",
+      "text": "A study of nearly twelve million hospital patients found one in five was back within a month. And half of them hadn't seen a doctor in between.",
+      "from": 1040,
+      "words": [
+        {
+          "token": "A",
+          "start": 34.779,
+          "end": 34.872,
+          "frame": 1043,
+          "endFrame": 1046
+        },
+        {
+          "token": "study",
+          "start": 34.942,
+          "end": 35.243,
+          "frame": 1048,
+          "endFrame": 1057
+        },
+        {
+          "token": "of",
+          "start": 35.301,
+          "end": 35.348,
+          "frame": 1059,
+          "endFrame": 1060
+        },
+        {
+          "token": "nearly",
+          "start": 35.406,
+          "end": 35.673,
+          "frame": 1062,
+          "endFrame": 1070
+        },
+        {
+          "token": "twelve",
+          "start": 35.731,
+          "end": 36.056,
+          "frame": 1072,
+          "endFrame": 1082
+        },
+        {
+          "token": "million",
+          "start": 36.091,
+          "end": 36.37,
+          "frame": 1083,
+          "endFrame": 1091
+        },
+        {
+          "token": "hospital",
+          "start": 36.439,
+          "end": 36.846,
+          "frame": 1093,
+          "endFrame": 1105
+        },
+        {
+          "token": "patients",
+          "start": 36.892,
+          "end": 37.356,
+          "frame": 1107,
+          "endFrame": 1121
+        },
+        {
+          "token": "found",
+          "start": 37.693,
+          "end": 37.937,
+          "frame": 1131,
+          "endFrame": 1138
+        },
+        {
+          "token": "one",
+          "start": 38.03,
+          "end": 38.181,
+          "frame": 1141,
+          "endFrame": 1145
+        },
+        {
+          "token": "in",
+          "start": 38.216,
+          "end": 38.285,
+          "frame": 1146,
+          "endFrame": 1149
+        },
+        {
+          "token": "five",
+          "start": 38.355,
+          "end": 38.808,
+          "frame": 1151,
+          "endFrame": 1164
+        },
+        {
+          "token": "was",
+          "start": 38.901,
+          "end": 39.063,
+          "frame": 1167,
+          "endFrame": 1172
+        },
+        {
+          "token": "back",
+          "start": 39.144,
+          "end": 39.353,
+          "frame": 1174,
+          "endFrame": 1181
+        },
+        {
+          "token": "within",
+          "start": 39.411,
+          "end": 39.632,
+          "frame": 1182,
+          "endFrame": 1189
+        },
+        {
+          "token": "a",
+          "start": 39.667,
+          "end": 39.69,
+          "frame": 1190,
+          "endFrame": 1191
+        },
+        {
+          "token": "month.",
+          "start": 39.736,
+          "end": 40.201,
+          "frame": 1192,
+          "endFrame": 1206
+        },
+        {
+          "token": "And",
+          "start": 40.828,
+          "end": 40.979,
+          "frame": 1225,
+          "endFrame": 1229
+        },
+        {
+          "token": "half",
+          "start": 41.06,
+          "end": 41.257,
+          "frame": 1232,
+          "endFrame": 1238
+        },
+        {
+          "token": "of",
+          "start": 41.304,
+          "end": 41.362,
+          "frame": 1239,
+          "endFrame": 1241
+        },
+        {
+          "token": "them",
+          "start": 41.42,
+          "end": 41.594,
+          "frame": 1243,
+          "endFrame": 1248
+        },
+        {
+          "token": "hadn't",
+          "start": 41.71,
+          "end": 42.0,
+          "frame": 1251,
+          "endFrame": 1260
+        },
+        {
+          "token": "seen",
+          "start": 42.035,
+          "end": 42.209,
+          "frame": 1261,
+          "endFrame": 1266
+        },
+        {
+          "token": "a",
+          "start": 42.244,
+          "end": 42.267,
+          "frame": 1267,
+          "endFrame": 1268
+        },
+        {
+          "token": "doctor",
+          "start": 42.325,
+          "end": 42.662,
+          "frame": 1270,
+          "endFrame": 1280
+        },
+        {
+          "token": "in",
+          "start": 42.709,
+          "end": 42.755,
+          "frame": 1281,
+          "endFrame": 1283
+        },
+        {
+          "token": "between.",
+          "start": 42.801,
+          "end": 43.603,
+          "frame": 1284,
+          "endFrame": 1308
+        }
+      ],
+      "to": 1320,
+      "speechEnd": 1308,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S12",
+      "text": "So what was I supposed to do?",
+      "from": 1320,
+      "words": [
+        {
+          "token": "So",
+          "start": 44.102,
+          "end": 44.288,
+          "frame": 1323,
+          "endFrame": 1329
+        },
+        {
+          "token": "what",
+          "start": 44.334,
+          "end": 44.462,
+          "frame": 1330,
+          "endFrame": 1334
+        },
+        {
+          "token": "was",
+          "start": 44.508,
+          "end": 44.614,
+          "frame": 1335,
+          "endFrame": 1338
+        },
+        {
+          "token": "I",
+          "start": 44.694,
+          "end": 44.718,
+          "frame": 1341,
+          "endFrame": 1342
+        },
+        {
+          "token": "supposed",
+          "start": 44.8,
+          "end": 45.16,
+          "frame": 1344,
+          "endFrame": 1355
+        },
+        {
+          "token": "to",
+          "start": 45.194,
+          "end": 45.252,
+          "frame": 1356,
+          "endFrame": 1358
+        },
+        {
+          "token": "do?",
+          "start": 45.309,
+          "end": 45.913,
+          "frame": 1359,
+          "endFrame": 1377
+        }
+      ],
+      "to": 1386,
+      "speechEnd": 1377,
+      "speaker": "DAD"
+    },
+    {
+      "id": "S13",
+      "text": "Heart guidance says: more than two kilos in three days, tell your doctor. Don't wait for the visit.",
+      "from": 1386,
+      "words": [
+        {
+          "token": "Heart",
+          "start": 46.314,
+          "end": 46.616,
+          "frame": 1389,
+          "endFrame": 1398
+        },
+        {
+          "token": "guidance",
+          "start": 46.662,
+          "end": 46.987,
+          "frame": 1400,
+          "endFrame": 1410
+        },
+        {
+          "token": "says:",
+          "start": 47.022,
+          "end": 47.626,
+          "frame": 1411,
+          "endFrame": 1429
+        },
+        {
+          "token": "more",
+          "start": 48.079,
+          "end": 48.264,
+          "frame": 1442,
+          "endFrame": 1448
+        },
+        {
+          "token": "than",
+          "start": 48.299,
+          "end": 48.427,
+          "frame": 1449,
+          "endFrame": 1453
+        },
+        {
+          "token": "two",
+          "start": 48.485,
+          "end": 48.671,
+          "frame": 1455,
+          "endFrame": 1460
+        },
+        {
+          "token": "kilos",
+          "start": 48.752,
+          "end": 49.1,
+          "frame": 1463,
+          "endFrame": 1473
+        },
+        {
+          "token": "in",
+          "start": 49.135,
+          "end": 49.193,
+          "frame": 1474,
+          "endFrame": 1476
+        },
+        {
+          "token": "three",
+          "start": 49.24,
+          "end": 49.449,
+          "frame": 1477,
+          "endFrame": 1483
+        },
+        {
+          "token": "days,",
+          "start": 49.484,
+          "end": 49.901,
+          "frame": 1485,
+          "endFrame": 1497
+        },
+        {
+          "token": "tell",
+          "start": 49.96,
+          "end": 50.145,
+          "frame": 1499,
+          "endFrame": 1504
+        },
+        {
+          "token": "your",
+          "start": 50.192,
+          "end": 50.296,
+          "frame": 1506,
+          "endFrame": 1509
+        },
+        {
+          "token": "doctor.",
+          "start": 50.331,
+          "end": 50.877,
+          "frame": 1510,
+          "endFrame": 1526
+        },
+        {
+          "token": "Don't",
+          "start": 51.399,
+          "end": 51.655,
+          "frame": 1542,
+          "endFrame": 1550
+        },
+        {
+          "token": "wait",
+          "start": 51.689,
+          "end": 51.852,
+          "frame": 1551,
+          "endFrame": 1556
+        },
+        {
+          "token": "for",
+          "start": 51.91,
+          "end": 52.003,
+          "frame": 1557,
+          "endFrame": 1560
+        },
+        {
+          "token": "the",
+          "start": 52.038,
+          "end": 52.107,
+          "frame": 1561,
+          "endFrame": 1563
+        },
+        {
+          "token": "visit.",
+          "start": 52.142,
+          "end": 52.816,
+          "frame": 1564,
+          "endFrame": 1584
+        }
+      ],
+      "to": 1593,
+      "speechEnd": 1584,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S14",
+      "text": "With a plan between visits, your morning weight goes to her. She sees the line cross, calls you that day, and changes the plan before the hospital has to.",
+      "from": 1593,
+      "words": [
+        {
+          "token": "With",
+          "start": 53.215,
+          "end": 53.424,
+          "frame": 1596,
+          "endFrame": 1603
+        },
+        {
+          "token": "a",
+          "start": 53.459,
+          "end": 53.482,
+          "frame": 1604,
+          "endFrame": 1604
+        },
+        {
+          "token": "plan",
+          "start": 53.528,
+          "end": 53.795,
+          "frame": 1606,
+          "endFrame": 1614
+        },
+        {
+          "token": "between",
+          "start": 53.854,
+          "end": 54.155,
+          "frame": 1616,
+          "endFrame": 1625
+        },
+        {
+          "token": "visits,",
+          "start": 54.213,
+          "end": 54.736,
+          "frame": 1626,
+          "endFrame": 1642
+        },
+        {
+          "token": "your",
+          "start": 54.852,
+          "end": 54.991,
+          "frame": 1646,
+          "endFrame": 1650
+        },
+        {
+          "token": "morning",
+          "start": 55.049,
+          "end": 55.316,
+          "frame": 1651,
+          "endFrame": 1659
+        },
+        {
+          "token": "weight",
+          "start": 55.363,
+          "end": 55.549,
+          "frame": 1661,
+          "endFrame": 1666
+        },
+        {
+          "token": "goes",
+          "start": 55.595,
+          "end": 55.804,
+          "frame": 1668,
+          "endFrame": 1674
+        },
+        {
+          "token": "to",
+          "start": 55.85,
+          "end": 55.92,
+          "frame": 1676,
+          "endFrame": 1678
+        },
+        {
+          "token": "her.",
+          "start": 56.001,
+          "end": 56.373,
+          "frame": 1680,
+          "endFrame": 1691
+        },
+        {
+          "token": "She",
+          "start": 57.0,
+          "end": 57.139,
+          "frame": 1710,
+          "endFrame": 1714
+        },
+        {
+          "token": "sees",
+          "start": 57.197,
+          "end": 57.441,
+          "frame": 1716,
+          "endFrame": 1723
+        },
+        {
+          "token": "the",
+          "start": 57.499,
+          "end": 57.569,
+          "frame": 1725,
+          "endFrame": 1727
+        },
+        {
+          "token": "line",
+          "start": 57.627,
+          "end": 57.882,
+          "frame": 1729,
+          "endFrame": 1736
+        },
+        {
+          "token": "cross,",
+          "start": 57.929,
+          "end": 58.37,
+          "frame": 1738,
+          "endFrame": 1751
+        },
+        {
+          "token": "calls",
+          "start": 58.416,
+          "end": 58.672,
+          "frame": 1752,
+          "endFrame": 1760
+        },
+        {
+          "token": "you",
+          "start": 58.707,
+          "end": 58.776,
+          "frame": 1761,
+          "endFrame": 1763
+        },
+        {
+          "token": "that",
+          "start": 58.823,
+          "end": 58.962,
+          "frame": 1765,
+          "endFrame": 1769
+        },
+        {
+          "token": "day,",
+          "start": 59.008,
+          "end": 59.438,
+          "frame": 1770,
+          "endFrame": 1783
+        },
+        {
+          "token": "and",
+          "start": 59.589,
+          "end": 59.751,
+          "frame": 1788,
+          "endFrame": 1793
+        },
+        {
+          "token": "changes",
+          "start": 59.809,
+          "end": 60.169,
+          "frame": 1794,
+          "endFrame": 1805
+        },
+        {
+          "token": "the",
+          "start": 60.216,
+          "end": 60.285,
+          "frame": 1806,
+          "endFrame": 1809
+        },
+        {
+          "token": "plan",
+          "start": 60.32,
+          "end": 60.576,
+          "frame": 1810,
+          "endFrame": 1817
+        },
+        {
+          "token": "before",
+          "start": 60.634,
+          "end": 60.889,
+          "frame": 1819,
+          "endFrame": 1827
+        },
+        {
+          "token": "the",
+          "start": 60.924,
+          "end": 60.994,
+          "frame": 1828,
+          "endFrame": 1830
+        },
+        {
+          "token": "hospital",
+          "start": 61.04,
+          "end": 61.458,
+          "frame": 1831,
+          "endFrame": 1844
+        },
+        {
+          "token": "has",
+          "start": 61.516,
+          "end": 61.702,
+          "frame": 1845,
+          "endFrame": 1851
+        },
+        {
+          "token": "to.",
+          "start": 61.76,
+          "end": 62.317,
+          "frame": 1853,
+          "endFrame": 1870
+        }
+      ],
+      "to": 1879,
+      "speechEnd": 1870,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S15",
+      "text": "I'm calling her now.",
+      "from": 1879,
+      "words": [
+        {
+          "token": "I'm",
+          "start": 62.717,
+          "end": 62.903,
+          "frame": 1882,
+          "endFrame": 1887
+        },
+        {
+          "token": "calling",
+          "start": 62.972,
+          "end": 63.321,
+          "frame": 1889,
+          "endFrame": 1900
+        },
+        {
+          "token": "her",
+          "start": 63.379,
+          "end": 63.472,
+          "frame": 1901,
+          "endFrame": 1904
+        },
+        {
+          "token": "now.",
+          "start": 63.541,
+          "end": 64.203,
+          "frame": 1906,
+          "endFrame": 1926
+        }
+      ],
+      "to": 1938,
+      "speechEnd": 1926,
+      "speaker": "DAUGHTER"
+    },
+    {
+      "id": "S16",
+      "text": "Send her the notebook too. And tonight, I'll try the bed.",
+      "from": 1938,
+      "words": [
+        {
+          "token": "Send",
+          "start": 64.704,
+          "end": 64.994,
+          "frame": 1941,
+          "endFrame": 1950
+        },
+        {
+          "token": "her",
+          "start": 65.052,
+          "end": 65.134,
+          "frame": 1952,
+          "endFrame": 1954
+        },
+        {
+          "token": "the",
+          "start": 65.192,
+          "end": 65.261,
+          "frame": 1956,
+          "endFrame": 1958
+        },
+        {
+          "token": "notebook",
+          "start": 65.319,
+          "end": 65.784,
+          "frame": 1960,
+          "endFrame": 1974
+        },
+        {
+          "token": "too.",
+          "start": 65.842,
+          "end": 66.353,
+          "frame": 1975,
+          "endFrame": 1991
+        },
+        {
+          "token": "And",
+          "start": 67.014,
+          "end": 67.2,
+          "frame": 2010,
+          "endFrame": 2016
+        },
+        {
+          "token": "tonight,",
+          "start": 67.247,
+          "end": 67.885,
+          "frame": 2017,
+          "endFrame": 2037
+        },
+        {
+          "token": "I'll",
+          "start": 68.547,
+          "end": 68.767,
+          "frame": 2056,
+          "endFrame": 2063
+        },
+        {
+          "token": "try",
+          "start": 68.814,
+          "end": 69.023,
+          "frame": 2064,
+          "endFrame": 2071
+        },
+        {
+          "token": "the",
+          "start": 69.116,
+          "end": 69.197,
+          "frame": 2073,
+          "endFrame": 2076
+        },
+        {
+          "token": "bed.",
+          "start": 69.255,
+          "end": 69.952,
+          "frame": 2078,
+          "endFrame": 2099
+        }
+      ],
+      "to": 2159,
+      "speechEnd": 2099,
+      "speaker": "DAD"
+    }
+  ]
+}

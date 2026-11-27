@@ -1,0 +1,16 @@
+[S1] DAUGHTER: Dad, why did you sleep in the chair?
+[S2] DAD: Can't breathe lying flat lately. The chair is easier.
+[S3] DAUGHTER: Since when?
+[S4] DAD: Four nights. And my shoes don't fit. My feet are a bit puffy.
+[S5] DAUGHTER: Dad. You left the hospital two weeks ago. For your heart.
+[S6] DAD: I know. They said come back in a month. It's not a month yet.
+[S7] DAUGHTER: Are you weighing yourself, like they said?
+[S8] DAD: Every morning. It's all in my notebook. Up three kilos this week.
+[S9] DAUGHTER: Who sees that notebook?
+[S10] DAD: Me.
+[S11] DAUGHTER: A study of nearly twelve million hospital patients found one in five was back within a month. And half of them hadn't seen a doctor in between.
+[S12] DAD: So what was I supposed to do?
+[S13] DAUGHTER: Heart guidance says: more than two kilos in three days, tell your doctor. Don't wait for the visit.
+[S14] DAUGHTER: With a plan between visits, your morning weight goes to her. She sees the line cross, calls you that day, and changes the plan before the hospital has to.
+[S15] DAUGHTER: I'm calling her now.
+[S16] DAD: Send her the notebook too. And tonight, I'll try the bed.

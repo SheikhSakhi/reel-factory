@@ -1,0 +1,4 @@
+{
+  "DAD": {"voice": "en-IE-ConnorNeural", "rate": "-8%", "elevenlabs_voice": "pqHfZKP75CvOlQylNhV4", "elevenlabs_settings": {"stability": 0.55, "similarity_boost": 0.75, "style": 0.15, "speed": 0.92}, "gap": 0.5},
+  "DAUGHTER": {"voice": "en-US-EmmaMultilingualNeural", "rate": "-4%", "elevenlabs_voice": "XrExE9yKIg1WjnnlVkGX", "elevenlabs_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.2, "speed": 0.97}, "gap": 0.4}
+}
